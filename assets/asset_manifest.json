@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "collection": "Demigods",
   "target_supply": 777,
   "master_canvas": {
@@ -18,10 +18,24 @@
       "id": "base_body_001",
       "category": "base_body",
       "path": "assets/base_body/base_body_001_neutral_master.webp",
-      "status": "approved_visual_base",
+      "status": "approved_visual_reference_qa_blocked",
+      "production_ready": false,
+      "source_integrity": "failed",
+      "qa_report": "docs/qa/base_body_001_integrity_report.md",
+      "required_action": "reupload_intact_2048x2048_rgba_png",
       "front_facing": true,
       "transparent_background": true,
       "interchangeable_rig_anchor": true
+    }
+  ],
+  "blocked_assets": [
+    {
+      "id": "base_pose_001",
+      "category": "base_pose",
+      "intended_path": "assets/base_pose/base_pose_001_relaxed_open.png",
+      "status": "blocked",
+      "reason": "The only approved repository source is damaged and the historical PNG chunks are incomplete. Producing this pose would require reconstructing or redesigning missing avatar pixels.",
+      "required_input": "An intact approved 2048x2048 RGBA PNG or equivalent lossless source."
     }
   ],
   "pending_categories": [
