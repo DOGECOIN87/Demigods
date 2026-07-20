@@ -1,3 +1,3 @@
 Temporary pull-request trigger for approved base-avatar binary inspection. Remove before merge.
 
-Rerun: preserve source binary and upload diagnostics even if conversion fails.
+Rerun: recover the original 2048 × 2048 PNG from the historical upload chunks.
