@@ -2,14 +2,16 @@ name: Bootstrap repository files
 
 on:
   push:
-    paths:
-      - ".github/workflows/bootstrap-assets.yml"
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   bootstrap:
+    if: ${{ !contains(github.event.head_commit.message, '[skip bootstrap]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,5 +38,5 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "Add production prompts, documentation, scripts, and reference images"
+          git commit -m "Add production prompts, documentation, scripts, and reference images [skip bootstrap]"
           git push
