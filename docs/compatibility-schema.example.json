@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "canvas": {"width": 2048, "height": 2048},
+  "target_supply": 777,
+  "seed": "replace-with-final-seed",
+  "layer_order": [
+    "background", "rear_aura", "back_accessory", "hair_back",
+    "base_body", "outfit", "neck_accessory", "eyes", "eyebrows",
+    "mouth", "expression_marks", "hair_front", "head_accessory",
+    "hand_object", "front_aura", "global_finish"
+  ],
+  "rules": [
+    {
+      "type": "requires",
+      "trait": "hand_object_001_arcane_staff_pose_02_left.png",
+      "requires": "base_pose_002_left_vertical_grip.png"
+    },
+    {
+      "type": "excludes",
+      "trait": "head_accessory_004_large_halo.png",
+      "excludes": ["hair_front_009_tall_spikes.png"]
+    }
+  ]
+}
