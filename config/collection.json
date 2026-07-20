@@ -1,0 +1,32 @@
+{
+  "name": "Demigods",
+  "symbol": "DEMIGODS",
+  "description": "A 777-piece modular chibi-fantasy generative collection.",
+  "supply": 777,
+  "token_id_start": 1,
+  "token_id_padding": 4,
+  "canvas": {
+    "width": 2048,
+    "height": 2048,
+    "color_space": "sRGB"
+  },
+  "master_rig": {
+    "canvas_center_x": 1024,
+    "top_of_head_y": 230,
+    "head_center": [1024, 560],
+    "eye_line_y": 600,
+    "mouth_center": [1024, 720],
+    "shoulder_line_y": 930,
+    "waist_center": [1024, 1320],
+    "viewer_left_hand_anchor": [660, 1260],
+    "viewer_right_hand_anchor": [1388, 1260],
+    "foot_baseline_y": 1860,
+    "maximum_character_bounds": [380, 210, 1668, 1860]
+  },
+  "lighting": {
+    "key_direction": "upper-left",
+    "shadow_direction": "lower-right",
+    "rim_light": "subtle cool right rim",
+    "ambient_fill": "soft neutral"
+  }
+}
