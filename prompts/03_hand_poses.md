@@ -1,24 +1,32 @@
-# Prompt — Hand-Pose Variant
+# Prompt — Approved Avatar Hand-Pose Variant
 
 ```text
 [INSERT LOCKED MASTER SPECIFICATION]
 
-REFERENCE BODY:
-Use the approved neutral master body as the immutable structural reference.
+REFERENCE:
+Use only the approved Demigods base-avatar asset as the immutable visual reference. The reference depicts a fully clothed stylized game avatar wearing an opaque beige athletic top and knee-length shorts.
 
 TARGET ASSET:
-Create hand-pose variant [POSE NUMBER AND DESCRIPTION].
+Create exactly one hand-pose variant: [POSE NUMBER AND DESCRIPTION].
 
-Pose:
-- viewer-left hand: [OPEN / GRIP / PALM-UP / FIST / RELAXED]
-- viewer-right hand: [OPEN / GRIP / PALM-UP / FIST / RELAXED]
-- preserve the exact shoulder, elbow, wrist, and hand anchor system
-- preserve identical head, torso, legs, scale, and foot baseline
-- do not redesign the body
-- do not include any held object
-- keep the face blank and retain the opaque neutral underlayer
+Change only:
+- viewer-left arm and hand: [OPEN / VERTICAL GRIP / PALM-UP / FIST / RELAXED]
+- viewer-right arm and hand: [OPEN / VERTICAL GRIP / PALM-UP / FIST / RELAXED]
 
-Suggested approved variants:
+Lock everything else:
+- identical face, head shape, head position, torso, legs, scale, and foot baseline
+- identical shoulders, elbows, wrists, and approved hand-anchor coordinates
+- identical opaque clothing coverage, fabric edges, colors, and texture
+- identical front-facing camera and neutral stance
+- identical upper-left key light, lower-right form shadows, ambient fill, and rim light
+
+Isolation:
+- transparent square canvas
+- no held object
+- no background, floor, halo, glow, cast shadow, text, labels, interface, or contact-sheet layout
+- do not redesign, restyle, rotate, crop, or change the character proportions
+
+Approved variants:
 1. both hands relaxed and open
 2. viewer-left vertical grip; viewer-right relaxed
 3. viewer-right vertical grip; viewer-left relaxed
@@ -26,7 +34,7 @@ Suggested approved variants:
 5. centered two-handed grip
 
 OUTPUT:
-One transparent PNG only.
+One transparent image only.
 
 FILENAME:
 base_pose_[NUMBER]_[DESCRIPTION].png
