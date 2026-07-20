@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "collection": "Demigods",
+  "target_supply": 777,
+  "master_canvas": {
+    "width": 2048,
+    "height": 2048,
+    "format": "transparent PNG"
+  },
+  "lighting": {
+    "key": "upper-left",
+    "form_shadows": "lower-right",
+    "rim": "subtle right rim light",
+    "ambient_fill": "soft neutral"
+  },
+  "approved_assets": [
+    {
+      "id": "base_body_001",
+      "category": "base_body",
+      "path": "assets/base_body/base_body_001_neutral_master.webp",
+      "status": "approved_visual_base",
+      "front_facing": true,
+      "transparent_background": true,
+      "interchangeable_rig_anchor": true
+    }
+  ],
+  "pending_categories": [
+    "hand_poses",
+    "hair_back",
+    "hair_front",
+    "eyes",
+    "eyebrows",
+    "mouths",
+    "expression_marks",
+    "outfits",
+    "head_accessories",
+    "neck_accessories",
+    "hand_objects",
+    "back_accessories",
+    "auras",
+    "backgrounds"
+  ]
+}
