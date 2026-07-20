@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "requires": [],
+  "excludes": [],
+  "notes": [
+    "Add only visually necessary rules after cross-category compositing tests.",
+    "Hand objects must reference a compatible approved hand-pose filename.",
+    "Do not merge traits to solve collisions; document the compatibility rule instead."
+  ]
+}
