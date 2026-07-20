@@ -3,7 +3,11 @@ name: Inspect approved base avatar
 on:
   pull_request:
     paths:
-      - assets/base_body/base_body_001_neutral_master.webp
+      - assets/**
+      - prompts/**
+      - docs/**
+      - config/**
+      - scripts/**
       - .github/workflows/inspect_approved_base.yml
       - inspection_trigger.md
   workflow_dispatch:
@@ -20,75 +24,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Pillow
-        run: python -m pip install --disable-pip-version-check pillow
-
-      - name: Recover and inspect approved base
+      - name: Build repository snapshot
         shell: bash
         run: |
-          set +e
-          mkdir -p inspection_output
+          set -euo pipefail
+          tar --exclude=.git --exclude=repository_snapshot.tar.gz -czf repository_snapshot.tar.gz .
+          find assets prompts docs config scripts -type f 2>/dev/null | sort > repository_file_list.txt || true
+          du -h repository_snapshot.tar.gz
 
-          history_commit='eb563843197e68ea85433529eb71033c84f91c22'
-          git show "${history_commit}:.asset-upload/base_body.part00" > inspection_output/base_body.part00 2> inspection_output/git_show_part00_error.txt
-          echo "git_show_part00_status=$?" > inspection_output/status.txt
-          git show "${history_commit}:.asset-upload/base_body.part01" > inspection_output/base_body.part01 2> inspection_output/git_show_part01_error.txt
-          echo "git_show_part01_status=$?" >> inspection_output/status.txt
-          wc -c inspection_output/base_body.part00 inspection_output/base_body.part01 > inspection_output/chunk_sizes.txt
-
-          cat inspection_output/base_body.part00 inspection_output/base_body.part01 \
-            | tr -d '\r\n\t ' \
-            | base64 --decode \
-            > inspection_output/base_body_001_neutral_master_recovered.png \
-            2> inspection_output/base64_decode_error.txt
-          echo "base64_decode_status=$?" >> inspection_output/status.txt
-
-          cp assets/base_body/base_body_001_neutral_master.webp inspection_output/damaged_repository_reference.webp
-          file inspection_output/base_body_001_neutral_master_recovered.png > inspection_output/recovered_file_report.txt 2>&1
-          sha256sum inspection_output/base_body_001_neutral_master_recovered.png > inspection_output/recovered_sha256.txt 2>&1
-          sha256sum inspection_output/damaged_repository_reference.webp > inspection_output/damaged_webp_sha256.txt 2>&1
-
-          python - <<'PY' > inspection_output/python_report.txt 2>&1
-          from hashlib import sha256
-          from pathlib import Path
-          import traceback
-          from PIL import Image, ImageFile
-
-          ImageFile.LOAD_TRUNCATED_IMAGES = True
-          recovered = Path('inspection_output/base_body_001_neutral_master_recovered.png')
-          print(f'file_exists={recovered.exists()}')
-          print(f'file_size_bytes={recovered.stat().st_size if recovered.exists() else 0}')
-          try:
-              with Image.open(recovered) as image:
-                  image.load()
-                  rgba = image.convert('RGBA')
-                  alpha = rgba.getchannel('A')
-                  print(f'format={image.format}')
-                  print(f'size={rgba.size}')
-                  print(f'mode={rgba.mode}')
-                  print(f'alpha_extrema={alpha.getextrema()}')
-                  print(f'visible_bbox={alpha.getbbox()}')
-                  print(f'png_sha256={sha256(recovered.read_bytes()).hexdigest()}')
-          except Exception:
-              traceback.print_exc()
-          PY
-
-          cat inspection_output/status.txt
-          cat inspection_output/chunk_sizes.txt
-          cat inspection_output/base64_decode_error.txt
-          cat inspection_output/python_report.txt
-          exit 0
-
-      - name: Upload recovered inspection files
-        if: always()
+      - name: Upload repository snapshot
         uses: actions/upload-artifact@v4
         with:
-          name: approved-base-recovery
-          path: inspection_output/
+          name: demigods-repository-snapshot
+          path: |
+            repository_snapshot.tar.gz
+            repository_file_list.txt
           if-no-files-found: error
           retention-days: 1
