@@ -1,9 +1,11 @@
 name: Inspect approved base avatar
 
 on:
-  push:
+  pull_request:
     paths:
+      - assets/base_body/base_body_001_neutral_master.webp
       - .github/workflows/inspect_approved_base.yml
+      - inspection_trigger.md
   workflow_dispatch:
 
 permissions:
