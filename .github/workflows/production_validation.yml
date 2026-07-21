@@ -77,6 +77,13 @@ jobs:
             --allow-empty \
             --json-report validation_output/asset_validation_report.json
 
+      - name: Verify registered production asset provenance
+        run: |
+          python scripts/validate_manifest_consistency.py \
+            --manifest assets/asset_manifest.json \
+            --repository-root . \
+            --json-report validation_output/manifest_consistency_report.json
+
       - name: Upload validation reports
         if: always()
         uses: actions/upload-artifact@v4

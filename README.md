@@ -83,7 +83,18 @@ python scripts/validate_assets.py assets \
   --json-report asset_validation_report.json
 ```
 
-The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and manifest consistency.
+The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and blocked-reference manifest consistency.
+
+Verify provenance for every registered production asset before treating it as usable:
+
+```bash
+python scripts/validate_manifest_consistency.py \
+  --manifest assets/asset_manifest.json \
+  --repository-root . \
+  --json-report manifest_consistency_report.json
+```
+
+The registry is intentionally empty until the intact approved source passes binary and manual visual QA. Once an asset is registered, the checker requires its file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
 
 ## Exact-777 generation
 
