@@ -32,8 +32,8 @@ docs/                     Layer order, naming, rig, QA, workflow, and production
 images/reference_sheets/  Visual guides from the design process; never production assets
 config/                   Collection and compatibility configuration
 metadata/                 Token metadata schema
-scripts/                  Intake, validation, and deterministic generation tools
-tests/                    Automated validator and generator tests
+scripts/                  Intake, validation, configuration audit, and generation tools
+tests/                    Automated validator, configuration, and generator tests
 .github/workflows/        Continuous production validation
 ```
 
@@ -61,6 +61,18 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
+Audit the locked collection geometry and compatibility rules:
+
+```bash
+python scripts/validate_config.py \
+  --collection config/collection.json \
+  --compatibility config/compatibility.json \
+  --assets assets \
+  --json-report config_validation_report.json
+```
+
+The configuration preflight rejects changed locked anchors, malformed rules, missing trait references, duplicate relationships, impossible same-layer requirements, and requires/excludes contradictions.
+
 Audit the repository during the current empty-library preproduction phase:
 
 ```bash
@@ -68,10 +80,10 @@ python scripts/validate_assets.py assets \
   --manifest assets/asset_manifest.json \
   --repository-root . \
   --allow-empty \
-  --json-report validation_report.json
+  --json-report asset_validation_report.json
 ```
 
-The validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and manifest consistency.
+The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and manifest consistency.
 
 ## Exact-777 generation
 
