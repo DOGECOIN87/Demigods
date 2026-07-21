@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "collection": "Demigods",
   "target_supply": 777,
   "status_ledger": "docs/production_status.md",
@@ -34,6 +34,7 @@
     "front_auras": "assets/front_auras",
     "global_finish": "assets/global_finish"
   },
+  "registered_production_assets": [],
   "approved_visual_references": [
     {
       "id": "base_body_001",

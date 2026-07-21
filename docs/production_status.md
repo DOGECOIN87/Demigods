@@ -1,6 +1,6 @@
 # Demigods Production Status
 
-Last updated: 2026-07-20
+Last updated: 2026-07-21
 
 ## Current phase
 
@@ -28,6 +28,7 @@ Tracked blocker: [Issue #4 — Restore intact approved 2048 × 2048 base avatar 
 - Independent generated-output verifier added with six passing tamper-detection tests
 - Final acceptance workflow documented for dry-run and rendered output verification
 - Output-verification GitHub Actions run #25 completed successfully
+- Registered-production-asset manifest consistency checker with SHA-256, dimensions, status, path/category, and binary QA verification
 
 ## Active blocker
 
@@ -61,19 +62,20 @@ See `docs/qa/base_body_001_integrity_report.md`.
 - Exact-777 generator tests: **5 passed**
 - Configuration preflight tests: **6 passed**
 - Output-verification tests: **6 passed**
-- Combined regression total: **25 passed**
-- Branch continuous integration: **passed — Production validation run #25**
+- Manifest-consistency tests: **6 passed**
+- Combined regression total: **31 passed**
+- Latest completed GitHub Actions baseline: **passed — Production validation run #25**
 - Production asset library: **empty by design while Issue #4 remains open**
 
 ## Next production sequence
 
-1. Merge the verified independent-output checkpoint.
-2. Intake and validate the intact approved master PNG.
-3. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
+1. Intake and validate the intact approved master PNG.
+2. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
+3. Record its exact file hash and dimensions in `registered_production_assets`, then run the manifest consistency checker.
 4. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
 5. Register the shared artwork or create only the required arm/hand correction.
 6. Complete poses 002–005 sequentially.
-7. Run configuration, asset, generator, and output verification at their corresponding production gates.
+7. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.
 
 ## Repository update policy
 
