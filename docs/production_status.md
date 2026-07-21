@@ -62,6 +62,8 @@ The next controlled image request is documented in `prompts/16_native_2048_pose_
 
 Prompt 16 generation attempt 001 was stopped by its hard gate: the image service returned a 1254 × 1254 RGB PNG without alpha rather than a native 2048 × 2048 RGBA source. The intermediate was not resized, alpha-extracted, committed, or registered. See `docs/qa/base_pose_001_native_generation_attempt_001.md` for the binary and rig findings.
 
+Source gate audit 002 rechecked the complete repository inventory and selected Pose 001 reference against Prompt 16. No approved native 2048 × 2048 RGBA source is available; the stored 1254 × 1254 reference also fails locked placement and knee-length clothing review. Visual production remains stopped, poses 002–005 were not executed, and the manifest remains unregistered. See `docs/qa/base_pose_001_source_gate_audit_002.md`.
+
 ## Current production gate
 
 | Asset | Canonical path | State | Next action |
