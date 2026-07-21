@@ -5,18 +5,28 @@ on:
     paths:
       - 'assets/**'
       - 'config/**'
+      - 'docs/**'
+      - 'metadata/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'README.md'
+      - 'requirements.txt'
       - '.github/workflows/production_validation.yml'
   push:
     branches:
       - main
+      - 'agent/**'
     paths:
       - 'assets/**'
       - 'config/**'
+      - 'docs/**'
+      - 'metadata/**'
       - 'scripts/**'
       - 'tests/**'
+      - 'README.md'
+      - 'requirements.txt'
       - '.github/workflows/production_validation.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -24,6 +34,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -32,19 +43,30 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: pip
 
-      - name: Install validation dependency
-        run: python -m pip install --disable-pip-version-check pillow
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
-      - name: Run validator tests
+      - name: Validate JSON syntax
+        run: |
+          python -m json.tool assets/asset_manifest.json > /dev/null
+          python -m json.tool config/collection.json > /dev/null
+          python -m json.tool config/compatibility.json > /dev/null
+          python -m json.tool metadata/schema.json > /dev/null
+
+      - name: Compile Python sources
+        run: python -m compileall -q scripts tests
+
+      - name: Run validator and generator tests
         run: python -m unittest discover -s tests -v
 
-      - name: Validate manifest JSON
-        run: python -m json.tool assets/asset_manifest.json > /dev/null
-
-      - name: Validate current production PNGs
+      - name: Audit production assets and manifest
         run: |
           python scripts/validate_assets.py assets \
+            --manifest assets/asset_manifest.json \
+            --repository-root . \
+            --allow-empty \
             --json-report validation_output/asset_validation_report.json
 
       - name: Upload validation report

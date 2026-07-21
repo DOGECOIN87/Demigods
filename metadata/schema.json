@@ -2,26 +2,73 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Demigods Token Metadata",
   "type": "object",
-  "required": ["name", "description", "image", "token_id", "attributes", "trait_signature"],
+  "required": [
+    "name",
+    "description",
+    "image",
+    "token_id",
+    "attributes",
+    "trait_signature",
+    "image_sha256"
+  ],
   "properties": {
-    "name": {"type": "string"},
-    "description": {"type": "string"},
-    "image": {"type": "string"},
-    "token_id": {"type": "integer", "minimum": 1, "maximum": 777},
-    "trait_signature": {"type": "string"},
+    "name": {
+      "type": "string",
+      "pattern": "^Demigods #[0-9]{4}$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "image": {
+      "type": "string",
+      "pattern": "^images/[0-9]{4}\\.png$"
+    },
+    "token_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 777
+    },
+    "trait_signature": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "image_sha256": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
     "attributes": {
       "type": "array",
+      "minItems": 2,
       "items": {
         "type": "object",
-        "required": ["trait_type", "value", "source_file"],
+        "required": [
+          "trait_type",
+          "value",
+          "source_file"
+        ],
         "properties": {
-          "trait_type": {"type": "string"},
-          "value": {"type": "string"},
-          "source_file": {"type": "string"}
+          "trait_type": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "source_file": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+/[a-z0-9_]+\\.png$"
+          }
         },
         "additionalProperties": false
       }
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }

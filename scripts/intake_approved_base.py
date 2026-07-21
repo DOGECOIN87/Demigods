@@ -14,7 +14,7 @@ from PIL import Image
 
 EXPECTED_SIZE = (2048, 2048)
 EXPECTED_MODE = "RGBA"
-DEFAULT_OUTPUT = Path("assets/base_body/base_body_001_neutral_master.png")
+DEFAULT_OUTPUT = Path("assets/base_bodies/base_body_001_neutral_master.png")
 
 
 def sha256(path: Path) -> str:
@@ -28,6 +28,7 @@ def sha256(path: Path) -> str:
 def inspect_source(path: Path) -> dict[str, object]:
     report: dict[str, object] = {
         "source": str(path),
+        "intended_output": str(DEFAULT_OUTPUT),
         "exists": path.is_file(),
         "errors": [],
         "warnings": [],
@@ -39,6 +40,7 @@ def inspect_source(path: Path) -> dict[str, object]:
 
     if not path.is_file():
         errors.append("source file does not exist")
+        report["passed_binary_qa"] = False
         return report
 
     if path.suffix.lower() != ".png":
@@ -48,6 +50,8 @@ def inspect_source(path: Path) -> dict[str, object]:
     report["sha256"] = sha256(path)
 
     try:
+        with Image.open(path) as probe:
+            probe.verify()
         with Image.open(path) as image:
             image.load()
             report["format"] = image.format
@@ -74,15 +78,23 @@ def inspect_source(path: Path) -> dict[str, object]:
                     errors.append("alpha channel is fully opaque")
                 if bbox is None:
                     errors.append("image is fully transparent")
-                elif bbox[0] == 0 or bbox[1] == 0 or bbox[2] == EXPECTED_SIZE[0] or bbox[3] == EXPECTED_SIZE[1]:
+                elif (
+                    bbox[0] == 0
+                    or bbox[1] == 0
+                    or bbox[2] == EXPECTED_SIZE[0]
+                    or bbox[3] == EXPECTED_SIZE[1]
+                ):
                     errors.append(f"visible pixels touch a canvas edge: bbox={bbox}")
 
                 if extrema[1] < 255:
-                    warnings.append("no fully opaque pixels were detected; inspect edge and opacity quality")
+                    warnings.append(
+                        "no fully opaque pixels were detected; inspect edge and opacity quality"
+                    )
 
             if image.info.get("icc_profile"):
                 report["icc_profile_present"] = True
             else:
+                report["icc_profile_present"] = False
                 warnings.append("no embedded ICC profile detected; confirm sRGB interpretation")
     except Exception as exc:  # noqa: BLE001
         errors.append(f"could not fully decode image: {exc}")
@@ -102,6 +114,7 @@ def main() -> int:
     args = parser.parse_args()
 
     report = inspect_source(args.source)
+    report["intended_output"] = str(args.output)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 

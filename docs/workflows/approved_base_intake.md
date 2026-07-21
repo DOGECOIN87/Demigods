@@ -26,11 +26,10 @@ python scripts/intake_approved_base.py /path/to/approved_master.png
 
 This produces `base_source_intake_report.json` and checks:
 
-- complete decoding
-- PNG format
+- complete PNG structure verification and full decoding
 - exact dimensions
 - RGBA mode
-- non-opaque alpha
+- genuine non-opaque alpha
 - visible artwork exists
 - visible pixels do not touch canvas edges
 - SHA-256 provenance hash
@@ -65,15 +64,18 @@ python scripts/intake_approved_base.py /path/to/approved_master.png \
 
 The script writes:
 
-`assets/base_body/base_body_001_neutral_master.png`
+`assets/base_bodies/base_body_001_neutral_master.png`
 
 It refuses to overwrite an existing production PNG.
 
+The singular `assets/base_body/` directory remains a source-reference area and is not a production layer.
+
 After registration:
 
-1. Run `python scripts/validate_assets.py assets/base_body`.
+1. Run `python scripts/validate_assets.py assets --manifest assets/asset_manifest.json --repository-root .`.
 2. Compare the production PNG against the locked anchors.
 3. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
-4. Update `assets/asset_manifest.json`.
-5. Commit the PNG, intake report, validation result, and manifest change together.
-6. Verify the files on `main` before proceeding to pose 002.
+4. Register the same artwork at `assets/base_bodies/base_pose_001_relaxed_open.png` only when it already qualifies.
+5. Update `assets/asset_manifest.json` and `docs/production_status.md`.
+6. Commit the PNG, intake report, validation result, manifest, and status change together.
+7. Verify the files on `main` before proceeding to pose 002.
