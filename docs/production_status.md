@@ -26,6 +26,7 @@ Tracked blocker: [Issue #4 — Restore intact approved 2048 × 2048 base avatar 
 - Production-hardening GitHub Actions runs #7 and #9 completed successfully
 - Locked collection and compatibility preflight added with six regression tests
 - Configuration CI report added to the existing production-validation workflow
+- Configuration-preflight GitHub Actions run #16 completed successfully
 
 ## Active blocker
 
@@ -57,13 +58,14 @@ See `docs/qa/base_body_001_integrity_report.md`.
 
 - Asset validator tests: **8 passed**
 - Exact-777 generator tests: **5 passed**
-- Configuration preflight tests: **6 added; branch CI pending**
-- Combined regression total: **19 tests**
+- Configuration preflight tests: **6 passed**
+- Combined regression total: **19 passed**
+- Branch continuous integration: **passed — Production validation run #16**
 - Production asset library: **empty by design while Issue #4 remains open**
 
 ## Next production sequence
 
-1. Verify and merge the configuration-preflight checkpoint.
+1. Merge the verified configuration-preflight checkpoint.
 2. Intake and validate the intact approved master PNG.
 3. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
 4. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
