@@ -1,0 +1,57 @@
+name: Production validation
+
+on:
+  pull_request:
+    paths:
+      - 'assets/**'
+      - 'config/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/production_validation.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/**'
+      - 'config/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/production_validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validation dependency
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Run validator tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate manifest JSON
+        run: python -m json.tool assets/asset_manifest.json > /dev/null
+
+      - name: Validate current production PNGs
+        run: |
+          python scripts/validate_assets.py assets \
+            --json-report validation_output/asset_validation_report.json
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-validation-report
+          path: validation_output/asset_validation_report.json
+          if-no-files-found: warn
+          retention-days: 14
