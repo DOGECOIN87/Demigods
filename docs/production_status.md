@@ -23,10 +23,11 @@ Tracked blocker: [Issue #4 — Restore intact approved 2048 × 2048 base avatar 
 - Layer-aware PNG validation with complete decode verification, category/path checks, three-digit numbering, SHA-256 reporting, and manifest auditing
 - Exact-777 generator preflight, deterministic dry run, capacity checks, stale-output protection, duplicate rejection, exact count verification, and trait/image provenance hashes
 - Production-hardening PR #8 merged into `main` as `0bbfc05dc0700bcaaf878d6a20e16051c160d83c`
-- Production-hardening GitHub Actions runs #7 and #9 completed successfully
-- Locked collection and compatibility preflight added with six regression tests
-- Configuration CI report added to the existing production-validation workflow
-- Configuration-preflight GitHub Actions run #16 completed successfully
+- Locked collection and compatibility preflight with six passing tests
+- Configuration-preflight PR #9 merged into `main` as `570d64f30521e7d393d32060d0916d177c444eb7`
+- Independent generated-output verifier added with six passing tamper-detection tests
+- Final acceptance workflow documented for dry-run and rendered output verification
+- Output-verification GitHub Actions run #25 completed successfully
 
 ## Active blocker
 
@@ -59,19 +60,20 @@ See `docs/qa/base_body_001_integrity_report.md`.
 - Asset validator tests: **8 passed**
 - Exact-777 generator tests: **5 passed**
 - Configuration preflight tests: **6 passed**
-- Combined regression total: **19 passed**
-- Branch continuous integration: **passed — Production validation run #16**
+- Output-verification tests: **6 passed**
+- Combined regression total: **25 passed**
+- Branch continuous integration: **passed — Production validation run #25**
 - Production asset library: **empty by design while Issue #4 remains open**
 
 ## Next production sequence
 
-1. Merge the verified configuration-preflight checkpoint.
+1. Merge the verified independent-output checkpoint.
 2. Intake and validate the intact approved master PNG.
 3. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
 4. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
 5. Register the shared artwork or create only the required arm/hand correction.
 6. Complete poses 002–005 sequentially.
-7. Run configuration, asset, and generator preflight after every accepted asset or compatibility change.
+7. Run configuration, asset, generator, and output verification at their corresponding production gates.
 
 ## Repository update policy
 

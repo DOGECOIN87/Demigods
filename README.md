@@ -32,8 +32,8 @@ docs/                     Layer order, naming, rig, QA, workflow, and production
 images/reference_sheets/  Visual guides from the design process; never production assets
 config/                   Collection and compatibility configuration
 metadata/                 Token metadata schema
-scripts/                  Intake, validation, configuration audit, and generation tools
-tests/                    Automated validator, configuration, and generator tests
+scripts/                  Intake, validation, configuration, generation, and output-verification tools
+tests/                    Automated validator, configuration, generator, and output tests
 .github/workflows/        Continuous production validation
 ```
 
@@ -97,6 +97,23 @@ python scripts/generate_777.py --seed <FINAL_SEED> --output output/final
 
 The generator rejects invalid assets and stale output directories, rejects duplicate signatures, creates token IDs `0001` through `0777`, writes matching metadata, and records deterministic trait and image provenance hashes.
 
+Audit a dry run before rendering:
+
+```bash
+python scripts/validate_output.py output/dry_run \
+  --allow-dry-run \
+  --json-report dry_run_validation_report.json
+```
+
+Independently verify the final render before release:
+
+```bash
+python scripts/validate_output.py output/final \
+  --json-report final_output_validation_report.json
+```
+
+The output verifier requires the exact `0001`–`0777` image and metadata sets, recomputes every image hash and trait signature, validates metadata layer order and source paths, confirms final images are complete opaque RGBA PNGs, and independently recomputes both collection provenance hashes.
+
 ## Recommended workflow
 
 1. Restore and approve the neutral master base.
@@ -108,7 +125,7 @@ The generator rejects invalid assets and stale output directories, rejects dupli
 7. Produce remaining assets one item per output.
 8. Validate and commit every accepted asset or small verified milestone.
 9. Define only necessary compatibility exclusions.
-10. Dry-run and then render exactly 777 unique tokens.
+10. Dry-run, verify, render, and independently verify exactly 777 unique tokens.
 
 ## Important clarification
 

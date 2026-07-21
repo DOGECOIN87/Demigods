@@ -15,8 +15,9 @@ Production is blocked at the approved neutral master. Follow `docs/production_st
 7. Correct anchors, hidden overlaps, layer order, and only necessary compatibility rules.
 8. Produce each remaining trait individually, one file per output.
 9. Freeze the approved production folders and record the final deterministic seed.
-10. Run an exact-777 dry run, then the final render.
-11. Confirm 777 images, 777 metadata files, 777 unique trait signatures, and provenance hashes.
+10. Run an exact-777 dry run and independently verify it.
+11. Render the final collection and independently verify every image, metadata record, signature, hash, and provenance value.
+12. Release only after exactly 777 images and 777 metadata files pass the independent output gate.
 
 ## Per-asset repository loop
 
@@ -26,7 +27,7 @@ For every accepted asset:
 2. Update `assets/asset_manifest.json`.
 3. Update `docs/production_status.md`.
 4. Update `config/compatibility.json` only when a verified collision requires it.
-5. Run the validator.
+5. Run the configuration and asset validators.
 6. Commit with a specific asset-focused message.
 7. Push and verify the exact path in the repository.
 8. Continue to the next sequential asset.
@@ -35,6 +36,16 @@ Do not accumulate uncommitted batches of finished assets. Repository progress sh
 
 ## Validation commands
 
+Validate the locked collection and compatibility configuration:
+
+```bash
+python scripts/validate_config.py \
+  --collection config/collection.json \
+  --compatibility config/compatibility.json \
+  --assets assets \
+  --json-report config_validation_report.json
+```
+
 During preproduction, while canonical production folders are empty:
 
 ```bash
@@ -42,7 +53,7 @@ python scripts/validate_assets.py assets \
   --manifest assets/asset_manifest.json \
   --repository-root . \
   --allow-empty \
-  --json-report validation_report.json
+  --json-report asset_validation_report.json
 ```
 
 After the first production asset exists, remove `--allow-empty`:
@@ -51,10 +62,10 @@ After the first production asset exists, remove `--allow-empty`:
 python scripts/validate_assets.py assets \
   --manifest assets/asset_manifest.json \
   --repository-root . \
-  --json-report validation_report.json
+  --json-report asset_validation_report.json
 ```
 
-The validator checks complete binary decoding, PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and manifest consistency.
+The validators check locked geometry, compatibility integrity, complete binary decoding, PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and manifest consistency.
 
 ## Generator commands
 
@@ -73,6 +84,14 @@ python scripts/generate_777.py \
   --output output/dry_run
 ```
 
+Verify the dry run:
+
+```bash
+python scripts/validate_output.py output/dry_run \
+  --allow-dry-run \
+  --json-report dry_run_validation_report.json
+```
+
 Render the final collection only after the dry run passes:
 
 ```bash
@@ -81,7 +100,29 @@ python scripts/generate_777.py \
   --output output/final
 ```
 
+Verify the final collection independently:
+
+```bash
+python scripts/validate_output.py output/final \
+  --json-report final_output_validation_report.json
+```
+
 Use `--overwrite` only when intentionally replacing an entire previous generator output directory. The generator rejects stale non-empty output directories by default.
+
+## Final collection acceptance gate
+
+A generated collection is not release-ready until the independent output verifier confirms:
+
+- exact token labels `0001` through `0777`
+- exactly 777 PNG images and 777 metadata JSON files
+- correct token IDs, names, image paths, and canonical attribute order
+- unique trait signatures that recompute from metadata attributes
+- image SHA-256 values that match the rendered PNG bytes
+- manifest signature and image arrays matching token order
+- independently recomputed trait and image provenance hashes
+- complete 2048 × 2048 RGBA decoding for every image
+- opaque final composites produced by full-canvas backgrounds
+- no missing, extra, stale, or malformed output files
 
 ## Asset approval gate
 
