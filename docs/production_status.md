@@ -60,6 +60,8 @@ Their hashes and detailed QA status are recorded in `images/pose_candidates/READ
 
 The next controlled image request is documented in `prompts/16_native_2048_pose_001_candidate.md`. It permits one native 2048 × 2048 relaxed-open review candidate, explicitly forbids resizing the 1254 × 1254 references, and keeps the result outside the production registry until binary and manual QA both pass. This contingency does not supersede the preferred intact-source intake path or close Issue #4.
 
+Prompt 16 generation attempt 001 was stopped by its hard gate: the image service returned a 1254 × 1254 RGB PNG without alpha rather than a native 2048 × 2048 RGBA source. The intermediate was not resized, alpha-extracted, committed, or registered. See `docs/qa/base_pose_001_native_generation_attempt_001.md` for the binary and rig findings.
+
 ## Current production gate
 
 | Asset | Canonical path | State | Next action |
