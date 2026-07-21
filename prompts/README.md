@@ -20,5 +20,6 @@ Use `00_locked_master_specification.md` at the beginning of each generation requ
 - `13_backgrounds.md` — full-canvas environments
 - `14_extraction_prompt.md` — rebuild one target trait from a flattened reference sheet
 - `15_collection_generation_777.md` — exact 777-token output rules
+- `16_native_2048_pose_001_candidate.md` — create one native-resolution relaxed-open review candidate without promoting it to production
 
 Generate one asset per output. Never ask an image model to produce an entire final trait category as a single contact sheet.
