@@ -25,8 +25,9 @@ Tracked blocker: [Issue #4 — Restore intact approved 2048 × 2048 base avatar 
 - Production-hardening PR #8 merged into `main` as `0bbfc05dc0700bcaaf878d6a20e16051c160d83c`
 - Locked collection and compatibility preflight with six passing tests
 - Configuration-preflight PR #9 merged into `main` as `570d64f30521e7d393d32060d0916d177c444eb7`
-- Independent generated-output verifier added with six tamper-detection tests
+- Independent generated-output verifier added with six passing tamper-detection tests
 - Final acceptance workflow documented for dry-run and rendered output verification
+- Output-verification GitHub Actions run #25 completed successfully
 
 ## Active blocker
 
@@ -59,13 +60,14 @@ See `docs/qa/base_body_001_integrity_report.md`.
 - Asset validator tests: **8 passed**
 - Exact-777 generator tests: **5 passed**
 - Configuration preflight tests: **6 passed**
-- Output-verification tests: **6 added; branch CI pending**
-- Combined regression total: **25 tests**
+- Output-verification tests: **6 passed**
+- Combined regression total: **25 passed**
+- Branch continuous integration: **passed — Production validation run #25**
 - Production asset library: **empty by design while Issue #4 remains open**
 
 ## Next production sequence
 
-1. Verify and merge the independent-output checkpoint.
+1. Merge the verified independent-output checkpoint.
 2. Intake and validate the intact approved master PNG.
 3. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
 4. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
