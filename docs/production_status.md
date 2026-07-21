@@ -45,16 +45,29 @@ Required input:
 
 See `docs/qa/base_body_001_integrity_report.md`.
 
+## Non-production pose candidates
+
+Five regenerated RGBA pose candidates are preserved under `images/pose_candidates/`. Image 1 from the supplied pose references was selected as the visual basis for the relaxed-open candidate; the remaining candidates cover both vertical grips, viewer-left palm-up, and centered two-hand grip.
+
+These files are explicitly **not production assets**:
+
+- all are 1254 × 1254 instead of the locked 2048 × 2048 canvas
+- none is registered in `assets/asset_manifest.json`
+- none is discoverable by the collection generator
+- pose 003 still requires viewer-right grip-anchor normalization
+
+Their hashes and detailed QA status are recorded in `images/pose_candidates/README.md`.
+
 ## Current production gate
 
 | Asset | Canonical path | State | Next action |
 |---|---|---|---|
 | Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | Blocked | Restore and validate the intact locked source. |
-| Relaxed-open pose | `assets/base_bodies/base_pose_001_relaxed_open.png` | Blocked | Determine whether the restored neutral master already qualifies. |
-| Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | Waiting | Begin only after pose 001 approval. |
-| Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | Waiting | Begin only after pose 002 approval. |
-| Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | Waiting | Begin only after pose 003 approval. |
-| Centered two-hand grip | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | Waiting | Begin only after pose 004 approval. |
+| Relaxed-open pose | `assets/base_bodies/base_pose_001_relaxed_open.png` | Candidate reference only | Reproduce the selected candidate as a true rig-aligned 2048 × 2048 source. |
+| Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
+| Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | Candidate reference only | Normalize grip height against pose 002 after the master is approved. |
+| Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
+| Centered two-hand grip | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
 
 ## Verification state
 
