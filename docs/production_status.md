@@ -24,6 +24,7 @@ Tracked blocker: [Issue #4 — Restore intact approved 2048 × 2048 base avatar 
 - Exact-777 generator preflight, deterministic dry run, capacity checks, stale-output protection, duplicate rejection, exact count verification, and trait/image provenance hashes
 - Thirteen local validator and generator regression tests passing
 - Expanded GitHub Actions production-validation gate
+- Production-hardening PR validation run #7 completed successfully
 
 ## Active blocker
 
@@ -56,19 +57,18 @@ See `docs/qa/base_body_001_integrity_report.md`.
 - Local validator tests: **8 passed**
 - Local generator tests: **5 passed**
 - Combined local regression total: **13 passed**
-- Branch continuous integration: **pending PR execution**
+- Branch continuous integration: **passed — Production validation run #7**
 - Production asset library: **empty by design while Issue #4 remains open**
 
 ## Next production sequence
 
-1. Run and verify continuous integration for the hardening branch.
-2. Merge the verified infrastructure checkpoint into `main`.
-3. Intake and validate the intact approved master PNG.
-4. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
-5. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
-6. Register the shared artwork or create only the required arm/hand correction.
-7. Complete poses 002–005 sequentially.
-8. Run full asset validation and update the manifest after each accepted file.
+1. Merge the verified infrastructure checkpoint into `main`.
+2. Intake and validate the intact approved master PNG.
+3. Register `assets/base_bodies/base_body_001_neutral_master.png` without redesigning it.
+4. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
+5. Register the shared artwork or create only the required arm/hand correction.
+6. Complete poses 002–005 sequentially.
+7. Run full asset validation and update the manifest after each accepted file.
 
 ## Repository update policy
 
