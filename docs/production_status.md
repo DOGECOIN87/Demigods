@@ -58,6 +58,8 @@ These files are explicitly **not production assets**:
 
 Their hashes and detailed QA status are recorded in `images/pose_candidates/README.md`.
 
+The next controlled image request is documented in `prompts/16_native_2048_pose_001_candidate.md`. It permits one native 2048 × 2048 relaxed-open review candidate, explicitly forbids resizing the 1254 × 1254 references, and keeps the result outside the production registry until binary and manual QA both pass. This contingency does not supersede the preferred intact-source intake path or close Issue #4.
+
 ## Current production gate
 
 | Asset | Canonical path | State | Next action |
