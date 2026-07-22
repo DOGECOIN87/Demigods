@@ -35,6 +35,6 @@ Native review candidates remain under `images/background_candidates/native_candi
 | Attempt | Candidate | SHA-256 | Binary QA | Manual status |
 |---|---|---|---|---|
 | 001 | `native_candidates/background_002_violet_gothic_sanctum_candidate_attempt_001.png` | `7ef25fa04d6430b5e1a7ca688cc5755f28df5c4b9da6ec5d80d12507a1f0d2b0` | Pass — native 1254 × 1254 RGB, fully opaque | QA-failed: several altar pinnacles terminate in explicit cross-shaped finials. |
-| 002 | `native_candidates/background_002_violet_gothic_sanctum_candidate.png` | `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc` | Pass — native 1254 × 1254 RGB, fully opaque | Candidate: manual repository QA passed; explicit human visual approval pending. |
+| 002 | `native_candidates/background_002_violet_gothic_sanctum_candidate.png` | `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc` | Pass — native 1254 × 1254 RGB, fully opaque | Approved and registered byte-for-byte at the intended production path. |
 
-Neither candidate is stored under `assets/backgrounds/` or registered in the production manifest. The preserved Background 002 JPEG remains byte-for-byte unchanged at SHA-256 `ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde`.
+Attempt 001 remains outside production. Approved attempt 002 is stored byte-for-byte at `assets/backgrounds/background_002_violet_gothic_sanctum.png` and registered with SHA-256 `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`. The preserved Background 002 JPEG remains byte-for-byte unchanged at SHA-256 `ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde`.

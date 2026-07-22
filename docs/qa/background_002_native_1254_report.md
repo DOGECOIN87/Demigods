@@ -9,8 +9,9 @@ Date: 2026-07-22
 - Source reference: `images/background_candidates/background_002_violet_gothic_sanctum_reference.jpg`
 - Source SHA-256: `ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde`
 - Current candidate: `images/background_candidates/native_candidates/background_002_violet_gothic_sanctum_candidate.png`
-- Intended production path: `assets/backgrounds/background_002_violet_gothic_sanctum.png`
+- Production path: `assets/backgrounds/background_002_violet_gothic_sanctum.png`
 - Current candidate SHA-256: `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`
+- Production SHA-256: `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`
 - Prompt: `prompts/17_native_1254_backgrounds.md`, Background 002
 
 ## Candidate history
@@ -18,7 +19,7 @@ Date: 2026-07-22
 | Attempt | SHA-256 | Binary result | Manual result |
 |---|---|---|---|
 | 001 | `7ef25fa04d6430b5e1a7ca688cc5755f28df5c4b9da6ec5d80d12507a1f0d2b0` | Pass | Reject — several central altar pinnacles end in explicit cross-shaped finials, violating the symbol-removal requirement. |
-| 002 | `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc` | Pass | Repository manual QA pass; explicit human visual approval pending. |
+| 002 | `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc` | Pass | Approved — repository manual QA passed and the user replied “Continue” directly to the explicit approval request after reviewing the displayed candidate. |
 
 Attempt 002 was generated again from the exact preserved JPEG. It was not derived from, patched with, or postprocessed from attempt 001.
 
@@ -46,4 +47,4 @@ Attempt 002 was generated again from the exact preserved JPEG. It was not derive
 
 ## Decision
 
-**Candidate — not registered.** Attempt 002 passes automated and repository manual QA but requires explicit human visual approval before it may be copied to the production path or added to `registered_production_assets`.
+**Approved and registered.** The production file is byte-identical to approved attempt 002. Background 003 is the next independent background asset while Pose 001 remains unresolved.

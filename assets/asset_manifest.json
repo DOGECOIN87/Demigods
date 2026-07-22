@@ -55,6 +55,27 @@
         "postprocessing": []
       },
       "approved_on": "2026-07-22"
+    },
+    {
+      "id": "background_002",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
+      "status": "production_ready",
+      "sha256": "ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc",
+      "dimensions": [1254, 1254],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_002_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_002_violet_gothic_sanctum_reference.jpg",
+        "reference_sha256": "ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde",
+        "candidate_path": "images/background_candidates/native_candidates/background_002_violet_gothic_sanctum_candidate.png",
+        "native_dimensions": [1254, 1254],
+        "postprocessing": []
+      },
+      "approved_on": "2026-07-22"
     }
   ],
   "approved_visual_references": [

@@ -18,7 +18,13 @@
   "passed_binary_qa": true,
   "manual_qa": {
     "passed": true,
-    "status": "candidate",
-    "human_approval_required": true
+    "status": "approved",
+    "human_approval_required": false,
+    "human_approval_record": "User replied 'Continue' directly to the displayed Background 002 approval request on 2026-07-22."
+  },
+  "production_registration": {
+    "status": "production_ready",
+    "path": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
+    "sha256": "ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc"
   }
 }
