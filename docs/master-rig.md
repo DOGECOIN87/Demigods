@@ -1,20 +1,20 @@
 # Master Rig
 
-All collection traits must align to one immutable 2048 × 2048 front-facing master rig.
+All collection traits must align to one immutable 1254 × 1254 front-facing master rig. The approved proportionally rebased integer anchors below are canonical.
 
 | Anchor | Coordinate |
 |---|---:|
-| Canvas center | X 1024 |
-| Top of head | Y 230 |
-| Head center | X 1024, Y 560 |
-| Eye line | Y 600 |
-| Mouth center | X 1024, Y 720 |
-| Shoulder line | Y 930 |
-| Waist center | X 1024, Y 1320 |
-| Viewer-left hand | X 660, Y 1260 |
-| Viewer-right hand | X 1388, Y 1260 |
-| Foot baseline | Y 1860 |
-| Maximum bounds | X 380–1668, Y 210–1860 |
+| Canvas center | X 627 |
+| Top of head | Y 141 |
+| Head center | X 627, Y 343 |
+| Eye line | Y 367 |
+| Mouth center | X 627, Y 441 |
+| Shoulder line | Y 569 |
+| Waist center | X 627, Y 808 |
+| Viewer-left hand | X 404, Y 772 |
+| Viewer-right hand | X 850, Y 772 |
+| Foot baseline | Y 1139 |
+| Maximum bounds | X 233–1021, Y 129–1139 |
 
 ## Rules
 

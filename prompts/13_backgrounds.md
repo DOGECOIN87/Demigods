@@ -4,7 +4,7 @@
 Create exactly one polished square fantasy environment background.
 
 Canvas:
-- 2048 × 2048 pixels
+- 1254 × 1254 pixels
 - full-bleed opaque sRGB image
 - no character, silhouette, text, frame, or trait-sheet layout
 
@@ -12,7 +12,7 @@ Environment: [DESCRIPTION]
 
 Composition:
 - centered, front-facing environment
-- reserve character-safe region X 380–1668 and Y 210–1860
+- reserve character-safe region X 233–1021 and Y 129–1139
 - place major architecture around or behind the safe region
 - preserve clear contrast behind the expected head and torso
 - floor perspective supports a centered front-facing figure

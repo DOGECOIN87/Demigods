@@ -16,17 +16,17 @@ class ManifestConsistencyTests(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         return Path(temp.name)
 
-    def make_asset(self, root: Path, *, size: tuple[int, int] = (2048, 2048)) -> Path:
+    def make_asset(self, root: Path, *, size: tuple[int, int] = (1254, 1254)) -> Path:
         path = root / "assets" / "base_bodies" / "base_body_001_neutral_master.png"
         path.parent.mkdir(parents=True, exist_ok=True)
         image = Image.new("RGBA", size, (0, 0, 0, 0))
-        image.paste((200, 180, 160, 255), (400, 300, 1600, 1860))
+        image.paste((200, 180, 160, 255), (245, 184, 979, 1139))
         image.save(path)
         return path
 
     def manifest(self, entries: list[dict[str, object]]) -> dict[str, object]:
         return {
-            "master_canvas": {"width": 2048, "height": 2048},
+            "master_canvas": {"width": 1254, "height": 1254},
             "registered_production_assets": entries,
         }
 
@@ -43,7 +43,7 @@ class ManifestConsistencyTests(unittest.TestCase):
             "path": "assets/base_bodies/base_body_001_neutral_master.png",
             "status": "production_ready",
             "sha256": validate_assets.sha256_file(path),
-            "dimensions": [2048, 2048],
+            "dimensions": [1254, 1254],
         }
 
     def test_empty_registry_passes_during_preproduction(self) -> None:

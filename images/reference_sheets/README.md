@@ -5,7 +5,7 @@ These images document the concept-art and trait-sheet development process. They 
 Final production assets must:
 
 - contain no character names
-- use the locked 2048×2048 master rig
+- use the locked 1254×1254 master rig
 - preserve consistent front-facing alignment and upper-left lighting
 - be isolated by category on true transparent canvases
 - remain fully interchangeable across the collection

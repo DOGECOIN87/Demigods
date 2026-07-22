@@ -8,7 +8,7 @@ The source must be:
 
 - the exact previously approved artwork
 - PNG format
-- 2048 × 2048 pixels
+- 1254 × 1254 pixels
 - RGBA
 - genuine transparent background
 - full uncropped avatar
@@ -83,11 +83,11 @@ After registration:
      "path": "assets/base_bodies/base_body_001_neutral_master.png",
      "status": "production_ready",
      "sha256": "<exact lowercase SHA-256 of the accepted PNG>",
-     "dimensions": [2048, 2048]
+     "dimensions": [1254, 1254]
    }
    ```
 
-   The registry remains empty while the approved source is blocked; this example does not authorize a placeholder or substitute asset.
+   The registry remains empty until the existing candidate passes manual approval; this example does not authorize automatic promotion.
 4. Run `python scripts/validate_manifest_consistency.py --manifest assets/asset_manifest.json --repository-root .`.
 5. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
 6. Register the same artwork at `assets/base_bodies/base_pose_001_relaxed_open.png` only when it already qualifies.

@@ -287,8 +287,8 @@ def generate_collection(
     config_path: Path | None = None,
     compatibility_path: Path | None = None,
 ) -> dict[str, Any]:
-    width = int(collection.get("canvas", {}).get("width", 2048))
-    height = int(collection.get("canvas", {}).get("height", 2048))
+    width = int(collection.get("canvas", {}).get("width", 1254))
+    height = int(collection.get("canvas", {}).get("height", 1254))
     size = (width, height)
 
     assets = discover_assets(assets_root)
@@ -394,8 +394,8 @@ def main(argv: list[str] | None = None) -> int:
                 "--allow-nonstandard-supply is reserved for tests"
             )
 
-        width = int(collection.get("canvas", {}).get("width", 2048))
-        height = int(collection.get("canvas", {}).get("height", 2048))
+        width = int(collection.get("canvas", {}).get("width", 1254))
+        height = int(collection.get("canvas", {}).get("height", 1254))
         assets = discover_assets(args.assets)
         errors = validate_library(args.assets, assets, (width, height))
         if errors:

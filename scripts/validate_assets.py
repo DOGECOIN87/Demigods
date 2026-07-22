@@ -14,7 +14,13 @@ from typing import Any
 
 from PIL import Image
 
-CANVAS_SIZE = (2048, 2048)
+CANVAS_SIZE = (1254, 1254)
+BACKGROUND_CANDIDATE_COUNT = 8
+BACKGROUND_CANDIDATE_DIRECTORY = Path("images/background_candidates")
+BACKGROUND_CANDIDATE_SIZE = (1024, 1024)
+BACKGROUND_CANDIDATE_STATUS = "reference_only_requires_native_1254_png"
+SHA256_PATTERN = re.compile(r"^[a-f0-9]{64}$")
+DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 PRODUCTION_CATEGORIES: dict[str, dict[str, Any]] = {
     "backgrounds": {
         "prefixes": ("background_",),
@@ -283,6 +289,11 @@ def load_json(path: Path) -> dict[str, Any]:
     return value
 
 
+def is_safe_repository_path(value: str) -> bool:
+    candidate = Path(value)
+    return not candidate.is_absolute() and ".." not in candidate.parts
+
+
 def validate_manifest(path: Path, repository_root: Path) -> ManifestValidationResult:
     errors: list[str] = []
     warnings: list[str] = []
@@ -295,8 +306,13 @@ def validate_manifest(path: Path, repository_root: Path) -> ManifestValidationRe
         errors.append("target_supply must equal exactly 777")
 
     canvas = manifest.get("master_canvas", {})
-    if canvas.get("width") != 2048 or canvas.get("height") != 2048:
-        errors.append("master_canvas must be 2048 × 2048")
+    if (
+        canvas.get("width") != CANVAS_SIZE[0]
+        or canvas.get("height") != CANVAS_SIZE[1]
+    ):
+        errors.append(
+            f"master_canvas must be {CANVAS_SIZE[0]} × {CANVAS_SIZE[1]}"
+        )
 
     directories = manifest.get("production_directories")
     if not isinstance(directories, dict):
@@ -330,6 +346,197 @@ def validate_manifest(path: Path, repository_root: Path) -> ManifestValidationRe
         if item.get("production_ready") is False:
             warnings.append(
                 f"visual reference is intentionally not production-ready: {reference_path}"
+            )
+
+    background_candidates = manifest.get("background_candidates")
+    if not isinstance(background_candidates, list):
+        errors.append("background_candidates must be an array")
+        background_candidates = []
+    if len(background_candidates) != BACKGROUND_CANDIDATE_COUNT:
+        errors.append(
+            "background_candidates must contain exactly "
+            f"{BACKGROUND_CANDIDATE_COUNT} entries"
+        )
+
+    seen_candidate_ids: set[str] = set()
+    seen_candidate_paths: set[str] = set()
+    seen_candidate_hashes: set[str] = set()
+    seen_production_paths: set[str] = set()
+
+    for index, item in enumerate(background_candidates, start=1):
+        label = f"background_candidates[{index - 1}]"
+        if not isinstance(item, dict):
+            errors.append(f"{label} must be an object")
+            continue
+
+        expected_id = f"background_{index:03d}"
+        candidate_id = item.get("id")
+        if candidate_id != expected_id:
+            errors.append(f"{label}.id must equal {expected_id!r}")
+        if isinstance(candidate_id, str):
+            if candidate_id in seen_candidate_ids:
+                errors.append(f"duplicate background candidate id: {candidate_id}")
+            seen_candidate_ids.add(candidate_id)
+
+        candidate_path = item.get("path")
+        resolved: Path | None = None
+        if not isinstance(candidate_path, str) or not candidate_path:
+            errors.append(f"{label}.path must be a non-empty string")
+        elif not is_safe_repository_path(candidate_path):
+            errors.append(f"{label}.path must be a safe repository-relative path")
+        else:
+            normalized_path = Path(candidate_path).as_posix()
+            path_value = Path(normalized_path)
+            if path_value.parent != BACKGROUND_CANDIDATE_DIRECTORY:
+                errors.append(
+                    f"{label}.path must be directly under "
+                    f"{BACKGROUND_CANDIDATE_DIRECTORY.as_posix()}/"
+                )
+            if path_value.suffix.lower() not in {".jpg", ".jpeg"}:
+                errors.append(f"{label}.path must reference a JPEG")
+            if not path_value.name.startswith(f"{expected_id}_"):
+                errors.append(f"{label}.path filename must start with {expected_id}_")
+            if normalized_path in seen_candidate_paths:
+                errors.append(f"duplicate background candidate path: {normalized_path}")
+            seen_candidate_paths.add(normalized_path)
+            resolved = repository_root / path_value
+            if not resolved.is_file():
+                errors.append(f"background candidate does not exist: {candidate_path}")
+
+        if item.get("status") != BACKGROUND_CANDIDATE_STATUS:
+            errors.append(
+                f"{label}.status must equal {BACKGROUND_CANDIDATE_STATUS!r}"
+            )
+        if item.get("production_ready") is not False:
+            errors.append(f"{label}.production_ready must be false")
+        if item.get("source_format") != "JPEG":
+            errors.append(f"{label}.source_format must equal 'JPEG'")
+        if item.get("source_mode") != "RGB":
+            errors.append(f"{label}.source_mode must equal 'RGB'")
+        if item.get("source_dimensions") != list(BACKGROUND_CANDIDATE_SIZE):
+            errors.append(
+                f"{label}.source_dimensions must equal "
+                f"{list(BACKGROUND_CANDIDATE_SIZE)}"
+            )
+        declared_size_bytes = item.get("source_size_bytes")
+        if not isinstance(declared_size_bytes, int) or declared_size_bytes <= 0:
+            errors.append(f"{label}.source_size_bytes must be a positive integer")
+
+        expected_sha = item.get("sha256")
+        if not isinstance(expected_sha, str) or not SHA256_PATTERN.fullmatch(expected_sha):
+            errors.append(f"{label}.sha256 must be a lowercase 64-character digest")
+        elif expected_sha in seen_candidate_hashes:
+            errors.append(f"duplicate background candidate SHA-256: {expected_sha}")
+        else:
+            seen_candidate_hashes.add(expected_sha)
+
+        provenance = item.get("provenance")
+        if not isinstance(provenance, dict):
+            errors.append(f"{label}.provenance must be an object")
+        else:
+            if provenance.get("origin") != "user_attachment":
+                errors.append(f"{label}.provenance.origin must equal 'user_attachment'")
+            source_filename = provenance.get("source_filename")
+            if (
+                not isinstance(source_filename, str)
+                or not source_filename
+                or Path(source_filename).name != source_filename
+                or Path(source_filename).suffix.lower() not in {".jpg", ".jpeg"}
+            ):
+                errors.append(
+                    f"{label}.provenance.source_filename must be a JPEG basename"
+                )
+            received_on = provenance.get("received_on")
+            if not isinstance(received_on, str) or not DATE_PATTERN.fullmatch(received_on):
+                errors.append(
+                    f"{label}.provenance.received_on must use YYYY-MM-DD"
+                )
+            if provenance.get("preservation") != "byte_for_byte":
+                errors.append(
+                    f"{label}.provenance.preservation must equal 'byte_for_byte'"
+                )
+            if provenance.get("modifications") != []:
+                errors.append(f"{label}.provenance.modifications must be an empty array")
+
+        if resolved is not None and resolved.is_file():
+            actual_sha = sha256_file(resolved)
+            if isinstance(expected_sha, str) and expected_sha != actual_sha:
+                errors.append(f"background candidate SHA-256 mismatch: {candidate_path}")
+            actual_size_bytes = resolved.stat().st_size
+            if declared_size_bytes != actual_size_bytes:
+                errors.append(
+                    f"background candidate byte size is {actual_size_bytes}, "
+                    f"manifest declares {declared_size_bytes}: {candidate_path}"
+                )
+
+            try:
+                with Image.open(resolved) as probe:
+                    probe.verify()
+                with Image.open(resolved) as image:
+                    image.load()
+                    if image.size != BACKGROUND_CANDIDATE_SIZE:
+                        errors.append(
+                            f"background candidate dimensions are {list(image.size)}, "
+                            f"expected {list(BACKGROUND_CANDIDATE_SIZE)}: {candidate_path}"
+                        )
+                    if image.format != "JPEG":
+                        errors.append(
+                            f"background candidate format is {image.format}, "
+                            f"expected JPEG: {candidate_path}"
+                        )
+                    if image.mode != "RGB":
+                        errors.append(
+                            f"background candidate mode is {image.mode}, "
+                            f"expected RGB: {candidate_path}"
+                        )
+            except Exception as exc:  # noqa: BLE001
+                errors.append(
+                    f"could not fully decode background candidate {candidate_path}: {exc}"
+                )
+
+        intended = item.get("intended_production_path")
+        intended_parts = Path(intended).parts if isinstance(intended, str) else ()
+        if (
+            len(intended_parts) < 3
+            or intended_parts[0] != "assets"
+            or intended_parts[1] != "backgrounds"
+            or Path(intended).suffix != ".png"
+            or not is_safe_repository_path(intended)
+            or not Path(intended).name.startswith(f"{expected_id}_")
+        ):
+            errors.append(
+                f"background candidate has noncanonical intended production path: {intended!r}"
+            )
+        elif intended in seen_production_paths:
+            errors.append(f"duplicate intended production path: {intended}")
+        else:
+            seen_production_paths.add(intended)
+
+        if isinstance(candidate_path, str):
+            warnings.append(f"background candidate is reference-only: {candidate_path}")
+
+    candidate_directory = repository_root / BACKGROUND_CANDIDATE_DIRECTORY
+    on_disk_candidates = (
+        {
+            path.relative_to(repository_root).as_posix()
+            for path in candidate_directory.iterdir()
+            if path.is_file() and path.suffix.lower() in {".jpg", ".jpeg"}
+        }
+        if candidate_directory.is_dir()
+        else set()
+    )
+    if on_disk_candidates != seen_candidate_paths:
+        missing = sorted(seen_candidate_paths - on_disk_candidates)
+        undeclared = sorted(on_disk_candidates - seen_candidate_paths)
+        if missing:
+            errors.append(
+                "manifest-declared background candidates missing from disk: "
+                + ", ".join(missing)
+            )
+        if undeclared:
+            errors.append(
+                "undeclared background candidate JPEGs found on disk: "
+                + ", ".join(undeclared)
             )
 
     blocked = manifest.get("blocked_assets", [])

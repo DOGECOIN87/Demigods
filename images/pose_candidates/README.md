@@ -1,6 +1,6 @@
 # Demigods Pose Candidates
 
-These five images are transparent visual candidates for the locked base-pose family. They are reference material only and must not be copied into `assets/base_bodies/`, added to `registered_production_assets`, or used by the generator.
+These five images are transparent visual candidates for the locked base-pose family. The collection canvas was revised to their native 1254 × 1254 dimensions on 2026-07-22. Canvas compliance alone does not promote them: they remain reference material until each passes manual rig, anatomy, clothing, lighting, identity, and pose-consistency QA.
 
 The relaxed-open image is the selected visual base for this candidate set. The other images preserve that general identity while demonstrating the required grip and palm directions.
 
@@ -14,10 +14,10 @@ All five files:
 - have transparent canvas corners
 - contain one centered full-body character
 - contain no prop, text, contact sheet, or baked checkerboard
-- are 1254 × 1254 rather than the locked 2048 × 2048 production size
+- use the locked native 1254 × 1254 production canvas
 - lack an embedded ICC profile
 
-Because the dimensions fail the locked canvas requirement, every file remains QA-blocked. Pose 003 also keeps its viewer-right grip above the intended common waist-level anchor because two correction attempts were rejected during image-output safety review.
+The former dimension failure is resolved. Pose 001 still requires manual comparison with the proportionally rebased rig and knee-length clothing requirement before promotion. Poses 002–005 must be reconciled to the approved Pose 001 body, scale, and foot baseline; Pose 003 also keeps its viewer-right grip above the intended common waist-level anchor.
 
 ## Candidate inventory
 
@@ -31,4 +31,4 @@ Because the dimensions fail the locked canvas requirement, every file remains QA
 
 ## Promotion gate
 
-A candidate may be promoted only after a true 2048 × 2048 RGBA source is produced without resampling an undersized file, its geometry is normalized to the locked anchors, manual visual QA passes, and the production manifest records its exact final SHA-256.
+A candidate may be promoted only after complete native 1254 × 1254 RGBA decoding succeeds, its geometry is normalized to the locked anchors, manual visual QA passes, explicit human approval is recorded, and the production manifest records its exact final SHA-256. Never resize a candidate to repair rig or pose drift.

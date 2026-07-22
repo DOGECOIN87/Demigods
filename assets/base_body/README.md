@@ -23,9 +23,9 @@ See the complete findings in:
 
 `docs/qa/base_body_001_integrity_report.md`
 
-Production is paused at `base_pose_001_relaxed_open.png` until the original intact approved avatar is re-uploaded as a 2048 × 2048 RGBA PNG or equivalent lossless source.
+The damaged WebP remains archival only. Production now proceeds from the intact 1254 × 1254 RGBA candidate at `images/pose_candidates/base_pose_001_relaxed_open_candidate.png` after manual identity, rig, clothing, lighting, anatomy, and isolation QA.
 
-Do not upscale the damaged WebP, use truncated-image recovery as a production asset, regenerate the avatar from memory, or reconstruct it from the low-resolution reference sheets.
+Do not upscale the damaged WebP, use truncated-image recovery as a production asset, regenerate the avatar from memory, or reconstruct it from the reference sheets.
 
 ## Production rules
 

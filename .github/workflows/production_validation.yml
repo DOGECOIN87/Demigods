@@ -6,7 +6,9 @@ on:
       - 'assets/**'
       - 'config/**'
       - 'docs/**'
+      - 'images/**'
       - 'metadata/**'
+      - 'prompts/**'
       - 'scripts/**'
       - 'tests/**'
       - 'README.md'
@@ -20,7 +22,9 @@ on:
       - 'assets/**'
       - 'config/**'
       - 'docs/**'
+      - 'images/**'
       - 'metadata/**'
+      - 'prompts/**'
       - 'scripts/**'
       - 'tests/**'
       - 'README.md'
@@ -69,7 +73,7 @@ jobs:
             --assets assets \
             --json-report validation_output/config_validation_report.json
 
-      - name: Audit production assets and manifest
+      - name: Audit production assets, reference provenance, and manifest
         run: |
           python scripts/validate_assets.py assets \
             --manifest assets/asset_manifest.json \

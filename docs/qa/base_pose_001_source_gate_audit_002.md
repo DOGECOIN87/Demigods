@@ -1,5 +1,7 @@
 # Base Pose 001 Source Gate Audit 002
 
+> Historical record: the 2048 × 2048 production rule described below was superseded on 2026-07-22 by `docs/qa/canvas_standard_revision_1254.md`. The dimension blocker is resolved; the manual clothing, rig, and consistency observations remain review inputs.
+
 Date: 2026-07-21
 Audited `main`: `f3ee920385fc682c644f053ff8b5499824650b3c`
 
@@ -79,6 +81,6 @@ The generator failure is a production-readiness result, not a validator defect.
 - Do not alter the current blocked manifest state.
 - Keep Prompt 16 and all 1254 × 1254 candidates outside production.
 
-## Next required action
+## Superseded outcome
 
-Supply the intact, explicitly approved 2048 × 2048 RGBA master PNG with genuine transparency. Then run binary intake without `--register`, complete manual identity/rig/clothing/lighting QA, obtain explicit human approval, and only then register Pose 001 before deriving poses 002–005 sequentially.
+Do not follow the former resolution instruction in this historical audit. Current review uses the existing native 1254 × 1254 RGBA Pose 001 candidate. Run binary intake without `--register`, complete manual identity, proportional-rig, clothing, anatomy, lighting, and isolation QA, obtain explicit human approval, and only then register Pose 001 before deriving poses 002–005 sequentially.

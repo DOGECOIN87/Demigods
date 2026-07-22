@@ -6,7 +6,7 @@
 [INSERT LOCKED MASTER SPECIFICATION]
 
 Create one matched eye-set trait: [COLOR / PUPIL / STYLE].
-- both eyes aligned to Y 600 using identical approved spacing and scale
+- both eyes aligned to Y 367 using identical approved spacing and scale
 - include eye lines, lashes, sclera, irises, pupils, internal highlights, and shading
 - use shared upper-left catchlight logic
 - exclude eyebrows, nose, mouth, face, skin, blush, hair, and expression marks
@@ -39,7 +39,7 @@ FILENAME: eyebrows_[NUMBER]_[MOOD].png
 [INSERT LOCKED MASTER SPECIFICATION]
 
 Create one isolated mouth trait expressing [EXPRESSION].
-- center at X 1024, Y 720
+- center at X 627, Y 441
 - preserve approved width and vertical range
 - include only the mouth line and any required stylized interior, tongue, lips, or small teeth
 - exclude face, nose, chin, blush, eyes, eyebrows, hair, and expression marks

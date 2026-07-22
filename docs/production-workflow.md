@@ -120,7 +120,7 @@ A generated collection is not release-ready until the independent output verifie
 - image SHA-256 values that match the rendered PNG bytes
 - manifest signature and image arrays matching token order
 - independently recomputed trait and image provenance hashes
-- complete 2048 × 2048 RGBA decoding for every image
+- complete 1254 × 1254 RGBA decoding for every image
 - opaque final composites produced by full-canvas backgrounds
 - no missing, extra, stale, or malformed output files
 
@@ -128,7 +128,7 @@ A generated collection is not release-ready until the independent output verifie
 
 An asset is not production-ready until it has:
 
-- exact 2048 × 2048 dimensions
+- exact 1254 × 1254 dimensions
 - correct full-canvas anchor placement
 - complete binary decoding with no truncation or damaged frames
 - PNG format and true transparency where required

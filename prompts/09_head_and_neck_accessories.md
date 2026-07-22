@@ -6,7 +6,7 @@
 [INSERT LOCKED MASTER SPECIFICATION]
 
 Create one isolated [CROWN / HALO / HORN SET / TIARA / LAUREL / VEIL / CIRCLET].
-- center to the approved head anchor at X 1024, Y 560
+- center to the approved head anchor at X 627, Y 343
 - preserve hidden overlap where it enters or sits behind hair
 - use a balanced pair for horns or side ornaments
 - retain transparent interiors for halos and open metalwork

@@ -4,19 +4,19 @@ Production specifications, category prompts, reference images, validation tools,
 
 ## Current production status
 
-**Phase 1 is blocked pending restoration of the intact approved 2048 × 2048 base-avatar source.**
+**Phase 1 uses a locked 1254 × 1254 canvas. The former resolution blocker is removed; Pose 001 is awaiting manual production approval.**
 
 - Live ledger: `docs/production_status.md`
 - QA report: `docs/qa/base_body_001_integrity_report.md`
 - Intake workflow: `docs/workflows/approved_base_intake.md`
 - Tracked blocker: [Issue #4](https://github.com/DOGECOIN87/Demigods/issues/4)
 
-The approved visual design remains locked. Do not upscale, reconstruct, regenerate, or approximate the avatar from the damaged repository WebP or low-resolution reference sheets.
+The approved visual design remains locked. Use the intact 1254 × 1254 RGBA Pose 001 candidate for review; do not reconstruct the avatar from the damaged repository WebP.
 
 ## Core requirements
 
 - Every non-background trait is a separate transparent PNG.
-- Every character-compatible asset uses one locked 2048 × 2048 master canvas and shared rig.
+- Every character-compatible asset uses one locked 1254 × 1254 master canvas and shared proportionally rebased rig.
 - All assets are perfectly front-facing with identical scale, anchors, proportions, and crop.
 - Key light comes from the upper-left; form shadows fall toward the lower-right.
 - Character names are not part of the trait system.
@@ -30,6 +30,7 @@ assets/                   Canonical full-canvas production categories and source
 prompts/                  Reusable image-generation and extraction prompts
 docs/                     Layer order, naming, rig, QA, workflow, and production status
 images/reference_sheets/  Visual guides from the design process; never production assets
+images/background_candidates/  Exact user-supplied background references awaiting native production renders
 config/                   Collection and compatibility configuration
 metadata/                 Token metadata schema
 scripts/                  Intake, validation, configuration, generation, and output-verification tools
@@ -83,7 +84,7 @@ python scripts/validate_assets.py assets \
   --json-report asset_validation_report.json
 ```
 
-The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, and blocked-reference manifest consistency.
+The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, blocked-reference consistency, and byte-for-byte provenance for all eight background candidates.
 
 Verify provenance for every registered production asset before treating it as usable:
 
@@ -94,7 +95,7 @@ python scripts/validate_manifest_consistency.py \
   --json-report manifest_consistency_report.json
 ```
 
-The registry is intentionally empty until the intact approved source passes binary and manual visual QA. Once an asset is registered, the checker requires its file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
+The registry remains empty until the existing Pose 001 candidate passes manual visual QA and is explicitly promoted. Once an asset is registered, the checker requires its file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
 
 ## Exact-777 generation
 
@@ -127,7 +128,7 @@ The output verifier requires the exact `0001`–`0777` image and metadata sets, 
 
 ## Recommended workflow
 
-1. Restore and approve the neutral master base.
+1. Complete manual QA and approve the 1254 × 1254 Pose 001 master candidate.
 2. Lock the rig coordinates and lighting.
 3. Approve hand-pose variants sequentially.
 4. Create one isolated test asset from every category.

@@ -1,6 +1,6 @@
 # Production Asset Library
 
-Place approved final assets into the following category folders. Every character-compatible production PNG must remain on the full 2048 × 2048 transparent canvas at its final compositing coordinates.
+Place approved final assets into the following category folders. Every character-compatible production PNG must remain on the full 1254 × 1254 transparent canvas at its final compositing coordinates.
 
 ```text
 assets/
@@ -37,8 +37,8 @@ The singular `assets/base_body/` folder is reserved for source-reference documen
 
 ## Format rules
 
-- Character-compatible production layers: 2048 × 2048 RGBA PNG with genuine transparency.
-- Backgrounds: 2048 × 2048 PNG that fills the full canvas.
+- Character-compatible production layers: 1254 × 1254 RGBA PNG with genuine transparency.
+- Backgrounds: 1254 × 1254 PNG that fills the full canvas.
 - No JPEG or WebP production assets.
 - Preserve the full canvas; never tightly crop visible pixels.
 

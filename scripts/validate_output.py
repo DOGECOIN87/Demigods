@@ -204,7 +204,7 @@ def validate_output(
     output: Path,
     *,
     expected_supply: int = 777,
-    expected_size: tuple[int, int] = (2048, 2048),
+    expected_size: tuple[int, int] = (1254, 1254),
     token_padding: int = 4,
     allow_dry_run: bool = False,
 ) -> OutputValidationResult:
@@ -463,8 +463,8 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     parser.add_argument("--supply", type=int, default=777)
-    parser.add_argument("--width", type=int, default=2048)
-    parser.add_argument("--height", type=int, default=2048)
+    parser.add_argument("--width", type=int, default=1254)
+    parser.add_argument("--height", type=int, default=1254)
     parser.add_argument("--token-padding", type=int, default=4)
     parser.add_argument("--allow-dry-run", action="store_true")
     parser.add_argument("--json-report", type=Path)

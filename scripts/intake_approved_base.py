@@ -12,7 +12,7 @@ from pathlib import Path
 
 from PIL import Image
 
-EXPECTED_SIZE = (2048, 2048)
+EXPECTED_SIZE = (1254, 1254)
 EXPECTED_MODE = "RGBA"
 DEFAULT_OUTPUT = Path("assets/base_bodies/base_body_001_neutral_master.png")
 
@@ -105,7 +105,7 @@ def inspect_source(path: Path) -> dict[str, object]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Validate and optionally register the exact approved 2048x2048 RGBA PNG."
+        description="Validate and optionally register the exact approved 1254x1254 RGBA PNG."
     )
     parser.add_argument("source", type=Path)
     parser.add_argument("--report", type=Path, default=Path("base_source_intake_report.json"))

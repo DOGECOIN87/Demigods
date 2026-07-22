@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "canvas": {"width": 2048, "height": 2048},
+  "canvas": {"width": 1254, "height": 1254},
   "target_supply": 777,
   "seed": "replace-with-final-seed",
   "layer_order": [

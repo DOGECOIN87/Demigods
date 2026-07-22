@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "collection": "Demigods",
   "target_supply": 777,
   "status_ledger": "docs/production_status.md",
   "active_blocker_issue": 4,
   "master_canvas": {
-    "width": 2048,
-    "height": 2048,
+    "width": 1254,
+    "height": 1254,
     "color_space": "sRGB",
     "format": "RGBA PNG"
   },
@@ -44,11 +44,179 @@
       "production_ready": false,
       "source_integrity": "failed",
       "qa_report": "docs/qa/base_body_001_integrity_report.md",
-      "required_action": "reupload_intact_2048x2048_rgba_png",
+      "required_action": "retain_as_archival_visual_reference",
       "intended_production_path": "assets/base_bodies/base_body_001_neutral_master.png",
       "front_facing": true,
       "transparent_background": true,
       "interchangeable_rig_anchor": true
+    },
+    {
+      "id": "base_pose_001_candidate",
+      "category": "base_body_reference",
+      "path": "images/pose_candidates/base_pose_001_relaxed_open_candidate.png",
+      "status": "canvas_compliant_manual_qa_pending",
+      "production_ready": false,
+      "source_integrity": "passed",
+      "qa_report": "docs/qa/canvas_standard_revision_1254.md",
+      "required_action": "complete_manual_rig_clothing_identity_review",
+      "intended_production_path": "assets/base_bodies/base_pose_001_relaxed_open.png",
+      "front_facing": true,
+      "transparent_background": true,
+      "interchangeable_rig_anchor": false
+    }
+  ],
+  "background_candidates": [
+    {
+      "id": "background_001",
+      "path": "images/background_candidates/background_001_celestial_throne_hall_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 374972,
+      "sha256": "b92287aaa4fe36fd4c1b8102367a51b635c8f912d91aca9db37e91aa4c20a8e8",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "01-grok_1784705317276.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_001_celestial_throne_hall.png"
+    },
+    {
+      "id": "background_002",
+      "path": "images/background_candidates/background_002_violet_gothic_sanctum_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 330104,
+      "sha256": "ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "02-grok_1784705280816.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_002_violet_gothic_sanctum.png"
+    },
+    {
+      "id": "background_003",
+      "path": "images/background_candidates/background_003_arcane_library_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 359945,
+      "sha256": "afc64910b8f1c44f49f33294a71f8228961025ae8a8f7f46b40def2a268e2785",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "03-grok_1784705276738.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_003_arcane_library.png"
+    },
+    {
+      "id": "background_004",
+      "path": "images/background_candidates/background_004_crescent_star_dreamscape_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 279626,
+      "sha256": "7ef8cedff521095601e1225f6ad87f8024930c05d9e458dda138e92ae16c6d3e",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "04-grok_1784705272270.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_004_crescent_star_dreamscape.png"
+    },
+    {
+      "id": "background_005",
+      "path": "images/background_candidates/background_005_solar_sky_temple_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 292959,
+      "sha256": "ccb3a8265fb4294752b15d0ef3fcc320b52ce77ddad2cf03abdfe1d5eed46e15",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "01-grok_1784705321362.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_005_solar_sky_temple.png"
+    },
+    {
+      "id": "background_006",
+      "path": "images/background_candidates/background_006_moonlit_marble_balcony_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 244688,
+      "sha256": "8bd53a70cac05a4dbed40bcff596e70121e4d5d693150054b3f8e29b5608d4ed",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "02-grok_1784705293662.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_006_moonlit_marble_balcony.png"
+    },
+    {
+      "id": "background_007",
+      "path": "images/background_candidates/background_007_golden_celestial_gateway_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 339835,
+      "sha256": "b9ca9d7afc28f1314cbe0dc33b7dc6226df9233a1c25d42f8d1bdd85d9c221b5",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "02-grok_1784705287179.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_007_golden_celestial_gateway.png"
+    },
+    {
+      "id": "background_008",
+      "path": "images/background_candidates/background_008_violet_void_portal_reference.jpg",
+      "status": "reference_only_requires_native_1254_png",
+      "production_ready": false,
+      "source_format": "JPEG",
+      "source_mode": "RGB",
+      "source_dimensions": [1024, 1024],
+      "source_size_bytes": 217673,
+      "sha256": "cb20d17670e3d95b932979613a01dbf8e17f33fae52c46f8656f96d2f905aa29",
+      "provenance": {
+        "origin": "user_attachment",
+        "source_filename": "04-grok_1784705284027.jpg",
+        "received_on": "2026-07-22",
+        "preservation": "byte_for_byte",
+        "modifications": []
+      },
+      "intended_production_path": "assets/backgrounds/background_008_violet_void_portal.png"
     }
   ],
   "blocked_assets": [
@@ -57,17 +225,17 @@
       "category": "base_bodies",
       "intended_path": "assets/base_bodies/base_body_001_neutral_master.png",
       "status": "blocked",
-      "reason": "The approved repository reference is damaged and historical upload chunks are incomplete.",
-      "required_input": "An intact approved 2048x2048 RGBA PNG or equivalent lossless source."
+      "reason": "The archived approved WebP is damaged; the 1254 x 1254 Pose 001 candidate now passes the canvas gate but is not yet approved as the neutral production master.",
+      "required_input": "Explicit manual approval of the existing 1254 x 1254 RGBA Pose 001 candidate or another intact 1254 x 1254 RGBA source."
     },
     {
       "id": "base_pose_001",
       "category": "base_bodies",
       "intended_path": "assets/base_bodies/base_pose_001_relaxed_open.png",
       "status": "blocked",
-      "depends_on": "base_body_001",
-      "reason": "Pose eligibility cannot be determined from the damaged approved source without reconstructing missing avatar pixels.",
-      "required_input": "An intact approved 2048x2048 RGBA PNG or equivalent lossless source."
+      "depends_on": "base_pose_001_candidate",
+      "reason": "The existing candidate is canvas-compliant under the revised standard, but manual identity, proportional-rig, clothing, lighting, and anatomy approval remains required before promotion.",
+      "required_input": "Manual approval and production promotion of images/pose_candidates/base_pose_001_relaxed_open_candidate.png."
     }
   ],
   "queued_base_poses": [

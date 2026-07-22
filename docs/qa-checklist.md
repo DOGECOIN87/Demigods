@@ -1,7 +1,7 @@
 # Asset QA Checklist
 
 ## Geometry and rig
-- [ ] 2048 × 2048 canvas.
+- [ ] 1254 × 1254 canvas.
 - [ ] Front-facing orthographic appearance.
 - [ ] No yaw, pitch, roll, perspective, scale, or pose drift.
 - [ ] Correct eye line, mouth line, shoulders, waist, hands, and foot baseline.

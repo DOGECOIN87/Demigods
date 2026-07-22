@@ -44,7 +44,7 @@ class ValidateConfigTests(unittest.TestCase):
 
     def test_changed_locked_anchor_fails(self) -> None:
         collection = self.collection()
-        collection["master_rig"]["eye_line_y"] = 601  # type: ignore[index]
+        collection["master_rig"]["eye_line_y"] = 368  # type: ignore[index]
         errors, _ = validate_config.validate_collection(collection)
         self.assertTrue(any("master_rig.eye_line_y" in error for error in errors))
 

@@ -1,5 +1,7 @@
 # Base Body 001 — Binary Integrity Report
 
+> Historical source-integrity record: the damaged WebP and truncated historical PNG remain unusable. The former 2048 × 2048 production requirement mentioned below was superseded on 2026-07-22; current production review uses the intact native 1254 × 1254 Pose 001 candidate.
+
 Date: 2026-07-20
 
 ## Scope
@@ -16,7 +18,7 @@ The inspection was performed before attempting to register or produce:
 
 **QA status: BLOCKED**
 
-The approved visual concept remains locked, but the binary currently stored in the repository is not a valid production source. It cannot be safely converted into the required 2048 × 2048 RGBA PNG without reconstructing or redesigning missing image data.
+The approved visual concept remains locked, but the binary currently stored in the repository is not a valid production source. Under the former canvas rule, it could not be safely converted into a complete RGBA PNG without reconstructing or redesigning missing image data.
 
 ## Current WebP findings
 
@@ -57,7 +59,7 @@ Rebuilding the avatar from those previews would constitute a redesign or approxi
 
 Production must remain paused at `base_pose_001_relaxed_open.png` until one of the following is supplied and explicitly approved:
 
-1. The original intact approved avatar as a 2048 × 2048 RGBA PNG on genuine transparency; or
-2. An intact lossless source file containing the exact approved avatar at sufficient resolution and placement.
+1. Explicit approval of the intact native 1254 × 1254 RGBA Pose 001 candidate on genuine transparency; or
+2. Another intact 1254 × 1254 lossless source containing the exact approved avatar at sufficient placement and quality.
 
 Do not upscale the damaged WebP, approve the truncated historical PNG, regenerate the avatar from memory, or reconstruct it from the reference sheets.

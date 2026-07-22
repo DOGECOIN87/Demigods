@@ -1,5 +1,7 @@
 # Base Pose 001 Native Generation Attempt 001
 
+> Historical record: the 2048 × 2048 production rule described below was superseded on 2026-07-22 by `docs/qa/canvas_standard_revision_1254.md`. The recorded image-service result remains factual, but its dimension failure no longer controls current acceptance.
+
 Date: 2026-07-21
 
 ## Conclusion
@@ -49,6 +51,6 @@ These placement differences independently fail the locked rig even if the dimens
 - Do not add it to `registered_production_assets`.
 - Do not mark Pose 001 complete.
 
-## Next required action
+## Superseded outcome
 
-Supply the intact approved 2048 × 2048 RGBA master, or use an explicitly authorized image path that can render a genuinely native 2048 × 2048 source. Run binary and manual QA again before registration.
+Do not follow the former resolution instruction in this historical report. Current review uses the native 1254 × 1254 RGBA candidate at `images/pose_candidates/base_pose_001_relaxed_open_candidate.png` and the gate in `prompts/16_native_1254_pose_001_candidate.md`. Binary canvas compliance now passes; manual rig, clothing, anatomy, lighting, identity, and isolation QA still control promotion.

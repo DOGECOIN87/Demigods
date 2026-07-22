@@ -18,8 +18,8 @@ Do not use character names.
 
 ## Export requirements
 
-- Character-compatible assets: 2048 × 2048 transparent PNG, RGBA, sRGB.
-- Backgrounds: 2048 × 2048 full-bleed opaque PNG or high-quality lossless WebP.
+- Character-compatible assets: 1254 × 1254 transparent PNG, RGBA, sRGB.
+- Backgrounds: 1254 × 1254 full-bleed opaque PNG or high-quality lossless WebP.
 - Preserve exact full-canvas coordinates; never tightly crop traits.
 - No checkerboard baked into transparency.
 - No labels, guides, frames, watermarks, signatures, or neighboring assets.
