@@ -91,7 +91,7 @@ After registration:
    }
    ```
 
-   The base-body portion of the registry remains empty until a candidate passes automated rig geometry and manual approval. The already registered Backgrounds 001–002 are independent; this example does not authorize automatic base promotion.
+   The base-body portion of the registry remains empty until a candidate passes automated rig geometry and manual approval. The already registered Backgrounds 001–003 are independent; this example does not authorize automatic base promotion.
 4. Run `python scripts/validate_manifest_consistency.py --manifest assets/asset_manifest.json --repository-root .`.
 5. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
 6. Register the same artwork at `assets/base_bodies/base_pose_001_relaxed_open.png` only when it already qualifies.

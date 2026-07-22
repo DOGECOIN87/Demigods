@@ -18,7 +18,13 @@
   "passed_binary_qa": true,
   "manual_qa": {
     "passed": true,
-    "status": "candidate",
-    "human_approval_required": true
+    "status": "approved",
+    "human_approval_required": false,
+    "human_approval_record": "User replied 'Update repo' directly to the displayed Background 003 approval request on 2026-07-22."
+  },
+  "production_registration": {
+    "status": "production_ready",
+    "path": "assets/backgrounds/background_003_arcane_library.png",
+    "sha256": "dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0"
   }
 }

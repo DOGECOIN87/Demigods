@@ -9,8 +9,9 @@ Date: 2026-07-22
 - Source reference: `images/background_candidates/background_003_arcane_library_reference.jpg`
 - Source SHA-256: `afc64910b8f1c44f49f33294a71f8228961025ae8a8f7f46b40def2a268e2785`
 - Current candidate: `images/background_candidates/native_candidates/background_003_arcane_library_candidate.png`
-- Intended production path: `assets/backgrounds/background_003_arcane_library.png`
+- Production path: `assets/backgrounds/background_003_arcane_library.png`
 - Current candidate SHA-256: `dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0`
+- Production SHA-256: `dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0`
 - Prompt: `prompts/17_native_1254_backgrounds.md`, Background 003
 
 ## Binary QA
@@ -37,4 +38,6 @@ Date: 2026-07-22
 
 ## Decision
 
-**Candidate — not registered.** Attempt 001 passes automated and repository manual QA but requires explicit human visual approval before it may be copied to the production path or added to `registered_production_assets`.
+The user replied “Update repo” directly to the explicit approval request after reviewing the displayed candidate.
+
+**Approved and registered.** The production file is byte-identical to approved attempt 001. Background 004 is the next independent background asset while Pose 001 remains unresolved.

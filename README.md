@@ -4,7 +4,7 @@ Production specifications, category prompts, reference images, validation tools,
 
 ## Current production status
 
-**Phase 1 uses a locked 1254 × 1254 canvas. Backgrounds 001–002 are registered; Pose 001 remains unregistered because every audited candidate fails locked rig geometry.**
+**Phase 1 uses a locked 1254 × 1254 canvas. Backgrounds 001–003 are registered; Pose 001 remains unregistered because every audited candidate fails locked rig geometry.**
 
 - Live ledger: `docs/production_status.md`
 - Current Pose 001 QA: `docs/qa/base_pose_001_rig_gate_2026-07-22.md`
@@ -95,7 +95,7 @@ python scripts/validate_manifest_consistency.py \
   --json-report manifest_consistency_report.json
 ```
 
-The registry currently contains approved native Backgrounds 001–002 and no base body. The checker requires every registered file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
+The registry currently contains approved native Backgrounds 001–003 and no base body. The checker requires every registered file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
 
 ## Exact-777 generation
 
