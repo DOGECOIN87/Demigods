@@ -22,5 +22,6 @@ Use `00_locked_master_specification.md` at the beginning of each generation requ
 - `15_collection_generation_777.md` — exact 777-token output rules
 - `16_native_1254_pose_001_candidate.md` — correct one native-resolution relaxed-open review candidate without promoting it to production
 - `17_native_1254_backgrounds.md` — rebuild the eight supplied background references one at a time as native production candidates
+- `18_native_1254_background_004_candidate.md` — execute the exact next DG-010 crescent-star dreamscape candidate, QA, approval, registration, and main-branch workflow
 
 Generate one asset per output. Never ask an image model to produce an entire final trait category as a single contact sheet.

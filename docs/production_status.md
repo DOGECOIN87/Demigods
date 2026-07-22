@@ -107,7 +107,7 @@ No reference JPEG was resized or converted. Background 001 is registered with SH
 1. Create another genuinely native Pose 001 candidate using Prompt 16 and the locked coordinate guide; do not resample a failed attempt.
 2. Require the automated visible-geometry intake gate, then manual facial, shoulder, waist, hand-anchor, clothing, anatomy, lighting, isolation, and composite QA.
 3. After explicit approval, promote Pose 001 and determine whether it also qualifies as `base_body_001_neutral_master.png`.
-4. Generate Background 004 only from its exact preserved JPEG reference; require the same binary, manual, and human approval gates before registration.
+4. Execute `prompts/18_native_1254_background_004_candidate.md` using only the exact preserved Background 004 JPEG; require binary, manual, and human approval gates before registration.
 5. Normalize and approve poses 002–005 sequentially against Pose 001.
 6. Produce the first representative asset in each remaining category, run composite stress tests, and then continue `docs/trait-production-backlog.md` in order.
 7. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.
