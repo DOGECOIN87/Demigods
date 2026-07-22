@@ -79,7 +79,7 @@ Prompt 16 generation attempt 001 and source gate audit 002 are retained as histo
 
 Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte under `images/background_candidates/` as the approved visual directions for backgrounds 001–008. Re-uploaded palace and crescent duplicates were excluded by SHA-256. The manifest records each original attachment filename, byte count, dimensions, mode, format, preservation state, intended production path, and exact digest.
 
-No reference JPEG was resized or converted. Background 001 was rebuilt natively, passed binary and manual QA, and is registered at `assets/backgrounds/background_001_celestial_throne_hall.png` with SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`. Backgrounds 002–008 remain unmodified reference-only inputs awaiting sequential native renders.
+No reference JPEG was resized or converted. Background 001 was rebuilt natively, passed binary and manual QA, and is registered at `assets/backgrounds/background_001_celestial_throne_hall.png` with SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`. Background 002 attempt 001 was rejected for cross-shaped altar finials. Attempt 002 is a native 1254 × 1254 RGB approval candidate with SHA-256 `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`; it remains outside production pending explicit human visual approval. Backgrounds 003–008 remain unmodified reference-only inputs awaiting sequential native renders.
 
 ## Ordered trait backlog
 
@@ -96,6 +96,8 @@ No reference JPEG was resized or converted. Background 001 was rebuilt natively,
 - Native 1254 pose-candidate binary QA: **5 of 5 passed**; each retains a missing-ICC-profile warning for manual sRGB confirmation
 - Pose 001 binary decode: **passed**; locked visible-geometry intake: **failed** for the original and attempts 002–004
 - Background 001 asset and manifest QA: **passed**; registered SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`
+- Background 002 attempt 001: **QA-failed** for prohibited cross-shaped altar finials; unregistered SHA-256 `7ef25fa04d6430b5e1a7ca688cc5755f28df5c4b9da6ec5d80d12507a1f0d2b0`
+- Background 002 attempt 002: **binary and repository manual QA passed; human approval pending**; unregistered SHA-256 `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`
 - Latest completed GitHub Actions baseline: **passed — Production validation run #25**
 - Production asset library: **1 registered background; 0 registered base bodies**
 
@@ -104,7 +106,7 @@ No reference JPEG was resized or converted. Background 001 was rebuilt natively,
 1. Create another genuinely native Pose 001 candidate using Prompt 16 and the locked coordinate guide; do not resample a failed attempt.
 2. Require the automated visible-geometry intake gate, then manual facial, shoulder, waist, hand-anchor, clothing, anatomy, lighting, isolation, and composite QA.
 3. After explicit approval, promote Pose 001 and determine whether it also qualifies as `base_body_001_neutral_master.png`.
-4. In parallel while Pose 001 remains blocked, generate Background 002 only from its exact preserved JPEG reference.
+4. Obtain explicit human visual approval for Background 002 attempt 002; register it only after approval.
 5. Normalize and approve poses 002–005 sequentially against Pose 001.
 6. Produce the first representative asset in each remaining category, run composite stress tests, and then continue `docs/trait-production-backlog.md` in order.
 7. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.

@@ -1,0 +1,24 @@
+{
+  "source": "images/background_candidates/native_candidates/background_002_violet_gothic_sanctum_candidate.png",
+  "intended_output": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
+  "exists": true,
+  "errors": [],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 2546828,
+  "sha256": "ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "fully_opaque": true,
+  "passed_binary_qa": true,
+  "manual_qa": {
+    "passed": true,
+    "status": "candidate",
+    "human_approval_required": true
+  }
+}
