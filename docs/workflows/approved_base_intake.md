@@ -16,7 +16,7 @@ The source must be:
 
 Do not substitute a regenerated approximation, screenshot, reference sheet, damaged WebP, upscaled preview, or recovered partial image.
 
-## Binary QA
+## Automated intake QA
 
 Run:
 
@@ -32,9 +32,13 @@ This produces `base_source_intake_report.json` and checks:
 - genuine non-opaque alpha
 - visible artwork exists
 - visible pixels do not touch canvas edges
+- inclusive visible bounds remain inside `[233,129,1021,1139]`
+- first visible head pixel is exactly Y 141
+- final visible foot pixel is exactly Y 1139
+- alpha silhouette remains centered on X 627 within the one-pixel antialiasing tolerance
 - SHA-256 provenance hash
 
-A passing binary report does not constitute visual approval.
+A passing automated report does not constitute visual approval. Eye, mouth, shoulder, waist, and hand anchors still require a manual coordinate overlay.
 
 ## Manual visual QA
 
@@ -87,7 +91,7 @@ After registration:
    }
    ```
 
-   The registry remains empty until the existing candidate passes manual approval; this example does not authorize automatic promotion.
+   The base-body portion of the registry remains empty until a candidate passes automated rig geometry and manual approval. The already registered Background 001 is independent; this example does not authorize automatic base promotion.
 4. Run `python scripts/validate_manifest_consistency.py --manifest assets/asset_manifest.json --repository-root .`.
 5. Determine whether the same artwork satisfies `base_pose_001_relaxed_open.png`.
 6. Register the same artwork at `assets/base_bodies/base_pose_001_relaxed_open.png` only when it already qualifies.

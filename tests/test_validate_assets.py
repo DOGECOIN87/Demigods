@@ -76,7 +76,26 @@ class ValidateAssetsTests(unittest.TestCase):
 
     def test_valid_transparent_pose_passes(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
+            path = self.make_image(
+                Path(temp) / "base_pose_001_relaxed_open.png",
+                visible_box=(400, 141, 855, 1140),
+            )
+            result = validate_assets.validate_file(path, 1254, 1254)
+            self.assertTrue(result.passed, result.errors)
+
+    def test_base_pose_locked_geometry_is_enforced(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
             path = self.make_image(Path(temp) / "base_pose_001_relaxed_open.png")
+            result = validate_assets.validate_file(path, 1254, 1254)
+            self.assertFalse(result.passed)
+            self.assertTrue(any("locked rig" in error for error in result.errors))
+
+    def test_asymmetric_grip_pose_may_shift_silhouette_center(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            path = self.make_image(
+                Path(temp) / "base_pose_002_viewer_left_vertical_grip.png",
+                visible_box=(350, 141, 855, 1140),
+            )
             result = validate_assets.validate_file(path, 1254, 1254)
             self.assertTrue(result.passed, result.errors)
 

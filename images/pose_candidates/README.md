@@ -17,7 +17,7 @@ All five files:
 - use the locked native 1254 × 1254 production canvas
 - lack an embedded ICC profile
 
-The former dimension failure is resolved. Pose 001 still requires manual comparison with the proportionally rebased rig and knee-length clothing requirement before promotion. Poses 002–005 must be reconciled to the approved Pose 001 body, scale, and foot baseline; Pose 003 also keeps its viewer-right grip above the intended common waist-level anchor.
+The former canvas-size failure is resolved, but Pose 001 fails the locked visible-geometry gate. Poses 002–005 must be reconciled to a future approved Pose 001 body, scale, and foot baseline; Pose 003 also keeps its viewer-right grip above the intended common waist-level anchor.
 
 ## Candidate inventory
 
@@ -29,6 +29,16 @@ The former dimension failure is resolved. Pose 001 still requires manual compari
 | Viewer-left palm up | `base_pose_004_viewer_left_palm_up_candidate.png` | `f97eeae1b2f201c1c0a5d802b89a90e5a9de854934a0a810fc512b2c768d5a4c` |
 | Centered two-hand grip | `base_pose_005_centered_two_hand_grip_candidate.png` | `00e3f3fbbc2dc06ab56e1f90a4c96be40b50537135b4a9076fa4dc88902b4772` |
 
+## Pose 001 correction attempts
+
+| Attempt | File | SHA-256 | Status |
+|---|---|---|---|
+| 002 | `base_pose_001_relaxed_open_candidate_attempt_002.png` | `0b34edf641d7455026f925549d30a734c02f9e62bd0641150a27f88d3aef68f9` | QA-failed: visible bounds `[378,48,870,1182]` exceed the top and foot limits. |
+| 003 | `base_pose_001_relaxed_open_candidate_attempt_003.png` | `9fec3bb90243e03164a4f993f78337e7cd8c7e170ca04db73170ee0987b6eca7` | QA-failed: visible head Y 157 and foot Y 1108 miss the locked anchors; hands are too far inward. |
+| 004 | `base_pose_001_relaxed_open_candidate_attempt_004.png` | `48ab7bbfa16ddc59d4241285113d154d38900cd30cc76d86e0772ae4a8f4a0f7` | QA-failed: visible bounds `[354,44,892,1171]` overcorrect scale and exceed top/bottom limits. |
+
+See `docs/qa/base_pose_001_rig_gate_2026-07-22.md` for the complete audit.
+
 ## Promotion gate
 
-A candidate may be promoted only after complete native 1254 × 1254 RGBA decoding succeeds, its geometry is normalized to the locked anchors, manual visual QA passes, explicit human approval is recorded, and the production manifest records its exact final SHA-256. Never resize a candidate to repair rig or pose drift.
+A candidate may be promoted only after complete native 1254 × 1254 RGBA decoding succeeds, the automated visible-geometry gate passes, manual landmark-overlay and visual QA pass, explicit human approval is recorded, and the production manifest records its exact final SHA-256. Never resize a candidate to repair rig or pose drift.

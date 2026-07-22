@@ -4,14 +4,15 @@ Production specifications, category prompts, reference images, validation tools,
 
 ## Current production status
 
-**Phase 1 uses a locked 1254 × 1254 canvas. The former resolution blocker is removed; Pose 001 is awaiting manual production approval.**
+**Phase 1 uses a locked 1254 × 1254 canvas. Background 001 is registered; Pose 001 remains unregistered because every audited candidate fails locked rig geometry.**
 
 - Live ledger: `docs/production_status.md`
-- QA report: `docs/qa/base_body_001_integrity_report.md`
+- Current Pose 001 QA: `docs/qa/base_pose_001_rig_gate_2026-07-22.md`
+- Ordered asset backlog: `docs/trait-production-backlog.md`
 - Intake workflow: `docs/workflows/approved_base_intake.md`
 - Tracked blocker: [Issue #4](https://github.com/DOGECOIN87/Demigods/issues/4)
 
-The approved visual design remains locked. Use the intact 1254 × 1254 RGBA Pose 001 candidate for review; do not reconstruct the avatar from the damaged repository WebP.
+The approved visual design remains locked. Use the intact Pose 001 candidates only as visual references for a new native render; do not resample a failed candidate or reconstruct the avatar from the damaged repository WebP.
 
 ## Core requirements
 
@@ -74,13 +75,12 @@ python scripts/validate_config.py \
 
 The configuration preflight rejects changed locked anchors, malformed rules, missing trait references, duplicate relationships, impossible same-layer requirements, and requires/excludes contradictions.
 
-Audit the repository during the current empty-library preproduction phase:
+Audit the current production library and preserved references:
 
 ```bash
 python scripts/validate_assets.py assets \
   --manifest assets/asset_manifest.json \
   --repository-root . \
-  --allow-empty \
   --json-report asset_validation_report.json
 ```
 
@@ -95,7 +95,7 @@ python scripts/validate_manifest_consistency.py \
   --json-report manifest_consistency_report.json
 ```
 
-The registry remains empty until the existing Pose 001 candidate passes manual visual QA and is explicitly promoted. Once an asset is registered, the checker requires its file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
+The registry currently contains the approved native Background 001 and no base body. The checker requires every registered file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
 
 ## Exact-777 generation
 
@@ -128,14 +128,14 @@ The output verifier requires the exact `0001`–`0777` image and metadata sets, 
 
 ## Recommended workflow
 
-1. Complete manual QA and approve the 1254 × 1254 Pose 001 master candidate.
-2. Lock the rig coordinates and lighting.
+1. Render a native Pose 001 candidate that passes the automated locked-geometry intake gate and manual landmark overlay.
+2. Approve and register the Pose 001 master only after identity, clothing, anatomy, lighting, isolation, and position all pass.
 3. Approve hand-pose variants sequentially.
 4. Create one isolated test asset from every category.
 5. Composite cross-category stress-test characters.
 6. Correct collisions, clipping, hidden overlaps, and layer order.
 7. Produce remaining assets one item per output.
-8. Validate and commit every accepted asset or small verified milestone.
+8. Validate and commit every accepted asset or small verified milestone; follow `docs/trait-production-backlog.md`.
 9. Define only necessary compatibility exclusions.
 10. Dry-run, verify, render, and independently verify exactly 777 unique tokens.
 

@@ -4,7 +4,12 @@
 - [ ] 1254 × 1254 canvas.
 - [ ] Front-facing orthographic appearance.
 - [ ] No yaw, pitch, roll, perspective, scale, or pose drift.
-- [ ] Correct eye line, mouth line, shoulders, waist, hands, and foot baseline.
+- [ ] Character pixels remain within `[233,129,1021,1139]`.
+- [ ] Top of head Y 141 and head center `[627,343]`.
+- [ ] Eye line Y 367 and mouth center `[627,441]`.
+- [ ] Shoulder line Y 569 and waist center `[627,808]`.
+- [ ] Hand anchors `[404,772]` and `[850,772]` for the selected pose.
+- [ ] Foot baseline Y 1139 and body centered on X 627.
 - [ ] Full-canvas coordinates preserved.
 
 ## Layer isolation

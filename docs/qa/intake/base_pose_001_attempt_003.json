@@ -1,0 +1,58 @@
+{
+  "source": "images/pose_candidates/base_pose_001_relaxed_open_candidate_attempt_003.png",
+  "intended_output": "assets/base_bodies/base_body_001_neutral_master.png",
+  "exists": true,
+  "errors": [
+    "top of visible head is Y 157, expected locked Y 141",
+    "foot baseline is Y 1108, expected locked Y 1139",
+    "visible silhouette is not centered on the locked axis: observed X 625.5, expected X 627 within 1 px"
+  ],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 353034,
+  "sha256": "9fec3bb90243e03164a4f993f78337e7cd8c7e170ca04db73170ee0987b6eca7",
+  "format": "PNG",
+  "mode": "RGBA",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "bands": [
+    "R",
+    "G",
+    "B",
+    "A"
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "visible_bbox": [
+    427,
+    157,
+    825,
+    1109
+  ],
+  "rig_geometry": {
+    "observed_visible_bounds_inclusive": [
+      427,
+      157,
+      824,
+      1108
+    ],
+    "expected_top_of_head_y": 141,
+    "expected_foot_baseline_y": 1139,
+    "expected_center_x": 627,
+    "maximum_character_bounds_inclusive": [
+      233,
+      129,
+      1021,
+      1139
+    ],
+    "center_tolerance_px": 1.0,
+    "passed": false
+  },
+  "icc_profile_present": false,
+  "passed_binary_qa": false
+}

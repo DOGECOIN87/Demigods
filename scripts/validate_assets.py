@@ -14,6 +14,11 @@ from typing import Any
 
 from PIL import Image
 
+try:
+    from scripts import intake_approved_base
+except ImportError:  # Direct execution from scripts/.
+    import intake_approved_base  # type: ignore[no-redef]
+
 CANVAS_SIZE = (1254, 1254)
 BACKGROUND_CANDIDATE_COUNT = 8
 BACKGROUND_CANDIDATE_DIRECTORY = Path("images/background_candidates")
@@ -254,6 +259,19 @@ def validate_file(
                     if extrema[1] < 255:
                         warnings.append(
                             "no fully opaque pixels detected; inspect unintended global transparency"
+                        )
+                    if (
+                        effective_category == "base_bodies"
+                        and (width, height) == CANVAS_SIZE
+                    ):
+                        errors.extend(
+                            f"locked rig: {error}"
+                            for error in intake_approved_base.rig_geometry_errors(
+                                bbox,
+                                require_silhouette_center=path.name.startswith(
+                                    ("base_body_", "base_pose_001_")
+                                ),
+                            )
                         )
 
             if config["requires_opaque_canvas"]:

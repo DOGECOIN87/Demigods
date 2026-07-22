@@ -34,7 +34,29 @@
     "front_auras": "assets/front_auras",
     "global_finish": "assets/global_finish"
   },
-  "registered_production_assets": [],
+  "registered_production_assets": [
+    {
+      "id": "background_001",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_001_celestial_throne_hall.png",
+      "status": "production_ready",
+      "sha256": "2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9",
+      "dimensions": [1254, 1254],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_001_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_001_celestial_throne_hall_reference.jpg",
+        "reference_sha256": "b92287aaa4fe36fd4c1b8102367a51b635c8f912d91aca9db37e91aa4c20a8e8",
+        "candidate_path": "images/background_candidates/native_candidates/background_001_celestial_throne_hall_candidate.png",
+        "native_dimensions": [1254, 1254],
+        "postprocessing": []
+      },
+      "approved_on": "2026-07-22"
+    }
+  ],
   "approved_visual_references": [
     {
       "id": "base_body_001",
@@ -54,11 +76,11 @@
       "id": "base_pose_001_candidate",
       "category": "base_body_reference",
       "path": "images/pose_candidates/base_pose_001_relaxed_open_candidate.png",
-      "status": "canvas_compliant_manual_qa_pending",
+      "status": "canvas_compliant_rig_qa_failed",
       "production_ready": false,
       "source_integrity": "passed",
       "qa_report": "docs/qa/canvas_standard_revision_1254.md",
-      "required_action": "complete_manual_rig_clothing_identity_review",
+      "required_action": "replace_with_native_candidate_that_passes_locked_rig_geometry",
       "intended_production_path": "assets/base_bodies/base_pose_001_relaxed_open.png",
       "front_facing": true,
       "transparent_background": true,
@@ -225,8 +247,8 @@
       "category": "base_bodies",
       "intended_path": "assets/base_bodies/base_body_001_neutral_master.png",
       "status": "blocked",
-      "reason": "The archived approved WebP is damaged; the 1254 x 1254 Pose 001 candidate now passes the canvas gate but is not yet approved as the neutral production master.",
-      "required_input": "Explicit manual approval of the existing 1254 x 1254 RGBA Pose 001 candidate or another intact 1254 x 1254 RGBA source."
+      "reason": "The archived approved WebP is damaged, and all audited native 1254 Pose 001 candidates fail one or more locked rig coordinates.",
+      "required_input": "A genuinely native 1254 x 1254 RGBA candidate that passes the automated visible-geometry gate and manual identity, anchor, clothing, anatomy, lighting, and isolation QA."
     },
     {
       "id": "base_pose_001",
@@ -234,8 +256,8 @@
       "intended_path": "assets/base_bodies/base_pose_001_relaxed_open.png",
       "status": "blocked",
       "depends_on": "base_pose_001_candidate",
-      "reason": "The existing candidate is canvas-compliant under the revised standard, but manual identity, proportional-rig, clothing, lighting, and anatomy approval remains required before promotion.",
-      "required_input": "Manual approval and production promotion of images/pose_candidates/base_pose_001_relaxed_open_candidate.png."
+      "reason": "The original candidate and native correction attempts 002 through 004 are canvas-compliant but fail locked top-of-head, foot-baseline, center, maximum-bound, or hand-anchor placement checks.",
+      "required_input": "A new native Pose 001 candidate that passes automated rig geometry and manual anchor-overlay review before promotion."
     }
   ],
   "queued_base_poses": [
@@ -259,6 +281,7 @@
     "back_accessories",
     "rear_auras",
     "front_auras",
+    "global_finish",
     "backgrounds"
   ]
 }

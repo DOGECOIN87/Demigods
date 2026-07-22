@@ -27,3 +27,5 @@ They are **not production layers**:
 ## Production gate
 
 Use `prompts/17_native_1254_backgrounds.md` to create one native 1254 × 1254 background at a time. Each result must pass complete decode, dimensions, opacity, composition, lighting, text/glyph removal, and manual visual QA before its exact final SHA-256 is registered.
+
+Native review candidates remain under `images/background_candidates/native_candidates/` until approval. Background 001 passed QA and was registered at `assets/backgrounds/background_001_celestial_throne_hall.png` with SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`. Its source JPEG remains unchanged.

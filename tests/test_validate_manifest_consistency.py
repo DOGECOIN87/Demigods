@@ -20,7 +20,7 @@ class ManifestConsistencyTests(unittest.TestCase):
         path = root / "assets" / "base_bodies" / "base_body_001_neutral_master.png"
         path.parent.mkdir(parents=True, exist_ok=True)
         image = Image.new("RGBA", size, (0, 0, 0, 0))
-        image.paste((200, 180, 160, 255), (245, 184, 979, 1139))
+        image.paste((200, 180, 160, 255), (400, 141, 855, 1140))
         image.save(path)
         return path
 

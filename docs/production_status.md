@@ -4,7 +4,7 @@ Last updated: 2026-07-22
 
 ## Current phase
 
-**Phase 1 — Base body and approved pose variants**
+**Phase 1 — Base-pose correction plus independent background production**
 
 Production order remains locked. No later character-aligned category may be treated as production-ready until Pose 001 is manually approved and the pose family is normalized against it.
 
@@ -33,18 +33,18 @@ Tracked gate: [Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master
 
 ## Active production gate
 
-The former resolution blocker is removed. `images/pose_candidates/base_pose_001_relaxed_open_candidate.png` is already a complete 1254 × 1254 RGBA PNG with genuine transparency and now satisfies the canonical canvas requirement.
+The former resolution blocker is removed. The original Pose 001 candidate and native attempts 002–004 are complete 1254 × 1254 RGBA PNGs with genuine transparency, but all fail one or more locked rig coordinates.
 
-It is not yet a production asset. Required next review:
+No Pose 001 attempt is a production asset. Required next correction:
 
-- exact approved identity and proportions
-- proportional 1254 rig placement and common hand anchors
+- exact top-of-head Y 141, foot-baseline Y 1139, center X 627, and maximum bounds
+- exact approved identity, proportions, and common hand anchors
 - knee-length opaque training-uniform clothing
 - anatomy, upper-left lighting, isolation, and foot-baseline review
-- explicit human approval before copying into `assets/base_bodies/`
+- automated visible-geometry pass plus explicit human approval before copying into `assets/base_bodies/`
 - exact SHA-256 registration only after approval
 
-See `docs/qa/canvas_standard_revision_1254.md`.
+See `docs/qa/base_pose_001_rig_gate_2026-07-22.md`.
 
 ## Non-production pose candidates
 
@@ -68,8 +68,8 @@ Prompt 16 generation attempt 001 and source gate audit 002 are retained as histo
 
 | Asset | Canonical path | State | Next action |
 |---|---|---|---|
-| Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | Manual approval pending | Determine whether the existing Pose 001 candidate qualifies as the shared neutral master. |
-| Relaxed-open pose | `assets/base_bodies/base_pose_001_relaxed_open.png` | Canvas-compliant candidate | Complete manual QA; correct only if required, then explicitly approve and promote. |
+| Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | Blocked by Pose 001 geometry | Evaluate only after a Pose 001 candidate passes all rig and visual gates. |
+| Relaxed-open pose | `assets/base_bodies/base_pose_001_relaxed_open.png` | QA-failed; unregistered | Render another genuinely native candidate against the locked coordinate guide. |
 | Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | Canvas-compliant candidate | Normalize against the final approved Pose 001 master. |
 | Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | Candidate reference only | Normalize grip height against pose 002 after the master is approved. |
 | Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
@@ -79,7 +79,11 @@ Prompt 16 generation attempt 001 and source gate audit 002 are retained as histo
 
 Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte under `images/background_candidates/` as the approved visual directions for backgrounds 001–008. Re-uploaded palace and crescent duplicates were excluded by SHA-256. The manifest records each original attachment filename, byte count, dimensions, mode, format, preservation state, intended production path, and exact digest.
 
-They are not registered production backgrounds because the canonical output contract requires native 1254 × 1254 full-bleed opaque PNGs. No JPEG was resized or converted. Exact source SHA-256 values, intended production paths, and the sequential native-generation prompt are recorded in `images/background_candidates/README.md` and `prompts/17_native_1254_backgrounds.md`.
+No reference JPEG was resized or converted. Background 001 was rebuilt natively, passed binary and manual QA, and is registered at `assets/backgrounds/background_001_celestial_throne_hall.png` with SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`. Backgrounds 002–008 remain unmodified reference-only inputs awaiting sequential native renders.
+
+## Ordered trait backlog
+
+`docs/trait-production-backlog.md` records 146 supported assets in dependency order. It inventories the base family, backgrounds 001–008, and every distinct asset identifiable in the dedicated aura, back-accessory, hair, outfit, accessory, facial-trait, and hand-object catalogs. The global-finish category is explicitly source-gated because the repository contains no identifiable finish design; no placeholder was invented.
 
 ## Verification state
 
@@ -88,20 +92,21 @@ They are not registered production backgrounds because the canonical output cont
 - Configuration preflight tests: **6 passed**
 - Output-verification tests: **6 passed**
 - Manifest-consistency tests: **6 passed**
-- Combined regression total: **33 passed**
+- Combined regression total: **40 passed**
 - Native 1254 pose-candidate binary QA: **5 of 5 passed**; each retains a missing-ICC-profile warning for manual sRGB confirmation
-- Pose 001 intake: **passed binary QA** with SHA-256 `f34f1306918710a499ba0d5e5595a98c6d157e1243f3717058aa6b3281bd2082`
+- Pose 001 binary decode: **passed**; locked visible-geometry intake: **failed** for the original and attempts 002–004
+- Background 001 asset and manifest QA: **passed**; registered SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`
 - Latest completed GitHub Actions baseline: **passed — Production validation run #25**
-- Production asset library: **empty pending Pose 001 manual approval**
+- Production asset library: **1 registered background; 0 registered base bodies**
 
 ## Next production sequence
 
-1. Run binary intake on the existing 1254 × 1254 Pose 001 candidate without `--register`.
-2. Complete manual identity, rig, clothing, anatomy, lighting, isolation, and baseline QA.
-3. Correct only failed visual requirements, then repeat binary and manual QA.
-4. After explicit approval, promote Pose 001 and determine whether it also qualifies as `base_body_001_neutral_master.png`.
-5. Record exact SHA-256 values and dimensions in `registered_production_assets`, then run manifest consistency validation.
-6. Normalize and approve poses 002–005 sequentially against Pose 001.
+1. Create another genuinely native Pose 001 candidate using Prompt 16 and the locked coordinate guide; do not resample a failed attempt.
+2. Require the automated visible-geometry intake gate, then manual facial, shoulder, waist, hand-anchor, clothing, anatomy, lighting, isolation, and composite QA.
+3. After explicit approval, promote Pose 001 and determine whether it also qualifies as `base_body_001_neutral_master.png`.
+4. In parallel while Pose 001 remains blocked, generate Background 002 only from its exact preserved JPEG reference.
+5. Normalize and approve poses 002–005 sequentially against Pose 001.
+6. Produce the first representative asset in each remaining category, run composite stress tests, and then continue `docs/trait-production-backlog.md` in order.
 7. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.
 
 ## Repository update policy

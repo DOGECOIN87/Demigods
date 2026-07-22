@@ -15,6 +15,11 @@ from PIL import Image
 EXPECTED_SIZE = (1254, 1254)
 EXPECTED_MODE = "RGBA"
 DEFAULT_OUTPUT = Path("assets/base_bodies/base_body_001_neutral_master.png")
+CANVAS_CENTER_X = 627
+TOP_OF_HEAD_Y = 141
+FOOT_BASELINE_Y = 1139
+MAXIMUM_CHARACTER_BOUNDS = (233, 129, 1021, 1139)
+CENTER_TOLERANCE_PX = 1.0
 
 
 def sha256(path: Path) -> str:
@@ -23,6 +28,46 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def rig_geometry_errors(
+    bbox: tuple[int, int, int, int],
+    *,
+    require_silhouette_center: bool = True,
+) -> list[str]:
+    """Validate PIL's exclusive-right/bottom alpha bbox against the locked rig."""
+    left, top, right_exclusive, bottom_exclusive = bbox
+    right = right_exclusive - 1
+    bottom = bottom_exclusive - 1
+    max_left, max_top, max_right, max_bottom = MAXIMUM_CHARACTER_BOUNDS
+    errors: list[str] = []
+
+    if left < max_left or top < max_top or right > max_right or bottom > max_bottom:
+        errors.append(
+            "visible pixels exceed locked maximum character bounds: "
+            f"observed={[left, top, right, bottom]}, "
+            f"allowed={list(MAXIMUM_CHARACTER_BOUNDS)}"
+        )
+    if top != TOP_OF_HEAD_Y:
+        errors.append(
+            f"top of visible head is Y {top}, expected locked Y {TOP_OF_HEAD_Y}"
+        )
+    if bottom != FOOT_BASELINE_Y:
+        errors.append(
+            f"foot baseline is Y {bottom}, expected locked Y {FOOT_BASELINE_Y}"
+        )
+
+    visible_center_x = (left + right) / 2
+    if (
+        require_silhouette_center
+        and abs(visible_center_x - CANVAS_CENTER_X) > CENTER_TOLERANCE_PX
+    ):
+        errors.append(
+            "visible silhouette is not centered on the locked axis: "
+            f"observed X {visible_center_x:g}, expected X {CANVAS_CENTER_X} "
+            f"within {CENTER_TOLERANCE_PX:g} px"
+        )
+    return errors
 
 
 def inspect_source(path: Path) -> dict[str, object]:
@@ -85,6 +130,26 @@ def inspect_source(path: Path) -> dict[str, object]:
                     or bbox[3] == EXPECTED_SIZE[1]
                 ):
                     errors.append(f"visible pixels touch a canvas edge: bbox={bbox}")
+                else:
+                    locked_bbox = [
+                        bbox[0],
+                        bbox[1],
+                        bbox[2] - 1,
+                        bbox[3] - 1,
+                    ]
+                    geometry_errors = rig_geometry_errors(bbox)
+                    report["rig_geometry"] = {
+                        "observed_visible_bounds_inclusive": locked_bbox,
+                        "expected_top_of_head_y": TOP_OF_HEAD_Y,
+                        "expected_foot_baseline_y": FOOT_BASELINE_Y,
+                        "expected_center_x": CANVAS_CENTER_X,
+                        "maximum_character_bounds_inclusive": list(
+                            MAXIMUM_CHARACTER_BOUNDS
+                        ),
+                        "center_tolerance_px": CENTER_TOLERANCE_PX,
+                        "passed": not geometry_errors,
+                    }
+                    errors.extend(geometry_errors)
 
                 if extrema[1] < 255:
                     warnings.append(
@@ -132,7 +197,7 @@ def main() -> int:
         print(f"REGISTERED: {args.output}")
         print(f"SHA-256: {report['sha256']}")
     else:
-        print("PASS: binary requirements satisfied")
+        print("PASS: binary and locked visible-geometry requirements satisfied")
         print("Manual visual QA is still required for exact pose, anchors, outfit, lighting, and anatomy.")
 
     print(f"Report: {args.report}")
