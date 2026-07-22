@@ -23,5 +23,6 @@ Use `00_locked_master_specification.md` at the beginning of each generation requ
 - `16_native_1254_pose_001_candidate.md` — correct one native-resolution relaxed-open review candidate without promoting it to production
 - `17_native_1254_backgrounds.md` — rebuild the eight supplied background references one at a time as native production candidates
 - `18_native_1254_background_004_candidate.md` — execute the exact next DG-010 crescent-star dreamscape candidate, QA, approval, registration, and main-branch workflow
+- `19_individual_trait_asset_co_creation.md` — reusable external-AI prompt and safe candidate-upload workflow for one isolated trait at a time
 
 Generate one asset per output. Never ask an image model to produce an entire final trait category as a single contact sheet.

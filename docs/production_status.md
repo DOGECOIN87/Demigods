@@ -6,7 +6,7 @@ Last updated: 2026-07-22
 
 **Phase 1 — Base-pose correction plus independent background production**
 
-Production order remains locked. No later character-aligned category may be treated as production-ready until Pose 001 is manually approved and the pose family is normalized against it.
+Production registration order remains locked. Candidate creation is now open across referenced categories and may be batched or performed before Pose 001 approval. No character-aligned candidate may be treated as production-ready until its required pose composite passes.
 
 Tracked gate: [Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4)
 
@@ -111,9 +111,10 @@ No reference JPEG was resized or converted. Background 001 is registered with SH
 2. Require the automated visible-geometry intake gate, then manual facial, shoulder, waist, hand-anchor, clothing, anatomy, lighting, isolation, and composite QA.
 3. After explicit approval, promote Pose 001 and determine whether it also qualifies as `base_body_001_neutral_master.png`.
 4. Obtain explicit human visual approval for Background 004 attempt 003; register its exact bytes only after approval.
-5. Normalize and approve poses 002–005 sequentially against Pose 001.
-6. Produce the first representative asset in each remaining category, run composite stress tests, and then continue `docs/trait-production-backlog.md` in order.
-7. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.
+5. In parallel, use `prompts/19_individual_trait_asset_co_creation.md` to build separate prealignment candidates or batches from repository-supported references.
+6. Normalize and approve poses 002–005 sequentially against Pose 001.
+7. Composite representative assets from each category, correct alignment, and then register the backlog in dependency order.
+8. Run configuration, asset, manifest, generator, and output verification at their corresponding production gates.
 
 ## Repository update policy
 

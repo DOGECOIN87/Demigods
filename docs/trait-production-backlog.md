@@ -2,7 +2,7 @@
 
 Last updated: 2026-07-22
 
-This is the ordered production queue for the 1254 × 1254 modular collection. It inventories only assets supported by repository prompts, dedicated reference catalogs, or the eight preserved background references. Character names from the flattened concept sheets are not used as production trait names.
+This is the ordered production-registration queue for the 1254 × 1254 modular collection. Candidate generation may happen in parallel or out of order under `prompts/19_individual_trait_asset_co_creation.md`, but registration still follows dependencies and QA. The backlog inventories only assets supported by repository prompts, dedicated reference catalogs, or the eight preserved background references. Character names from the flattened concept sheets are not used as production trait names.
 
 Status values are limited to `pending`, `candidate`, `QA-failed`, `approved`, and `registered`. A reference-sheet cell remains `pending` when its compressed preview is sufficient to identify a distinct design but not sufficient to approve final micro-detail. Such entries must be rebuilt from the cited cell with `prompts/14_extraction_prompt.md`; the preview must never be cropped or enlarged into production art.
 
@@ -46,6 +46,8 @@ The broader and theme-composite sheets in `images/reference_sheets/index.md` cor
 | DG-014 | background | Circular violet void portal with floating platform, rocks, crystals, and smoke | `BG/background_008_violet_void_portal_reference.jpg` | DG-013 | `assets/backgrounds/background_008_violet_void_portal.png` | `prompts/17_native_1254_backgrounds.md` | pending |
 
 ## Phase C — Representative test assets, then remaining backlog in canonical layer order
+
+External co-created candidates may be generated in batches before Pose 001 is approved. They must follow `prompts/19_individual_trait_asset_co_creation.md` and remain under `images/trait_candidates/<category>/` until repository QA, dependency composites, and human approval pass.
 
 ### Rear auras
 

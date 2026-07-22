@@ -56,3 +56,7 @@ The approved candidate is stored byte-for-byte at `assets/backgrounds/background
 | 003 | `native_candidates/background_004_crescent_star_dreamscape_candidate.png` | `e2e2f183c4c28231e36114b1c80d2844774edd682e11b1d76b9dd0e77c58c2d9` | Pass — native 1254 × 1254 RGB, fully opaque | Candidate: coordinate overlay and repository manual QA passed; explicit human visual approval pending. |
 
 All three were generated independently from the exact preserved Background 004 JPEG. None was resized, patched, derived from a prior attempt, or stored under `assets/backgrounds/`. The reference remains byte-for-byte unchanged at SHA-256 `7ef8cedff521095601e1225f6ad87f8024930c05d9e458dda138e92ae16c6d3e`.
+
+## Unassigned uploaded material
+
+An additional 784 × 1168 moonlit-balcony JPEG uploaded under `assets/backgrounds/` is preserved at `unassigned/grok_1784705110324_reference_unassigned.jpg` with SHA-256 `b06d020a9bf96cfaf6566ef7a79a7e406203a84f0becf1d1f7d19b93050a72b1`. It is not one of the eight canonical references, has no backlog assignment, and is not a production asset.
