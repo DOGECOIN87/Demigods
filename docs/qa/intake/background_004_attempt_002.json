@@ -1,0 +1,21 @@
+{
+  "source": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate_attempt_002.png",
+  "intended_output": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+  "exists": true,
+  "errors": [],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 2335809,
+  "sha256": "702f8f7c5f5dee986bcb3bc66ec3f63006ff0730c4c641d86f1d9078e28f784d",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [1254, 1254],
+  "fully_opaque": true,
+  "passed_binary_qa": true,
+  "manual_qa": {
+    "passed": false,
+    "status": "QA-failed",
+    "reason": "Coordinate [627,1139] lands below the front rim on the vertical platform fascia."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "source": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate_attempt_001.png",
+  "intended_output": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+  "exists": true,
+  "errors": [],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 2280221,
+  "sha256": "0ce22870e010f729a3a8819035f1deef072476a0e47729d2632c4d79547b08f5",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [1254, 1254],
+  "fully_opaque": true,
+  "passed_binary_qa": true,
+  "manual_qa": {
+    "passed": false,
+    "status": "QA-failed",
+    "reason": "Platform surface is substantially above locked foot baseline Y 1139."
+  }
+}

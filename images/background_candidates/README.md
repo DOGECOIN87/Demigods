@@ -46,3 +46,13 @@ Attempt 001 remains outside production. Approved attempt 002 is stored byte-for-
 | 001 | `native_candidates/background_003_arcane_library_candidate.png` | `dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0` | Pass — native 1254 × 1254 RGB, fully opaque | Approved and registered byte-for-byte at the intended production path. |
 
 The approved candidate is stored byte-for-byte at `assets/backgrounds/background_003_arcane_library.png` and registered with SHA-256 `dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0`. The preserved Background 003 JPEG remains byte-for-byte unchanged at SHA-256 `afc64910b8f1c44f49f33294a71f8228961025ae8a8f7f46b40def2a268e2785`.
+
+## Background 004 review candidates
+
+| Attempt | Candidate | SHA-256 | Binary QA | Manual status |
+|---|---|---|---|---|
+| 001 | `native_candidates/background_004_crescent_star_dreamscape_candidate_attempt_001.png` | `0ce22870e010f729a3a8819035f1deef072476a0e47729d2632c4d79547b08f5` | Pass — native 1254 × 1254 RGB, fully opaque | QA-failed: platform surface is substantially above foot baseline Y 1139, placing the future feet below the platform. |
+| 002 | `native_candidates/background_004_crescent_star_dreamscape_candidate_attempt_002.png` | `702f8f7c5f5dee986bcb3bc66ec3f63006ff0730c4c641d86f1d9078e28f784d` | Pass — native 1254 × 1254 RGB, fully opaque | QA-failed: coordinate `[627,1139]` lands below the front rim on the vertical platform fascia rather than the walking surface. |
+| 003 | `native_candidates/background_004_crescent_star_dreamscape_candidate.png` | `e2e2f183c4c28231e36114b1c80d2844774edd682e11b1d76b9dd0e77c58c2d9` | Pass — native 1254 × 1254 RGB, fully opaque | Candidate: coordinate overlay and repository manual QA passed; explicit human visual approval pending. |
+
+All three were generated independently from the exact preserved Background 004 JPEG. None was resized, patched, derived from a prior attempt, or stored under `assets/backgrounds/`. The reference remains byte-for-byte unchanged at SHA-256 `7ef8cedff521095601e1225f6ad87f8024930c05d9e458dda138e92ae16c6d3e`.

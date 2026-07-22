@@ -1,0 +1,22 @@
+{
+  "source": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate.png",
+  "intended_output": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+  "exists": true,
+  "errors": [],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 2122190,
+  "sha256": "e2e2f183c4c28231e36114b1c80d2844774edd682e11b1d76b9dd0e77c58c2d9",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [1254, 1254],
+  "fully_opaque": true,
+  "passed_binary_qa": true,
+  "manual_qa": {
+    "passed": true,
+    "status": "candidate",
+    "coordinate_overlay_passed": true,
+    "human_approval_required": true
+  }
+}
