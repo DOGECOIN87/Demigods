@@ -38,3 +38,11 @@ Native review candidates remain under `images/background_candidates/native_candi
 | 002 | `native_candidates/background_002_violet_gothic_sanctum_candidate.png` | `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc` | Pass — native 1254 × 1254 RGB, fully opaque | Approved and registered byte-for-byte at the intended production path. |
 
 Attempt 001 remains outside production. Approved attempt 002 is stored byte-for-byte at `assets/backgrounds/background_002_violet_gothic_sanctum.png` and registered with SHA-256 `ba15e3dd980aed77a939a87b59652af495629733fddb1316f77cfabe2c259bdc`. The preserved Background 002 JPEG remains byte-for-byte unchanged at SHA-256 `ed6a2f8893e6d5b53e9bccec21daa2dafd06a469b8c4621d759cbfeabef6dfde`.
+
+## Background 003 review candidate
+
+| Attempt | Candidate | SHA-256 | Binary QA | Manual status |
+|---|---|---|---|---|
+| 001 | `native_candidates/background_003_arcane_library_candidate.png` | `dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0` | Pass — native 1254 × 1254 RGB, fully opaque | Candidate: repository manual QA passed; explicit human visual approval pending. |
+
+The candidate remains outside `assets/backgrounds/` and is not registered. The preserved Background 003 JPEG remains byte-for-byte unchanged at SHA-256 `afc64910b8f1c44f49f33294a71f8228961025ae8a8f7f46b40def2a268e2785`.

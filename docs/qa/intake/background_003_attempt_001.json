@@ -1,0 +1,24 @@
+{
+  "source": "images/background_candidates/native_candidates/background_003_arcane_library_candidate.png",
+  "intended_output": "assets/backgrounds/background_003_arcane_library.png",
+  "exists": true,
+  "errors": [],
+  "warnings": [
+    "no embedded ICC profile detected; confirm sRGB interpretation"
+  ],
+  "size_bytes": 2344757,
+  "sha256": "dfd632fd80b6279a35f74cb767fbdf1d5662f57bbad7f6db799d972edb9928f0",
+  "format": "PNG",
+  "mode": "RGB",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "fully_opaque": true,
+  "passed_binary_qa": true,
+  "manual_qa": {
+    "passed": true,
+    "status": "candidate",
+    "human_approval_required": true
+  }
+}
