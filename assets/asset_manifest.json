@@ -97,6 +97,27 @@
         "postprocessing": []
       },
       "approved_on": "2026-07-22"
+    },
+    {
+      "id": "background_004",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+      "status": "production_ready",
+      "sha256": "e2e2f183c4c28231e36114b1c80d2844774edd682e11b1d76b9dd0e77c58c2d9",
+      "dimensions": [1254, 1254],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/18_native_1254_background_004_candidate.md",
+      "qa_report": "docs/qa/background_004_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_004_crescent_star_dreamscape_reference.jpg",
+        "reference_sha256": "7ef8cedff521095601e1225f6ad87f8024930c05d9e458dda138e92ae16c6d3e",
+        "candidate_path": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate.png",
+        "native_dimensions": [1254, 1254],
+        "postprocessing": []
+      },
+      "approved_on": "2026-07-26"
     }
   ],
   "approved_visual_references": [
