@@ -48,4 +48,4 @@ Every attempt was rendered independently from the exact preserved JPEG. No faile
 
 ## Decision
 
-**Candidate — not registered.** Attempt 003 passes automated, coordinate-overlay, and repository manual QA but requires explicit human visual approval before it may be copied to production or added to `registered_production_assets`.
+**Registered — human-approved 2026-07-26.** Attempt 003 passed automated, coordinate-overlay, and repository manual QA and received explicit human visual approval. It is copied to `assets/backgrounds/background_004_crescent_star_dreamscape.png` and added to `registered_production_assets` with SHA-256 `e2e2f183c4c28231e36114b1c80d2844774edd682e11b1d76b9dd0e77c58c2d9`.
