@@ -110,6 +110,10 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int) -> dict:
         "shift_head_top_by": rig["top_of_head_y"] - top,
     }
 
+    # Single scalar for ranking a batch of candidates by closeness to the rig.
+    overflow_px = max(0, mb[0] - left) + max(0, mb[1] - top) + max(0, right - mb[2]) + max(0, bottom - mb[3])
+    result["deviation"] = round(abs(head_delta) + abs(foot_delta) + abs(center_delta) + overflow_px, 1)
+
     result["passed"] = canvas_ok and all(c[1] for c in result["checks"])
     return result
 
@@ -163,6 +167,14 @@ def main() -> int:
 
     passed = sum(1 for r in reports if r["passed"])
     print("=" * 78)
+    if len(reports) > 1:
+        ranked = sorted(reports, key=lambda r: r.get("deviation", float("inf")))
+        print("CLOSEST FIRST (total silhouette deviation in px; lower is better):")
+        for r in ranked:
+            dev = r.get("deviation")
+            tag = "PASS" if r["passed"] else "FAIL"
+            print(f"  {tag}  dev={('n/a' if dev is None else dev):<7} {Path(r['file']).name}")
+        print("-" * 78)
     print(f"{passed}/{len(reports)} candidate(s) meet the silhouette rig gate "
           f"(tolerance +/-{args.tolerance}px). Face, hand, waist, clothing, anatomy, "
           f"lighting and identity remain manual overlay gates.")
