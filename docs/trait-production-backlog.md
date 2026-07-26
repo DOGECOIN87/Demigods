@@ -25,8 +25,8 @@ The broader and theme-composite sheets in `images/reference_sheets/index.md` cor
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-001 | base body | Neutral bald, fully clothed shared mannequin master | `POSE` relaxed-open identity reference | Pose 001 must independently qualify | `assets/base_bodies/base_body_001_neutral_master.png` | `prompts/02_base_body.md` | pending |
-| DG-002 | base pose | Both hands relaxed and open | `POSE/base_pose_001_relaxed_open_candidate.png`; attempts 002–004 | None; active master gate | `assets/base_bodies/base_pose_001_relaxed_open.png` | `prompts/16_native_1254_pose_001_candidate.md` | QA-failed |
+| DG-001 | base body | Neutral bald, fully clothed shared mannequin master | `POSE` relaxed-open identity reference | Pose 001 must independently qualify | `assets/base_bodies/base_body_001_neutral_master.png` | `prompts/16_native_1254_pose_001_candidate.md` | registered |
+| DG-002 | base pose | Both hands relaxed and open | native master `base_body_001_neutral_master.png` | fulfilled by approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | `prompts/16_native_1254_pose_001_candidate.md` | registered |
 | DG-003 | base pose | Viewer-left vertical grip; viewer-right relaxed | `POSE/base_pose_002_viewer_left_vertical_grip_candidate.png` | DG-002 | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | `prompts/03_hand_poses.md` | pending |
 | DG-004 | base pose | Viewer-right vertical grip; viewer-left relaxed | `POSE/base_pose_003_viewer_right_vertical_grip_candidate.png` | DG-002 and grip height from DG-003 | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | `prompts/03_hand_poses.md` | pending |
 | DG-005 | base pose | Viewer-left palm-up; viewer-right relaxed | `POSE/base_pose_004_viewer_left_palm_up_candidate.png` | DG-002 | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | `prompts/03_hand_poses.md` | pending |
