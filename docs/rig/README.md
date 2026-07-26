@@ -29,12 +29,20 @@ single wing legitimately skews it. For those, add `--pose-variant`, which judges
 the **arm-free body center** (head band + lower-leg band) instead:
 
 ```bash
-# base master (symmetric)
+# base master (symmetric, full figure)
 python scripts/rig_gate_report.py assets/base_bodies/base_body_001_neutral_master.png
 
-# hand-pose variants / single-side traits (allow ~2 px body-center drift)
+# hand-pose variants (full figure, raised arm) — allow ~2 px body-center drift
 python scripts/rig_gate_report.py --pose-variant --tolerance 2 incoming.png
+
+# partial trait layers (hair, eyes, crown, wings) — only occupy their own region
+python scripts/rig_gate_report.py --trait incoming.png
 ```
+
+`--trait` checks canvas size, genuine transparency, and max bounds, and skips the
+full-figure head/foot/center gates (a hair layer never reaches the foot baseline).
+Always confirm a trait's placement with a composite over the base body — see
+`docs/qa/composites/` for examples.
 
 ## `scripts/build_rig_guide.py` — visual overlay
 
