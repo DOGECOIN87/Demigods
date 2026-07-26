@@ -1,6 +1,6 @@
 # Demigods Production Status
 
-Last updated: 2026-07-22
+Last updated: 2026-07-26
 
 ## Current phase
 
@@ -45,6 +45,12 @@ No Pose 001 attempt is a production asset. Required next correction:
 - exact SHA-256 registration only after approval
 
 See `docs/qa/base_pose_001_rig_gate_2026-07-22.md`.
+
+## Base-source recovery abandoned — Issue #5 closed (2026-07-26)
+
+The originally approved 2048 × 2048 base avatar source is unrecoverable: no intact file exists, and the stored WebP plus deleted upload chunks yield only a partial head. Issue #5 (restore the 2048 source) is therefore closed as not planned. The neutral master and base body will be produced **solely** by a native 1254 × 1254 Pose 001 render that passes the locked rig gate (Issue #4), driven by `prompts/16_native_1254_pose_001_candidate.md` with the identity reference and `docs/rig/rig_guide_1254.png` attached.
+
+Candidate geometry is now scored automatically with `python scripts/rig_gate_report.py <candidate>` (batch mode ranks multiple candidates closest-first). The nearest prior attempt, `base_pose_001_relaxed_open_candidate_attempt_003.png`, deviates only 48.5 px total — centered and in-bounds, needing the ~1.05× scale-up that `prompts/16`'s proportional-framing block now specifies.
 
 ## Non-production pose candidates
 
