@@ -76,10 +76,12 @@ Prompt 16 generation attempt 001 and source gate audit 002 are retained as histo
 |---|---|---|---|
 | Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | **Registered 2026-07-26** (SHA `b344cffe…`) | None — this is the locked collection master. Trait categories may now be produced against it. |
 | Relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | **Registered** (fulfilled by the neutral master) | None — the approved master is the relaxed-open pose. |
-| Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | Canvas-compliant candidate | Normalize against the final approved Pose 001 master. |
-| Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | Candidate reference only | Normalize grip height against pose 002 after the master is approved. |
-| Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
-| Centered two-hand grip | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
+| Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | **Registered 2026-07-26** | None — passed the body-center rig gate. |
+| Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | **Registered 2026-07-26** | None — passed the body-center rig gate. |
+| Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | **Registered 2026-07-26** | None — passed the body-center rig gate. |
+| Centered two-hand grip | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | **Registered 2026-07-26** | None — passed the body-center rig gate. |
+
+The full base-body pose family (001 master + 002–005) is registered. Asymmetric poses are judged with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`, which measures the arm-free body center (head + leg bands) rather than the full silhouette; every pose landed within 1.5 px of the locked X 627 axis at foot Y 1139 and top-of-head Y 141.
 
 ## Background candidate intake
 

@@ -23,6 +23,19 @@ Provable-from-alpha gates: top-of-head Y, foot-baseline Y, horizontal center X,
 maximum bounds. Face/hand/waist/clothing/anatomy/lighting/identity remain manual
 overlay gates. Exit code is non-zero if any candidate fails (CI-friendly).
 
+**Symmetric vs. asymmetric assets.** The default center check uses the full
+silhouette bounding box — correct for a symmetric master, but a raised arm or a
+single wing legitimately skews it. For those, add `--pose-variant`, which judges
+the **arm-free body center** (head band + lower-leg band) instead:
+
+```bash
+# base master (symmetric)
+python scripts/rig_gate_report.py assets/base_bodies/base_body_001_neutral_master.png
+
+# hand-pose variants / single-side traits (allow ~2 px body-center drift)
+python scripts/rig_gate_report.py --pose-variant --tolerance 2 incoming.png
+```
+
 ## `scripts/build_rig_guide.py` — visual overlay
 
 Renders every locked anchor to a transparent `docs/rig/rig_guide_1254.png`.
