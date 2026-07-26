@@ -8,7 +8,7 @@ Last updated: 2026-07-26
 
 Production registration order remains locked. Candidate creation is now open across referenced categories and may be batched or performed before Pose 001 approval. No character-aligned candidate may be treated as production-ready until its required pose composite passes.
 
-Tracked gate: [Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4)
+Tracked gate: **RESOLVED 2026-07-26.** [Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4). A genuinely native 1254 × 1254 RGBA candidate passed the automated rig gate (top-of-head Y 141, foot-baseline Y 1139, center X 626, within bounds) and binary intake, received human approval, and is registered as `assets/base_bodies/base_body_001_neutral_master.png` (SHA-256 `b344cffec9385725ccbf375b165a3b2b5fbea7af4edabce53741f47980cf83a3`). The character-trait backlog is now unblocked; remaining base poses 002–005 derive from this master.
 
 ## Completed repository foundations
 
@@ -74,8 +74,8 @@ Prompt 16 generation attempt 001 and source gate audit 002 are retained as histo
 
 | Asset | Canonical path | State | Next action |
 |---|---|---|---|
-| Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | Blocked by Pose 001 geometry | Evaluate only after a Pose 001 candidate passes all rig and visual gates. |
-| Relaxed-open pose | `assets/base_bodies/base_pose_001_relaxed_open.png` | QA-failed; unregistered | Render another genuinely native candidate against the locked coordinate guide. |
+| Approved neutral master | `assets/base_bodies/base_body_001_neutral_master.png` | **Registered 2026-07-26** (SHA `b344cffe…`) | None — this is the locked collection master. Trait categories may now be produced against it. |
+| Relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | **Registered** (fulfilled by the neutral master) | None — the approved master is the relaxed-open pose. |
 | Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | Canvas-compliant candidate | Normalize against the final approved Pose 001 master. |
 | Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | Candidate reference only | Normalize grip height against pose 002 after the master is approved. |
 | Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | Candidate reference only | Reproduce from the final approved pose 001 master. |
