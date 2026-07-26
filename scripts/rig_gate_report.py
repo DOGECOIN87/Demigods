@@ -1,0 +1,176 @@
+#!/usr/bin/env python3
+"""Rig-gate diagnostic for Demigods base-pose / master candidates.
+
+Unlike ``intake_approved_base.py`` (which enforces a binary accept/reject), this
+tool *measures* a candidate's alpha silhouette against the locked master rig in
+``config/collection.json`` and reports the exact per-anchor pixel deltas — the
+same numbers the manual QA table records — plus the scale/offset that would be
+needed to align it. It never writes, resizes, or registers a production asset;
+it only reports, so it is safe to run on any candidate at any time.
+
+Provable-from-alpha gates: top-of-head Y, foot-baseline Y, horizontal center X,
+and the maximum character bounds. Face/hand/waist anchors remain manual overlay
+gates (they cannot be derived from the silhouette alone) and are printed as
+reference targets only.
+
+Usage:
+    python scripts/rig_gate_report.py <file-or-dir> [more ...] [--tolerance N]
+                                      [--config config/collection.json] [--json-report out.json]
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+try:
+    from PIL import Image
+except ImportError as exc:  # pragma: no cover
+    raise SystemExit("Pillow is required: pip install -r requirements.txt") from exc
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def load_rig(config_path: Path) -> dict:
+    cfg = json.loads(config_path.read_text())
+    return {"canvas": cfg["canvas"], "rig": cfg["master_rig"]}
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def inclusive_alpha_bounds(image: Image.Image) -> tuple[int, int, int, int] | None:
+    """Return inclusive (left, top, right, bottom) of non-zero alpha, or None."""
+    if image.mode != "RGBA":
+        image = image.convert("RGBA")
+    alpha = image.getchannel("A")
+    bbox = alpha.getbbox()  # exclusive right/bottom, or None if fully transparent
+    if bbox is None:
+        return None
+    left, top, right, bottom = bbox
+    return (left, top, right - 1, bottom - 1)  # inclusive
+
+
+def analyze(path: Path, rig: dict, canvas: dict, tolerance: int) -> dict:
+    result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
+    with Image.open(path) as im:
+        im.load()
+        w, h = im.size
+        result["dimensions"] = [w, h]
+        cw, ch = canvas["width"], canvas["height"]
+        canvas_ok = (w == cw and h == ch)
+        result["checks"].append(("canvas", canvas_ok, f"{w}x{h}", f"{cw}x{ch}", 0))
+        has_alpha = ("A" in im.getbands())
+        bounds = inclusive_alpha_bounds(im) if has_alpha else None
+
+    if not has_alpha:
+        result["checks"].append(("alpha", False, "no alpha channel", "RGBA w/ transparency", 0))
+        return result
+    if bounds is None:
+        result["checks"].append(("alpha", False, "fully transparent", "visible silhouette", 0))
+        return result
+
+    left, top, right, bottom = bounds
+    result["inclusive_bounds"] = [left, top, right, bottom]
+    center_x = (left + right) / 2
+    mb = rig["maximum_character_bounds"]  # inclusive [x_min, y_min, x_max, y_max]
+
+    head_delta = top - rig["top_of_head_y"]       # + => too low, - => too high
+    foot_delta = bottom - rig["foot_baseline_y"]  # + => below baseline, - => above
+    center_delta = center_x - rig["canvas_center_x"]
+
+    def ok(delta): return abs(delta) <= tolerance
+
+    result["checks"].append(("top_of_head_y", ok(head_delta), top, rig["top_of_head_y"], head_delta))
+    result["checks"].append(("foot_baseline_y", ok(foot_delta), bottom, rig["foot_baseline_y"], foot_delta))
+    result["checks"].append(("center_x", ok(center_delta), round(center_x, 1), rig["canvas_center_x"], round(center_delta, 1)))
+
+    within = (left >= mb[0] and top >= mb[1] and right <= mb[2] and bottom <= mb[3])
+    overflow = [
+        f"L{mb[0]-left}" if left < mb[0] else "",
+        f"T{mb[1]-top}" if top < mb[1] else "",
+        f"R{right-mb[2]}" if right > mb[2] else "",
+        f"B{bottom-mb[3]}" if bottom > mb[3] else "",
+    ]
+    result["checks"].append(("max_bounds", within, f"[{left},{top},{right},{bottom}]",
+                             f"[{mb[0]},{mb[1]},{mb[2]},{mb[3]}]",
+                             " ".join(x for x in overflow if x) or "0"))
+
+    # Corrective guidance for the next NATIVE render (not applied here).
+    height = bottom - top + 1
+    target_height = rig["foot_baseline_y"] - rig["top_of_head_y"] + 1
+    result["guidance"] = {
+        "silhouette_height": height,
+        "target_height": target_height,
+        "scale_to_target": round(target_height / height, 4),
+        "shift_center_x_by": round(rig["canvas_center_x"] - center_x, 1),
+        "shift_head_top_by": rig["top_of_head_y"] - top,
+    }
+
+    result["passed"] = canvas_ok and all(c[1] for c in result["checks"])
+    return result
+
+
+def print_report(r: dict) -> None:
+    print("=" * 78)
+    print(Path(r["file"]).name)
+    print(f"  sha256: {r['sha256']}")
+    if "inclusive_bounds" in r:
+        print(f"  inclusive visible bounds: {r['inclusive_bounds']}")
+    print(f"  {'CHECK':<16}{'RESULT':<8}{'ACTUAL':<16}{'TARGET':<16}DELTA")
+    for name, passed, actual, target, delta in r["checks"]:
+        print(f"  {name:<16}{('PASS' if passed else 'FAIL'):<8}{str(actual):<16}{str(target):<16}{delta}")
+    if "guidance" in r and not r["passed"]:
+        g = r["guidance"]
+        print(f"  guidance: scale x{g['scale_to_target']} (h {g['silhouette_height']}->{g['target_height']}), "
+              f"shift head_top {g['shift_head_top_by']:+d} px, center_x {g['shift_center_x_by']:+} px")
+    print(f"  >>> {'PASS — silhouette gates met' if r['passed'] else 'FAIL — do not register'}")
+
+
+def gather(paths: list[str]) -> list[Path]:
+    files: list[Path] = []
+    for p in paths:
+        path = Path(p)
+        if path.is_dir():
+            files.extend(sorted(path.glob("*.png")))
+        elif path.is_file():
+            files.append(path)
+        else:
+            print(f"warning: not found: {p}", file=sys.stderr)
+    return files
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="Rig-gate diagnostic for Demigods pose/master candidates.")
+    ap.add_argument("paths", nargs="+", help="PNG file(s) or directory(ies)")
+    ap.add_argument("--config", type=Path, default=ROOT / "config" / "collection.json")
+    ap.add_argument("--tolerance", type=int, default=1, help="Allowed +/- pixel delta on each anchor (default 1).")
+    ap.add_argument("--json-report", type=Path)
+    args = ap.parse_args()
+
+    spec = load_rig(args.config)
+    files = gather(args.paths)
+    if not files:
+        print("No PNG candidates found.", file=sys.stderr)
+        return 2
+
+    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance) for f in files]
+    for r in reports:
+        print_report(r)
+
+    passed = sum(1 for r in reports if r["passed"])
+    print("=" * 78)
+    print(f"{passed}/{len(reports)} candidate(s) meet the silhouette rig gate "
+          f"(tolerance +/-{args.tolerance}px). Face, hand, waist, clothing, anatomy, "
+          f"lighting and identity remain manual overlay gates.")
+    if args.json_report:
+        args.json_report.write_text(json.dumps(reports, indent=2))
+        print(f"JSON report written to {args.json_report}")
+    return 0 if passed == len(reports) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

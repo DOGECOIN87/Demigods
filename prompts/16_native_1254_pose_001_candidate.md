@@ -12,7 +12,7 @@ This prompt creates exactly one visual-review candidate. It does not approve, re
 
 ## Ready-to-run image prompt
 
-Attach only `images/pose_candidates/base_pose_001_relaxed_open_candidate.png` as the visual reference, then use:
+Attach `images/pose_candidates/base_pose_001_relaxed_open_candidate.png` as the visual-identity reference and `docs/rig/rig_guide_1254.png` as the placement guide, then use:
 
 ```text
 Create exactly one full-body Demigods relaxed-open base-avatar review candidate.
@@ -39,6 +39,14 @@ LOCKED CANVAS AND RIG:
 - viewer-right hand anchor: X 850, Y 772
 - foot baseline: Y 1139
 - keep all visible character pixels within X 233–1021 and Y 129–1139
+
+PROPORTIONAL FRAMING (the pixel targets above expressed as ratios the renderer can hit — match the attached rig guide exactly):
+- center the figure dead-center horizontally at 50% width
+- leave ~11% empty headroom above the crown of the head (crown aligns to the upper cyan line)
+- feet rest ~9% up from the bottom edge, NOT on the bottom edge (soles align to the lower cyan line)
+- total figure height is ~80% of the image height — no taller, no shorter
+- the large chibi head fills roughly the top third; eye line sits ~29% down from the top
+- never let any pixel touch the left or right edge; stay within the central ~63% of the width
 
 CHARACTER LOCK:
 - premium anime-chibi fantasy game-avatar rendering
