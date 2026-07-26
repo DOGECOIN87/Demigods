@@ -218,6 +218,27 @@
         "postprocessing": []
       },
       "approved_on": "2026-07-26"
+    },
+    {
+      "id": "hair_back_003",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+      "status": "production_ready",
+      "sha256": "eda6cb47086b8753b66e0daba37bbb189563adb3c5eca5dd33e6ab036b336c71",
+      "dimensions": [1254, 1254],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/04_hair_back.md",
+      "qa_composite": "docs/qa/composites/hair_back_003_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "rear hair, long soft waves, silver-white",
+        "trait_center_x": 626.5,
+        "native_dimensions": [1254, 1254],
+        "postprocessing": []
+      },
+      "approved_on": "2026-07-26"
     }
   ],
   "approved_visual_references": [

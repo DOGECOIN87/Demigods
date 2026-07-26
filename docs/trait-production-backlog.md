@@ -79,7 +79,7 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 |---|---|---|---|---|---|---|---|
 | DG-029 | hair back | Long wavy gold-blonde rear hair | `HAIR`, upper row cell 1 | Locked scalp and pose | `assets/hair_back/hair_back_001_gold_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-030 | hair back | Long wavy black rear hair | `HAIR`, upper row cell 2 | DG-029 representative test | `assets/hair_back/hair_back_002_black_long_wavy.png` | `prompts/04_hair_back.md` | pending |
-| DG-031 | hair back | Long wavy white-silver rear hair | `HAIR`, upper row cell 3 | DG-029 | `assets/hair_back/hair_back_003_silver_long_wavy.png` | `prompts/04_hair_back.md` | pending |
+| DG-031 | hair back | Long wavy white-silver rear hair | `HAIR`, upper row cell 3 | representative hair-back test (this asset) | `assets/hair_back/hair_back_003_silver_long_wavy.png` | `prompts/04_hair_back.md` | **registered** |
 | DG-032 | hair back | Long wavy violet rear hair | `HAIR`, upper row cell 4 | DG-029 | `assets/hair_back/hair_back_004_violet_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-033 | hair back | Long wavy deep-blue rear hair | `HAIR`, upper row cell 5 | DG-029 | `assets/hair_back/hair_back_005_blue_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-034 | hair back | Long wavy pink rear hair | `HAIR`, upper row cell 6 | DG-029 | `assets/hair_back/hair_back_006_pink_long_wavy.png` | `prompts/04_hair_back.md` | pending |

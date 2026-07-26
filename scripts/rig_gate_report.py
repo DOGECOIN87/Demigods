@@ -65,9 +65,11 @@ def band_center_x(image: Image.Image, y0: int, y1: int) -> float | None:
     return (bb[0] + bb[2] - 1) / 2
 
 
-def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False) -> dict:
+def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False,
+            trait: bool = False) -> dict:
     result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
     head_cx = leg_cx = None
+    alpha_min = None
     with Image.open(path) as im:
         im.load()
         w, h = im.size
@@ -77,7 +79,9 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
         result["checks"].append(("canvas", canvas_ok, f"{w}x{h}", f"{cw}x{ch}", 0))
         has_alpha = ("A" in im.getbands())
         bounds = inclusive_alpha_bounds(im) if has_alpha else None
-        if has_alpha and bounds is not None:
+        if has_alpha:
+            alpha_min = (im.convert("RGBA").getchannel("A").getextrema())[0]
+        if has_alpha and bounds is not None and not trait:
             # Arm-free bands: head+neck (above the shoulders) and lower legs/feet.
             head_cx = band_center_x(im, rig["top_of_head_y"], rig["shoulder_line_y"] - 60)
             leg_cx = band_center_x(im, rig["waist_center"][1] + 130, rig["foot_baseline_y"] + 1)
@@ -94,26 +98,33 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
     center_x = (left + right) / 2
     mb = rig["maximum_character_bounds"]  # inclusive [x_min, y_min, x_max, y_max]
 
-    head_delta = top - rig["top_of_head_y"]       # + => too low, - => too high
-    foot_delta = bottom - rig["foot_baseline_y"]  # + => below baseline, - => above
-
     def ok(delta): return abs(delta) <= tolerance
 
-    result["checks"].append(("top_of_head_y", ok(head_delta), top, rig["top_of_head_y"], head_delta))
-    result["checks"].append(("foot_baseline_y", ok(foot_delta), bottom, rig["foot_baseline_y"], foot_delta))
-
-    # Center check. Symmetric masters use the full-silhouette center; asymmetric
-    # poses/traits (a raised arm, a single wing) legitimately skew the silhouette,
-    # so --pose-variant judges the arm-free body center (head + leg bands) instead.
-    if pose_variant and head_cx is not None and leg_cx is not None:
-        body_center = (head_cx + leg_cx) / 2
-        center_delta = body_center - rig["canvas_center_x"]
-        result["body_center_x"] = {"head": round(head_cx, 1), "legs": round(leg_cx, 1), "mean": round(body_center, 1)}
-        result["checks"].append(("body_center_x", ok(center_delta), round(body_center, 1), rig["canvas_center_x"], round(center_delta, 1)))
-        result["silhouette_center_x"] = round(center_x, 1)
+    if trait:
+        # Partial layers (hair, eyes, crown, single wing) occupy only their own
+        # region, so full-figure top-of-head / foot-baseline / center checks do
+        # not apply. Verify a genuinely transparent background and staying in
+        # bounds; confirm placement with a composite over the base body.
+        result["checks"].append(("transparent_bg", alpha_min == 0, f"alpha_min={alpha_min}", "0", 0))
+        result["trait_center_x"] = round(center_x, 1)
     else:
-        center_delta = center_x - rig["canvas_center_x"]
-        result["checks"].append(("center_x", ok(center_delta), round(center_x, 1), rig["canvas_center_x"], round(center_delta, 1)))
+        head_delta = top - rig["top_of_head_y"]       # + => too low, - => too high
+        foot_delta = bottom - rig["foot_baseline_y"]  # + => below baseline, - => above
+        result["checks"].append(("top_of_head_y", ok(head_delta), top, rig["top_of_head_y"], head_delta))
+        result["checks"].append(("foot_baseline_y", ok(foot_delta), bottom, rig["foot_baseline_y"], foot_delta))
+
+        # Center check. Symmetric masters use the full-silhouette center; asymmetric
+        # poses (a raised arm) skew it, so --pose-variant judges the arm-free body
+        # center (head + leg bands) instead.
+        if pose_variant and head_cx is not None and leg_cx is not None:
+            body_center = (head_cx + leg_cx) / 2
+            center_delta = body_center - rig["canvas_center_x"]
+            result["body_center_x"] = {"head": round(head_cx, 1), "legs": round(leg_cx, 1), "mean": round(body_center, 1)}
+            result["checks"].append(("body_center_x", ok(center_delta), round(body_center, 1), rig["canvas_center_x"], round(center_delta, 1)))
+            result["silhouette_center_x"] = round(center_x, 1)
+        else:
+            center_delta = center_x - rig["canvas_center_x"]
+            result["checks"].append(("center_x", ok(center_delta), round(center_x, 1), rig["canvas_center_x"], round(center_delta, 1)))
 
     within = (left >= mb[0] and top >= mb[1] and right <= mb[2] and bottom <= mb[3])
     overflow = [
@@ -139,7 +150,10 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
 
     # Single scalar for ranking a batch of candidates by closeness to the rig.
     overflow_px = max(0, mb[0] - left) + max(0, mb[1] - top) + max(0, right - mb[2]) + max(0, bottom - mb[3])
-    result["deviation"] = round(abs(head_delta) + abs(foot_delta) + abs(center_delta) + overflow_px, 1)
+    if trait:
+        result["deviation"] = round(abs(center_x - rig["canvas_center_x"]) + overflow_px, 1)
+    else:
+        result["deviation"] = round(abs(head_delta) + abs(foot_delta) + abs(center_delta) + overflow_px, 1)
 
     result["passed"] = canvas_ok and all(c[1] for c in result["checks"])
     return result
@@ -181,7 +195,11 @@ def main() -> int:
     ap.add_argument("--tolerance", type=int, default=1, help="Allowed +/- pixel delta on each anchor (default 1).")
     ap.add_argument("--pose-variant", action="store_true",
                     help="Judge center by the arm-free body (head + leg bands) instead of the full "
-                         "silhouette. Use for asymmetric poses/traits (raised arm, single wing).")
+                         "silhouette. Use for asymmetric poses (raised arm).")
+    ap.add_argument("--trait", action="store_true",
+                    help="Partial-layer mode (hair, eyes, crown, wings): checks canvas, genuine "
+                         "transparency, and max bounds only; skips the full-figure head/foot/center "
+                         "gates. Confirm placement with a composite over the base body.")
     ap.add_argument("--json-report", type=Path)
     args = ap.parse_args()
 
@@ -191,7 +209,7 @@ def main() -> int:
         print("No PNG candidates found.", file=sys.stderr)
         return 2
 
-    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant) for f in files]
+    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait) for f in files]
     for r in reports:
         print_report(r)
 
