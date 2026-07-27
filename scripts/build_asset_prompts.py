@@ -54,6 +54,96 @@ CATEGORIES: dict[str, tuple[int, str, str, str]] = {
                     "no width ceiling; must not cover the eyes or mouth"),
 }
 
+# Markdown appended to a category file's header. Use for workflow and ordering
+# that applies to the whole category rather than to one asset.
+CATEGORY_NOTES: dict[str, str] = {
+    "outfits": """
+## Release-blocking category
+
+`outfits` is listed in `generate_777.REQUIRED_CATEGORIES`, so `generate_777.py`
+refuses to run while the category is empty. It is required because the base
+bodies wear only a skin-toned mannequin garment — tank top `(252,218,182)` and
+shorts `(247,211,174)` against cheek skin `(253,199,163)`. At full resolution
+that garment reads fine; at marketplace thumbnail size the contrast disappears
+and the chibi figures read as unclothed.
+
+## The contrast gate
+
+```bash
+python scripts/rig_gate_report.py --trait <file> \\
+  --max-width-ratio 1.15 --min-skin-contrast 70
+```
+
+`skin_contrast` is the **mean RGB distance between the layer's opaque pixels and
+the reference skin colour `(253,199,163)`**. The mannequin garment measures about
+**27**; a deep navy robe measures about **274**. Any candidate below **70** must
+be rejected: pale, skin-adjacent garments make the character appear unclothed at
+thumbnail size, which is the exact failure this category exists to prevent.
+
+## Production order
+
+Produce in this order rather than by ID:
+
+1. **DG-045** — `outfit_009_navy_high_collar_coat` — category representative test
+2. **DG-040** — `outfit_004_black_ragged_hooded_cloak`
+3. **DG-042** — `outfit_006_black_layered_hooded_robe`
+
+The remaining mid-tone designs may follow in any order. Leave the three pale
+designs until last, because they carry the highest contrast risk and are the
+likeliest to need several attempts:
+
+- **DG-037** — `outfit_001_celestial_robe_white_silver`
+- **DG-041** — `outfit_005_white_blue_armored_mantle`
+- **DG-046** — `outfit_010_celestial_robe_white_gold`
+
+DG-045 leads because deep navy gives the largest possible margin over skin tone,
+so it clears the release blocker with the fewest rejected rounds. There is no
+reason to gate the release behind the hardest cases in the set.
+
+**Register three or four approved outfits before rendering the collection.** The
+gate only needs one, but a single robe across all 777 tokens produces excessive
+visual repetition — and fixing that later means re-rendering the whole set.
+
+## Workflow for every outfit candidate
+
+1. Upload the candidate to `images/trait_candidates/outfits/`.
+2. Run the outfit gate with `--max-width-ratio 1.15` and `--min-skin-contrast 70`.
+3. Composite it over `assets/base_bodies/base_body_001_neutral_master.png`.
+4. Check the neck, head and hand openings, garment coverage, and whether any
+   mannequin garment shows through.
+5. Downscale the composite to **210 px** and confirm the character still clearly
+   reads as clothed. This is the test the category exists to pass.
+6. Obtain human approval.
+7. Register the asset.
+8. Run `python scripts/report_production_status.py --write`.
+""",
+}
+
+# Extra contract text folded into every prompt for a category.
+CATEGORY_CONTRACT: dict[str, str] = {
+    "outfits": """
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.""",
+}
+
 SHARED = """CANVAS — restated because generators drift to 1024:
 - exactly 1254 x 1254 pixels, generated natively at that size
 - never upscale, downscale, or resample anything to reach 1254 x 1254
@@ -139,6 +229,8 @@ def render_prompt(row: dict[str, str]) -> str:
         )
         extra = ""
 
+    extra += CATEGORY_CONTRACT.get(row["category"], "")
+
     return (
         f"{opening}\n\n{SHARED}{extra}\n\n"
         f"SUBJECT: {row['description']}.\n"
@@ -181,7 +273,10 @@ def main(argv: list[str] | None = None) -> int:
                  f"Layer {layer:02d}. Generated from the backlog; do not hand-edit.", "",
                  f"**Gate every candidate:** `python scripts/rig_gate_report.py {gate} <file>`", "",
                  "Then composite over `assets/base_bodies/base_body_001_neutral_master.png` "
-                 "and confirm placement before requesting approval.", "", "---", ""]
+                 "and confirm placement before requesting approval.", ""]
+        if category in CATEGORY_NOTES:
+            lines.append(CATEGORY_NOTES[category])
+        lines.extend(["---", ""])
         for row in entries:
             lines.append(f"## {row['id']} — {row['stem']}\n")
             lines.append(f"Dependency: {row['dependency']}  \nPath: `{row['path']}`\n")
