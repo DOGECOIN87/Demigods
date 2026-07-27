@@ -85,7 +85,17 @@ def parse_backlog(path: Path) -> tuple[list[BacklogEntry], list[str]]:
         if not stripped.startswith("|"):
             continue
         cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+        looks_like_entry = bool(cells) and BACKLOG_ID_PATTERN.fullmatch(strip_emphasis(cells[0]))
         if len(cells) < 8:
+            # Fail closed. A DG row in a table with the wrong column count used to
+            # be skipped silently, so eleven added rows once went uncounted while
+            # every check still reported PASS.
+            if looks_like_entry:
+                errors.append(
+                    f"{strip_emphasis(cells[0])}: backlog row has {len(cells)} columns; "
+                    f"the schema requires 8 (ID, category, description, source, dependency, "
+                    f"path, prompt, status)"
+                )
             continue
         entry_id = strip_emphasis(cells[0])
         if not BACKLOG_ID_PATTERN.fullmatch(entry_id):

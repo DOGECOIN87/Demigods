@@ -87,14 +87,18 @@ All eleven are ground-plane effects and are gated with `rig_gate_report.py --flo
 
 The aura catalog's lower row splits cleanly into geometric and organic designs. Geometric cells are rendered analytically by repository scripts, which removes the matte-fringe and stray-pixel failures that background removal introduces. Organic cells still need an image generator driven by `prompts/19`.
 
-| ID | Cell reading | Route | Script |
+Backlog IDs sit in the second column here: this is a routing reference, not a
+backlog table, and the ledger parser treats a `DG-` value in the first column as
+a schema row.
+
+| Cell reading | Backlog ID | Route | Script |
 |---|---|---|---|
-| DG-015 | Elliptical ring band | procedural | `scripts/build_aura_floor_ring.py` |
-| DG-016 | Violet circle with **radiating spoke texture**, not a plain gradient | generator, or procedural spokes plus hand finish | — |
-| DG-017 | Angular crystalline shards | generator | — |
-| DG-018 | Rising flame with organic curl | generator | — |
-| DG-019 | Branching lightning wisps | generator | — |
-| DG-020 | Smooth pale-gold falloff, no internal structure | procedural | `scripts/build_aura_radiance.py` |
+| Elliptical ring band | DG-015 | procedural | `scripts/build_aura_floor_ring.py` |
+| Violet circle with **radiating spoke texture**, not a plain gradient | DG-016 | generator, or procedural spokes plus hand finish | — |
+| Angular crystalline shards | DG-017 | generator | — |
+| Rising flame with organic curl | DG-018 | generator | — |
+| Branching lightning wisps | DG-019 | generator | — |
+| Smooth pale-gold falloff, no internal structure | DG-020 | procedural | `scripts/build_aura_radiance.py` |
 
 DG-016 was initially assessed as a plain radial gradient. Inspection of the cell at magnification shows radiating internal structure, so it is **not** a straight companion to DG-020 and should not be routed as one.
 

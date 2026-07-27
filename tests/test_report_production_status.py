@@ -143,6 +143,22 @@ class ProductionStatusTests(unittest.TestCase):
         self.assertEqual(by_category["global_finish"].state, "source-gated")
         self.assertIn("global_finish", status.pending_categories)
 
+    def test_malformed_row_fails_closed_instead_of_being_skipped(self) -> None:
+        """A DG row with the wrong column count was once silently ignored."""
+        root = self.make_root()
+        rows = "| DG-001 | short table | procedural | note |\n"
+        _, errors = report_production_status.parse_backlog(self.write_backlog(root, rows))
+        self.assertTrue(any("requires 8" in error for error in errors), errors)
+
+    def test_non_backlog_table_without_dg_ids_is_ignored_quietly(self) -> None:
+        """Documentation tables are fine as long as column 0 is not a DG id."""
+        root = self.make_root()
+        rows = ("| Elliptical ring band | DG-015 | procedural | build.py |\n"
+                + self.backlog_row("DG-002", "assets/hair_back/hair_back_001_gold.png", "pending"))
+        entries, errors = report_production_status.parse_backlog(self.write_backlog(root, rows))
+        self.assertEqual([e.id for e in entries], ["DG-002"])
+        self.assertEqual(errors, [])
+
     def test_unknown_backlog_status_is_rejected(self) -> None:
         rows = self.backlog_row("DG-001", "assets/base_bodies/base_body_001_neutral.png", "shipped")
         root = self.make_root()
