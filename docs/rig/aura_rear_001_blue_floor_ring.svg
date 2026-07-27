@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgb(226, 240, 255)"/>
+      <stop offset="0.5" stop-color="rgb(150, 190, 252)"/>
+      <stop offset="1" stop-color="rgb(120, 162, 248)"/>
+    </linearGradient>
+    <radialGradient id="wash">
+      <stop offset="0" stop-color="rgb(232, 244, 255)" stop-opacity="0.000"/>
+      <stop offset="1" stop-color="rgb(232, 244, 255)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-25%" y="-60%" width="150%" height="220%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke="rgb(132, 178, 250)" stroke-width="16.0" opacity="0.5" filter="url(#glow)">
+    <ellipse cx="627" cy="1120.0" rx="300.0" ry="72.0"/>
+    <ellipse cx="627" cy="1130.0" rx="321.9" ry="79.4"/>
+  </g>
+  <g fill="none" stroke="url(#band)" stroke-width="7.0">
+    <ellipse cx="627" cy="1120.0" rx="300.0" ry="72.0"/>
+    <ellipse cx="627" cy="1130.0" rx="321.9" ry="79.4"/>
+  </g>
+</svg>

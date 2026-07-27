@@ -2,7 +2,7 @@
 
 One self-contained prompt per layer category, in back-to-front stack order. Each renders a single isolated transparent 1254x1254 trait aligned to the registered base body. Fill the `[SPECIFY ...]` slot (and `[NUM]`/`[COLOR]` in the filename) per asset.
 
-**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + `docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`.
+**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + `docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate partial trait layers with `python scripts/rig_gate_report.py --trait <file>`, then confirm placement with a composite over the base master. Use `--pose-variant --tolerance 2` only for full-figure base poses; it measures head and leg bands and will false-fail a partial layer.
 
 ---
 
@@ -26,12 +26,35 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one rear aura or effect: [SPECIFY — e.g. blue floor halo ring / violet radial glow / lightning wisps / rising void flame / sacred light].
 - centered to the master rig, framing the character silhouette without covering the face zone
 - luminous with soft transparent alpha falloff; no solid black, white, or colored fill
 - include a floor disc ONLY if the effect is explicitly a floor circle
 - do not clip glow or particles at the canvas edges
+
+PROPORTION: no width ceiling; auras vary by design.
 
 ISOLATION: the final asset contains ONLY the rear aura / effect (behind the character); exclude the character, clothing, objects, and scenery.
 
@@ -42,6 +65,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --floor-aura for ground-plane rings; --trait for body-centred glows <file>`, then composite over the base master to confirm placement.
 
 ## Layer 03 — back accessory (wings / cape / cloak / mantle / crest)
 
@@ -63,12 +88,35 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one back accessory: [SPECIFY — e.g. silver feathered wings / black-violet bat wings / navy formal cape / ragged cloak].
 - align to the shared upper-back and shoulder-blade anchors, positioned BEHIND the body
 - render as seen from the front while sitting behind the character
 - wings are a balanced symmetrical pair unless deliberately asymmetric
 - preserve a hidden central overlap behind the torso; respect the foot baseline
+
+PROPORTION: no ceiling — wings and capes run 1.6-2.0x body width by design.
 
 ISOLATION: the final asset contains ONLY the back accessory (wings / cape / cloak / mantle / crest); exclude the mannequin, body, head, hair, outfit, hands, and background.
 
@@ -79,6 +127,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 04 — hair-back layer (rear hair only)
 
@@ -100,6 +150,27 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create only the REAR portion of one hairstyle: [SPECIFY — length and shape, e.g. long wavy, straight, twin braids].
 - back-hair layer only, positioned behind the head and shoulders
@@ -107,6 +178,8 @@ Create only the REAR portion of one hairstyle: [SPECIFY — length and shape, e.
 - exclude bangs and face-framing front strands (those are the separate front-hair layer)
 - include hidden overlap behind the scalp to prevent seams
 - Color: [COLOR]
+
+PROPORTION: target ~1.2x body width; the top must reach Y 132 or above, or a bald gap shows above the hairline.
 
 ISOLATION: the final asset contains ONLY the hair-back layer (rear hair only); exclude bangs, front strands, face, ears, body, clothes, and accessories.
 
@@ -117,6 +190,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.35 <file>`, then composite over the base master to confirm placement.
 
 ## Layer 06 — outfit (clothing only)
 
@@ -138,12 +213,35 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated outfit: [SPECIFY — theme, garments, colors, e.g. royal white-gold robe / dark prince armor / celestial dress].
 - align to the shared neck, shoulders, torso, waist, wrists, hips, knees, and foot baseline
 - preserve the exact approved body proportions; leave clean openings for head, neck, and hands
 - include hidden overlap beneath hands, hair, and neck layers to prevent seams
 - keep capes / wings / back effects as SEPARATE layers unless structurally inseparable
+
+PROPORTION: a garment hugs the figure.
 
 ISOLATION: the final asset contains ONLY the outfit (clothing only); exclude the body, head, face, hair, hands, held objects, aura, and scenery.
 
@@ -154,6 +252,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.15 <file>`, then composite over the base master to confirm placement.
 
 ## Layer 07 — neck accessory (necklace / choker / collar / bow / pendant)
 
@@ -175,10 +275,33 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated neck accessory: [SPECIFY — type, material, color].
 - align to the approved neck and upper-chest anchor
 - preserve hidden overlap beneath hair and above the outfit
+
+PROPORTION: small layer; no ceiling needed.
 
 ISOLATION: the final asset contains ONLY the neck accessory (necklace / choker / collar / bow / pendant); exclude skin, outfit, head, face, and hair.
 
@@ -189,6 +312,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 08 — eye set (matched pair)
 
@@ -210,11 +335,34 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one matched eye-set trait: [SPECIFY — iris color, pupil, style, e.g. galaxy blue / soul-flame violet / silver runic].
 - both eyes aligned to Y 367 using the identical approved spacing and scale
 - include eye lines, lashes, sclera, irises, pupils, internal highlights, and shading
 - use the shared upper-left catchlight logic
+
+PROPORTION: small layer; align to eye line Y 367.
 
 ISOLATION: the final asset contains ONLY the eye set (matched pair); exclude eyebrows, nose, mouth, face, skin, blush, hair, and expression marks.
 
@@ -225,6 +373,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 09 — eyebrow pair
 
@@ -246,10 +396,33 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one matched eyebrow pair expressing [SPECIFY MOOD — e.g. calm, fierce, gentle, surprised].
 - use the approved eyebrow anchor positions and line weight, just above the eye line (Y 367)
 - remain compatible with all approved eye sets
+
+PROPORTION: small layer; sits above the eye line.
 
 ISOLATION: the final asset contains ONLY the eyebrow pair; exclude eyes, face, forehead, hair, nose, mouth, and blush.
 
@@ -260,6 +433,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 10 — mouth
 
@@ -281,10 +456,33 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated mouth: [SPECIFY — e.g. soft smile / confident smirk / open cheer / calm neutral / tiny pout / fang grin].
 - center to the mouth anchor at X 627, Y 441 using the approved scale
 - include only the mouth (and minimal chin shading if needed)
+
+PROPORTION: small layer; align to mouth centre 627, 441.
 
 ISOLATION: the final asset contains ONLY the mouth; exclude eyes, eyebrows, nose, face, skin, blush, and hair.
 
@@ -295,6 +493,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 11 — expression mark overlay
 
@@ -316,10 +516,33 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated expression overlay: [SPECIFY — blush / sweat drop / anger mark / sparkles / stress lines / tears].
 - align to the appropriate face zone (cheeks, temple, or above the head)
 - include only the requested effect on clean transparent space; readable at small size
+
+PROPORTION: small layer.
 
 ISOLATION: the final asset contains ONLY the expression mark overlay; exclude face features, hair, body, and any full-character aura.
 
@@ -330,6 +553,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 12 — hair-front layer (bangs / front strands only)
 
@@ -351,12 +576,35 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create only the FRONT portion of one hairstyle: [SPECIFY — bang shape and parting].
 - bangs and front face-framing strands only; align to the shared scalp, forehead, temple, and ear anchors
 - preserve the approved face opening; do not change head dimensions
 - include hidden overlap beneath the top hairline to prevent seams
 - Color: [COLOR]  (match the paired hair-back layer)
+
+PROPORTION: match the paired hair-back width; the top must reach Y 132 or above.
 
 ISOLATION: the final asset contains ONLY the hair-front layer (bangs / front strands only); exclude rear hair, scalp, face, skin, eyes, eyebrows, mouth, ears, clothing, crowns, horns, halos, and jewelry.
 
@@ -367,6 +615,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.35 <file>`, then composite over the base master to confirm placement.
 
 ## Layer 13 — head accessory (crown / halo / horns / tiara / laurel / circlet / veil)
 
@@ -388,11 +638,34 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated head accessory: [SPECIFY — type, material, color].
 - center to the approved head anchor at X 627, Y 343; sit on top of or around the head
 - preserve hidden overlap where it enters or sits behind hair
 - use a balanced pair for horns or side ornaments; keep halos and open metalwork transparent inside
+
+PROPORTION: aligned to head centre 627, 343 and top-of-head Y 141.
 
 ISOLATION: the final asset contains ONLY the head accessory (crown / halo / horns / tiara / laurel / circlet / veil); exclude hair, scalp, face, eyes, body, clothing, neck accessory, and aura.
 
@@ -403,6 +676,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.30 <file>`, then composite over the base master to confirm placement.
 
 ## Layer 14 — hand-held object
 
@@ -424,11 +699,34 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one isolated hand-held object: [SPECIFY — staff / orb / book / sword / wand / lantern / relic]. Assigned hand: [VIEWER-LEFT X404,Y772 / VIEWER-RIGHT X850,Y772 / BOTH].
 - align the grip/contact point exactly to the assigned hand anchor, matching the chosen pose's grip angle
 - include the object only, plus a minimal grip overlay ONLY if technically necessary
 - contain any glow within transparent alpha falloff; keep the whole object uncropped
+
+PROPORTION: aligned to the named hand anchor.
 
 ISOLATION: the final asset contains ONLY the hand-held object; exclude the body, arm, outfit, face, and background.
 
@@ -439,6 +737,8 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.
 
 ## Layer 15 — front aura / effect (in front of the character)
 
@@ -460,11 +760,34 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check
+
 TARGET:
 Create one front aura or effect: [SPECIFY — sparkles / floating stars / embers / petals / energy motes].
 - centered to the master rig, sitting in FRONT of the character but never covering the eyes or mouth
 - luminous with soft transparent alpha falloff; no solid backdrop
 - do not clip particles at the canvas edges
+
+PROPORTION: no width ceiling; effects vary by design.
 
 ISOLATION: the final asset contains ONLY the front aura / effect (in front of the character); exclude the character, clothing, objects, and scenery.
 
@@ -475,3 +798,5 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 
 Return one transparent PNG only. No text or alternate versions.
 ```
+
+Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over the base master to confirm placement.

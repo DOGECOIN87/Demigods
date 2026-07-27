@@ -1,6 +1,6 @@
 # Demigods Trait Production Backlog
 
-Last updated: 2026-07-22
+Last updated: 2026-07-27
 
 This is the ordered production-registration queue for the 1254 × 1254 modular collection. Candidate generation may happen in parallel or out of order under `prompts/19_individual_trait_asset_co_creation.md`, but registration still follows dependencies and QA. The backlog inventories only assets supported by repository prompts, dedicated reference catalogs, or the eight preserved background references. Character names from the flattened concept sheets are not used as production trait names.
 
@@ -18,6 +18,7 @@ Status values are limited to `pending`, `candidate`, `QA-failed`, `approved`, an
 | `ACCESSORY` | `images/reference_sheets/fantasy_accessory_catalog_sheet.webp` |
 | `FACE` | `images/reference_sheets/anime_character_creation_asset_sheet.webp` |
 | `HAND` | `images/reference_sheets/fantasy_hand_held_items_asset_sheet.webp` |
+| `RING` | `images/reference_sheets/floor_ring_aura_variants_sheet.png` |
 
 The broader and theme-composite sheets in `images/reference_sheets/index.md` corroborate the visual system, but their tiny flattened composite cells are not treated as additional production assets where the same design is already represented in a dedicated catalog. This avoids double-counting baked character combinations as isolated traits.
 
@@ -53,12 +54,55 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | pending |
+| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | registered |
 | DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | pending |
 | DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | pending |
 | DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | pending |
 | DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | pending |
-| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | pending |
+| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | registered |
+
+#### Floor-ring aura family — `RING` sheet (added 2026-07-27)
+
+`images/reference_sheets/floor_ring_aura_variants_sheet.png` supplies twelve floor rings sharing one elliptical form. Cell 1 is the blue double ring already covered by DG-015, so the remaining eleven extend the category. Unlike the compressed catalog previews, this sheet is full resolution and its designs are unambiguous.
+
+The neon variants are the *same geometry* in a different palette, so they are rendered by `scripts/build_aura_floor_ring.py --palette <name>` and are pixel-identical in form to DG-015. The textured variants carry organic detail that a distance field cannot express and go to the image generator.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+
+All eleven are ground-plane effects and are gated with `rig_gate_report.py --floor-aura`. The generator variants must match DG-015's seating exactly so the family stacks consistently: same ellipse, same foot-baseline placement, differing only in surface treatment.
+
+#### Production route per aura cell (assessed 2026-07-27)
+
+The aura catalog's lower row splits cleanly into geometric and organic designs. Geometric cells are rendered analytically by repository scripts, which removes the matte-fringe and stray-pixel failures that background removal introduces. Organic cells still need an image generator driven by `prompts/19`.
+
+Backlog IDs sit in the second column here: this is a routing reference, not a
+backlog table, and the ledger parser treats a `DG-` value in the first column as
+a schema row.
+
+| Cell reading | Backlog ID | Route | Script |
+|---|---|---|---|
+| Elliptical ring band | DG-015 | procedural | `scripts/build_aura_floor_ring.py` |
+| Violet circle with **radiating spoke texture**, not a plain gradient | DG-016 | generator, or procedural spokes plus hand finish | — |
+| Angular crystalline shards | DG-017 | generator | — |
+| Rising flame with organic curl | DG-018 | generator | — |
+| Branching lightning wisps | DG-019 | generator | — |
+| Smooth pale-gold falloff, no internal structure | DG-020 | procedural | `scripts/build_aura_radiance.py` |
+
+DG-016 was initially assessed as a plain radial gradient. Inspection of the cell at magnification shows radiating internal structure, so it is **not** a straight companion to DG-020 and should not be routed as one.
+
+Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; body-centered effects (DG-016, DG-020) use `--trait` and stay inside the locked character bounds.
 
 ### Back accessories
 
@@ -85,6 +129,12 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 | DG-034 | hair back | Long wavy pink rear hair | `HAIR`, upper row cell 6 | DG-029 | `assets/hair_back/hair_back_006_pink_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-035 | hair back | Long wavy teal rear hair | `HAIR`, upper row cell 7 | DG-029 | `assets/hair_back/hair_back_007_teal_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-036 | hair back | Long wavy red rear hair | `HAIR`, upper row cell 8 | DG-029 | `assets/hair_back/hair_back_008_red_long_wavy.png` | `prompts/04_hair_back.md` | pending |
+
+#### No recoloring shortcut for the hair-back family (assessed 2026-07-27)
+
+DG-029 through DG-036 are described as "long wavy [colour] rear hair", which invites recolouring the registered silver DG-031 into the remaining seven. **Do not.** The eight upper-row cells are distinct cuts, not one design in eight colours: measured ink heights across the row span 20–27 px on a ~24 px cell, a 29% spread, and cell 3 (silver) is visibly shorter and straighter than cell 4 (violet), while cells 1, 7, and 8 differ again in layering and volume.
+
+The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establish that the silhouettes differ, not enough to approve micro-detail. Each colour must be rendered natively from its own cited cell, as the general reference-preview rule at the top of this file already requires.
 
 ### Outfits
 
@@ -254,4 +304,8 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 ## Execution rule
 
-After DG-002 is registered and DG-003–DG-006 are normalized, produce the first entry of each remaining category in canonical layer order. Run cross-category composites before continuing each category's later IDs. Hand objects may be produced only against the approved pose named in their dependency column.
+Phase A is complete: DG-001–DG-006 are registered, so the base family is locked. Produce the first entry of each remaining category in canonical layer order as that category's representative test — DG-015 (rear aura), DG-021 (back accessory), and DG-037 (outfit) are next. Run cross-category composites before continuing each category's later IDs. Hand objects may be produced only against the approved pose named in their dependency column.
+
+DG-031 already serves as the hair-back representative test, so the remaining hair-back colors may proceed without waiting on DG-029.
+
+Every status change in these tables must be followed by `python scripts/report_production_status.py --write`. CI fails when a row marked `registered` has no matching manifest entry, or when the generated ledger in `docs/production_status.md` is stale.

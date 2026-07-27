@@ -2,6 +2,18 @@
 
 Create exactly one Demigods background per request. Attach only the corresponding file from the eight-item set in `images/background_candidates/` as the visual reference.
 
+## Generate sharp; depth is applied afterward
+
+Always request a **fully sharp, unvignetted** background. The collection's depth treatment — a slight blur plus a corner vignette — is applied deterministically afterward by `scripts/apply_background_depth.py`, so that all eight backgrounds match:
+
+```bash
+python scripts/apply_background_depth.py assets/backgrounds/background_00N_*.png
+```
+
+An image generator will not reproduce the same blur radius and vignette falloff across eight separate renders, and an unevenly treated set is visible the moment two tokens sit side by side. Asking the generator for blur or vignette on top of the script's pass double-treats the image and destroys detail that cannot be recovered.
+
+Treated files land in `images/background_candidates/depth_treated/` as candidates. They still need human approval and re-registration with `postprocessing` recorded in the manifest.
+
 ## Shared output contract
 
 ```text

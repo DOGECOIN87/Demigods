@@ -37,8 +37,52 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - keep every visible pixel within X 233-1021 and Y 129-1139; do not crop the asset
 - perfectly front-facing and orthographic, zero yaw/pitch/roll/tilt/perspective
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
-- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish"""
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel must keep a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+- no gray, black, or neutral fringe anywhere in the falloff
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+- faint dust still counts as visible and will fail the bounds check"""
+
+
+# Gate command and proportion target per layer. The width ceiling is opt-in:
+# hair and garments hug the figure, but wings and capes legitimately exceed body
+# width, so a blanket ceiling would false-fail that whole category.
+GATES: dict[int, tuple[str, str]] = {
+    2:  ("--floor-aura for ground-plane rings; --trait for body-centred glows",
+         "no width ceiling; auras vary by design"),
+    3:  ("--trait", "no ceiling — wings and capes run 1.6-2.0x body width by design"),
+    4:  ("--trait --max-width-ratio 1.35",
+         "target ~1.2x body width; the top must reach Y 132 or above, or a bald gap "
+         "shows above the hairline"),
+    6:  ("--trait --max-width-ratio 1.15", "a garment hugs the figure"),
+    7:  ("--trait", "small layer; no ceiling needed"),
+    8:  ("--trait", "small layer; align to eye line Y 367"),
+    9:  ("--trait", "small layer; sits above the eye line"),
+    10: ("--trait", "small layer; align to mouth centre 627, 441"),
+    11: ("--trait", "small layer"),
+    12: ("--trait --max-width-ratio 1.35",
+         "match the paired hair-back width; the top must reach Y 132 or above"),
+    13: ("--trait --max-width-ratio 1.30", "aligned to head centre 627, 343 and top-of-head Y 141"),
+    14: ("--trait", "aligned to the named hand anchor"),
+    15: ("--trait", "no width ceiling; effects vary by design"),
+}
 
 # Uniform: (layer_no, title, attach, target, bullets, exclude, filename)
 CATS = [
@@ -148,15 +192,21 @@ def build() -> int:
            "",
            "**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + "
            "`docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate "
-           "with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`.",
+           "partial trait layers with `python scripts/rig_gate_report.py --trait <file>`, then confirm placement "
+           "with a composite over the base master. Use `--pose-variant --tolerance 2` only for full-figure base "
+           "poses; it measures head and leg bands and will false-fail a partial layer.",
            "", "---", ""]
     for layer, title, attach, target, bullets, exclude, fname in CATS:
+        gate_cmd, proportion = GATES[layer]
         prompt = (header(title, attach) + "\n\nTARGET:\n" + target + "\n"
                   + "\n".join(f"- {b}" for b in bullets)
+                  + f"\n\nPROPORTION: {proportion}."
                   + f"\n\nISOLATION: the final asset contains ONLY the {title}; exclude {exclude}."
                   + f"\n\nOUTPUT: one transparent 1254 x 1254 PNG. filename: {fname}"
                   + f"\n\nAVOID:\n{AVOID}.\n\nReturn one transparent PNG only. No text or alternate versions.")
-        out.append(f"## Layer {layer:02d} — {title}\n\n```\n{prompt}\n```\n")
+        out.append(f"## Layer {layer:02d} — {title}\n\n```\n{prompt}\n```\n\n"
+                   f"Gate: `python scripts/rig_gate_report.py {gate_cmd} <file>`, "
+                   f"then composite over the base master to confirm placement.\n")
     (ROOT / "prompts" / "ready_to_run_trait_prompts.md").write_text("\n".join(out))
     print(f"Wrote prompts/ready_to_run_trait_prompts.md with {len(CATS)} category prompts.")
     return 0
