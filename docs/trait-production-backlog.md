@@ -1,6 +1,6 @@
 # Demigods Trait Production Backlog
 
-Last updated: 2026-07-22
+Last updated: 2026-07-27
 
 This is the ordered production-registration queue for the 1254 × 1254 modular collection. Candidate generation may happen in parallel or out of order under `prompts/19_individual_trait_asset_co_creation.md`, but registration still follows dependencies and QA. The backlog inventories only assets supported by repository prompts, dedicated reference catalogs, or the eight preserved background references. Character names from the flattened concept sheets are not used as production trait names.
 
@@ -254,4 +254,8 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 ## Execution rule
 
-After DG-002 is registered and DG-003–DG-006 are normalized, produce the first entry of each remaining category in canonical layer order. Run cross-category composites before continuing each category's later IDs. Hand objects may be produced only against the approved pose named in their dependency column.
+Phase A is complete: DG-001–DG-006 are registered, so the base family is locked. Produce the first entry of each remaining category in canonical layer order as that category's representative test — DG-015 (rear aura), DG-021 (back accessory), and DG-037 (outfit) are next. Run cross-category composites before continuing each category's later IDs. Hand objects may be produced only against the approved pose named in their dependency column.
+
+DG-031 already serves as the hair-back representative test, so the remaining hair-back colors may proceed without waiting on DG-029.
+
+Every status change in these tables must be followed by `python scripts/report_production_status.py --write`. CI fails when a row marked `registered` has no matching manifest entry, or when the generated ledger in `docs/production_status.md` is stale.

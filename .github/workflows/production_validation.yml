@@ -88,6 +88,15 @@ jobs:
             --repository-root . \
             --json-report validation_output/manifest_consistency_report.json
 
+      - name: Verify the generated production ledger is current
+        run: |
+          python scripts/report_production_status.py \
+            --manifest assets/asset_manifest.json \
+            --backlog docs/trait-production-backlog.md \
+            --status-doc docs/production_status.md \
+            --check \
+            --json-report validation_output/production_status_report.json
+
       - name: Upload validation reports
         if: always()
         uses: actions/upload-artifact@v4

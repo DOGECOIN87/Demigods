@@ -4,15 +4,14 @@ Production specifications, category prompts, reference images, validation tools,
 
 ## Current production status
 
-**Phase 1 uses a locked 1254 × 1254 canvas. Backgrounds 001–003 are registered; Pose 001 remains unregistered because every audited candidate fails locked rig geometry.**
+**Phase 2 uses a locked 1254 × 1254 canvas. The base-body pose family is complete, backgrounds 001–004 are registered, and hair-back 003 is the first registered character trait. There is no active blocker.**
 
-- Live ledger: `docs/production_status.md`
-- Current Pose 001 QA: `docs/qa/base_pose_001_rig_gate_2026-07-22.md`
+- Live ledger: `docs/production_status.md` (the status table is generated — see below)
 - Ordered asset backlog: `docs/trait-production-backlog.md`
 - Intake workflow: `docs/workflows/approved_base_intake.md`
-- Tracked blocker: [Issue #4](https://github.com/DOGECOIN87/Demigods/issues/4)
+- Rig gate and coordinate guide: `docs/rig/README.md`
 
-The approved visual design remains locked. Use the intact Pose 001 candidates only as visual references for a new native render; do not resample a failed candidate or reconstruct the avatar from the damaged repository WebP.
+The approved visual design remains locked. Produce every new asset as a native 1254 × 1254 render; do not resample a rejected candidate or reconstruct the avatar from the damaged repository WebP.
 
 ## Core requirements
 
@@ -45,7 +44,6 @@ Production-ready neutral bodies and pose variants belong in `assets/base_bodies/
 
 ```text
 assets/base_bodies/base_body_001_neutral_master.png
-assets/base_bodies/base_pose_001_relaxed_open.png
 assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
 assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
 assets/base_bodies/base_pose_004_viewer_left_palm_up.png
@@ -95,7 +93,16 @@ python scripts/validate_manifest_consistency.py \
   --json-report manifest_consistency_report.json
 ```
 
-The registry currently contains approved native Backgrounds 001–003 and no base body. The checker requires every registered file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
+The registry currently contains ten registered assets: backgrounds 001–004, the five-member base-body pose family, and hair-back 003. The checker requires every registered file to exist at the declared production path, remain `production_ready`, match its declared SHA-256 and dimensions, and pass category-aware PNG QA.
+
+Keep the production ledger in agreement with the manifest and the backlog:
+
+```bash
+python scripts/report_production_status.py --write   # after registering an asset
+python scripts/report_production_status.py --check   # what CI enforces
+```
+
+The reporter derives per-category registered, remaining, and completion counts from `assets/asset_manifest.json` and `docs/trait-production-backlog.md`, rewrites the generated block in `docs/production_status.md`, and fails when a backlog row marked `registered` is missing from the manifest, when the manifest registers a path no backlog row claims, or when `pending_categories` names a category whose assets are all registered.
 
 ## Exact-777 generation
 
@@ -128,14 +135,16 @@ The output verifier requires the exact `0001`–`0777` image and metadata sets, 
 
 ## Recommended workflow
 
-1. Render a native Pose 001 candidate that passes the automated locked-geometry intake gate and manual landmark overlay.
-2. Approve and register the Pose 001 master only after identity, clothing, anatomy, lighting, isolation, and position all pass.
-3. Approve hand-pose variants sequentially.
-4. Create one isolated test asset from every category.
+Steps 1–3 are complete; the base body and its hand-pose variants are registered.
+
+1. ~~Render and approve the Pose 001 master.~~ Done — `assets/base_bodies/base_body_001_neutral_master.png`.
+2. ~~Approve hand-pose variants sequentially.~~ Done — base poses 002–005.
+3. Create one isolated representative test asset from every remaining category, in canonical layer order.
+4. Gate each partial trait layer with `python scripts/rig_gate_report.py --trait <file>` and confirm placement with a composite over the registered base body.
 5. Composite cross-category stress-test characters.
 6. Correct collisions, clipping, hidden overlaps, and layer order.
 7. Produce remaining assets one item per output.
-8. Validate and commit every accepted asset or small verified milestone; follow `docs/trait-production-backlog.md`.
+8. Validate and commit every accepted asset or small verified milestone; follow `docs/trait-production-backlog.md` and regenerate the ledger.
 9. Define only necessary compatibility exclusions.
 10. Dry-run, verify, render, and independently verify exactly 777 unique tokens.
 
