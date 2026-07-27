@@ -83,9 +83,11 @@ Backlog status tally: pending 138, candidate 0, QA-failed 0, approved 0, registe
 
 The full base-body pose family is registered. `base_body_001_neutral_master.png` is the locked collection master and simultaneously fulfils the relaxed-open pose (backlog DG-001 and DG-002).
 
+All five are **faceless as of 2026-07-27**: the baked eyes, eyebrows and mouth were erased so the `eyes`, `eyebrows` and `mouths` categories can composite over them under the ordinary isolation rule. Nose, ears, blush, jaw line and neck shading are preserved, and the alpha channel is bit-identical, so the rig, silhouette and every existing composite are unaffected. See `docs/qa/face_layer_conflict_2026-07-27.md`.
+
 | Asset | Canonical path | Registered |
 |---|---|---|
-| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 (SHA `061e52f8…` after sRGB tagging) |
+| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 (SHA `880e0ae4…` after the 2026-07-27 face removal) |
 | Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | 2026-07-26 |
 | Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | 2026-07-26 |
 | Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | 2026-07-26 |
@@ -174,7 +176,7 @@ Partial trait layers occupy only their own canvas region, so the full-figure top
 
 ### Pose 001 — Issue #4 resolved 2026-07-26
 
-[Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4) is closed. A genuinely native 1254 × 1254 RGBA candidate passed the automated rig gate (top-of-head Y 141, foot-baseline Y 1139, center X 626, within bounds) and binary intake, received human approval, and is registered as `assets/base_bodies/base_body_001_neutral_master.png`. Its approval SHA-256 was `b344cffec9385725ccbf375b165a3b2b5fbea7af4edabce53741f47980cf83a3`; the current registered digest is `061e52f8dcc9df74…` after the 2026-07-27 sRGB tagging, which changed metadata only and left every pixel identical.
+[Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4) is closed. A genuinely native 1254 × 1254 RGBA candidate passed the automated rig gate (top-of-head Y 141, foot-baseline Y 1139, center X 626, within bounds) and binary intake, received human approval, and is registered as `assets/base_bodies/base_body_001_neutral_master.png`. Its approval SHA-256 was `b344cffec9385725ccbf375b165a3b2b5fbea7af4edabce53741f47980cf83a3`. Two changes have been applied since, both to the registered file rather than the design: the 2026-07-27 sRGB tagging (`061e52f8dcc9df74…`), which changed metadata only and left every pixel identical, and the 2026-07-27 face removal (`880e0ae4d08f0934…`), which cleared the baked eyes, eyebrows and mouth inside `(492,292)-(763,449)` and left the alpha channel bit-identical.
 
 The original Pose 001 candidate and native attempts 002–004 remain **rejected**: each is a complete 1254 × 1254 RGBA PNG with genuine transparency, but each fails one or more locked rig coordinates. None was promoted, and none may be resampled. Their per-attempt scores are retained in `docs/qa/base_pose_001_rig_gate_2026-07-22.md` and `docs/qa/intake/`.
 

@@ -180,7 +180,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_body_001_neutral_master.png",
       "status": "production_ready",
-      "sha256": "061e52f8dcc9df74089c96365040e3adb892c4fe6027f54336d117bd9ba74918",
+      "sha256": "880e0ae4d08f09347c81191257c525046c7857eb9e499509e87c8d7d0373c18e",
       "dimensions": [
         1254,
         1254
@@ -198,8 +198,28 @@
           1254
         ],
         "postprocessing": [
+          "baked_face_features_removed",
           "srgb_icc_profile_embedded"
-        ]
+        ],
+        "face_features_removed": {
+          "removed": [
+            "eyes",
+            "eyebrows",
+            "mouths"
+          ],
+          "preserved": [
+            "nose",
+            "ears",
+            "blush",
+            "jaw_line",
+            "neck_shading"
+          ],
+          "tool": "scripts/build_faceless_base.py",
+          "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+          "composite": "docs/qa/composites/faceless_base_2026-07-27.png",
+          "alpha_channel": "unchanged",
+          "date": "2026-07-27"
+        }
       },
       "approved_on": "2026-07-27"
     },
@@ -208,7 +228,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
       "status": "production_ready",
-      "sha256": "9702715ae52687e891ad66cc6ccf72d75495790373badc6e3ff4ebd18427f93b",
+      "sha256": "5281d2b3953d0e84f09b6822d8031253a5113c241d11e92f34ffcfe0f25911ef",
       "dimensions": [
         1254,
         1254
@@ -226,8 +246,28 @@
           1254
         ],
         "postprocessing": [
+          "baked_face_features_removed",
           "srgb_icc_profile_embedded"
-        ]
+        ],
+        "face_features_removed": {
+          "removed": [
+            "eyes",
+            "eyebrows",
+            "mouths"
+          ],
+          "preserved": [
+            "nose",
+            "ears",
+            "blush",
+            "jaw_line",
+            "neck_shading"
+          ],
+          "tool": "scripts/build_faceless_base.py",
+          "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+          "composite": "docs/qa/composites/faceless_base_2026-07-27.png",
+          "alpha_channel": "unchanged",
+          "date": "2026-07-27"
+        }
       },
       "approved_on": "2026-07-27"
     },
@@ -236,7 +276,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
       "status": "production_ready",
-      "sha256": "d0d9f01dcd70ad8c50c3cee5a0f60bc0261a4e3b010d4ac77de2e5559cde2e3c",
+      "sha256": "d1aee56afea1b4014af70f14e25b5bfd87f86139a2f8e2a027aa3721827ea80e",
       "dimensions": [
         1254,
         1254
@@ -254,8 +294,28 @@
           1254
         ],
         "postprocessing": [
+          "baked_face_features_removed",
           "srgb_icc_profile_embedded"
-        ]
+        ],
+        "face_features_removed": {
+          "removed": [
+            "eyes",
+            "eyebrows",
+            "mouths"
+          ],
+          "preserved": [
+            "nose",
+            "ears",
+            "blush",
+            "jaw_line",
+            "neck_shading"
+          ],
+          "tool": "scripts/build_faceless_base.py",
+          "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+          "composite": "docs/qa/composites/faceless_base_2026-07-27.png",
+          "alpha_channel": "unchanged",
+          "date": "2026-07-27"
+        }
       },
       "approved_on": "2026-07-27"
     },
@@ -264,7 +324,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
       "status": "production_ready",
-      "sha256": "6b89527288c66708d6d220af4b6637d6e68743696a4302fa58018ba7b0e3f79b",
+      "sha256": "7c3f0d6af7301675fd3360b7d4fc7a9f3c689446a40c5ff696873cebe84e17a5",
       "dimensions": [
         1254,
         1254
@@ -282,8 +342,28 @@
           1254
         ],
         "postprocessing": [
+          "baked_face_features_removed",
           "srgb_icc_profile_embedded"
-        ]
+        ],
+        "face_features_removed": {
+          "removed": [
+            "eyes",
+            "eyebrows",
+            "mouths"
+          ],
+          "preserved": [
+            "nose",
+            "ears",
+            "blush",
+            "jaw_line",
+            "neck_shading"
+          ],
+          "tool": "scripts/build_faceless_base.py",
+          "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+          "composite": "docs/qa/composites/faceless_base_2026-07-27.png",
+          "alpha_channel": "unchanged",
+          "date": "2026-07-27"
+        }
       },
       "approved_on": "2026-07-27"
     },
@@ -292,7 +372,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
       "status": "production_ready",
-      "sha256": "dd6e05aed4e3456fa021fe49f4d7f7f5ef3f86143d3fc88dde586feec3c9792a",
+      "sha256": "20225961028512571d1a2e862aecf39a12fd4a17704940c2f968f725e872665b",
       "dimensions": [
         1254,
         1254
@@ -310,8 +390,28 @@
           1254
         ],
         "postprocessing": [
+          "baked_face_features_removed",
           "srgb_icc_profile_embedded"
-        ]
+        ],
+        "face_features_removed": {
+          "removed": [
+            "eyes",
+            "eyebrows",
+            "mouths"
+          ],
+          "preserved": [
+            "nose",
+            "ears",
+            "blush",
+            "jaw_line",
+            "neck_shading"
+          ],
+          "tool": "scripts/build_faceless_base.py",
+          "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+          "composite": "docs/qa/composites/faceless_base_2026-07-27.png",
+          "alpha_channel": "unchanged",
+          "date": "2026-07-27"
+        }
       },
       "approved_on": "2026-07-27"
     },
