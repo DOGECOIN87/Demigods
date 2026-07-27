@@ -89,7 +89,19 @@ Asymmetric poses are judged with `python scripts/rig_gate_report.py --pose-varia
 
 ### Backgrounds 001–004 — depth-treated 2026-07-27
 
-Backgrounds 001–004 are registered and human-approved. On 2026-07-27 all four were re-registered after a deterministic depth pass: 2.5 px Gaussian blur plus a corner vignette at strength 0.22, power 2.4, applied by `scripts/apply_background_depth.py` and recorded in each manifest entry's `postprocessing`. The pass pushes the scene back behind the sharp character.
+Backgrounds 001–004 are registered and human-approved. On 2026-07-27 all four were re-registered after a deterministic depth-and-grade pass applied by `scripts/apply_background_depth.py` and recorded in each manifest entry's `postprocessing`:
+
+| Stage | Setting | Purpose |
+|---|---|---|
+| Gaussian blur | 2.5 px | softens detail so the sharp character separates |
+| Split-tone grade | 0.34 | shadows navy `(26,28,58)`, mids violet `(96,92,148)`, highlights gold `(247,228,182)` |
+| Desaturate | 0.22 | drains competing colour from the scene, not the character |
+| Darken | 0.93 | pushes the scene back in value |
+| Corner vignette | 0.22 at power 2.4 | frames the centre staging region |
+
+The grade is what makes four independently rendered backgrounds read as one collection. Each arrived with its own palette; the shared split-tone gives them a common navy-violet-and-gold cast while leaving the character's warm skin and the luminous auras untouched, so the foreground gains contrast rather than losing it. Before and after: `docs/qa/composites/background_colour_grade_ab_2026-07-27.png`.
+
+Grading is applied to the **original** render, never on top of an already-treated file — repeating the pass would compound the blur and crush the palette. The originals remain recoverable from git history.
 
 It is a post-process, not a prompt instruction, because an image generator will not reproduce the same blur radius and vignette falloff across eight renders. `prompts/17` now requires backgrounds to be generated fully sharp and unvignetted; requesting the effect on top of this pass double-treats the image. Backgrounds 005–008 remain reference-only inputs awaiting native renders, and must receive the same pass before registration.
 

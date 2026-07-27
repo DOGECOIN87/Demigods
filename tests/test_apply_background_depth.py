@@ -24,7 +24,9 @@ class BackgroundDepthTests(unittest.TestCase):
         return image
 
     def treat(self, image: Image.Image, **kwargs) -> Image.Image:
-        options = {"blur_radius": 3.0, "vignette_strength": 0.3, "vignette_power": 2.4}
+        # Grade off by default so blur and vignette assertions stay isolated.
+        options = {"blur_radius": 3.0, "vignette_strength": 0.3, "vignette_power": 2.4,
+                   "grade": 0.0, "desaturate": 0.0, "darken": 1.0}
         options.update(kwargs)
         return apply_background_depth.apply_depth(image, **options)
 
@@ -73,6 +75,37 @@ class BackgroundDepthTests(unittest.TestCase):
         spread_before = max(band_before) - min(band_before)
         spread_after = max(band_after) - min(band_after)
         self.assertLess(spread_after, spread_before)
+
+    def test_grade_pulls_disparate_scenes_toward_one_palette(self) -> None:
+        """Two differently-tinted backgrounds must converge under the shared grade."""
+        warm = Image.new("RGB", apply_background_depth.CANVAS, (210, 120, 40))
+        cool = Image.new("RGB", apply_background_depth.CANVAS, (40, 120, 210))
+
+        def mean(image: Image.Image) -> tuple[float, float, float]:
+            data = list(image.getdata())
+            n = len(data)
+            return tuple(sum(px[i] for px in data) / n for i in range(3))
+
+        before = sum(abs(a - b) for a, b in zip(mean(warm), mean(cool)))
+        graded_warm = apply_background_depth.harmonise(warm, grade=0.34, desaturate=0.22, darken=0.93)
+        graded_cool = apply_background_depth.harmonise(cool, grade=0.34, desaturate=0.22, darken=0.93)
+        after = sum(abs(a - b) for a, b in zip(mean(graded_warm), mean(graded_cool)))
+        self.assertLess(after, before, "the grade must reduce palette divergence")
+
+    def test_grade_darkens_so_the_foreground_separates(self) -> None:
+        scene = self.source()
+        graded = apply_background_depth.harmonise(scene, grade=0.34, desaturate=0.22, darken=0.93)
+
+        def luma(image: Image.Image) -> float:
+            data = list(image.convert("L").getdata())
+            return sum(data) / len(data)
+
+        self.assertLess(luma(graded), luma(scene))
+
+    def test_grade_can_be_disabled(self) -> None:
+        scene = self.source()
+        untouched = apply_background_depth.harmonise(scene, grade=0.0, desaturate=0.0, darken=1.0)
+        self.assertEqual(untouched.tobytes(), scene.tobytes())
 
     def test_wrong_canvas_is_rejected(self) -> None:
         with self.assertRaises(ValueError):

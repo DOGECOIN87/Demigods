@@ -40,7 +40,7 @@
       "category": "backgrounds",
       "path": "assets/backgrounds/background_001_celestial_throne_hall.png",
       "status": "production_ready",
-      "sha256": "b9ad1b87823770d2f6d30dfab18722058bf322634110e3f40588a1786d84726d",
+      "sha256": "f81f10223d44bf9317c38422dab8ad2a35357c1e6916d87f2ccfd0216a9c1511",
       "dimensions": [
         1254,
         1254
@@ -60,6 +60,9 @@
         ],
         "postprocessing": [
           "gaussian_blur_radius_2.5",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
           "corner_vignette_strength_0.22_power_2.4",
           "srgb_icc_profile_embedded"
         ],
@@ -72,7 +75,7 @@
       "category": "backgrounds",
       "path": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
       "status": "production_ready",
-      "sha256": "dd70c1f3977c7124493c3e3f3619308b560facbfe287e824a22fa14fe0802063",
+      "sha256": "f6c0f1e3230ee0e6d8236258743a0614360761b01acd706d2dac2b8bc510edff",
       "dimensions": [
         1254,
         1254
@@ -92,6 +95,9 @@
         ],
         "postprocessing": [
           "gaussian_blur_radius_2.5",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
           "corner_vignette_strength_0.22_power_2.4",
           "srgb_icc_profile_embedded"
         ],
@@ -104,7 +110,7 @@
       "category": "backgrounds",
       "path": "assets/backgrounds/background_003_arcane_library.png",
       "status": "production_ready",
-      "sha256": "6163879ad5e1bc40c1fcd8dd6ea04e3f1117919808e0b64c3fc19ed3bd0dcf8e",
+      "sha256": "b082055cb43fd10ff221e60aecb08c1b66ac1c4d2e402d6ffc569ae2c9044b45",
       "dimensions": [
         1254,
         1254
@@ -124,6 +130,9 @@
         ],
         "postprocessing": [
           "gaussian_blur_radius_2.5",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
           "corner_vignette_strength_0.22_power_2.4",
           "srgb_icc_profile_embedded"
         ],
@@ -136,7 +145,7 @@
       "category": "backgrounds",
       "path": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
       "status": "production_ready",
-      "sha256": "2738d4a77692d643052fb7e670a9cb123414ec303df3ebce6ba6818d3219c620",
+      "sha256": "77bf1247edd027f771c3d57a57fa196063309f3fc69efda399085f94179f7446",
       "dimensions": [
         1254,
         1254
@@ -156,6 +165,9 @@
         ],
         "postprocessing": [
           "gaussian_blur_radius_2.5",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
           "corner_vignette_strength_0.22_power_2.4",
           "srgb_icc_profile_embedded"
         ],
