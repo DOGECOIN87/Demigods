@@ -908,6 +908,223 @@
         ]
       },
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_011",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_011_recolour_gold.png",
+      "status": "production_ready",
+      "sha256": "0bd9fe4708ef7ba5eb3696a38ae50360977f4441e0be57703c612864f6e0c018",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "gold",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_012",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_012_recolour_black.png",
+      "status": "production_ready",
+      "sha256": "4f12b92843c052c48ce55abf488b88f9b81373743f2ff869aeb543655700f6db",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "black",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_013",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_013_recolour_violet.png",
+      "status": "production_ready",
+      "sha256": "764c5c1f73e950394ada5ddee2820da79d2879770fa0d430ebee8aea3f836d72",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "violet",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_014",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_014_recolour_blue.png",
+      "status": "production_ready",
+      "sha256": "3d71322d992b5e483672d3a1f7fb4867ba6840284c13ae42546874c56bad86d7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "blue",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_015",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_015_recolour_pink.png",
+      "status": "production_ready",
+      "sha256": "5459225686d11a2957c20f82118daa4a7deb44a1a7e09974aee6457cf372c4ca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "pink",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_016",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_016_recolour_teal.png",
+      "status": "production_ready",
+      "sha256": "5faf5065fcf2eb7c5870c6948c71051d20ecd062f1cafe2a72dc28923fe6edd9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "teal",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_back_017",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_017_recolour_red.png",
+      "status": "production_ready",
+      "sha256": "309d1515909dc2be55e0e8fe076335d80e692299ee19eb4d1dd2a2ff61aa3d65",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_hair_recolour.py",
+      "qa_report": "docs/qa/hair_recolours_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "generator_script": "scripts/build_hair_recolour.py",
+        "source_asset": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+        "source_sha256": "042102160b4a95a7d9bd48c9fbcfc2269d33fad5617ecbf883bd18379e6c3b83",
+        "palette": "red",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "colour variant of DG-031; silhouette identical; does not satisfy DG-029 to DG-036",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [

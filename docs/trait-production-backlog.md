@@ -199,6 +199,39 @@ DG-029 through DG-036 are described as "long wavy [colour] rear hair", which inv
 
 The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establish that the silhouettes differ, not enough to approve micro-detail. Each colour must be rendered natively from its own cited cell, as the general reference-preview rule at the top of this file already requires.
 
+#### Interim hair recolours — DG-169 to DG-175 (added 2026-07-27)
+
+A 50-token random sample showed **identical hair on every token**: `hair_back`
+held one registered asset, making hair the most repetitive element in the
+collection — more so than the robes. These seven recolours reduce that until
+painted hair lands.
+
+Produced by `scripts/build_hair_recolour.py` from the registered DG-031 silver
+layer. Luminance is normalised across the source's actual opaque range (78–185)
+and remapped through a three-stop palette, so strand separation, wave structure
+and the upper-left key light all survive; only hue and value shift. Alpha is
+copied through untouched, so the gate result is identical to the source.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-169 | hair back | Gold-blonde recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_011_recolour_gold.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-170 | hair back | Black recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_012_recolour_black.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-171 | hair back | Violet recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_013_recolour_violet.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-172 | hair back | Deep-blue recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_014_recolour_blue.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-173 | hair back | Pink recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_015_recolour_pink.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-174 | hair back | Teal recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_016_recolour_teal.png` | `scripts/build_hair_recolour.py` | registered |
+| DG-175 | hair back | Red recolour of the registered silver layer | DG-031 recolour | DG-031 | `assets/hair_back/hair_back_017_recolour_red.png` | `scripts/build_hair_recolour.py` | registered |
+
+**Scope, stated plainly: colour varies, silhouette does not.** All seven share
+DG-031's exact shape, so the collection gains seven hair *colours* and still has
+one hair *cut*.
+
+This does **not** contradict the no-recolouring finding recorded under the
+hair-back family. That finding says the eight `HAIR` sheet cells are distinct
+cuts and must each be rendered natively — which remains true, and DG-029 to
+DG-036 stay `pending` and are not satisfied by these. Numbered from
+`hair_back_011` so 001–008 remain reserved for the painted cuts.
+
 ### Outfits
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
