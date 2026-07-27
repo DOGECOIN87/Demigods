@@ -256,7 +256,7 @@ def iris_colour(source: Image.Image, palette: Palette) -> tuple[float, float, fl
             _, saturation, value = colorsys.rgb_to_hsv(red / 255, green / 255, blue / 255)
             if not (0.30 <= value <= 0.78 and saturation >= 0.25):
                 continue
-            new = shift((red, green, blue), palette, 1.0)
+            new = shift((red, green, blue), palette)
             for index in range(3):
                 total[index] += new[index]
             count += 1
