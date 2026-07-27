@@ -4,11 +4,13 @@ Last updated: 2026-07-27
 
 ## Current phase
 
-**Phase 3 — Renderable collection; trait production continues**
+**Phase 3 — Pipeline proven, release blocked on outfits**
 
-The generator preflight passes at a combination space of 960 against the 777 supply, and a dry run produced 777 unique verified tokens. The pipeline is proven end to end; the remaining backlog adds variety, not capability. Registration still follows backlog dependency order, but candidate creation is open across every referenced category and may be batched. No character-aligned candidate may be treated as production-ready until its composite over the registered base body passes.
+The combination space reached 960 against the 777 supply and a dry run produced 777 unique verified tokens, so the pipeline works end to end. It is deliberately gated: `outfits` is now in `generate_777.REQUIRED_CATEGORIES`, and preflight fails until that category is populated.
 
-**No active blocker.** `active_blocker_issue` is `null` in `assets/asset_manifest.json`.
+**Active blocker: `outfits` is empty.** The base bodies wear only a skin-toned mannequin garment, so with no outfit layer every token renders a figure that reads as unclothed at thumbnail size. Details and evidence under *Expression marks — complete* below. DG-037 clears it.
+
+Registration still follows backlog dependency order, but candidate creation is open across every referenced category and may be batched. No character-aligned candidate may be treated as production-ready until its composite over the registered base body passes.
 
 ## Live production ledger
 
