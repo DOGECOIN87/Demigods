@@ -237,14 +237,14 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-107 | expression mark | Pink blush strokes | `FACE`, expression marks r1c1 | Approved face anchors | `assets/expression_marks/expression_mark_001_pink_blush_strokes.png` | `prompts/07_expression_marks.md` | pending |
-| DG-108 | expression mark | Yellow stress/attention marks | `FACE`, expression marks r1c2 | DG-107 representative test | `assets/expression_marks/expression_mark_002_yellow_stress_marks.png` | `prompts/07_expression_marks.md` | pending |
-| DG-109 | expression mark | Dark vertical gloom lines | `FACE`, expression marks r1c3 | DG-107 | `assets/expression_marks/expression_mark_003_dark_gloom_lines.png` | `prompts/07_expression_marks.md` | pending |
-| DG-110 | expression mark | Gold sparkle/star | `FACE`, expression marks r1c4 | DG-107 | `assets/expression_marks/expression_mark_004_gold_sparkle.png` | `prompts/07_expression_marks.md` | pending |
-| DG-111 | expression mark | Cyan sweat drop | `FACE`, expression marks r2c1 | DG-107 | `assets/expression_marks/expression_mark_005_cyan_sweat_drop.png` | `prompts/07_expression_marks.md` | pending |
-| DG-112 | expression mark | Pink anger cross | `FACE`, expression marks r2c2 | DG-107 | `assets/expression_marks/expression_mark_006_pink_anger_cross.png` | `prompts/07_expression_marks.md` | pending |
-| DG-113 | expression mark | Yellow-green square emphasis mark | `FACE`, expression marks r2c3 | DG-107 | `assets/expression_marks/expression_mark_007_yellow_green_emphasis.png` | `prompts/07_expression_marks.md` | pending |
-| DG-114 | expression mark | Pink curved motion/surprise mark | `FACE`, expression marks r2c4 | DG-107 | `assets/expression_marks/expression_mark_008_pink_curved_mark.png` | `prompts/07_expression_marks.md` | pending |
+| DG-107 | expression mark | Pink blush strokes | `FACE`, expression marks r1c1 | Approved face anchors | `assets/expression_marks/expression_mark_001_pink_blush_strokes.png` | `prompts/07_expression_marks.md` | registered |
+| DG-108 | expression mark | Yellow stress/attention marks | `FACE`, expression marks r1c2 | DG-107 representative test | `assets/expression_marks/expression_mark_002_yellow_stress_marks.png` | `prompts/07_expression_marks.md` | registered |
+| DG-109 | expression mark | Dark vertical gloom lines | `FACE`, expression marks r1c3 | DG-107 | `assets/expression_marks/expression_mark_003_dark_gloom_lines.png` | `prompts/07_expression_marks.md` | registered |
+| DG-110 | expression mark | Gold sparkle/star | `FACE`, expression marks r1c4 | DG-107 | `assets/expression_marks/expression_mark_004_gold_sparkle.png` | `prompts/07_expression_marks.md` | registered |
+| DG-111 | expression mark | Cyan sweat drop | `FACE`, expression marks r2c1 | DG-107 | `assets/expression_marks/expression_mark_005_cyan_sweat_drop.png` | `prompts/07_expression_marks.md` | registered |
+| DG-112 | expression mark | Pink anger cross | `FACE`, expression marks r2c2 | DG-107 | `assets/expression_marks/expression_mark_006_pink_anger_cross.png` | `prompts/07_expression_marks.md` | registered |
+| DG-113 | expression mark | Yellow-green square emphasis mark | `FACE`, expression marks r2c3 | DG-107 | `assets/expression_marks/expression_mark_007_yellow_green_emphasis.png` | `prompts/07_expression_marks.md` | registered |
+| DG-114 | expression mark | Pink curved motion/surprise mark | `FACE`, expression marks r2c4 | DG-107 | `assets/expression_marks/expression_mark_008_pink_curved_mark.png` | `prompts/07_expression_marks.md` | registered |
 
 ### Hair front
 

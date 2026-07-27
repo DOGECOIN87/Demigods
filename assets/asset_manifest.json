@@ -514,6 +514,238 @@
         "palette": "white"
       },
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_001",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_001_pink_blush_strokes.png",
+      "status": "production_ready",
+      "sha256": "db77f51aad984f0d0d558ca2c3360575f75836d3e904e539845da39a65960602",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_002",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_002_yellow_stress_marks.png",
+      "status": "production_ready",
+      "sha256": "f97747c0528c1ddd3b5a84e53e474e4eb3fdcb49237e7bf0f72a1177351dd649",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_003",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_003_dark_gloom_lines.png",
+      "status": "production_ready",
+      "sha256": "1494eb634bb900012f6339d45a69b0d79f2dba7924fcd63eccf8dc06a2e7867f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_004",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_004_gold_sparkle.png",
+      "status": "production_ready",
+      "sha256": "77563659c60aec25e36b9bb2a5e869deb44769fea044a93c35d9b0d57b346a0d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_005",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_005_cyan_sweat_drop.png",
+      "status": "production_ready",
+      "sha256": "907942dd9ca8281827ce35ee8f3b5e93c558517ca562634cc21c4958f8ce98d4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_006",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_006_pink_anger_cross.png",
+      "status": "production_ready",
+      "sha256": "af62dd7ecf321cafaca59b97842572745874cc880552bdcd4b9da2a5222a270a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_007",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_007_yellow_green_emphasis.png",
+      "status": "production_ready",
+      "sha256": "3171b75d2f971f0ee91711d8dc3cda8241ac8a40e80114de8107a86f194b4f33",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "expression_mark_008",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_008_pink_curved_mark.png",
+      "status": "production_ready",
+      "sha256": "b0932c3965eb49242f2492804035a31cc0d16431a6b12f122d0010f806f45e44",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_expression_marks.py",
+      "qa_report": "docs/qa/expression_marks_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_expression_marks.py",
+        "reference_path": "images/reference_sheets/anime_character_creation_asset_sheet.webp",
+        "reference_sha256": "214fac58d89d430686d67ee4c124ce5584319edd00f2fad30e216447d3fb62ce",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
@@ -732,7 +964,6 @@
     "eyes",
     "eyebrows",
     "mouths",
-    "expression_marks",
     "outfits",
     "neck_accessories",
     "head_accessories",
