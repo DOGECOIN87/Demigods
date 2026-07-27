@@ -214,6 +214,35 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 | DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | DG-037 | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | pending |
 
+#### Interim procedural coats — DG-164 to DG-168 (added 2026-07-27)
+
+`outfits` is a release blocker: with the category empty every token shows the
+skin-toned mannequin garment and reads as unclothed at thumbnail size. These five
+clear that blocker so the pipeline can run, and they are **explicitly interim**.
+
+They are a single high-collar long coat in five palettes, built by
+`scripts/build_outfit.py` from the base body's own silhouette and luminance, so
+fit and lighting are inherited rather than guessed. They do **not** correspond to
+any cell in the `OUTFIT` sheet — there is no hood, no split cape tail, no ragged
+hem, no armour. DG-037 to DG-046 stay `pending` for the painted designs and are
+not satisfied by these.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-164 | outfit | Procedural high-collar long coat, navy, gold placket | base body fit | Release blocker | `assets/outfits/outfit_011_procedural_navy_coat.png` | `scripts/build_outfit.py` | registered |
+| DG-165 | outfit | Procedural high-collar long coat, black, silver placket | base body fit | DG-164 | `assets/outfits/outfit_012_procedural_black_coat.png` | `scripts/build_outfit.py` | registered |
+| DG-166 | outfit | Procedural high-collar long coat, plum, pale placket | base body fit | DG-164 | `assets/outfits/outfit_013_procedural_plum_coat.png` | `scripts/build_outfit.py` | registered |
+| DG-167 | outfit | Procedural high-collar long coat, oxblood, cream placket | base body fit | DG-164 | `assets/outfits/outfit_014_procedural_oxblood_coat.png` | `scripts/build_outfit.py` | registered |
+| DG-168 | outfit | Procedural high-collar long coat, olive, bone placket | base body fit | DG-164 | `assets/outfits/outfit_015_procedural_olive_coat.png` | `scripts/build_outfit.py` | registered |
+
+Skin contrast runs 190–271 against a floor of 70, so all five clear the tone that
+caused the blocker by a wide margin. Numbered from 011 so 001–010 stay reserved
+for the painted sheet designs.
+
+**These should be replaced, not built on.** They are simpler than the base body
+art: flat fabric, minimal fold structure, a plain tapered skirt. They are honest
+placeholders that let the collection render, not the finished outfit set.
+
 ### Neck accessories
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |

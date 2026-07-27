@@ -758,6 +758,156 @@
         ]
       },
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_011",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_011_procedural_navy_coat.png",
+      "status": "production_ready",
+      "sha256": "28e163fb170604a1da47d98e4b2ad34a1ae883f1a0a018f4ad28935b0ececa8e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_outfit.py",
+      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_outfit.py",
+        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
+        "palette": "navy",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "placeholder pending painted DG-037 to DG-046",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_012",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_012_procedural_black_coat.png",
+      "status": "production_ready",
+      "sha256": "6c2b3c7f69a86f3454220a434f2333e483733738375b680ee0723d4c92af3b37",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_outfit.py",
+      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_outfit.py",
+        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
+        "palette": "black",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "placeholder pending painted DG-037 to DG-046",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_013",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_013_procedural_plum_coat.png",
+      "status": "production_ready",
+      "sha256": "4dd45b30db4155ec34753a9f02d3bc535e56b349cb1e5e349680a7ec7870915d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_outfit.py",
+      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_outfit.py",
+        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
+        "palette": "plum",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "placeholder pending painted DG-037 to DG-046",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_014",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_014_procedural_oxblood_coat.png",
+      "status": "production_ready",
+      "sha256": "ef33bcb15c1d21b13ec7a74bd4c79dc2e35a90d1745b8e185b990d6487fb9d0d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_outfit.py",
+      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_outfit.py",
+        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
+        "palette": "oxblood",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "placeholder pending painted DG-037 to DG-046",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_015",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_015_procedural_olive_coat.png",
+      "status": "production_ready",
+      "sha256": "684a26ed6d2138f15f80802a89ed3abf74a79d49a4ac737602877a6841f4ff6a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "scripts/build_outfit.py",
+      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_outfit.py",
+        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
+        "palette": "olive",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "interim": "placeholder pending painted DG-037 to DG-046",
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
@@ -976,7 +1126,6 @@
     "eyes",
     "eyebrows",
     "mouths",
-    "outfits",
     "neck_accessories",
     "head_accessories",
     "hand_objects",
@@ -984,6 +1133,7 @@
     "rear_auras",
     "front_auras",
     "global_finish",
-    "backgrounds"
+    "backgrounds",
+    "outfits"
   ]
 }
