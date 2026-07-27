@@ -75,6 +75,21 @@ scales about the locked centre axis and seats the top at a chosen Y. Prefer a
 native re-render at correct proportions; refitting is a repair, not a production
 method, and every use must be recorded in the manifest's `postprocessing`.
 
+**Garment / skin separation.** The base mannequin wears a skin-toned tank top and
+shorts, roughly 27 RGB units from cheek skin `(253,199,163)`. That is fine for a
+base layer an outfit covers, and fatal if nothing covers it: at thumbnail size
+the figure reads as unclothed. Outfits are gated on it:
+
+```bash
+python scripts/rig_gate_report.py --trait incoming.png \
+  --max-width-ratio 1.15 --min-skin-contrast 70
+```
+
+`skin_contrast` is the mean RGB distance of the layer's opaque pixels from base
+skin tone. The mannequin garment measures 27; a navy robe measures 274. The check
+is opt-in because auras, effects and pale accessories legitimately sit near any
+tone — only garments that must cover the body should enforce it.
+
 **Ground-plane auras.** `maximum_character_bounds` stops at foot baseline Y 1139,
 which is correct for the character but wrong for an effect lying on the floor. For
 the character to read as standing *inside* a floor ring rather than in front of it,

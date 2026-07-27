@@ -79,9 +79,32 @@ def base_metrics(base_path: Path) -> dict | None:
     return {"width": right - left + 1, "crown_y": top}
 
 
+# Sampled from the registered base master's cheek. The mannequin's own garment
+# sits ~27 units from this, which is why it vanishes at thumbnail size; a real
+# outfit has to clear it by a wide margin.
+SKIN_REFERENCE = (253, 199, 163)
+
+
+def skin_contrast(image: Image.Image) -> float | None:
+    """Mean RGB distance of the layer's opaque pixels from base skin tone."""
+    if image.mode != "RGBA":
+        image = image.convert("RGBA")
+    total = 0
+    count = 0
+    for r, g, b, a in image.getdata():
+        if a > 200:
+            total += (
+                (r - SKIN_REFERENCE[0]) ** 2
+                + (g - SKIN_REFERENCE[1]) ** 2
+                + (b - SKIN_REFERENCE[2]) ** 2
+            ) ** 0.5
+            count += 1
+    return total / count if count else None
+
+
 def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False,
             trait: bool = False, floor_aura: bool = False, base: dict | None = None,
-            max_width_ratio: float | None = None) -> dict:
+            max_width_ratio: float | None = None, min_skin_contrast: float | None = None) -> dict:
     result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
     head_cx = leg_cx = None
     alpha_min = None
@@ -172,6 +195,18 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
             round(ratio - max_width_ratio, 2) if max_width_ratio else 0,
         ))
 
+    # Garment/skin separation. The base mannequin wears a skin-toned tank top and
+    # shorts, so an outfit that does not clear the skin tone leaves the character
+    # reading as unclothed at thumbnail size.
+    if min_skin_contrast is not None and (trait or floor_aura):
+        contrast = skin_contrast(im)
+        if contrast is not None:
+            result["skin_contrast"] = round(contrast, 1)
+            result["checks"].append((
+                "skin_contrast", contrast >= min_skin_contrast, round(contrast, 1),
+                f">={min_skin_contrast:.0f}", round(contrast - min_skin_contrast, 1),
+            ))
+
     # Corrective guidance for the next NATIVE render (not applied here).
     height = bottom - top + 1
     target_height = rig["foot_baseline_y"] - rig["top_of_head_y"] + 1
@@ -201,6 +236,8 @@ def print_report(r: dict) -> None:
     print(f"  sha256: {r['sha256']}")
     if "inclusive_bounds" in r:
         print(f"  inclusive visible bounds: {r['inclusive_bounds']}")
+    if "skin_contrast" in r:
+        print(f"  skin contrast: {r['skin_contrast']} RGB units from base skin tone")
     if "width_ratio" in r:
         print(f"  width vs base body: {r['width_ratio']}x; "
               f"crown offset {r['crown_offset']:+d} px (+ = above the head top)")
@@ -248,6 +285,11 @@ def main() -> int:
     ap.add_argument("--max-width-ratio", type=float,
                     help="fail a partial layer wider than this multiple of the base body width "
                          "(hair sits near 1.2; wings and capes legitimately exceed it)")
+    ap.add_argument("--min-skin-contrast", type=float,
+                    help="fail a layer whose opaque pixels average closer than this RGB "
+                         "distance to base skin tone (253,199,163). Use for outfits: the "
+                         "mannequin's own garment measures about 27 and disappears at "
+                         "thumbnail size. 70 is a sensible floor.")
     ap.add_argument("--json-report", type=Path)
     args = ap.parse_args()
 
@@ -259,7 +301,8 @@ def main() -> int:
         return 2
 
     reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait, args.floor_aura,
-                              base_spec, args.max_width_ratio) for f in files]
+                              base_spec, args.max_width_ratio, args.min_skin_contrast)
+               for f in files]
     for r in reports:
         print_report(r)
 

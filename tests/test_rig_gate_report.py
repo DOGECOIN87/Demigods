@@ -97,6 +97,55 @@ class RigGateModeTests(unittest.TestCase):
         self.assertTrue(result["passed"], result["checks"])
 
 
+class SkinContrastTests(unittest.TestCase):
+    """The check that would have caught the release blocker before the sheet did."""
+
+    def setUp(self) -> None:
+        spec = rig_gate_report.load_rig(ROOT / "config" / "collection.json")
+        self.rig, self.canvas = spec["rig"], spec["canvas"]
+
+    def layer(self, colour: tuple[int, int, int]) -> Path:
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        path = Path(temp.name) / "layer.png"
+        image = Image.new("RGBA", (1254, 1254), (0, 0, 0, 0))
+        image.paste((*colour, 255), (500, 600, 760, 900))
+        image.save(path)
+        return path
+
+    def analyze(self, path: Path, minimum: float | None):
+        return rig_gate_report.analyze(
+            path, self.rig, self.canvas, 1, trait=True, min_skin_contrast=minimum
+        )
+
+    def test_skin_toned_garment_fails(self) -> None:
+        """The mannequin's own tank-top tone: the exact failure mode."""
+        result = self.analyze(self.layer((252, 218, 182)), 70)
+        self.assertFalse(result["passed"])
+        self.assertLess(result["skin_contrast"], 70)
+
+    def test_dark_robe_passes(self) -> None:
+        result = self.analyze(self.layer((38, 44, 92)), 70)
+        self.assertTrue(result["passed"], result["checks"])
+        self.assertGreater(result["skin_contrast"], 200)
+
+    def test_check_is_opt_in(self) -> None:
+        """Auras and effects legitimately sit near any tone; only outfits opt in."""
+        result = self.analyze(self.layer((252, 218, 182)), None)
+        self.assertTrue(result["passed"], result["checks"])
+        self.assertNotIn("skin_contrast", result)
+
+    def test_transparent_pixels_do_not_skew_the_average(self) -> None:
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        path = Path(temp.name) / "layer.png"
+        image = Image.new("RGBA", (1254, 1254), (255, 255, 255, 0))  # white but invisible
+        image.paste((38, 44, 92, 255), (500, 600, 760, 900))
+        image.save(path)
+        result = self.analyze(path, 70)
+        self.assertTrue(result["passed"], result["checks"])
+
+
 class FloorRingBuilderTests(unittest.TestCase):
     def test_ring_is_seated_so_the_near_arc_passes_below_the_foot_baseline(self) -> None:
         from scripts import build_aura_floor_ring as builder
