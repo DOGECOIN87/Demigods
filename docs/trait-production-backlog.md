@@ -54,12 +54,12 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | pending |
+| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | registered |
 | DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | pending |
 | DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | pending |
 | DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | pending |
 | DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | pending |
-| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | pending |
+| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | registered |
 
 #### Floor-ring aura family — `RING` sheet (added 2026-07-27)
 
@@ -69,10 +69,10 @@ The neon variants are the *same geometry* in a different palette, so they are re
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | candidate |
-| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | candidate |
-| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | candidate |
-| DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | candidate |
+| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
 | DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 | DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 | DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
