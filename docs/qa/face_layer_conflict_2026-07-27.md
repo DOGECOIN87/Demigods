@@ -1,6 +1,8 @@
 # QA — Face-layer architectural conflict (2026-07-27)
 
-**Blocks 52 backlog assets: eyes (24), eyebrows (16), mouths (12).** Needs a decision before any of them is produced.
+**Resolved by option 1, without a re-render.** The features are erased from the
+five registered bases rather than repainted from scratch. See "Resolution" below.
+Blocked 52 backlog assets while open: eyes (24), eyebrows (16), mouths (12).
 
 ## The conflict
 
@@ -47,4 +49,39 @@ Note this is **not** the situation with hair. The base body is deliberately bald
 
 Option 3 is defensible: the face reads at full resolution but barely at 210 px thumbnail, where silhouette, hair colour and outfit colour do the work. Option 1 is the right call only if faces matter at full-resolution viewing.
 
-Nothing should be produced for `eyes`, `eyebrows` or `mouths` until this is decided.
+## Resolution
+
+Option 1, taken by erasing the features from the existing bases rather than
+re-rendering them. `scripts/build_faceless_base.py` produces the five faceless
+candidates; `docs/qa/composites/faceless_base_2026-07-27.png` is the before and
+after.
+
+This keeps everything the option-1 cost estimate above was worried about. The
+rig does not move, the silhouette is bit-identical — the alpha channel is
+unchanged in all five outputs — and the poses, hands and proportions are the
+approved artwork, so nothing downstream needs regenerating and no re-approval of
+a new character design is involved. Only the face changes.
+
+What the erase keeps: nose, ears, blush, freckles, jaw line, neck shading, head
+outline. What it removes: both eyes including sclera, lashes and catchlights;
+both eyebrows including the soft under-brow shadow; the mouth. Verified two ways
+— the changed-pixel bounding box on the master is `(492,292)-(763,449)`, which
+covers the features and nothing else, and re-running the detector on each output
+finds no eye-shaped, brow-shaped or mouth component left.
+
+Three details drove the implementation and are worth keeping in mind for any
+later base:
+
+- The **sclera is bright**, so a darkness threshold masks the lashes and iris
+  but leaves the whites, which then bleed outward as a pale ghost. Each eye
+  component is closed row by row before filling.
+- The **brow is painted in two passes** — a dark core and a soft shadow beneath
+  it, separated by a few rows of clean skin — so growth from the core cannot
+  reach the shadow. The whole band from above the brow to the eyelid is cleared.
+- **Transparent pixels are RGB (0,0,0)**, so treating them as known let black
+  outside the silhouette bleed into holes near the head edge. They count as
+  unknown.
+
+Once the bases are promoted, `eyes`, `eyebrows` and `mouths` are unblocked and
+their isolation rule holds as written: artwork only, no skin padding, no
+occlusion requirement.
