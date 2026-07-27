@@ -267,7 +267,9 @@ def main(argv: list[str] | None = None) -> int:
 
     total = 0
     for category in sorted(grouped, key=lambda c: CATEGORIES[c][0]):
-        entries = grouped[category]
+        # Always emit in ID order. Production order is expressed in CATEGORY_NOTES,
+        # so backlog row order never silently reshuffles a generated file.
+        entries = sorted(grouped[category], key=lambda r: r["id"])
         layer, title, gate, _ = CATEGORIES[category]
         lines = [f"# {category} — {len(entries)} assets to produce", "",
                  f"Layer {layer:02d}. Generated from the backlog; do not hand-edit.", "",

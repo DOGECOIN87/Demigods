@@ -203,15 +203,15 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | Outfit representative test; highest contrast margin | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | pending |
-| DG-040 | outfit | Black ragged hooded cloak outfit | `OUTFIT`, row 1 cell 4 | DG-045 representative test | `assets/outfits/outfit_004_black_ragged_hooded_cloak.png` | `prompts/08_outfits.md` | pending |
-| DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-045 representative test | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | pending |
+| DG-037 | outfit | White-silver celestial ceremonial robe | `OUTFIT`, row 1 cell 1 | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_001_celestial_robe_white_silver.png` | `prompts/08_outfits.md` | pending |
 | DG-038 | outfit | Black long coat with split cape tails | `OUTFIT`, row 1 cell 2 | DG-045 | `assets/outfits/outfit_002_black_split_tail_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-039 | outfit | Plum-gray long mage robe | `OUTFIT`, row 1 cell 3 | DG-045 | `assets/outfits/outfit_003_plum_gray_mage_robe.png` | `prompts/08_outfits.md` | pending |
+| DG-040 | outfit | Black ragged hooded cloak outfit | `OUTFIT`, row 1 cell 4 | DG-045 representative test | `assets/outfits/outfit_004_black_ragged_hooded_cloak.png` | `prompts/08_outfits.md` | pending |
+| DG-041 | outfit | White and blue armored ceremonial mantle | `OUTFIT`, row 1 cell 5 | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_005_white_blue_armored_mantle.png` | `prompts/08_outfits.md` | pending |
+| DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-045 representative test | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | pending |
 | DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-045 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-045 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | pending |
-| DG-037 | outfit | White-silver celestial ceremonial robe | `OUTFIT`, row 1 cell 1 | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_001_celestial_robe_white_silver.png` | `prompts/08_outfits.md` | pending |
-| DG-041 | outfit | White and blue armored ceremonial mantle | `OUTFIT`, row 1 cell 5 | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_005_white_blue_armored_mantle.png` | `prompts/08_outfits.md` | pending |
+| DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | Outfit representative test; highest contrast margin | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | pending |
 
 #### Interim procedural coats — DG-164 to DG-168 (added 2026-07-27)
