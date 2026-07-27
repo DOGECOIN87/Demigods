@@ -40,13 +40,28 @@ OUTER_OFFSET_Y = 10.0
 
 INTERIOR_ALPHA = 0   # open interior; the double ring carries the design
 
-# Palette sampled from the reference cell: pale blue-white inner edge grading to
-# cornflower/periwinkle at the outer edge.
-INNER_RGB = (226, 240, 255)
-MID_RGB = (150, 190, 252)
-OUTER_RGB = (120, 162, 248)
-GLOW_RGB = (132, 178, 250)
-WASH_RGB = (232, 244, 255)
+# Palettes sampled from images/reference_sheets/floor_ring_aura_variants_sheet.png.
+# Only the pure-neon cells are listed: fire, lightning, ice, smoke, water, and
+# cosmic rings carry organic texture that a distance field cannot express, and
+# those are routed to the image generator instead.
+PALETTES: dict[str, dict[str, tuple[int, int, int]]] = {
+    "blue": {"inner": (226, 240, 255), "mid": (150, 190, 252), "outer": (120, 162, 248),
+             "glow": (132, 178, 250), "wash": (232, 244, 255)},
+    "green": {"inner": (232, 255, 236), "mid": (140, 240, 150), "outer": (86, 214, 104),
+              "glow": (120, 235, 134), "wash": (236, 255, 240)},
+    "gold": {"inner": (255, 250, 226), "mid": (255, 219, 120), "outer": (250, 194, 68),
+             "glow": (255, 214, 110), "wash": (255, 250, 232)},
+    "pink": {"inner": (255, 236, 249), "mid": (255, 150, 214), "outer": (250, 108, 188),
+             "glow": (255, 140, 204), "wash": (255, 238, 250)},
+    "white": {"inner": (255, 255, 255), "mid": (236, 241, 250), "outer": (208, 219, 240),
+              "glow": (230, 238, 250), "wash": (250, 252, 255)},
+}
+
+INNER_RGB = PALETTES["blue"]["inner"]
+MID_RGB = PALETTES["blue"]["mid"]
+OUTER_RGB = PALETTES["blue"]["outer"]
+GLOW_RGB = PALETTES["blue"]["glow"]
+WASH_RGB = PALETTES["blue"]["wash"]
 
 
 def lerp(a: float, b: float, t: float) -> float:
@@ -194,6 +209,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--glow", type=float, help="falloff width beyond the band in px")
     parser.add_argument("--radius-x", type=float, help="ellipse semi-major axis in px")
     parser.add_argument("--radius-y", type=float, help="ellipse semi-minor axis in px")
+    parser.add_argument("--palette", choices=sorted(PALETTES), default="blue",
+                        help="neon colour variant from the floor-ring reference sheet")
     parser.add_argument("--center-y", type=float,
                         help="ellipse center Y (default: the foot baseline, so the character "
                              "stands inside the ring)")
@@ -201,6 +218,10 @@ def main(argv: list[str] | None = None) -> int:
 
     # Shape overrides let the ring be tuned without editing the module.
     global BAND, GLOW, RADIUS_X, RADIUS_Y, CENTER_Y_OVERRIDE
+    global INNER_RGB, MID_RGB, OUTER_RGB, GLOW_RGB, WASH_RGB
+    palette = PALETTES[args.palette]
+    INNER_RGB, MID_RGB = palette["inner"], palette["mid"]
+    OUTER_RGB, GLOW_RGB, WASH_RGB = palette["outer"], palette["glow"], palette["wash"]
     if args.center_y is not None:
         CENTER_Y_OVERRIDE = args.center_y
     if args.band is not None:
