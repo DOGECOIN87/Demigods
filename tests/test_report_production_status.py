@@ -169,6 +169,27 @@ class ProductionStatusTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             report_production_status.replace_block("no markers here", "block")
 
+    def test_repository_readme_summary_is_current(self) -> None:
+        """The README drifted twice while the ledger block stayed correct."""
+        root = Path(__file__).resolve().parent.parent
+        manifest = report_production_status.load_manifest(root / "assets" / "asset_manifest.json")
+        entries, errors = report_production_status.parse_backlog(
+            root / "docs" / "trait-production-backlog.md"
+        )
+        status = report_production_status.build_status(manifest, entries, errors)
+
+        readme = (root / "README.md").read_text(encoding="utf-8")
+        updated = report_production_status.replace_block(
+            readme,
+            report_production_status.render_readme_block(status),
+            begin=report_production_status.README_BEGIN_MARKER,
+            end_marker=report_production_status.README_END_MARKER,
+        )
+        self.assertEqual(
+            readme, updated,
+            "README registry summary is stale; run `python scripts/report_production_status.py --write`",
+        )
+
     def test_repository_status_document_is_current(self) -> None:
         """The committed ledger must match what the manifest and backlog imply."""
         root = Path(__file__).resolve().parent.parent
