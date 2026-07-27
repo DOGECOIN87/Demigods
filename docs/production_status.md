@@ -67,6 +67,7 @@ Backlog status tally: pending 140, candidate 0, QA-failed 0, approved 0, registe
 - Canonical canvas revised to 1254 × 1254 with proportional rig migration and matching validator, generator, output, test, documentation, and prompt updates
 - Automated rig gate with full-figure, `--pose-variant`, `--trait`, and `--floor-aura` modes
 - Procedural aura builders and a deterministic background depth treatment
+- Explicit sRGB ICC profiles embedded in every registered asset
 - Generated production ledger with manifest/backlog cross-checks
 
 ## Registered production assets
@@ -77,7 +78,7 @@ The full base-body pose family is registered. `base_body_001_neutral_master.png`
 
 | Asset | Canonical path | Registered |
 |---|---|---|
-| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 (SHA `b344cffe…`) |
+| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 (SHA `061e52f8…` after sRGB tagging) |
 | Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | 2026-07-26 |
 | Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | 2026-07-26 |
 | Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | 2026-07-26 |
@@ -98,7 +99,7 @@ The rear-aura category opened on 2026-07-27 with six procedural assets. See `doc
 | Asset | Gate mode | Form |
 |---|---|---|
 | `aura_rear_001_blue_floor_ring.png` | `--floor-aura` | Blue double ring, category representative test |
-| `aura_rear_006_gold_radiance.png` | `--trait` | Soft gold body glow |
+| `aura_rear_006_gold_radiance.png` | `--trait` | Soft gold body glow, peak alpha 210 |
 | `aura_rear_007_green_neon_ring.png` | `--floor-aura` | DG-015 geometry, green palette |
 | `aura_rear_008_gold_neon_ring.png` | `--floor-aura` | DG-015 geometry, gold palette |
 | `aura_rear_009_pink_neon_ring.png` | `--floor-aura` | DG-015 geometry, pink palette |
@@ -118,7 +119,7 @@ Partial trait layers occupy only their own canvas region, so the full-figure top
 
 ### Pose 001 — Issue #4 resolved 2026-07-26
 
-[Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4) is closed. A genuinely native 1254 × 1254 RGBA candidate passed the automated rig gate (top-of-head Y 141, foot-baseline Y 1139, center X 626, within bounds) and binary intake, received human approval, and is registered as `assets/base_bodies/base_body_001_neutral_master.png` (SHA-256 `b344cffec9385725ccbf375b165a3b2b5fbea7af4edabce53741f47980cf83a3`).
+[Issue #4 — Approve and promote the 1254 × 1254 Pose 001 master](https://github.com/DOGECOIN87/Demigods/issues/4) is closed. A genuinely native 1254 × 1254 RGBA candidate passed the automated rig gate (top-of-head Y 141, foot-baseline Y 1139, center X 626, within bounds) and binary intake, received human approval, and is registered as `assets/base_bodies/base_body_001_neutral_master.png`. Its approval SHA-256 was `b344cffec9385725ccbf375b165a3b2b5fbea7af4edabce53741f47980cf83a3`; the current registered digest is `061e52f8dcc9df74…` after the 2026-07-27 sRGB tagging, which changed metadata only and left every pixel identical.
 
 The original Pose 001 candidate and native attempts 002–004 remain **rejected**: each is a complete 1254 × 1254 RGBA PNG with genuine transparency, but each fails one or more locked rig coordinates. None was promoted, and none may be resampled. Their per-attempt scores are retained in `docs/qa/base_pose_001_rig_gate_2026-07-22.md` and `docs/qa/intake/`.
 
@@ -152,8 +153,10 @@ Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte 
 - Production-ledger tests: **9 passed**
 - Rig-gate and floor-ring builder tests: **10 passed**
 - Background depth-treatment tests: **6 passed**
-- Combined regression total: **65 passed**
-- Native 1254 pose-candidate binary QA: **5 of 5 passed**; each retains a missing-ICC-profile warning for manual sRGB confirmation
+- sRGB profile tests: **5 passed**
+- Combined regression total: **84 passed**
+- Native 1254 pose-candidate binary QA: **5 of 5 passed**
+- sRGB tagging 2026-07-27: **all 16 registered assets carry an embedded sRGB ICC profile**; pixel data verified unchanged on every file, clearing 16 of the 17 outstanding warnings
 - Registered base family: **5 of 5 passed** the rig gate and binary intake
 - Background 001: **passed, human-approved, registered**; SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`
 - Background 002 attempt 001: **QA-failed** for prohibited cross-shaped altar finials; unregistered SHA-256 `7ef25fa04d6430b5e1a7ca688cc5755f28df5c4b9da6ec5d80d12507a1f0d2b0`
