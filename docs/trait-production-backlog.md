@@ -82,6 +82,25 @@ must not float.
   foot baseline during the native render. That is a composition change from the
   reference, and it must be deliberate.
 
+### Preview findings (2026-07-27)
+
+A preview sheet was built by bottom-cropping each reference to square, scaling to
+1254, applying the standard grade, and compositing the registered layers:
+`docs/qa/composites/sheet_100_new_backgrounds_preview_2026-07-27.png`. These are
+**previews only** — resampled references, never production assets.
+
+- The grade integrates all six cleanly with the registered four. Measured edge
+  energy inside the staging region is **1.9** for the new six against **2.0** for
+  the registered four, so they are marginally calmer, not busier. An initial
+  impression that they would compete more with the character was wrong.
+- They are darker and moodier than the registered set, which increases figure
+  separation rather than reducing it.
+- The staging concern is confirmed. `docs/qa/composites/new_backgrounds_staging_check_2026-07-27.png`
+  shows DG-161 clockwork resting correctly on floorboards, while DG-162 crystal
+  spire leaves the ring hovering over broken terrain and DG-163 skybound isles
+  leaves it hanging in open void. Bottom-cropping the reference does not create a
+  floor; the native render has to introduce one.
+
 All six references are portrait 784 × 1168 or square 1024 × 1024. Production is
 1254 × 1254, so each must be **recomposed** natively, not cropped or letterboxed.
 The portrait framing in particular will not survive a straight crop: the vertical
