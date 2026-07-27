@@ -148,7 +148,9 @@ def build() -> int:
            "",
            "**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + "
            "`docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate "
-           "with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`.",
+           "partial trait layers with `python scripts/rig_gate_report.py --trait <file>`, then confirm placement "
+           "with a composite over the base master. Use `--pose-variant --tolerance 2` only for full-figure base "
+           "poses; it measures head and leg bands and will false-fail a partial layer.",
            "", "---", ""]
     for layer, title, attach, target, bullets, exclude, fname in CATS:
         prompt = (header(title, attach) + "\n\nTARGET:\n" + target + "\n"

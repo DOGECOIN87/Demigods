@@ -2,7 +2,7 @@
 
 One self-contained prompt per layer category, in back-to-front stack order. Each renders a single isolated transparent 1254x1254 trait aligned to the registered base body. Fill the `[SPECIFY ...]` slot (and `[NUM]`/`[COLOR]` in the filename) per asset.
 
-**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + `docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`.
+**Every prompt:** attach `assets/base_bodies/base_body_001_neutral_master.png` + `docs/rig/rig_guide_1254.png` (hand objects also attach the matching pose). After generating, gate partial trait layers with `python scripts/rig_gate_report.py --trait <file>`, then confirm placement with a composite over the base master. Use `--pose-variant --tolerance 2` only for full-figure base poses; it measures head and leg bands and will false-fail a partial layer.
 
 ---
 
