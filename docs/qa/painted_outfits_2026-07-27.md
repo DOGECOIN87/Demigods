@@ -70,18 +70,40 @@ still emerge from the bell cuffs on poses 001–004. The cost is variety: four o
 the five base-pose assets contribute far less than their count suggests, and the
 combination space overstates the visible difference between tokens.
 
-Three ways out, none taken yet:
+The hands are the part that decides it. On poses 002 to 004 they still emerge
+from the bell cuffs — 806 to 1284 visible pixels — so the fist, open hand or
+upturned palm reads and the pose survives. A sleeve covering an arm is not a
+fault; that is what a sleeve does.
 
-1. **Compatibility exclusion.** Rule out pose 005 for wide-sleeve outfits.
-   Cheapest, and `config/compatibility.json` currently holds zero rules so the
-   machinery is unused. Costs combination space, and does nothing for 002–004.
-2. **Per-pose sleeve variants.** Render each robe once per arm position. Five
-   times the artwork, and the only option that actually preserves the poses.
-3. **Accept it.** Treat the poses as near-cosmetic and stop counting them as
-   variety. Honest, and free.
+Pose 005 does not survive. Its clasped fists sit at **X 580-705, Y 685-815**, in
+front of the torso rather than at the cuffs, so no sleeve reaches them and every
+robe buries them completely. A pose-005 token is visually identical to a
+pose-001 token.
 
-The measurement belongs in the record either way; the decision does not have to
-be made now.
+### Compositing the hands back over the robe does not work
+
+Tried and rejected. The fists overlap the torso at the same skin tone, and the
+painted outlines do not enclose them, so an edge-aware flood fill seeded inside
+the fists leaks through into the torso and shorts and returns a skin-coloured
+slab rather than a pair of hands. There is no clean matte to recover from this
+artwork. The sleeves have to be painted for the pose.
+
+### Decision: per-pose sleeve variants
+
+Queued as DG-205 to DG-228, with generation prompts in
+`prompts/23_per_pose_outfit_variants.md`. Six pose-005 variants first — they are
+the only ones that recover something currently lost — then eighteen for poses 002
+to 004 as refinement.
+
+Binding uses machinery that already exists and is currently unused:
+`config/compatibility.json` holds zero rules, and `generate_777.py` honours both
+`requires` and `excludes`. Each variant requires its base pose; each base robe
+excludes the poses that have variants. Rules are added only as variants register,
+since a rule naming a missing file fails `validate_config.py`.
+
+Combination count is unaffected — six robes across five poses is thirty valid
+pairings either way. What changes is that thirty pairings become thirty
+*distinguishable* pairings.
 
 ## Known limits
 

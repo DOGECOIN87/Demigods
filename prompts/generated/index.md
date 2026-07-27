@@ -10,7 +10,7 @@ One prompt per unregistered backlog asset. Category templates live in `prompts/r
 | `rear_auras` | 11 | `prompts/generated/rear_auras.md` |
 | `back_accessories` | 8 | `prompts/generated/back_accessories.md` |
 | `hair_back` | 7 | `prompts/generated/hair_back.md` |
-| `outfits` | 10 | `prompts/generated/outfits.md` |
+| `outfits` | 34 | `prompts/generated/outfits.md` |
 | `neck_accessories` | 8 | `prompts/generated/neck_accessories.md` |
 | `eyes` | 24 | `prompts/generated/eyes.md` |
 | `eyebrows` | 16 | `prompts/generated/eyebrows.md` |
@@ -20,4 +20,4 @@ One prompt per unregistered backlog asset. Category templates live in `prompts/r
 | `hand_objects` | 12 | `prompts/generated/hand_objects.md` |
 | `front_auras` | 2 | `prompts/generated/front_auras.md` |
 
-**138 assets** still to produce.
+**162 assets** still to produce.

@@ -291,24 +291,67 @@ by these.
 **Known limit — the sleeves defeat the pose variants.** An outfit composites over
 the base body, so its sleeves replace whatever the arms were doing, and these are
 painted with one arm position. Measured as the share of each pose's silhouette
-difference from the neutral master that the garment covers:
+difference from the neutral master that the garment covers, alongside whether the
+hands still emerge from the cuffs — which is what actually makes a pose read:
 
-| Base pose | Hidden by a painted robe | Hidden by the removed procedural coats |
-|---|---|---|
-| 001 neutral master | 0.0% | 0.0% |
-| 004 viewer-left palm-up | 58.6% | 33.6% |
-| 003 viewer-right vertical grip | 63.6% | 44.6% |
-| 002 viewer-left vertical grip | 64.7% | 44.3% |
-| 005 centered two-hand grip | 82.8% | 61.2% |
+| Base pose | Arm hidden, painted robe | Arm hidden, removed procedural coat | Hands visible |
+|---|---|---|---|
+| 001 neutral master | 0.0% | 0.0% | yes |
+| 004 viewer-left palm-up | 58.6% | 33.6% | yes, 1284 px |
+| 003 viewer-right vertical grip | 63.6% | 44.6% | yes, 806 px |
+| 002 viewer-left vertical grip | 64.7% | 44.3% | yes, 1210 px |
+| 005 centered two-hand grip | 82.8% | 61.2% | **no** |
 
-The wide bell sleeves make it worse, but the second column is the finding that
-matters: **this was already true**, and had not been measured. Under any sleeved
-outfit the five base poses are close to interchangeable, and under a painted robe
-pose 005 loses the two-hand grip that is its entire reason to exist. Nothing
-looks broken — a robe covering the arms reads as a robe — but four of the five
-pose assets are contributing far less variety than their count suggests. Options
-are a compatibility exclusion, per-pose sleeve variants, or accepting that the
-poses are near-cosmetic. Not decided.
+The middle column is the finding that matters: **this was already true** under the
+removed procedural coats and had not been measured. A sleeve covering an arm is
+not a fault, though. On poses 002 to 004 the hands still emerge from the bell
+cuffs and the fist, open hand or upturned palm reads, so those poses survive.
+
+Pose 005 does not. Its clasped fists sit at X 580-705, Y 685-815 — in front of the
+torso rather than at the cuffs — so every robe buries them, and a pose-005 token
+is visually identical to a pose-001 token.
+
+Compositing the hands back over the robe was tried and does not work: the fists
+overlap the torso at the same skin tone with no enclosing outline, so an
+edge-aware flood fill from the fist centres leaks into the torso and returns a
+skin-coloured slab. The sleeves have to be painted for the pose.
+
+Per-pose variants are queued as DG-205 to DG-228 with generation prompts in
+`prompts/23_per_pose_outfit_variants.md`. The six pose-005 variants are the
+priority; the eighteen for poses 002 to 004 are refinement.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-205 | outfit | White and gold robe, sleeves painted for the centered two-hand grip | DG-199 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_001_white_gold_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-206 | outfit | Black and gold robe, sleeves painted for the centered two-hand grip | DG-200 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_002_black_gold_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-207 | outfit | Navy and gold star robe, sleeves painted for the centered two-hand grip | DG-201 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_003_navy_gold_star_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-208 | outfit | Crimson and gold robe, sleeves painted for the centered two-hand grip | DG-202 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_004_crimson_gold_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-209 | outfit | Purple and black robe, sleeves painted for the centered two-hand grip | DG-203 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_005_purple_black_gold_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-210 | outfit | White and navy star robe, sleeves painted for the centered two-hand grip | DG-204 + `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | DG-199 | `assets/outfits/outfit_006_white_navy_star_pose005.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-211 | outfit | White and gold robe, sleeves painted for the viewer-left vertical grip | DG-199 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_001_white_gold_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-212 | outfit | Black and gold robe, sleeves painted for the viewer-left vertical grip | DG-200 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_002_black_gold_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-213 | outfit | Navy and gold star robe, sleeves painted for the viewer-left vertical grip | DG-201 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_003_navy_gold_star_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-214 | outfit | Crimson and gold robe, sleeves painted for the viewer-left vertical grip | DG-202 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_004_crimson_gold_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-215 | outfit | Purple and black robe, sleeves painted for the viewer-left vertical grip | DG-203 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_005_purple_black_gold_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-216 | outfit | White and navy star robe, sleeves painted for the viewer-left vertical grip | DG-204 + `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | DG-205 | `assets/outfits/outfit_006_white_navy_star_pose002.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-217 | outfit | White and gold robe, sleeves painted for the viewer-right vertical grip | DG-199 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_001_white_gold_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-218 | outfit | Black and gold robe, sleeves painted for the viewer-right vertical grip | DG-200 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_002_black_gold_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-219 | outfit | Navy and gold star robe, sleeves painted for the viewer-right vertical grip | DG-201 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_003_navy_gold_star_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-220 | outfit | Crimson and gold robe, sleeves painted for the viewer-right vertical grip | DG-202 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_004_crimson_gold_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-221 | outfit | Purple and black robe, sleeves painted for the viewer-right vertical grip | DG-203 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_005_purple_black_gold_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-222 | outfit | White and navy star robe, sleeves painted for the viewer-right vertical grip | DG-204 + `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | DG-205 | `assets/outfits/outfit_006_white_navy_star_pose003.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-223 | outfit | White and gold robe, sleeves painted for the viewer-left palm-up | DG-199 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_001_white_gold_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-224 | outfit | Black and gold robe, sleeves painted for the viewer-left palm-up | DG-200 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_002_black_gold_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-225 | outfit | Navy and gold star robe, sleeves painted for the viewer-left palm-up | DG-201 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_003_navy_gold_star_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-226 | outfit | Crimson and gold robe, sleeves painted for the viewer-left palm-up | DG-202 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_004_crimson_gold_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-227 | outfit | Purple and black robe, sleeves painted for the viewer-left palm-up | DG-203 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_005_purple_black_gold_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+| DG-228 | outfit | White and navy star robe, sleeves painted for the viewer-left palm-up | DG-204 + `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | DG-205 | `assets/outfits/outfit_006_white_navy_star_pose004.png` | `prompts/23_per_pose_outfit_variants.md` | pending |
+
+Each variant binds to its pose through `config/compatibility.json`, which
+`generate_777.py` already honours: the variant requires its base pose, and the
+base robe excludes the poses that have variants, so a sleeve can never be paired
+with the wrong arms. Rules are added only as variants register — a rule naming a
+missing file fails `validate_config.py`.
 
 ### Neck accessories
 

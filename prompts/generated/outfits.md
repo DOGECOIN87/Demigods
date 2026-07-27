@@ -1,4 +1,4 @@
-# outfits — 10 assets to produce
+# outfits — 34 assets to produce
 
 Layer 06. Generated from the backlog; do not hand-edit.
 
@@ -806,5 +806,1781 @@ SUBJECT: Silver-white high-collar ceremonial robe.
 PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
 
 OUTPUT: one transparent 1254 x 1254 PNG named outfit_010_celestial_robe_white_gold.png. No text, no alternate versions.
+```
+
+## DG-205 — outfit_001_white_gold_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_001_white_gold_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and gold robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-199 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_001_white_gold_pose005.png. No text, no alternate versions.
+```
+
+## DG-206 — outfit_002_black_gold_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_002_black_gold_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Black and gold robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-200 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_002_black_gold_pose005.png. No text, no alternate versions.
+```
+
+## DG-207 — outfit_003_navy_gold_star_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_003_navy_gold_star_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Navy and gold star robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-201 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_003_navy_gold_star_pose005.png. No text, no alternate versions.
+```
+
+## DG-208 — outfit_004_crimson_gold_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_004_crimson_gold_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Crimson and gold robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-202 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_004_crimson_gold_pose005.png. No text, no alternate versions.
+```
+
+## DG-209 — outfit_005_purple_black_gold_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_005_purple_black_gold_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Purple and black robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-203 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_005_purple_black_gold_pose005.png. No text, no alternate versions.
+```
+
+## DG-210 — outfit_006_white_navy_star_pose005
+
+Dependency: DG-199  
+Path: `assets/outfits/outfit_006_white_navy_star_pose005.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and navy star robe, sleeves painted for the centered two-hand grip.
+- source reference: DG-204 + assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_006_white_navy_star_pose005.png. No text, no alternate versions.
+```
+
+## DG-211 — outfit_001_white_gold_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_001_white_gold_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and gold robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-199 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_001_white_gold_pose002.png. No text, no alternate versions.
+```
+
+## DG-212 — outfit_002_black_gold_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_002_black_gold_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Black and gold robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-200 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_002_black_gold_pose002.png. No text, no alternate versions.
+```
+
+## DG-213 — outfit_003_navy_gold_star_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_003_navy_gold_star_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Navy and gold star robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-201 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_003_navy_gold_star_pose002.png. No text, no alternate versions.
+```
+
+## DG-214 — outfit_004_crimson_gold_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_004_crimson_gold_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Crimson and gold robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-202 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_004_crimson_gold_pose002.png. No text, no alternate versions.
+```
+
+## DG-215 — outfit_005_purple_black_gold_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_005_purple_black_gold_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Purple and black robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-203 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_005_purple_black_gold_pose002.png. No text, no alternate versions.
+```
+
+## DG-216 — outfit_006_white_navy_star_pose002
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_006_white_navy_star_pose002.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and navy star robe, sleeves painted for the viewer-left vertical grip.
+- source reference: DG-204 + assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_006_white_navy_star_pose002.png. No text, no alternate versions.
+```
+
+## DG-217 — outfit_001_white_gold_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_001_white_gold_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and gold robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-199 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_001_white_gold_pose003.png. No text, no alternate versions.
+```
+
+## DG-218 — outfit_002_black_gold_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_002_black_gold_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Black and gold robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-200 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_002_black_gold_pose003.png. No text, no alternate versions.
+```
+
+## DG-219 — outfit_003_navy_gold_star_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_003_navy_gold_star_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Navy and gold star robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-201 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_003_navy_gold_star_pose003.png. No text, no alternate versions.
+```
+
+## DG-220 — outfit_004_crimson_gold_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_004_crimson_gold_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Crimson and gold robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-202 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_004_crimson_gold_pose003.png. No text, no alternate versions.
+```
+
+## DG-221 — outfit_005_purple_black_gold_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_005_purple_black_gold_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Purple and black robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-203 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_005_purple_black_gold_pose003.png. No text, no alternate versions.
+```
+
+## DG-222 — outfit_006_white_navy_star_pose003
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_006_white_navy_star_pose003.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and navy star robe, sleeves painted for the viewer-right vertical grip.
+- source reference: DG-204 + assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_006_white_navy_star_pose003.png. No text, no alternate versions.
+```
+
+## DG-223 — outfit_001_white_gold_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_001_white_gold_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and gold robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-199 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_001_white_gold_pose004.png. No text, no alternate versions.
+```
+
+## DG-224 — outfit_002_black_gold_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_002_black_gold_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Black and gold robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-200 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_002_black_gold_pose004.png. No text, no alternate versions.
+```
+
+## DG-225 — outfit_003_navy_gold_star_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_003_navy_gold_star_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Navy and gold star robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-201 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_003_navy_gold_star_pose004.png. No text, no alternate versions.
+```
+
+## DG-226 — outfit_004_crimson_gold_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_004_crimson_gold_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Crimson and gold robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-202 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_004_crimson_gold_pose004.png. No text, no alternate versions.
+```
+
+## DG-227 — outfit_005_purple_black_gold_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_005_purple_black_gold_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: Purple and black robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-203 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_005_purple_black_gold_pose004.png. No text, no alternate versions.
+```
+
+## DG-228 — outfit_006_white_navy_star_pose004
+
+Dependency: DG-205  
+Path: `assets/outfits/outfit_006_white_navy_star_pose004.png`
+
+```text
+Create exactly one isolated Demigods outfit (clothing only), rendered NATIVELY at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+
+ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
+
+CANVAS — restated because generators drift to 1024:
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample anything to reach 1254 x 1254
+
+DO NOT REMOVE A BACKGROUND:
+- paint directly onto an empty transparent canvas
+- do NOT render on black, white, or any backdrop and then key it to transparency
+- background removal leaves the old backdrop in the colour channels and produces a
+  gray matte fringe, which is an automatic rejection
+
+ALPHA MUST STAY BRIGHT:
+- every partial-alpha pixel keeps a bright colour value
+- a pixel at alpha 30 must still read as its own colour, never as dark gray
+- composited over pure WHITE the layer must not darken the background
+
+STRAY PIXELS:
+- every pixel outside the asset must be exactly alpha 0
+- no alpha-1 dust, speckles, or haze anywhere else on the canvas
+
+LOCKED RIG:
+- canvas center X 627; head centre X 627 Y 343; eye line Y 367; mouth centre X 627 Y 441
+- shoulder line Y 569; waist centre X 627 Y 808; foot baseline Y 1139
+- viewer-left hand anchor X 404 Y 772; viewer-right hand anchor X 850 Y 772
+- every visible pixel within X 233-1021 and Y 129-1139
+- perfectly front-facing and orthographic, zero yaw/pitch/roll/perspective
+- soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim
+- clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi finish
+
+ISOLATION:
+- exactly the requested asset and nothing else
+- no body, face, hair, clothing, accessory, object, aura, scenery, or contact shadow
+  unless it IS the requested asset
+- no text, letters, runes, pseudo-writing, watermark, border, frame, or contact sheet
+- no duplicate variation, alternate colour, or before/after view
+
+THUMBNAIL CONTRAST — the single most important requirement:
+- the garment must be clearly distinguishable from skin tone (253,199,163) at
+  THUMBNAIL size, not only at full resolution
+- no cream, beige, tan, peach, or unsaturated flesh-adjacent fabric
+- give the garment a defined outline and clear internal value structure so its
+  silhouette reads at 210 px
+- pale designs must carry cool shadow and a distinct contrasting trim colour,
+  never a warm skin-adjacent midtone
+- modest, opaque, floor-length ceremonial clothing only
+
+FIT:
+- neck opening at the collar, shoulders at Y 569, waist centre X 627 Y 808
+- hem clear of foot baseline Y 1139; bare feet and ankles may show below it
+- clean openings where head, neck and hands emerge, matching the base silhouette
+- hidden overlap beneath the neck and hand openings so no seam shows
+- capes, mantles and wings belong to the SEPARATE back-accessory layer
+
+CONTENT: no nudity, lingerie, swimwear, exposed torso or hips, or emphasized
+anatomical contours.
+
+SUBJECT: White and navy star robe, sleeves painted for the viewer-left palm-up.
+- source reference: DG-204 + assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+- render this design only; do not substitute or embellish beyond the reference
+
+PROPORTION: a garment hugs the figure AND must clear skin tone (253,199,163) by 70+.
+
+OUTPUT: one transparent 1254 x 1254 PNG named outfit_006_white_navy_star_pose004.png. No text, no alternate versions.
 ```
 
