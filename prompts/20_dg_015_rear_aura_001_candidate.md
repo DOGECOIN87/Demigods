@@ -77,6 +77,46 @@ photorealism, side or three-quarter views, camera tilt, perspective distortion, 
 Return one transparent PNG only. No text or alternate versions.
 ```
 
+## Attempts 001–003 — rejected 2026-07-27
+
+Three candidates were audited. None is registerable, but attempts 001 and 003 fail in opposite ways, so the corrections below are additive.
+
+| Attempt | Canvas | Mode | Gate | Rejection reason |
+|---|---|---|---|---|
+| 001 `ac926eb2…` | 1254 ✅ | RGBA ✅ | **PASS** | Dark matte fringe: the glow is neutral gray, not luminous |
+| 002 `e08d94e8…` | 1254 ✅ | **RGB** ❌ | FAIL | No alpha channel at all |
+| 003 `b90a700d…` | **1024** ❌ | RGBA ✅ | FAIL | Hairline concentric outlines; 120 stray pixels; wrong canvas |
+
+**Attempt 001 — matte contamination.** Geometry and design were correct: bounds `[302,937,951,1135]`, center X 626.5, a real band. But its semi-transparent pixels are neutral gray whose luminance tracks alpha almost exactly (alpha 33 → luminance 33, alpha 60 → 60, alpha 98 → 98, mean chroma 5.9). That is the signature of art rendered on a **black background** and keyed to alpha by luminance, leaving the darkness in RGB. Composited over pure white it darkens the background by a mean of 37 levels across 59,286 pixels, peaking at 141 — a dirty gray smudge that reads as the prohibited contact shadow. A luminous aura must never darken a light background.
+
+**Attempt 003 — right light, wrong everything else.** Its alpha behavior is exactly correct: partial-alpha pixels stay bright cyan (mean RGB 134,215,239 at alpha 1–15) with no dark matte. Reuse that rendering approach. But it is 1024 × 1024, which cannot be upscaled to satisfy the canvas; it draws two hairline concentric outlines 4–5 px thick instead of one 40–55 px band; and it carries 120 stray pixels at alpha 1 scattered up to y=6, which alone would fail the bounds check.
+
+**Target for the next attempt: attempt 001's geometry and band, rendered with attempt 003's luminous alpha.** Add these blocks to the request:
+
+```text
+CANVAS (restate first and last; a 1024 x 1024 result is an automatic rejection):
+- exactly 1254 x 1254 pixels, generated natively at that size
+- never upscale, downscale, or resample to reach 1254 x 1254
+
+LUMINOUS ALPHA — the most common failure:
+- do NOT render on a black or dark backdrop and key it to transparency
+- every partial-alpha pixel must keep a BRIGHT blue or cyan colour value
+- a pixel at alpha 30 must still read as bright blue, never as dark gray
+- composited over pure WHITE the aura must never darken the background; it only tints it blue
+- composited over a dark background it must add light
+- no gray, black, or neutral fringe anywhere in the falloff
+
+RING FORM:
+- ONE ring, drawn as a solid filled band 40-55 px thick
+- NOT a thin outline, NOT a hairline stroke, NOT two or more concentric outlines
+- the band is a continuous painted ribbon of light, not a traced ellipse edge
+
+STRAY PIXELS:
+- every pixel outside the ring and its glow must be exactly alpha 0
+- no alpha-1 dust, speckles, or faint haze anywhere else on the canvas
+- the visible alpha bounding box must fall inside X 233-1021 and Y 129-1139
+```
+
 ## Mandatory candidate workflow
 
 1. Upload the result to `images/trait_candidates/rear_auras/` as `aura_rear_001_blue_floor_ring_candidate_attempt_001.png`. Do not place it under `assets/` and do not edit `assets/asset_manifest.json`.
