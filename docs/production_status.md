@@ -111,7 +111,11 @@ Ground-plane rings are seated on the foot baseline so the character stands insid
 
 ### First character trait
 
-`assets/hair_back/hair_back_003_silver_long_wavy.png` is registered as the hair-back representative test. It is a native 1254 × 1254 RGBA layer with genuine transparency centered at X 626.5, and it composites cleanly over the base body — see `docs/qa/composites/hair_back_003_over_base.png`. Its approval unblocks the remaining hair-back colors.
+`assets/hair_back/hair_back_003_silver_long_wavy.png` is registered as the hair-back representative test: a native 1254 × 1254 RGBA layer with genuine transparency centered at X 626.5.
+
+It was **refitted on 2026-07-27** after the cross-category composite showed it at 1.46 × the body width, reading as wings rather than rear hair. It now measures 1.23 × with the crown covered. Current composite: `docs/qa/composites/hair_back_003_refit_over_base.png`. The earlier `hair_back_003_over_base.png` is retained as the pre-refit record and shows the defect — do not cite it as evidence the layer composites cleanly.
+
+Because it was repaired rather than re-rendered, DG-029–036 should be rendered natively to the measured target (about 1.2 × body width, top at Y 132 or above) rather than refitted. See `prompts/21_next_representative_tests.md`.
 
 Partial trait layers occupy only their own canvas region, so the full-figure top-of-head, foot-baseline, and center checks false-fail them. Gate such layers with `python scripts/rig_gate_report.py --trait <file>`, which checks canvas size, genuine transparency, and maximum bounds only; placement is confirmed by the base-body composite.
 
