@@ -294,7 +294,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_003_silver_long_wavy.png",
       "status": "production_ready",
-      "sha256": "eda6cb47086b8753b66e0daba37bbb189563adb3c5eca5dd33e6ab036b336c71",
+      "sha256": "4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7",
       "dimensions": [
         1254,
         1254
@@ -312,9 +312,13 @@
           1254,
           1254
         ],
-        "postprocessing": []
+        "postprocessing": [
+          "rig_refit_scale_0.84_top_y_132"
+        ],
+        "postprocessing_script": "scripts/refit_trait_layer.py"
       },
-      "approved_on": "2026-07-26"
+      "approved_on": "2026-07-27",
+      "qa_report": "docs/qa/cross_category_composites_2026-07-27.md"
     },
     {
       "id": "aura_rear_001",

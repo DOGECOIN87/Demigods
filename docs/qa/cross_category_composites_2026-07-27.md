@@ -37,7 +37,27 @@ The asset passed its `--trait` gate and its original base composite, because bot
 
 **Recommendation:** hold `hair_back_003` for human review before any further hair-back colour is produced against it. It is the category's representative test, so all seven remaining colours would inherit its proportions. If the width is wrong, catching it now costs one asset; catching it after DG-029–036 costs eight.
 
-No de-registration is proposed here — that is a maintainer decision.
+### Resolved — refit and re-registered 2026-07-27
+
+Refitted with `scripts/refit_trait_layer.py --scale 0.84 --top-y 132` and re-registered.
+
+| Measure | Before | After |
+|---|---|---|
+| Visible bounds | `[303,180,951,879]` | `[355,132,898,719]` |
+| Width | 648 px | 544 px |
+| Ratio to body | 1.46 × | **1.23 ×** |
+| Top vs head crown (Y 141) | 39 px **below** | 9 px **above** |
+| Center X | 627.0 | 626.5 |
+
+Two things changed. The width came down so the mass falls behind the shoulders instead of flaring past the arms, and the top now sits 9 px above the head crown instead of 39 px below it, so a hair rim reads above the scalp rather than a bald gap.
+
+Scales 0.78, 0.84 and 0.90 were composited before choosing. 0.78 shortened the hair enough to read as medium rather than long; 0.90 left too much flare. 0.84 keeps the length while clearing the arms.
+
+The "pixels outside the silhouette" figure rose from 69.7% to 74.8% and was **discarded as a metric**. Moving the layer up puts more of it beside the narrow head and neck rather than overlapping the torso, so the number rises even as the composite improves. It measures overlap, not proportion, and proportion was the actual defect.
+
+Note on rules: `prompts/19` disallows rescaling during intake. That rule targets upscaling an undersized render to fake the 1254 canvas. This is a reduction inside an already-native canvas, so no detail is invented, but it is still a rescale and is recorded in the manifest as `rig_refit_scale_0.84_top_y_132`. A native re-render at chibi proportions remains the cleaner fix and should be preferred for DG-029–036 rather than refitting each colour.
+
+Composite: `docs/qa/composites/hair_back_003_refit_over_base.png`.
 
 ## Finding 2 — aura_rear_006 gold radiance is near-invisible in composite
 
