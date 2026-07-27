@@ -247,34 +247,68 @@ DG-036 stay `pending` and are not satisfied by these. Numbered from
 | DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | Outfit representative test; highest contrast margin | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-045; pale, high contrast risk, produce late | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | pending |
 
-#### Interim procedural coats — DG-164 to DG-168 (added 2026-07-27)
+#### Painted robes — DG-199 to DG-204 (added 2026-07-27)
 
-`outfits` is a release blocker: with the category empty every token shows the
-skin-toned mannequin garment and reads as unclothed at thumbnail size. These five
-clear that blocker so the pipeline can run, and they are **explicitly interim**.
+Six painted robes supplied by the collection owner, replacing the five interim
+procedural coats (DG-164 to DG-168) that previously held this category. Those
+coats existed only to clear the release blocker and have been **removed** — the
+files, their registrations and their backlog rows — because they were flat,
+near-identical and did not read as designed clothing. Their build script,
+`scripts/build_outfit.py`, is kept for reference.
 
-They are a single high-collar long coat in five palettes, built by
-`scripts/build_outfit.py` from the base body's own silhouette and luminance, so
-fit and lighting are inherited rather than guessed. They do **not** correspond to
-any cell in the `OUTFIT` sheet — there is no hood, no split cape tail, no ragged
-hem, no armour. DG-037 to DG-046 stay `pending` for the painted designs and are
-not satisfied by these.
+Each reference arrived as a native 1254 x 1254 **RGB** file: the transparency
+checker was painted into the pixels and there was no alpha channel. They were
+also drawn at full humanoid proportions, about 1100 px collar to hem, against a
+rig whose entire body below the chin is 606 px. `scripts/intake_painted_outfit.py`
+removes the backdrop by flood fill from the canvas border — a brightness
+threshold would eat the white-and-gold robes, whose fabric is as bright as the
+backdrop — un-premultiplies the edge against the backdrop white so no pale rim
+survives against a dark background, and refits the garment to the rig.
+
+The collar seats at Y 442 and the hem at Y 1108. Y 442 was found by sweeping
+scale and offset for the placement leaving zero bare skin in the shoulder band:
+the more obvious seat at Y 480 put the hem in the right place but left a rim of
+shoulder showing outside the pauldrons on every robe and every pose.
+
+Rescaling during intake was **waived by the collection owner** for this batch. It
+is recorded in each manifest entry's `postprocessing` as
+`rig_refit_collar_y_442_hem_y_1108` so it stays visible.
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-164 | outfit | Procedural high-collar long coat, navy, gold placket | base body fit | Release blocker | `assets/outfits/outfit_011_procedural_navy_coat.png` | `scripts/build_outfit.py` | registered |
-| DG-165 | outfit | Procedural high-collar long coat, black, silver placket | base body fit | DG-164 | `assets/outfits/outfit_012_procedural_black_coat.png` | `scripts/build_outfit.py` | registered |
-| DG-166 | outfit | Procedural high-collar long coat, plum, pale placket | base body fit | DG-164 | `assets/outfits/outfit_013_procedural_plum_coat.png` | `scripts/build_outfit.py` | registered |
-| DG-167 | outfit | Procedural high-collar long coat, oxblood, cream placket | base body fit | DG-164 | `assets/outfits/outfit_014_procedural_oxblood_coat.png` | `scripts/build_outfit.py` | registered |
-| DG-168 | outfit | Procedural high-collar long coat, olive, bone placket | base body fit | DG-164 | `assets/outfits/outfit_015_procedural_olive_coat.png` | `scripts/build_outfit.py` | registered |
+| DG-199 | outfit | White and gold ceremonial robe, layered pauldrons and sash | `images/outfit_references/robe_ref_001_white_gold.png` | Owner-supplied render | `assets/outfits/outfit_001_white_gold_painted.png` | `prompts/22_outfit_prompts.md` | registered |
+| DG-200 | outfit | Black and gold high-collar robe, thorn filigree | `images/outfit_references/robe_ref_002_black_gold.png` | DG-199 | `assets/outfits/outfit_002_black_gold_painted.png` | `prompts/22_outfit_prompts.md` | registered |
+| DG-201 | outfit | Navy and gold star-mantle robe, tasselled sash | `images/outfit_references/robe_ref_003_navy_gold_star.png` | DG-199 | `assets/outfits/outfit_003_navy_gold_star_painted.png` | `prompts/22_outfit_prompts.md` | registered |
+| DG-202 | outfit | Crimson and gold flame-trim robe, chained belt | `images/outfit_references/robe_ref_004_crimson_gold.png` | DG-199 | `assets/outfits/outfit_004_crimson_gold_painted.png` | `prompts/22_outfit_prompts.md` | registered |
+| DG-203 | outfit | Purple and black robe, amethyst-set gold trim | `images/outfit_references/robe_ref_005_purple_black_gold.png` | DG-199 | `assets/outfits/outfit_005_purple_black_gold_painted.png` | `prompts/22_outfit_prompts.md` | registered |
+| DG-204 | outfit | White and navy star robe, sapphire drops | `images/outfit_references/robe_ref_006_white_navy_star.png` | DG-199 | `assets/outfits/outfit_006_white_navy_star_painted.png` | `prompts/22_outfit_prompts.md` | registered |
 
-Skin contrast runs 190–271 against a floor of 70, so all five clear the tone that
-caused the blocker by a wide margin. Numbered from 011 so 001–010 stay reserved
-for the painted sheet designs.
+These are distinct painted designs, not recolours of one another, so the category
+gains six *designs* rather than six colours. They do not correspond to cells in
+the `OUTFIT` sheet, so **DG-037 to DG-046 stay `pending`** and are not satisfied
+by these.
 
-**These should be replaced, not built on.** They are simpler than the base body
-art: flat fabric, minimal fold structure, a plain tapered skirt. They are honest
-placeholders that let the collection render, not the finished outfit set.
+**Known limit — the sleeves defeat the pose variants.** An outfit composites over
+the base body, so its sleeves replace whatever the arms were doing, and these are
+painted with one arm position. Measured as the share of each pose's silhouette
+difference from the neutral master that the garment covers:
+
+| Base pose | Hidden by a painted robe | Hidden by the removed procedural coats |
+|---|---|---|
+| 001 neutral master | 0.0% | 0.0% |
+| 004 viewer-left palm-up | 58.6% | 33.6% |
+| 003 viewer-right vertical grip | 63.6% | 44.6% |
+| 002 viewer-left vertical grip | 64.7% | 44.3% |
+| 005 centered two-hand grip | 82.8% | 61.2% |
+
+The wide bell sleeves make it worse, but the second column is the finding that
+matters: **this was already true**, and had not been measured. Under any sleeved
+outfit the five base poses are close to interchangeable, and under a painted robe
+pose 005 loses the two-hand grip that is its entire reason to exist. Nothing
+looks broken — a robe covering the arms reads as a robe — but four of the five
+pose assets are contributing far less variety than their count suggests. Options
+are a compatibility exclusion, per-pose sleeve variants, or accepting that the
+poses are near-cosmetic. Not decided.
 
 ### Neck accessories
 

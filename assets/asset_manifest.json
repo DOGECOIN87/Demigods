@@ -860,156 +860,6 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "outfit_011",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_011_procedural_navy_coat.png",
-      "status": "production_ready",
-      "sha256": "28e163fb170604a1da47d98e4b2ad34a1ae883f1a0a018f4ad28935b0ececa8e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "scripts/build_outfit.py",
-      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_outfit.py",
-        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
-        "palette": "navy",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "interim": "placeholder pending painted DG-037 to DG-046",
-        "postprocessing": [
-          "srgb_icc_profile_embedded"
-        ]
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "outfit_012",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_012_procedural_black_coat.png",
-      "status": "production_ready",
-      "sha256": "6c2b3c7f69a86f3454220a434f2333e483733738375b680ee0723d4c92af3b37",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "scripts/build_outfit.py",
-      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_outfit.py",
-        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
-        "palette": "black",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "interim": "placeholder pending painted DG-037 to DG-046",
-        "postprocessing": [
-          "srgb_icc_profile_embedded"
-        ]
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "outfit_013",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_013_procedural_plum_coat.png",
-      "status": "production_ready",
-      "sha256": "4dd45b30db4155ec34753a9f02d3bc535e56b349cb1e5e349680a7ec7870915d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "scripts/build_outfit.py",
-      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_outfit.py",
-        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
-        "palette": "plum",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "interim": "placeholder pending painted DG-037 to DG-046",
-        "postprocessing": [
-          "srgb_icc_profile_embedded"
-        ]
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "outfit_014",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_014_procedural_oxblood_coat.png",
-      "status": "production_ready",
-      "sha256": "ef33bcb15c1d21b13ec7a74bd4c79dc2e35a90d1745b8e185b990d6487fb9d0d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "scripts/build_outfit.py",
-      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_outfit.py",
-        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
-        "palette": "oxblood",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "interim": "placeholder pending painted DG-037 to DG-046",
-        "postprocessing": [
-          "srgb_icc_profile_embedded"
-        ]
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "outfit_015",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_015_procedural_olive_coat.png",
-      "status": "production_ready",
-      "sha256": "684a26ed6d2138f15f80802a89ed3abf74a79d49a4ac737602877a6841f4ff6a",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "scripts/build_outfit.py",
-      "qa_report": "docs/qa/procedural_outfits_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_outfit.py",
-        "fit_reference": "assets/base_bodies/base_body_001_neutral_master.png",
-        "palette": "olive",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "interim": "placeholder pending painted DG-037 to DG-046",
-        "postprocessing": [
-          "srgb_icc_profile_embedded"
-        ]
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
       "id": "hair_back_011",
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_011_recolour_gold.png",
@@ -1914,6 +1764,204 @@
         ]
       },
       "backlog_id": "DG-198",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_001_white_gold_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_001_white_gold_painted.png",
+      "status": "production_ready",
+      "sha256": "cd247d9c5a64cac6deb9735cddbdd6fb4d60b1ae0ebeafdbb85c2a3e5a3f75d0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_001_white_gold.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-199",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_002_black_gold_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_002_black_gold_painted.png",
+      "status": "production_ready",
+      "sha256": "15a23e54424677284675152225bd68e59b7df8a56ed8166451a8bf684e39ff8b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_002_black_gold.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-200",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_003_navy_gold_star_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_003_navy_gold_star_painted.png",
+      "status": "production_ready",
+      "sha256": "ad5a4213f3f5d17c3739ad0e9e10df6069c2fb3131f504946010cf13d1995992",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_003_navy_gold_star.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-201",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_004_crimson_gold_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_004_crimson_gold_painted.png",
+      "status": "production_ready",
+      "sha256": "a0869be055fa2d0fa0f3353b1b868e347d5036eed2c9506a164ff7031fb65b4f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_004_crimson_gold.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-202",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_005_purple_black_gold_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_005_purple_black_gold_painted.png",
+      "status": "production_ready",
+      "sha256": "021b8065d7ba5c9e20ed7b2490ed5eb686a1b3c7f86c0c8e2d7843484187c2f1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_005_purple_black_gold.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-203",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_006_white_navy_star_painted",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_white_navy_star_painted.png",
+      "status": "production_ready",
+      "sha256": "da95c453b49604c7679477e5161e1f911b68b3b906f1b57b1ce9caf6399e35d3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/22_outfit_prompts.md",
+      "provenance": {
+        "origin": "owner_supplied_render",
+        "reference_path": "images/outfit_references/robe_ref_006_white_navy_star.png",
+        "tool": "scripts/intake_painted_outfit.py",
+        "method": "flood-fill backdrop cutout, un-premultiplied edge, rig refit",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "studio_backdrop_removed",
+          "rig_refit_collar_y_442_hem_y_1108",
+          "srgb_icc_profile_embedded"
+        ],
+        "note": "rescaling waived for this intake by the collection owner",
+        "qa_report": "docs/qa/painted_outfits_2026-07-27.md"
+      },
+      "backlog_id": "DG-204",
       "approved_on": "2026-07-27"
     }
   ],
