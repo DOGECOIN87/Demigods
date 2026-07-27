@@ -19,6 +19,7 @@ Status values are limited to `pending`, `candidate`, `QA-failed`, `approved`, an
 | `FACE` | `images/reference_sheets/anime_character_creation_asset_sheet.webp` |
 | `HAND` | `images/reference_sheets/fantasy_hand_held_items_asset_sheet.webp` |
 | `RING` | `images/reference_sheets/floor_ring_aura_variants_sheet.png` |
+| `BG2` | `images/background_candidates_round_two/` |
 
 The broader and theme-composite sheets in `images/reference_sheets/index.md` corroborate the visual system, but their tiny flattened composite cells are not treated as additional production assets where the same design is already represented in a dedicated catalog. This avoids double-counting baked character combinations as isolated traits.
 
@@ -45,6 +46,49 @@ The broader and theme-composite sheets in `images/reference_sheets/index.md` cor
 | DG-012 | background | Moonlit pale-marble balcony with arches, mountains, stars, and cool floor shadows | `BG/background_006_moonlit_marble_balcony_reference.jpg` | DG-011 | `assets/backgrounds/background_006_moonlit_marble_balcony.png` | `prompts/17_native_1254_backgrounds.md` | pending |
 | DG-013 | background | Layered white-stone golden gateway with portal light, star emblem, stairs, and plants | `BG/background_007_golden_celestial_gateway_reference.jpg` | DG-012 | `assets/backgrounds/background_007_golden_celestial_gateway.png` | `prompts/17_native_1254_backgrounds.md` | pending |
 | DG-014 | background | Circular violet void portal with floating platform, rocks, crystals, and smoke | `BG/background_008_violet_void_portal_reference.jpg` | DG-013 | `assets/backgrounds/background_008_violet_void_portal.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+
+## Phase B2 — Second background wave (added 2026-07-27)
+
+Six further directions supplied by the maintainer, preserved in
+`images/background_candidates_round_two/`. They sit in their own directory
+because `validate_assets.py` pins `images/background_candidates/` to exactly
+eight 1024 × 1024 files and verifies them byte for byte; five of these are
+784 × 1168, so adding them there would have meant weakening that guarantee.
+
+They also broaden the palette usefully — the registered four are all navy,
+violet and gold, while this wave adds green, ember and warm brass.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-158 | background | Luminous world-tree grove with fireflies, moss floor, and green canopy | `BG2` world tree | Staging review | `assets/backgrounds/background_009_luminous_world_tree.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-159 | background | Infinite arcane library with floating books, arched window, and starfield | `BG2` infinite library | Staging review | `assets/backgrounds/background_010_infinite_arcane_library.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-160 | background | Ember ruins with broken arches, cracked lava ground, and smoke sky | `BG2` ember ruins | Staging review | `assets/backgrounds/background_011_ember_ruins.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-161 | background | Clockwork sanctum with brass gears, lanterns, and a raised circular platform | `BG2` clockwork sanctum | Staging review | `assets/backgrounds/background_012_clockwork_sanctum.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-162 | background | Crystal spire peak above cloud sea with violet and cyan crystals | `BG2` crystal spire | **Needs a floor plane** | `assets/backgrounds/background_013_crystal_spire_peak.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-163 | background | Skybound isles with waterfalls, a lit bridge, and cloud vista | `BG2` skybound isles | **Needs a floor plane** | `assets/backgrounds/background_014_skybound_isles.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+
+### Staging review — read before rendering these
+
+Every background must give the character a surface to stand on at foot baseline
+Y 1139, because the registered floor-ring auras are seated there and the feet
+must not float.
+
+- **DG-158, DG-159, DG-160, DG-161** have usable ground. DG-161 is the strongest:
+  its raised circular platform sits almost exactly where the rig needs one.
+- **DG-162 and DG-163 do not.** Both are aerial vistas — a spire summit and a
+  cloud-level island view — with no floor plane at the bottom of frame. Rendered
+  as-is the character would stand on empty sky and the floor ring would hang in
+  the air. Each needs a foreground ledge, platform, or path introduced at the
+  foot baseline during the native render. That is a composition change from the
+  reference, and it must be deliberate.
+
+All six references are portrait 784 × 1168 or square 1024 × 1024. Production is
+1254 × 1254, so each must be **recomposed** natively, not cropped or letterboxed.
+The portrait framing in particular will not survive a straight crop: the vertical
+subject has to be rebuilt for a square frame.
+
+Generate sharp and unvignetted; apply `scripts/apply_background_depth.py` after,
+as with 001–004.
 
 ## Phase C — Representative test assets, then remaining backlog in canonical layer order
 
