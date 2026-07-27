@@ -60,6 +60,23 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 | DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | pending |
 | DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | pending |
 
+#### Production route per aura cell (assessed 2026-07-27)
+
+The aura catalog's lower row splits cleanly into geometric and organic designs. Geometric cells are rendered analytically by repository scripts, which removes the matte-fringe and stray-pixel failures that background removal introduces. Organic cells still need an image generator driven by `prompts/19`.
+
+| ID | Cell reading | Route | Script |
+|---|---|---|---|
+| DG-015 | Elliptical ring band | procedural | `scripts/build_aura_floor_ring.py` |
+| DG-016 | Violet circle with **radiating spoke texture**, not a plain gradient | generator, or procedural spokes plus hand finish | — |
+| DG-017 | Angular crystalline shards | generator | — |
+| DG-018 | Rising flame with organic curl | generator | — |
+| DG-019 | Branching lightning wisps | generator | — |
+| DG-020 | Smooth pale-gold falloff, no internal structure | procedural | `scripts/build_aura_radiance.py` |
+
+DG-016 was initially assessed as a plain radial gradient. Inspection of the cell at magnification shows radiating internal structure, so it is **not** a straight companion to DG-020 and should not be routed as one.
+
+Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; body-centered effects (DG-016, DG-020) use `--trait` and stay inside the locked character bounds.
+
 ### Back accessories
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
@@ -85,6 +102,12 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 | DG-034 | hair back | Long wavy pink rear hair | `HAIR`, upper row cell 6 | DG-029 | `assets/hair_back/hair_back_006_pink_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-035 | hair back | Long wavy teal rear hair | `HAIR`, upper row cell 7 | DG-029 | `assets/hair_back/hair_back_007_teal_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-036 | hair back | Long wavy red rear hair | `HAIR`, upper row cell 8 | DG-029 | `assets/hair_back/hair_back_008_red_long_wavy.png` | `prompts/04_hair_back.md` | pending |
+
+#### No recoloring shortcut for the hair-back family (assessed 2026-07-27)
+
+DG-029 through DG-036 are described as "long wavy [colour] rear hair", which invites recolouring the registered silver DG-031 into the remaining seven. **Do not.** The eight upper-row cells are distinct cuts, not one design in eight colours: measured ink heights across the row span 20–27 px on a ~24 px cell, a 29% spread, and cell 3 (silver) is visibly shorter and straighter than cell 4 (violet), while cells 1, 7, and 8 differ again in layering and volume.
+
+The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establish that the silhouettes differ, not enough to approve micro-detail. Each colour must be rendered natively from its own cited cell, as the general reference-preview rule at the top of this file already requires.
 
 ### Outfits
 
