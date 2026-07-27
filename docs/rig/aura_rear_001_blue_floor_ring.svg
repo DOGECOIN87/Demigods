@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgb(226, 240, 255)"/>
+      <stop offset="0.5" stop-color="rgb(150, 190, 252)"/>
+      <stop offset="1" stop-color="rgb(120, 162, 248)"/>
+    </linearGradient>
+    <radialGradient id="wash">
+      <stop offset="0" stop-color="rgb(232, 244, 255)" stop-opacity="0.063"/>
+      <stop offset="1" stop-color="rgb(232, 244, 255)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-25%" y="-60%" width="150%" height="220%">
+      <feGaussianBlur stdDeviation="13.0"/>
+    </filter>
+  </defs>
+  <ellipse cx="627" cy="1009.0" rx="277.0" ry="55.0" fill="url(#wash)"/>
+  <ellipse cx="627" cy="1009.0" rx="300.0" ry="78.0"
+           fill="none" stroke="rgb(132, 178, 250)" stroke-width="72.0"
+           opacity="0.55" filter="url(#glow)"/>
+  <ellipse cx="627" cy="1009.0" rx="300.0" ry="78.0"
+           fill="none" stroke="url(#band)" stroke-width="46.0"/>
+</svg>
