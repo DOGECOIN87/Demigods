@@ -139,6 +139,15 @@ disappears.
 garment ambiguity". The mannequin is allowed to have it because it is a base
 layer that an outfit always covers. With `outfits` empty, nothing covers it.
 
+The colour grade made this **more** visible, not less, which is the correct
+outcome working against us: darkening and desaturating the background raised
+foreground contrast exactly as intended, and the thing gaining contrast is bare
+mannequin skin. Compare
+`docs/qa/composites/sheet_100_tokens_2026-07-27.png` with
+`docs/qa/composites/sheet_100_tokens_graded_2026-07-27.png` — the backgrounds
+unify and the figure separates, and the separation is the problem until DG-037
+lands.
+
 `outfits` is therefore now in `generate_777.REQUIRED_CATEGORIES`, so preflight
 fails until the category is populated. DG-037 is the top production priority, and
 not only for variety.
