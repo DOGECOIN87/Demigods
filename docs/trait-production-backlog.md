@@ -291,6 +291,15 @@ placeholders that let the collection render, not the finished outfit set.
 
 ### Eyes
 
+> **BLOCKED — architectural decision required before production.**
+> The registered base master has a fully painted face, and the layer stack
+> composites `eyes`, `eyebrows` and `mouths` over it. An isolation-compliant
+> layer leaves the baked lashes and outline visible; an occluding layer needs
+> skin padding that contradicts the isolation rule. This affects all 52 assets
+> across the three face categories. See
+> `docs/qa/face_layer_conflict_2026-07-27.md` for the measurements, a visual
+> demonstration, and three options.
+
 The 24 eye pairs below are distinct visible cells in the dedicated facial-trait sheet. Color adjectives are intentionally conservative; exact liner, iris, pupil, catchlight, and gradient detail must follow the cited cell.
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
