@@ -1225,6 +1225,696 @@
         ]
       },
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_025_base_master_brown",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_025_base_master_brown.png",
+      "status": "production_ready",
+      "sha256": "08f9337f50dec8b797ca5ea86680e2f3ebcb691390441b91eb5dc1b9074b0058",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_matte_extraction",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/extract_face_layers.py",
+        "method": "difference matte against the faceless base body",
+        "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-176",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_026_recolour_gold",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_026_recolour_gold.png",
+      "status": "production_ready",
+      "sha256": "d1a8e5a0427ff8428f05274c172588210adbbf566f41b0ed2f2be435f0f1b7a0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "gold",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-177",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_027_recolour_olive",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_027_recolour_olive.png",
+      "status": "production_ready",
+      "sha256": "c1267344f97b6bb0543ed893985d4be1c41af1b7581302137febfb20924b8d7e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "olive",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-178",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_028_recolour_lime",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_028_recolour_lime.png",
+      "status": "production_ready",
+      "sha256": "99bdd0709baae6eaf9cf442f3bd285bb4824392b32d97a450203529fb1c5b282",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "lime",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-179",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_029_recolour_jade",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_029_recolour_jade.png",
+      "status": "production_ready",
+      "sha256": "28ac47772b622274758c0a4a9ee9f46ee1e1b81b4451e0731b496b2a42d48d5f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "jade",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-180",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_030_recolour_spring",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_030_recolour_spring.png",
+      "status": "production_ready",
+      "sha256": "e1683a660fcec2cccb2b8016491350834e86c53b87746d8c461608ba9b2e44bb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "spring",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-181",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_031_recolour_emerald",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_031_recolour_emerald.png",
+      "status": "production_ready",
+      "sha256": "9182e72d7fb8e7b552446e45dfe3c34392c4f9e0521374d9e62a7ccfd8d1bdfe",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "emerald",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-182",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_032_recolour_teal",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_032_recolour_teal.png",
+      "status": "production_ready",
+      "sha256": "efda6e3a3b32e582de494b5221aa86267b0ab1a45771d80fe9b451a52cab3a2f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "teal",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-183",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_033_recolour_orchid",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_033_recolour_orchid.png",
+      "status": "production_ready",
+      "sha256": "03dd935ff6a9c39af0b96cb087c9a198a702dc7c9c4b9036986db4837ae622d5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "orchid",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-184",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_034_recolour_magenta",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_034_recolour_magenta.png",
+      "status": "production_ready",
+      "sha256": "0cadcdf56f8b6ecddbe373164235423ed9cd74e534167502b54152b2aba8e65e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "magenta",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-185",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_035_recolour_rose",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_035_recolour_rose.png",
+      "status": "production_ready",
+      "sha256": "8b588bd29f6a4b61a290803acdb758bae99bf24636fb2df03d50a924743bb4e8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "rose",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-186",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_036_recolour_grey",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_036_recolour_grey.png",
+      "status": "production_ready",
+      "sha256": "f63afa85433a76fb166b2b4acc3a780f44b5f1e83cbb1771898739a93a727005",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "grey",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-187",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyes_037_recolour_charcoal",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_037_recolour_charcoal.png",
+      "status": "production_ready",
+      "sha256": "5939ab62c236346dc019f18a30ca10f2fd893ade49ae37351e71ced37120a3b2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyes/eyes_025_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "charcoal",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-188",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_017_base_master_brown",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+      "status": "production_ready",
+      "sha256": "bc57c09ed9de192c2f241403ab6b79d025e5e26b3f1614508e97ed87fe1b29d8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_matte_extraction",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/extract_face_layers.py",
+        "method": "difference matte against the faceless base body",
+        "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-189",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_018_recolour_silver",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_018_recolour_silver.png",
+      "status": "production_ready",
+      "sha256": "535f511142e7ae827ea1fa4aa83fcd11fcd3a252cb0acb07ed886b412f46539b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "silver",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-190",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_019_recolour_gold",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_019_recolour_gold.png",
+      "status": "production_ready",
+      "sha256": "11c6395d5843bb5b1532acb2012cdfd5159020c3c314e86bf678e01061577b63",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "gold",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-191",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_020_recolour_black",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_020_recolour_black.png",
+      "status": "production_ready",
+      "sha256": "e0a54fefece2fc210ec357d30470d2fa177aa072928be2bd7b08ee816cf007b6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "black",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-192",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_021_recolour_violet",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_021_recolour_violet.png",
+      "status": "production_ready",
+      "sha256": "f14e897422a7f1b1f2a448e67642b4f8ff4128c49a847390a22bd421e8508188",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "violet",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-193",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_022_recolour_blue",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_022_recolour_blue.png",
+      "status": "production_ready",
+      "sha256": "caa13b5109f8f58d0019a57af0758166f1fe5363c446e909a39d16b3cc40af01",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "blue",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-194",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_023_recolour_pink",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_023_recolour_pink.png",
+      "status": "production_ready",
+      "sha256": "51b4e3c3b560afb26e5f226206d0cea08f353f440aa636717847bed0623cdc16",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "pink",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-195",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_024_recolour_teal",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_024_recolour_teal.png",
+      "status": "production_ready",
+      "sha256": "b8ccd00199422c8cc5c3d700972ec42cbbabfd0f9757cd24a5770c8d69887526",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "teal",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-196",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "eyebrows_025_recolour_red",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_025_recolour_red.png",
+      "status": "production_ready",
+      "sha256": "cfbb7e085fab0f5a55c174d776695de52486410cd6839f11e99aeaa9dc2218a8",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_recolour",
+        "reference_path": "assets/eyebrows/eyebrows_017_base_master_brown.png",
+        "tool": "scripts/build_face_recolours.py",
+        "palette": "red",
+        "method": "hue and saturation shift; value and alpha unchanged",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-197",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_013_base_master_closed_smile",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+      "status": "production_ready",
+      "sha256": "49dc01174fdb6851904a6c3a899dcb33534ea611762d9584ea1c046f06b53375",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_matte_extraction",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/extract_face_layers.py",
+        "method": "difference matte against the faceless base body",
+        "qa_report": "docs/qa/face_layer_conflict_2026-07-27.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ]
+      },
+      "backlog_id": "DG-198",
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
@@ -1440,9 +2130,6 @@
   "pending_categories": [
     "hair_back",
     "hair_front",
-    "eyes",
-    "eyebrows",
-    "mouths",
     "neck_accessories",
     "head_accessories",
     "hand_objects",
@@ -1451,6 +2138,9 @@
     "front_auras",
     "global_finish",
     "backgrounds",
-    "outfits"
+    "outfits",
+    "eyes",
+    "eyebrows",
+    "mouths"
   ]
 }

@@ -370,6 +370,67 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-105 | mouth | Pink open pout, cell r3c3 | `FACE`, mouths r3c3 | DG-095 | `assets/mouths/mouth_011_pink_open_pout.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
 | DG-106 | mouth | Tiny dark round mouth, cell r3c4 | `FACE`, mouths r3c4 | DG-095 | `assets/mouths/mouth_012_tiny_round.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
 
+#### Recovered face layers and recolours — DG-176 to DG-198 (added 2026-07-27)
+
+Removing the baked face from the base bodies left the collection with no face at
+all, which is worse than the conflict it fixed. The erased artwork is the
+approved design, so rather than draw replacements it was lifted back out of the
+pre-removal master as trait layers by `scripts/extract_face_layers.py`.
+
+The recovery is a difference matte, not a cut-out. The faceless base is a
+measured reconstruction of the skin behind each feature, so the original is
+exactly the feature composited over that skin; solving that composite for
+coverage and colour gives real soft edges where the artist feathered the lashes.
+Compositing the three recovered layers back over the faceless base reproduces
+the original master to a worst-case channel error of 5. Fringe luminance
+correlates with alpha at −0.22, so the matte is genuinely un-premultiplied
+rather than keyed from black.
+
+`scripts/build_face_recolours.py` then varies the colour. Hue and saturation
+move; **value and alpha do not**, so every painted gradient, the pupil, the lash
+weight and the upper-left key light survive. The sclera, the catchlights and the
+skin-toned eyelid are held out. Eye palettes are gated on measured contrast —
+RGB distance from skin, and hue separation from every registered background
+sampled behind the head — by `build_face_recolours.py --check-contrast`.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-176 | eyes | Recovered painted eye pair from the base master, brown | base master face | Approved face anchors | `assets/eyes/eyes_025_base_master_brown.png` | `scripts/extract_face_layers.py` | registered |
+| DG-177 | eyes | Gold recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_026_recolour_gold.png` | `scripts/build_face_recolours.py` | registered |
+| DG-178 | eyes | Olive recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_027_recolour_olive.png` | `scripts/build_face_recolours.py` | registered |
+| DG-179 | eyes | Lime recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_028_recolour_lime.png` | `scripts/build_face_recolours.py` | registered |
+| DG-180 | eyes | Jade recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_029_recolour_jade.png` | `scripts/build_face_recolours.py` | registered |
+| DG-181 | eyes | Spring-green recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_030_recolour_spring.png` | `scripts/build_face_recolours.py` | registered |
+| DG-182 | eyes | Emerald recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_031_recolour_emerald.png` | `scripts/build_face_recolours.py` | registered |
+| DG-183 | eyes | Teal recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_032_recolour_teal.png` | `scripts/build_face_recolours.py` | registered |
+| DG-184 | eyes | Orchid recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_033_recolour_orchid.png` | `scripts/build_face_recolours.py` | registered |
+| DG-185 | eyes | Magenta recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_034_recolour_magenta.png` | `scripts/build_face_recolours.py` | registered |
+| DG-186 | eyes | Rose recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_035_recolour_rose.png` | `scripts/build_face_recolours.py` | registered |
+| DG-187 | eyes | Grey recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_036_recolour_grey.png` | `scripts/build_face_recolours.py` | registered |
+| DG-188 | eyes | Charcoal recolour of the recovered eye pair | DG-176 recolour | DG-176 | `assets/eyes/eyes_037_recolour_charcoal.png` | `scripts/build_face_recolours.py` | registered |
+| DG-189 | eyebrows | Recovered painted eyebrow pair from the base master, brown | base master face | Approved face anchors | `assets/eyebrows/eyebrows_017_base_master_brown.png` | `scripts/extract_face_layers.py` | registered |
+| DG-190 | eyebrows | Silver recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_018_recolour_silver.png` | `scripts/build_face_recolours.py` | registered |
+| DG-191 | eyebrows | Gold recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_019_recolour_gold.png` | `scripts/build_face_recolours.py` | registered |
+| DG-192 | eyebrows | Black recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_020_recolour_black.png` | `scripts/build_face_recolours.py` | registered |
+| DG-193 | eyebrows | Violet recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_021_recolour_violet.png` | `scripts/build_face_recolours.py` | registered |
+| DG-194 | eyebrows | Blue recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_022_recolour_blue.png` | `scripts/build_face_recolours.py` | registered |
+| DG-195 | eyebrows | Pink recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_023_recolour_pink.png` | `scripts/build_face_recolours.py` | registered |
+| DG-196 | eyebrows | Teal recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_024_recolour_teal.png` | `scripts/build_face_recolours.py` | registered |
+| DG-197 | eyebrows | Red recolour of the recovered eyebrow pair | DG-189 recolour | DG-189 | `assets/eyebrows/eyebrows_025_recolour_red.png` | `scripts/build_face_recolours.py` | registered |
+| DG-198 | mouth | Recovered painted closed smile from the base master | base master face | Approved mouth anchor | `assets/mouths/mouth_013_base_master_closed_smile.png` | `scripts/extract_face_layers.py` | registered |
+
+**Scope, stated plainly: colour varies, shape does not.** All thirteen eye
+assets share one painted eye design and all nine eyebrows share one brow shape,
+so the collection gains twelve eye *colours* and one eye *design*.
+
+The 24 `FACE` sheet eye cells, 16 eyebrow cells and 12 mouth cells are distinct
+paintings, so **DG-055 to DG-106 stay `pending` and are not satisfied by these**.
+Numbered from 025, 017 and 013 upward so the sheet cells keep 001–024, 001–016
+and 001–012.
+
+Eyebrow palettes are matched to the registered hair colours rather than to the
+eye palettes, since a brow reads as hair and not as eye.
+
 ### Expression marks
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
