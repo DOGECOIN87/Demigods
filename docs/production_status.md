@@ -116,6 +116,21 @@ Eight glyphs registered on 2026-07-27 from `scripts/build_expression_marks.py`. 
 
 Completing this category took the combination space from 120 to 960 and unblocked exact-777 generation. A dry run at seed 20260727 produced 777 unique tokens, trait provenance `915fadf1…`, and passed `validate_output.py --allow-dry-run` at 777/777 metadata and 777 unique signatures.
 
+**Release blocked: outfits are required.** A 100-token contact sheet
+(`docs/qa/composites/sheet_100_tokens_2026-07-27.png`) showed the figures reading
+as unclothed at thumbnail size. The base poses *are* clothed, but in a skin-toned
+mannequin garment: tank top `(252,218,182)` and shorts `(247,211,174)` against
+cheek skin `(253,199,163)`. At marketplace thumbnail scale that contrast
+disappears.
+
+`prompts/19` already forbids exactly this in produced garments — "no skin-tone
+garment ambiguity". The mannequin is allowed to have it because it is a base
+layer that an outfit always covers. With `outfits` empty, nothing covers it.
+
+`outfits` is therefore now in `generate_777.REQUIRED_CATEGORIES`, so preflight
+fails until the category is populated. DG-037 is the top production priority, and
+not only for variety.
+
 The final seed and the final render remain release decisions and have not been made.
 
 ### First character trait

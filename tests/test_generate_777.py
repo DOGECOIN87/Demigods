@@ -26,12 +26,16 @@ class Generate777Tests(unittest.TestCase):
         image.paste((value, 0, 0, 255), (4, 4, 12, 12))
         image.save(path)
 
-    def build_assets(self, root: Path) -> Path:
+    def build_assets(self, root: Path, *, with_outfits: bool = True) -> Path:
         assets = root / "assets"
         self.save_background(assets / "backgrounds" / "background_001_one.png", 10)
         self.save_background(assets / "backgrounds" / "background_002_two.png", 20)
         self.save_trait(assets / "base_bodies" / "base_body_001_one.png", 30)
         self.save_trait(assets / "base_bodies" / "base_pose_002_two.png", 40)
+        if with_outfits:
+            # outfits is a required category: the base mannequin's garment is
+            # skin-toned, so an outfit-less token is not publishable.
+            self.save_trait(assets / "outfits" / "outfit_001_one.png", 50)
         return assets
 
     def collection(self) -> dict[str, object]:
@@ -41,6 +45,16 @@ class Generate777Tests(unittest.TestCase):
             "supply": 4,
             "canvas": {"width": 16, "height": 16},
         }
+
+    def test_missing_outfits_blocks_generation(self) -> None:
+        """A token with no outfit shows the skin-toned mannequin and cannot ship."""
+        root = self.make_root()
+        assets = self.build_assets(root, with_outfits=False)
+        errors = generate_777.validate_library(assets, generate_777.discover_assets(assets), (16, 16))
+        self.assertTrue(
+            any("outfits" in error for error in errors),
+            f"outfits must be required; got {errors}",
+        )
 
     def test_dry_run_generates_exact_unique_supply(self) -> None:
         root = self.make_root()

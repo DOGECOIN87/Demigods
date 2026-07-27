@@ -39,7 +39,12 @@ LAYER_ORDER = [
     "front_auras",
     "global_finish",
 ]
-REQUIRED_CATEGORIES = {"backgrounds", "base_bodies"}
+# outfits is required, not optional. The base bodies wear only a skin-toned
+# mannequin garment — tank top (252,218,182) and shorts (247,211,174) against
+# cheek skin (253,199,163). At marketplace thumbnail size that contrast vanishes
+# and the chibi figures read as unclothed. A token with no outfit layer is not
+# publishable, so the generator refuses to build one.
+REQUIRED_CATEGORIES = {"backgrounds", "base_bodies", "outfits"}
 PRODUCTION_SUPPLY = 777
 
 

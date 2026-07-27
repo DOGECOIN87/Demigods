@@ -32,6 +32,8 @@ class ValidateOutputTests(unittest.TestCase):
         self.save_background(assets / "backgrounds" / "background_002_two.png", 20)
         self.save_trait(assets / "base_bodies" / "base_body_001_one.png", 100, 3)
         self.save_trait(assets / "base_bodies" / "base_pose_002_two.png", 200, 7)
+        # outfits is a required category; see generate_777.REQUIRED_CATEGORIES.
+        self.save_trait(assets / "outfits" / "outfit_001_one.png", 150, 5)
 
         config_path = root / "config.json"
         compatibility_path = root / "compatibility.json"
