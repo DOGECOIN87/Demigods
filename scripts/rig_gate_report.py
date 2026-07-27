@@ -65,8 +65,23 @@ def band_center_x(image: Image.Image, y0: int, y1: int) -> float | None:
     return (bb[0] + bb[2] - 1) / 2
 
 
+def base_metrics(base_path: Path) -> dict | None:
+    """Width and crown Y of the base body, for proportion reporting."""
+    try:
+        with Image.open(base_path) as im:
+            im = im.convert("RGBA")
+            bbox = inclusive_alpha_bounds(im)
+    except (OSError, ValueError):
+        return None
+    if bbox is None:
+        return None
+    left, top, right, _ = bbox
+    return {"width": right - left + 1, "crown_y": top}
+
+
 def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False,
-            trait: bool = False, floor_aura: bool = False) -> dict:
+            trait: bool = False, floor_aura: bool = False, base: dict | None = None,
+            max_width_ratio: float | None = None) -> dict:
     result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
     head_cx = leg_cx = None
     alpha_min = None
@@ -142,6 +157,21 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
                              f"[{mb[0]},{mb[1]},{mb[2]},{bottom_limit}]",
                              " ".join(x for x in overflow if x) or "0"))
 
+    # Proportion against the base body. hair_back_003 passed every silhouette
+    # gate at 1.46x the body width because canvas, transparency and bounds do not
+    # measure proportion; in composite it read as wings rather than hair.
+    if base is not None and (trait or floor_aura):
+        layer_width = right - left + 1
+        ratio = layer_width / base["width"]
+        result["width_ratio"] = round(ratio, 2)
+        result["crown_offset"] = base["crown_y"] - top  # + => layer sits above the crown
+        ratio_ok = max_width_ratio is None or ratio <= max_width_ratio
+        result["checks"].append((
+            "width_ratio", ratio_ok, f"{ratio:.2f}x",
+            f"<={max_width_ratio:.2f}x" if max_width_ratio else "report-only",
+            round(ratio - max_width_ratio, 2) if max_width_ratio else 0,
+        ))
+
     # Corrective guidance for the next NATIVE render (not applied here).
     height = bottom - top + 1
     target_height = rig["foot_baseline_y"] - rig["top_of_head_y"] + 1
@@ -171,6 +201,9 @@ def print_report(r: dict) -> None:
     print(f"  sha256: {r['sha256']}")
     if "inclusive_bounds" in r:
         print(f"  inclusive visible bounds: {r['inclusive_bounds']}")
+    if "width_ratio" in r:
+        print(f"  width vs base body: {r['width_ratio']}x; "
+              f"crown offset {r['crown_offset']:+d} px (+ = above the head top)")
     print(f"  {'CHECK':<16}{'RESULT':<8}{'ACTUAL':<16}{'TARGET':<16}DELTA")
     for name, passed, actual, target, delta in r["checks"]:
         print(f"  {name:<16}{('PASS' if passed else 'FAIL'):<8}{str(actual):<16}{str(target):<16}{delta}")
@@ -210,16 +243,23 @@ def main() -> int:
                     help="Ground-plane aura mode: like --trait, but the visible bounds may extend "
                          "below foot baseline Y so the character reads as standing inside the "
                          "effect. X bounds and the top bound still apply.")
+    ap.add_argument("--base", type=Path, default=ROOT / "assets" / "base_bodies" / "base_body_001_neutral_master.png",
+                    help="base body used to report a partial layer's width ratio and crown offset")
+    ap.add_argument("--max-width-ratio", type=float,
+                    help="fail a partial layer wider than this multiple of the base body width "
+                         "(hair sits near 1.2; wings and capes legitimately exceed it)")
     ap.add_argument("--json-report", type=Path)
     args = ap.parse_args()
 
     spec = load_rig(args.config)
+    base_spec = base_metrics(args.base) if args.base else None
     files = gather(args.paths)
     if not files:
         print("No PNG candidates found.", file=sys.stderr)
         return 2
 
-    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait, args.floor_aura) for f in files]
+    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait, args.floor_aura,
+                              base_spec, args.max_width_ratio) for f in files]
     for r in reports:
         print_report(r)
 

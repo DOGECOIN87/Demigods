@@ -47,6 +47,34 @@ full-figure head/foot/center gates (a hair layer never reaches the foot baseline
 Always confirm a trait's placement with a composite over the base body — see
 `docs/qa/composites/` for examples.
 
+**Proportion against the base body.** Canvas, transparency and bounds say nothing
+about whether a layer is the right *size* for the character. `hair_back_003`
+passed every silhouette gate at 1.46 × the body width and still read as wings in
+composite, so `--trait` and `--floor-aura` now report a width ratio and a crown
+offset whenever a base body is available:
+
+```bash
+# report only — default
+python scripts/rig_gate_report.py --trait incoming.png
+
+# enforce a ceiling for layers that should hug the figure
+python scripts/rig_gate_report.py --trait incoming.png --max-width-ratio 1.35
+```
+
+`width vs base body` is the layer's width as a multiple of the base body's.
+`crown offset` is signed: positive means the layer reaches above the head top,
+negative means it starts below it and will leave a bald gap for rear hair.
+
+The ceiling is **opt-in** on purpose. Rear hair sits near 1.2 ×, but back
+accessories — wings, capes, mantles — legitimately exceed body width, and a
+default ceiling would false-fail the entire category. Pass `--max-width-ratio`
+for layers that should hug the figure and omit it elsewhere.
+
+Refit an out-of-proportion layer with `scripts/refit_trait_layer.py`, which
+scales about the locked centre axis and seats the top at a chosen Y. Prefer a
+native re-render at correct proportions; refitting is a repair, not a production
+method, and every use must be recorded in the manifest's `postprocessing`.
+
 **Ground-plane auras.** `maximum_character_bounds` stops at foot baseline Y 1139,
 which is correct for the character but wrong for an effect lying on the floor. For
 the character to read as standing *inside* a floor ring rather than in front of it,
