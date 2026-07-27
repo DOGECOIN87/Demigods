@@ -37,12 +37,31 @@ python scripts/rig_gate_report.py --pose-variant --tolerance 2 incoming.png
 
 # partial trait layers (hair, eyes, crown, wings) — only occupy their own region
 python scripts/rig_gate_report.py --trait incoming.png
+
+# ground-plane auras (floor rings, magic circles) — the near arc passes below the feet
+python scripts/rig_gate_report.py --floor-aura incoming.png
 ```
 
 `--trait` checks canvas size, genuine transparency, and max bounds, and skips the
 full-figure head/foot/center gates (a hair layer never reaches the foot baseline).
 Always confirm a trait's placement with a composite over the base body — see
 `docs/qa/composites/` for examples.
+
+**Ground-plane auras.** `maximum_character_bounds` stops at foot baseline Y 1139,
+which is correct for the character but wrong for an effect lying on the floor. For
+the character to read as standing *inside* a floor ring rather than in front of it,
+the ring's far arc must pass behind the ankles and its near arc in front of the
+toes — and the near arc is necessarily below Y 1139.
+
+`--floor-aura` is that narrow exemption. It behaves like `--trait` but bounds the
+bottom at the canvas edge instead of the foot baseline. The X bounds and the top
+bound still apply, and the asset still may not touch the final canvas row, since
+reaching it means the glow is clipped rather than merely low.
+
+The exemption is deliberately scoped: the same file that passes `--floor-aura`
+still fails `--trait`, so an ordinary partial layer can never drift below the
+baseline unnoticed. Use `--floor-aura` only for effects that genuinely lie on the
+ground plane.
 
 ## `scripts/build_rig_guide.py` — visual overlay
 

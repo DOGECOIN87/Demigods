@@ -117,6 +117,26 @@ STRAY PIXELS:
 - the visible alpha bounding box must fall inside X 233-1021 and Y 129-1139
 ```
 
+## Attempt 005 — procedural, awaiting approval (2026-07-27)
+
+Attempts 001–004 established that this asset does not need an image generator. It is pure geometry, so `python scripts/build_aura_floor_ring.py` renders it analytically: alpha comes from a signed distance to the centerline ellipse rather than from keying a background, which is what produced the matte fringe.
+
+Two design decisions were taken on 2026-07-27:
+
+**Seating.** Earlier attempts placed the whole ring above foot baseline Y 1139, so the character read as standing *in front of* the ring. The ring is now seated at the feet, so its far arc passes behind the ankles and its near arc in front of the toes. That necessarily puts the near arc below Y 1139.
+
+**Bounds.** `maximum_character_bounds` stops at Y 1139, which is correct for the character and wrong for a ground-plane effect. Floor auras are now gated with `rig_gate_report.py --floor-aura`, which keeps the X and top bounds but lets the bottom run toward the canvas edge. The exemption is scoped: this file still fails `--trait`.
+
+**Form.** Two thin concentric luminous rings, matching the supplied references, rather than one thick band.
+
+Attempt 005 measures visible bounds `[293,1035,960,1221]`, center X 626.5, 32 px of clearance to the canvas edge, and every semi-transparent pixel bright (zero dark fringe pixels, enforced by test). Provenance is `procedural_vector_render`, not `native_image_generation`.
+
+Tune without editing the module:
+
+```bash
+python scripts/build_aura_floor_ring.py --band 7 --glow 9 --radius-x 300 --radius-y 72 --center-y 1120
+```
+
 ## Mandatory candidate workflow
 
 1. Upload the result to `images/trait_candidates/rear_auras/` as `aura_rear_001_blue_floor_ring_candidate_attempt_001.png`. Do not place it under `assets/` and do not edit `assets/asset_manifest.json`.

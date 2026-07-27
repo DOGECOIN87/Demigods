@@ -66,7 +66,7 @@ def band_center_x(image: Image.Image, y0: int, y1: int) -> float | None:
 
 
 def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False,
-            trait: bool = False) -> dict:
+            trait: bool = False, floor_aura: bool = False) -> dict:
     result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
     head_cx = leg_cx = None
     alpha_min = None
@@ -100,7 +100,7 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
 
     def ok(delta): return abs(delta) <= tolerance
 
-    if trait:
+    if trait or floor_aura:
         # Partial layers (hair, eyes, crown, single wing) occupy only their own
         # region, so full-figure top-of-head / foot-baseline / center checks do
         # not apply. Verify a genuinely transparent background and staying in
@@ -126,15 +126,20 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
             center_delta = center_x - rig["canvas_center_x"]
             result["checks"].append(("center_x", ok(center_delta), round(center_x, 1), rig["canvas_center_x"], round(center_delta, 1)))
 
-    within = (left >= mb[0] and top >= mb[1] and right <= mb[2] and bottom <= mb[3])
+    # A ground-plane aura is not the character: to read as a ring the character
+    # stands inside, its near arc must fall below the foot baseline. Keep the X
+    # bounds and the top, but let the bottom run past the baseline. It still may
+    # not touch the final canvas row, since that means the glow is clipped.
+    bottom_limit = (canvas["height"] - 2) if floor_aura else mb[3]
+    within = (left >= mb[0] and top >= mb[1] and right <= mb[2] and bottom <= bottom_limit)
     overflow = [
         f"L{mb[0]-left}" if left < mb[0] else "",
         f"T{mb[1]-top}" if top < mb[1] else "",
         f"R{right-mb[2]}" if right > mb[2] else "",
-        f"B{bottom-mb[3]}" if bottom > mb[3] else "",
+        f"B{bottom-bottom_limit}" if bottom > bottom_limit else "",
     ]
     result["checks"].append(("max_bounds", within, f"[{left},{top},{right},{bottom}]",
-                             f"[{mb[0]},{mb[1]},{mb[2]},{mb[3]}]",
+                             f"[{mb[0]},{mb[1]},{mb[2]},{bottom_limit}]",
                              " ".join(x for x in overflow if x) or "0"))
 
     # Corrective guidance for the next NATIVE render (not applied here).
@@ -149,8 +154,9 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
     }
 
     # Single scalar for ranking a batch of candidates by closeness to the rig.
-    overflow_px = max(0, mb[0] - left) + max(0, mb[1] - top) + max(0, right - mb[2]) + max(0, bottom - mb[3])
-    if trait:
+    overflow_px = (max(0, mb[0] - left) + max(0, mb[1] - top)
+                   + max(0, right - mb[2]) + max(0, bottom - bottom_limit))
+    if trait or floor_aura:
         result["deviation"] = round(abs(center_x - rig["canvas_center_x"]) + overflow_px, 1)
     else:
         result["deviation"] = round(abs(head_delta) + abs(foot_delta) + abs(center_delta) + overflow_px, 1)
@@ -200,6 +206,10 @@ def main() -> int:
                     help="Partial-layer mode (hair, eyes, crown, wings): checks canvas, genuine "
                          "transparency, and max bounds only; skips the full-figure head/foot/center "
                          "gates. Confirm placement with a composite over the base body.")
+    ap.add_argument("--floor-aura", action="store_true",
+                    help="Ground-plane aura mode: like --trait, but the visible bounds may extend "
+                         "below foot baseline Y so the character reads as standing inside the "
+                         "effect. X bounds and the top bound still apply.")
     ap.add_argument("--json-report", type=Path)
     args = ap.parse_args()
 
@@ -209,7 +219,7 @@ def main() -> int:
         print("No PNG candidates found.", file=sys.stderr)
         return 2
 
-    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait) for f in files]
+    reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait, args.floor_aura) for f in files]
     for r in reports:
         print_report(r)
 

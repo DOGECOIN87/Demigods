@@ -23,15 +23,22 @@ CENTER_X = 627
 FOOT_BASELINE_Y = 1139
 MAX_BOUNDS = (233, 129, 1021, 1139)  # inclusive
 
-# Ring geometry. The near edge stops just above the foot baseline because the
-# trait gate measures bounds from every pixel whose alpha is not exactly zero.
+# Ring geometry. The ring is seated on the foot baseline so its far arc passes
+# behind the ankles and its near arc in front of the toes, which is what makes
+# the character read as standing inside it. That puts the near arc below Y 1139,
+# so the candidate is gated with `rig_gate_report.py --floor-aura`.
 RADIUS_X = 300.0
-RADIUS_Y = 78.0
-BAND = 46.0          # solid band thickness in pixels
-GLOW = 26.0          # falloff beyond the band, reaching exactly zero alpha
-BOTTOM_MARGIN = 3    # px of clearance under the foot baseline
+RADIUS_Y = 72.0
+BAND = 7.0           # stroke thickness of each ring in pixels
+GLOW = 9.0           # falloff beyond the stroke, reaching exactly zero alpha
+CENTER_Y_OVERRIDE: float | None = None
 
-INTERIOR_ALPHA = 16  # faint luminous wash inside the ring; never a solid fill
+# Second, slightly larger ring set a little lower, as in the approved references.
+OUTER_SCALE_X = 1.073
+OUTER_SCALE_Y = 1.103
+OUTER_OFFSET_Y = 10.0
+
+INTERIOR_ALPHA = 0   # open interior; the double ring carries the design
 
 # Palette sampled from the reference cell: pale blue-white inner edge grading to
 # cornflower/periwinkle at the outer edge.
@@ -55,22 +62,28 @@ def mix(c0: tuple[int, int, int], c1: tuple[int, int, int], t: float) -> tuple[i
     )
 
 
+# Seat the ring just above the contact point so the near arc clears the canvas
+# edge while the feet still sit inside the ellipse.
+RING_SEAT_LIFT = 19.0
+
+
 def center_y() -> float:
-    """Place the ring so its lowest glow pixel clears the foot baseline."""
-    half_height = RADIUS_Y + BAND / 2.0 + GLOW
-    return FOOT_BASELINE_Y - BOTTOM_MARGIN - half_height
+    """Seat the ring on the foot baseline so the character stands inside it."""
+    if CENTER_Y_OVERRIDE is not None:
+        return CENTER_Y_OVERRIDE
+    return FOOT_BASELINE_Y - RING_SEAT_LIFT
 
 
-def signed_distance(x: float, y: float, cy: float) -> float:
-    """First-order signed pixel distance to the centerline ellipse."""
-    dx = (x - CENTER_X) / RADIUS_X
-    dy = (y - cy) / RADIUS_Y
+def signed_distance(x: float, y: float, cy: float, rx: float, ry: float) -> float:
+    """First-order signed pixel distance to a centerline ellipse."""
+    dx = (x - CENTER_X) / rx
+    dy = (y - cy) / ry
     value = dx * dx + dy * dy - 1.0
-    gx = 2.0 * (x - CENTER_X) / (RADIUS_X * RADIUS_X)
-    gy = 2.0 * (y - cy) / (RADIUS_Y * RADIUS_Y)
+    gx = 2.0 * (x - CENTER_X) / (rx * rx)
+    gy = 2.0 * (y - cy) / (ry * ry)
     gradient = (gx * gx + gy * gy) ** 0.5
     if gradient == 0.0:
-        return -RADIUS_Y
+        return -ry
     return value / gradient
 
 
@@ -105,30 +118,43 @@ def shade(distance: float) -> tuple[int, int, int, int] | None:
     return None
 
 
+def rings() -> list[tuple[float, float, float]]:
+    """(center_y, radius_x, radius_y) for the inner and outer ring."""
+    cy = center_y()
+    return [
+        (cy, RADIUS_X, RADIUS_Y),
+        (cy + OUTER_OFFSET_Y, RADIUS_X * OUTER_SCALE_X, RADIUS_Y * OUTER_SCALE_Y),
+    ]
+
+
 def render() -> Image.Image:
     image = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
     pixels = image.load()
-    cy = center_y()
+    shapes = rings()
 
-    reach = RADIUS_X + BAND / 2.0 + GLOW + 2
-    x0 = max(0, int(CENTER_X - reach))
-    x1 = min(CANVAS - 1, int(CENTER_X + reach))
-    y0 = max(0, int(cy - RADIUS_Y - BAND / 2.0 - GLOW - 2))
-    y1 = min(CANVAS - 1, int(cy + RADIUS_Y + BAND / 2.0 + GLOW + 2))
+    reach_x = max(rx for _, rx, _ in shapes) + BAND / 2.0 + GLOW + 2
+    reach_y = max(cy + ry for cy, _, ry in shapes) + BAND / 2.0 + GLOW + 2
+    top_y = min(cy - ry for cy, _, ry in shapes) - BAND / 2.0 - GLOW - 2
+    x0 = max(0, int(CENTER_X - reach_x))
+    x1 = min(CANVAS - 1, int(CENTER_X + reach_x))
+    y0 = max(0, int(top_y))
+    y1 = min(CANVAS - 1, int(reach_y))
 
     for y in range(y0, y1 + 1):
         for x in range(x0, x1 + 1):
-            # Sample at the pixel centre for correct analytic anti-aliasing.
-            value = shade(signed_distance(x + 0.5, y + 0.5, cy))
-            if value is not None:
-                pixels[x, y] = value
+            best = None
+            for cy, rx, ry in shapes:
+                # Sample at the pixel centre for correct analytic anti-aliasing.
+                value = shade(signed_distance(x + 0.5, y + 0.5, cy, rx, ry))
+                if value is not None and (best is None or value[3] > best[3]):
+                    best = value
+            if best is not None:
+                pixels[x, y] = best
     return image
 
 
 def build_svg() -> str:
     cy = center_y()
-    half = BAND / 2.0
-    inner = RADIUS_Y - half
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{CANVAS}" height="{CANVAS}" viewBox="0 0 {CANVAS} {CANVAS}">
   <defs>
     <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
@@ -144,12 +170,14 @@ def build_svg() -> str:
       <feGaussianBlur stdDeviation="{GLOW / 2:.1f}"/>
     </filter>
   </defs>
-  <ellipse cx="{CENTER_X}" cy="{cy:.1f}" rx="{RADIUS_X - half:.1f}" ry="{inner:.1f}" fill="url(#wash)"/>
-  <ellipse cx="{CENTER_X}" cy="{cy:.1f}" rx="{RADIUS_X:.1f}" ry="{RADIUS_Y:.1f}"
-           fill="none" stroke="rgb{GLOW_RGB}" stroke-width="{BAND + GLOW:.1f}"
-           opacity="0.55" filter="url(#glow)"/>
-  <ellipse cx="{CENTER_X}" cy="{cy:.1f}" rx="{RADIUS_X:.1f}" ry="{RADIUS_Y:.1f}"
-           fill="none" stroke="url(#band)" stroke-width="{BAND:.1f}"/>
+  <g fill="none" stroke="rgb{GLOW_RGB}" stroke-width="{BAND + GLOW:.1f}" opacity="0.5" filter="url(#glow)">
+    <ellipse cx="{CENTER_X}" cy="{cy:.1f}" rx="{RADIUS_X:.1f}" ry="{RADIUS_Y:.1f}"/>
+    <ellipse cx="{CENTER_X}" cy="{cy + OUTER_OFFSET_Y:.1f}" rx="{RADIUS_X * OUTER_SCALE_X:.1f}" ry="{RADIUS_Y * OUTER_SCALE_Y:.1f}"/>
+  </g>
+  <g fill="none" stroke="url(#band)" stroke-width="{BAND:.1f}">
+    <ellipse cx="{CENTER_X}" cy="{cy:.1f}" rx="{RADIUS_X:.1f}" ry="{RADIUS_Y:.1f}"/>
+    <ellipse cx="{CENTER_X}" cy="{cy + OUTER_OFFSET_Y:.1f}" rx="{RADIUS_X * OUTER_SCALE_X:.1f}" ry="{RADIUS_Y * OUTER_SCALE_Y:.1f}"/>
+  </g>
 </svg>
 """
 
@@ -159,17 +187,22 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--out",
         type=Path,
-        default=Path("images/trait_candidates/rear_auras/aura_rear_001_blue_floor_ring_candidate_attempt_004.png"),
+        default=Path("images/trait_candidates/rear_auras/aura_rear_001_blue_floor_ring_candidate_attempt_005.png"),
     )
     parser.add_argument("--svg", type=Path, help="also write the vector source")
     parser.add_argument("--band", type=float, help="solid band thickness in px")
     parser.add_argument("--glow", type=float, help="falloff width beyond the band in px")
     parser.add_argument("--radius-x", type=float, help="ellipse semi-major axis in px")
     parser.add_argument("--radius-y", type=float, help="ellipse semi-minor axis in px")
+    parser.add_argument("--center-y", type=float,
+                        help="ellipse center Y (default: the foot baseline, so the character "
+                             "stands inside the ring)")
     args = parser.parse_args(argv)
 
     # Shape overrides let the ring be tuned without editing the module.
-    global BAND, GLOW, RADIUS_X, RADIUS_Y
+    global BAND, GLOW, RADIUS_X, RADIUS_Y, CENTER_Y_OVERRIDE
+    if args.center_y is not None:
+        CENTER_Y_OVERRIDE = args.center_y
     if args.band is not None:
         BAND = args.band
     if args.glow is not None:
@@ -185,14 +218,19 @@ def main(argv: list[str] | None = None) -> int:
 
     bbox = image.getchannel("A").getbbox()
     left, top, right, bottom = bbox[0], bbox[1], bbox[2] - 1, bbox[3] - 1
+    # Floor auras are gated with --floor-aura: the near arc may pass below the
+    # foot baseline, so only the canvas edge bounds the bottom.
+    bottom_limit = CANVAS - 1
     within = (
         left >= MAX_BOUNDS[0]
         and top >= MAX_BOUNDS[1]
         and right <= MAX_BOUNDS[2]
-        and bottom <= MAX_BOUNDS[3]
+        and bottom <= bottom_limit
     )
     print(f"Wrote {args.out}")
-    print(f"  visible bounds [{left},{top},{right},{bottom}] within {list(MAX_BOUNDS)}: {within}")
+    print(f"  visible bounds [{left},{top},{right},{bottom}] "
+          f"within [{MAX_BOUNDS[0]},{MAX_BOUNDS[1]},{MAX_BOUNDS[2]},{bottom_limit}]: {within}")
+    print(f"  clearance below near arc: {bottom_limit - bottom} px to canvas edge")
     print(f"  center X {(left + right) / 2:.1f} (locked {CENTER_X})")
 
     if args.svg:
