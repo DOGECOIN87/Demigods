@@ -1,10 +1,52 @@
 {
   "version": 1,
-  "requires": [],
+  "requires": [
+    {
+      "trait": "hair_front_001_fringe_black.png",
+      "requires": "hair_back_012_recolour_black.png",
+      "reason": "front and back hair must share a colour; black fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_002_fringe_blue.png",
+      "requires": "hair_back_014_recolour_blue.png",
+      "reason": "front and back hair must share a colour; blue fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_003_fringe_gold.png",
+      "requires": "hair_back_011_recolour_gold.png",
+      "reason": "front and back hair must share a colour; gold fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_004_fringe_pink.png",
+      "requires": "hair_back_015_recolour_pink.png",
+      "reason": "front and back hair must share a colour; pink fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_005_fringe_red.png",
+      "requires": "hair_back_017_recolour_red.png",
+      "reason": "front and back hair must share a colour; red fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_006_fringe_silver.png",
+      "requires": "hair_back_003_silver_long_wavy.png",
+      "reason": "front and back hair must share a colour; silver fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_007_fringe_teal.png",
+      "requires": "hair_back_016_recolour_teal.png",
+      "reason": "front and back hair must share a colour; teal fringe over any other back layer reads as a defect"
+    },
+    {
+      "trait": "hair_front_008_fringe_violet.png",
+      "requires": "hair_back_013_recolour_violet.png",
+      "reason": "front and back hair must share a colour; violet fringe over any other back layer reads as a defect"
+    }
+  ],
   "excludes": [],
   "notes": [
     "Add only visually necessary rules after cross-category compositing tests.",
     "Hand objects must reference a compatible approved hand-pose filename.",
-    "Do not merge traits to solve collisions; document the compatibility rule instead."
+    "Do not merge traits to solve collisions; document the compatibility rule instead.",
+    "Hair front requires the matching hair back colour. A random pairing put a gold fringe on red hair in the first sheet that had both layers."
   ]
 }

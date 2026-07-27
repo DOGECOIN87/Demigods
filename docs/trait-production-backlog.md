@@ -534,6 +534,49 @@ eye palettes, since a brow reads as hair and not as eye.
 | DG-121 | hair front | Teal open-center face-framing strands | `HAIR`, lower row cell 7 | Matching DG-035 | `assets/hair_front/hair_front_007_teal_open_center.png` | `prompts/05_hair_front.md` | pending |
 | DG-122 | hair front | Red short bangs and face-framing strands | `HAIR`, lower row cell 8 | Matching DG-036 | `assets/hair_front/hair_front_008_red_short_bangs.png` | `prompts/05_hair_front.md` | pending |
 
+#### Interim procedural fringe — DG-229 to DG-236 (added 2026-07-27)
+
+`hair_front` held nothing, and measurement showed the consequence was worse than
+an empty category usually is: **`hair_back` covers 0% of the scalp** at every row
+from Y 150 to Y 340. All eight registered back layers are wisps either side of
+the skull, and the base master is deliberately bald, so every token in the
+collection rendered as a bald head — see the thumbnails in
+`docs/qa/composites/face_tokens_thumbnail_2026-07-27.png`. That is the same class
+of defect as the outfit blocker, which was "reads as unclothed".
+
+These eight clear it. `scripts/build_hair_front.py` takes the cap from the base
+body's own alpha, so it follows the skull exactly and cannot drift from it, and
+draws the fringe as tapered distance fields evaluated supersampled inside the
+hair band only. Palettes match the registered `hair_back` colours so a token can
+pair front and back.
+
+Two measurements set the geometry. The cap hands over to the fringe along a
+**curve** — high at the centre, low at the temples — because cropping it at a
+single Y drew a hard horizontal line straight across the face. And the locks tip
+at Y 285-306, clearing the recovered eyebrows at Y 292-343: `hair_front` sits at
+layer 12, above `eyebrows` at 09, so a longer fringe would hide a whole category.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-229 | hair front | Procedural centre-parted fringe, black | base body dome | Release-visible defect | `assets/hair_front/hair_front_001_fringe_black.png` | `scripts/build_hair_front.py` | registered |
+| DG-230 | hair front | Procedural centre-parted fringe, blue | base body dome | DG-229 | `assets/hair_front/hair_front_002_fringe_blue.png` | `scripts/build_hair_front.py` | registered |
+| DG-231 | hair front | Procedural centre-parted fringe, gold | base body dome | DG-229 | `assets/hair_front/hair_front_003_fringe_gold.png` | `scripts/build_hair_front.py` | registered |
+| DG-232 | hair front | Procedural centre-parted fringe, pink | base body dome | DG-229 | `assets/hair_front/hair_front_004_fringe_pink.png` | `scripts/build_hair_front.py` | registered |
+| DG-233 | hair front | Procedural centre-parted fringe, red | base body dome | DG-229 | `assets/hair_front/hair_front_005_fringe_red.png` | `scripts/build_hair_front.py` | registered |
+| DG-234 | hair front | Procedural centre-parted fringe, silver | base body dome | DG-229 | `assets/hair_front/hair_front_006_fringe_silver.png` | `scripts/build_hair_front.py` | registered |
+| DG-235 | hair front | Procedural centre-parted fringe, teal | base body dome | DG-229 | `assets/hair_front/hair_front_007_fringe_teal.png` | `scripts/build_hair_front.py` | registered |
+| DG-236 | hair front | Procedural centre-parted fringe, violet | base body dome | DG-229 | `assets/hair_front/hair_front_008_fringe_violet.png` | `scripts/build_hair_front.py` | registered |
+
+**Scope, stated plainly: colour varies, shape does not.** All eight share one
+fringe silhouette, so the collection gains eight fringe *colours* and one fringe
+*cut*. They are simpler than the painted hair — no strand separation, no wave
+structure — and are honest placeholders that stop the collection rendering bald.
+
+The eight `HAIR` sheet lower-row cells are distinct cuts, so **DG-115 to DG-122
+stay `pending`** and are not satisfied by these. Numbered from 001 in a naming
+scheme that keeps `fringe` in the filename, so a painted cut can take the sheet
+name without collision.
+
 ### Head accessories
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |

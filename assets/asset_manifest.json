@@ -1963,6 +1963,254 @@
       },
       "backlog_id": "DG-204",
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_001_fringe_black",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_001_fringe_black.png",
+      "status": "production_ready",
+      "sha256": "9ab56943e12e9a55a2fc9ba4317f04a6b1c982a9996fee39600a15ef8f7abd8e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "black",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-229",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_002_fringe_blue",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_002_fringe_blue.png",
+      "status": "production_ready",
+      "sha256": "564a1e10dfcc037c510b9c8ffc0b2d689f17552dcdd6f588dc925e9be21dcceb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "blue",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-230",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_003_fringe_gold",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_003_fringe_gold.png",
+      "status": "production_ready",
+      "sha256": "9fe969ff526b5e84286de82fc5c2f2d7b2a1b4e6701197791ef45c588263a42e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "gold",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-231",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_004_fringe_pink",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_004_fringe_pink.png",
+      "status": "production_ready",
+      "sha256": "1951147f006d5a6ad7c2d779becc0cc537b3524a7e7a72eebb54c047c53575e9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "pink",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-232",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_005_fringe_red",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_005_fringe_red.png",
+      "status": "production_ready",
+      "sha256": "58b9eb77706a14efcf6a693930c3f60cf55683ab23b4c4fa0b0d6eaf07d35dc0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "red",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-233",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_006_fringe_silver",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_006_fringe_silver.png",
+      "status": "production_ready",
+      "sha256": "194478511283298073690c63a0b2be5baff4926f88ab14e0f87a53fe1889e086",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "silver",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-234",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_007_fringe_teal",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_007_fringe_teal.png",
+      "status": "production_ready",
+      "sha256": "114f082d752f9b63bff7b673948e7679628ed70e5c0b1117953d05b4364173eb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "teal",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-235",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "hair_front_008_fringe_violet",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_008_fringe_violet.png",
+      "status": "production_ready",
+      "sha256": "bade1e02bcd92099a983b438824b3be3ba3f686b38edc25598e97e75b42ed943",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/07_hair.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "tool": "scripts/build_hair_front.py",
+        "palette": "violet",
+        "method": "scalp cap from base alpha; fringe from tapered distance fields",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/hair_front_2026-07-27.md"
+      },
+      "backlog_id": "DG-236",
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
