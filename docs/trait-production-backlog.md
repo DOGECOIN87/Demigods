@@ -41,10 +41,10 @@ The broader and theme-composite sheets in `images/reference_sheets/index.md` cor
 | DG-008 | background | Violet gothic sanctum with tall nave, stained glass, dark stone, candles, and central altar | `BG/background_002_violet_gothic_sanctum_reference.jpg` | DG-007 sequential approval | `assets/backgrounds/background_002_violet_gothic_sanctum.png` | `prompts/17_native_1254_backgrounds.md` | registered |
 | DG-009 | background | Moonlit arcane library with bookcases, arched window, cyan lights, desks, and abstract floor circle | `BG/background_003_arcane_library_reference.jpg` | DG-008 | `assets/backgrounds/background_003_arcane_library.png` | `prompts/17_native_1254_backgrounds.md` | registered |
 | DG-010 | background | Navy-violet cloud dreamscape with crescent, hanging gold stars, and floating platform | `BG/background_004_crescent_star_dreamscape_reference.jpg` | DG-009 | `assets/backgrounds/background_004_crescent_star_dreamscape.png` | `prompts/18_native_1254_background_004_candidate.md` | registered |
-| DG-011 | background | White-and-gold open-air solar temple with sky, clouds, star motif, and ceremonial platform | `BG/background_005_solar_sky_temple_reference.jpg` | DG-010 | `assets/backgrounds/background_005_solar_sky_temple.png` | `prompts/17_native_1254_backgrounds.md` | pending |
-| DG-012 | background | Moonlit pale-marble balcony with arches, mountains, stars, and cool floor shadows | `BG/background_006_moonlit_marble_balcony_reference.jpg` | DG-011 | `assets/backgrounds/background_006_moonlit_marble_balcony.png` | `prompts/17_native_1254_backgrounds.md` | pending |
-| DG-013 | background | Layered white-stone golden gateway with portal light, star emblem, stairs, and plants | `BG/background_007_golden_celestial_gateway_reference.jpg` | DG-012 | `assets/backgrounds/background_007_golden_celestial_gateway.png` | `prompts/17_native_1254_backgrounds.md` | pending |
-| DG-014 | background | Circular violet void portal with floating platform, rocks, crystals, and smoke | `BG/background_008_violet_void_portal_reference.jpg` | DG-013 | `assets/backgrounds/background_008_violet_void_portal.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-011 | background | White-and-gold open-air solar temple with sky, clouds, star motif, and ceremonial platform | `BG/background_005_solar_sky_temple_reference.jpg` | DG-010 | `assets/backgrounds/background_005_solar_sky_temple.png` | `prompts/17_native_1254_backgrounds.md` | registered |
+| DG-012 | background | Moonlit pale-marble balcony with arches, mountains, stars, and cool floor shadows | `BG/background_006_moonlit_marble_balcony_reference.jpg` | DG-011 | `assets/backgrounds/background_006_moonlit_marble_balcony.png` | `prompts/17_native_1254_backgrounds.md` | registered |
+| DG-013 | background | Layered white-stone golden gateway with portal light, star emblem, stairs, and plants | `BG/background_007_golden_celestial_gateway_reference.jpg` | DG-012 | `assets/backgrounds/background_007_golden_celestial_gateway.png` | `prompts/17_native_1254_backgrounds.md` | registered |
+| DG-014 | background | Circular violet void portal with floating platform, rocks, crystals, and smoke | `BG/background_008_violet_void_portal_reference.jpg` | DG-013 | `assets/backgrounds/background_008_violet_void_portal.png` | `prompts/17_native_1254_backgrounds.md` | registered |
 
 ## Phase C — Representative test assets, then remaining backlog in canonical layer order
 
@@ -140,11 +140,11 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-037 | outfit | White-silver celestial ceremonial robe | `OUTFIT`, row 1 cell 1 | Approved Pose 001 | `assets/outfits/outfit_001_celestial_robe_white_silver.png` | `prompts/08_outfits.md` | pending |
-| DG-038 | outfit | Black long coat with split cape tails | `OUTFIT`, row 1 cell 2 | DG-037 representative test | `assets/outfits/outfit_002_black_split_tail_coat.png` | `prompts/08_outfits.md` | pending |
-| DG-039 | outfit | Plum-gray long mage robe | `OUTFIT`, row 1 cell 3 | DG-037 | `assets/outfits/outfit_003_plum_gray_mage_robe.png` | `prompts/08_outfits.md` | pending |
-| DG-040 | outfit | Black ragged hooded cloak outfit | `OUTFIT`, row 1 cell 4 | DG-037 | `assets/outfits/outfit_004_black_ragged_hooded_cloak.png` | `prompts/08_outfits.md` | pending |
-| DG-041 | outfit | White and blue armored ceremonial mantle | `OUTFIT`, row 1 cell 5 | DG-037 | `assets/outfits/outfit_005_white_blue_armored_mantle.png` | `prompts/08_outfits.md` | pending |
+| DG-037 | outfit | Ivory-and-indigo celestial scholar, Pose 001 | Co-created pose-aware regeneration | Approved Pose 001 | `assets/outfits/outfit_001_celestial_scholar_pose_001.png` | `prompts/08_outfits.md` | registered |
+| DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | registered |
+| DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | registered |
+| DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | registered |
+| DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | registered |
 | DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-037 | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | pending |
 | DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-037 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | pending |
 | DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-037 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | pending |

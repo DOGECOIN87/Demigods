@@ -133,20 +133,21 @@
       "category": "backgrounds",
       "path": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
       "status": "production_ready",
-      "sha256": "340c297771c3a553425426ac75fbab865ca3517acd681d4e0461561cd1cf0798",
+      "sha256": "68c1a41a42195196f35b4f666ba1ecd9bb19d236a7dd46f8f874c9b02bb2f91d",
       "dimensions": [
         1254,
         1254
       ],
       "format": "PNG",
       "mode": "RGB",
-      "prompt": "prompts/18_native_1254_background_004_candidate.md",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
       "qa_report": "docs/qa/background_004_native_1254_report.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "images/background_candidates/background_004_crescent_star_dreamscape_reference.jpg",
         "reference_sha256": "7ef8cedff521095601e1225f6ad87f8024930c05d9e458dda138e92ae16c6d3e",
-        "candidate_path": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate.png",
+        "candidate_path": "images/background_candidates/native_candidates/background_004_crescent_star_dreamscape_candidate_attempt_004.png",
+        "candidate_sha256": "b68f115c89f40948521eac98da39ca5333194fa1d62c50093985a80034ab6ddd",
         "native_dimensions": [
           1254,
           1254
@@ -157,7 +158,135 @@
         ],
         "postprocessing_script": "scripts/apply_background_depth.py"
       },
-      "approved_on": "2026-07-27"
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "background_005",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_005_solar_sky_temple.png",
+      "status": "production_ready",
+      "sha256": "8fbb403571186633f3ef7431abe801e02ec3db361a8eac9c7ab1ac5e2035c3f0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_005_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_005_solar_sky_temple_reference.jpg",
+        "reference_sha256": "ccb3a8265fb4294752b15d0ef3fcc320b52ce77ddad2cf03abdfe1d5eed46e15",
+        "candidate_path": "images/background_candidates/native_candidates/background_005_solar_sky_temple_candidate.png",
+        "candidate_sha256": "760a1057ea404327e35a1e21b37202969287c9a52022692a09286e17afb386a2",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "gaussian_blur_radius_2.5",
+          "corner_vignette_strength_0.22_power_2.4"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "background_006",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_006_moonlit_marble_balcony.png",
+      "status": "production_ready",
+      "sha256": "e2f3e08e557b8b5ee4f6c5a268a6aa068036dc18bfbcc57cd471911bfffc8678",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_006_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_006_moonlit_marble_balcony_reference.jpg",
+        "reference_sha256": "8bd53a70cac05a4dbed40bcff596e70121e4d5d693150054b3f8e29b5608d4ed",
+        "candidate_path": "images/background_candidates/native_candidates/background_006_moonlit_marble_balcony_candidate.png",
+        "candidate_sha256": "925ac302d12c296a84f7d57a9a5311ec204dd56fa1cc927f4e30bf2371c42d01",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "gaussian_blur_radius_2.5",
+          "corner_vignette_strength_0.22_power_2.4"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "background_007",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_007_golden_celestial_gateway.png",
+      "status": "production_ready",
+      "sha256": "c7d2fe340c809bfe6669732245ebec4a721296220c01e8f27c08b43dc35a9498",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_007_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_007_golden_celestial_gateway_reference.jpg",
+        "reference_sha256": "b9ca9d7afc28f1314cbe0dc33b7dc6226df9233a1c25d42f8d1bdd85d9c221b5",
+        "candidate_path": "images/background_candidates/native_candidates/background_007_golden_celestial_gateway_candidate.png",
+        "candidate_sha256": "17ad80d37f08e9a75d7d718a8fb2901d82bff75ee6155f77d8239e566d0385c4",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "gaussian_blur_radius_2.5",
+          "corner_vignette_strength_0.22_power_2.4"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "background_008",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_008_violet_void_portal.png",
+      "status": "production_ready",
+      "sha256": "b43b22641f4eecc087ac550cd4d8d097e8905a538ddd68643e6e424dd002fb99",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/background_008_native_1254_report.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "images/background_candidates/background_008_violet_void_portal_reference.jpg",
+        "reference_sha256": "cb20d17670e3d95b932979613a01dbf8e17f33fae52c46f8656f96d2f905aa29",
+        "candidate_path": "images/background_candidates/native_candidates/background_008_violet_void_portal_candidate.png",
+        "candidate_sha256": "5f84b9de58104eff8c2599014cff5f4b99f6db83735c1d76bee83e01212432a1",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "gaussian_blur_radius_2.5",
+          "corner_vignette_strength_0.22_power_2.4"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "approved_on": "2026-07-28"
     },
     {
       "id": "base_body_001",
@@ -486,6 +615,161 @@
         "palette": "white"
       },
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "outfit_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
+      "status": "production_ready",
+      "sha256": "791ad8b6c6534e7afa401ca65e598ffc07675c33ecad2d84fe6b769ab4cd43f2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/08_outfits.md",
+      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "design_reference": "images/trait_candidates/outfits_pose_aware/outfit_001_celestial_scholar_pose_001_candidate.png",
+        "required_pose": "base_body_001_neutral_master.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "chroma_key_to_alpha",
+          "alpha_edge_contract_1"
+        ]
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "outfit_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
+      "status": "production_ready",
+      "sha256": "6419b6f6534566f2f025e07db773791b980fda8a1041d21129635141d7875b8a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/08_outfits.md",
+      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "required_pose": "base_pose_002_viewer_left_vertical_grip.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "chroma_key_to_alpha",
+          "alpha_edge_contract_1",
+          "rig_refit_scale_0.929_top_y_475"
+        ],
+        "postprocessing_script": "scripts/refit_trait_layer.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "outfit_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
+      "status": "production_ready",
+      "sha256": "f87e641d9ef5fc6e1ca0fb9ecc3b6cc06320879a8c3735c84b0cc674667a01a3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/08_outfits.md",
+      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+        "required_pose": "base_pose_003_viewer_right_vertical_grip.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "chroma_key_to_alpha",
+          "alpha_edge_contract_1",
+          "rig_refit_scale_0.88_top_y_475"
+        ],
+        "postprocessing_script": "scripts/refit_trait_layer.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "outfit_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
+      "status": "production_ready",
+      "sha256": "646325979d4d81712d8595191f2d8bec806d3f5e94921220ce40172fa03980b4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/08_outfits.md",
+      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "required_pose": "base_pose_004_viewer_left_palm_up.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "chroma_key_to_alpha",
+          "alpha_edge_contract_1",
+          "rig_refit_scale_0.761_top_y_475"
+        ],
+        "postprocessing_script": "scripts/refit_trait_layer.py"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "outfit_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+      "status": "production_ready",
+      "sha256": "4d631e9081fe4c5cc9d5c1eb50fc1d67e82728d038742083c8409adc7fad5590",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/08_outfits.md",
+      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+        "required_pose": "base_pose_005_centered_two_hand_grip.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "chroma_key_to_alpha",
+          "alpha_edge_contract_1",
+          "rig_refit_scale_0.756_top_y_475"
+        ],
+        "postprocessing_script": "scripts/refit_trait_layer.py",
+        "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing"
+      },
+      "approved_on": "2026-07-28"
     }
   ],
   "approved_visual_references": [
@@ -712,7 +996,6 @@
     "back_accessories",
     "rear_auras",
     "front_auras",
-    "global_finish",
-    "backgrounds"
+    "global_finish"
   ]
 }
