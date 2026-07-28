@@ -462,18 +462,18 @@ DG-198, so the procedural mouths and the painted one read as the same hand.
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-237 | mouth | Fine closed neutral smile | mouth anchor (627, 441) | DG-198 | `assets/mouths/mouth_014_fine_closed_neutral.png` | `scripts/build_mouths.py` | registered |
-| DG-238 | mouth | Fine short mouth line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_015_short_line.png` | `scripts/build_mouths.py` | registered |
-| DG-239 | mouth | Fine flat line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_016_flat_line.png` | `scripts/build_mouths.py` | registered |
-| DG-240 | mouth | Small soft upward curve | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_017_soft_curve.png` | `scripts/build_mouths.py` | registered |
-| DG-241 | mouth | Small downturned mouth | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_018_small_downturned.png` | `scripts/build_mouths.py` | registered |
-| DG-242 | mouth | Tiny neutral mark | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_019_tiny_neutral.png` | `scripts/build_mouths.py` | registered |
-| DG-243 | mouth | Tiny curved mark | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_020_tiny_curve.png` | `scripts/build_mouths.py` | registered |
-| DG-244 | mouth | Small open smile, dark interior and tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_021_small_open_smile.png` | `scripts/build_mouths.py` | registered |
-| DG-245 | mouth | Wide open smile, dark interior and tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_022_wide_open_smile.png` | `scripts/build_mouths.py` | registered |
+| DG-237 | mouth | Fine closed smile | mouth anchor (627, 441) | DG-198 | `assets/mouths/mouth_014_fine_closed_smile.png` | `scripts/build_mouths.py` | registered |
+| DG-238 | mouth | Fine flat line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_015_flat_line.png` | `scripts/build_mouths.py` | registered |
+| DG-239 | mouth | Small downturned mouth | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_016_small_downturned.png` | `scripts/build_mouths.py` | registered |
+| DG-240 | mouth | Asymmetric smirk, one corner raised | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_017_smirk_asymmetric.png` | `scripts/build_mouths.py` | registered |
+| DG-241 | mouth | Cat mouth, omega curve | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_018_cat_mouth.png` | `scripts/build_mouths.py` | registered |
+| DG-242 | mouth | Wavy unsure line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_019_wavy_unsure.png` | `scripts/build_mouths.py` | registered |
+| DG-243 | mouth | Parted line, two strokes with a centre gap | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_020_parted_line.png` | `scripts/build_mouths.py` | registered |
+| DG-244 | mouth | Small open smile, flat-topped with tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_021_small_open_smile.png` | `scripts/build_mouths.py` | registered |
+| DG-245 | mouth | Wide open smile, flat-topped with tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_022_wide_open_smile.png` | `scripts/build_mouths.py` | registered |
 | DG-246 | mouth | Tiny dark round mouth | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_023_tiny_round.png` | `scripts/build_mouths.py` | registered |
-| DG-247 | mouth | Pink open pout | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_024_pink_open_pout.png` | `scripts/build_mouths.py` | registered |
-| DG-248 | mouth | Small dark open mouth with a fang | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_025_small_dark_open_fang.png` | `scripts/build_mouths.py` | registered |
+| DG-247 | mouth | Tall pink open pout | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_024_pink_open_pout.png` | `scripts/build_mouths.py` | registered |
+| DG-248 | mouth | Wide open mouth with two fangs | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_025_wide_open_fangs.png` | `scripts/build_mouths.py` | registered |
 
 Every one centres on X 626–627 against the locked axis and passes the rig gate.
 

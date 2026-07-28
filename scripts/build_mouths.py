@@ -44,6 +44,10 @@ OUTLINE = 2.6
 
 FIRST_NUMBER = 14
 
+# Fang geometry, in pixels: length down from the upper lip and half-width at it.
+FANG_LENGTH = 8.0
+FANG_WIDTH = 3.6
+
 
 def bezier(p0, p1, p2, steps: int = 24) -> list[tuple[float, float]]:
     points = []
@@ -86,39 +90,74 @@ def ellipse_distance(px: float, py: float, cx: float, cy: float,
     return (length - 1.0) * min(rx, ry)
 
 
-def curve(dx: float, dip: float, half: float, r0: float, r1: float) -> dict:
-    """A closed mouth: an arc through the anchor. Positive dip curves upward."""
+def catmull_rom(points: list, steps: int = 10) -> list[tuple[float, float]]:
+    """Smooth a control polyline so wavy and cat mouths read as curves."""
+    padded = [points[0]] + list(points) + [points[-1]]
+    out = []
+    for index in range(len(padded) - 3):
+        p0, p1, p2, p3 = padded[index:index + 4]
+        for step in range(steps):
+            t = step / steps
+            t2, t3 = t * t, t * t * t
+            out.append(tuple(
+                0.5 * ((2 * p1[i])
+                       + (-p0[i] + p2[i]) * t
+                       + (2 * p0[i] - 5 * p1[i] + 4 * p2[i] - p3[i]) * t2
+                       + (-p0[i] + 3 * p1[i] - 3 * p2[i] + p3[i]) * t3)
+                for i in range(2)))
+    out.append(tuple(points[-1]))
+    return out
+
+
+def strokes(*specs) -> dict:
+    """One or more tapered strokes. Coordinates are offsets from the anchor."""
     x, y = ANCHOR
-    return {
-        "kind": "stroke",
-        "points": bezier((x - half, y - dx), (x, y + dip), (x + half, y - dx)),
-        "r0": r0, "r1": r1,
-    }
+    built = []
+    for points, r0, r1 in specs:
+        absolute = [(x + dx, y + dy) for dx, dy in points]
+        built.append({"points": catmull_rom(absolute), "r0": r0, "r1": r1})
+    return {"kind": "stroke", "strokes": built}
 
 
-def opening(rx: float, ry: float, tongue: bool = True, fang: bool = False,
-            drop: float = 0.0) -> dict:
+def opening(rx: float, ry: float, tongue: float | None = 0.15, fangs: int = 0,
+            drop: float = 0.0, flat_top: float | None = None) -> dict:
+    """An open mouth.
+
+    `flat_top` clips the ellipse at that fraction of its height above centre,
+    turning it into the D-shape a smiling open mouth actually has: a near-straight
+    upper lip over a deep lower curve. Without it every open mouth is an ellipse
+    and they measure 0.62-0.70 IoU against each other -- the same mouth at
+    different sizes. `tongue` is the fraction of the height below centre where the
+    tongue starts, or None for no tongue.
+    """
     x, y = ANCHOR
     return {"kind": "fill", "cx": x, "cy": y + drop, "rx": rx, "ry": ry,
-            "tongue": tongue, "fang": fang}
+            "tongue": tongue, "fangs": fangs, "flat_top": flat_top}
 
 
-# Twelve designs, tracking the backlog's descriptions of the FACE sheet cells.
+# Twelve designs. An earlier set varied five closed mouths by LENGTH alone --
+# short_line, flat_line, tiny_neutral, tiny_curve, soft_curve -- and measured
+# 0.94 apart at thumbnail size against a 17.35 spread across the set, which is
+# to say they were the same mouth. These vary by shape: curvature sign,
+# asymmetry, waviness, and whether the line is broken.
 MOUTHS: list[tuple[str, dict]] = [
-    ("fine_closed_neutral",  curve(-2, 12, 26, 2.6, 1.4)),
-    ("short_line",           curve(0, 0, 15, 2.2, 1.4)),
-    ("flat_line",            curve(0, 0, 23, 2.2, 1.4)),
-    ("soft_curve",           curve(-1, 8, 18, 2.4, 1.4)),
-    # A 3 px arc reads as a straight line at face scale; this drops 7 px, which
-    # matches the smile's rise and is the smallest that reads as a frown.
-    ("small_downturned",     curve(-3, -11, 22, 2.4, 1.4)),
-    ("tiny_neutral",         curve(0, 0, 8, 2.0, 1.6)),
-    ("tiny_curve",           curve(-1, 5, 11, 2.2, 1.4)),
-    ("small_open_smile",     opening(19, 12, tongue=True)),
-    ("wide_open_smile",      opening(29, 15, tongue=True)),
-    ("tiny_round",           opening(9, 11, tongue=False)),
-    ("pink_open_pout",       opening(13, 11, tongue=True, drop=1)),
-    ("small_dark_open_fang", opening(17, 13, tongue=True, fang=True)),
+    ("fine_closed_smile",   strokes(([(-26, 2), (0, 7), (26, 2)], 2.6, 1.4))),
+    ("flat_line",           strokes(([(-23, 0), (0, 0), (23, 0)], 2.2, 1.4))),
+    ("small_downturned",    strokes(([(-22, 3), (0, -4), (22, 3)], 2.4, 1.4))),
+    ("smirk_asymmetric",    strokes(([(-24, -1), (-4, 6), (22, -8)], 2.6, 1.3))),
+    ("cat_mouth",           strokes(([(-22, 0), (-11, 7), (0, -3), (11, 7), (22, 0)],
+                                     2.4, 2.0))),
+    ("wavy_unsure",         strokes(([(-24, 3), (-12, -3), (0, 3), (12, -3), (24, 3)],
+                                     2.3, 1.8))),
+    ("parted_line",         strokes(([(-24, 1), (-14, 3), (-6, 3)], 2.4, 1.6),
+                                    ([(6, 3), (14, 3), (24, 1)], 1.6, 2.4))),
+    # Open mouths differ by silhouette, not size: two D-shaped grins, a round
+    # "o", a tall pout, and a wide flat snarl.
+    ("small_open_smile",    opening(16, 11, tongue=0.15, flat_top=0.45)),
+    ("wide_open_smile",     opening(30, 17, tongue=0.10, flat_top=0.55)),
+    ("tiny_round",          opening(10, 11, tongue=None)),
+    ("pink_open_pout",      opening(11, 15, tongue=-0.55, drop=1)),
+    ("wide_open_fangs",     opening(23, 13, tongue=0.34, fangs=2, flat_top=0.45)),
 ]
 
 
@@ -137,13 +176,19 @@ def render(design: dict) -> Image.Image:
             px = x0 + sx * step
 
             if design["kind"] == "stroke":
-                if stroke_distance(px, py, design["points"],
-                                   design["r0"], design["r1"]) <= 0.0:
-                    paint["ink"][sx, sy] = 255
+                for spec in design["strokes"]:
+                    if stroke_distance(px, py, spec["points"],
+                                       spec["r0"], spec["r1"]) <= 0.0:
+                        paint["ink"][sx, sy] = 255
+                        break
                 continue
 
             distance = ellipse_distance(px, py, design["cx"], design["cy"],
                                         design["rx"], design["ry"])
+            if design["flat_top"] is not None:
+                # Intersection with a half-plane: the larger distance wins.
+                clip = (design["cy"] - design["ry"] * design["flat_top"]) - py
+                distance = max(distance, clip)
             if distance > 0.0:
                 continue
             if distance > -OUTLINE:
@@ -151,12 +196,21 @@ def render(design: dict) -> Image.Image:
                 continue
             paint["inner"][sx, sy] = 255
             # Tongue fills the lower third of the opening.
-            if design["tongue"] and py > design["cy"] + design["ry"] * 0.15:
+            if (design["tongue"] is not None
+                    and py > design["cy"] + design["ry"] * design["tongue"]):
                 paint["tongue"][sx, sy] = 255
-            if design["fang"] and py < design["cy"] - design["ry"] * 0.25:
-                fang_x = design["cx"] - design["rx"] * 0.42
-                if abs(px - fang_x) < 3.4 - (py - (design["cy"] - design["ry"])) * 0.30:
-                    paint["fang"][sx, sy] = 255
+            if design["fangs"]:
+                # Fangs hang from the shape's actual top edge. Measuring from the
+                # unclipped ellipse top left them 1 px of room on a flat-topped
+                # design and they never appeared.
+                clip = design["flat_top"] if design["flat_top"] is not None else 1.0
+                depth = py - (design["cy"] - design["ry"] * clip)
+                if 0.0 <= depth < FANG_LENGTH:
+                    for side in range(design["fangs"]):
+                        offset = design["rx"] * (-0.44 if side == 0 else 0.44)
+                        half = FANG_WIDTH - depth * (FANG_WIDTH / FANG_LENGTH)
+                        if abs(px - (design["cx"] + offset)) < half:
+                            paint["fang"][sx, sy] = 255
 
     result = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
     for name, colour in (("inner", INNER), ("tongue", TONGUE),

@@ -2221,11 +2221,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_014_fine_closed_neutral",
+      "id": "mouth_014_fine_closed_smile",
       "category": "mouths",
-      "path": "assets/mouths/mouth_014_fine_closed_neutral.png",
+      "path": "assets/mouths/mouth_014_fine_closed_smile.png",
       "status": "production_ready",
-      "sha256": "3883c98a77bfd985e15a533642a26e5999308bfbceff3aafd9a6349332d086b3",
+      "sha256": "c8158592440eb0ad1922257749d37a8935190936d22e36b3271544dc255f808d",
       "dimensions": [
         1254,
         1254
@@ -2252,11 +2252,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_015_short_line",
+      "id": "mouth_015_flat_line",
       "category": "mouths",
-      "path": "assets/mouths/mouth_015_short_line.png",
+      "path": "assets/mouths/mouth_015_flat_line.png",
       "status": "production_ready",
-      "sha256": "85064bb31e09c9815187b920015825caec5afc6dc5f99d367a0347ade61ba784",
+      "sha256": "1cdc16680ddd2d108b77dde1936b3a24c2ed650f94188713abf2662ff1cbb469",
       "dimensions": [
         1254,
         1254
@@ -2283,11 +2283,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_016_flat_line",
+      "id": "mouth_016_small_downturned",
       "category": "mouths",
-      "path": "assets/mouths/mouth_016_flat_line.png",
+      "path": "assets/mouths/mouth_016_small_downturned.png",
       "status": "production_ready",
-      "sha256": "79d85391c7747340dca9ab096bc08bab1815445c1e2542e964e4ffa9b74f9e05",
+      "sha256": "868f5eba2791d02ed69246c08104313b171da8c05bd3afeeda302e30b05c3a1a",
       "dimensions": [
         1254,
         1254
@@ -2314,11 +2314,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_017_soft_curve",
+      "id": "mouth_017_smirk_asymmetric",
       "category": "mouths",
-      "path": "assets/mouths/mouth_017_soft_curve.png",
+      "path": "assets/mouths/mouth_017_smirk_asymmetric.png",
       "status": "production_ready",
-      "sha256": "d382ba2d0bd4844edd514743be5157168c034d944b18cb6f42f12dcdeb68cb7a",
+      "sha256": "5f07e3e86af300bd1307eed68114baf4f3441f5cfaa54cb055948274d47c3dec",
       "dimensions": [
         1254,
         1254
@@ -2345,11 +2345,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_018_small_downturned",
+      "id": "mouth_018_cat_mouth",
       "category": "mouths",
-      "path": "assets/mouths/mouth_018_small_downturned.png",
+      "path": "assets/mouths/mouth_018_cat_mouth.png",
       "status": "production_ready",
-      "sha256": "48023d807c0d8dbdfdcc33442a5d7e942861f433ad8e2f549cf1bf4f6488f696",
+      "sha256": "5851783c7777cce91b831ee29d11d8bf4b893893da7b3de711dd02b2e98b0a1d",
       "dimensions": [
         1254,
         1254
@@ -2376,11 +2376,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_019_tiny_neutral",
+      "id": "mouth_019_wavy_unsure",
       "category": "mouths",
-      "path": "assets/mouths/mouth_019_tiny_neutral.png",
+      "path": "assets/mouths/mouth_019_wavy_unsure.png",
       "status": "production_ready",
-      "sha256": "751dd1bbcbff163dbbc16a2506a631901af0e796d3f0fb8852c32c64367a711b",
+      "sha256": "027f3a57f0cb185f2c3168441df2cf5eae2d19f5a77df245eb7dd68d1ca73fb0",
       "dimensions": [
         1254,
         1254
@@ -2407,11 +2407,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_020_tiny_curve",
+      "id": "mouth_020_parted_line",
       "category": "mouths",
-      "path": "assets/mouths/mouth_020_tiny_curve.png",
+      "path": "assets/mouths/mouth_020_parted_line.png",
       "status": "production_ready",
-      "sha256": "a89b14448726a5f09b824d0fe2f241be44f761b17f4668d4174cdb1571e50cf6",
+      "sha256": "d52fba79d5df6d59ebc58df1cc2595ac5ed3b31c5242b59925de737fee183c77",
       "dimensions": [
         1254,
         1254
@@ -2442,7 +2442,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_021_small_open_smile.png",
       "status": "production_ready",
-      "sha256": "835692453d5ab2175e53174af10b9753fde28ebff6ea63f67d5ff4d25ac37687",
+      "sha256": "2742fb3e7e96f29ddaf1a955c85a4c1fa3646696450ffd0bad056cbac8d964b7",
       "dimensions": [
         1254,
         1254
@@ -2473,7 +2473,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_022_wide_open_smile.png",
       "status": "production_ready",
-      "sha256": "7614592fd6060f2c2e3c0d52ef6b6cb6037b38969171fd676b8df8a7f16a3a74",
+      "sha256": "6fa1fea49459d1335f7ae5decfd5bfafcb6aa3b7680961a916d7a71495aefbce",
       "dimensions": [
         1254,
         1254
@@ -2504,7 +2504,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_023_tiny_round.png",
       "status": "production_ready",
-      "sha256": "df88d0a3a8ed10fe59b386298e6651e02aacb0595a3d23b9437981e2525de1fa",
+      "sha256": "1e1ca4a438a4fa5a297fba80f2bb91ee8a09840e7398caa0c4046ad7f4bf2934",
       "dimensions": [
         1254,
         1254
@@ -2535,7 +2535,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_024_pink_open_pout.png",
       "status": "production_ready",
-      "sha256": "235152e12fd3d004d4d6763387fc5f0fd4af5f3d8701dd8340ac2559d047dabb",
+      "sha256": "ad6b59a31883b40bcf8cfbcc9e034868032038c09243eec0136d779f4f3620c9",
       "dimensions": [
         1254,
         1254
@@ -2562,11 +2562,11 @@
       "approved_on": "2026-07-27"
     },
     {
-      "id": "mouth_025_small_dark_open_fang",
+      "id": "mouth_025_wide_open_fangs",
       "category": "mouths",
-      "path": "assets/mouths/mouth_025_small_dark_open_fang.png",
+      "path": "assets/mouths/mouth_025_wide_open_fangs.png",
       "status": "production_ready",
-      "sha256": "e4504c6865610faf55f4f220ecb0e533bbad0472d9434fcdf289e1c5c7f2b483",
+      "sha256": "f7a08a0a65bd320f2b5404cc3fb7468ee8a3a1e885ee49545c44e480d86b2436",
       "dimensions": [
         1254,
         1254
