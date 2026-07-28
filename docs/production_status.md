@@ -157,9 +157,10 @@ Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte 
 - Rig-gate and floor-ring builder tests: **10 passed**
 - Background depth-treatment tests: **6 passed**
 - Global-finish builder and gate tests: **10 passed**
+- Bounds-clip tests: **11 passed**
 - Rule-aware saturation tests: **11 passed**
 - Bulk-intake and resolved-prompt tests: **21 passed**
-- Combined regression total: **123 passed**
+- Combined regression total: **134 passed**
 - Native 1254 pose-candidate binary QA: **5 of 5 passed**; each retains a missing-ICC-profile warning for manual sRGB confirmation
 - Registered base family: **5 of 5 passed** the rig gate and binary intake
 - Background 001: **passed, human-approved, registered**; SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`
@@ -222,14 +223,25 @@ and saturation to low single digits.
 8. Run configuration, asset, manifest, ledger, generator, and output verification
    at their corresponding production gates.
 
-## Known defect — outfit_001 breaches the locked bounds
+## Resolved — outfit_001 foot-baseline breach
 
-`assets/outfits/outfit_001_celestial_scholar_pose_001.png` is registered but
-fails `--trait` on `max_bounds`: its visible pixels reach Y 1144, five pixels
-below the locked foot baseline of Y 1139. The other four registered outfits are
-clean. This predates the batch tooling and was surfaced by running the whole
-outfit folder through the new intake path. It needs either a refit via
-`scripts/refit_trait_layer.py` or a regeneration before minting.
+`assets/outfits/outfit_001_celestial_scholar_pose_001.png` reached Y 1144, five
+pixels below the locked foot baseline, so it read as standing through the floor
+every background establishes at Y 1139. Surfaced by running the whole outfit
+folder through the new intake path; the other four outfits were clean.
+
+A rescale was tried first and rejected: shrinking the garment 0.75% pulled the
+bounds into compliance but left the boots too small for the shared body beneath,
+exposing the base body's bare toes below both soles. The fix applied instead was
+a clip to the locked bounds, which keeps the garment at its drawn size and
+terminates the sole exactly on the ground plane — 343 px removed, 0.28% of the
+layer, colour channels untouched.
+
+`scripts/clip_trait_to_bounds.py` performs this and refuses overhangs deeper than
+12 px or clips costing more than 1% of the layer, since either means a layer
+drawn at the wrong scale that needs a re-render rather than a clip. Full record:
+`docs/qa/outfit_001_baseline_clip_2026-07-28.md`. A regression test now asserts
+every registered outfit stays inside the locked bounds.
 
 ## Repository update policy
 

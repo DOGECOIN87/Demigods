@@ -713,7 +713,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
       "status": "production_ready",
-      "sha256": "791ad8b6c6534e7afa401ca65e598ffc07675c33ecad2d84fe6b769ab4cd43f2",
+      "sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958",
       "dimensions": [
         1254,
         1254
@@ -721,7 +721,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "qa_report": "docs/qa/outfit_001_baseline_clip_2026-07-28.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
@@ -733,8 +733,10 @@
         ],
         "postprocessing": [
           "chroma_key_to_alpha",
-          "alpha_edge_contract_1"
-        ]
+          "alpha_edge_contract_1",
+          "clip_to_max_bounds_y1139"
+        ],
+        "postprocessing_script": "scripts/clip_trait_to_bounds.py"
       },
       "approved_on": "2026-07-28"
     },
