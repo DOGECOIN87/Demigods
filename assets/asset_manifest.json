@@ -1969,7 +1969,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_001_fringe_black.png",
       "status": "production_ready",
-      "sha256": "9ab56943e12e9a55a2fc9ba4317f04a6b1c982a9996fee39600a15ef8f7abd8e",
+      "sha256": "5b0c70244369b2587181948318a38cece0ce22c158d08c6aab39f335c324e633",
       "dimensions": [
         1254,
         1254
@@ -1988,6 +1988,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2000,7 +2001,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_002_fringe_blue.png",
       "status": "production_ready",
-      "sha256": "564a1e10dfcc037c510b9c8ffc0b2d689f17552dcdd6f588dc925e9be21dcceb",
+      "sha256": "c44c570463f561c0f4a4e6ee1e6c555b5c53d1e65df4747fa305c2ed8f58e2f6",
       "dimensions": [
         1254,
         1254
@@ -2019,6 +2020,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2031,7 +2033,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_003_fringe_gold.png",
       "status": "production_ready",
-      "sha256": "9fe969ff526b5e84286de82fc5c2f2d7b2a1b4e6701197791ef45c588263a42e",
+      "sha256": "d17469b34b1391f300b991e48c10ca3c37c53434ba1a389d3ddd764a80d9eb0b",
       "dimensions": [
         1254,
         1254
@@ -2050,6 +2052,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2062,7 +2065,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_004_fringe_pink.png",
       "status": "production_ready",
-      "sha256": "1951147f006d5a6ad7c2d779becc0cc537b3524a7e7a72eebb54c047c53575e9",
+      "sha256": "631f2ced318ab0ed9acd6dd02a55d4c6ccc3abf71e1cb60dd17897243938a734",
       "dimensions": [
         1254,
         1254
@@ -2081,6 +2084,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2093,7 +2097,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_005_fringe_red.png",
       "status": "production_ready",
-      "sha256": "58b9eb77706a14efcf6a693930c3f60cf55683ab23b4c4fa0b0d6eaf07d35dc0",
+      "sha256": "468f11b890cefab6d029cc21243eae43566b2cb009fce5195dfe2b39cd42311f",
       "dimensions": [
         1254,
         1254
@@ -2112,6 +2116,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2124,7 +2129,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_006_fringe_silver.png",
       "status": "production_ready",
-      "sha256": "194478511283298073690c63a0b2be5baff4926f88ab14e0f87a53fe1889e086",
+      "sha256": "c8d2980522c7c53c9377249375b04ac0762c9ce6548fc7a75732298aa5d3fcbd",
       "dimensions": [
         1254,
         1254
@@ -2143,6 +2148,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2155,7 +2161,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_007_fringe_teal.png",
       "status": "production_ready",
-      "sha256": "114f082d752f9b63bff7b673948e7679628ed70e5c0b1117953d05b4364173eb",
+      "sha256": "2f44809956d5a895f814232016a51abe0353642d0bd1385efc9512e6ced40d56",
       "dimensions": [
         1254,
         1254
@@ -2174,6 +2180,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"
@@ -2186,7 +2193,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_008_fringe_violet.png",
       "status": "production_ready",
-      "sha256": "bade1e02bcd92099a983b438824b3be3ba3f686b38edc25598e97e75b42ed943",
+      "sha256": "c9c2db0be66ab9558b2f14ff64b9d8647db7fd1bbb7f12f6b36b4900fcc678a2",
       "dimensions": [
         1254,
         1254
@@ -2205,6 +2212,7 @@
           1254
         ],
         "postprocessing": [
+          "fringe_union_groove_fix",
           "srgb_icc_profile_embedded"
         ],
         "qa_report": "docs/qa/hair_front_2026-07-27.md"

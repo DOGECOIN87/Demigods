@@ -84,6 +84,8 @@ Backlog status tally: pending 162, candidate 0, QA-failed 0, approved 0, registe
 - Explicit sRGB ICC profiles embedded in every registered asset
 - Generated production ledger with manifest/backlog cross-checks
 - Expression-mark glyph builder; category complete and generation unblocked
+- Front-hair builder and the collection's first compatibility rules
+- Registered-asset contact sheet (`scripts/build_asset_catalogue.py`)
 
 ## Registered production assets
 

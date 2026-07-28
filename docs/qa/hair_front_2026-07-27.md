@@ -53,6 +53,14 @@ under the fringe, which is what the composite sheet confirms.
 The locks also overlap laterally on purpose. A sparse set leaves scalp showing
 between the tips and reads as a torn edge rather than a fringe.
 
+**The union has to be a max, not a paste.** Combining the cap and fringe with
+`paste(fringe, mask=fringe)` blends each lock's own antialiased edge against the
+opaque cap — a 180-alpha edge pixel over 255 lands at 202 — which cut a
+translucent scalloped groove into the dome wherever a lock outline fell inside
+the cap. It showed as a wavy seam across the crown, was invisible at thumbnail
+size, and was only caught when the asset catalogue put the layer on a plain
+backdrop at full size. `ImageChops.lighter` fixes it.
+
 ## First compatibility rules
 
 The random sheet immediately showed a gold fringe over red back-hair. Front and

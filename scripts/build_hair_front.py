@@ -31,7 +31,7 @@ import argparse
 import math
 from pathlib import Path
 
-from PIL import Image, ImageFilter
+from PIL import Image, ImageChops, ImageFilter
 
 CANVAS = 1254
 CENTER_X = 627
@@ -60,20 +60,20 @@ BROW_TOP_Y = 292
 # a sparse set leaves scalp showing between the tips and reads as a torn edge
 # rather than a fringe. Tip depths alternate so the hairline is jagged.
 LOCKS = [
-    (627, 196, 566, 300, 32, 8),
-    (627, 196, 690, 300, 32, 8),
-    (604, 200, 536, 286, 30, 7),
-    (650, 200, 720, 286, 30, 7),
-    (580, 206, 508, 302, 30, 7),
-    (674, 206, 748, 302, 30, 7),
-    (556, 214, 484, 288, 28, 7),
-    (698, 214, 772, 288, 28, 7),
-    (532, 226, 466, 300, 28, 7),
-    (722, 226, 790, 300, 28, 7),
-    (612, 200, 592, 306, 22, 6),
-    (642, 200, 664, 306, 22, 6),
-    (508, 244, 458, 296, 26, 7),
-    (746, 244, 798, 296, 26, 7),
+    (627, 196, 566, 300, 32, 4),
+    (627, 196, 690, 300, 32, 4),
+    (604, 200, 536, 286, 30, 4),
+    (650, 200, 720, 286, 30, 4),
+    (580, 206, 508, 302, 30, 4),
+    (674, 206, 748, 302, 30, 4),
+    (556, 214, 484, 288, 28, 4),
+    (698, 214, 772, 288, 28, 4),
+    (532, 226, 466, 300, 28, 4),
+    (722, 226, 790, 300, 28, 4),
+    (612, 200, 592, 306, 22, 4),
+    (642, 200, 664, 306, 22, 4),
+    (508, 244, 458, 296, 26, 4),
+    (746, 244, 798, 296, 26, 4),
 ]
 
 # Side sweeps in front of the ears, past the cap.
@@ -193,9 +193,12 @@ def shade(mask: Image.Image, palette: dict[str, tuple[int, int, int]]) -> Image.
 def build(palette_name: str, base: Image.Image) -> Image.Image:
     mask = cap_mask(base)
     fringe = fringe_mask(LOCKS + SIDE_LOCKS)
-    combined = Image.new("L", (CANVAS, CANVAS), 0)
-    combined.paste(mask, (0, 0))
-    combined.paste(fringe, (0, 0), fringe)
+    # Union by taking the brighter of the two, NOT by pasting one over the other.
+    # `paste(fringe, mask=fringe)` blends a lock's own antialiased edge against
+    # the opaque cap -- a 180-alpha edge pixel over 255 lands at 202 -- which
+    # cut a translucent scalloped groove into the dome wherever a lock outline
+    # fell inside the cap. It showed as a wavy seam across the crown.
+    combined = ImageChops.lighter(mask, fringe)
     combined = combined.filter(ImageFilter.GaussianBlur(0.6))
     return shade(combined, PALETTES[palette_name])
 
