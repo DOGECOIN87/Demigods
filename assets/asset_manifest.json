@@ -2591,6 +2591,170 @@
       },
       "backlog_id": "DG-248",
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_005",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_005_solar_sky_temple.png",
+      "status": "production_ready",
+      "sha256": "22a5831f8d2eede1736f92a932ca5cf4f43c3ed41fec68ccd1453740b0377d08",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_005_008_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_upscale",
+        "reference_path": "images/background_candidates/background_005_solar_sky_temple_reference.jpg",
+        "reference_sha256": "ccb3a8265fb4294752b15d0ef3fcc320b52ce77ddad2cf03abdfe1d5eed46e15",
+        "reference_dimensions": [
+          1024,
+          1024
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "no native 1254 render exists for this design; the 1024 reference was upscaled. Measured cost of that route after the category's 3.0 px blur: mean 0.24/255, max 5 (PNG) and mean 0.60, max 6 (JPEG q90). Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "lanczos_upscale_1024_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-011",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_006",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_006_moonlit_marble_balcony.png",
+      "status": "production_ready",
+      "sha256": "d50dda97a212abb8b2dde83e48b3c8946a7ceeb0581a51160ed06a7364ee26d9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_005_008_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_upscale",
+        "reference_path": "images/background_candidates/background_006_moonlit_marble_balcony_reference.jpg",
+        "reference_sha256": "8bd53a70cac05a4dbed40bcff596e70121e4d5d693150054b3f8e29b5608d4ed",
+        "reference_dimensions": [
+          1024,
+          1024
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "no native 1254 render exists for this design; the 1024 reference was upscaled. Measured cost of that route after the category's 3.0 px blur: mean 0.24/255, max 5 (PNG) and mean 0.60, max 6 (JPEG q90). Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "lanczos_upscale_1024_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-012",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_007",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_007_golden_celestial_gateway.png",
+      "status": "production_ready",
+      "sha256": "1e66afb4a935cf1f8e0fba568eb61848d3726be2e29da197c3d24993fee8486c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_005_008_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_upscale",
+        "reference_path": "images/background_candidates/background_007_golden_celestial_gateway_reference.jpg",
+        "reference_sha256": "b9ca9d7afc28f1314cbe0dc33b7dc6226df9233a1c25d42f8d1bdd85d9c221b5",
+        "reference_dimensions": [
+          1024,
+          1024
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "no native 1254 render exists for this design; the 1024 reference was upscaled. Measured cost of that route after the category's 3.0 px blur: mean 0.24/255, max 5 (PNG) and mean 0.60, max 6 (JPEG q90). Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "lanczos_upscale_1024_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-013",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_008",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_008_violet_void_portal.png",
+      "status": "production_ready",
+      "sha256": "78de51c22de1200d8a84f2e0d063181742bb684b3c58a5ef0f581c804802e4a9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_005_008_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_upscale",
+        "reference_path": "images/background_candidates/background_008_violet_void_portal_reference.jpg",
+        "reference_sha256": "cb20d17670e3d95b932979613a01dbf8e17f33fae52c46f8656f96d2f905aa29",
+        "reference_dimensions": [
+          1024,
+          1024
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "no native 1254 render exists for this design; the 1024 reference was upscaled. Measured cost of that route after the category's 3.0 px blur: mean 0.24/255, max 5 (PNG) and mean 0.60, max 6 (JPEG q90). Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "lanczos_upscale_1024_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-014",
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
