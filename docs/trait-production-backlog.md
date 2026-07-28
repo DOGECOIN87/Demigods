@@ -60,12 +60,13 @@ violet and gold, while this wave adds green, ember and warm brass.
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-158 | background | Luminous world-tree grove with fireflies, moss floor, and green canopy | `BG2` world tree | Staging review | `assets/backgrounds/background_009_luminous_world_tree.png` | `prompts/17_native_1254_backgrounds.md` | pending |
-| DG-159 | background | Infinite arcane library with floating books, arched window, and starfield | `BG2` infinite library | Staging review | `assets/backgrounds/background_010_infinite_arcane_library.png` | `prompts/17_native_1254_backgrounds.md` | pending |
-| DG-160 | background | Ember ruins with broken arches, cracked lava ground, and smoke sky | `BG2` ember ruins | Staging review | `assets/backgrounds/background_011_ember_ruins.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-158 | background | Luminous world-tree grove with fireflies, moss floor, and green canopy | `BG2` world tree | Staging review | `assets/backgrounds/background_009_luminous_world_tree.png` | `prompts/17_native_1254_backgrounds.md` | registered |
+| DG-159 | background | Infinite arcane library with floating books, arched window, and starfield | `BG2` infinite library | Staging review | `assets/backgrounds/background_010_infinite_arcane_library.png` | `prompts/17_native_1254_backgrounds.md` | registered |
+| DG-160 | background | Ember ruins with broken arches, cracked lava ground, and smoke sky | `BG2` ember ruins | Staging review | `assets/backgrounds/background_011_ember_ruins.png` | `prompts/17_native_1254_backgrounds.md` | registered |
 | DG-161 | background | Clockwork sanctum with brass gears, lanterns, and a raised circular platform | `BG2` clockwork sanctum | Staging review | `assets/backgrounds/background_012_clockwork_sanctum.png` | `prompts/17_native_1254_backgrounds.md` | pending |
 | DG-162 | background | Crystal spire peak above cloud sea with violet and cyan crystals | `BG2` crystal spire | **Needs a floor plane** | `assets/backgrounds/background_013_crystal_spire_peak.png` | `prompts/17_native_1254_backgrounds.md` | pending |
 | DG-163 | background | Skybound isles with waterfalls, a lit bridge, and cloud vista | `BG2` skybound isles | **Needs a floor plane** | `assets/backgrounds/background_014_skybound_isles.png` | `prompts/17_native_1254_backgrounds.md` | pending |
+| DG-249 | background | Bioluminescent grove with glowing mushrooms, mist, and canopy | `BG2` bioluminescent grove | Staging review | `assets/backgrounds/background_015_bioluminescent_grove.png` | `prompts/17_native_1254_backgrounds.md` | registered |
 
 ### Staging review — read before rendering these
 

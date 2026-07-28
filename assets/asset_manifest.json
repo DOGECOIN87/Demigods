@@ -2755,6 +2755,174 @@
       },
       "backlog_id": "DG-014",
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_009",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_009_luminous_world_tree.png",
+      "status": "production_ready",
+      "sha256": "9e6789e8caf3a0375b6379a8762303688753d7de5b21b3b5b116b01cff955679",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_round_two_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_bottom_crop_upscale",
+        "reference_path": "images/background_candidates_round_two/background_009_luminous_world_tree_reference.jpg",
+        "reference_sha256": "4dafee79e034d5a6b8b426c7fafcc8f676ebcdcf027bb532e9693791120fdb92",
+        "reference_dimensions": [
+          784,
+          1168
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "portrait reference bottom-cropped to 784 square so the ground stays in frame, then upscaled 1.60x. Measured cost of that route after the category's 3.0 px blur: mean 0.28/255, max 5. Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "bottom_crop_784_square",
+          "lanczos_upscale_784_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-158",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_010",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_010_infinite_arcane_library.png",
+      "status": "production_ready",
+      "sha256": "707f77107e9bf0b483eee6fb751c4e715277795ed69b535efe8f2a2065fe0139",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_round_two_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_bottom_crop_upscale",
+        "reference_path": "images/background_candidates_round_two/background_010_infinite_arcane_library_reference.jpg",
+        "reference_sha256": "4326522ed3917367de6514a7c5d17a431442e9501402de19ebc1560840003f21",
+        "reference_dimensions": [
+          784,
+          1168
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "portrait reference bottom-cropped to 784 square so the ground stays in frame, then upscaled 1.60x. Measured cost of that route after the category's 3.0 px blur: mean 0.28/255, max 5. Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "bottom_crop_784_square",
+          "lanczos_upscale_784_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-159",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_011",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_011_ember_ruins.png",
+      "status": "production_ready",
+      "sha256": "53eb3605144014aafbcc191ffad85f848b9259e0408077af40321a78a814ca16",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_round_two_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_bottom_crop_upscale",
+        "reference_path": "images/background_candidates_round_two/background_011_ember_ruins_reference.jpg",
+        "reference_sha256": "15b126aa06a036c9faead3b13343d83620dca070550528a268cf08cbdb89cc45",
+        "reference_dimensions": [
+          784,
+          1168
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "portrait reference bottom-cropped to 784 square so the ground stays in frame, then upscaled 1.60x. Measured cost of that route after the category's 3.0 px blur: mean 0.28/255, max 5. Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "bottom_crop_784_square",
+          "lanczos_upscale_784_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-160",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "background_015",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_015_bioluminescent_grove.png",
+      "status": "production_ready",
+      "sha256": "a50aa0a20002f9c289e7f2b7988aaf60ae8987cb4d8bdfc16e106fc936faf13c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "prompt": "prompts/17_native_1254_backgrounds.md",
+      "qa_report": "docs/qa/backgrounds_round_two_2026-07-27.md",
+      "provenance": {
+        "origin": "reference_bottom_crop_upscale",
+        "reference_path": "images/background_candidates_round_two/background_015_bioluminescent_grove_reference.jpg",
+        "reference_sha256": "c0c3a167aefb445d8448744eea995dcf880332e220313af61493b023aa13bcfa",
+        "reference_dimensions": [
+          784,
+          1168
+        ],
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "note": "portrait reference bottom-cropped to 784 square so the ground stays in frame, then upscaled 1.60x. Measured cost of that route after the category's 3.0 px blur: mean 0.28/255, max 5. Upscale rule waived by the collection owner.",
+        "postprocessing": [
+          "bottom_crop_784_square",
+          "lanczos_upscale_784_to_1254",
+          "gaussian_blur_radius_3.0",
+          "split_tone_grade_0.34",
+          "desaturate_0.22",
+          "darken_0.93",
+          "corner_vignette_strength_0.3_power_2.4",
+          "srgb_icc_profile_embedded"
+        ],
+        "postprocessing_script": "scripts/apply_background_depth.py"
+      },
+      "backlog_id": "DG-249",
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
