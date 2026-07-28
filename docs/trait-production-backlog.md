@@ -447,6 +447,45 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-105 | mouth | Pink open pout, cell r3c3 | `FACE`, mouths r3c3 | DG-095 | `assets/mouths/mouth_011_pink_open_pout.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
 | DG-106 | mouth | Tiny dark round mouth, cell r3c4 | `FACE`, mouths r3c4 | DG-095 | `assets/mouths/mouth_012_tiny_round.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
 
+#### Procedural mouths — DG-237 to DG-248 (added 2026-07-27)
+
+`mouths` held one asset — DG-198, recovered from the base master — so every token
+in the collection shared a mouth. It was the thinnest category in the library and
+the asset catalogue showed it as a single cell.
+
+Built by `scripts/build_mouths.py` from signed distance fields at 4× supersampling
+inside a 152 × 86 band on the locked anchor (627, 441). Closed mouths are tapered
+strokes along a quadratic Bezier; open mouths are filled shapes whose outline
+band comes from the same field, with a darker interior and a tongue where the
+design calls for one. Ink is `(136, 65, 33)`, sampled from the darkest pixels of
+DG-198, so the procedural mouths and the painted one read as the same hand.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-237 | mouth | Fine closed neutral smile | mouth anchor (627, 441) | DG-198 | `assets/mouths/mouth_014_fine_closed_neutral.png` | `scripts/build_mouths.py` | registered |
+| DG-238 | mouth | Fine short mouth line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_015_short_line.png` | `scripts/build_mouths.py` | registered |
+| DG-239 | mouth | Fine flat line | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_016_flat_line.png` | `scripts/build_mouths.py` | registered |
+| DG-240 | mouth | Small soft upward curve | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_017_soft_curve.png` | `scripts/build_mouths.py` | registered |
+| DG-241 | mouth | Small downturned mouth | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_018_small_downturned.png` | `scripts/build_mouths.py` | registered |
+| DG-242 | mouth | Tiny neutral mark | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_019_tiny_neutral.png` | `scripts/build_mouths.py` | registered |
+| DG-243 | mouth | Tiny curved mark | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_020_tiny_curve.png` | `scripts/build_mouths.py` | registered |
+| DG-244 | mouth | Small open smile, dark interior and tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_021_small_open_smile.png` | `scripts/build_mouths.py` | registered |
+| DG-245 | mouth | Wide open smile, dark interior and tongue | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_022_wide_open_smile.png` | `scripts/build_mouths.py` | registered |
+| DG-246 | mouth | Tiny dark round mouth | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_023_tiny_round.png` | `scripts/build_mouths.py` | registered |
+| DG-247 | mouth | Pink open pout | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_024_pink_open_pout.png` | `scripts/build_mouths.py` | registered |
+| DG-248 | mouth | Small dark open mouth with a fang | mouth anchor (627, 441) | DG-237 | `assets/mouths/mouth_025_small_dark_open_fang.png` | `scripts/build_mouths.py` | registered |
+
+Every one centres on X 626–627 against the locked axis and passes the rig gate.
+
+A first pass drew the downturned mouth with a 3 px arc, which reads as a straight
+line at face scale and was indistinguishable from `flat_line`. It now drops 7 px,
+matching the smile's rise — the smallest arc that reads as a frown.
+
+**These are shapes built to the sheet's descriptions, not the sheet's paintings.**
+The twelve `FACE` mouth cells are distinct artwork, so **DG-095 to DG-106 stay
+`pending`** and are not satisfied by these. Numbered from 014 so 001–012 remain
+free for the sheet cells and 013 stays with the recovered mouth.
+
 #### Recovered face layers and recolours — DG-176 to DG-198 (added 2026-07-27)
 
 Removing the baked face from the base bodies left the collection with no face at

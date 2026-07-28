@@ -2219,6 +2219,378 @@
       },
       "backlog_id": "DG-236",
       "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_014_fine_closed_neutral",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_014_fine_closed_neutral.png",
+      "status": "production_ready",
+      "sha256": "3883c98a77bfd985e15a533642a26e5999308bfbceff3aafd9a6349332d086b3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-237",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_015_short_line",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_015_short_line.png",
+      "status": "production_ready",
+      "sha256": "85064bb31e09c9815187b920015825caec5afc6dc5f99d367a0347ade61ba784",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-238",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_016_flat_line",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_016_flat_line.png",
+      "status": "production_ready",
+      "sha256": "79d85391c7747340dca9ab096bc08bab1815445c1e2542e964e4ffa9b74f9e05",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-239",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_017_soft_curve",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_017_soft_curve.png",
+      "status": "production_ready",
+      "sha256": "d382ba2d0bd4844edd514743be5157168c034d944b18cb6f42f12dcdeb68cb7a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-240",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_018_small_downturned",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_018_small_downturned.png",
+      "status": "production_ready",
+      "sha256": "48023d807c0d8dbdfdcc33442a5d7e942861f433ad8e2f549cf1bf4f6488f696",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-241",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_019_tiny_neutral",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_019_tiny_neutral.png",
+      "status": "production_ready",
+      "sha256": "751dd1bbcbff163dbbc16a2506a631901af0e796d3f0fb8852c32c64367a711b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-242",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_020_tiny_curve",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_020_tiny_curve.png",
+      "status": "production_ready",
+      "sha256": "a89b14448726a5f09b824d0fe2f241be44f761b17f4668d4174cdb1571e50cf6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-243",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_021_small_open_smile",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_021_small_open_smile.png",
+      "status": "production_ready",
+      "sha256": "835692453d5ab2175e53174af10b9753fde28ebff6ea63f67d5ff4d25ac37687",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-244",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_022_wide_open_smile",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_022_wide_open_smile.png",
+      "status": "production_ready",
+      "sha256": "7614592fd6060f2c2e3c0d52ef6b6cb6037b38969171fd676b8df8a7f16a3a74",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-245",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_023_tiny_round",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_023_tiny_round.png",
+      "status": "production_ready",
+      "sha256": "df88d0a3a8ed10fe59b386298e6651e02aacb0595a3d23b9437981e2525de1fa",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-246",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_024_pink_open_pout",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_024_pink_open_pout.png",
+      "status": "production_ready",
+      "sha256": "235152e12fd3d004d4d6763387fc5f0fd4af5f3d8701dd8340ac2559d047dabb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-247",
+      "approved_on": "2026-07-27"
+    },
+    {
+      "id": "mouth_025_small_dark_open_fang",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_025_small_dark_open_fang.png",
+      "status": "production_ready",
+      "sha256": "e4504c6865610faf55f4f220ecb0e533bbad0472d9434fcdf289e1c5c7f2b483",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/06_eyes_eyebrows_mouths.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "reference_path": "assets/mouths/mouth_013_base_master_closed_smile.png",
+        "tool": "scripts/build_mouths.py",
+        "method": "signed distance fields at 4x supersampling on the locked mouth anchor",
+        "ink_sampled_from": "mouth_013_base_master_closed_smile.png",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "srgb_icc_profile_embedded"
+        ],
+        "qa_report": "docs/qa/mouths_2026-07-27.md"
+      },
+      "backlog_id": "DG-248",
+      "approved_on": "2026-07-27"
     }
   ],
   "approved_visual_references": [
