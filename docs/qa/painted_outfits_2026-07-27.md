@@ -33,13 +33,46 @@ backgrounds these actually stand on.
 Rescaling during intake was **waived by the collection owner** for this batch and
 is recorded in each manifest entry as `rig_refit_collar_y_442_hem_y_1108`.
 
-Y 442 was found by measurement, not by eye. Seating the collar at Y 480 puts the
-hem exactly where the procedural coats had it and looks right in isolation, but
-leaves a rim of bare shoulder outside the pauldrons on **every robe and every
-pose** — the deltoid sits below the pauldron edge. Sweeping scale and offset for
-zero bare skin in the shoulder band, subject to keeping the hem at 1108, lands on
-Y 442. Five of six robes then measure zero; the white-and-gold robe measures 564
-px of 32,242 in the band (1.7%), from its open V-neck.
+### The collar seat is set by the jaw, and getting that wrong shipped a bug
+
+Optimising the seat purely for shoulder coverage lands on **Y 442**: sweep scale
+and offset for zero bare skin in the band Y 535–660 while holding the hem at
+1108, and that is the answer. Five of six robes then measure zero bare shoulder.
+
+Y 442 is one pixel above the mouth anchor. The standing collars swallowed the
+chin and jaw entirely, and because `mouths` composites *after* `outfits`, an open
+mouth was drawn half on skin and half on the collar's dark opening. It went
+through registration and two QA sheets before a close look at a face caught it —
+the metric being optimised had nothing to say about faces, and the thumbnails
+were too small to show it.
+
+The painted jaw line sits at **Y 478**. The collar seats at **Y 486**, below it.
+
+That costs bare shoulder, and the cost is not evenly spread:
+
+| Robe | Bare shoulder px, of 32,242 in the band |
+|---|---|
+| black and gold | 541 |
+| navy and gold star | 897 |
+| crimson and gold | 920 |
+| white and gold | 1,828 |
+| white and navy star | 2,648 |
+| purple and black | 2,804 |
+
+Three of the six now read as off-shoulder gowns rather than high-collared robes.
+Lengthening the hem to 1136 cuts the total from 9,638 to 6,495 but hides the feet
+and does not close it, because the gap is between the collar base and the
+pauldron — a property of the reference artwork at chibi proportions, not of the
+placement.
+
+A visible chin is worth more than a covered shoulder, so this is where it stays.
+The clean fix is a shoulder mantle in `neck_accessories`, which composites at
+layer 07 immediately after `outfits` and covers exactly that band; the category
+is empty and this would be a reason to start it.
+
+`tests/test_outfit_face_clearance.py` now holds the line: no outfit may draw
+above Y 486 inside the face, and no registered mouth may overlap any registered
+outfit by a single pixel.
 
 All six pass the rig gate and sit inside `maximum_character_bounds`.
 

@@ -1771,7 +1771,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_001_white_gold_painted.png",
       "status": "production_ready",
-      "sha256": "cd247d9c5a64cac6deb9735cddbdd6fb4d60b1ae0ebeafdbb85c2a3e5a3f75d0",
+      "sha256": "4250ed336883ca05d92f5da8433273bdfd05827937515c61523629e712bef9a3",
       "dimensions": [
         1254,
         1254
@@ -1790,7 +1790,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",
@@ -1804,7 +1804,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_002_black_gold_painted.png",
       "status": "production_ready",
-      "sha256": "15a23e54424677284675152225bd68e59b7df8a56ed8166451a8bf684e39ff8b",
+      "sha256": "a03df5f40f9dba8ab031676a08a5b2c0b0382771d0a3d8c704f9976c9a218713",
       "dimensions": [
         1254,
         1254
@@ -1823,7 +1823,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",
@@ -1837,7 +1837,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_003_navy_gold_star_painted.png",
       "status": "production_ready",
-      "sha256": "ad5a4213f3f5d17c3739ad0e9e10df6069c2fb3131f504946010cf13d1995992",
+      "sha256": "e135e2d2e7d4ef3bd8b944c5462ff7586b35ef27ff26c79b72fa47e57d963116",
       "dimensions": [
         1254,
         1254
@@ -1856,7 +1856,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",
@@ -1870,7 +1870,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_004_crimson_gold_painted.png",
       "status": "production_ready",
-      "sha256": "a0869be055fa2d0fa0f3353b1b868e347d5036eed2c9506a164ff7031fb65b4f",
+      "sha256": "7203aa634aa90313be80e857d7b91ae6a1476dd94febee6a755ce5eb40f2ec4f",
       "dimensions": [
         1254,
         1254
@@ -1889,7 +1889,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",
@@ -1903,7 +1903,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_purple_black_gold_painted.png",
       "status": "production_ready",
-      "sha256": "021b8065d7ba5c9e20ed7b2490ed5eb686a1b3c7f86c0c8e2d7843484187c2f1",
+      "sha256": "2b6b5bfdc92f2722d716d5b0d60fc080c9fe71ab0846f5af2bb5fc17b1a7cb73",
       "dimensions": [
         1254,
         1254
@@ -1922,7 +1922,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",
@@ -1936,7 +1936,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_006_white_navy_star_painted.png",
       "status": "production_ready",
-      "sha256": "da95c453b49604c7679477e5161e1f911b68b3b906f1b57b1ce9caf6399e35d3",
+      "sha256": "70969272191dd374c96771f73f46000ab2239fbc1adb1d517141ae8751a5358f",
       "dimensions": [
         1254,
         1254
@@ -1955,7 +1955,7 @@
         ],
         "postprocessing": [
           "studio_backdrop_removed",
-          "rig_refit_collar_y_442_hem_y_1108",
+          "rig_refit_collar_y_486_hem_y_1108",
           "srgb_icc_profile_embedded"
         ],
         "note": "rescaling waived for this intake by the collection owner",

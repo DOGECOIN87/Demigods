@@ -62,16 +62,27 @@ EDGE_FEATHER = 0.8
 COLOUR_COVERAGE_FLOOR = 0.35
 ALPHA_FLOOR = 8
 
-# Rig targets. The hem matches the registered procedural coats at 1108. The
-# collar seat was found by sweeping scale and offset for the placement that
-# leaves zero bare skin in the shoulder band while keeping that hem: seating the
-# collar at the more obvious 480 left a rim of shoulder showing outside the
-# pauldrons on every robe and every pose.
-COLLAR_TOP_Y = 442
+# Rig targets. The hem matches the registered procedural coats at 1108.
+#
+# The collar seat is set by the JAW, not by shoulder coverage. Optimising purely
+# for "no bare skin in the shoulder band" drives the collar up to Y 442, which is
+# one pixel above the mouth anchor: the standing collar then swallows the chin
+# and jaw entirely, and because `mouths` composites after `outfits` the mouth
+# ends up drawn half on skin and half on the collar's dark opening. The painted
+# jaw line sits at Y 478, so the collar must stay below Y 486.
+#
+# That costs 400-800 px of bare shoulder out of 32,242 in the band, a 1-2% rim at
+# the outer deltoid. A visible chin is worth far more than that.
+COLLAR_TOP_Y = 486
 HEM_Y = 1108
 
 # Body rows the garment must cover completely. Bare skin here reads as a hole.
 SHOULDER_BAND = (535, 660)
+
+# The collar may not draw above this row inside the face. Y 478 is the painted
+# jaw line; this keeps a small margin below it.
+CHIN_CLEAR_Y = 486
+FACE_SPAN = (470, 790)
 
 BASE_BODIES = [
     "base_body_001_neutral_master",
@@ -167,6 +178,13 @@ def shoulder_gap(layer: Image.Image, body_path: Path) -> int:
                if body[x, y] > 128 and outfit[x, y] <= 128)
 
 
+def chin_intrusion(layer: Image.Image) -> int:
+    """Opaque garment pixels above the jaw, inside the face. Must be zero."""
+    alpha = layer.getchannel("A").load()
+    return sum(1 for y in range(400, CHIN_CLEAR_Y) for x in range(*FACE_SPAN)
+               if alpha[x, y] > 128)
+
+
 def pose_report(layer: Image.Image, assets: Path) -> list[dict]:
     """How each registered base pose fares under this garment.
 
@@ -227,7 +245,10 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  bounds [{left},{top},{right},{bottom}] within {list(MAX_BOUNDS)}: {within}")
 
     bare_shoulder = shoulder_gap(fitted, args.assets / f"{BASE_BODIES[0]}.png")
-    print(f"  bare shoulder pixels: {bare_shoulder}")
+    chin = chin_intrusion(fitted)
+    print(f"  bare shoulder pixels: {bare_shoulder};  collar over the chin: {chin}")
+    if chin:
+        print("  FAIL: the collar covers the jaw; the chin will be missing")
 
     if args.pose_report:
         print(f"  {'pose':44s} {'bare arm px':>12s} {'pose detail hidden':>20s}")
