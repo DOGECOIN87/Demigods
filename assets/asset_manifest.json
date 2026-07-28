@@ -617,6 +617,98 @@
       "approved_on": "2026-07-27"
     },
     {
+      "id": "aura_rear_002",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_002_violet_radial_glow.png",
+      "status": "production_ready",
+      "sha256": "aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/12_auras.md",
+      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_aura_radiance.py",
+        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
+        "reference_sha256": "2acac934db9a854dadc29ce9800a9f581dfa0812462fe27b642a2e9f7394fe52",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "palette": "violet",
+        "generator_args": "--palette violet --peak-alpha 235 --falloff 1.3"
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "aura_rear_004",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_004_violet_void_flame.png",
+      "status": "production_ready",
+      "sha256": "ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/12_auras.md",
+      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "generator_script": "scripts/extract_effect_layer.py",
+        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
+        "candidate_path": "images/trait_candidates/PoLVl.jpg",
+        "candidate_sha256": "593c3c23bb8bf62130b6397d736cbd4d008a23777d45322c79426cc334113255",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "subtractive_alpha_from_white_field_cut_232_gain_1.5_gamma_1.1",
+          "recenter_x",
+          "scale_to_target_height_980_center_y_660"
+        ]
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
+      "id": "aura_rear_016",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+      "status": "production_ready",
+      "sha256": "eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "prompt": "prompts/12_auras.md",
+      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "generator_script": "scripts/extract_effect_layer.py",
+        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
+        "candidate_path": "images/trait_candidates/grok_1784757226345.png",
+        "candidate_sha256": "6cc7286b3dddd6c818de3741ee2a200d65398cbe9351491019f4b608b815cdde",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "additive_alpha_from_black_field_gain_1.7_gamma_1.35",
+          "scale_to_target_height_968_center_y_645"
+        ]
+      },
+      "approved_on": "2026-07-28"
+    },
+    {
       "id": "outfit_001",
       "category": "outfits",
       "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",

@@ -116,10 +116,24 @@ def validate_collection(collection: dict[str, Any]) -> tuple[list[str], list[str
         "canvas",
         "master_rig",
         "lighting",
+        "optional_categories",
     }
     extras = sorted(set(collection) - allowed_top_level)
     if extras:
         warnings.append(f"unrecognized collection keys: {', '.join(extras)}")
+
+    optional = collection.get("optional_categories")
+    if optional is not None:
+        if not isinstance(optional, dict):
+            errors.append("optional_categories must be an object of {category: probability}")
+        else:
+            for category, probability in optional.items():
+                if category in {"backgrounds", "base_bodies"}:
+                    errors.append(f"required category cannot be optional: {category}")
+                if not isinstance(probability, (int, float)) or not (0.0 < float(probability) < 1.0):
+                    errors.append(
+                        f"optional_categories.{category} must be a probability strictly between 0 and 1"
+                    )
 
     return errors, warnings
 

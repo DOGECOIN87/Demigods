@@ -28,5 +28,9 @@
     "shadow_direction": "lower-right",
     "rim_light": "subtle cool right rim",
     "ambient_fill": "soft neutral"
+  },
+  "optional_categories": {
+    "rear_auras": 0.82,
+    "hair_back": 0.62
   }
 }

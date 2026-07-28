@@ -55,9 +55,9 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
 | DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | registered |
-| DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | pending |
+| DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | registered |
 | DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | pending |
-| DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | pending |
+| DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | registered |
 | DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | pending |
 | DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | registered |
 
@@ -78,7 +78,7 @@ The neon variants are the *same geometry* in a different palette, so they are re
 | DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 | DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 | DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
-| DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
 | DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 
 All eleven are ground-plane effects and are gated with `rig_gate_report.py --floor-aura`. The generator variants must match DG-015's seating exactly so the family stacks consistently: same ellipse, same foot-baseline placement, differing only in surface treatment.

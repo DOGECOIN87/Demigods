@@ -91,8 +91,49 @@ def category_counts(assets: dict[str, list[Path]]) -> dict[str, int]:
     return {category: len(assets.get(category, [])) for category in LAYER_ORDER}
 
 
-def theoretical_space(assets: dict[str, list[Path]]) -> int:
-    counts = [len(files) for files in assets.values() if files]
+def resolve_optional(
+    collection: dict[str, Any],
+    override: dict[str, float] | None = None,
+) -> dict[str, float]:
+    """Return the {category: present-probability} map for optional categories.
+
+    A category listed here is included in a token only with the given probability;
+    otherwise it is omitted entirely (the "None" trait real collections rely on).
+    The two required categories can never be optional, and probabilities must sit
+    strictly between 0 and 1 so both the present and absent branches can occur.
+    """
+    raw = override if override is not None else collection.get("optional_categories") or {}
+    if not isinstance(raw, dict):
+        raise ValueError("optional_categories must be an object of {category: probability}")
+    resolved: dict[str, float] = {}
+    for category, probability in raw.items():
+        if category not in LAYER_ORDER:
+            raise ValueError(f"optional category is not a known layer: {category!r}")
+        if category in REQUIRED_CATEGORIES:
+            raise ValueError(f"required category cannot be optional: {category}")
+        if not isinstance(probability, (int, float)) or not (0.0 < float(probability) < 1.0):
+            raise ValueError(
+                f"optional_categories.{category} must be a probability strictly between 0 and 1"
+            )
+        resolved[category] = float(probability)
+    return resolved
+
+
+def theoretical_space(
+    assets: dict[str, list[Path]],
+    optional: dict[str, float] | None = None,
+) -> int:
+    """Distinct-combination ceiling.
+
+    An optional category contributes an extra "absent" branch, so its factor is
+    (count + 1) rather than count. Mandatory categories keep their raw count.
+    """
+    optional = optional or {}
+    counts = [
+        len(files) + (1 if category in optional else 0)
+        for category, files in assets.items()
+        if files
+    ]
     return math.prod(counts) if counts else 0
 
 
@@ -138,12 +179,27 @@ def violates_rules(selection: dict[str, Path], rules: dict[str, Any]) -> bool:
     return False
 
 
-def choose_selection(rng: random.Random, assets: dict[str, list[Path]]) -> dict[str, Path]:
-    return {
-        category: rng.choice(assets[category])
-        for category in LAYER_ORDER
-        if assets.get(category)
-    }
+def choose_selection(
+    rng: random.Random,
+    assets: dict[str, list[Path]],
+    optional: dict[str, float] | None = None,
+) -> dict[str, Path]:
+    """Pick one asset per non-empty category; skip optional categories by probability.
+
+    The rng.random() gate is drawn for every optional category in layer order,
+    before the rng.choice, so the sequence stays deterministic for a fixed seed.
+    """
+    optional = optional or {}
+    selection: dict[str, Path] = {}
+    for category in LAYER_ORDER:
+        files = assets.get(category)
+        if not files:
+            continue
+        probability = optional.get(category)
+        if probability is not None and rng.random() >= probability:
+            continue
+        selection[category] = rng.choice(files)
+    return selection
 
 
 def generate_tokens(
@@ -153,6 +209,7 @@ def generate_tokens(
     rules: dict[str, Any],
     supply: int,
     max_attempts: int,
+    optional: dict[str, float] | None = None,
 ) -> tuple[list[GeneratedToken], int]:
     seen: set[str] = set()
     tokens: list[GeneratedToken] = []
@@ -160,7 +217,7 @@ def generate_tokens(
 
     while len(tokens) < supply and attempts < max_attempts:
         attempts += 1
-        selection = choose_selection(rng, assets)
+        selection = choose_selection(rng, assets, optional)
         if violates_rules(selection, rules):
             continue
 
@@ -286,17 +343,20 @@ def generate_collection(
     overwrite: bool,
     config_path: Path | None = None,
     compatibility_path: Path | None = None,
+    optional_categories: dict[str, float] | None = None,
 ) -> dict[str, Any]:
     width = int(collection.get("canvas", {}).get("width", 1254))
     height = int(collection.get("canvas", {}).get("height", 1254))
     size = (width, height)
+
+    optional = resolve_optional(collection, optional_categories)
 
     assets = discover_assets(assets_root)
     preflight_errors = validate_library(assets_root, assets, size)
     if preflight_errors:
         raise ValueError("preflight failed:\n- " + "\n- ".join(preflight_errors))
 
-    space = theoretical_space(assets)
+    space = theoretical_space(assets, optional)
     if space < supply:
         raise ValueError(
             f"theoretical combination space is only {space}; at least {supply} are required"
@@ -308,6 +368,7 @@ def generate_collection(
         rules=compatibility,
         supply=supply,
         max_attempts=max_attempts,
+        optional=optional,
     )
     if len(tokens) != supply:
         raise ValueError(
@@ -342,6 +403,7 @@ def generate_collection(
         "canvas": {"width": width, "height": height},
         "layer_order": LAYER_ORDER,
         "category_counts": category_counts(assets),
+        "optional_categories": optional,
         "theoretical_combination_space": space,
         "trait_provenance_hash": collection_provenance(trait_signatures),
         "image_provenance_hash": collection_provenance(image_hashes) if image_hashes else None,
@@ -396,16 +458,22 @@ def main(argv: list[str] | None = None) -> int:
 
         width = int(collection.get("canvas", {}).get("width", 1254))
         height = int(collection.get("canvas", {}).get("height", 1254))
+        optional = resolve_optional(collection)
         assets = discover_assets(args.assets)
         errors = validate_library(args.assets, assets, (width, height))
         if errors:
             raise ValueError("preflight failed:\n- " + "\n- ".join(errors))
-        space = theoretical_space(assets)
+        space = theoretical_space(assets, optional)
         if space < supply:
             raise ValueError(
                 f"theoretical combination space is only {space}; at least {supply} are required"
             )
-        print(f"Preflight passed. Theoretical combination space: {space}.")
+        optional_note = (
+            " Optional: " + ", ".join(f"{c}={p:g}" for c, p in optional.items())
+            if optional
+            else ""
+        )
+        print(f"Preflight passed. Theoretical combination space: {space}.{optional_note}")
         if args.preflight_only:
             return 0
 

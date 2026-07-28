@@ -34,6 +34,15 @@ FALLOFF_POWER = 1.5  # higher = tighter core, longer tail
 CORE_RGB = (255, 250, 232)
 EDGE_RGB = (247, 214, 140)
 
+# Named colour variants. Each keeps a pale luminous core grading to a saturated
+# edge, so every variant only ever adds light. Gold is DG-020; violet is DG-016.
+PALETTES: dict[str, tuple[tuple[int, int, int], tuple[int, int, int]]] = {
+    "gold": ((255, 250, 232), (247, 214, 140)),
+    "violet": ((248, 240, 255), (176, 132, 236)),
+    "blue": ((236, 246, 255), (128, 176, 248)),
+    "rose": ((255, 240, 248), (244, 150, 196)),
+}
+
 
 def lerp(a: float, b: float, t: float) -> float:
     return a + (b - a) * t
@@ -85,9 +94,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--peak-alpha", type=int, help="peak alpha at the glow core")
     parser.add_argument("--falloff", type=float, help="falloff power; lower = fuller glow")
+    parser.add_argument("--palette", choices=sorted(PALETTES), default="gold",
+                        help="named colour variant (gold=DG-020, violet=DG-016)")
     args = parser.parse_args(argv)
 
-    global PEAK_ALPHA, FALLOFF_POWER
+    global PEAK_ALPHA, FALLOFF_POWER, CORE_RGB, EDGE_RGB
+    CORE_RGB, EDGE_RGB = PALETTES[args.palette]
     if args.peak_alpha is not None:
         PEAK_ALPHA = args.peak_alpha
     if args.falloff is not None:
