@@ -133,6 +133,28 @@ class HairPairingRuleTests(unittest.TestCase):
         )
         self.assertIsNone(rule)
 
+    def test_backlog_rows_confirm_the_colour_alignment_the_rule_assumes(self) -> None:
+        """hair_front_00N binds to hair_back_00N only if index N means one colour.
+
+        The pairing rule matches on the three-digit index alone. That is only
+        correct because both HAIR reference rows run the same eight colours in
+        the same order, so this asserts it against the backlog rather than
+        against a reading of a 128x96 preview.
+        """
+        rows = build_asset_prompts.parse_backlog(BACKLOG_TEXT)
+        colours = ["gold", "black", "silver", "violet", "blue", "pink", "teal", "red"]
+        for category, prefix in (("hair back", "hair_back"), ("hair front", "hair_front")):
+            for index, colour in enumerate(colours, start=1):
+                row = next(
+                    r for r in rows
+                    if r["category"] == category
+                    and Path(r["path"]).name.startswith(f"{prefix}_{index:03d}")
+                )
+                with self.subTest(asset=Path(row["path"]).name):
+                    haystack = f"{row['path']} {row['description']}".lower()
+                    # "silver" appears as white-silver, "blue" as deep-blue.
+                    self.assertIn(colour, haystack)
+
     def test_non_hair_assets_get_no_rule(self) -> None:
         manifest = self.manifest("assets/outfits/outfit_006_black_layered_hooded_robe.png")
         rule = bulk_intake.pair_hair_rule(
