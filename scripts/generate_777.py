@@ -137,6 +137,80 @@ def theoretical_space(
     return math.prod(counts) if counts else 0
 
 
+def estimate_valid_space(
+    assets: dict[str, list[Path]],
+    optional: dict[str, float] | None,
+    rules: dict[str, Any],
+    samples: int = 20000,
+    seed: int = 0,
+) -> tuple[int, float]:
+    """Estimate the combination space that actually survives the rules.
+
+    `theoretical_space` is only a ceiling: it multiplies category counts and
+    ignores `requires`/`excludes` completely. That gap is not academic. A single
+    "this outfit requires exactly that base pose" rule collapses an
+    outfit x pose factor from N*M down to N, so a library of five pose-locked
+    outfits and five poses has 5 valid pairs, not 25 — and the ceiling overstates
+    the real space fivefold.
+
+    Sampling rather than enumerating keeps this usable: a full trait library runs
+    to billions of combinations, which is not enumerable, while the valid
+    *fraction* converges quickly.
+
+    Returns (estimated valid combinations, valid fraction).
+    """
+    optional = optional or {}
+    ceiling = theoretical_space(assets, optional)
+    if ceiling == 0:
+        return (0, 0.0)
+    if not rules.get("requires") and not rules.get("excludes"):
+        return (ceiling, 1.0)
+
+    rng = random.Random(seed)
+    populated = {c: f for c, f in assets.items() if f}
+    valid = 0
+    for _ in range(samples):
+        selection: dict[str, Path] = {}
+        for category, files in populated.items():
+            if category in optional and rng.random() >= optional[category]:
+                continue
+            selection[category] = rng.choice(files)
+        if not violates_rules(selection, rules):
+            valid += 1
+
+    fraction = valid / samples
+    return (int(round(ceiling * fraction)), fraction)
+
+
+def saturation_report(supply: int, valid_space: int, fraction: float, ceiling: int) -> str:
+    """Human-readable line about how much of the valid space the supply consumes.
+
+    Minting a supply that approaches the valid space means near-exhaustive
+    output: almost every possible character exists, so rarity carries no
+    information and tokens differ only in whichever categories still vary.
+    """
+    lines = [
+        f"Theoretical combination space: {ceiling} (ceiling, ignores compatibility rules).",
+        f"Rule-valid combination space:  {valid_space} "
+        f"({fraction:.1%} of the ceiling survives the rules).",
+    ]
+    if valid_space > 0:
+        saturation = supply / valid_space
+        lines.append(f"Supply saturation: {supply}/{valid_space} = {saturation:.1%} of the valid space.")
+        if saturation > 0.90:
+            lines.append(
+                "WARNING: above 90% saturation the collection is effectively exhaustive — "
+                "nearly every legal combination is minted, so rarity is meaningless. "
+                "Add traits to the constrained categories before minting."
+            )
+        elif saturation > 0.50:
+            lines.append(
+                "WARNING: above 50% saturation, rare combinations stop being rare. "
+                "Consider adding traits to the most constrained categories."
+            )
+    return "\n".join(lines)
+
+
 def raw_signature(selection: dict[str, Path]) -> str:
     return "|".join(
         f"{category}:{selection[category].name}"
@@ -469,11 +543,21 @@ def main(argv: list[str] | None = None) -> int:
                 f"theoretical combination space is only {space}; at least {supply} are required"
             )
         optional_note = (
-            " Optional: " + ", ".join(f"{c}={p:g}" for c, p in optional.items())
+            "Optional: " + ", ".join(f"{c}={p:g}" for c, p in optional.items())
             if optional
             else ""
         )
-        print(f"Preflight passed. Theoretical combination space: {space}.{optional_note}")
+        valid_space, fraction = estimate_valid_space(assets, optional, compatibility)
+        if valid_space < supply:
+            raise ValueError(
+                f"only about {valid_space} combinations survive the compatibility rules "
+                f"(ceiling {space}); at least {supply} are required. Add traits to the "
+                "constrained categories or relax a rule."
+            )
+        print("Preflight passed.")
+        print(saturation_report(supply, valid_space, fraction, space))
+        if optional_note:
+            print(optional_note)
         if args.preflight_only:
             return 0
 

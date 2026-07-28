@@ -32,6 +32,11 @@ except ImportError as exc:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Peak alpha a global-finish layer may reach. At 64/255 (~25%) a finish can shift
+# mood across the frame but can never obscure the art it sits on top of, which is
+# what separates a grade from an extra opaque layer.
+GLOBAL_FINISH_MAX_ALPHA = 64
+
 
 def load_rig(config_path: Path) -> dict:
     cfg = json.loads(config_path.read_text())
@@ -81,10 +86,11 @@ def base_metrics(base_path: Path) -> dict | None:
 
 def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: bool = False,
             trait: bool = False, floor_aura: bool = False, base: dict | None = None,
-            max_width_ratio: float | None = None) -> dict:
+            max_width_ratio: float | None = None, global_finish: bool = False,
+            max_alpha: int = GLOBAL_FINISH_MAX_ALPHA) -> dict:
     result: dict = {"file": str(path), "sha256": sha256(path), "checks": [], "passed": False}
     head_cx = leg_cx = None
-    alpha_min = None
+    alpha_min = alpha_max = None
     with Image.open(path) as im:
         im.load()
         w, h = im.size
@@ -95,7 +101,7 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
         has_alpha = ("A" in im.getbands())
         bounds = inclusive_alpha_bounds(im) if has_alpha else None
         if has_alpha:
-            alpha_min = (im.convert("RGBA").getchannel("A").getextrema())[0]
+            alpha_min, alpha_max = im.convert("RGBA").getchannel("A").getextrema()
         if has_alpha and bounds is not None and not trait:
             # Arm-free bands: head+neck (above the shoulders) and lower legs/feet.
             head_cx = band_center_x(im, rig["top_of_head_y"], rig["shoulder_line_y"] - 60)
@@ -106,6 +112,22 @@ def analyze(path: Path, rig: dict, canvas: dict, tolerance: int, pose_variant: b
         return result
     if bounds is None:
         result["checks"].append(("alpha", False, "fully transparent", "visible silhouette", 0))
+        return result
+
+    # Layer 16 grades the finished frame rather than adding a character part, so
+    # it legitimately covers the whole canvas: silhouette bounds, centering, and
+    # the foot baseline do not describe it. What must hold instead is that it can
+    # never hide the art underneath — hence a hard ceiling on peak alpha.
+    if global_finish:
+        result["alpha_range"] = [alpha_min, alpha_max]
+        result["checks"].append(
+            ("alpha_ceiling", alpha_max <= max_alpha, f"alpha_max={alpha_max}", f"<={max_alpha}",
+             max(0, alpha_max - max_alpha))
+        )
+        result["checks"].append(
+            ("not_opaque", alpha_max < 255, f"alpha_max={alpha_max}", "<255", 0)
+        )
+        result["passed"] = canvas_ok and all(c[1] for c in result["checks"])
         return result
 
     left, top, right, bottom = bounds
@@ -243,6 +265,12 @@ def main() -> int:
                     help="Ground-plane aura mode: like --trait, but the visible bounds may extend "
                          "below foot baseline Y so the character reads as standing inside the "
                          "effect. X bounds and the top bound still apply.")
+    ap.add_argument("--global-finish", action="store_true",
+                    help="Layer-16 grade mode: a full-canvas tint that sits above every other "
+                         "layer. Skips silhouette bounds and centering, and instead caps peak "
+                         "alpha so the finish can never obscure the art beneath it.")
+    ap.add_argument("--max-alpha", type=int, default=GLOBAL_FINISH_MAX_ALPHA,
+                    help=f"peak-alpha ceiling for --global-finish (default {GLOBAL_FINISH_MAX_ALPHA})")
     ap.add_argument("--base", type=Path, default=ROOT / "assets" / "base_bodies" / "base_body_001_neutral_master.png",
                     help="base body used to report a partial layer's width ratio and crown offset")
     ap.add_argument("--max-width-ratio", type=float,
@@ -259,7 +287,7 @@ def main() -> int:
         return 2
 
     reports = [analyze(f, spec["rig"], spec["canvas"], args.tolerance, args.pose_variant, args.trait, args.floor_aura,
-                              base_spec, args.max_width_ratio) for f in files]
+                              base_spec, args.max_width_ratio, args.global_finish, args.max_alpha) for f in files]
     for r in reports:
         print_report(r)
 

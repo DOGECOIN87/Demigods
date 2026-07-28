@@ -298,9 +298,17 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | `prompts/12_auras.md` | pending |
 | DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | pending |
 
-## Global-finish source gate
+## Global finish
 
-`16_global_finish` exists in the canonical layer stack and validator, but no distinct global-finish artwork is identifiable in the compressed repository reference sheets and no dedicated global-finish prompt defines a visual design. No `global_finish_001` asset is invented in this backlog. Before the representative global-finish test, the repository needs either an explicit reference cell or a narrowly defined finish treatment that remains a separate transparent layer.
+The source gate is closed as of 2026-07-28 by the second of its two stated exits: a narrowly defined finish treatment that remains a separate transparent layer. No reference cell was found, and none was invented — see `docs/global-finish-definition.md` for the definition and the reasoning.
+
+A global finish is a full-canvas directional light grade restating the collection's locked lighting, rendered analytically by `scripts/build_global_finish.py`, with peak alpha capped at 64/255 so it can never obscure the art beneath it. Candidates await human visual approval; the preview is `docs/qa/global_finish_preview.png`.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-158 | global finish | Neutral warm soft bloom from the upper-left key direction | `docs/global-finish-definition.md` | Locked lighting spec | `assets/global_finish/global_finish_001_soft_bloom.png` | procedural — `scripts/build_global_finish.py` | candidate |
+| DG-159 | global finish | Warm gold light wash from the upper-left key direction | `docs/global-finish-definition.md` | DG-158 representative test | `assets/global_finish/global_finish_002_gilded_warm.png` | procedural — `scripts/build_global_finish.py` | candidate |
+| DG-160 | global finish | Cool veil from the lower-right shadow side | `docs/global-finish-definition.md` | DG-147 | `assets/global_finish/global_finish_003_cool_veil.png` | procedural — `scripts/build_global_finish.py` | candidate |
 
 ## Execution rule
 
