@@ -80,8 +80,11 @@ The neon variants are the *same geometry* in a different palette, so they are re
 | DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
 | DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
 | DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | pending |
+| DG-161 | rear aura | Blue rising flame above a luminous floor ring | co-created candidate `images/trait_candidates/grok_1784755724820.png`; no reference cell | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_018_blue_flame_ring.png` | `prompts/12_auras.md` | candidate |
 
 All eleven are ground-plane effects and are gated with `rig_gate_report.py --floor-aura`. The generator variants must match DG-015's seating exactly so the family stacks consistently: same ellipse, same foot-baseline placement, differing only in surface treatment.
+
+DG-161 is the first backlog row sourced from a **co-created candidate rather than a reference cell**. Every other row cites a catalog cell; this design exists only as an image already in `images/trait_candidates/`. It is still inside the stated scope because `prompts/12_auras.md` governs the category and defines the design language, but it sets no precedent for inventing rows without either a cell or an existing candidate. See `docs/qa/aura_rear_018_blue_flame_ring_2026-07-28.md` — the source needed a content crop before extraction because it carries a baked transparency checkerboard inside a letterboxed frame.
 
 #### Production route per aura cell (assessed 2026-07-27)
 
