@@ -81,14 +81,16 @@ A standing collar has to be drawn as an **open tube**, not a sealed cone. The
 neck opening must be genuinely transparent so the base body's neck reads through
 it, and the inside face of the collar must be painted where it would be visible.
 
-`outfit_002` and `outfit_003` were rendered with sealed collars: the opening is
-opaque, leaving only 16.3% and 15.6% of the neck visible, so the head reads as
-sitting on a tube rather than joining a body. This cannot be repaired after the
-fact — removing the painted interior does not reveal the collar's inner face,
-because that face was never drawn. Both need a re-render. See
-`docs/qa/outfit_chroma_key_cleanup_2026-07-29.md`.
+`outfit_002` and `outfit_003` were rendered with sealed collars, leaving only
+17.2% and 16.1% of the neck visible. Both were repaired in place by
+`scripts/open_collar.py`, which subtracts the base body's own anti-aliased neck
+alpha from the collar interior — reaching 25.8% and 23.3%. Generating the collar
+open in the first place is still strongly preferred: the repair reveals the neck
+but cannot paint the inside face of the rim, so a deep collar will read flatter
+than one drawn open.
 
 Target at least ~25% of the neck band (jaw Y 457 to shoulder Y 569) visible.
+Measure with `scripts/open_collar.py`'s `neck_visibility()`.
 
 ## Never resample after keying without re-contracting
 

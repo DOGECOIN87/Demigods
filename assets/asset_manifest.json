@@ -745,7 +745,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
       "status": "production_ready",
-      "sha256": "27ba78fe46c163661e078b0001992d341b43e408616de33be2f6aa4a66a48907",
+      "sha256": "9ed981f360bb99762f0f5f969e66b2d1cf1df658e37b25811e5a1c03298b132a",
       "dimensions": [
         1254,
         1254
@@ -767,10 +767,12 @@
           "alpha_edge_contract_1",
           "rig_refit_scale_0.929_top_y_475",
           "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3"
+          "chroma_despill_edge_band_3",
+          "open_collar_v_taper_top474_close512"
         ],
-        "postprocessing_script": "scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
+        "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
+        "collar_note": "Collar was painted as a sealed cone. Opened by subtracting the base body's own anti-aliased neck alpha, narrowed into a V and faded out toward the chest. full-layer despill (verified no legitimate green: all green runs 1-5px)"
       },
       "approved_on": "2026-07-28"
     },
@@ -779,7 +781,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
       "status": "production_ready",
-      "sha256": "54dd538bc5a2ed2885d30482da4eb6e1bac3b83e9a4f2ca54a56bcb05c685c4f",
+      "sha256": "6c190f3e742e69570f6de3acd7d84e0cc5b56d00b9cf5b29ef314e34266ebbd9",
       "dimensions": [
         1254,
         1254
@@ -801,10 +803,12 @@
           "alpha_edge_contract_1",
           "rig_refit_scale_0.88_top_y_475",
           "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3"
+          "chroma_despill_edge_band_3",
+          "open_collar_v_taper_top474_close512"
         ],
-        "postprocessing_script": "scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
+        "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
+        "collar_note": "Collar was painted as a sealed cone. Opened by subtracting the base body's own anti-aliased neck alpha, narrowed into a V and faded out toward the chest. 3px-band despill only (green potion bottles are real artwork)"
       },
       "approved_on": "2026-07-28"
     },

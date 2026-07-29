@@ -58,42 +58,54 @@ operation cannot distinguish key spill from a green object, so it is confined to
 the band where spill actually occurs. The same outfit loses 38 pixels under the
 3px band, and the potions are untouched.
 
-## Not fixed: outfit_002's residual spill and closed collar
+## The sealed collars — fixed
 
-`outfit_002` is the one outfit the mechanical fix cannot finish, for two related
-reasons.
+`outfit_002` and `outfit_003` were both painted with **sealed collars**: the
+opening is opaque (`a=255`), so the base body's fully-rendered neck never showed
+and the head read as sitting on a tube.
 
-**Residual spill (455 px).** Its green is not confined to the alpha edge; it is
-scattered through the collar interior and along several internal seams. Widening
-the despill band trades badly — at band 14 the green falls to 61 but artwork
-damage rises to 475 shifted pixels, an order of magnitude worse than the fix
-applied.
+| Outfit | neck visible before | after |
+|---|---|---|
+| `outfit_001` | 23.8% | 23.8% |
+| `outfit_002` | **17.2%** | **25.8%** |
+| `outfit_003` | **16.1%** | **23.3%** |
+| `outfit_004` | 39.1% | 39.1% |
+| `outfit_005` | 19.8% | 19.8% |
 
-**The collar is a sealed cone.** Its opening is painted opaque (`a=255`, dark
-teal), so the base body's fully-rendered neck never shows and the head reads as
-sitting on a tube. Measured neck visibility across the family:
+### Four approaches that failed, and why the fifth works
 
-| Outfit | neck px visible |
-|---|---|
-| `outfit_004` | 37.6% |
-| `outfit_001` | 23.8% |
-| `outfit_005` | 18.5% |
-| `outfit_002` | **16.3%** |
-| `outfit_003` | **15.6%** |
+Rejected: a feathered geometric hole (mushy edges, residue survived), a crisp
+geometric cut (chewed fragments at the collar corners), a colour region-grow
+(consumed the collar rim along with the interior — both are dark, so colour
+cannot separate them — and left a hard bounding-box edge), and a fixed-column
+alpha subtract (hard vertical edges where the column clipped).
 
-Four approaches to opening it by pixel surgery were tried and all rejected:
-geometric hole cut with a feather (mushy edges, green residue survived), crisp
-geometric cut (chewed fragments at the collar corners), colour region-grow
-(consumed the collar rim along with the interior, since both are dark, and left
-a hard bounding-box edge), and wider-band despill (artwork damage).
+Every one of them **invented its own boundary**. The working approach uses the
+boundary already present in the artwork: the collar rim lies *outside* the neck's
+silhouette and the painted interior lies *inside* it, so the base body's neck
+alpha separates them exactly.
 
-They fail for a structural reason rather than a tuning one: **the inside face of
-the collar rim was never painted.** Removing the interior surface does not
-reveal a collar seen from within — it reveals nothing, because nothing was drawn
-there. No alpha edit can add geometry the artwork does not contain.
+```
+new_outfit_alpha = outfit_alpha * (1 - neck_mask)
+```
 
-`outfit_002` and `outfit_003` need a re-render with an open collar. That
-requirement is now recorded in `prompts/08_outfits.md`.
+Because that alpha is anti-aliased, the resulting edge is too — no feathering
+needed and nothing invented. Two shaping terms make it read as a garment: the
+opening narrows from 33px to 9px half-width into a V following the collar's own
+front line (this is what removed the hard vertical edges), and removal fades out
+over the lower span so the garment closes over the chest rather than ending on a
+horizontal cut. Implemented in `scripts/open_collar.py`.
+
+### Residual spill on outfit_002
+
+Opening the collar also solved its spill problem. The remaining 442 green pixels
+sat on the collar interior and internal seams; with the interior gone, a
+full-layer despill clears them to **0**.
+
+A full despill is safe on `outfit_002` specifically, and that was verified rather
+than assumed: every green run in the layer measures 1–5px horizontally, which is
+edge spill. A green *object* — `outfit_003`'s potion bottles — produces runs an
+order of magnitude longer. `outfit_003` therefore keeps the 3px-band despill.
 
 ## Head position
 
