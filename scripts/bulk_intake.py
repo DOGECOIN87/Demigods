@@ -292,11 +292,9 @@ def register(results: list[dict], approved: set[str], batch_note: str) -> int:
 
     today = date.today().isoformat()
     registered = []
+    pending_copies: list[tuple[Path, Path]] = []
     for backlog_id in sorted(approved):
         result = by_id[backlog_id]
-        destination = ROOT / result["production_path"]
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(result["source"], destination)  # exact approved bytes
 
         entry = {
             "id": asset_id(result["production_path"]),
@@ -321,15 +319,27 @@ def register(results: list[dict], approved: set[str], batch_note: str) -> int:
         }
         manifest["registered_production_assets"].append(entry)
 
-        pattern = re.compile(rf"^(\| {re.escape(backlog_id)} \|.*\| )pending( \|?\s*)$", re.MULTILINE)
-        backlog_text, count = pattern.subn(r"\1registered\2", backlog_text)
+        # Any pre-registration status is registerable: `pending` for an asset
+        # that was never produced, `candidate` for one whose art is in hand
+        # awaiting review, `approved` for one already signed off. `registered`
+        # is excluded so a re-run cannot silently double-register.
+        pattern = re.compile(
+            rf"^(\| {re.escape(backlog_id)} \|.*\| )(pending|candidate|approved)( \|?\s*)$",
+            re.MULTILINE,
+        )
+        backlog_text, count = pattern.subn(r"\1registered\3", backlog_text)
         if count != 1:
             print(
                 f"error: could not flip backlog status for {backlog_id} "
-                f"(matched {count} rows); manifest not written",
+                f"(matched {count} rows); nothing written",
                 file=sys.stderr,
             )
             return 1
+        # Deferred until every validation has passed. Copying inside this loop
+        # left an unregistered PNG under assets/<category>/ when a later step
+        # failed, and the generator discovers assets by scanning those folders —
+        # so a partial failure would have put unapproved art into the collection.
+        pending_copies.append((Path(result["source"]), ROOT / result["production_path"]))
         registered.append(backlog_id)
 
     # Pairing rules are appended after every asset in the batch is in the
@@ -343,6 +353,11 @@ def register(results: list[dict], approved: set[str], batch_note: str) -> int:
             compatibility["requires"].append(rule)
             existing.add((rule["trait"], rule["requires"]))
             added_rules.append(f"{rule['trait']} -> {rule['requires']}")
+
+    # Everything validated; now commit the side effects.
+    for source, destination in pending_copies:
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)  # exact approved bytes
 
     MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n")
     BACKLOG.write_text(backlog_text)

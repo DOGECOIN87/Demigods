@@ -11,6 +11,7 @@ from scripts import build_asset_prompts, bulk_intake
 
 ROOT = Path(__file__).resolve().parent.parent
 BACKLOG_TEXT = (ROOT / "docs" / "trait-production-backlog.md").read_text()
+MANIFEST_PATH = ROOT / "assets" / "asset_manifest.json"
 
 
 class HelperTests(unittest.TestCase):
@@ -161,6 +162,86 @@ class HairPairingRuleTests(unittest.TestCase):
             "assets/outfits/outfit_006_black_layered_hooded_robe.png", manifest
         )
         self.assertIsNone(rule)
+
+
+class RegistrationStatusTests(unittest.TestCase):
+    """The status flip must accept every pre-registration state, and only those."""
+
+    def flip(self, backlog_id: str, row_status: str) -> tuple[str, int]:
+        import re
+
+        row = (
+            f"| {backlog_id} | rear aura | Some effect | `AURA`, cell 1 | dep | "
+            f"`assets/rear_auras/aura_rear_099_x.png` | `prompts/12_auras.md` | {row_status} |"
+        )
+        pattern = re.compile(
+            rf"^(\| {re.escape(backlog_id)} \|.*\| )(pending|candidate|approved)( \|?\s*)$",
+            re.MULTILINE,
+        )
+        return pattern.subn(r"\1registered\3", row)
+
+    def test_pending_flips(self) -> None:
+        text, count = self.flip("DG-900", "pending")
+        self.assertEqual(count, 1)
+        self.assertTrue(text.rstrip().endswith("| registered |"))
+
+    def test_candidate_flips(self) -> None:
+        """Art in hand awaiting review is exactly what gets registered."""
+        _, count = self.flip("DG-900", "candidate")
+        self.assertEqual(count, 1)
+
+    def test_approved_flips(self) -> None:
+        _, count = self.flip("DG-900", "approved")
+        self.assertEqual(count, 1)
+
+    def test_already_registered_does_not_flip(self) -> None:
+        """Guards against a re-run silently double-registering an asset."""
+        _, count = self.flip("DG-900", "registered")
+        self.assertEqual(count, 0)
+
+    def test_qa_failed_does_not_flip(self) -> None:
+        _, count = self.flip("DG-900", "QA-failed")
+        self.assertEqual(count, 0)
+
+
+class RegistrationAtomicityTests(unittest.TestCase):
+    """A failed registration must leave no PNG under assets/<category>/.
+
+    The generator discovers traits by scanning those folders, so a file copied
+    before a later validation failed would put unapproved art straight into the
+    collection while the manifest still disowned it.
+    """
+
+    def test_failed_registration_copies_nothing(self) -> None:
+        import json as _json
+
+        results = [{
+            "id": "DG-999",
+            "passed": True,
+            "filename": "aura_rear_099_nonexistent.png",
+            "source": "/nonexistent/aura_rear_099_nonexistent.png",
+            "sha256": "0" * 64,
+            "category": "rear_auras",
+            "production_path": "assets/rear_auras/aura_rear_099_nonexistent.png",
+            "description": "test",
+            "composite": "docs/qa/composites/x.png",
+            "failures": [],
+        }]
+        manifest_before = MANIFEST_PATH.read_text()
+        backlog_before = (ROOT / "docs" / "trait-production-backlog.md").read_text()
+
+        # DG-999 is in no backlog row, so the status flip fails after the
+        # manifest entry is staged in memory.
+        code = bulk_intake.register(results, {"DG-999"}, "docs/qa/test.json")
+
+        self.assertEqual(code, 1)
+        self.assertFalse((ROOT / results[0]["production_path"]).exists())
+        self.assertEqual(MANIFEST_PATH.read_text(), manifest_before)
+        self.assertEqual(
+            (ROOT / "docs" / "trait-production-backlog.md").read_text(), backlog_before
+        )
+        # Manifest still parses and is unchanged in length.
+        _json.loads(manifest_before)
 
 
 class PromptResolutionTests(unittest.TestCase):

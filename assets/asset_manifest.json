@@ -864,6 +864,43 @@
         "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing"
       },
       "approved_on": "2026-07-28"
+    },
+    {
+      "id": "aura_rear_018",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_018_blue_flame_ring.png",
+      "status": "production_ready",
+      "sha256": "37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-161",
+      "qa_composite": "docs/qa/composites/aura_rear_018_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "generator_script": "scripts/extract_effect_layer.py",
+        "candidate_path": "images/trait_candidates/grok_1784755724820.png",
+        "candidate_sha256": "9b8044ea7e6b6b7f78d7cf2cfe8554b327f7cc3f2362169015be66aaffb0ee9f",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "blue rising flame above a luminous floor ring",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [
+          "crop_to_alpha_content_rect_206_0_1048_1254",
+          "extract_effect_layer_field_white_cut_232",
+          "target_height_950_center_y_660"
+        ],
+        "note": "Source carries a baked transparency checkerboard inside a letterboxed frame; the content crop precedes extraction so the black bars are not read as opaque form.",
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/aura_rear_018_blue_flame_ring_2026-07-28.md",
+      "prompt": "prompts/12_auras.md"
     }
   ],
   "approved_visual_references": [
