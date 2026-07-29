@@ -181,6 +181,36 @@ class PromptResolutionTests(unittest.TestCase):
         }
         self.assertTrue(non_base <= set(build_asset_prompts.CATEGORY_LAYER), non_base)
 
+    def test_every_emitted_gate_command_is_runnable(self) -> None:
+        """GATES holds prose for layer 02; a per-asset prompt must print flags.
+
+        The rear-aura template reads "--floor-aura for ground-plane rings;
+        --trait for body-centred glows", which is guidance for a human reading
+        the category template and an unrunnable command if pasted verbatim.
+        """
+        for row in self.rows.values():
+            if row["category"] not in build_asset_prompts.CATEGORY_LAYER:
+                continue
+            with self.subTest(asset=row["id"]):
+                flags = build_asset_prompts.gate_flags(row)
+                for token in flags.split():
+                    self.assertTrue(
+                        token.startswith("--") or token.replace(".", "").isdigit(),
+                        f"{row['id']} gate contains prose: {flags!r}",
+                    )
+
+    def test_ground_plane_rings_gate_as_floor_auras(self) -> None:
+        """A ring is seated on the baseline, so --trait would fail it by design."""
+        ring = next(r for r in self.rows.values() if "fire ring" in r["description"].lower())
+        self.assertEqual(build_asset_prompts.gate_flags(ring), "--floor-aura")
+
+    def test_body_centred_glows_gate_as_traits(self) -> None:
+        glow = next(
+            r for r in self.rows.values()
+            if r["category"] == "rear aura" and "ring" not in r["description"].lower()
+        )
+        self.assertEqual(build_asset_prompts.gate_flags(glow), "--trait")
+
     def test_resolved_prompt_has_no_placeholders_left(self) -> None:
         prompt = build_asset_prompts.build_prompt(self.rows["DG-029"], self.keys)
         for placeholder in ("[SPECIFY", "[COLOR]", "[NUM]", "[STYLE]", "[TYPE]"):

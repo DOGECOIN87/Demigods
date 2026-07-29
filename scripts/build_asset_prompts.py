@@ -114,6 +114,24 @@ def parse_backlog(text: str) -> list[dict[str, str]]:
     return rows
 
 
+def gate_flags(row: dict[str, str]) -> str:
+    """The runnable rig-gate flags for one asset.
+
+    `GATES` is written for the per-category templates, where layer 02 carries
+    prose — "--floor-aura for ground-plane rings; --trait for body-centred
+    glows" — because the correct mode genuinely differs per asset. A ground-plane
+    ring is seated on the foot baseline so the character stands inside it, which
+    puts its near arc below Y 1139 and fails `--trait` by design; a body-centred
+    glow has no such exemption. A per-asset prompt has to print one runnable
+    command, so resolve that choice from the asset's own description.
+    """
+    layer = CATEGORY_LAYER[row["category"]]
+    if layer == 2:
+        return "--floor-aura" if "ring" in row["description"].lower() else "--trait"
+    flags, _ = GATES[layer]
+    return flags
+
+
 def resolve_reference(reference: str, keys: dict[str, str]) -> tuple[str, str]:
     """Split a backlog reference cell into (sheet path, cell locator)."""
     match = re.match(r"`([A-Z]+)`,?\s*(.*)", reference)
@@ -127,7 +145,8 @@ def build_prompt(row: dict[str, str], keys: dict[str, str]) -> str:
     layer = CATEGORY_LAYER[row["category"]]
     spec = next(c for c in CATS if c[0] == layer)
     _, title, attach, _target, bullets, exclude, _fname = spec
-    gate_cmd, proportion = GATES[layer]
+    _, proportion = GATES[layer]
+    gate_cmd = gate_flags(row)
     sheet, cell = resolve_reference(row["reference"], keys)
     filename = Path(row["path"]).name
 

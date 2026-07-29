@@ -41,11 +41,11 @@ from PIL import Image, ImageDraw
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 try:  # imported as `scripts.bulk_intake` by the tests
-    from scripts.build_asset_prompts import CATEGORY_LAYER, parse_backlog
+    from scripts.build_asset_prompts import CATEGORY_LAYER, gate_flags, parse_backlog
     from scripts.build_trait_prompts import GATES
     from scripts.rig_gate_report import analyze, load_rig
 except ImportError:  # run directly as a script
-    from build_asset_prompts import CATEGORY_LAYER, parse_backlog  # type: ignore[no-redef]
+    from build_asset_prompts import CATEGORY_LAYER, gate_flags, parse_backlog  # type: ignore[no-redef]
     from build_trait_prompts import GATES  # type: ignore[no-redef]
     from rig_gate_report import analyze, load_rig  # type: ignore[no-redef]
 
@@ -200,8 +200,16 @@ def inspect(drop_dir: Path, rows: list[dict]) -> list[dict]:
         result["failures"] += [f"binary:{c}={v}" for c, p, v in checks if not p]
 
         if not result["failures"]:
+            # A ground-plane ring is seated on the foot baseline so the character
+            # stands inside it, putting its near arc below Y 1139. Gating every
+            # candidate as a partial layer would fail that whole family on
+            # max_bounds for doing exactly what it is designed to do.
+            flags = gate_flags(row)
+            result["gate_mode"] = flags
             gate = analyze(
-                candidate, rig, canvas, tolerance=1, trait=True,
+                candidate, rig, canvas, tolerance=1,
+                trait="--trait" in flags,
+                floor_aura="--floor-aura" in flags,
                 max_width_ratio=max_width_ratio_for(row["category"]),
             )
             result["rig_gate"] = {

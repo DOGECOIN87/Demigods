@@ -1,0 +1,7 @@
+# Candidate drops are working files. They reach the repository only by being
+# registered to assets/<category>/ with `bulk_intake.py --register-approved`,
+# which copies the exact approved bytes. Keep the folder, ignore its contents.
+*.png
+*.jpg
+*.jpeg
+*.webp
