@@ -1,38 +1,37 @@
 #!/usr/bin/env python3
 """Open a sealed standing collar so the neck beneath reads through it.
 
-`outfit_002`'s collar was painted as a closed cone: the opening is opaque, so the
-base body's fully-rendered neck never showed and the head read as sitting on a
-tube rather than joining a body.
+`outfit_002` and `outfit_003` were painted with closed collars. In 002 the
+opening is filled with the collar's own dark interior; in 003 a duller neck is
+painted into the garment itself. Either way the base body's neck never showed and
+the head read as sitting on a tube.
 
-Four earlier approaches were tried and rejected, and the reason they failed is
-the reason this one works. A geometric hole cut (feathered or crisp) and a
-colour region-grow each **invent their own boundary**, so they produce hard box
-edges, chewed corners, or eat the collar rim — rim and interior are both dark, so
-colour cannot separate them.
+The cut has two properties, and both were arrived at by rejecting the
+alternative.
 
-The boundary already exists in the artwork. The collar rim lies OUTSIDE the
-neck's silhouette and the painted interior lies INSIDE it, so the base body's
-neck alpha separates them exactly:
+**The boundary comes from the artwork, not from geometry I invent.** The collar
+rim lies outside the neck's silhouette and the interior lies inside it, so the
+base body's own anti-aliased neck alpha separates them exactly. Earlier attempts
+that invented a boundary — a feathered hole, a colour region-grow, a fixed
+column — produced mushy edges, ate the rim (rim and interior are both dark), or
+left hard vertical edges where the column crossed the widening silhouette.
 
-    new_outfit_alpha = outfit_alpha * (1 - neck_mask)
+**The bottom edge is crisp, not faded.** A first working version crossfaded the
+removal out over ~18 rows. It passed every measurement and looked wrong: skin and
+dark interior blended into a muddy translucent smear, because a garment edge is a
+hard line and a gradient does not read as fabric. The cut now ends on the
+collar's own front rim, traced from the image as a shallow arc, with sub-pixel
+accuracy from a fractional final row.
 
-Because that alpha is anti-aliased, the resulting edge is too — no feathering
-required, and nothing invented.
+Rim parameters are per-garment because collars differ; trace them by finding the
+row where the interior gives way to the garment's front face:
 
-Two shaping terms keep it reading as a garment rather than a hole:
-
-* the opening narrows from `half_top` to `half_bottom` into a V, following the
-  collar's own front line instead of a straight column, which is what removed
-  the hard vertical edges of the column-based attempt;
-* removal fades out over the lower part of the span, so the garment closes over
-  the chest instead of ending on a horizontal cut.
+    outfit_002  rim_centre 502  rim_rise 12  half 32   (dark interior -> teal placket)
+    outfit_003  rim_centre 520  rim_rise 27  half 30   (painted neck  -> white shirt)
 
 Usage:
-    python scripts/open_collar.py \\
-        assets/outfits/outfit_002_storm_guardian_pose_002.png \\
-        assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png \\
-        --out out.png --top 474 --close-by 512 --half-top 33 --half-bottom 9
+    python scripts/open_collar.py OUTFIT BASE --in-place \\
+        --rim-centre 502 --rim-rise 12 --half 32
 """
 from __future__ import annotations
 
@@ -41,20 +40,15 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parent.parent
 CENTER_X = 627
-WALL_SOFTEN = 3.0  # px of horizontal falloff at the V walls
+TOP = 472          # first row above the collar; nothing above this is touched
+WALL_SOFTEN = 1.5  # px of horizontal falloff at the opening's walls
 
 
-def smoothstep(t: float) -> float:
-    t = max(0.0, min(1.0, t))
-    return t * t * (3.0 - 2.0 * t)
-
-
-def open_collar(outfit: Image.Image, base: Image.Image, *, top: int, close_by: int,
-                half_top: float, half_bottom: float, center_x: int = CENTER_X,
-                fade_from: float = 0.55) -> tuple[Image.Image, int]:
-    """Subtract the neck from the collar interior. Returns (image, px cleared)."""
+def open_collar(outfit: Image.Image, base: Image.Image, *, rim_centre: float,
+                rim_rise: float, half: float, center_x: int = CENTER_X,
+                top: int = TOP) -> tuple[Image.Image, int]:
+    """Clear the collar interior above the rim arc. Returns (image, px cleared)."""
     out = outfit.copy()
     alpha = out.getchannel("A")
     oal = alpha.load()
@@ -62,19 +56,24 @@ def open_collar(outfit: Image.Image, base: Image.Image, *, top: int, close_by: i
     width, height = out.size
     cleared = 0
 
-    for y in range(max(0, top), min(height, close_by + 1)):
-        t = (y - top) / max(close_by - top, 1)
-        half = half_top + (half_bottom - half_top) * t
-        strength = 1.0 - smoothstep(max(0.0, (t - fade_from) / max(1.0 - fade_from, 1e-6)))
-        if strength <= 0.0:
+    for x in range(max(0, int(center_x - half) - 2), min(width, int(center_x + half) + 3)):
+        distance = abs(x - center_x)
+        if distance > half + 2:
             continue
-        for x in range(max(0, int(center_x - half) - 1), min(width, int(center_x + half) + 2)):
-            distance = abs(x - center_x)
-            if distance <= half - 2:
-                wall = 1.0
-            else:
-                wall = max(0.0, 1.0 - (distance - (half - 2)) / WALL_SOFTEN)
-            mask = (bal[x, y] / 255.0) * strength * wall
+        if distance <= half - WALL_SOFTEN:
+            side = 1.0
+        else:
+            side = max(0.0, 1.0 - (distance - (half - WALL_SOFTEN)) / (WALL_SOFTEN + 2.0))
+        if side <= 0.0:
+            continue
+
+        rim = rim_centre - rim_rise * ((x - center_x) / half) ** 2
+        rim_row = int(rim)
+        for y in range(top, min(rim_row + 1, height)):
+            # Full removal above the rim; the final row takes the fractional
+            # remainder so the edge lands with sub-pixel accuracy.
+            fraction = 1.0 if y < rim_row else (rim - rim_row)
+            mask = (bal[x, y] / 255.0) * side * fraction
             if mask <= 0.0:
                 continue
             before = oal[x, y]
@@ -107,18 +106,20 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("base", type=Path)
     parser.add_argument("--out", type=Path)
     parser.add_argument("--in-place", action="store_true")
-    parser.add_argument("--top", type=int, required=True)
-    parser.add_argument("--close-by", type=int, required=True)
-    parser.add_argument("--half-top", type=float, required=True)
-    parser.add_argument("--half-bottom", type=float, required=True)
+    parser.add_argument("--rim-centre", type=float, required=True,
+                        help="rim row at the centre column")
+    parser.add_argument("--rim-rise", type=float, required=True,
+                        help="how far the rim rises toward the opening's edges")
+    parser.add_argument("--half", type=float, required=True,
+                        help="half-width of the opening in px")
     args = parser.parse_args(argv)
 
     outfit = Image.open(args.outfit).convert("RGBA")
     base = Image.open(args.base).convert("RGBA")
     before = neck_visibility(outfit, base)
     result, cleared = open_collar(
-        outfit, base, top=args.top, close_by=args.close_by,
-        half_top=args.half_top, half_bottom=args.half_bottom,
+        outfit, base, rim_centre=args.rim_centre,
+        rim_rise=args.rim_rise, half=args.half,
     )
     after = neck_visibility(result, base)
 

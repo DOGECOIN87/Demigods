@@ -67,34 +67,54 @@ and the head read as sitting on a tube.
 | Outfit | neck visible before | after |
 |---|---|---|
 | `outfit_001` | 23.8% | 23.8% |
-| `outfit_002` | **17.2%** | **25.8%** |
-| `outfit_003` | **16.1%** | **23.3%** |
+| `outfit_002` | **17.2%** | **26.3%** |
+| `outfit_003` | **16.1%** | **30.3%** |
 | `outfit_004` | 39.1% | 39.1% |
 | `outfit_005` | 19.8% | 19.8% |
 
-### Four approaches that failed, and why the fifth works
+The two collars are sealed in different ways. `outfit_002`'s opening is filled
+with the collar's own dark interior. `outfit_003` has a *duller neck painted into
+the garment* — measured at `(194,141,114)` against the base body's brighter skin —
+so the character wore a flat, lifeless neck.
 
-Rejected: a feathered geometric hole (mushy edges, residue survived), a crisp
-geometric cut (chewed fragments at the collar corners), a colour region-grow
-(consumed the collar rim along with the interior — both are dark, so colour
-cannot separate them — and left a hard bounding-box edge), and a fixed-column
-alpha subtract (hard vertical edges where the column clipped).
+### Five approaches, and what separated the last one
 
-Every one of them **invented its own boundary**. The working approach uses the
-boundary already present in the artwork: the collar rim lies *outside* the neck's
-silhouette and the painted interior lies *inside* it, so the base body's neck
-alpha separates them exactly.
+Rejected, in order: a feathered geometric hole (mushy edges, residue survived), a
+crisp geometric cut (chewed fragments at the collar corners), a colour
+region-grow (consumed the rim along with the interior — both are dark, so colour
+cannot separate them — and clipped to a visible bounding box), a fixed-column
+alpha subtract (hard vertical edges where the column crossed the widening
+silhouette), and a **V-taper with a soft bottom fade**.
+
+That fifth one is worth recording because it passed every measurement and still
+looked wrong. It cross-faded removal out over ~18 rows, and skin blending into
+dark teal produced a muddy translucent smear — the collar's top rim read as a
+torn edge and there was no neckline at all. **A garment edge is a hard line; a
+gradient does not read as fabric.**
+
+The version that works combines two things:
+
+*The boundary comes from the artwork, not from invented geometry.* The rim lies
+outside the neck's silhouette and the interior inside it, so the base body's own
+anti-aliased neck alpha separates them exactly, and the horizontal edge inherits
+that anti-aliasing:
 
 ```
 new_outfit_alpha = outfit_alpha * (1 - neck_mask)
 ```
 
-Because that alpha is anti-aliased, the resulting edge is too — no feathering
-needed and nothing invented. Two shaping terms make it read as a garment: the
-opening narrows from 33px to 9px half-width into a V following the collar's own
-front line (this is what removed the hard vertical edges), and removal fades out
-over the lower span so the garment closes over the chest rather than ending on a
-horizontal cut. Implemented in `scripts/open_collar.py`.
+*The bottom edge is crisp and lands on the collar's own front rim.* The rim was
+traced from each image — the row where the interior gives way to the garment's
+front face — and fitted as a shallow arc, with a fractional final row for
+sub-pixel accuracy. Per-garment because collars differ:
+
+| Outfit | rim centre | rim rise | half-width | transition traced |
+|---|---|---|---|---|
+| `outfit_002` | 502 | 12 | 32 | dark interior → teal placket |
+| `outfit_003` | 520 | 27 | 30 | painted neck → white shirt |
+
+Implemented in `scripts/open_collar.py`; a test asserts the alpha transition
+completes within two rows, so the fade cannot come back.
 
 ### Residual spill on outfit_002
 
