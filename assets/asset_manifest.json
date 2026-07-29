@@ -1274,5 +1274,224 @@
     "back_accessories",
     "rear_auras",
     "front_auras"
+  ],
+  "legendary_one_of_ones": [
+    {
+      "id": "legendary_001",
+      "edition": "1 of 1",
+      "title": "Sovereign of the Solar Court",
+      "domain": "Solar",
+      "path": "assets/legendary/legendary_001_sovereign_of_the_solar_court.png",
+      "status": "production_ready",
+      "sha256": "dfc74d7600f82f008e0b1ed528deb366ebe9fe9d27301e7f8983707aafa1df2f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "background_005_solar_sky_temple / outfit_005_sun_temple",
+      "one_of_one_element": "Solar corona ring behind the figure with light rays crossing in front of the shoulders.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_002",
+      "edition": "1 of 1",
+      "title": "Oracle of the Waning Crescent",
+      "domain": "Lunar",
+      "path": "assets/legendary/legendary_002_oracle_of_the_waning_crescent.png",
+      "status": "production_ready",
+      "sha256": "eafd1aaf1bd485cb2a27070a13c30c24421ee485b005f9a96d4deede6769b88a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "background_006_moonlit_marble_balcony / outfit_004_lunar_oracle",
+      "one_of_one_element": "Crescent light held in a raised hand, silver light wrapping the arm.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_003",
+      "edition": "1 of 1",
+      "title": "Heir of the Celestial Throne",
+      "domain": "Celestial",
+      "path": "assets/legendary/legendary_003_heir_of_the_celestial_throne.png",
+      "status": "production_ready",
+      "sha256": "624589af8c93f44cb8bfcdb8dc9df1aef206a50807d45bb4cecb5ab08ed67fda",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "background_001_celestial_throne_hall / outfit_001_celestial_scholar",
+      "one_of_one_element": "Star-mapped cape spilling across the throne-hall floor with a held sceptre.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_004",
+      "edition": "1 of 1",
+      "title": "Keeper of the Arcane Index",
+      "domain": "Arcane",
+      "path": "assets/legendary/legendary_004_keeper_of_the_arcane_index.png",
+      "status": "production_ready",
+      "sha256": "99280bb61d7b256eb37c4f6b78a360ec4ea7d1c1c6a7609a060769f452b86fe6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "background_003_arcane_library",
+      "one_of_one_element": "Open tome lit from within and sigil rings passing both behind and in front of the body.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_005",
+      "edition": "1 of 1",
+      "title": "Warden of the Violet Void",
+      "domain": "Void",
+      "path": "assets/legendary/legendary_005_warden_of_the_violet_void.png",
+      "status": "production_ready",
+      "sha256": "f0bfe5f2a136e4165c70630752fc0b8fbf11f967aaac44e5b891a74e6d7e494f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "background_008_violet_void_portal / aura_rear_004_violet_void_flame",
+      "one_of_one_element": "Void singularity held in one palm, hem dissolving into drifting embers.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_006",
+      "edition": "1 of 1",
+      "title": "Tempest Sovereign",
+      "domain": "Storm",
+      "path": "assets/legendary/legendary_006_tempest_sovereign.png",
+      "status": "production_ready",
+      "sha256": "46a392e2b0186d5796b0a553289a88fc5d5fb9a0b905fadd9cff910923936b22",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "outfit_002_storm_guardian / lightning aura",
+      "one_of_one_element": "Lightning branching into a raised palm, arcs crossing behind and in front of the cloak.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    },
+    {
+      "id": "legendary_007",
+      "edition": "1 of 1",
+      "title": "Verdant Archivist",
+      "domain": "Verdant",
+      "path": "assets/legendary/legendary_007_verdant_archivist.png",
+      "status": "production_ready",
+      "sha256": "312f529d8e9bc2ecc89e700997f27adab2a31672d343f3e8f0b47df03f9ee590",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "composition": "flattened_full_bleed",
+      "domain_root": "outfit_003_verdant_alchemist",
+      "one_of_one_element": "Living vines and drifting spores wrapping the figure, open tome glowing green.",
+      "prompt": "prompts/22_legendary_one_of_one.md",
+      "provenance": {
+        "origin": "native_image_generation",
+        "resolved_prompt": "prompts/batch_legendary.md",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "postprocessing": [],
+        "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+    }
   ]
 }

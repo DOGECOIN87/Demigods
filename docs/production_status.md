@@ -72,6 +72,7 @@ Backlog status tally: pending 128, candidate 0, QA-failed 0, approved 0, registe
 - Batch QA and registration pipeline (`scripts/bulk_intake.py`) with a single-pass review sheet and automatic hair colour-pairing rules
 - Rule-aware combination-space estimation and supply-saturation reporting in the generator preflight
 - Global-finish definition, procedural builder, and scoped `--global-finish` gate mode
+- Legendary 1-of-1 set: seven flattened compositions, prompt suite, dedicated validator, and a manifest ledger held separate from the trait ledger
 
 ## Registered production assets
 
@@ -160,7 +161,7 @@ Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte 
 - Bounds-clip tests: **11 passed**
 - Rule-aware saturation tests: **11 passed**
 - Bulk-intake and resolved-prompt tests: **21 passed**
-- Combined regression total: **134 passed**
+- Combined regression total: **184 passed**
 - Native 1254 pose-candidate binary QA: **5 of 5 passed**; each retains a missing-ICC-profile warning for manual sRGB confirmation
 - Registered base family: **5 of 5 passed** the rig gate and binary intake
 - Background 001: **passed, human-approved, registered**; SHA-256 `2a82caf4833bc1f86f6d9ed1b7ba8a04c2344860a12b74f36f26c7cdeb4750d9`
