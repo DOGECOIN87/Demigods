@@ -15,10 +15,16 @@ try:
 except ImportError:  # Direct execution from scripts/.
     import validate_assets  # type: ignore[no-redef]
 
+# The collection totals 777: `supply` is the generative half, and the remainder
+# is minted as legendary 1-of-1 pieces at reserved token IDs. Locking the
+# generative number alone would let the two drift apart, so the invariant checked
+# is supply + len(legendary_token_ids) == COLLECTION_SIZE.
+COLLECTION_SIZE = 777
+
 LOCKED_COLLECTION: dict[str, Any] = {
     "name": "Demigods",
     "symbol": "DEMIGODS",
-    "supply": 777,
+    "supply": 770,
     "token_id_start": 1,
     "token_id_padding": 4,
     "canvas": {
@@ -117,10 +123,35 @@ def validate_collection(collection: dict[str, Any]) -> tuple[list[str], list[str
         "master_rig",
         "lighting",
         "optional_categories",
+        "legendary_token_ids",
     }
     extras = sorted(set(collection) - allowed_top_level)
     if extras:
         warnings.append(f"unrecognized collection keys: {', '.join(extras)}")
+
+    # Supply and reserved legendary IDs are two halves of one number; validate the
+    # sum rather than either alone, so they cannot drift apart silently.
+    reserved = collection.get("legendary_token_ids", [])
+    if not isinstance(reserved, list) or not all(
+        isinstance(v, int) and not isinstance(v, bool) and v >= 1 for v in reserved
+    ):
+        errors.append("legendary_token_ids must be an array of positive integers")
+    else:
+        if len(set(reserved)) != len(reserved):
+            errors.append("legendary_token_ids contains duplicate IDs")
+        supply_value = collection.get("supply")
+        if isinstance(supply_value, int):
+            total = supply_value + len(reserved)
+            if total != COLLECTION_SIZE:
+                errors.append(
+                    f"supply {supply_value} plus {len(reserved)} legendary IDs totals {total}; "
+                    f"the collection is {COLLECTION_SIZE}"
+                )
+            out_of_range = [v for v in reserved if v > COLLECTION_SIZE]
+            if out_of_range:
+                errors.append(
+                    f"legendary_token_ids outside the collection: {out_of_range}"
+                )
 
     optional = collection.get("optional_categories")
     if optional is not None:

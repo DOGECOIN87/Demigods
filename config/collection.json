@@ -1,8 +1,8 @@
 {
   "name": "Demigods",
   "symbol": "DEMIGODS",
-  "description": "A 777-piece modular chibi-fantasy generative collection.",
-  "supply": 777,
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "supply": 770,
   "token_id_start": 1,
   "token_id_padding": 4,
   "canvas": {
@@ -53,5 +53,14 @@
     "rear_auras": 0.82,
     "hair_back": 0.62,
     "global_finish": 0.75
-  }
+  },
+  "legendary_token_ids": [
+    111,
+    222,
+    333,
+    444,
+    555,
+    666,
+    777
+  ]
 }

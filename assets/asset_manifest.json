@@ -1305,7 +1305,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 111,
+      "token_label": "0111"
     },
     {
       "id": "legendary_002",
@@ -1336,7 +1338,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 222,
+      "token_label": "0222"
     },
     {
       "id": "legendary_003",
@@ -1367,7 +1371,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 333,
+      "token_label": "0333"
     },
     {
       "id": "legendary_004",
@@ -1398,7 +1404,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 444,
+      "token_label": "0444"
     },
     {
       "id": "legendary_005",
@@ -1429,7 +1437,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 555,
+      "token_label": "0555"
     },
     {
       "id": "legendary_006",
@@ -1460,7 +1470,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 666,
+      "token_label": "0666"
     },
     {
       "id": "legendary_007",
@@ -1491,7 +1503,9 @@
         "note": "Complete character-and-environment illustration, not a modular layer. Bypasses generate_777.py, which composes layers. Deliberately excluded from the global finish and the background depth pass: both exist to reconcile separately-produced modular parts, and this is painted as one internally consistent image."
       },
       "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md"
+      "qa_report": "docs/qa/legendary_one_of_one_2026-07-29.md",
+      "token_id": 777,
+      "token_label": "0777"
     }
   ]
 }

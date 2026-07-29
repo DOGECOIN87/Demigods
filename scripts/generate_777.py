@@ -40,7 +40,13 @@ LAYER_ORDER = [
     "global_finish",
 ]
 REQUIRED_CATEGORIES = {"backgrounds", "base_bodies"}
-PRODUCTION_SUPPLY = 777
+# The collection is 777 pieces: 770 composed from modular traits plus 7 legendary
+# 1-of-1 illustrations that are painted whole and placed at reserved token IDs.
+# PRODUCTION_SUPPLY is the *generative* count, since that is all this script
+# produces; COLLECTION_SIZE is what the collection totals once legendaries land.
+PRODUCTION_SUPPLY = 770
+LEGENDARY_COUNT = 7
+COLLECTION_SIZE = PRODUCTION_SUPPLY + LEGENDARY_COUNT
 
 
 @dataclass(frozen=True)
@@ -211,6 +217,38 @@ def saturation_report(supply: int, valid_space: int, fraction: float, ceiling: i
     return "\n".join(lines)
 
 
+def reserved_token_ids(collection: dict[str, Any]) -> list[int]:
+    """Token IDs held back for the legendary 1-of-1 pieces.
+
+    Reserving is what keeps the two halves of the collection from colliding: the
+    generator must not mint a token at an ID a legendary already owns, and a
+    legendary must not be dropped on top of a generated one.
+    """
+    raw = collection.get("legendary_token_ids", [])
+    if not isinstance(raw, list):
+        raise ValueError("legendary_token_ids must be an array of integers")
+    ids = []
+    for value in raw:
+        if not isinstance(value, int) or isinstance(value, bool) or value < 1:
+            raise ValueError(f"legendary_token_ids entries must be positive integers; got {value!r}")
+        ids.append(value)
+    if len(set(ids)) != len(ids):
+        raise ValueError("legendary_token_ids contains duplicates")
+    return sorted(ids)
+
+
+def allocate_token_ids(count: int, reserved: list[int], start: int = 1) -> list[int]:
+    """`count` sequential IDs from `start`, skipping every reserved ID."""
+    blocked = set(reserved)
+    ids: list[int] = []
+    candidate = start
+    while len(ids) < count:
+        if candidate not in blocked:
+            ids.append(candidate)
+        candidate += 1
+    return ids
+
+
 def raw_signature(selection: dict[str, Path]) -> str:
     return "|".join(
         f"{category}:{selection[category].name}"
@@ -284,7 +322,9 @@ def generate_tokens(
     supply: int,
     max_attempts: int,
     optional: dict[str, float] | None = None,
+    reserved: list[int] | None = None,
 ) -> tuple[list[GeneratedToken], int]:
+    token_ids = allocate_token_ids(supply, reserved or [])
     seen: set[str] = set()
     tokens: list[GeneratedToken] = []
     attempts = 0
@@ -301,7 +341,7 @@ def generate_tokens(
             continue
         seen.add(digest)
 
-        token_id = len(tokens) + 1
+        token_id = token_ids[len(tokens)]
         tokens.append(
             GeneratedToken(
                 token_id=token_id,
@@ -436,6 +476,7 @@ def generate_collection(
             f"theoretical combination space is only {space}; at least {supply} are required"
         )
 
+    reserved = reserved_token_ids(collection)
     tokens, attempts = generate_tokens(
         rng=random.Random(seed),
         assets=assets,
@@ -443,6 +484,7 @@ def generate_collection(
         supply=supply,
         max_attempts=max_attempts,
         optional=optional,
+        reserved=reserved,
     )
     if len(tokens) != supply:
         raise ValueError(
@@ -524,6 +566,17 @@ def main(argv: list[str] | None = None) -> int:
         compatibility = load_json(args.compatibility)
         configured_supply = int(collection.get("supply", PRODUCTION_SUPPLY))
         supply = args.supply if args.supply is not None else configured_supply
+        reserved_count = len(reserved_token_ids(collection))
+        if reserved_count != LEGENDARY_COUNT and not args.allow_nonstandard_supply:
+            raise ValueError(
+                f"expected {LEGENDARY_COUNT} reserved legendary token IDs; "
+                f"config declares {reserved_count}"
+            )
+        if supply + reserved_count != COLLECTION_SIZE and not args.allow_nonstandard_supply:
+            raise ValueError(
+                f"generative supply {supply} plus {reserved_count} legendary IDs must total "
+                f"{COLLECTION_SIZE}; --allow-nonstandard-supply is reserved for tests"
+            )
         if supply != PRODUCTION_SUPPLY and not args.allow_nonstandard_supply:
             raise ValueError(
                 f"production supply must equal exactly {PRODUCTION_SUPPLY}; "

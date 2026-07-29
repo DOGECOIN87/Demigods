@@ -17,6 +17,9 @@ class ValidateConfigTests(unittest.TestCase):
     def collection(self) -> dict[str, object]:
         value = copy.deepcopy(validate_config.LOCKED_COLLECTION)
         value["description"] = "A 777-piece modular chibi-fantasy generative collection."
+        # `supply` is only the generative half; the reserved legendary IDs make up
+        # the rest, and the validator checks the sum rather than either alone.
+        value["legendary_token_ids"] = [111, 222, 333, 444, 555, 666, 777]
         return value
 
     def inventory(self, root: Path, entries: list[tuple[str, str]]) -> dict[str, str]:
@@ -26,6 +29,18 @@ class ValidateConfigTests(unittest.TestCase):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(b"placeholder")
         return validate_config.discover_trait_inventory(assets)
+
+    def test_supply_and_reserved_ids_must_total_the_collection(self) -> None:
+        value = self.collection()
+        value["legendary_token_ids"] = [111, 222]
+        errors, _ = validate_config.validate_collection(value)
+        self.assertTrue(any("totals" in e for e in errors), errors)
+
+    def test_reserved_ids_outside_the_collection_are_rejected(self) -> None:
+        value = self.collection()
+        value["legendary_token_ids"] = [111, 222, 333, 444, 555, 666, 900]
+        errors, _ = validate_config.validate_collection(value)
+        self.assertTrue(any("outside the collection" in e for e in errors), errors)
 
     def test_locked_collection_and_empty_rules_pass(self) -> None:
         errors, warnings = validate_config.validate_collection(self.collection())

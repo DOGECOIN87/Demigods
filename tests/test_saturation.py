@@ -104,5 +104,53 @@ class SaturationReportTests(unittest.TestCase):
         self.assertNotIn("saturation", report)
 
 
+
+
+class ReservedTokenIdTests(unittest.TestCase):
+    """Legendary IDs must be held back so the two halves cannot collide.
+
+    The generator must never mint a token at an ID a legendary owns, and a
+    legendary must never be dropped on top of a generated one.
+    """
+
+    def test_reserved_ids_are_skipped(self) -> None:
+        ids = generate_777.allocate_token_ids(10, [3, 7])
+        self.assertNotIn(3, ids)
+        self.assertNotIn(7, ids)
+        self.assertEqual(len(ids), 10)
+
+    def test_allocation_stays_sequential_and_unique(self) -> None:
+        ids = generate_777.allocate_token_ids(20, [5, 11, 19])
+        self.assertEqual(ids, sorted(ids))
+        self.assertEqual(len(set(ids)), len(ids))
+
+    def test_no_reservations_is_plain_counting(self) -> None:
+        self.assertEqual(generate_777.allocate_token_ids(5, []), [1, 2, 3, 4, 5])
+
+    def test_production_split_totals_the_collection(self) -> None:
+        self.assertEqual(
+            generate_777.PRODUCTION_SUPPLY + generate_777.LEGENDARY_COUNT,
+            generate_777.COLLECTION_SIZE,
+        )
+        self.assertEqual(generate_777.COLLECTION_SIZE, 777)
+
+    def test_config_reserves_exactly_the_legendary_count(self) -> None:
+        import json
+        from pathlib import Path
+
+        root = Path(__file__).resolve().parent.parent
+        collection = json.loads((root / "config" / "collection.json").read_text())
+        reserved = generate_777.reserved_token_ids(collection)
+        self.assertEqual(len(reserved), generate_777.LEGENDARY_COUNT)
+        self.assertEqual(
+            collection["supply"] + len(reserved), generate_777.COLLECTION_SIZE
+        )
+
+    def test_reserved_ids_reject_bad_input(self) -> None:
+        for bad in ([0], [-1], [1, 1], ["3"], [True]):
+            with self.subTest(value=bad):
+                with self.assertRaises(ValueError):
+                    generate_777.reserved_token_ids({"legendary_token_ids": bad})
+
 if __name__ == "__main__":
     unittest.main()

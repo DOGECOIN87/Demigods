@@ -75,15 +75,31 @@ A legendary is not a trait, and mixing it into the trait ledger would corrupt th
 category counts that drive the production status report. The trait ledger stays
 at 32 across 16 categories.
 
-## Open decision — supply arithmetic
+## Supply arithmetic — settled
 
-Still unresolved, and it must be settled before minting because it is not
-reversible once the collection is public:
+**770 generative + 7 legendary = 777.** The collection is named around 777 and
+the config describes it that way, so moving the headline number to 784 costs
+more than it gains. Saturation is indifferent either way: the rule-valid space
+is 3547, so 770 lands at 21.7% instead of 21.9%.
 
-- **770 generative + 7 legendary = 777.** Keeps the headline number. Set
-  `supply` to 770 in `config/collection.json` and reserve seven token IDs.
-- **777 generative + 7 legendary = 784.** Leaves the generative run untouched
-  and changes the collection size.
+Reserved token IDs are the seven multiples of 111:
 
-The saturation maths is indifferent — the rule-valid space is 3547, so dropping
-to 770 changes nothing material.
+| Token | Piece |
+|---|---|
+| 0111 | Sovereign of the Solar Court |
+| 0222 | Oracle of the Waning Crescent |
+| 0333 | Heir of the Celestial Throne |
+| 0444 | Keeper of the Arcane Index |
+| 0555 | Warden of the Violet Void |
+| 0666 | Tempest Sovereign |
+| 0777 | Verdant Archivist |
+
+Evenly spaced, trivially memorable, and 777 itself lands on a legendary.
+
+Reservation is enforced rather than documented. `allocate_token_ids` skips every
+reserved ID, so the generator cannot mint on top of a legendary, and
+`validate_config.py` checks `supply + len(legendary_token_ids) == 777` rather
+than locking either number alone — locking only `supply` would let the two drift
+apart. A dry run confirms it: 770 tokens spanning IDs 1–776 with all seven
+reserved IDs absent, and the union with the legendaries is exactly 777 with a
+maximum ID of 777.
