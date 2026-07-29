@@ -77,23 +77,30 @@ Preview across a full composite: `docs/qa/global_finish_preview.png`.
 
 ## Optional, not mandatory
 
-The category should be registered in `config/collection.json` under
-`optional_categories` so that "no finish" remains a real outcome. Three variants
-plus the absent branch give the category a factor of four, and a token with no
-finish is the collection's baseline look rather than a defect.
+The category is registered in `config/collection.json` under
+`optional_categories` at **0.75**, so "no finish" remains a real outcome. Three
+variants plus the absent branch give the category a factor of four, and a token
+with no finish is the collection's baseline look rather than a defect.
+
+A 777 dry run confirms the configured rate: 25.6% of tokens carry no finish and
+the three variants take roughly 25% each.
 
 ## Status
 
-The three variants are **candidates awaiting human visual approval**. They are
-held in `images/trait_candidates/global_finish/` rather than
-`assets/global_finish/`, because the generator discovers assets by scanning
-`assets/<category>/` and anything placed there is immediately live. On approval,
-render them to their canonical paths and register:
+**Registered and human-approved on 2026-07-29** as DG-158, DG-159, and DG-160,
+completing the category at 3 of 3. Provenance is recorded as
+`procedural_vector_render` against `scripts/build_global_finish.py`, with each
+entry carrying its tint, peak alpha, and the 64/255 ceiling.
+
+Registering the family moved the rule-valid combination space from 876 to 3547
+and dropped supply saturation from 88.7% to 21.9%, clearing the generator's
+saturation warning.
+
+To re-render the assets from source at any point:
 
 ```
 python scripts/build_global_finish.py --out-dir assets/global_finish
 python scripts/rig_gate_report.py --global-finish assets/global_finish/
 ```
 
-then add the manifest entries, flip DG-158–DG-160 to `registered`, add
-`global_finish` to `optional_categories`, and regenerate the ledger.
+The render is deterministic, so re-running reproduces the registered digests.
