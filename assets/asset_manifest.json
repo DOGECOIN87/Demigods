@@ -745,7 +745,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
       "status": "production_ready",
-      "sha256": "6419b6f6534566f2f025e07db773791b980fda8a1041d21129635141d7875b8a",
+      "sha256": "27ba78fe46c163661e078b0001992d341b43e408616de33be2f6aa4a66a48907",
       "dimensions": [
         1254,
         1254
@@ -753,7 +753,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
@@ -765,9 +765,12 @@
         "postprocessing": [
           "chroma_key_to_alpha",
           "alpha_edge_contract_1",
-          "rig_refit_scale_0.929_top_y_475"
+          "rig_refit_scale_0.929_top_y_475",
+          "alpha_edge_contract_1_post_refit",
+          "chroma_despill_edge_band_3"
         ],
-        "postprocessing_script": "scripts/refit_trait_layer.py"
+        "postprocessing_script": "scripts/clean_chroma_key.py",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
       },
       "approved_on": "2026-07-28"
     },
@@ -776,7 +779,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
       "status": "production_ready",
-      "sha256": "f87e641d9ef5fc6e1ca0fb9ecc3b6cc06320879a8c3735c84b0cc674667a01a3",
+      "sha256": "54dd538bc5a2ed2885d30482da4eb6e1bac3b83e9a4f2ca54a56bcb05c685c4f",
       "dimensions": [
         1254,
         1254
@@ -784,7 +787,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
@@ -796,9 +799,12 @@
         "postprocessing": [
           "chroma_key_to_alpha",
           "alpha_edge_contract_1",
-          "rig_refit_scale_0.88_top_y_475"
+          "rig_refit_scale_0.88_top_y_475",
+          "alpha_edge_contract_1_post_refit",
+          "chroma_despill_edge_band_3"
         ],
-        "postprocessing_script": "scripts/refit_trait_layer.py"
+        "postprocessing_script": "scripts/clean_chroma_key.py",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
       },
       "approved_on": "2026-07-28"
     },
@@ -807,7 +813,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
       "status": "production_ready",
-      "sha256": "646325979d4d81712d8595191f2d8bec806d3f5e94921220ce40172fa03980b4",
+      "sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
       "dimensions": [
         1254,
         1254
@@ -815,7 +821,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
@@ -827,9 +833,12 @@
         "postprocessing": [
           "chroma_key_to_alpha",
           "alpha_edge_contract_1",
-          "rig_refit_scale_0.761_top_y_475"
+          "rig_refit_scale_0.761_top_y_475",
+          "alpha_edge_contract_1_post_refit",
+          "chroma_despill_edge_band_3"
         ],
-        "postprocessing_script": "scripts/refit_trait_layer.py"
+        "postprocessing_script": "scripts/clean_chroma_key.py",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
       },
       "approved_on": "2026-07-28"
     },
@@ -838,7 +847,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
       "status": "production_ready",
-      "sha256": "4d631e9081fe4c5cc9d5c1eb50fc1d67e82728d038742083c8409adc7fad5590",
+      "sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
       "dimensions": [
         1254,
         1254
@@ -846,7 +855,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_pose_family_2026-07-28.md",
+      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
@@ -858,10 +867,13 @@
         "postprocessing": [
           "chroma_key_to_alpha",
           "alpha_edge_contract_1",
-          "rig_refit_scale_0.756_top_y_475"
+          "rig_refit_scale_0.756_top_y_475",
+          "alpha_edge_contract_1_post_refit",
+          "chroma_despill_edge_band_3"
         ],
-        "postprocessing_script": "scripts/refit_trait_layer.py",
-        "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing"
+        "postprocessing_script": "scripts/clean_chroma_key.py",
+        "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
       },
       "approved_on": "2026-07-28"
     },

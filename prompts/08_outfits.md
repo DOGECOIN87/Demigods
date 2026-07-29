@@ -75,6 +75,29 @@ Recommended coverage includes cloth robes, fitted tailoring, light armor,
 utility/workwear, ceremonial clothing, and layered travel clothing. Keep every
 design opaque and age-neutral.
 
+## Collars must be open
+
+A standing collar has to be drawn as an **open tube**, not a sealed cone. The
+neck opening must be genuinely transparent so the base body's neck reads through
+it, and the inside face of the collar must be painted where it would be visible.
+
+`outfit_002` and `outfit_003` were rendered with sealed collars: the opening is
+opaque, leaving only 16.3% and 15.6% of the neck visible, so the head reads as
+sitting on a tube rather than joining a body. This cannot be repaired after the
+fact — removing the painted interior does not reveal the collar's inner face,
+because that face was never drawn. Both need a re-render. See
+`docs/qa/outfit_chroma_key_cleanup_2026-07-29.md`.
+
+Target at least ~25% of the neck band (jaw Y 457 to shoulder Y 569) visible.
+
+## Never resample after keying without re-contracting
+
+If a keyed layer is rescaled or refit, run the alpha edge contract **after** the
+resample. Contracting first does not survive it: the resample blends the still
+contaminated neighbouring pixels into a new soft edge and the fringe returns.
+That ordering mistake put green key spill on four of the five registered
+outfits.
+
 ## Promotion gate
 
 Before moving a candidate to `assets/outfits/`:
@@ -84,5 +107,9 @@ Before moving a candidate to `assets/outfits/`:
 3. inspect neck, both shoulders, elbows, wrists, every finger, waist, knees, and
    feet at 200% zoom;
 4. reject any body pixels, checkerboard pixels, pose drift, or hand collision;
-5. add a `requires` rule tying the final outfit filename to its exact base-pose
+5. confirm the neck opening is transparent and the neck is visible through it;
+6. check for green key spill with
+   `python scripts/clean_chroma_key.py <file> --out-dir /tmp` and reject if the
+   reported green count is materially above zero;
+7. add a `requires` rule tying the final outfit filename to its exact base-pose
    filename in `config/compatibility.json`.
