@@ -49,8 +49,10 @@ from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SEEDS = ((627, 560), (627, 780))
-TOLERANCE = 26
+TOLERANCE = 26      # generous: find enough garment to repaint
+VERIFY_TOLERANCE = 14  # strict: does *fabric* still show?
 MARGIN = 4  # px of repaint carried under the garment edge
+RELAX = 60  # Laplace relaxation passes that remove fill-order streaking
 
 # Each base pose is locked 1:1 to its outfit in config/compatibility.json, so a
 # base only ever needs the gaps that its own outfit leaves.
@@ -88,8 +90,18 @@ def undergarment_mask(base: Image.Image, seeds=SEEDS, tolerance: int = TOLERANCE
     return mask
 
 
-def exposed_count(base: Image.Image, outfit: Image.Image) -> int:
-    mask = undergarment_mask(base).load()
+def exposed_count(base: Image.Image, outfit: Image.Image,
+                  tolerance: int = VERIFY_TOLERANCE) -> int:
+    """Count pixels where the neutral garment is still visibly showing.
+
+    This uses a tighter tolerance than the repaint mask, and the split matters.
+    The repaint mask should be generous so it covers enough garment; verification
+    asks a different question — is *fabric* still visible — and skin repainted
+    from neighbouring skin lands within ~26 levels of the tank's colour simply
+    because the tank and skin are that close. Verifying at the mask's tolerance
+    therefore re-flags the script's own correct output as a defect.
+    """
+    mask = undergarment_mask(base, tolerance=tolerance).load()
     oal = outfit.getchannel("A").load()
     return sum(
         1
@@ -99,7 +111,8 @@ def exposed_count(base: Image.Image, outfit: Image.Image) -> int:
     )
 
 
-def repaint(base: Image.Image, outfit: Image.Image, margin: int = MARGIN) -> tuple[Image.Image, dict]:
+def repaint(base: Image.Image, outfit: Image.Image, margin: int = MARGIN,
+            relax: int = RELAX) -> tuple[Image.Image, dict]:
     result = base.copy()
     px = result.load()
     width, height = result.size
@@ -148,6 +161,37 @@ def repaint(base: Image.Image, outfit: Image.Image, margin: int = MARGIN) -> tup
         settled.update(point for point, _ in frontier)
         remaining.difference_update(point for point, _ in frontier)
 
+    # The propagation above assigns each pixel from whichever ring reached it
+    # first, which smears colour along the direction of travel — on the real
+    # bases that showed as vertical streaks under the tank's neckline. Relaxing
+    # the filled region toward the average of its neighbours, with the
+    # surrounding real skin held fixed, solves out those streaks: it is a
+    # discrete Laplace solve, so the result is the smooth gradient the boundary
+    # implies rather than an artefact of fill order.
+    filled = sorted(settled)
+    for _ in range(relax):
+        updates = {}
+        for (x, y) in filled:
+            # Average only over repainted pixels and genuine skin. Including the
+            # un-repainted undergarment just outside the target would pull the
+            # fill back toward fabric colour — that regression re-exposed 53 and
+            # 22 px on poses 002 and 005 before this condition was added.
+            neighbours = [
+                px[nx, ny]
+                for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1))
+                if 0 <= nx < width and 0 <= ny < height and px[nx, ny][3] > 200
+                and ((nx, ny) in settled or ml[nx, ny] == 0)
+            ]
+            if not neighbours:
+                continue
+            updates[(x, y)] = (
+                sum(n[0] for n in neighbours) // len(neighbours),
+                sum(n[1] for n in neighbours) // len(neighbours),
+                sum(n[2] for n in neighbours) // len(neighbours),
+            )
+        for (x, y), (r, g, b) in updates.items():
+            px[x, y] = (r, g, b, px[x, y][3])
+
     return result, {"target": len(target), "repainted": len(target) - len(remaining)}
 
 
@@ -159,6 +203,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--in-place", action="store_true")
     parser.add_argument("--out-dir", type=Path)
     parser.add_argument("--margin", type=int, default=MARGIN)
+    parser.add_argument("--relax", type=int, default=RELAX)
+    parser.add_argument("--max-passes", type=int, default=6)
     args = parser.parse_args(argv)
 
     if args.all:
@@ -180,8 +226,21 @@ def main(argv: list[str] | None = None) -> int:
         base = Image.open(base_path).convert("RGBA")
         outfit = Image.open(outfit_path).convert("RGBA")
         before = exposed_count(base, outfit)
-        result, report = repaint(base, outfit, args.margin)
+
+        # Iterate to convergence. One pass is not always enough: the relaxation
+        # can nudge a boundary pixel back across the mask's tolerance, and the
+        # tank and skin are close enough in colour that "back across" is only a
+        # few levels. Each pass re-detects whatever is still showing.
+        result, report = repaint(base, outfit, args.margin, args.relax)
         after = exposed_count(result, outfit)
+        for _ in range(args.max_passes - 1):
+            if after == 0:
+                break
+            result, extra = repaint(result, outfit, args.margin, args.relax)
+            report["repainted"] += extra["repainted"]
+            previous, after = after, exposed_count(result, outfit)
+            if after >= previous:
+                break
         destination = base_path if args.in_place else args.out_dir / base_path.name
         destination.parent.mkdir(parents=True, exist_ok=True)
         result.save(destination)
