@@ -90,6 +90,8 @@ DG-161 is the first backlog row sourced from a **co-created candidate rather tha
 
 The aura catalog's lower row splits cleanly into geometric and organic designs. Geometric cells are rendered analytically by repository scripts, which removes the matte-fringe and stray-pixel failures that background removal introduces. Organic cells still need an image generator driven by `prompts/19`.
 
+**The split is narrower than "geometric vs organic" suggests (assessed 2026-07-29).** The procedural route was attempted for DG-154, the ice crystal ring — the most geometric of the six remaining ring cells, since a faceted shard is a polygon. It was rejected: both a flat-fill and a gradient-and-variance version passed every automated gate while reading as flat pale triangles rather than faceted ice. A soft glow is *fully described* by distance and falloff, which is why the neon family renders cleanly; a crystal's read comes from internal refraction and facet-to-facet value shifts, which the outline does not contain. If ice does not clear the bar procedurally, neither will smoke or a water splash. All six remaining ring cells stay routed to an image generator. See `docs/qa/aura_ice_ring_procedural_rejected_2026-07-29.md`.
+
 Backlog IDs sit in the second column here: this is a routing reference, not a
 backlog table, and the ledger parser treats a `DG-` value in the first column as
 a schema row.
