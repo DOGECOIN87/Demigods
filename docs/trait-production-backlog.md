@@ -311,9 +311,9 @@ A global finish is a full-canvas directional light grade restating the collectio
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-158 | global finish | Neutral warm soft bloom from the upper-left key direction | `docs/global-finish-definition.md` | Locked lighting spec | `assets/global_finish/global_finish_001_soft_bloom.png` | procedural — `scripts/build_global_finish.py` | candidate |
-| DG-159 | global finish | Warm gold light wash from the upper-left key direction | `docs/global-finish-definition.md` | DG-158 representative test | `assets/global_finish/global_finish_002_gilded_warm.png` | procedural — `scripts/build_global_finish.py` | candidate |
-| DG-160 | global finish | Cool veil from the lower-right shadow side | `docs/global-finish-definition.md` | DG-147 | `assets/global_finish/global_finish_003_cool_veil.png` | procedural — `scripts/build_global_finish.py` | candidate |
+| DG-158 | global finish | Neutral warm soft bloom from the upper-left key direction | `docs/global-finish-definition.md` | Locked lighting spec | `assets/global_finish/global_finish_001_soft_bloom.png` | procedural — `scripts/build_global_finish.py` | registered |
+| DG-159 | global finish | Warm gold light wash from the upper-left key direction | `docs/global-finish-definition.md` | DG-158 representative test | `assets/global_finish/global_finish_002_gilded_warm.png` | procedural — `scripts/build_global_finish.py` | registered |
+| DG-160 | global finish | Cool veil from the lower-right shadow side | `docs/global-finish-definition.md` | DG-147 | `assets/global_finish/global_finish_003_cool_veil.png` | procedural — `scripts/build_global_finish.py` | registered |
 
 ## Execution rule
 

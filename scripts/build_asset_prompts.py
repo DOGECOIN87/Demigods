@@ -114,6 +114,14 @@ def parse_backlog(text: str) -> list[dict[str, str]]:
     return rows
 
 
+# Categories that are gated but never prompted. Global finish is rendered
+# analytically by `scripts/build_global_finish.py` and has no entry in CATS,
+# because there is no generation prompt to write — but intake still has to know
+# how to gate it. Keeping it out of CATEGORY_LAYER keeps it out of every
+# generated prompt batch, which is correct: there is nothing to generate.
+PROCEDURAL_GATE_FLAGS = {"global finish": "--global-finish"}
+
+
 def gate_flags(row: dict[str, str]) -> str:
     """The runnable rig-gate flags for one asset.
 
@@ -125,6 +133,8 @@ def gate_flags(row: dict[str, str]) -> str:
     glow has no such exemption. A per-asset prompt has to print one runnable
     command, so resolve that choice from the asset's own description.
     """
+    if row["category"] in PROCEDURAL_GATE_FLAGS:
+        return PROCEDURAL_GATE_FLAGS[row["category"]]
     layer = CATEGORY_LAYER[row["category"]]
     if layer == 2:
         return "--floor-aura" if "ring" in row["description"].lower() else "--trait"

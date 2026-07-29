@@ -901,6 +901,117 @@
       "approved_on": "2026-07-29",
       "qa_report": "docs/qa/aura_rear_018_blue_flame_ring_2026-07-28.md",
       "prompt": "prompts/12_auras.md"
+    },
+    {
+      "id": "global_finish_001",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_001_soft_bloom.png",
+      "status": "production_ready",
+      "sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-158",
+      "qa_composite": "docs/qa/composites/global_finish_001_over_base.png",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_global_finish.py",
+        "trait": "full-canvas directional light grade restating the locked lighting",
+        "tint_rgb": [
+          255,
+          246,
+          226
+        ],
+        "peak_alpha": 40,
+        "alpha_ceiling": 64,
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "gate_mode": "--global-finish",
+        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/global-finish-definition.md",
+      "prompt": null
+    },
+    {
+      "id": "global_finish_002",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_002_gilded_warm.png",
+      "status": "production_ready",
+      "sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-159",
+      "qa_composite": "docs/qa/composites/global_finish_002_over_base.png",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_global_finish.py",
+        "trait": "full-canvas directional light grade restating the locked lighting",
+        "tint_rgb": [
+          255,
+          214,
+          138
+        ],
+        "peak_alpha": 56,
+        "alpha_ceiling": 64,
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "gate_mode": "--global-finish",
+        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/global-finish-definition.md",
+      "prompt": null
+    },
+    {
+      "id": "global_finish_003",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_003_cool_veil.png",
+      "status": "production_ready",
+      "sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-160",
+      "qa_composite": "docs/qa/composites/global_finish_003_over_base.png",
+      "provenance": {
+        "origin": "procedural_vector_render",
+        "generator_script": "scripts/build_global_finish.py",
+        "trait": "full-canvas directional light grade restating the locked lighting",
+        "tint_rgb": [
+          176,
+          214,
+          255
+        ],
+        "peak_alpha": 48,
+        "alpha_ceiling": 64,
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "gate_mode": "--global-finish",
+        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-07-29",
+      "qa_report": "docs/global-finish-definition.md",
+      "prompt": null
     }
   ],
   "approved_visual_references": [
@@ -1126,7 +1237,6 @@
     "hand_objects",
     "back_accessories",
     "rear_auras",
-    "front_auras",
-    "global_finish"
+    "front_auras"
   ]
 }

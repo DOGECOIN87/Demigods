@@ -204,6 +204,63 @@ class RegistrationStatusTests(unittest.TestCase):
         self.assertEqual(count, 0)
 
 
+class PendingCategoryTests(unittest.TestCase):
+    """A finished category must leave pending_categories in the same write.
+
+    The ledger cross-check fails when the manifest still calls a category pending
+    after its last asset registers, so leaving this to a follow-up edit breaks CI
+    between the two.
+    """
+
+    HEADER = (
+        "| ID | Category | Visual description | Source reference | Dependency | "
+        "Intended production path | Prompt | Status |\n|---|---|---|---|---|---|---|---|\n"
+    )
+
+    def backlog(self, *rows: tuple[str, str, str]) -> str:
+        body = "".join(
+            f"| {rid} | front aura | Some effect | `AURA`, cell 1 | dep | "
+            f"`assets/{category}/{category}_{i:03d}_x.png` | `prompts/12_auras.md` | {status} |\n"
+            for i, (rid, category, status) in enumerate(rows, start=1)
+        )
+        return self.HEADER + body
+
+    def test_fully_registered_category_is_cleared(self) -> None:
+        manifest = {"pending_categories": ["front_auras", "eyes"]}
+        text = self.backlog(("DG-901", "front_auras", "registered"),
+                            ("DG-902", "front_auras", "registered"))
+        self.assertEqual(clear := bulk_intake.clear_finished_categories(manifest, text),
+                         ["front_auras"])
+        self.assertEqual(manifest["pending_categories"], ["eyes"])
+        self.assertEqual(clear, ["front_auras"])
+
+    def test_partially_registered_category_stays_pending(self) -> None:
+        manifest = {"pending_categories": ["front_auras"]}
+        text = self.backlog(("DG-901", "front_auras", "registered"),
+                            ("DG-902", "front_auras", "pending"))
+        self.assertEqual(bulk_intake.clear_finished_categories(manifest, text), [])
+        self.assertEqual(manifest["pending_categories"], ["front_auras"])
+
+    def test_category_with_no_rows_is_not_cleared(self) -> None:
+        """An empty category is unstarted, not finished."""
+        manifest = {"pending_categories": ["front_auras"]}
+        self.assertEqual(bulk_intake.clear_finished_categories(manifest, self.HEADER), [])
+        self.assertEqual(manifest["pending_categories"], ["front_auras"])
+
+    def test_missing_key_is_tolerated(self) -> None:
+        self.assertEqual(bulk_intake.clear_finished_categories({}, self.HEADER), [])
+
+    def test_live_manifest_agrees_with_the_live_backlog(self) -> None:
+        """Regression guard: registering global_finish left this list stale."""
+        import json as _json
+
+        manifest = _json.loads(MANIFEST_PATH.read_text())
+        self.assertEqual(
+            bulk_intake.clear_finished_categories(manifest, BACKLOG_TEXT), [],
+            "a completed category is still listed pending in the manifest",
+        )
+
+
 class RegistrationAtomicityTests(unittest.TestCase):
     """A failed registration must leave no PNG under assets/<category>/.
 

@@ -13,15 +13,35 @@
   "master_rig": {
     "canvas_center_x": 627,
     "top_of_head_y": 141,
-    "head_center": [627, 343],
+    "head_center": [
+      627,
+      343
+    ],
     "eye_line_y": 367,
-    "mouth_center": [627, 441],
+    "mouth_center": [
+      627,
+      441
+    ],
     "shoulder_line_y": 569,
-    "waist_center": [627, 808],
-    "viewer_left_hand_anchor": [404, 772],
-    "viewer_right_hand_anchor": [850, 772],
+    "waist_center": [
+      627,
+      808
+    ],
+    "viewer_left_hand_anchor": [
+      404,
+      772
+    ],
+    "viewer_right_hand_anchor": [
+      850,
+      772
+    ],
     "foot_baseline_y": 1139,
-    "maximum_character_bounds": [233, 129, 1021, 1139]
+    "maximum_character_bounds": [
+      233,
+      129,
+      1021,
+      1139
+    ]
   },
   "lighting": {
     "key_direction": "upper-left",
@@ -31,6 +51,7 @@
   },
   "optional_categories": {
     "rear_auras": 0.82,
-    "hair_back": 0.62
+    "hair_back": 0.62,
+    "global_finish": 0.75
   }
 }

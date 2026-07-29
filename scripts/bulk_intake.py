@@ -41,11 +41,15 @@ from PIL import Image, ImageDraw
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 try:  # imported as `scripts.bulk_intake` by the tests
-    from scripts.build_asset_prompts import CATEGORY_LAYER, gate_flags, parse_backlog
+    from scripts.build_asset_prompts import (
+        CATEGORY_LAYER, PROCEDURAL_GATE_FLAGS, gate_flags, parse_backlog,
+    )
     from scripts.build_trait_prompts import GATES
     from scripts.rig_gate_report import analyze, load_rig
 except ImportError:  # run directly as a script
-    from build_asset_prompts import CATEGORY_LAYER, gate_flags, parse_backlog  # type: ignore[no-redef]
+    from build_asset_prompts import (  # type: ignore[no-redef]
+        CATEGORY_LAYER, PROCEDURAL_GATE_FLAGS, gate_flags, parse_backlog,
+    )
     from build_trait_prompts import GATES  # type: ignore[no-redef]
     from rig_gate_report import analyze, load_rig  # type: ignore[no-redef]
 
@@ -210,6 +214,7 @@ def inspect(drop_dir: Path, rows: list[dict]) -> list[dict]:
                 candidate, rig, canvas, tolerance=1,
                 trait="--trait" in flags,
                 floor_aura="--floor-aura" in flags,
+                global_finish="--global-finish" in flags,
                 max_width_ratio=max_width_ratio_for(row["category"]),
             )
             result["rig_gate"] = {
@@ -267,6 +272,25 @@ def pair_hair_rule(production_path: str, manifest: dict) -> dict | None:
             "whose rear hair is absent."
         ),
     }
+
+
+def clear_finished_categories(manifest: dict, backlog_text: str) -> list[str]:
+    """Drop categories from `pending_categories` once every row is registered.
+
+    The ledger cross-check fails when the manifest still calls a category pending
+    after its last asset lands, so this has to happen in the same write as the
+    registration rather than being left to a follow-up edit.
+
+    Mutates `manifest` and returns the categories cleared.
+    """
+    rows = parse_backlog(backlog_text)
+    finished = []
+    for category in list(manifest.get("pending_categories", [])):
+        category_rows = [r for r in rows if manifest_category(r["path"]) == category]
+        if category_rows and all(r["status"] == "registered" for r in category_rows):
+            manifest["pending_categories"].remove(category)
+            finished.append(category)
+    return finished
 
 
 def register(results: list[dict], approved: set[str], batch_note: str) -> int:
@@ -353,6 +377,10 @@ def register(results: list[dict], approved: set[str], batch_note: str) -> int:
             compatibility["requires"].append(rule)
             existing.add((rule["trait"], rule["requires"]))
             added_rules.append(f"{rule['trait']} -> {rule['requires']}")
+
+    finished = clear_finished_categories(manifest, backlog_text)
+    if finished:
+        print(f"Category complete, cleared from pending: {', '.join(finished)}")
 
     # Everything validated; now commit the side effects.
     for source, destination in pending_copies:
