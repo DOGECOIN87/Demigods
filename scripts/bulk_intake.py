@@ -95,6 +95,47 @@ def max_width_ratio_for(category: str) -> float | None:
     return float(match.group(1)) if match else None
 
 
+def load_transform_provenance(candidate: Path) -> tuple[dict | None, list[str]]:
+    """Load and verify an optional generator-source transformation sidecar.
+
+    Direct native candidates retain the existing no-sidecar path. A normalized
+    candidate must prove that its immutable source still exists and that neither
+    the source nor the output changed after the transform report was written.
+    """
+    sidecar = candidate.with_suffix(candidate.suffix + ".provenance.json")
+    if not sidecar.exists():
+        return None, []
+    try:
+        value = json.loads(sidecar.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return None, [f"transform provenance unreadable: {type(exc).__name__}: {exc}"]
+    if not isinstance(value, dict):
+        return None, ["transform provenance must be a JSON object"]
+
+    errors: list[str] = []
+    if value.get("origin") != "generator_source_transform":
+        errors.append("transform provenance origin must be generator_source_transform")
+    source_value = value.get("source_path")
+    source = ROOT / source_value if isinstance(source_value, str) else None
+    if not isinstance(source_value, str) or Path(source_value).is_absolute() or ".." in Path(source_value).parts:
+        errors.append("transform provenance source_path must be a safe repository-relative path")
+    elif source is None or not source.is_file():
+        errors.append(f"transform provenance source does not exist: {source_value}")
+    elif value.get("source_sha256") != sha256(source):
+        errors.append("transform provenance source SHA-256 does not match immutable source")
+
+    if value.get("output_sha256") != sha256(candidate):
+        errors.append("transform provenance output SHA-256 does not match normalized candidate")
+    if value.get("final_dimensions") != [1254, 1254]:
+        errors.append("transform provenance final_dimensions must be [1254, 1254]")
+    transform = value.get("transform")
+    if not isinstance(transform, dict) or transform.get("method") != "crop_transparent_margin_then_premultiplied_lanczos_reduction":
+        errors.append("transform provenance must record the approved reduction-only method")
+    elif not isinstance(transform.get("scale"), (float, int)) or not 0 < transform["scale"] < 1:
+        errors.append("transform provenance scale must prove a reduction-only operation")
+    return value, errors
+
+
 def binary_qa(path: Path) -> list[tuple[str, bool, str]]:
     """Decode fully and confirm the properties a modular layer must have."""
     checks: list[tuple[str, bool, str]] = []
@@ -198,6 +239,11 @@ def inspect(drop_dir: Path, rows: list[dict]) -> list[dict]:
             "production_path": row["path"],
             "description": row["description"],
         })
+
+        provenance, provenance_errors = load_transform_provenance(candidate)
+        if provenance is not None:
+            result["provenance"] = provenance
+        result["failures"] += [f"provenance:{error}" for error in provenance_errors]
 
         checks = binary_qa(candidate)
         result["binary_qa"] = [{"check": c, "passed": p, "value": v} for c, p, v in checks]
@@ -331,7 +377,7 @@ def register(results: list[dict], approved: set[str], batch_note: str) -> int:
             "mode": "RGBA",
             "backlog_id": backlog_id,
             "qa_composite": result["composite"],
-            "provenance": {
+            "provenance": result.get("provenance") or {
                 "origin": "native_image_generation",
                 "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
                 "trait": result["description"],

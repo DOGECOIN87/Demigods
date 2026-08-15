@@ -22,7 +22,7 @@ BASE = "assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lig
 
 
 def header(title: str, attach: str) -> str:
-    return f"""Create exactly one isolated Demigods {title}, rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+    return f"""Create exactly one isolated Demigods {title}. Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: {attach}
 
@@ -39,15 +39,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value

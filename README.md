@@ -11,12 +11,12 @@ Production specifications, category prompts, reference images, validation tools,
 - Intake workflow: `docs/workflows/approved_base_intake.md`
 - Rig gate and coordinate guide: `docs/rig/README.md`
 
-The approved visual design remains locked. Produce every new asset as a native 1254 × 1254 render; do not resample a rejected candidate or reconstruct the avatar from the damaged repository WebP.
+The approved visual design remains locked. Prefer native 1254 × 1254 output, but handle a larger isolated RGBA generator source only through the documented reduction-only workflow; never improvise transformations, upscale a source, or reconstruct the avatar from the damaged repository WebP.
 
 ## Core requirements
 
-- Every non-background trait is a separate transparent PNG.
-- Every character-compatible asset uses one locked 1254 × 1254 master canvas and shared proportionally rebased rig.
+- Every registered non-background trait is a separate transparent PNG on the locked 1254 × 1254 master canvas and shared proportionally rebased rig.
+- Native 1254 × 1254 RGBA generation is preferred. A larger isolated RGBA generator source may enter the documented reduction-only transform workflow in `docs/workflows/generator_source_transform.md`; it is not production-ready until its normalized output passes every final gate.
 - All assets are perfectly front-facing with identical scale, anchors, proportions, and crop.
 - Key light comes from the upper-left; form shadows fall toward the lower-right.
 - Character names are not part of the trait system.
@@ -82,7 +82,7 @@ python scripts/validate_assets.py assets \
   --json-report asset_validation_report.json
 ```
 
-The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, blocked-reference consistency, and byte-for-byte provenance for all eight background candidates.
+The asset validator performs complete binary decoding and checks PNG format, dimensions, RGBA and alpha behavior, visible bounds, folder/category agreement, three-digit numbering, SHA-256 values, blocked-reference consistency, and byte-for-byte provenance for all eight background candidates. Generator-source transforms are governed separately by `docs/workflows/generator_source_transform.md`; their final normalized assets remain subject to the same strict production checks.
 
 Verify provenance for every registered production asset before treating it as usable:
 

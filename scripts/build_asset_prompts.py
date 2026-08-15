@@ -170,9 +170,9 @@ def build_prompt(row: dict[str, str], keys: dict[str, str]) -> str:
         body = body.replace(
             f"ATTACH: {attach}",
             f"ATTACH: {attach}\nATTACH ALSO: {sheet}\n\nDESIGN REFERENCE CELL: {cell}\n"
-            "Use that cell ONLY as a design reference for shape, cut, and palette. Render a fresh "
-            "native 1254 x 1254 asset from it. Never enlarge, upscale, crop, or trace the compressed "
-            "cell pixels into the output.",
+            "Use that cell ONLY as a design reference for shape, cut, and palette. Render fresh art from it; "
+            "prefer a native 1254 x 1254 transparent asset, or return one isolated RGBA source-art PNG for "
+            "the audited transform workflow. Never enlarge, crop, or trace the compressed cell pixels into the output.",
         )
 
     parts = [
@@ -185,7 +185,7 @@ def build_prompt(row: dict[str, str], keys: dict[str, str]) -> str:
     parts += [
         f"\nPROPORTION: {proportion}.",
         f"\nISOLATION: the final asset contains ONLY the {title}; exclude {exclude}.",
-        f"\nOUTPUT: one transparent 1254 x 1254 PNG. filename: {filename}",
+        f"\nOUTPUT: preferred one transparent 1254 x 1254 PNG. If exact-canvas output is unavailable, return one isolated RGBA source-art PNG for `docs/workflows/generator_source_transform.md`. filename: {filename}",
         f"\nAVOID:\n{AVOID}.",
         "\nReturn one transparent PNG only. No text or alternate versions.",
     ]

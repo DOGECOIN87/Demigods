@@ -67,11 +67,11 @@ The following matters require owner confirmation before irreversible release wor
 
 There is **no active repository blocker**. The practical constraint is production completeness: 128 distinct trait-production paths remain unregistered, and no complete modular character has yet passed the full hair-plus-face composite gate. The external release path is also undecided, but it does not prevent the next art-production milestone.
 
-### Native-canvas candidate toolchain constraint
+### Generator-source transformation policy
 
-The first controlled hair-front pilot was attempted on 2026-08-15 and correctly rejected at intake. Although it isolated the intended white-silver fringe, the available generation route returned a 1920 × 1920 asset with full-frame visible bounds rather than the required native 1254 × 1254 production canvas and bounded transparent padding. The collection rules prohibit resampling or cropping the result into compliance. The failed candidate and gate evidence are preserved under `images/trait_candidates/hair_front/` and `docs/qa/hair_front_003_candidate_attempt_001_2026-08-15.md`.
+The owner authorized a formal policy revision on 2026-08-15. The repository now permits a larger isolated RGBA generator source to enter `docs/workflows/generator_source_transform.md`, which records the immutable source digest, reduction-only transform, alpha cleanup, final output digest, and locked-rig placement. The final registered asset remains strictly 1254 × 1254 RGBA with genuine alpha and must pass all existing binary, rig, composite, manifest, and human art-direction gates.
 
-Accordingly, further modular-asset production is blocked until a generation route that can emit a **native 1254 × 1254 RGBA PNG with true transparent canvas and full-canvas placement control** is available, or the owner explicitly changes the locked native-canvas policy. This is an operational toolchain constraint, not a defect in the repository validation system; all existing repository gates remain passing.
+The first transformed hair-front pilot verified the new technical route: its normalized output passed source provenance, final-canvas, alpha, bounds, and width-ratio checks. It was nevertheless rejected by full-context art review because its fringe obscured the eyes, its silhouette did not blend cleanly into the registered rear-hair family, and visible green residual artifacts remained. The updated constraint is therefore **creative quality, not source normalization capability**. See `docs/qa/face_completion_pilot_hair_front_003_2026-08-15.md`.
 
 ## Sources
 

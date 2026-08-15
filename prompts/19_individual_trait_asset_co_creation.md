@@ -8,14 +8,15 @@ Candidate creation may proceed before Pose 001 is approved and may occur out of 
 
 These candidate-stage corrections are allowed when recorded:
 
-- canvas-preserving X/Y translation without scaling or resampling;
+- canvas-preserving X/Y translation without scaling or resampling for a direct native candidate;
 - alpha-edge cleanup and removal of stray pixels;
 - sRGB profile tagging or RGB/RGBA mode normalization that does not alter dimensions;
 - canonical renaming and category-folder relocation;
 - small painted cleanup that does not redesign the referenced trait;
+- a documented generator-source transformation under `docs/workflows/generator_source_transform.md`: transparent-margin crop, alpha-haze cleanup, reduction-only resampling, and locked-rig placement onto the 1254 × 1254 production canvas;
 - generation and upload of multiple separate PNGs in one batch.
 
-Native size, one isolated asset per PNG, genuine transparency for character traits, and no baked unrelated traits remain required because files without those properties cannot function as modular layers.
+A final production candidate must still be 1254 × 1254 with genuine transparency and no baked unrelated traits. A larger generator-native RGBA source is permitted only as immutable source art; it is not itself a modular layer and must pass the documented transformation, rig, composite, and provenance gates before it can be registered.
 
 ## Asset assignment block
 
@@ -42,18 +43,19 @@ If the visual design itself is unsupported or ambiguous, ask for a clearer refer
 ```text
 Create exactly one isolated Demigods asset candidate from the supplied Asset Assignment Block and attached repository reference.
 
-NATIVE OUTPUT:
-- exactly 1254 × 1254 pixels, generated natively at that size
-- PNG in sRGB
-- character-compatible trait: RGBA with genuine transparent alpha
-- background only: RGB or fully opaque RGBA, full bleed
-- keep the entire 1254 × 1254 canvas; never crop to visible content
-- exactly one asset and one variation in the image
+PREFERRED OUTPUT:
+- exactly 1254 × 1254 pixels, PNG in sRGB; character-compatible traits use RGBA with genuine transparent alpha
+- keep the entire 1254 × 1254 canvas and return exactly one isolated asset
 - return the PNG only, without explanatory text or a contact sheet
 
+SOURCE-ART FALLBACK WHEN EXACT CANVAS OUTPUT IS UNAVAILABLE:
+- return one large, isolated RGBA source PNG with genuine alpha, generous clean transparent margin, and no visible content touching the source-canvas edge
+- preserve all trait detail; the repository may crop transparent margins, reduce the source, and place it on the locked canvas under `docs/workflows/generator_source_transform.md`
+- this source is a candidate record only, never a production asset
+
 PROHIBITED PROCESSING:
-- do not resize, upscale, downscale, or resample a finished candidate to satisfy 1254 × 1254; generate it natively
-- use undersized catalog cells as visual references for a fresh native render, not as pixels to enlarge into the output
+- never upscale, hallucinate missing detail, or use a source whose trait detail must be enlarged to fit the production canvas
+- use undersized catalog cells as visual references for a fresh render, not as pixels to enlarge into the output
 - never remove a background from a flattened preview and call the extraction production-ready
 - never bake the approved avatar, pose guide, reference sheet, or another trait into the output
 - never hide a defect with blur, glow, darkness, transparency, cropping, or decorative effects
@@ -121,11 +123,10 @@ ANATOMY AND CONTENT SAFETY:
 
 FINAL SELF-CHECK BEFORE RETURNING:
 - one PNG only
-- exact native 1254 × 1254 canvas
-- correct RGB/RGBA contract for the category
-- genuine transparency for character traits
+- preferred: exact native 1254 × 1254 canvas; otherwise a single isolated RGBA source PNG with transparent margin and no source-edge contact
+- correct RGB/RGBA contract for the category; character traits require genuine transparency
 - requested design only
-- best achievable full-canvas position against every relevant locked anchor; final intake may translate without resampling
+- best achievable placement against every relevant locked anchor
 - no unrelated or baked-in pixels
 - no text, watermark, checkerboard, crop, or contact sheet
 - no invented requirement

@@ -1,8 +1,9 @@
 # Locked Master Specification
 
 ## Canvas
-- 1254 × 1254 px, sRGB.
-- Character-compatible traits use true transparent alpha.
+- Every registered production asset is 1254 × 1254 px, sRGB, and uses true transparent alpha.
+- Native 1254 × 1254 RGBA output is preferred. When a generator cannot emit the locked canvas, it may return one isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame-edge contact; it must then follow `docs/workflows/generator_source_transform.md` before it can be reviewed.
+- Source transformation is reduction-only. It never upscales, invents missing pixels, or bypasses the final 1254 × 1254, alpha, rig, composite, and provenance gates.
 - No rendered checkerboard, border, labels, guides, watermark, poster, or presentation layout.
 
 ## Shared master-rig coordinates

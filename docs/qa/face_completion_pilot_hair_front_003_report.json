@@ -1,0 +1,120 @@
+[
+  {
+    "filename": "hair_front_003_silver_straight_bangs.png",
+    "source": "incoming/face_completion_pilot/hair_front_003_silver_straight_bangs.png",
+    "sha256": "d12a407e0df9dbe5a6eb685dc8dac058888d2b1581a7cc8298a85a602258e841",
+    "passed": true,
+    "failures": [],
+    "id": "DG-117",
+    "backlog_status": "pending",
+    "category": "hair_front",
+    "production_path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
+    "description": "White-silver straight bangs and face-framing strands",
+    "provenance": {
+      "origin": "generator_source_transform",
+      "source_path": "images/trait_candidates/hair_front/hair_front_003_silver_straight_bangs_candidate_attempt_001.png",
+      "source_sha256": "a2e4e9e18f36c53adcb7e206e27e664d2d958c045779b2992fe1e4e6a8e4f92e",
+      "source_dimensions": [
+        1920,
+        1920
+      ],
+      "source_mode": "RGBA",
+      "alpha_cleanup": {
+        "method": "clear_negligible_alpha_haze",
+        "threshold": 120
+      },
+      "transform": {
+        "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+        "source_visible_bounds": [
+          445,
+          293,
+          1466,
+          1404
+        ],
+        "crop_dimensions": [
+          1022,
+          1112
+        ],
+        "scale": 0.50880626,
+        "target_dimensions": [
+          520,
+          566
+        ],
+        "placement": {
+          "center_x": 627,
+          "top_y": 132,
+          "bounds": [
+            367,
+            132,
+            886,
+            697
+          ]
+        }
+      },
+      "final_dimensions": [
+        1254,
+        1254
+      ],
+      "normalization_script": "scripts/normalize_generator_source.py",
+      "output_path": "incoming/face_completion_pilot/hair_front_003_silver_straight_bangs.png",
+      "output_sha256": "d12a407e0df9dbe5a6eb685dc8dac058888d2b1581a7cc8298a85a602258e841"
+    },
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.35",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[367,132,886,697]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hair_front_003_over_base.png"
+  }
+]

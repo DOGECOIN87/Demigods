@@ -9,7 +9,7 @@ One self-contained prompt per layer category, in back-to-front stack order. Each
 ## Layer 02 — rear aura / effect (behind the character)
 
 ```
-Create exactly one isolated Demigods rear aura / effect (behind the character), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods rear aura / effect (behind the character). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -26,15 +26,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -71,7 +71,7 @@ Gate: `python scripts/rig_gate_report.py --floor-aura for ground-plane rings; --
 ## Layer 03 — back accessory (wings / cape / cloak / mantle / crest)
 
 ```
-Create exactly one isolated Demigods back accessory (wings / cape / cloak / mantle / crest), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods back accessory (wings / cape / cloak / mantle / crest). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -88,15 +88,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -133,7 +133,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 04 — hair-back layer (rear hair only)
 
 ```
-Create exactly one isolated Demigods hair-back layer (rear hair only), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods hair-back layer (rear hair only). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -150,15 +150,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -196,7 +196,7 @@ Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.35 <file>`,
 ## Layer 06 — outfit (clothing only)
 
 ```
-Create exactly one isolated Demigods outfit (clothing only), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods outfit (clothing only). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -213,15 +213,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -258,7 +258,7 @@ Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.15 <file>`,
 ## Layer 07 — neck accessory (necklace / choker / collar / bow / pendant)
 
 ```
-Create exactly one isolated Demigods neck accessory (necklace / choker / collar / bow / pendant), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods neck accessory (necklace / choker / collar / bow / pendant). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -275,15 +275,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -318,7 +318,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 08 — eye set (matched pair)
 
 ```
-Create exactly one isolated Demigods eye set (matched pair), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods eye set (matched pair). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -335,15 +335,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -379,7 +379,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 09 — eyebrow pair
 
 ```
-Create exactly one isolated Demigods eyebrow pair, rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods eyebrow pair. Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -396,15 +396,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -439,7 +439,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 10 — mouth
 
 ```
-Create exactly one isolated Demigods mouth, rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods mouth. Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -456,15 +456,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -499,7 +499,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 11 — expression mark overlay
 
 ```
-Create exactly one isolated Demigods expression mark overlay, rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods expression mark overlay. Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -516,15 +516,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -559,7 +559,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 12 — hair-front layer (bangs / front strands only)
 
 ```
-Create exactly one isolated Demigods hair-front layer (bangs / front strands only), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods hair-front layer (bangs / front strands only). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -576,15 +576,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -621,7 +621,7 @@ Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.35 <file>`,
 ## Layer 13 — head accessory (crown / halo / horns / tiara / laurel / circlet / veil)
 
 ```
-Create exactly one isolated Demigods head accessory (crown / halo / horns / tiara / laurel / circlet / veil), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods head accessory (crown / halo / horns / tiara / laurel / circlet / veil). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -638,15 +638,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -682,7 +682,7 @@ Gate: `python scripts/rig_gate_report.py --trait --max-width-ratio 1.30 <file>`,
 ## Layer 14 — hand-held object
 
 ```
-Create exactly one isolated Demigods hand-held object, rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods hand-held object. Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png + the matching pose file (e.g. assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png)
 
@@ -699,15 +699,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
@@ -743,7 +743,7 @@ Gate: `python scripts/rig_gate_report.py --trait <file>`, then composite over th
 ## Layer 15 — front aura / effect (in front of the character)
 
 ```
-Create exactly one isolated Demigods front aura / effect (in front of the character), rendered natively at exactly 1254 x 1254 pixels as a PNG in RGBA mode with genuine transparent alpha.
+Create exactly one isolated Demigods front aura / effect (in front of the character). Preferred output is a 1254 x 1254 PNG in RGBA mode with genuine transparent alpha; the final registered asset must always meet that production contract.
 
 ATTACH: assets/base_bodies/base_body_001_neutral_master.png (placement/scale/lighting reference) + docs/rig/rig_guide_1254.png
 
@@ -760,15 +760,15 @@ LOCKED RIG (match the reference exactly; the rig guide shows these):
 - soft upper-left key light ~45 degrees, lower-right form shadows, subtle cool right rim, soft ambient fill
 - clean silhouette, controlled cel shading, crisp anti-aliased edges, premium anime-chibi game-art finish
 
-CANVAS — restated because generators drift to 1024:
-- exactly 1254 x 1254, generated natively at that size
-- never upscale, downscale, or resample anything to reach 1254 x 1254
+CANVAS AND SOURCE-ART FALLBACK:
+- preferred: return exactly 1254 x 1254 on a fully transparent canvas
+- if the generator cannot emit that exact native canvas, return ONE large isolated RGBA source-art PNG with genuine alpha, generous clean transparent margin, and no frame edge contact; it will be reduced and rig-aligned under `docs/workflows/generator_source_transform.md`
+- never upscale, never invent missing pixels, and never output a complete character merely to fill a square canvas
 
-DO NOT REMOVE A BACKGROUND:
-- paint directly onto an empty transparent canvas
-- do NOT render on black, white, or any backdrop and then key it to transparency
-- background removal leaves the old backdrop in the colour channels and produces a
-  gray matte fringe, which is an automatic rejection
+NO PRESENTATION BACKGROUND:
+- paint directly onto transparency whenever possible
+- do not use black, white, green, or checkerboard backdrops, borders, frames, labels, or watermarks
+- a source with a non-transparent matte may be rejected because background recovery can damage the trait edge
 
 ALPHA MUST STAY BRIGHT:
 - every partial-alpha pixel must keep a bright colour value
