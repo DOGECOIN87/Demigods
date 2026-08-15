@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_014_ice_crystal_ring_source_attempt_001.png",
+  "source_sha256": "c08e3ce6262cd7cdbc36c06f0f55463d0f64e23870ddf1c6a654f42d8572d8fb",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      75,
+      1382,
+      1829,
+      1661
+    ],
+    "crop_dimensions": [
+      1755,
+      280
+    ],
+    "scale": 0.38062678,
+    "target_dimensions": [
+      668,
+      107
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 1033,
+      "bounds": [
+        293,
+        1033,
+        960,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_014_015_017/aura_rear_014_ice_crystal_ring.png",
+  "output_sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f"
+}

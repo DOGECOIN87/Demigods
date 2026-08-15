@@ -93,3 +93,11 @@ The blue crystalline burst, pale-lavender lightning wisps, orange fire ring, blu
 The initial, overly tall versions of the three organic floor rings were explicitly rejected before intake; their preserved source files are evidence only. The approved low-profile replacements were reduction-normalized to the established floor-ring seating bounds. No clipping, visual matte, seam, or accidental vertical field is visible in the approved result.
 
 **Art-direction disposition: approved for registration.** Retain the corrected-source provenance, the rejected-attempt evidence, automated reports, and full-context composite set.
+
+## Final Rear Aura Batch Review — DG-154, DG-155 and DG-157
+
+The ice-crystal, smoke-void, and water-splash ground effects pass the same bright/dark full-context review. All three variants retain the low elliptical footprint, transparent central foot opening, and consistent wide seating of the established floor-ring family. The ice construction is visibly faceted rather than a flat polygon treatment; the smoke remains a controlled shallow void effect; and the water has compact, readable splash detail.
+
+The normalized candidates remain inside the locked final canvas, with their lower visible edges at the Y 1139 baseline. No facial obstruction, outfit collision, clipping, presentation matte, or unintentional scene content appears in the reviewed composites.
+
+**Art-direction disposition: approved for registration.** This completes the rear-aura category.

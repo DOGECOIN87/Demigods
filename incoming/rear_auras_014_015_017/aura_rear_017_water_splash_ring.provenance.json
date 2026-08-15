@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_017_water_splash_ring_source_attempt_001.png",
+  "source_sha256": "352f97f80b8532ced10dd1d796d7341855df916c7ec17296c1f896ad4e9a1104",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      147,
+      1517,
+      1772,
+      1690
+    ],
+    "crop_dimensions": [
+      1626,
+      174
+    ],
+    "scale": 0.41082411,
+    "target_dimensions": [
+      668,
+      71
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 1069,
+      "bounds": [
+        293,
+        1069,
+        960,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_014_015_017/aura_rear_017_water_splash_ring.png",
+  "output_sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2"
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_015_smoke_void_ring_source_attempt_001.png",
+  "source_sha256": "26420ff0795eb638e5e7c5511f4a34c9b5f8a2ebdb60399b63b6d578c6a36939",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      315,
+      1579,
+      1602,
+      1758
+    ],
+    "crop_dimensions": [
+      1288,
+      180
+    ],
+    "scale": 0.51863354,
+    "target_dimensions": [
+      668,
+      93
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 1047,
+      "bounds": [
+        293,
+        1047,
+        960,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_014_015_017/aura_rear_015_smoke_void_ring.png",
+  "output_sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5"
+}

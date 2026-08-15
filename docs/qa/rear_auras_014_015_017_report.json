@@ -1,0 +1,209 @@
+[
+  {
+    "filename": "aura_rear_014_ice_crystal_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_014_015_017/aura_rear_014_ice_crystal_ring.png",
+    "sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f",
+    "passed": true,
+    "failures": [],
+    "id": "DG-154",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
+    "description": "Pale-blue ice crystal ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1033,960,1139]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_014_over_base.png"
+  },
+  {
+    "filename": "aura_rear_015_smoke_void_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_014_015_017/aura_rear_015_smoke_void_ring.png",
+    "sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5",
+    "passed": true,
+    "failures": [],
+    "id": "DG-155",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
+    "description": "Black smoke void ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1047,960,1139]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_015_over_base.png"
+  },
+  {
+    "filename": "aura_rear_017_water_splash_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_014_015_017/aura_rear_017_water_splash_ring.png",
+    "sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2",
+    "passed": true,
+    "failures": [],
+    "id": "DG-157",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
+    "description": "Cyan water splash ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1069,960,1139]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_017_over_base.png"
+  }
+]
