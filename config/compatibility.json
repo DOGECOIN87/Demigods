@@ -89,7 +89,42 @@
     {
       "trait": "outfit_010_celestial_robe_white_gold.png",
       "requires": "base_body_001_neutral_master.png",
-      "reason": "The ceremonial robe armholes and relaxed hand clearance are fitted to Pose 001."
+      "reason": "The ceremonial robe armholes are fitted to Pose 001."
+    },
+    {
+      "trait": "hand_object_006_gold_lantern_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "The lantern handle and shaft are anchored to the viewer-left vertical-grip pose."
+    },
+    {
+      "trait": "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "The gem staff shaft is anchored to the viewer-left vertical-grip pose."
+    },
+    {
+      "trait": "hand_object_008_blue_crescent_staff_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "The crescent staff shaft is anchored to the viewer-left vertical-grip pose."
+    },
+    {
+      "trait": "hand_object_009_violet_blade_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "The blade grip and vertical silhouette are anchored to the viewer-left vertical-grip pose."
+    },
+    {
+      "trait": "hand_object_010_horned_skull_scepter_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "The scepter grip and shaft are anchored to the viewer-left vertical-grip pose."
+    },
+    {
+      "trait": "hand_object_011_round_talisman_pose_004_left.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "The talisman contact is anchored to the viewer-left palm-up pose."
+    },
+    {
+      "trait": "hand_object_012_brown_tome_pose_004_left.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "The tome contact is anchored to the viewer-left palm-up pose."
     }
   ],
   "excludes": [],
