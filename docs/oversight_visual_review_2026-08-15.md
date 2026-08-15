@@ -63,3 +63,7 @@ The deep-blue rear hair and pointed-bang front layer pass full-context review. B
 ## Pink Hair Pair Review — DG-034 and DG-120
 
 The pink rear hair and soft-bang front layer pass full-context review. The warm rose palette is coherent, both eyes and facial features remain readable, and the flowing rear silhouette integrates cleanly with the compact fringe. **Approved for paired registration.**
+
+## Teal Hair Pair Review — DG-035 and DG-121
+
+The teal rear hair and open-center front layer pass full-context review. Both eyes and facial features remain visible, the center opening is intentional and balanced, and the aqua highlight treatment integrates cleanly with the rear silhouette. **Approved for paired registration.**

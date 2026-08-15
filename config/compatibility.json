@@ -55,6 +55,11 @@
       "trait": "hair_front_006_pink_soft_bangs.png",
       "requires": "hair_back_006_pink_long_wavy.png",
       "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
+    },
+    {
+      "trait": "hair_front_007_teal_open_center.png",
+      "requires": "hair_back_007_teal_long_wavy.png",
+      "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
     }
   ],
   "excludes": [],

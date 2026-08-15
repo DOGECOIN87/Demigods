@@ -1774,6 +1774,138 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/pink_hair_pair_report.json"
+    },
+    {
+      "id": "hair_back_007",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_007_teal_long_wavy.png",
+      "status": "production_ready",
+      "sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-035",
+      "qa_composite": "docs/qa/composites/hair_back_007_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_back/hair_back_007_teal_long_wavy_candidate_attempt_001.png",
+        "source_sha256": "983a5a91a4fd7a92a978c86793a306d608b8547d512b383ce0ba0071ba6a878c",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 120
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            400,
+            120,
+            1518,
+            1792
+          ],
+          "crop_dimensions": [
+            1119,
+            1673
+          ],
+          "scale": 0.47363718,
+          "target_dimensions": [
+            530,
+            792
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              362,
+              132,
+              891,
+              923
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/teal_hair_pair/hair_back_007_teal_long_wavy.png",
+        "output_sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/teal_hair_pair_report.json"
+    },
+    {
+      "id": "hair_front_007",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_007_teal_open_center.png",
+      "status": "production_ready",
+      "sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-121",
+      "qa_composite": "docs/qa/composites/hair_front_007_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_front/hair_front_007_teal_open_center_candidate_attempt_001.png",
+        "source_sha256": "6b23f7b0367d026fee2993147abfeeb9ec3e15030fbec1b2f88da96bded72c5f",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 192
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            441,
+            418,
+            1474,
+            1464
+          ],
+          "crop_dimensions": [
+            1034,
+            1047
+          ],
+          "scale": 0.40618956,
+          "target_dimensions": [
+            420,
+            425
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              417,
+              132,
+              836,
+              556
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/teal_hair_pair/hair_front_007_teal_open_center.png",
+        "output_sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/teal_hair_pair_report.json"
     }
   ],
   "approved_visual_references": [

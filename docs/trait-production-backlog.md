@@ -132,7 +132,7 @@ Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; 
 | DG-032 | hair back | Long wavy violet rear hair | `HAIR`, upper row cell 4 | DG-029 | `assets/hair_back/hair_back_004_violet_long_wavy.png` | `prompts/04_hair_back.md` | registered |
 | DG-033 | hair back | Long wavy deep-blue rear hair | `HAIR`, upper row cell 5 | DG-029 | `assets/hair_back/hair_back_005_blue_long_wavy.png` | `prompts/04_hair_back.md` | registered |
 | DG-034 | hair back | Long wavy pink rear hair | `HAIR`, upper row cell 6 | DG-029 | `assets/hair_back/hair_back_006_pink_long_wavy.png` | `prompts/04_hair_back.md` | registered |
-| DG-035 | hair back | Long wavy teal rear hair | `HAIR`, upper row cell 7 | DG-029 | `assets/hair_back/hair_back_007_teal_long_wavy.png` | `prompts/04_hair_back.md` | pending |
+| DG-035 | hair back | Long wavy teal rear hair | `HAIR`, upper row cell 7 | DG-029 | `assets/hair_back/hair_back_007_teal_long_wavy.png` | `prompts/04_hair_back.md` | registered |
 | DG-036 | hair back | Long wavy red rear hair | `HAIR`, upper row cell 8 | DG-029 | `assets/hair_back/hair_back_008_red_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 
 #### No recoloring shortcut for the hair-back family (assessed 2026-07-27)
@@ -261,7 +261,7 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-118 | hair front | Violet parted bangs and face-framing strands | `HAIR`, lower row cell 4 | Matching DG-032 | `assets/hair_front/hair_front_004_violet_parted_bangs.png` | `prompts/05_hair_front.md` | registered |
 | DG-119 | hair front | Deep-blue pointed bangs and face-framing strands | `HAIR`, lower row cell 5 | Matching DG-033 | `assets/hair_front/hair_front_005_blue_pointed_bangs.png` | `prompts/05_hair_front.md` | registered |
 | DG-120 | hair front | Pink soft bangs and face-framing strands | `HAIR`, lower row cell 6 | Matching DG-034 | `assets/hair_front/hair_front_006_pink_soft_bangs.png` | `prompts/05_hair_front.md` | registered |
-| DG-121 | hair front | Teal open-center face-framing strands | `HAIR`, lower row cell 7 | Matching DG-035 | `assets/hair_front/hair_front_007_teal_open_center.png` | `prompts/05_hair_front.md` | pending |
+| DG-121 | hair front | Teal open-center face-framing strands | `HAIR`, lower row cell 7 | Matching DG-035 | `assets/hair_front/hair_front_007_teal_open_center.png` | `prompts/05_hair_front.md` | registered |
 | DG-122 | hair front | Red short bangs and face-framing strands | `HAIR`, lower row cell 8 | Matching DG-036 | `assets/hair_front/hair_front_008_red_short_bangs.png` | `prompts/05_hair_front.md` | pending |
 
 ### Head accessories
