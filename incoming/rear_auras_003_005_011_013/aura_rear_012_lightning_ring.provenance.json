@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_012_lightning_ring_source_attempt_002.png",
+  "source_sha256": "85614152d41e5189acb652f17e8344cc2c153501724e78022a69e9253297935a",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      231,
+      1570,
+      1681,
+      1833
+    ],
+    "crop_dimensions": [
+      1451,
+      264
+    ],
+    "scale": 0.46037216,
+    "target_dimensions": [
+      668,
+      122
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 1015,
+      "bounds": [
+        293,
+        1015,
+        960,
+        1136
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_003_005_011_013/aura_rear_012_lightning_ring.png",
+  "output_sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f"
+}

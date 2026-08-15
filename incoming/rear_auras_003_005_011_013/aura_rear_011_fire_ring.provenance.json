@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_011_fire_ring_source_attempt_002.png",
+  "source_sha256": "f968197a1ac755d4a29febf1eaf27e9090dbaeb3d567123d5ace877c754a49e5",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      279,
+      1596,
+      1655,
+      1843
+    ],
+    "crop_dimensions": [
+      1377,
+      248
+    ],
+    "scale": 0.48511256,
+    "target_dimensions": [
+      668,
+      120
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 1020,
+      "bounds": [
+        293,
+        1020,
+        960,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_003_005_011_013/aura_rear_011_fire_ring.png",
+  "output_sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7"
+}

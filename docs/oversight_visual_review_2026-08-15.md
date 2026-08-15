@@ -85,3 +85,11 @@ DG-042 is a black layered hooded robe with an open, lowered hood; DG-043 a fitte
 The narrow edge-spill diagnostic returned only sparse isolated green-pixel counts (0–34) after normalization; the highest count occurs on the intentionally olive garment and no green halo or presentation matte is visible in either full-context composite. The results do not indicate material chroma contamination.
 
 **Art-direction disposition: approved for registration as a neutral-pose outfit batch.** Add the exact `base_body_001_neutral_master.png` requirement for each outfit before registration and retain all source, transform, intake, and full-context review evidence.
+
+## Rear Aura Batch Review — DG-017, DG-019, DG-151 through DG-153
+
+The blue crystalline burst, pale-lavender lightning wisps, orange fire ring, blue lightning ring, and violet flame ring passed their full-context review with the registered red hair and navy formal coat across the celestial throne hall and violet void portal. The body-centred effects frame the character without masking face, hair, hands, or outfit detail. The low floor rings retain a transparent center for the feet, land on a consistent elliptical ground footprint, and stay readable without competing with the character.
+
+The initial, overly tall versions of the three organic floor rings were explicitly rejected before intake; their preserved source files are evidence only. The approved low-profile replacements were reduction-normalized to the established floor-ring seating bounds. No clipping, visual matte, seam, or accidental vertical field is visible in the approved result.
+
+**Art-direction disposition: approved for registration.** Retain the corrected-source provenance, the rejected-attempt evidence, automated reports, and full-context composite set.

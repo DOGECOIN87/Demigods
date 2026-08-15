@@ -2095,6 +2095,141 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+    },
+    {
+      "id": "aura_rear_003",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+      "status": "production_ready",
+      "sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-017",
+      "qa_composite": "docs/qa/composites/aura_rear_003_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Blue crystalline energy burst",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
+    },
+    {
+      "id": "aura_rear_005",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
+      "status": "production_ready",
+      "sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-019",
+      "qa_composite": "docs/qa/composites/aura_rear_005_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pale-lavender vertical lightning wisps",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
+    },
+    {
+      "id": "aura_rear_011",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_011_fire_ring.png",
+      "status": "production_ready",
+      "sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-151",
+      "qa_composite": "docs/qa/composites/aura_rear_011_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Orange fire ring (generator)",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
+    },
+    {
+      "id": "aura_rear_012",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
+      "status": "production_ready",
+      "sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-152",
+      "qa_composite": "docs/qa/composites/aura_rear_012_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Blue lightning ring (generator)",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
+    },
+    {
+      "id": "aura_rear_013",
+      "category": "rear_auras",
+      "path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
+      "status": "production_ready",
+      "sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-153",
+      "qa_composite": "docs/qa/composites/aura_rear_013_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Violet flame ring (generator)",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
     }
   ],
   "approved_visual_references": [

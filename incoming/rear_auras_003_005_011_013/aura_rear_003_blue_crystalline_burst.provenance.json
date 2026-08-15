@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/rear_auras/aura_rear_003_blue_crystalline_burst_source_attempt_001.png",
+  "source_sha256": "0cc43b4b04edfdbb20c86ec3b6534fb2cfe7c0787217570db2783672dffabb08",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      153,
+      286,
+      1759,
+      1731
+    ],
+    "crop_dimensions": [
+      1607,
+      1446
+    ],
+    "scale": 0.36092097,
+    "target_dimensions": [
+      580,
+      522
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 400,
+      "bounds": [
+        337,
+        400,
+        916,
+        921
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/rear_auras_003_005_011_013/aura_rear_003_blue_crystalline_burst.png",
+  "output_sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037"
+}

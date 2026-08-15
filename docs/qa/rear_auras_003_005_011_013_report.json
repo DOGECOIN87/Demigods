@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "aura_rear_003_blue_crystalline_burst.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_003_005_011_013/aura_rear_003_blue_crystalline_burst.png",
+    "sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
+    "passed": true,
+    "failures": [],
+    "id": "DG-017",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+    "description": "Blue crystalline energy burst",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[337,400,916,921]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_003_over_base.png"
+  },
+  {
+    "filename": "aura_rear_005_lavender_lightning.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_003_005_011_013/aura_rear_005_lavender_lightning.png",
+    "sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
+    "passed": true,
+    "failures": [],
+    "id": "DG-019",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
+    "description": "Pale-lavender vertical lightning wisps",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[377,350,876,1056]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_005_over_base.png"
+  },
+  {
+    "filename": "aura_rear_011_fire_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_003_005_011_013/aura_rear_011_fire_ring.png",
+    "sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
+    "passed": true,
+    "failures": [],
+    "id": "DG-151",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_011_fire_ring.png",
+    "description": "Orange fire ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1020,960,1139]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_011_over_base.png"
+  },
+  {
+    "filename": "aura_rear_012_lightning_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_003_005_011_013/aura_rear_012_lightning_ring.png",
+    "sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
+    "passed": true,
+    "failures": [],
+    "id": "DG-152",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
+    "description": "Blue lightning ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1015,960,1136]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_012_over_base.png"
+  },
+  {
+    "filename": "aura_rear_013_violet_flame_ring.png",
+    "source": "/home/ubuntu/Demigods/incoming/rear_auras_003_005_011_013/aura_rear_013_violet_flame_ring.png",
+    "sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
+    "passed": true,
+    "failures": [],
+    "id": "DG-153",
+    "backlog_status": "pending",
+    "category": "rear_auras",
+    "production_path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
+    "description": "Violet flame ring (generator)",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--floor-aura",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[293,1009,960,1139]",
+          "expected": "[233,129,1021,1252]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_rear_013_over_base.png"
+  }
+]
