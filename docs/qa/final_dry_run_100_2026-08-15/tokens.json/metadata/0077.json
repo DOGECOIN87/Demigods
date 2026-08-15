@@ -1,0 +1,60 @@
+{
+  "name": "Demigods #0077",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0077.png",
+  "token_id": 77,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_008_violet_void_portal",
+      "source_file": "backgrounds/background_008_violet_void_portal.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_007_green_neon_ring",
+      "source_file": "rear_auras/aura_rear_007_green_neon_ring.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_001_silver_feathered_wings",
+      "source_file": "back_accessories/back_accessory_001_silver_feathered_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_008_red_long_wavy",
+      "source_file": "hair_back/hair_back_008_red_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_004_viewer_left_palm_up",
+      "source_file": "base_bodies/base_pose_004_viewer_left_palm_up.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_004_lunar_oracle_pose_004",
+      "source_file": "outfits/outfit_004_lunar_oracle_pose_004.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_005_silver_navy_long_pendant",
+      "source_file": "neck_accessories/neck_accessory_005_silver_navy_long_pendant.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_008_red_short_bangs",
+      "source_file": "hair_front/hair_front_008_red_short_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_012_brown_tome_pose_004_left",
+      "source_file": "hand_objects/hand_object_012_brown_tome_pose_004_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_001_orange_rising_flame",
+      "source_file": "front_auras/aura_front_001_orange_rising_flame.png"
+    }
+  ],
+  "trait_signature": "522f91f5c234c75e49137b3b17f22c169577201ff7d3b87e93c7c64ec12724ad",
+  "image_sha256": null
+}

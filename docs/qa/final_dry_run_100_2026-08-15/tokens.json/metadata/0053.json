@@ -1,0 +1,65 @@
+{
+  "name": "Demigods #0053",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0053.png",
+  "token_id": 53,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_007_golden_celestial_gateway",
+      "source_file": "backgrounds/background_007_golden_celestial_gateway.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_002_violet_radial_glow",
+      "source_file": "rear_auras/aura_rear_002_violet_radial_glow.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_002_black_violet_bat_wings",
+      "source_file": "back_accessories/back_accessory_002_black_violet_bat_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_002_black_long_wavy",
+      "source_file": "hair_back/hair_back_002_black_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_002_viewer_left_vertical_grip",
+      "source_file": "base_bodies/base_pose_002_viewer_left_vertical_grip.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_002_storm_guardian_pose_002",
+      "source_file": "outfits/outfit_002_storm_guardian_pose_002.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_003_black_ribbon_bow",
+      "source_file": "neck_accessories/neck_accessory_003_black_ribbon_bow.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_002_black_side_swept",
+      "source_file": "hair_front/hair_front_002_black_side_swept.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_006_gold_lantern_pose_002_left",
+      "source_file": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_002_gold_light_pillars",
+      "source_file": "front_auras/aura_front_002_gold_light_pillars.png"
+    },
+    {
+      "trait_type": "global_finish",
+      "value": "global_finish_003_cool_veil",
+      "source_file": "global_finish/global_finish_003_cool_veil.png"
+    }
+  ],
+  "trait_signature": "9244ac59f2475a0710d43d7093abbd9ca2ae4ab7401c5a236149792285377558",
+  "image_sha256": null
+}

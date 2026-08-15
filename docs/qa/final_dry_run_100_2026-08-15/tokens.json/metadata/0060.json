@@ -1,0 +1,65 @@
+{
+  "name": "Demigods #0060",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0060.png",
+  "token_id": 60,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_004_crescent_star_dreamscape",
+      "source_file": "backgrounds/background_004_crescent_star_dreamscape.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_005_lavender_lightning",
+      "source_file": "rear_auras/aura_rear_005_lavender_lightning.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_001_silver_feathered_wings",
+      "source_file": "back_accessories/back_accessory_001_silver_feathered_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_006_pink_long_wavy",
+      "source_file": "hair_back/hair_back_006_pink_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_002_viewer_left_vertical_grip",
+      "source_file": "base_bodies/base_pose_002_viewer_left_vertical_grip.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_002_storm_guardian_pose_002",
+      "source_file": "outfits/outfit_002_storm_guardian_pose_002.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_005_silver_navy_long_pendant",
+      "source_file": "neck_accessories/neck_accessory_005_silver_navy_long_pendant.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_006_pink_soft_bangs",
+      "source_file": "hair_front/hair_front_006_pink_soft_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_008_blue_crescent_staff_pose_002_left",
+      "source_file": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_001_orange_rising_flame",
+      "source_file": "front_auras/aura_front_001_orange_rising_flame.png"
+    },
+    {
+      "trait_type": "global_finish",
+      "value": "global_finish_002_gilded_warm",
+      "source_file": "global_finish/global_finish_002_gilded_warm.png"
+    }
+  ],
+  "trait_signature": "035f91494075726d43efb14fd5648c7243f4140f8f3733a35c1dce21986c7b41",
+  "image_sha256": null
+}

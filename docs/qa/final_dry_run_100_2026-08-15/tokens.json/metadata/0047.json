@@ -1,0 +1,65 @@
+{
+  "name": "Demigods #0047",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0047.png",
+  "token_id": 47,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_004_crescent_star_dreamscape",
+      "source_file": "backgrounds/background_004_crescent_star_dreamscape.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_011_fire_ring",
+      "source_file": "rear_auras/aura_rear_011_fire_ring.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_005_black_violet_ragged_cloak",
+      "source_file": "back_accessories/back_accessory_005_black_violet_ragged_cloak.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_006_pink_long_wavy",
+      "source_file": "hair_back/hair_back_006_pink_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_002_viewer_left_vertical_grip",
+      "source_file": "base_bodies/base_pose_002_viewer_left_vertical_grip.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_002_storm_guardian_pose_002",
+      "source_file": "outfits/outfit_002_storm_guardian_pose_002.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_002_gold_blue_drop_choker",
+      "source_file": "neck_accessories/neck_accessory_002_gold_blue_drop_choker.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_006_pink_soft_bangs",
+      "source_file": "hair_front/hair_front_006_pink_soft_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_007_gold_blue_gem_staff_pose_002_left",
+      "source_file": "hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_002_gold_light_pillars",
+      "source_file": "front_auras/aura_front_002_gold_light_pillars.png"
+    },
+    {
+      "trait_type": "global_finish",
+      "value": "global_finish_001_soft_bloom",
+      "source_file": "global_finish/global_finish_001_soft_bloom.png"
+    }
+  ],
+  "trait_signature": "07446d9fa5f1b2fb5e60dc8408b2eb1915af50cc977daede6b87c5a2519e983d",
+  "image_sha256": null
+}
