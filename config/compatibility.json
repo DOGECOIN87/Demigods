@@ -65,6 +65,31 @@
       "trait": "hair_front_008_red_short_bangs.png",
       "requires": "hair_back_008_red_long_wavy.png",
       "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "The robe armholes and relaxed hand clearance are fitted to Pose 001."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "The travel-coat armholes and relaxed hand clearance are fitted to Pose 001."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "The layered cloak armholes and relaxed hand clearance are fitted to Pose 001."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "The formal coat armholes and relaxed hand clearance are fitted to Pose 001."
+    },
+    {
+      "trait": "outfit_010_celestial_robe_white_gold.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "The ceremonial robe armholes and relaxed hand clearance are fitted to Pose 001."
     }
   ],
   "excludes": [],

@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/outfits/outfit_009_navy_high_collar_coat_source_attempt_001.png",
+  "source_sha256": "b905782d6ef780101f3a56ff53b364e57d146d79a21e5308112a9d15db82b082",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      477,
+      250,
+      1430,
+      1709
+    ],
+    "crop_dimensions": [
+      954,
+      1460
+    ],
+    "scale": 0.45492662,
+    "target_dimensions": [
+      434,
+      664
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 475,
+      "bounds": [
+        410,
+        475,
+        843,
+        1138
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/outfits_006_010/outfit_009_navy_high_collar_coat.png",
+  "output_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8"
+}

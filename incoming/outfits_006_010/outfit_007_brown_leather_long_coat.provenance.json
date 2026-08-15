@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/outfits/outfit_007_brown_leather_long_coat_source_attempt_001.png",
+  "source_sha256": "c3e0cdd6846d04c95aa1ef80aaad93585688dcd6890bcb913281d732349c0327",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      507,
+      257,
+      1412,
+      1747
+    ],
+    "crop_dimensions": [
+      906,
+      1491
+    ],
+    "scale": 0.44591611,
+    "target_dimensions": [
+      404,
+      665
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 475,
+      "bounds": [
+        425,
+        475,
+        828,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/outfits_006_010/outfit_007_brown_leather_long_coat.png",
+  "output_sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113"
+}

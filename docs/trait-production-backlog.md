@@ -150,11 +150,11 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 | DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | registered |
 | DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | registered |
 | DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | registered |
-| DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-037 | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | pending |
-| DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-037 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | pending |
-| DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-037 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | pending |
-| DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | DG-037 | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | pending |
-| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | pending |
+| DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-037 | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | registered |
+| DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-037 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | registered |
+| DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-037 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | registered |
+| DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | DG-037 | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | registered |
+| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | registered |
 
 ### Neck accessories
 

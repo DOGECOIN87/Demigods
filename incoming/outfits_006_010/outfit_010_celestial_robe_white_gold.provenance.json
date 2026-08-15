@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/outfits/outfit_010_celestial_robe_white_gold_source_attempt_001.png",
+  "source_sha256": "c1588c936b5ca3b3c33e734ac55f64bc82640577b7a4d6ddf398b15d7540e88d",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      473,
+      204,
+      1441,
+      1748
+    ],
+    "crop_dimensions": [
+      969,
+      1545
+    ],
+    "scale": 0.43034056,
+    "target_dimensions": [
+      417,
+      665
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 475,
+      "bounds": [
+        418,
+        475,
+        834,
+        1139
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/outfits_006_010/outfit_010_celestial_robe_white_gold.png",
+  "output_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182"
+}

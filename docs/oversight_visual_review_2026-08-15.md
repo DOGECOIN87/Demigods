@@ -75,3 +75,13 @@ The red/auburn long-wavy rear hair and short, layered front-bang layer pass the 
 The compact fringe and narrow temple strands leave both eyes, cheeks, nose, and mouth readable. No unacceptable face obstruction, seam, crop, residual presentation matte, rig misalignment, or layer-order failure is visible at the review scale. The richer red/auburn palette remains legible and stylistically coherent against both a bright celestial and a dark arcane background.
 
 **Art-direction disposition: approved for paired registration.** Retain the immutable generator sources, reduction-only transform reports, batch-intake evidence, and full-context composite artifacts. DG-122 must carry the required automatic compatibility rule binding it to DG-036.
+
+## Neutral-Pose Outfit Batch Review — DG-042 through DG-046
+
+The five remaining neutral-pose wardrobe layers were inspected in the provenance-aware batch sheet and in full-context composites with the registered red hair pair over both the celestial throne hall and violet void portal. The first normalization pass was rejected for DG-043 through DG-046 because their footwear stopped above the locked Y 1139 foot baseline, exposing the base-body feet. Their immutable sources were retained, and the four candidates were re-normalized by reduction only at corrected scales. The revised full-context sheet confirms all five final candidates now seat cleanly at the intended baseline.
+
+DG-042 is a black layered hooded robe with an open, lowered hood; DG-043 a fitted brown leather travel coat; DG-044 a deliberately ragged olive cloak outfit; DG-045 a deep-navy high-collar long coat with a visibly open neck; and DG-046 a silver-white celestial ceremonial robe with an open collar. Each presents a distinct silhouette, construction, material and palette. Across the two contrasting environments, faces and hands remain clear, cuffs do not obscure fingers, the body is not duplicated in the garment layer, footwear reaches the locked baseline, and the collars leave the base neck readable. No meaningful seam, crop, pose drift, or art-direction collision is visible at the review scale.
+
+The narrow edge-spill diagnostic returned only sparse isolated green-pixel counts (0–34) after normalization; the highest count occurs on the intentionally olive garment and no green halo or presentation matte is visible in either full-context composite. The results do not indicate material chroma contamination.
+
+**Art-direction disposition: approved for registration as a neutral-pose outfit batch.** Add the exact `base_body_001_neutral_master.png` requirement for each outfit before registration and retain all source, transform, intake, and full-context review evidence.

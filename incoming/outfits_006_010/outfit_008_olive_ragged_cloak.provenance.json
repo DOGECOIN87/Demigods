@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/outfits/outfit_008_olive_ragged_cloak_source_attempt_001.png",
+  "source_sha256": "b6708aa490311f70edf706c946ff881109f9e000ea4339beafc9a77b998304df",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      486,
+      276,
+      1426,
+      1672
+    ],
+    "crop_dimensions": [
+      941,
+      1397
+    ],
+    "scale": 0.47502657,
+    "target_dimensions": [
+      447,
+      664
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 475,
+      "bounds": [
+        404,
+        475,
+        850,
+        1138
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/outfits_006_010/outfit_008_olive_ragged_cloak.png",
+  "output_sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6"
+}

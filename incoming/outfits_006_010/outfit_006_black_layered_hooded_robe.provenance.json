@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/outfits/outfit_006_black_layered_hooded_robe_source_attempt_001.png",
+  "source_sha256": "e4e1eca35ca02dcb3e777839d1f8e737e47a8747b865c21a2754385a8d726528",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      524,
+      255,
+      1387,
+      1726
+    ],
+    "crop_dimensions": [
+      864,
+      1472
+    ],
+    "scale": 0.45138889,
+    "target_dimensions": [
+      390,
+      664
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 475,
+      "bounds": [
+        432,
+        475,
+        821,
+        1138
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/outfits_006_010/outfit_006_black_layered_hooded_robe.png",
+  "output_sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05"
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "outfit_006_black_layered_hooded_robe.png",
+    "source": "/home/ubuntu/Demigods/incoming/outfits_006_010/outfit_006_black_layered_hooded_robe.png",
+    "sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
+    "passed": true,
+    "failures": [],
+    "id": "DG-042",
+    "backlog_status": "pending",
+    "category": "outfits",
+    "production_path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
+    "description": "Black layered hooded long robe",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.15",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[432,475,821,1138]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/outfit_006_over_base.png"
+  },
+  {
+    "filename": "outfit_007_brown_leather_long_coat.png",
+    "source": "/home/ubuntu/Demigods/incoming/outfits_006_010/outfit_007_brown_leather_long_coat.png",
+    "sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
+    "passed": true,
+    "failures": [],
+    "id": "DG-043",
+    "backlog_status": "pending",
+    "category": "outfits",
+    "production_path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
+    "description": "Brown leather long coat/robe",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.15",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[425,475,828,1139]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/outfit_007_over_base.png"
+  },
+  {
+    "filename": "outfit_008_olive_ragged_cloak.png",
+    "source": "/home/ubuntu/Demigods/incoming/outfits_006_010/outfit_008_olive_ragged_cloak.png",
+    "sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
+    "passed": true,
+    "failures": [],
+    "id": "DG-044",
+    "backlog_status": "pending",
+    "category": "outfits",
+    "production_path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
+    "description": "Olive-green ragged cloak outfit",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.15",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[404,475,850,1138]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/outfit_008_over_base.png"
+  },
+  {
+    "filename": "outfit_009_navy_high_collar_coat.png",
+    "source": "/home/ubuntu/Demigods/incoming/outfits_006_010/outfit_009_navy_high_collar_coat.png",
+    "sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
+    "passed": true,
+    "failures": [],
+    "id": "DG-045",
+    "backlog_status": "pending",
+    "category": "outfits",
+    "production_path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
+    "description": "Deep-navy high-collar long coat",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.15",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[410,475,843,1138]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/outfit_009_over_base.png"
+  },
+  {
+    "filename": "outfit_010_celestial_robe_white_gold.png",
+    "source": "/home/ubuntu/Demigods/incoming/outfits_006_010/outfit_010_celestial_robe_white_gold.png",
+    "sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
+    "passed": true,
+    "failures": [],
+    "id": "DG-046",
+    "backlog_status": "pending",
+    "category": "outfits",
+    "production_path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+    "description": "Silver-white high-collar ceremonial robe",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.15",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[418,475,834,1139]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/outfit_010_over_base.png"
+  }
+]
