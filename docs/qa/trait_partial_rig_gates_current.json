@@ -1,0 +1,2298 @@
+[
+  {
+    "file": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
+    "sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,708]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      708
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 289,
+      "target_height": 999,
+      "scale_to_target": 3.4567,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+    "sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,727]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      727
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 308,
+      "target_height": 999,
+      "scale_to_target": 3.2435,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+    "sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,852]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      852
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 433,
+      "target_height": 999,
+      "scale_to_target": 2.3072,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_004_navy_formal_cape.png",
+    "sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,500,921,1111]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      500,
+      921,
+      1111
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -359,
+    "guidance": {
+      "silhouette_height": 612,
+      "target_height": 999,
+      "scale_to_target": 1.6324,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -359
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+    "sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,440,921,1120]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      440,
+      921,
+      1120
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -299,
+    "guidance": {
+      "silhouette_height": 681,
+      "target_height": 999,
+      "scale_to_target": 1.467,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -299
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+    "sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,853]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      853
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 434,
+      "target_height": 999,
+      "scale_to_target": 2.3018,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
+    "sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,753]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      753
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 334,
+      "target_height": 999,
+      "scale_to_target": 2.991,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+    "sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[332,420,921,711]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.33x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      332,
+      420,
+      921,
+      711
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.33,
+    "crown_offset": -279,
+    "guidance": {
+      "silhouette_height": 292,
+      "target_height": 999,
+      "scale_to_target": 3.4212,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -279
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_001_gold_long_wavy.png",
+    "sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,740]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      740
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 609,
+      "target_height": 999,
+      "scale_to_target": 1.6404,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_002_black_long_wavy.png",
+    "sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,852]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      852
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 721,
+      "target_height": 999,
+      "scale_to_target": 1.3856,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+    "sha256": "4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[355,132,898,719]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.23x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      355,
+      132,
+      898,
+      719
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.23,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 588,
+      "target_height": 999,
+      "scale_to_target": 1.699,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_004_violet_long_wavy.png",
+    "sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,913]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      913
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 782,
+      "target_height": 999,
+      "scale_to_target": 1.2775,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_005_blue_long_wavy.png",
+    "sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,815]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      815
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 684,
+      "target_height": 999,
+      "scale_to_target": 1.4605,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_006_pink_long_wavy.png",
+    "sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,926]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      926
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 795,
+      "target_height": 999,
+      "scale_to_target": 1.2566,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_007_teal_long_wavy.png",
+    "sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,923]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      923
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 792,
+      "target_height": 999,
+      "scale_to_target": 1.2614,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_back/hair_back_008_red_long_wavy.png",
+    "sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[362,132,891,751]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.20x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      362,
+      132,
+      891,
+      751
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.2,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 620,
+      "target_height": 999,
+      "scale_to_target": 1.6113,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
+    "sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,470]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      470
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 339,
+      "target_height": 999,
+      "scale_to_target": 2.9469,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_002_black_side_swept.png",
+    "sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,544]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      544
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 413,
+      "target_height": 999,
+      "scale_to_target": 2.4189,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
+    "sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,618]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      618
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 487,
+      "target_height": 999,
+      "scale_to_target": 2.0513,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_004_violet_parted_bangs.png",
+    "sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,585]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      585
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 454,
+      "target_height": 999,
+      "scale_to_target": 2.2004,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_005_blue_pointed_bangs.png",
+    "sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,456]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      456
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 325,
+      "target_height": 999,
+      "scale_to_target": 3.0738,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_006_pink_soft_bangs.png",
+    "sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,513]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      513
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 382,
+      "target_height": 999,
+      "scale_to_target": 2.6152,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_007_teal_open_center.png",
+    "sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,556]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      556
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 425,
+      "target_height": 999,
+      "scale_to_target": 2.3506,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hair_front/hair_front_008_red_short_bangs.png",
+    "sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[417,132,836,562]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.95x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      417,
+      132,
+      836,
+      562
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.95,
+    "crown_offset": 9,
+    "guidance": {
+      "silhouette_height": 431,
+      "target_height": 999,
+      "scale_to_target": 2.3179,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 9
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+    "sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[447,540,806,663]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.81x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      447,
+      540,
+      806,
+      663
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.81,
+    "crown_offset": -399,
+    "guidance": {
+      "silhouette_height": 124,
+      "target_height": 999,
+      "scale_to_target": 8.0565,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -399
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+    "sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[447,520,806,758]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.81x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      447,
+      520,
+      806,
+      758
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.81,
+    "crown_offset": -379,
+    "guidance": {
+      "silhouette_height": 239,
+      "target_height": 999,
+      "scale_to_target": 4.1799,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -379
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+    "sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[467,540,786,838]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.72x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      467,
+      540,
+      786,
+      838
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.72,
+    "crown_offset": -399,
+    "guidance": {
+      "silhouette_height": 299,
+      "target_height": 999,
+      "scale_to_target": 3.3411,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -399
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+    "sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[477,520,776,785]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.68x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      477,
+      520,
+      776,
+      785
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.68,
+    "crown_offset": -379,
+    "guidance": {
+      "silhouette_height": 266,
+      "target_height": 999,
+      "scale_to_target": 3.7556,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -379
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+    "sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[477,500,776,986]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.68x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      477,
+      500,
+      776,
+      986
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.68,
+    "crown_offset": -359,
+    "guidance": {
+      "silhouette_height": 487,
+      "target_height": 999,
+      "scale_to_target": 2.0513,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -359
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+    "sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[477,520,776,748]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.68x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      477,
+      520,
+      776,
+      748
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.68,
+    "crown_offset": -379,
+    "guidance": {
+      "silhouette_height": 229,
+      "target_height": 999,
+      "scale_to_target": 4.3624,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -379
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+    "sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[477,500,776,749]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.68x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      477,
+      500,
+      776,
+      749
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.68,
+    "crown_offset": -359,
+    "guidance": {
+      "silhouette_height": 250,
+      "target_height": 999,
+      "scale_to_target": 3.996,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -359
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+    "sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[467,540,786,778]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.72x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      467,
+      540,
+      786,
+      778
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.72,
+    "crown_offset": -399,
+    "guidance": {
+      "silhouette_height": 239,
+      "target_height": 999,
+      "scale_to_target": 4.1799,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -399
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+    "sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[334,735,473,1137]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.32x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      334,
+      735,
+      473,
+      1137
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.32,
+    "crown_offset": -594,
+    "guidance": {
+      "silhouette_height": 403,
+      "target_height": 999,
+      "scale_to_target": 2.4789,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -594
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+    "sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[334,180,473,831]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.32x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      334,
+      180,
+      473,
+      831
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.32,
+    "crown_offset": -39,
+    "guidance": {
+      "silhouette_height": 652,
+      "target_height": 999,
+      "scale_to_target": 1.5322,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -39
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+    "sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[329,180,478,1007]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.34x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      329,
+      180,
+      478,
+      1007
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.34,
+    "crown_offset": -39,
+    "guidance": {
+      "silhouette_height": 828,
+      "target_height": 999,
+      "scale_to_target": 1.2065,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -39
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+    "sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[309,300,498,1082]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.43x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      309,
+      300,
+      498,
+      1082
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.43,
+    "crown_offset": -159,
+    "guidance": {
+      "silhouette_height": 783,
+      "target_height": 999,
+      "scale_to_target": 1.2759,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -159
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+    "sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[329,180,478,804]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.34x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      329,
+      180,
+      478,
+      804
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.34,
+    "crown_offset": -39,
+    "guidance": {
+      "silhouette_height": 625,
+      "target_height": 999,
+      "scale_to_target": 1.5984,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -39
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+    "sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[319,620,488,848]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.38x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      319,
+      620,
+      488,
+      848
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.38,
+    "crown_offset": -479,
+    "guidance": {
+      "silhouette_height": 229,
+      "target_height": 999,
+      "scale_to_target": 4.3624,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -479
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+    "sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[299,640,508,868]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.47x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      299,
+      640,
+      508,
+      868
+    ],
+    "trait_center_x": 403.5,
+    "width_ratio": 0.47,
+    "crown_offset": -499,
+    "guidance": {
+      "silhouette_height": 229,
+      "target_height": 999,
+      "scale_to_target": 4.3624,
+      "shift_center_x_by": 223.5,
+      "shift_head_top_by": -499
+    },
+    "deviation": 223.5
+  },
+  {
+    "file": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+    "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[268,676,1004,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.66x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      268,
+      676,
+      1004,
+      1138
+    ],
+    "trait_center_x": 636.0,
+    "width_ratio": 1.66,
+    "crown_offset": -535,
+    "guidance": {
+      "silhouette_height": 463,
+      "target_height": 999,
+      "scale_to_target": 2.1577,
+      "shift_center_x_by": -9.0,
+      "shift_head_top_by": -535
+    },
+    "deviation": 9.0
+  },
+  {
+    "file": "assets/front_auras/aura_front_002_gold_light_pillars.png",
+    "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[249,582,1014,1136]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.73x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      249,
+      582,
+      1014,
+      1136
+    ],
+    "trait_center_x": 631.5,
+    "width_ratio": 1.73,
+    "crown_offset": -441,
+    "guidance": {
+      "silhouette_height": 555,
+      "target_height": 999,
+      "scale_to_target": 1.8,
+      "shift_center_x_by": -4.5,
+      "shift_head_top_by": -441
+    },
+    "deviation": 4.5
+  }
+]

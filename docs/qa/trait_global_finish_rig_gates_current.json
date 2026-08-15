@@ -1,0 +1,110 @@
+[
+  {
+    "file": "assets/global_finish/global_finish_001_soft_bloom.png",
+    "sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "alpha_ceiling",
+        true,
+        "alpha_max=40",
+        "<=64",
+        0
+      ],
+      [
+        "not_opaque",
+        true,
+        "alpha_max=40",
+        "<255",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      40
+    ]
+  },
+  {
+    "file": "assets/global_finish/global_finish_002_gilded_warm.png",
+    "sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "alpha_ceiling",
+        true,
+        "alpha_max=56",
+        "<=64",
+        0
+      ],
+      [
+        "not_opaque",
+        true,
+        "alpha_max=56",
+        "<255",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      56
+    ]
+  },
+  {
+    "file": "assets/global_finish/global_finish_003_cool_veil.png",
+    "sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "alpha_ceiling",
+        true,
+        "alpha_max=48",
+        "<=64",
+        0
+      ],
+      [
+        "not_opaque",
+        true,
+        "alpha_max=48",
+        "<255",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "alpha_range": [
+      0,
+      48
+    ]
+  }
+]

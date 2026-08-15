@@ -1,0 +1,2042 @@
+[
+  {
+    "id": "background_001",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_001_celestial_throne_hall.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "94b0f349469db4111645e1f9ce7c23bf2286ae3bfbc41ad9f3e4d75126eca851"
+  },
+  {
+    "id": "background_002",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "6726bb40b6fe4ee1ac84a8774638a20af52f16635fe75215e64e5f93ce6269d0"
+  },
+  {
+    "id": "background_003",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_003_arcane_library.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "c06e78c708b5f92ea4f47ba5083e1fbcb5171d4f53a8fddbeeedb569fc79e93a"
+  },
+  {
+    "id": "background_004",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "68c1a41a42195196f35b4f666ba1ecd9bb19d236a7dd46f8f874c9b02bb2f91d"
+  },
+  {
+    "id": "background_005",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_005_solar_sky_temple.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "8fbb403571186633f3ef7431abe801e02ec3db361a8eac9c7ab1ac5e2035c3f0"
+  },
+  {
+    "id": "background_006",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_006_moonlit_marble_balcony.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "e2f3e08e557b8b5ee4f6c5a268a6aa068036dc18bfbcc57cd471911bfffc8678"
+  },
+  {
+    "id": "background_007",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_007_golden_celestial_gateway.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "c7d2fe340c809bfe6669732245ebec4a721296220c01e8f27c08b43dc35a9498"
+  },
+  {
+    "id": "background_008",
+    "category": "backgrounds",
+    "path": "assets/backgrounds/background_008_violet_void_portal.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "b43b22641f4eecc087ac550cd4d8d097e8905a538ddd68643e6e424dd002fb99"
+  },
+  {
+    "id": "base_body_001",
+    "category": "base_bodies",
+    "path": "assets/base_bodies/base_body_001_neutral_master.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      406,
+      141,
+      848,
+      1139
+    ],
+    "width": 443,
+    "width_ratio": 1.0,
+    "center_x": 627.0,
+    "center_delta": 0.0,
+    "touches_edge": false,
+    "sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107"
+  },
+  {
+    "id": "base_pose_002",
+    "category": "base_bodies",
+    "path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      412,
+      141,
+      866,
+      1139
+    ],
+    "width": 455,
+    "width_ratio": 1.027,
+    "center_x": 639.0,
+    "center_delta": 12.0,
+    "touches_edge": false,
+    "sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7"
+  },
+  {
+    "id": "base_pose_003",
+    "category": "base_bodies",
+    "path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      408,
+      141,
+      821,
+      1139
+    ],
+    "width": 414,
+    "width_ratio": 0.935,
+    "center_x": 614.5,
+    "center_delta": -12.5,
+    "touches_edge": false,
+    "sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16"
+  },
+  {
+    "id": "base_pose_004",
+    "category": "base_bodies",
+    "path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      397,
+      141,
+      835,
+      1139
+    ],
+    "width": 439,
+    "width_ratio": 0.991,
+    "center_x": 616.0,
+    "center_delta": -11.0,
+    "touches_edge": false,
+    "sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685"
+  },
+  {
+    "id": "base_pose_005",
+    "category": "base_bodies",
+    "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      450,
+      141,
+      805,
+      1139
+    ],
+    "width": 356,
+    "width_ratio": 0.804,
+    "center_x": 627.5,
+    "center_delta": 0.5,
+    "touches_edge": false,
+    "sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0"
+  },
+  {
+    "id": "hair_back_003",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      355,
+      132,
+      898,
+      719
+    ],
+    "width": 544,
+    "width_ratio": 1.228,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7"
+  },
+  {
+    "id": "aura_rear_001",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_001_blue_floor_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "03273fb15878b663caa7cbc6e129555c29a0111b8de79e6b338f33f363feb4ab"
+  },
+  {
+    "id": "aura_rear_006",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_006_gold_radiance.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 174,
+    "bounds": [
+      343,
+      432,
+      910,
+      1127
+    ],
+    "width": 568,
+    "width_ratio": 1.282,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "3c3e78fa570aad87c84fa004a09c052fc7f6b930b162ab15a52c424bb719c558"
+  },
+  {
+    "id": "aura_rear_007",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_007_green_neon_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "89c6f4f8ccd1a3b3b9f1e1615add056d1dad8af706fbff8c323be5b9dba04369"
+  },
+  {
+    "id": "aura_rear_008",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_008_gold_neon_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "7216d772e2f91b42cdf7ef316c2e5dc998d8a66cd1b17895f4f5a989a005558c"
+  },
+  {
+    "id": "aura_rear_009",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_009_pink_neon_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "d55fd93fe7582ba4d93e0132c2c0964d9c4208cc6d140d222e63d283aae1b9d2"
+  },
+  {
+    "id": "aura_rear_010",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_010_white_neon_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "cb4b276c7e43d09218f625859fe01bdb2f31e7eb7d55fb547d9949c721065283"
+  },
+  {
+    "id": "aura_rear_002",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_002_violet_radial_glow.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 234,
+    "bounds": [
+      340,
+      428,
+      913,
+      1131
+    ],
+    "width": 574,
+    "width_ratio": 1.296,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27"
+  },
+  {
+    "id": "aura_rear_004",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_004_violet_void_flame.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      383,
+      172,
+      869,
+      1149
+    ],
+    "width": 487,
+    "width_ratio": 1.099,
+    "center_x": 626.0,
+    "center_delta": -1.0,
+    "touches_edge": false,
+    "sha256": "ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f"
+  },
+  {
+    "id": "aura_rear_016",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      302,
+      161,
+      951,
+      1128
+    ],
+    "width": 650,
+    "width_ratio": 1.467,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029"
+  },
+  {
+    "id": "outfit_001",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      407,
+      475,
+      848,
+      1139
+    ],
+    "width": 442,
+    "width_ratio": 0.998,
+    "center_x": 627.5,
+    "center_delta": 0.5,
+    "touches_edge": false,
+    "sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958"
+  },
+  {
+    "id": "outfit_002",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      475,
+      476,
+      778,
+      1138
+    ],
+    "width": 304,
+    "width_ratio": 0.686,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263"
+  },
+  {
+    "id": "outfit_003",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      463,
+      476,
+      790,
+      1137
+    ],
+    "width": 328,
+    "width_ratio": 0.74,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0"
+  },
+  {
+    "id": "outfit_004",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      482,
+      476,
+      771,
+      1137
+    ],
+    "width": 290,
+    "width_ratio": 0.655,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a"
+  },
+  {
+    "id": "outfit_005",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      493,
+      476,
+      761,
+      1138
+    ],
+    "width": 269,
+    "width_ratio": 0.607,
+    "center_x": 627.0,
+    "center_delta": 0.0,
+    "touches_edge": false,
+    "sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96"
+  },
+  {
+    "id": "aura_rear_018",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_018_blue_flame_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 181,
+    "bounds": [
+      306,
+      240,
+      947,
+      1130
+    ],
+    "width": 642,
+    "width_ratio": 1.449,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb"
+  },
+  {
+    "id": "global_finish_001",
+    "category": "global_finish",
+    "path": "assets/global_finish/global_finish_001_soft_bloom.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 40,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2"
+  },
+  {
+    "id": "global_finish_002",
+    "category": "global_finish",
+    "path": "assets/global_finish/global_finish_002_gilded_warm.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 56,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923"
+  },
+  {
+    "id": "global_finish_003",
+    "category": "global_finish",
+    "path": "assets/global_finish/global_finish_003_cool_veil.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 48,
+    "bounds": [
+      0,
+      0,
+      1253,
+      1253
+    ],
+    "width": 1254,
+    "width_ratio": 2.831,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": true,
+    "sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63"
+  },
+  {
+    "id": "hair_front_003",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      618
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f"
+  },
+  {
+    "id": "hair_back_001",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_001_gold_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      740
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed"
+  },
+  {
+    "id": "hair_front_001",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      470
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d"
+  },
+  {
+    "id": "hair_back_002",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_002_black_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      852
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b"
+  },
+  {
+    "id": "hair_front_002",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_002_black_side_swept.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      544
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b"
+  },
+  {
+    "id": "hair_back_004",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_004_violet_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      913
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46"
+  },
+  {
+    "id": "hair_front_004",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_004_violet_parted_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      585
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0"
+  },
+  {
+    "id": "hair_back_005",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_005_blue_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      815
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d"
+  },
+  {
+    "id": "hair_front_005",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_005_blue_pointed_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      456
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb"
+  },
+  {
+    "id": "hair_back_006",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_006_pink_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      926
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4"
+  },
+  {
+    "id": "hair_front_006",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_006_pink_soft_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      513
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c"
+  },
+  {
+    "id": "hair_back_007",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_007_teal_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      923
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f"
+  },
+  {
+    "id": "hair_front_007",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_007_teal_open_center.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      556
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974"
+  },
+  {
+    "id": "hair_back_008",
+    "category": "hair_back",
+    "path": "assets/hair_back/hair_back_008_red_long_wavy.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      362,
+      132,
+      891,
+      751
+    ],
+    "width": 530,
+    "width_ratio": 1.196,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc"
+  },
+  {
+    "id": "hair_front_008",
+    "category": "hair_front",
+    "path": "assets/hair_front/hair_front_008_red_short_bangs.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      417,
+      132,
+      836,
+      562
+    ],
+    "width": 420,
+    "width_ratio": 0.948,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625"
+  },
+  {
+    "id": "outfit_006",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      432,
+      475,
+      821,
+      1138
+    ],
+    "width": 390,
+    "width_ratio": 0.88,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05"
+  },
+  {
+    "id": "outfit_007",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      425,
+      475,
+      828,
+      1139
+    ],
+    "width": 404,
+    "width_ratio": 0.912,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113"
+  },
+  {
+    "id": "outfit_008",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      404,
+      475,
+      850,
+      1138
+    ],
+    "width": 447,
+    "width_ratio": 1.009,
+    "center_x": 627.0,
+    "center_delta": 0.0,
+    "touches_edge": false,
+    "sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6"
+  },
+  {
+    "id": "outfit_009",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      410,
+      475,
+      843,
+      1138
+    ],
+    "width": 434,
+    "width_ratio": 0.98,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8"
+  },
+  {
+    "id": "outfit_010",
+    "category": "outfits",
+    "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      418,
+      475,
+      834,
+      1139
+    ],
+    "width": 417,
+    "width_ratio": 0.941,
+    "center_x": 626.0,
+    "center_delta": -1.0,
+    "touches_edge": false,
+    "sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182"
+  },
+  {
+    "id": "aura_rear_003",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      337,
+      400,
+      916,
+      921
+    ],
+    "width": 580,
+    "width_ratio": 1.309,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037"
+  },
+  {
+    "id": "aura_rear_005",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      377,
+      350,
+      876,
+      1056
+    ],
+    "width": 500,
+    "width_ratio": 1.129,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2"
+  },
+  {
+    "id": "aura_rear_011",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_011_fire_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1020,
+      960,
+      1139
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7"
+  },
+  {
+    "id": "aura_rear_012",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1015,
+      960,
+      1136
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f"
+  },
+  {
+    "id": "aura_rear_013",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1009,
+      960,
+      1139
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0"
+  },
+  {
+    "id": "aura_rear_014",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1033,
+      960,
+      1139
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f"
+  },
+  {
+    "id": "aura_rear_015",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1047,
+      960,
+      1139
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5"
+  },
+  {
+    "id": "aura_rear_017",
+    "category": "rear_auras",
+    "path": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      293,
+      1069,
+      960,
+      1139
+    ],
+    "width": 668,
+    "width_ratio": 1.508,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2"
+  },
+  {
+    "id": "back_accessory_001",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      708
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c"
+  },
+  {
+    "id": "back_accessory_002",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      727
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2"
+  },
+  {
+    "id": "back_accessory_003",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      852
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278"
+  },
+  {
+    "id": "back_accessory_004",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_004_navy_formal_cape.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      500,
+      921,
+      1111
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990"
+  },
+  {
+    "id": "back_accessory_005",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      440,
+      921,
+      1120
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70"
+  },
+  {
+    "id": "back_accessory_006",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      853
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c"
+  },
+  {
+    "id": "back_accessory_007",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      753
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c"
+  },
+  {
+    "id": "back_accessory_008",
+    "category": "back_accessories",
+    "path": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      332,
+      420,
+      921,
+      711
+    ],
+    "width": 590,
+    "width_ratio": 1.332,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29"
+  },
+  {
+    "id": "neck_accessory_001",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      447,
+      540,
+      806,
+      663
+    ],
+    "width": 360,
+    "width_ratio": 0.813,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22"
+  },
+  {
+    "id": "neck_accessory_002",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      447,
+      520,
+      806,
+      758
+    ],
+    "width": 360,
+    "width_ratio": 0.813,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813"
+  },
+  {
+    "id": "neck_accessory_003",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      467,
+      540,
+      786,
+      838
+    ],
+    "width": 320,
+    "width_ratio": 0.722,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb"
+  },
+  {
+    "id": "neck_accessory_004",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      477,
+      520,
+      776,
+      785
+    ],
+    "width": 300,
+    "width_ratio": 0.677,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d"
+  },
+  {
+    "id": "neck_accessory_005",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      477,
+      500,
+      776,
+      986
+    ],
+    "width": 300,
+    "width_ratio": 0.677,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15"
+  },
+  {
+    "id": "neck_accessory_006",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      477,
+      520,
+      776,
+      748
+    ],
+    "width": 300,
+    "width_ratio": 0.677,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787"
+  },
+  {
+    "id": "neck_accessory_007",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      477,
+      500,
+      776,
+      749
+    ],
+    "width": 300,
+    "width_ratio": 0.677,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e"
+  },
+  {
+    "id": "neck_accessory_008",
+    "category": "neck_accessories",
+    "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      467,
+      540,
+      786,
+      778
+    ],
+    "width": 320,
+    "width_ratio": 0.722,
+    "center_x": 626.5,
+    "center_delta": -0.5,
+    "touches_edge": false,
+    "sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e"
+  },
+  {
+    "id": "hand_object_006",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      334,
+      735,
+      473,
+      1137
+    ],
+    "width": 140,
+    "width_ratio": 0.316,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34"
+  },
+  {
+    "id": "hand_object_007",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      334,
+      180,
+      473,
+      831
+    ],
+    "width": 140,
+    "width_ratio": 0.316,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415"
+  },
+  {
+    "id": "hand_object_008",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      329,
+      180,
+      478,
+      1007
+    ],
+    "width": 150,
+    "width_ratio": 0.339,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f"
+  },
+  {
+    "id": "hand_object_009",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      309,
+      300,
+      498,
+      1082
+    ],
+    "width": 190,
+    "width_ratio": 0.429,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc"
+  },
+  {
+    "id": "hand_object_010",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      329,
+      180,
+      478,
+      804
+    ],
+    "width": 150,
+    "width_ratio": 0.339,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483"
+  },
+  {
+    "id": "hand_object_011",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      319,
+      620,
+      488,
+      848
+    ],
+    "width": 170,
+    "width_ratio": 0.384,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77"
+  },
+  {
+    "id": "hand_object_012",
+    "category": "hand_objects",
+    "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "bounds": [
+      299,
+      640,
+      508,
+      868
+    ],
+    "width": 210,
+    "width_ratio": 0.474,
+    "center_x": 403.5,
+    "center_delta": -223.5,
+    "touches_edge": false,
+    "sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c"
+  },
+  {
+    "id": "aura_front_001",
+    "category": "front_auras",
+    "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 170,
+    "bounds": [
+      268,
+      676,
+      1004,
+      1138
+    ],
+    "width": 737,
+    "width_ratio": 1.664,
+    "center_x": 636.0,
+    "center_delta": 9.0,
+    "touches_edge": false,
+    "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874"
+  },
+  {
+    "id": "aura_front_002",
+    "category": "front_auras",
+    "path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_min": 0,
+    "alpha_max": 141,
+    "bounds": [
+      249,
+      582,
+      1014,
+      1136
+    ],
+    "width": 766,
+    "width_ratio": 1.729,
+    "center_x": 631.5,
+    "center_delta": 4.5,
+    "touches_edge": false,
+    "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d"
+  }
+]

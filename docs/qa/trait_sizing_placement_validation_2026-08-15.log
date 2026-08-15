@@ -1,0 +1,1238 @@
+>>> python3 scripts/validate_assets.py assets
+PASS assets/backgrounds/background_001_celestial_throne_hall.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_002_violet_gothic_sanctum.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_003_arcane_library.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_004_crescent_star_dreamscape.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_005_solar_sky_temple.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_006_moonlit_marble_balcony.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_007_golden_celestial_gateway.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_008_violet_void_portal.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_001_blue_floor_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_002_violet_radial_glow.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_003_blue_crystalline_burst.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_004_violet_void_flame.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_005_lavender_lightning.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_006_gold_radiance.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_007_green_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_008_gold_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_009_pink_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_010_white_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_011_fire_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_012_lightning_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_013_violet_flame_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_014_ice_crystal_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_015_smoke_void_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_017_water_splash_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_018_blue_flame_ring.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_001_silver_feathered_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_002_black_violet_bat_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_003_cyan_fairy_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_004_navy_formal_cape.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_007_gold_luminous_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_001_gold_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_002_black_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_003_silver_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_004_violet_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_005_blue_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_006_pink_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_007_teal_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_008_red_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_body_001_neutral_master.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_001_celestial_scholar_pose_001.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_002_storm_guardian_pose_002.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_003_verdant_alchemist_pose_003.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_004_lunar_oracle_pose_004.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_005_sun_temple_pose_005.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_006_black_layered_hooded_robe.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_007_brown_leather_long_coat.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_008_olive_ragged_cloak.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_009_navy_high_collar_coat.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_010_celestial_robe_white_gold.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_001_black_choker.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_001_gold_parted_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_002_black_side_swept.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_003_silver_straight_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_004_violet_parted_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_005_blue_pointed_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_006_pink_soft_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_007_teal_open_center.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_008_red_short_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/front_auras/aura_front_001_orange_rising_flame.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/front_auras/aura_front_002_gold_light_pillars.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_001_soft_bloom.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_002_gilded_warm.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_003_cool_veil.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+Ignored 8 non-production reference image(s).
+Checked 85 production file(s); 0 failed; 85 with warnings.
+EXIT 
+>>> python3 scripts/validate_manifest_consistency.py
+PASS registered production asset manifest
+  - WARNING: background_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_body_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_006: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_016: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_018: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_018: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_003: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_011: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_012: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_013: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_014: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_015: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_017: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_011: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_012: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_front_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_front_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_front_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_front_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+Checked 85 registered production asset(s).
+EXIT 
+>>> python3 scripts/rig_gate_report.py --trait assets/back_accessories assets/hair_back assets/hair_front assets/neck_accessories assets/hand_objects assets/front_auras --json-report docs/qa/trait_partial_rig_gates_current.json
+==============================================================================
+back_accessory_001_silver_feathered_wings.png
+  sha256: 47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c
+  inclusive visible bounds: [332, 420, 921, 708]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,708][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_002_black_violet_bat_wings.png
+  sha256: 85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2
+  inclusive visible bounds: [332, 420, 921, 727]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,727][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_003_cyan_fairy_wings.png
+  sha256: 29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278
+  inclusive visible bounds: [332, 420, 921, 852]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,852][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_004_navy_formal_cape.png
+  sha256: 803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990
+  inclusive visible bounds: [332, 500, 921, 1111]
+  width vs base body: 1.33x; crown offset -359 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,500,921,1111][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_005_black_violet_ragged_cloak.png
+  sha256: 9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70
+  inclusive visible bounds: [332, 440, 921, 1120]
+  width vs base body: 1.33x; crown offset -299 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,440,921,1120][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_006_pale_blue_crystal_wings.png
+  sha256: 295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c
+  inclusive visible bounds: [332, 420, 921, 853]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,853][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_007_gold_luminous_wings.png
+  sha256: 61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c
+  inclusive visible bounds: [332, 420, 921, 753]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,753][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+back_accessory_008_olive_silver_spiked_wings.png
+  sha256: 2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29
+  inclusive visible bounds: [332, 420, 921, 711]
+  width vs base body: 1.33x; crown offset -279 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [332,420,921,711][233,129,1021,1139]0
+  width_ratio     PASS    1.33x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_001_gold_long_wavy.png
+  sha256: 9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed
+  inclusive visible bounds: [362, 132, 891, 740]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,740][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_002_black_long_wavy.png
+  sha256: 5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b
+  inclusive visible bounds: [362, 132, 891, 852]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,852][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_003_silver_long_wavy.png
+  sha256: 4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7
+  inclusive visible bounds: [355, 132, 898, 719]
+  width vs base body: 1.23x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [355,132,898,719][233,129,1021,1139]0
+  width_ratio     PASS    1.23x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_004_violet_long_wavy.png
+  sha256: e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46
+  inclusive visible bounds: [362, 132, 891, 913]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,913][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_005_blue_long_wavy.png
+  sha256: c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d
+  inclusive visible bounds: [362, 132, 891, 815]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,815][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_006_pink_long_wavy.png
+  sha256: 4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4
+  inclusive visible bounds: [362, 132, 891, 926]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,926][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_007_teal_long_wavy.png
+  sha256: 6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f
+  inclusive visible bounds: [362, 132, 891, 923]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,923][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_back_008_red_long_wavy.png
+  sha256: fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc
+  inclusive visible bounds: [362, 132, 891, 751]
+  width vs base body: 1.2x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [362,132,891,751][233,129,1021,1139]0
+  width_ratio     PASS    1.20x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_001_gold_parted_bangs.png
+  sha256: b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d
+  inclusive visible bounds: [417, 132, 836, 470]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,470][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_002_black_side_swept.png
+  sha256: f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b
+  inclusive visible bounds: [417, 132, 836, 544]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,544][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_003_silver_straight_bangs.png
+  sha256: c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f
+  inclusive visible bounds: [417, 132, 836, 618]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,618][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_004_violet_parted_bangs.png
+  sha256: 67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0
+  inclusive visible bounds: [417, 132, 836, 585]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,585][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_005_blue_pointed_bangs.png
+  sha256: 30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb
+  inclusive visible bounds: [417, 132, 836, 456]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,456][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_006_pink_soft_bangs.png
+  sha256: eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c
+  inclusive visible bounds: [417, 132, 836, 513]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,513][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_007_teal_open_center.png
+  sha256: 3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974
+  inclusive visible bounds: [417, 132, 836, 556]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,556][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hair_front_008_red_short_bangs.png
+  sha256: 19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625
+  inclusive visible bounds: [417, 132, 836, 562]
+  width vs base body: 0.95x; crown offset +9 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [417,132,836,562][233,129,1021,1139]0
+  width_ratio     PASS    0.95x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_001_black_choker.png
+  sha256: f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22
+  inclusive visible bounds: [447, 540, 806, 663]
+  width vs base body: 0.81x; crown offset -399 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [447,540,806,663][233,129,1021,1139]0
+  width_ratio     PASS    0.81x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_002_gold_blue_drop_choker.png
+  sha256: fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813
+  inclusive visible bounds: [447, 520, 806, 758]
+  width vs base body: 0.81x; crown offset -379 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [447,520,806,758][233,129,1021,1139]0
+  width_ratio     PASS    0.81x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_003_black_ribbon_bow.png
+  sha256: 2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb
+  inclusive visible bounds: [467, 540, 786, 838]
+  width vs base body: 0.72x; crown offset -399 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [467,540,786,838][233,129,1021,1139]0
+  width_ratio     PASS    0.72x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_004_silver_dark_round_pendant.png
+  sha256: 80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d
+  inclusive visible bounds: [477, 520, 776, 785]
+  width vs base body: 0.68x; crown offset -379 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [477,520,776,785][233,129,1021,1139]0
+  width_ratio     PASS    0.68x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_005_silver_navy_long_pendant.png
+  sha256: 402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15
+  inclusive visible bounds: [477, 500, 776, 986]
+  width vs base body: 0.68x; crown offset -359 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [477,500,776,986][233,129,1021,1139]0
+  width_ratio     PASS    0.68x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_006_silver_pale_circle_charm.png
+  sha256: f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787
+  inclusive visible bounds: [477, 520, 776, 748]
+  width vs base body: 0.68x; crown offset -379 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [477,520,776,748][233,129,1021,1139]0
+  width_ratio     PASS    0.68x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_007_gold_teardrop_pendant.png
+  sha256: df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e
+  inclusive visible bounds: [477, 500, 776, 749]
+  width vs base body: 0.68x; crown offset -359 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [477,500,776,749][233,129,1021,1139]0
+  width_ratio     PASS    0.68x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+neck_accessory_008_violet_ribbon_bow.png
+  sha256: 86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e
+  inclusive visible bounds: [467, 540, 786, 778]
+  width vs base body: 0.72x; crown offset -399 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [467,540,786,778][233,129,1021,1139]0
+  width_ratio     PASS    0.72x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_006_gold_lantern_pose_002_left.png
+  sha256: 2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34
+  inclusive visible bounds: [334, 735, 473, 1137]
+  width vs base body: 0.32x; crown offset -594 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [334,735,473,1137][233,129,1021,1139]0
+  width_ratio     PASS    0.32x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_007_gold_blue_gem_staff_pose_002_left.png
+  sha256: ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415
+  inclusive visible bounds: [334, 180, 473, 831]
+  width vs base body: 0.32x; crown offset -39 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [334,180,473,831][233,129,1021,1139]0
+  width_ratio     PASS    0.32x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_008_blue_crescent_staff_pose_002_left.png
+  sha256: 2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f
+  inclusive visible bounds: [329, 180, 478, 1007]
+  width vs base body: 0.34x; crown offset -39 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [329,180,478,1007][233,129,1021,1139]0
+  width_ratio     PASS    0.34x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_009_violet_blade_pose_002_left.png
+  sha256: 70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc
+  inclusive visible bounds: [309, 300, 498, 1082]
+  width vs base body: 0.43x; crown offset -159 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [309,300,498,1082][233,129,1021,1139]0
+  width_ratio     PASS    0.43x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_010_horned_skull_scepter_pose_002_left.png
+  sha256: 0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483
+  inclusive visible bounds: [329, 180, 478, 804]
+  width vs base body: 0.34x; crown offset -39 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [329,180,478,804][233,129,1021,1139]0
+  width_ratio     PASS    0.34x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_011_round_talisman_pose_004_left.png
+  sha256: 1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77
+  inclusive visible bounds: [319, 620, 488, 848]
+  width vs base body: 0.38x; crown offset -479 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [319,620,488,848][233,129,1021,1139]0
+  width_ratio     PASS    0.38x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+hand_object_012_brown_tome_pose_004_left.png
+  sha256: c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c
+  inclusive visible bounds: [299, 640, 508, 868]
+  width vs base body: 0.47x; crown offset -499 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [299,640,508,868][233,129,1021,1139]0
+  width_ratio     PASS    0.47x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_front_001_orange_rising_flame.png
+  sha256: 2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874
+  inclusive visible bounds: [268, 676, 1004, 1138]
+  width vs base body: 1.66x; crown offset -535 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [268,676,1004,1138][233,129,1021,1139]0
+  width_ratio     PASS    1.66x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_front_002_gold_light_pillars.png
+  sha256: 122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d
+  inclusive visible bounds: [249, 582, 1014, 1136]
+  width vs base body: 1.73x; crown offset -441 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [249,582,1014,1136][233,129,1021,1139]0
+  width_ratio     PASS    1.73x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.5     back_accessory_001_silver_feathered_wings.png
+  PASS  dev=0.5     back_accessory_002_black_violet_bat_wings.png
+  PASS  dev=0.5     back_accessory_003_cyan_fairy_wings.png
+  PASS  dev=0.5     back_accessory_004_navy_formal_cape.png
+  PASS  dev=0.5     back_accessory_005_black_violet_ragged_cloak.png
+  PASS  dev=0.5     back_accessory_006_pale_blue_crystal_wings.png
+  PASS  dev=0.5     back_accessory_007_gold_luminous_wings.png
+  PASS  dev=0.5     back_accessory_008_olive_silver_spiked_wings.png
+  PASS  dev=0.5     hair_back_001_gold_long_wavy.png
+  PASS  dev=0.5     hair_back_002_black_long_wavy.png
+  PASS  dev=0.5     hair_back_003_silver_long_wavy.png
+  PASS  dev=0.5     hair_back_004_violet_long_wavy.png
+  PASS  dev=0.5     hair_back_005_blue_long_wavy.png
+  PASS  dev=0.5     hair_back_006_pink_long_wavy.png
+  PASS  dev=0.5     hair_back_007_teal_long_wavy.png
+  PASS  dev=0.5     hair_back_008_red_long_wavy.png
+  PASS  dev=0.5     hair_front_001_gold_parted_bangs.png
+  PASS  dev=0.5     hair_front_002_black_side_swept.png
+  PASS  dev=0.5     hair_front_003_silver_straight_bangs.png
+  PASS  dev=0.5     hair_front_004_violet_parted_bangs.png
+  PASS  dev=0.5     hair_front_005_blue_pointed_bangs.png
+  PASS  dev=0.5     hair_front_006_pink_soft_bangs.png
+  PASS  dev=0.5     hair_front_007_teal_open_center.png
+  PASS  dev=0.5     hair_front_008_red_short_bangs.png
+  PASS  dev=0.5     neck_accessory_001_black_choker.png
+  PASS  dev=0.5     neck_accessory_002_gold_blue_drop_choker.png
+  PASS  dev=0.5     neck_accessory_003_black_ribbon_bow.png
+  PASS  dev=0.5     neck_accessory_004_silver_dark_round_pendant.png
+  PASS  dev=0.5     neck_accessory_005_silver_navy_long_pendant.png
+  PASS  dev=0.5     neck_accessory_006_silver_pale_circle_charm.png
+  PASS  dev=0.5     neck_accessory_007_gold_teardrop_pendant.png
+  PASS  dev=0.5     neck_accessory_008_violet_ribbon_bow.png
+  PASS  dev=4.5     aura_front_002_gold_light_pillars.png
+  PASS  dev=9.0     aura_front_001_orange_rising_flame.png
+  PASS  dev=223.5   hand_object_006_gold_lantern_pose_002_left.png
+  PASS  dev=223.5   hand_object_007_gold_blue_gem_staff_pose_002_left.png
+  PASS  dev=223.5   hand_object_008_blue_crescent_staff_pose_002_left.png
+  PASS  dev=223.5   hand_object_009_violet_blade_pose_002_left.png
+  PASS  dev=223.5   hand_object_010_horned_skull_scepter_pose_002_left.png
+  PASS  dev=223.5   hand_object_011_round_talisman_pose_004_left.png
+  PASS  dev=223.5   hand_object_012_brown_tome_pose_004_left.png
+------------------------------------------------------------------------------
+41/41 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/trait_partial_rig_gates_current.json
+EXIT 
+>>> python3 scripts/rig_gate_report.py --floor-aura assets/rear_auras --json-report docs/qa/trait_rear_aura_rig_gates_current.json
+==============================================================================
+aura_rear_001_blue_floor_ring.png
+  sha256: 03273fb15878b663caa7cbc6e129555c29a0111b8de79e6b338f33f363feb4ab
+  inclusive visible bounds: [293, 1035, 960, 1221]
+  width vs base body: 1.51x; crown offset -894 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1035,960,1221][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_002_violet_radial_glow.png
+  sha256: aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27
+  inclusive visible bounds: [340, 428, 913, 1131]
+  width vs base body: 1.3x; crown offset -287 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [340,428,913,1131][233,129,1021,1252]0
+  width_ratio     PASS    1.30x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_003_blue_crystalline_burst.png
+  sha256: 2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037
+  inclusive visible bounds: [337, 400, 916, 921]
+  width vs base body: 1.31x; crown offset -259 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [337,400,916,921][233,129,1021,1252]0
+  width_ratio     PASS    1.31x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_004_violet_void_flame.png
+  sha256: ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f
+  inclusive visible bounds: [383, 172, 869, 1149]
+  width vs base body: 1.1x; crown offset -31 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [383,172,869,1149][233,129,1021,1252]0
+  width_ratio     PASS    1.10x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_005_lavender_lightning.png
+  sha256: f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2
+  inclusive visible bounds: [377, 350, 876, 1056]
+  width vs base body: 1.13x; crown offset -209 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [377,350,876,1056][233,129,1021,1252]0
+  width_ratio     PASS    1.13x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_006_gold_radiance.png
+  sha256: 3c3e78fa570aad87c84fa004a09c052fc7f6b930b162ab15a52c424bb719c558
+  inclusive visible bounds: [343, 432, 910, 1127]
+  width vs base body: 1.28x; crown offset -291 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [343,432,910,1127][233,129,1021,1252]0
+  width_ratio     PASS    1.28x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_007_green_neon_ring.png
+  sha256: 89c6f4f8ccd1a3b3b9f1e1615add056d1dad8af706fbff8c323be5b9dba04369
+  inclusive visible bounds: [293, 1035, 960, 1221]
+  width vs base body: 1.51x; crown offset -894 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1035,960,1221][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_008_gold_neon_ring.png
+  sha256: 7216d772e2f91b42cdf7ef316c2e5dc998d8a66cd1b17895f4f5a989a005558c
+  inclusive visible bounds: [293, 1035, 960, 1221]
+  width vs base body: 1.51x; crown offset -894 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1035,960,1221][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_009_pink_neon_ring.png
+  sha256: d55fd93fe7582ba4d93e0132c2c0964d9c4208cc6d140d222e63d283aae1b9d2
+  inclusive visible bounds: [293, 1035, 960, 1221]
+  width vs base body: 1.51x; crown offset -894 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1035,960,1221][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_010_white_neon_ring.png
+  sha256: cb4b276c7e43d09218f625859fe01bdb2f31e7eb7d55fb547d9949c721065283
+  inclusive visible bounds: [293, 1035, 960, 1221]
+  width vs base body: 1.51x; crown offset -894 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1035,960,1221][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_011_fire_ring.png
+  sha256: efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7
+  inclusive visible bounds: [293, 1020, 960, 1139]
+  width vs base body: 1.51x; crown offset -879 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1020,960,1139][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_012_lightning_ring.png
+  sha256: e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f
+  inclusive visible bounds: [293, 1015, 960, 1136]
+  width vs base body: 1.51x; crown offset -874 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1015,960,1136][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_013_violet_flame_ring.png
+  sha256: 4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0
+  inclusive visible bounds: [293, 1009, 960, 1139]
+  width vs base body: 1.51x; crown offset -868 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1009,960,1139][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_014_ice_crystal_ring.png
+  sha256: 9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f
+  inclusive visible bounds: [293, 1033, 960, 1139]
+  width vs base body: 1.51x; crown offset -892 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1033,960,1139][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_015_smoke_void_ring.png
+  sha256: 415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5
+  inclusive visible bounds: [293, 1047, 960, 1139]
+  width vs base body: 1.51x; crown offset -906 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1047,960,1139][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_016_cosmic_sparkle_ring.png
+  sha256: eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029
+  inclusive visible bounds: [302, 161, 951, 1128]
+  width vs base body: 1.47x; crown offset -20 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [302,161,951,1128][233,129,1021,1252]0
+  width_ratio     PASS    1.47x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_017_water_splash_ring.png
+  sha256: 26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2
+  inclusive visible bounds: [293, 1069, 960, 1139]
+  width vs base body: 1.51x; crown offset -928 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [293,1069,960,1139][233,129,1021,1252]0
+  width_ratio     PASS    1.51x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+aura_rear_018_blue_flame_ring.png
+  sha256: 37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb
+  inclusive visible bounds: [306, 240, 947, 1130]
+  width vs base body: 1.45x; crown offset -99 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [306,240,947,1130][233,129,1021,1252]0
+  width_ratio     PASS    1.45x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.5     aura_rear_001_blue_floor_ring.png
+  PASS  dev=0.5     aura_rear_002_violet_radial_glow.png
+  PASS  dev=0.5     aura_rear_003_blue_crystalline_burst.png
+  PASS  dev=0.5     aura_rear_005_lavender_lightning.png
+  PASS  dev=0.5     aura_rear_006_gold_radiance.png
+  PASS  dev=0.5     aura_rear_007_green_neon_ring.png
+  PASS  dev=0.5     aura_rear_008_gold_neon_ring.png
+  PASS  dev=0.5     aura_rear_009_pink_neon_ring.png
+  PASS  dev=0.5     aura_rear_010_white_neon_ring.png
+  PASS  dev=0.5     aura_rear_011_fire_ring.png
+  PASS  dev=0.5     aura_rear_012_lightning_ring.png
+  PASS  dev=0.5     aura_rear_013_violet_flame_ring.png
+  PASS  dev=0.5     aura_rear_014_ice_crystal_ring.png
+  PASS  dev=0.5     aura_rear_015_smoke_void_ring.png
+  PASS  dev=0.5     aura_rear_016_cosmic_sparkle_ring.png
+  PASS  dev=0.5     aura_rear_017_water_splash_ring.png
+  PASS  dev=0.5     aura_rear_018_blue_flame_ring.png
+  PASS  dev=1.0     aura_rear_004_violet_void_flame.png
+------------------------------------------------------------------------------
+18/18 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/trait_rear_aura_rig_gates_current.json
+EXIT 
+>>> python3 scripts/rig_gate_report.py --global-finish assets/global_finish --json-report docs/qa/trait_global_finish_rig_gates_current.json
+==============================================================================
+global_finish_001_soft_bloom.png
+  sha256: 70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  alpha_ceiling   PASS    alpha_max=40    <=64            0
+  not_opaque      PASS    alpha_max=40    <255            0
+  >>> PASS — silhouette gates met
+==============================================================================
+global_finish_002_gilded_warm.png
+  sha256: 8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  alpha_ceiling   PASS    alpha_max=56    <=64            0
+  not_opaque      PASS    alpha_max=56    <255            0
+  >>> PASS — silhouette gates met
+==============================================================================
+global_finish_003_cool_veil.png
+  sha256: 16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  alpha_ceiling   PASS    alpha_max=48    <=64            0
+  not_opaque      PASS    alpha_max=48    <255            0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=n/a     global_finish_001_soft_bloom.png
+  PASS  dev=n/a     global_finish_002_gilded_warm.png
+  PASS  dev=n/a     global_finish_003_cool_veil.png
+------------------------------------------------------------------------------
+3/3 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/trait_global_finish_rig_gates_current.json
+EXIT 
+>>> python3 scripts/rig_gate_report.py --trait assets/outfits --json-report docs/qa/trait_outfit_rig_gates_current.json
+==============================================================================
+outfit_001_celestial_scholar_pose_001.png
+  sha256: 5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958
+  inclusive visible bounds: [407, 475, 848, 1139]
+  width vs base body: 1.0x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [407,475,848,1139][233,129,1021,1139]0
+  width_ratio     PASS    1.00x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_002_storm_guardian_pose_002.png
+  sha256: f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263
+  inclusive visible bounds: [475, 476, 778, 1138]
+  width vs base body: 0.69x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [475,476,778,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.69x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_003_verdant_alchemist_pose_003.png
+  sha256: 7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0
+  inclusive visible bounds: [463, 476, 790, 1137]
+  width vs base body: 0.74x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [463,476,790,1137][233,129,1021,1139]0
+  width_ratio     PASS    0.74x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_004_lunar_oracle_pose_004.png
+  sha256: a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a
+  inclusive visible bounds: [482, 476, 771, 1137]
+  width vs base body: 0.65x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [482,476,771,1137][233,129,1021,1139]0
+  width_ratio     PASS    0.65x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_005_sun_temple_pose_005.png
+  sha256: b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96
+  inclusive visible bounds: [493, 476, 761, 1138]
+  width vs base body: 0.61x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [493,476,761,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.61x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_006_black_layered_hooded_robe.png
+  sha256: 82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05
+  inclusive visible bounds: [432, 475, 821, 1138]
+  width vs base body: 0.88x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [432,475,821,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.88x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_007_brown_leather_long_coat.png
+  sha256: 053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113
+  inclusive visible bounds: [425, 475, 828, 1139]
+  width vs base body: 0.91x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [425,475,828,1139][233,129,1021,1139]0
+  width_ratio     PASS    0.91x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_008_olive_ragged_cloak.png
+  sha256: ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6
+  inclusive visible bounds: [404, 475, 850, 1138]
+  width vs base body: 1.01x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [404,475,850,1138][233,129,1021,1139]0
+  width_ratio     PASS    1.01x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_009_navy_high_collar_coat.png
+  sha256: 1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8
+  inclusive visible bounds: [410, 475, 843, 1138]
+  width vs base body: 0.98x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [410,475,843,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.98x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_010_celestial_robe_white_gold.png
+  sha256: 87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182
+  inclusive visible bounds: [418, 475, 834, 1139]
+  width vs base body: 0.94x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [418,475,834,1139][233,129,1021,1139]0
+  width_ratio     PASS    0.94x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.0     outfit_005_sun_temple_pose_005.png
+  PASS  dev=0.0     outfit_008_olive_ragged_cloak.png
+  PASS  dev=0.5     outfit_001_celestial_scholar_pose_001.png
+  PASS  dev=0.5     outfit_002_storm_guardian_pose_002.png
+  PASS  dev=0.5     outfit_003_verdant_alchemist_pose_003.png
+  PASS  dev=0.5     outfit_004_lunar_oracle_pose_004.png
+  PASS  dev=0.5     outfit_006_black_layered_hooded_robe.png
+  PASS  dev=0.5     outfit_007_brown_leather_long_coat.png
+  PASS  dev=0.5     outfit_009_navy_high_collar_coat.png
+  PASS  dev=1.0     outfit_010_celestial_robe_white_gold.png
+------------------------------------------------------------------------------
+10/10 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/trait_outfit_rig_gates_current.json
+EXIT 
+>>> python3 scripts/rig_gate_report.py --pose-variant assets/base_bodies --json-report docs/qa/trait_base_body_rig_gates_current.json
+==============================================================================
+base_body_001_neutral_master.png
+  sha256: bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107
+  inclusive visible bounds: [406, 141, 848, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    626.8           627             -0.2
+  max_bounds      PASS    [406,141,848,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_002_viewer_left_vertical_grip.png
+  sha256: cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7
+  inclusive visible bounds: [412, 141, 866, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    627.5           627             0.5
+  max_bounds      PASS    [412,141,866,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_003_viewer_right_vertical_grip.png
+  sha256: c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16
+  inclusive visible bounds: [408, 141, 821, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    626.8           627             -0.2
+  max_bounds      PASS    [408,141,821,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_004_viewer_left_palm_up.png
+  sha256: 660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685
+  inclusive visible bounds: [397, 141, 835, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    626.0           627             -1.0
+  max_bounds      PASS    [397,141,835,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_005_centered_two_hand_grip.png
+  sha256: eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0
+  inclusive visible bounds: [450, 141, 805, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    626.5           627             -0.5
+  max_bounds      PASS    [450,141,805,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.2     base_body_001_neutral_master.png
+  PASS  dev=0.2     base_pose_003_viewer_right_vertical_grip.png
+  PASS  dev=0.5     base_pose_002_viewer_left_vertical_grip.png
+  PASS  dev=0.5     base_pose_005_centered_two_hand_grip.png
+  PASS  dev=1.0     base_pose_004_viewer_left_palm_up.png
+------------------------------------------------------------------------------
+5/5 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/trait_base_body_rig_gates_current.json
+EXIT 
+## [32mmain[m...[31morigin/main[m
+[31m??[m docs/qa/trait_base_body_rig_gates_current.json
+[31m??[m docs/qa/trait_geometry_audit.json
+[31m??[m docs/qa/trait_global_finish_rig_gates_current.json
+[31m??[m docs/qa/trait_outfit_rig_gates_current.json
+[31m??[m docs/qa/trait_partial_rig_gates_current.json
+[31m??[m docs/qa/trait_rear_aura_rig_gates_current.json
+[31m??[m docs/qa/trait_sizing_placement_validation_2026-08-15.log
+[31m??[m scripts/audit_trait_geometry.py
