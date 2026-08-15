@@ -1,0 +1,140 @@
+[
+  {
+    "filename": "aura_front_001_orange_rising_flame.png",
+    "source": "/home/ubuntu/Demigods/incoming/front_auras/aura_front_001_orange_rising_flame.png",
+    "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874",
+    "passed": true,
+    "failures": [],
+    "id": "DG-145",
+    "backlog_status": "pending",
+    "category": "front_auras",
+    "production_path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+    "description": "Orange rising foreground flame",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=170"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[268,676,1004,1138]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_front_001_over_base.png"
+  },
+  {
+    "filename": "aura_front_002_gold_light_pillars.png",
+    "source": "/home/ubuntu/Demigods/incoming/front_auras/aura_front_002_gold_light_pillars.png",
+    "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
+    "passed": true,
+    "failures": [],
+    "id": "DG-146",
+    "backlog_status": "pending",
+    "category": "front_auras",
+    "production_path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
+    "description": "Gold vertical foreground light pillars",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=141"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[249,582,1014,1136]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/aura_front_002_over_base.png"
+  }
+]

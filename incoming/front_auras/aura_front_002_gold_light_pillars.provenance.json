@@ -1,0 +1,13 @@
+{
+  "origin": "native_procedural_source",
+  "source_path": "images/trait_candidates/front_auras/aura_front_002_gold_light_pillars_candidate.png",
+  "source_sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
+  "source_dimensions": [1254, 1254],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {"method": "none_native_transparent_source", "threshold": 0},
+  "transform": {"method": "native_canvas_no_resample", "scale": 1.0, "placement": "locked_canvas_native"},
+  "final_dimensions": [1254, 1254],
+  "normalization_script": null,
+  "output_path": "incoming/front_auras/aura_front_002_gold_light_pillars.png",
+  "output_sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d"
+}
