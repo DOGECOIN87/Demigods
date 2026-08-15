@@ -2878,6 +2878,60 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved production export for DG-138\u2013DG-142."
+    },
+    {
+      "id": "hand_object_011",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+      "status": "production_ready",
+      "sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-143",
+      "qa_composite": "docs/qa/composites/hand_object_011_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Round dark compass/watch talisman",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-143\u2013DG-144."
+    },
+    {
+      "id": "hand_object_012",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+      "status": "production_ready",
+      "sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-144",
+      "qa_composite": "docs/qa/composites/hand_object_012_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Brown closed tome",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-143\u2013DG-144."
     }
   ],
   "approved_visual_references": [

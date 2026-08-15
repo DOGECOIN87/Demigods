@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-143_round_talisman_source.png",
+  "source_sha256": "b8100fe9c6921b81a24e5c99a6495b9162728582b5cf08f0d2e16782e6cf9517",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      511,
+      268,
+      1413,
+      1486
+    ],
+    "crop_dimensions": [
+      903,
+      1219
+    ],
+    "scale": 0.18826135,
+    "target_dimensions": [
+      170,
+      229
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 620,
+      "bounds": [
+        319,
+        620,
+        488,
+        848
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+  "output_sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77"
+}

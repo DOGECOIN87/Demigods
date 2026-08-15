@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-144_brown_tome_source.png",
+  "source_sha256": "3e108305de3578a2040dab4d92986cab6bb8c9cb4ce9a027352ef7b1e062eb33",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      400,
+      312,
+      1531,
+      1544
+    ],
+    "crop_dimensions": [
+      1132,
+      1233
+    ],
+    "scale": 0.18551237,
+    "target_dimensions": [
+      210,
+      229
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 640,
+      "bounds": [
+        299,
+        640,
+        508,
+        868
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+  "output_sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c"
+}
