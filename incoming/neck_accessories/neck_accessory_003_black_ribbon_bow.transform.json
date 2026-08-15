@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg049_black_ribbon_bow_source.png",
+  "source_sha256": "a277d1628e2a060b1fef673f4cf3a6516397d06695ca21c5104c2e7ac3b8c31e",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      611,
+      638,
+      1307,
+      1288
+    ],
+    "crop_dimensions": [
+      697,
+      651
+    ],
+    "scale": 0.45911047,
+    "target_dimensions": [
+      320,
+      299
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 540,
+      "bounds": [
+        467,
+        540,
+        786,
+        838
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+  "output_sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb"
+}

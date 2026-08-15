@@ -160,14 +160,14 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-047 | neck accessory | Plain black curved choker | `ACCESSORY`, lower row cell 1 | Approved Pose 001 and outfit test | `assets/neck_accessories/neck_accessory_001_black_choker.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-048 | neck accessory | Warm-gold choker with dark-blue drop | `ACCESSORY`, lower row cell 2 | DG-047 representative test | `assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-049 | neck accessory | Black ribbon bow | `ACCESSORY`, lower row cell 3 | DG-047 | `assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-050 | neck accessory | Fine silver chain with dark round pendant | `ACCESSORY`, lower row cell 4 | DG-047 | `assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-051 | neck accessory | Silver V-chain with long navy pendant | `ACCESSORY`, lower row cell 5 | DG-047 | `assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-052 | neck accessory | Fine silver chain with pale circular charm | `ACCESSORY`, lower row cell 6 | DG-047 | `assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-053 | neck accessory | Gold chain with long teardrop pendant | `ACCESSORY`, lower row cell 7 | DG-047 | `assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png` | `prompts/09_head_and_neck_accessories.md` | pending |
-| DG-054 | neck accessory | Violet ribbon bow | `ACCESSORY`, lower row cell 8 | DG-047 | `assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png` | `prompts/09_head_and_neck_accessories.md` | pending |
+| DG-047 | neck accessory | Plain black curved choker | `ACCESSORY`, lower row cell 1 | Approved Pose 001 and outfit test | `assets/neck_accessories/neck_accessory_001_black_choker.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-048 | neck accessory | Warm-gold choker with dark-blue drop | `ACCESSORY`, lower row cell 2 | DG-047 representative test | `assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-049 | neck accessory | Black ribbon bow | `ACCESSORY`, lower row cell 3 | DG-047 | `assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-050 | neck accessory | Fine silver chain with dark round pendant | `ACCESSORY`, lower row cell 4 | DG-047 | `assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-051 | neck accessory | Silver V-chain with long navy pendant | `ACCESSORY`, lower row cell 5 | DG-047 | `assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-052 | neck accessory | Fine silver chain with pale circular charm | `ACCESSORY`, lower row cell 6 | DG-047 | `assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-053 | neck accessory | Gold chain with long teardrop pendant | `ACCESSORY`, lower row cell 7 | DG-047 | `assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png` | `prompts/09_head_and_neck_accessories.md` | registered |
+| DG-054 | neck accessory | Violet ribbon bow | `ACCESSORY`, lower row cell 8 | DG-047 | `assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png` | `prompts/09_head_and_neck_accessories.md` | registered |
 
 ### Eyes
 

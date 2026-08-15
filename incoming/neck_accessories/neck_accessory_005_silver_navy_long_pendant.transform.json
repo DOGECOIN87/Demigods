@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg051_silver_navy_pendant_source.png",
+  "source_sha256": "2da66e07a015e565e9866c4a9bca06f00d340e5c6e341b92511e182132d9e174",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      693,
+      512,
+      1227,
+      1380
+    ],
+    "crop_dimensions": [
+      535,
+      869
+    ],
+    "scale": 0.56074766,
+    "target_dimensions": [
+      300,
+      487
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 500,
+      "bounds": [
+        477,
+        500,
+        776,
+        986
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+  "output_sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15"
+}

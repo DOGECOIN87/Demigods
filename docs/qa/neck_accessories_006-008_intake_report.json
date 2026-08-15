@@ -1,0 +1,209 @@
+[
+  {
+    "filename": "neck_accessory_006_silver_pale_circle_charm.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories_052-054/neck_accessory_006_silver_pale_circle_charm.png",
+    "sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
+    "passed": true,
+    "failures": [],
+    "id": "DG-052",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+    "description": "Fine silver chain with pale circular charm",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[477,520,776,748]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_006_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_007_gold_teardrop_pendant.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories_052-054/neck_accessory_007_gold_teardrop_pendant.png",
+    "sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
+    "passed": true,
+    "failures": [],
+    "id": "DG-053",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+    "description": "Gold chain with long teardrop pendant",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[477,500,776,749]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_007_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_008_violet_ribbon_bow.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories_052-054/neck_accessory_008_violet_ribbon_bow.png",
+    "sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
+    "passed": true,
+    "failures": [],
+    "id": "DG-054",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+    "description": "Violet ribbon bow",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[467,540,786,778]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_008_over_base.png"
+  }
+]

@@ -2527,6 +2527,222 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+    },
+    {
+      "id": "neck_accessory_001",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+      "status": "production_ready",
+      "sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-047",
+      "qa_composite": "docs/qa/composites/neck_accessory_001_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Plain black curved choker",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+    },
+    {
+      "id": "neck_accessory_002",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+      "status": "production_ready",
+      "sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-048",
+      "qa_composite": "docs/qa/composites/neck_accessory_002_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Warm-gold choker with dark-blue drop",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+    },
+    {
+      "id": "neck_accessory_003",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+      "status": "production_ready",
+      "sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-049",
+      "qa_composite": "docs/qa/composites/neck_accessory_003_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Black ribbon bow",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+    },
+    {
+      "id": "neck_accessory_004",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+      "status": "production_ready",
+      "sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-050",
+      "qa_composite": "docs/qa/composites/neck_accessory_004_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine silver chain with dark round pendant",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+    },
+    {
+      "id": "neck_accessory_005",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+      "status": "production_ready",
+      "sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-051",
+      "qa_composite": "docs/qa/composites/neck_accessory_005_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Silver V-chain with long navy pendant",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+    },
+    {
+      "id": "neck_accessory_006",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+      "status": "production_ready",
+      "sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-052",
+      "qa_composite": "docs/qa/composites/neck_accessory_006_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine silver chain with pale circular charm",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+    },
+    {
+      "id": "neck_accessory_007",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+      "status": "production_ready",
+      "sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-053",
+      "qa_composite": "docs/qa/composites/neck_accessory_007_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold chain with long teardrop pendant",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+    },
+    {
+      "id": "neck_accessory_008",
+      "category": "neck_accessories",
+      "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+      "status": "production_ready",
+      "sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-054",
+      "qa_composite": "docs/qa/composites/neck_accessory_008_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Violet ribbon bow",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
     }
   ],
   "approved_visual_references": [
@@ -2744,7 +2960,6 @@
     "eyebrows",
     "mouths",
     "expression_marks",
-    "neck_accessories",
     "head_accessories",
     "hand_objects",
     "front_auras"

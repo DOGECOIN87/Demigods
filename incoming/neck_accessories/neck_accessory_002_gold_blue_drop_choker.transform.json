@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg048_gold_blue_drop_choker_source.png",
+  "source_sha256": "7dd6cdf530177b8499dbc2c2bd1aaf239944e7d346038b8f26d22f0ea5870ea1",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      518,
+      650,
+      1400,
+      1236
+    ],
+    "crop_dimensions": [
+      883,
+      587
+    ],
+    "scale": 0.40770102,
+    "target_dimensions": [
+      360,
+      239
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 520,
+      "bounds": [
+        447,
+        520,
+        806,
+        758
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+  "output_sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813"
+}

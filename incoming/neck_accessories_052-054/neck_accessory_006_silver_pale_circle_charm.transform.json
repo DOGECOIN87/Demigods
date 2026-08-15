@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg052_silver_pale_circle_charm_source.png",
+  "source_sha256": "348181319841f7d378e2e0d70f4951ec7dc4bfccead4865ea0f8d54500f26aa7",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      517,
+      547,
+      1403,
+      1222
+    ],
+    "crop_dimensions": [
+      887,
+      676
+    ],
+    "scale": 0.33821871,
+    "target_dimensions": [
+      300,
+      229
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 520,
+      "bounds": [
+        477,
+        520,
+        776,
+        748
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/neck_accessories_052-054/neck_accessory_006_silver_pale_circle_charm.png",
+  "output_sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787"
+}

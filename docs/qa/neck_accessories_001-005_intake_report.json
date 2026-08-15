@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "neck_accessory_001_black_choker.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories/neck_accessory_001_black_choker.png",
+    "sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
+    "passed": true,
+    "failures": [],
+    "id": "DG-047",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+    "description": "Plain black curved choker",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[447,540,806,663]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_001_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_002_gold_blue_drop_choker.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+    "sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
+    "passed": true,
+    "failures": [],
+    "id": "DG-048",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+    "description": "Warm-gold choker with dark-blue drop",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[447,520,806,758]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_002_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_003_black_ribbon_bow.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+    "sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
+    "passed": true,
+    "failures": [],
+    "id": "DG-049",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+    "description": "Black ribbon bow",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[467,540,786,838]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_003_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_004_silver_dark_round_pendant.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+    "sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
+    "passed": true,
+    "failures": [],
+    "id": "DG-050",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+    "description": "Fine silver chain with dark round pendant",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[477,520,776,785]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_004_over_base.png"
+  },
+  {
+    "filename": "neck_accessory_005_silver_navy_long_pendant.png",
+    "source": "/home/ubuntu/Demigods/incoming/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+    "sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
+    "passed": true,
+    "failures": [],
+    "id": "DG-051",
+    "backlog_status": "pending",
+    "category": "neck_accessories",
+    "production_path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+    "description": "Silver V-chain with long navy pendant",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[477,500,776,986]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/neck_accessory_005_over_base.png"
+  }
+]

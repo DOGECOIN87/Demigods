@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg053_gold_teardrop_pendant_source.png",
+  "source_sha256": "fc8008216f9919e2ea04b926e58688bc6dff396979b57c82aa1fdd86f42e3c4f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      507,
+      553,
+      1433,
+      1323
+    ],
+    "crop_dimensions": [
+      927,
+      771
+    ],
+    "scale": 0.3236246,
+    "target_dimensions": [
+      300,
+      250
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 500,
+      "bounds": [
+        477,
+        500,
+        776,
+        749
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/neck_accessories_052-054/neck_accessory_007_gold_teardrop_pendant.png",
+  "output_sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e"
+}
