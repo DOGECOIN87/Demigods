@@ -1,0 +1,14 @@
+{
+  "output": "docs/qa/final_dry_run_100_after_pose_aware_2026-08-15/tokens.json",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "expected_supply": 100,
+  "metadata_files": 100,
+  "image_files": 0,
+  "unique_trait_signatures": 100,
+  "unique_image_hashes": 0,
+  "dry_run": true,
+  "trait_provenance_hash": "057c35b5336809917f23588c34589baa14b1fc909f90ca8517be1ee493ac2539",
+  "image_provenance_hash": null
+}

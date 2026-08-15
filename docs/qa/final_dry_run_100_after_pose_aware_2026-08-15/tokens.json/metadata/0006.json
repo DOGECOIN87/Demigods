@@ -1,0 +1,65 @@
+{
+  "name": "Demigods #0006",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0006.png",
+  "token_id": 6,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_002_violet_gothic_sanctum",
+      "source_file": "backgrounds/background_002_violet_gothic_sanctum.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_015_smoke_void_ring",
+      "source_file": "rear_auras/aura_rear_015_smoke_void_ring.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_001_silver_feathered_wings",
+      "source_file": "back_accessories/back_accessory_001_silver_feathered_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_002_black_long_wavy",
+      "source_file": "hair_back/hair_back_002_black_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_004_viewer_left_palm_up",
+      "source_file": "base_bodies/base_pose_004_viewer_left_palm_up.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_004_lunar_oracle_pose_004",
+      "source_file": "outfits/outfit_004_lunar_oracle_pose_004.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_001_black_choker",
+      "source_file": "neck_accessories/neck_accessory_001_black_choker.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_002_black_side_swept",
+      "source_file": "hair_front/hair_front_002_black_side_swept.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_011_round_talisman_pose_004_left",
+      "source_file": "hand_objects/hand_object_011_round_talisman_pose_004_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_002_gold_light_pillars",
+      "source_file": "front_auras/aura_front_002_gold_light_pillars.png"
+    },
+    {
+      "trait_type": "global_finish",
+      "value": "global_finish_003_cool_veil",
+      "source_file": "global_finish/global_finish_003_cool_veil.png"
+    }
+  ],
+  "trait_signature": "2729f42a2b1baaaffd7687d168c47d66ec8044568b831e9418b035ad2091b80a",
+  "image_sha256": null
+}

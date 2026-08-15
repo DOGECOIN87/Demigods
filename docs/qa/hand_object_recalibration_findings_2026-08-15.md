@@ -31,3 +31,35 @@ The lantern loop now seats directly into the closed fist and the body hangs natu
 ## Seven-item native review
 
 The complete recalibrated sheet shows each object crossing the measured red hand anchor: the lantern loop, staff shafts, blade handle, and scepter shaft intersect the closed fist; the talisman loop and tome edge intersect the palm-up hand. This is the first review pass in which all seven registered objects visually share the same measured hand contact model.
+
+## User-requested pose and silhouette correction
+
+The pose-2 hand is a closed viewer-left grip with the fingers wrapping around an object near the hand center; the current vertical staff/scepter treatment reads as an upright prop rather than a naturally held item. The pose-4 hand is an open, palm-up viewer-left hand with the fingers extending horizontally; a book should rest across the palm/fingers with its spine and lower edge aligned to the palm, not sit beside the hand. The user also identified the violet sword as too thick and the current book design as incorrect. Revisions must therefore change orientation and contact geometry, not only translate the existing assets.
+
+## Native silhouette inspection
+
+The violet sword source is a broad, heavy fantasy blade whose blade width dominates the handle; it needs a narrower blade and a more believable grip-to-blade proportion. The tome source is a small closed book shown nearly upright/diagonal with a front-cover emblem; for the pose-4 open palm it should instead read as a horizontally resting, slightly open spellbook with the spine/inner edge seated across the palm and the pages extending over the fingers.
+
+## Revision candidates
+
+A revised sword candidate was generated with a substantially narrower blade while retaining the original purple/gold identity. A revised book candidate was generated as a compact, slightly open spellbook intended to rest across the palm. Both image-generation outputs include a visible checkerboard preview background and 1920×1920 dimensions, so they must be normalized by removing only the checkerboard and fitting the subject to the locked 1254×1254 RGBA canvas before acceptance.
+
+## Normalized candidate review
+
+The normalized sword candidate is visibly narrower than the registered sword while retaining the purple faceted blade, gold guard, wrapped grip, and pommel. The normalized book candidate is now a compact, slightly open horizontal spellbook with visible pages and a defined spine, matching the requested palm-up holding concept. Both are clean 1254×1254 RGBA files and are ready for composite placement review; they have not yet replaced the registered production assets.
+
+## Book candidate revision v2
+
+The first pose-aware sheet confirmed that the book still read as a thin side wedge at character scale. A second focused edit produced a clearly open, broad spellbook with two leather covers, visible cream pages, a central spine, and a mostly horizontal three-quarter view. This v2 candidate is the one to normalize and test against the pose-4 open palm.
+
+## Pose-aware candidate audit
+
+The pose-aware staging batch passes the native audit for the five pose-2 objects and the revised pose-4 book: all are 1254×1254 RGBA, remain within the intended canvas bounds, and have alpha overlap in a 61×61 neighborhood around their measured hand anchors. The sword candidate now has a narrower silhouette, while the pose-2 held objects lean outward by 12 degrees around the closed-grip anchor. The v2 spellbook occupies the palm-up envelope from approximately `(300,683)` to `(609,815)`.
+
+## Installed production review
+
+The installed native-resolution sheet confirms the revised pose behavior: the staffs, sword, and scepter now lean with the closed-grip pose instead of standing perfectly straight; the lantern remains naturally vertical from its loop because it hangs by gravity. The sword is visibly slimmer. The v2 book now extends horizontally from the pose-4 palm with a clear cover/page silhouette and its inner edge crossing the measured palm anchor.
+
+## Final 100-token pose-aware sample
+
+The final 100-token dry run produced 100 unique tokens and passed all metadata, source, canvas, and compatibility checks. The review sheet shows the revised sword and angled pose-2 objects recurring without a visible systematic placement failure at sample-sheet scale; the pose-4 book appears as a horizontal palm-held object in its compatible combinations.

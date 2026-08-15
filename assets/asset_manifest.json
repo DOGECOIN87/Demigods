@@ -2840,7 +2840,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
+      "sha256": "699f6130c4f10148a02b53c704e0ebb349bc7df6d1148e1ff9a82e6e5f1ea242",
       "dimensions": [
         1254,
         1254
@@ -2865,7 +2865,10 @@
         "post_hand_recalibration_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
         "hand_recalibration_dx": 34,
         "hand_recalibration_dy": 2,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
+        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -2875,7 +2878,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
+      "sha256": "08000ffbfe92df356c48ba44ebb0547bec5df6a747377d659a39b73df0ccb547",
       "dimensions": [
         1254,
         1254
@@ -2900,7 +2903,10 @@
         "post_hand_recalibration_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
         "hand_recalibration_dx": 34,
         "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
+        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -2910,7 +2916,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
+      "sha256": "91ccb017ac6e9f7596ee8f588e132a4ec5278ce8abda6f670678a9d80e8dbe73",
       "dimensions": [
         1254,
         1254
@@ -2935,7 +2941,10 @@
         "post_hand_recalibration_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
         "hand_recalibration_dx": 34,
         "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
+        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -2945,7 +2954,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
+      "sha256": "0de74de3109f6d81b3763d097448eebb04ec2e2522216578ac5c780f1908b338",
       "dimensions": [
         1254,
         1254
@@ -2970,7 +2979,10 @@
         "post_hand_recalibration_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
         "hand_recalibration_dx": 34,
         "hand_recalibration_dy": -143,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
+        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -2980,7 +2992,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
+      "sha256": "89f7fd1d06b238a396a32273ca6dd8f5496ac83e14c735cc04e37333209d678a",
       "dimensions": [
         1254,
         1254
@@ -3005,7 +3017,10 @@
         "post_hand_recalibration_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
         "hand_recalibration_dx": 34,
         "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
+        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -3050,7 +3065,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
       "status": "production_ready",
-      "sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
+      "sha256": "232ea6dae15c9b49ff4cf07b36c6032dd7b6b95029e6642b8b77e86020621ca7",
       "dimensions": [
         1254,
         1254
@@ -3075,7 +3090,10 @@
         "post_hand_recalibration_sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
         "hand_recalibration_dx": 35,
         "hand_recalibration_dy": 0,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+        "pre_pose_aware_revision_sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
+        "pose_aware_revision": "open_horizontal_spellbook_v2_2026-08-15",
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"

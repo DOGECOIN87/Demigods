@@ -1,0 +1,55 @@
+{
+  "name": "Demigods #0057",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0057.png",
+  "token_id": 57,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_003_arcane_library",
+      "source_file": "backgrounds/background_003_arcane_library.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_003_cyan_fairy_wings",
+      "source_file": "back_accessories/back_accessory_003_cyan_fairy_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_006_pink_long_wavy",
+      "source_file": "hair_back/hair_back_006_pink_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_pose_002_viewer_left_vertical_grip",
+      "source_file": "base_bodies/base_pose_002_viewer_left_vertical_grip.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_002_storm_guardian_pose_002",
+      "source_file": "outfits/outfit_002_storm_guardian_pose_002.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_004_silver_dark_round_pendant",
+      "source_file": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_006_pink_soft_bangs",
+      "source_file": "hair_front/hair_front_006_pink_soft_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_006_gold_lantern_pose_002_left",
+      "source_file": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_002_gold_light_pillars",
+      "source_file": "front_auras/aura_front_002_gold_light_pillars.png"
+    }
+  ],
+  "trait_signature": "6367e2d801facbae206428effcad0d5352d5b3e3044c861fad49037ef6252a05",
+  "image_sha256": null
+}
