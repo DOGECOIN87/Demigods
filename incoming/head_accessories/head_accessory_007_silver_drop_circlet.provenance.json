@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
+  "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      67,
+      670,
+      1851,
+      1299
+    ],
+    "crop_dimensions": [
+      1785,
+      630
+    ],
+    "scale": 0.29131653,
+    "target_dimensions": [
+      520,
+      184
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        367,
+        129,
+        886,
+        312
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_007_silver_drop_circlet.png",
+  "output_sha256": "ec99665aa6f848838c9dfa1b29f9382a903db76d228bb5206f26e7c4323eb4d6"
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_008_translucent_white_veil_source3.png",
+  "source_sha256": "3a00f90deac0b4842ec6b7737291e7dd244b0ce886bd3490594d8d0de0569b22",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      348,
+      435,
+      1570,
+      1408
+    ],
+    "crop_dimensions": [
+      1223,
+      974
+    ],
+    "scale": 0.39247751,
+    "target_dimensions": [
+      480,
+      382
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        387,
+        129,
+        866,
+        510
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_008_translucent_white_veil.png",
+  "output_sha256": "6ae8d078677e7251a0d9fea759c993676ae1c31d81ea142a0e67a98dd6c133f2"
+}

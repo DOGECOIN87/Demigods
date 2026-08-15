@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "head_accessory_006_silver_ornate_tiara.png",
+    "source": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_006_silver_ornate_tiara.png",
+    "sha256": "b9effbe26c4e8017b2abfc849824555297bcfc3a5359cb992740fd357b9dcce4",
+    "passed": true,
+    "failures": [],
+    "id": "DG-128",
+    "backlog_status": "pending",
+    "category": "head_accessories",
+    "production_path": "assets/head_accessories/head_accessory_006_silver_ornate_tiara.png",
+    "description": "Silver ornate tiara",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.30",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[367,129,886,443]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/head_accessory_006_over_base.png"
+  },
+  {
+    "filename": "head_accessory_007_silver_drop_circlet.png",
+    "source": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_007_silver_drop_circlet.png",
+    "sha256": "ec99665aa6f848838c9dfa1b29f9382a903db76d228bb5206f26e7c4323eb4d6",
+    "passed": true,
+    "failures": [],
+    "id": "DG-129",
+    "backlog_status": "pending",
+    "category": "head_accessories",
+    "production_path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
+    "description": "Silver forehead circlet with central drop",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.30",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[367,129,886,312]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/head_accessory_007_over_base.png"
+  },
+  {
+    "filename": "head_accessory_008_translucent_white_veil.png",
+    "source": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_008_translucent_white_veil.png",
+    "sha256": "6ae8d078677e7251a0d9fea759c993676ae1c31d81ea142a0e67a98dd6c133f2",
+    "passed": true,
+    "failures": [],
+    "id": "DG-130",
+    "backlog_status": "pending",
+    "category": "head_accessories",
+    "production_path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
+    "description": "Translucent white veil",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.30",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[387,129,866,510]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/head_accessory_008_over_base.png"
+  },
+  {
+    "filename": "head_accessory_009_pale_blue_spiked_tiara.png",
+    "source": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+    "sha256": "03be518b85bb16684ba02b55740cb8ad7ce586ecb1657f54341ce8d3b95da396",
+    "passed": true,
+    "failures": [],
+    "id": "DG-131",
+    "backlog_status": "pending",
+    "category": "head_accessories",
+    "production_path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+    "description": "Pale-blue spiked crown/tiara",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.30",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[367,129,886,338]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/head_accessory_009_over_base.png"
+  },
+  {
+    "filename": "head_accessory_010_gold_low_circlet.png",
+    "source": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_010_gold_low_circlet.png",
+    "sha256": "d96e31e9371609df2e50cc893e2116ab3596a67032f5e519032e38b6a4813f2c",
+    "passed": true,
+    "failures": [],
+    "id": "DG-132",
+    "backlog_status": "pending",
+    "category": "head_accessories",
+    "production_path": "assets/head_accessories/head_accessory_010_gold_low_circlet.png",
+    "description": "Gold low-profile circlet",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.30",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[367,129,886,278]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/head_accessory_010_over_base.png"
+  }
+]

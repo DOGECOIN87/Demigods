@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_010_gold_low_circlet_source2.png",
+  "source_sha256": "413cc76ec74d0f345f4b910f6de23e509da67ce1146263fb0a69dfb022a5e265",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      214,
+      767,
+      1705,
+      1196
+    ],
+    "crop_dimensions": [
+      1492,
+      430
+    ],
+    "scale": 0.34852547,
+    "target_dimensions": [
+      520,
+      150
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        367,
+        129,
+        886,
+        278
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_010_gold_low_circlet.png",
+  "output_sha256": "d96e31e9371609df2e50cc893e2116ab3596a67032f5e519032e38b6a4813f2c"
+}
