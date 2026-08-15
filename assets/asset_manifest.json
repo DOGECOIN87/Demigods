@@ -301,7 +301,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/16_native_1254_pose_001_candidate.md",
-      "qa_report": "docs/qa/base_body_centering_investigation_2026-08-15.md",
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "images/pose_candidates/base_pose_001_relaxed_open_candidate.png",
@@ -311,12 +311,17 @@
           1254
         ],
         "postprocessing": [
-          "native_integer_translation_x_plus_1_px_2026-08-15"
+          "native_integer_translation_x_plus_1_px_2026-08-15",
+          "hide_undergarment_repaint_2026-08-15"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
         "pre_translation_sha256": "390a4c78f18f01e51349c37433a0d1d20b61d5272cd6515eb7db97c335bf3e24",
-        "post_translation_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107"
+        "post_translation_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
+        "pre_geometry_correction_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
+        "post_geometry_correction_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
       },
       "approved_on": "2026-07-26"
     },
@@ -343,19 +348,25 @@
           1254
         ],
         "postprocessing": [
-          "hide_undergarment_repaint_skin_laplace_relaxed"
+          "hide_undergarment_repaint_skin_laplace_relaxed",
+          "hide_undergarment_repaint_2026-08-15"
         ],
         "postprocessing_script": "scripts/hide_undergarment.py",
-        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render."
+        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
+        "pre_geometry_correction_sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
+        "post_geometry_correction_sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
       },
-      "approved_on": "2026-07-26"
+      "approved_on": "2026-07-26",
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "base_pose_003",
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
       "status": "production_ready",
-      "sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16",
+      "sha256": "be0fa16c81ade864f4de05f56761744c19cd29a9f427fe6357ebd9ac83999631",
       "dimensions": [
         1254,
         1254
@@ -373,15 +384,20 @@
           1254
         ],
         "postprocessing": [
-          "native_integer_translation_x_plus_1_px_2026-08-15"
+          "native_integer_translation_x_plus_1_px_2026-08-15",
+          "hide_undergarment_repaint_2026-08-15"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
         "pre_translation_sha256": "c47eeddf3f4e7974d9e2d025bb4673b6ba048c8f9707070cb4dc132746047d66",
-        "post_translation_sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16"
+        "post_translation_sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16",
+        "pre_geometry_correction_sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16",
+        "post_geometry_correction_sha256": "be0fa16c81ade864f4de05f56761744c19cd29a9f427fe6357ebd9ac83999631",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
       },
       "approved_on": "2026-07-26",
-      "qa_report": "docs/qa/base_body_centering_investigation_2026-08-15.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "base_pose_004",
@@ -406,19 +422,25 @@
           1254
         ],
         "postprocessing": [
-          "hide_undergarment_repaint_skin_laplace_relaxed"
+          "hide_undergarment_repaint_skin_laplace_relaxed",
+          "hide_undergarment_repaint_2026-08-15"
         ],
         "postprocessing_script": "scripts/hide_undergarment.py",
-        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render."
+        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
+        "pre_geometry_correction_sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
+        "post_geometry_correction_sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
       },
-      "approved_on": "2026-07-26"
+      "approved_on": "2026-07-26",
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "base_pose_005",
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
       "status": "production_ready",
-      "sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
+      "sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
       "dimensions": [
         1254,
         1254
@@ -436,15 +458,20 @@
           1254
         ],
         "postprocessing": [
-          "native_integer_translation_x_plus_1_px_2026-08-15"
+          "native_integer_translation_x_plus_1_px_2026-08-15",
+          "hide_undergarment_repaint_2026-08-15"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
         "pre_translation_sha256": "6b688c49e87caa637eaf17e44ceddef97578034f1034d56a097fdba75d130d24",
-        "post_translation_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0"
+        "post_translation_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
+        "pre_geometry_correction_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
+        "post_geometry_correction_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
       },
       "approved_on": "2026-07-26",
-      "qa_report": "docs/qa/base_body_centering_investigation_2026-08-15.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "hair_back_003",
@@ -2541,7 +2568,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
       "status": "production_ready",
-      "sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
+      "sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
       "dimensions": [
         1254,
         1254
@@ -2558,17 +2585,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
+        "post_geometry_correction_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_002",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
       "status": "production_ready",
-      "sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
+      "sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
       "dimensions": [
         1254,
         1254
@@ -2585,17 +2619,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
+        "post_geometry_correction_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_003",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
+      "sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
       "dimensions": [
         1254,
         1254
@@ -2612,17 +2653,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
+        "post_geometry_correction_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_004",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
       "status": "production_ready",
-      "sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
+      "sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
       "dimensions": [
         1254,
         1254
@@ -2639,17 +2687,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
+        "post_geometry_correction_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_005",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
       "status": "production_ready",
-      "sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
+      "sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
       "dimensions": [
         1254,
         1254
@@ -2666,17 +2721,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
+        "post_geometry_correction_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_001-005_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_006",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
       "status": "production_ready",
-      "sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
+      "sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
       "dimensions": [
         1254,
         1254
@@ -2693,17 +2755,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
+        "post_geometry_correction_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_007",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
       "status": "production_ready",
-      "sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
+      "sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
       "dimensions": [
         1254,
         1254
@@ -2720,17 +2789,24 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
+        "post_geometry_correction_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "neck_accessory_008",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
+      "sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
       "dimensions": [
         1254,
         1254
@@ -2747,10 +2823,17 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "reduction_only_neck_refit_2026-08-15"
+        ],
+        "pre_geometry_correction_sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
+        "post_geometry_correction_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
+        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
       "id": "hand_object_006",

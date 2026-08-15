@@ -66,7 +66,13 @@ LAYER_ORDER = [
     "mouths", "expression_marks", "hair_front", "head_accessories",
     "hand_objects", "front_auras", "global_finish",
 ]
-BASE_INDEX = LAYER_ORDER.index("base_bodies")
+RENDER_LAYER_ORDER = [
+    "backgrounds", "rear_auras", "back_accessories", "hair_back",
+    "hand_objects", "base_bodies", "outfits", "neck_accessories", "eyes", "eyebrows",
+    "mouths", "expression_marks", "hair_front", "head_accessories",
+    "front_auras", "global_finish",
+]
+BASE_RENDER_INDEX = RENDER_LAYER_ORDER.index("base_bodies")
 
 
 def sha256(path: Path) -> str:
@@ -162,7 +168,7 @@ def build_composite(candidate: Path, category: str, out_path: Path) -> Path:
     trait = Image.open(candidate).convert("RGBA")
     canvas = Image.new("RGBA", base.size, (255, 255, 255, 255))
 
-    behind = LAYER_ORDER.index(category) < BASE_INDEX if category in LAYER_ORDER else False
+    behind = RENDER_LAYER_ORDER.index(category) < BASE_RENDER_INDEX if category in RENDER_LAYER_ORDER else False
     if behind:
         canvas.alpha_composite(trait)
         canvas.alpha_composite(base)

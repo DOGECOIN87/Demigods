@@ -1,0 +1,117 @@
+{
+  "operation": "neck_accessory_batch_refit",
+  "items": [
+    {
+      "asset": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+      "source_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
+      "output_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
+      "scale": 0.45,
+      "top_y": 555,
+      "output_bounds": [
+        546,
+        555,
+        707,
+        610
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+      "source_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
+      "output_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        546,
+        550,
+        707,
+        657
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+      "source_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
+      "output_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        555,
+        550,
+        698,
+        684
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+      "source_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
+      "output_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        560,
+        550,
+        694,
+        669
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+      "source_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
+      "output_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
+      "scale": 0.35,
+      "top_y": 545,
+      "output_bounds": [
+        574,
+        545,
+        678,
+        714
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+      "source_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
+      "output_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        560,
+        550,
+        694,
+        652
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+      "source_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
+      "output_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        560,
+        550,
+        694,
+        661
+      ],
+      "operation": "reduction_only_refit"
+    },
+    {
+      "asset": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+      "source_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
+      "output_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
+      "scale": 0.45,
+      "top_y": 550,
+      "output_bounds": [
+        555,
+        550,
+        698,
+        657
+      ],
+      "operation": "reduction_only_refit"
+    }
+  ]
+}

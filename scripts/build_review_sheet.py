@@ -16,6 +16,14 @@ LAYER_ORDER = [
     "mouths", "expression_marks", "hair_front", "head_accessories",
     "hand_objects", "front_auras", "global_finish",
 ]
+# Visual stacking differs from metadata order so the base hand sits in front of
+# the held object at the grip while the object remains visible outside the body.
+RENDER_LAYER_ORDER = [
+    "backgrounds", "rear_auras", "back_accessories", "hair_back",
+    "hand_objects", "base_bodies", "outfits", "neck_accessories", "eyes", "eyebrows",
+    "mouths", "expression_marks", "hair_front", "head_accessories",
+    "front_auras", "global_finish",
+]
 
 
 def main() -> int:
@@ -48,7 +56,7 @@ def main() -> int:
             for item in metadata["attributes"]
         }
         tile = Image.new("RGBA", (args.tile, args.tile), (0, 0, 0, 0))
-        for category in LAYER_ORDER:
+        for category in RENDER_LAYER_ORDER:
             source_name = attributes.get(category)
             if source_name is None:
                 continue

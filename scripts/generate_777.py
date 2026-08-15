@@ -39,6 +39,26 @@ LAYER_ORDER = [
     "front_auras",
     "global_finish",
 ]
+# Rendering order is intentionally separate from metadata/signature order: the
+# base hand must occlude the held object at the grip.
+RENDER_LAYER_ORDER = [
+    "backgrounds",
+    "rear_auras",
+    "back_accessories",
+    "hair_back",
+    "hand_objects",
+    "base_bodies",
+    "outfits",
+    "neck_accessories",
+    "eyes",
+    "eyebrows",
+    "mouths",
+    "expression_marks",
+    "hair_front",
+    "head_accessories",
+    "front_auras",
+    "global_finish",
+]
 REQUIRED_CATEGORIES = {"backgrounds", "base_bodies"}
 # The collection is 777 pieces: 770 composed from modular traits plus 7 legendary
 # 1-of-1 illustrations that are painted whole and placed at reserved token IDs.
@@ -398,7 +418,7 @@ def prepare_output(output: Path, overwrite: bool) -> tuple[Path, Path]:
 
 def render(selection: dict[str, Path], output_path: Path, size: tuple[int, int]) -> str:
     canvas = Image.new("RGBA", size, (0, 0, 0, 0))
-    for category in LAYER_ORDER:
+    for category in RENDER_LAYER_ORDER:
         path = selection.get(category)
         if path is None:
             continue
