@@ -67,6 +67,12 @@ The following matters require owner confirmation before irreversible release wor
 
 There is **no active repository blocker**. The practical constraint is production completeness: 128 distinct trait-production paths remain unregistered, and no complete modular character has yet passed the full hair-plus-face composite gate. The external release path is also undecided, but it does not prevent the next art-production milestone.
 
+### Native-canvas candidate toolchain constraint
+
+The first controlled hair-front pilot was attempted on 2026-08-15 and correctly rejected at intake. Although it isolated the intended white-silver fringe, the available generation route returned a 1920 × 1920 asset with full-frame visible bounds rather than the required native 1254 × 1254 production canvas and bounded transparent padding. The collection rules prohibit resampling or cropping the result into compliance. The failed candidate and gate evidence are preserved under `images/trait_candidates/hair_front/` and `docs/qa/hair_front_003_candidate_attempt_001_2026-08-15.md`.
+
+Accordingly, further modular-asset production is blocked until a generation route that can emit a **native 1254 × 1254 RGBA PNG with true transparent canvas and full-canvas placement control** is available, or the owner explicitly changes the locked native-canvas policy. This is an operational toolchain constraint, not a defect in the repository validation system; all existing repository gates remain passing.
+
 ## Sources
 
 The plan is governed by the repository’s `config/collection.json`, `assets/asset_manifest.json`, `docs/production_status.md`, `docs/trait-production-backlog.md`, `docs/qa/legendary_one_of_one_2026-07-29.md`, approved prompts, validators, and the oversight visual review dated 2026-08-15.
