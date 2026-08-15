@@ -1114,6 +1114,138 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/face_completion_pilot_hair_front_003_attempt_005_report.json"
+    },
+    {
+      "id": "hair_back_001",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_001_gold_long_wavy.png",
+      "status": "production_ready",
+      "sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-029",
+      "qa_composite": "docs/qa/composites/hair_back_001_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_back/hair_back_001_gold_long_wavy_candidate_attempt_001.png",
+        "source_sha256": "1fc3b83dfaf0884f2916b9ded73423b9e4981abf189fb904d261439115c60123",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 120
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            308,
+            187,
+            1620,
+            1695
+          ],
+          "crop_dimensions": [
+            1313,
+            1509
+          ],
+          "scale": 0.40365575,
+          "target_dimensions": [
+            530,
+            609
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              362,
+              132,
+              891,
+              740
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/gold_hair_pair/hair_back_001_gold_long_wavy.png",
+        "output_sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/gold_hair_pair_report.json"
+    },
+    {
+      "id": "hair_front_001",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
+      "status": "production_ready",
+      "sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-115",
+      "qa_composite": "docs/qa/composites/hair_front_001_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_front/hair_front_001_gold_parted_bangs_candidate_attempt_001.png",
+        "source_sha256": "9d36d93077642a7d902235999d7a49df164549c6c763dc28453f9652b0370bf5",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 192
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            347,
+            257,
+            1535,
+            1217
+          ],
+          "crop_dimensions": [
+            1189,
+            961
+          ],
+          "scale": 0.35323802,
+          "target_dimensions": [
+            420,
+            339
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              417,
+              132,
+              836,
+              470
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/gold_hair_pair/hair_front_001_gold_parted_bangs.png",
+        "output_sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/gold_hair_pair_report.json"
     }
   ],
   "approved_visual_references": [

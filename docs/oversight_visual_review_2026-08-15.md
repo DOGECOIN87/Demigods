@@ -33,3 +33,9 @@ The candidate must remain unregistered. The revised source-transform policy is t
 The revised DG-117 source produces a materially improved normalized candidate. In the full-context composite, both eyes, eyebrows, nose, and mouth remain legible; the fringe reads as a short, centered chibi bang set rather than a face-obscuring curtain. The scaled front layer also integrates credibly with the registered silver rear-hair mass and preserves the celestial-scholar outfit’s silhouette. No dominant matte, green edge, clipping, or layer-order defect is visible at review scale.
 
 **Art-direction disposition: approved for registration, subject to the standard provenance-aware intake result and the required automatic hair-pairing rule.** The candidate should be recorded as a generator-source transform, not as direct native generation. It establishes a usable quality reference for subsequent front-hair prompts: clear eyes and mouth, compact fringe, thin temple framing, and controlled blend with the matching rear layer.
+
+## Gold Hair Pair Review — DG-029 and DG-115
+
+The paired gold long-wavy rear hair and gold parted bangs pass full-context art-direction review. The rear layer supplies a rich, balanced wavy silhouette behind the shoulders; the front layer retains a clear facial opening, with the eyes, eyebrows, nose, and mouth fully legible. Their honey-gold palette, line weight, highlight treatment, crown overlap, and strand rhythm match convincingly. No unacceptable matte, clipping, seam, or layer-order defect is visible at review scale.
+
+**Art-direction disposition: approved for paired registration.** Both files must retain their generator-source-transform provenance, and the front-bang asset must carry the automatic requirement for its matching gold rear-hair layer.

@@ -126,7 +126,7 @@ Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-029 | hair back | Long wavy gold-blonde rear hair | `HAIR`, upper row cell 1 | Locked scalp and pose | `assets/hair_back/hair_back_001_gold_long_wavy.png` | `prompts/04_hair_back.md` | pending |
+| DG-029 | hair back | Long wavy gold-blonde rear hair | `HAIR`, upper row cell 1 | Locked scalp and pose | `assets/hair_back/hair_back_001_gold_long_wavy.png` | `prompts/04_hair_back.md` | registered |
 | DG-030 | hair back | Long wavy black rear hair | `HAIR`, upper row cell 2 | DG-029 representative test | `assets/hair_back/hair_back_002_black_long_wavy.png` | `prompts/04_hair_back.md` | pending |
 | DG-031 | hair back | Long wavy white-silver rear hair | `HAIR`, upper row cell 3 | representative hair-back test (this asset) | `assets/hair_back/hair_back_003_silver_long_wavy.png` | `prompts/04_hair_back.md` | **registered** |
 | DG-032 | hair back | Long wavy violet rear hair | `HAIR`, upper row cell 4 | DG-029 | `assets/hair_back/hair_back_004_violet_long_wavy.png` | `prompts/04_hair_back.md` | pending |
@@ -255,7 +255,7 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-115 | hair front | Gold-blonde parted bangs and face-framing strands | `HAIR`, lower row cell 1 | Matching DG-029 and approved face opening | `assets/hair_front/hair_front_001_gold_parted_bangs.png` | `prompts/05_hair_front.md` | pending |
+| DG-115 | hair front | Gold-blonde parted bangs and face-framing strands | `HAIR`, lower row cell 1 | Matching DG-029 and approved face opening | `assets/hair_front/hair_front_001_gold_parted_bangs.png` | `prompts/05_hair_front.md` | registered |
 | DG-116 | hair front | Black side-swept bangs and face-framing strands | `HAIR`, lower row cell 2 | DG-115 representative test; matching DG-030 | `assets/hair_front/hair_front_002_black_side_swept.png` | `prompts/05_hair_front.md` | pending |
 | DG-117 | hair front | White-silver straight bangs and face-framing strands | `HAIR`, lower row cell 3 | Matching DG-031 | `assets/hair_front/hair_front_003_silver_straight_bangs.png` | `prompts/05_hair_front.md` | registered |
 | DG-118 | hair front | Violet parted bangs and face-framing strands | `HAIR`, lower row cell 4 | Matching DG-032 | `assets/hair_front/hair_front_004_violet_parted_bangs.png` | `prompts/05_hair_front.md` | pending |

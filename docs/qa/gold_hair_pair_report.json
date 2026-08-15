@@ -1,0 +1,238 @@
+[
+  {
+    "filename": "hair_back_001_gold_long_wavy.png",
+    "source": "incoming/gold_hair_pair/hair_back_001_gold_long_wavy.png",
+    "sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+    "passed": true,
+    "failures": [],
+    "id": "DG-029",
+    "backlog_status": "pending",
+    "category": "hair_back",
+    "production_path": "assets/hair_back/hair_back_001_gold_long_wavy.png",
+    "description": "Long wavy gold-blonde rear hair",
+    "provenance": {
+      "origin": "generator_source_transform",
+      "source_path": "images/trait_candidates/hair_back/hair_back_001_gold_long_wavy_candidate_attempt_001.png",
+      "source_sha256": "1fc3b83dfaf0884f2916b9ded73423b9e4981abf189fb904d261439115c60123",
+      "source_dimensions": [
+        1920,
+        1920
+      ],
+      "source_mode": "RGBA",
+      "alpha_cleanup": {
+        "method": "clear_negligible_alpha_haze",
+        "threshold": 120
+      },
+      "transform": {
+        "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+        "source_visible_bounds": [
+          308,
+          187,
+          1620,
+          1695
+        ],
+        "crop_dimensions": [
+          1313,
+          1509
+        ],
+        "scale": 0.40365575,
+        "target_dimensions": [
+          530,
+          609
+        ],
+        "placement": {
+          "center_x": 627,
+          "top_y": 132,
+          "bounds": [
+            362,
+            132,
+            891,
+            740
+          ]
+        }
+      },
+      "final_dimensions": [
+        1254,
+        1254
+      ],
+      "normalization_script": "scripts/normalize_generator_source.py",
+      "output_path": "incoming/gold_hair_pair/hair_back_001_gold_long_wavy.png",
+      "output_sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed"
+    },
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.35",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[362,132,891,740]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hair_back_001_over_base.png"
+  },
+  {
+    "filename": "hair_front_001_gold_parted_bangs.png",
+    "source": "incoming/gold_hair_pair/hair_front_001_gold_parted_bangs.png",
+    "sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+    "passed": true,
+    "failures": [],
+    "id": "DG-115",
+    "backlog_status": "pending",
+    "category": "hair_front",
+    "production_path": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
+    "description": "Gold-blonde parted bangs and face-framing strands",
+    "provenance": {
+      "origin": "generator_source_transform",
+      "source_path": "images/trait_candidates/hair_front/hair_front_001_gold_parted_bangs_candidate_attempt_001.png",
+      "source_sha256": "9d36d93077642a7d902235999d7a49df164549c6c763dc28453f9652b0370bf5",
+      "source_dimensions": [
+        1920,
+        1920
+      ],
+      "source_mode": "RGBA",
+      "alpha_cleanup": {
+        "method": "clear_negligible_alpha_haze",
+        "threshold": 192
+      },
+      "transform": {
+        "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+        "source_visible_bounds": [
+          347,
+          257,
+          1535,
+          1217
+        ],
+        "crop_dimensions": [
+          1189,
+          961
+        ],
+        "scale": 0.35323802,
+        "target_dimensions": [
+          420,
+          339
+        ],
+        "placement": {
+          "center_x": 627,
+          "top_y": 132,
+          "bounds": [
+            417,
+            132,
+            836,
+            470
+          ]
+        }
+      },
+      "final_dimensions": [
+        1254,
+        1254
+      ],
+      "normalization_script": "scripts/normalize_generator_source.py",
+      "output_path": "incoming/gold_hair_pair/hair_front_001_gold_parted_bangs.png",
+      "output_sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d"
+    },
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.35",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[417,132,836,470]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hair_front_001_over_base.png"
+  }
+]
