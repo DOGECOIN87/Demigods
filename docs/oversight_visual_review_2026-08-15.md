@@ -45,3 +45,13 @@ The paired gold long-wavy rear hair and gold parted bangs pass full-context art-
 The black long-wavy rear layer and black side-swept front layer pass full-context review as a paired hairstyle. The rear layer provides strong contrast and controlled blue-black highlight structure; the asymmetric bang preserves the intended side-swept character while leaving the facial expression, the visible eye, brows, nose, and mouth readable. The partial overlap over the viewer-left eye is an intentional, category-specific feature of the side-swept design rather than an uncontrolled fringe failure. The crown, temple strands, and rear silhouette merge convincingly without visible matte, clipping, or layer-order defects.
 
 **Art-direction disposition: approved for paired registration.** Retain generator-source-transform provenance for both assets and apply the standard matching rear-hair requirement to the black front-bang asset.
+
+## Violet Hair Pair Review — DG-032 and DG-118
+
+The violet rear-hair layer is technically strong, with a coherent amethyst silhouette and acceptable modular scale. The violet front-bang layer, however, fails the human face-visibility gate: its central panels descend across both eyes and leave the character’s expression unreadable in the full-context composite. This contradicts the compact, face-revealing requirement for the paired-bang category.
+
+**Art-direction disposition: rear hair may proceed only if separately reviewed; DG-118 front bangs are rejected and remain unregistered.** A replacement front source must use shorter violet parted bangs that stop above the eye line and preserve both eyes, brows, nose, and mouth. The current violet pair must not be registered as a pair.
+
+### Violet correction — attempt 002
+
+The replacement DG-118 source resolves the earlier face-visibility failure. Its compact fringe now stops above the eyebrows, both eyes and eyebrows remain fully visible, and its purple highlight language blends cleanly into the violet rear-hair mass. **The corrected DG-032/DG-118 pair is approved for registration.**
