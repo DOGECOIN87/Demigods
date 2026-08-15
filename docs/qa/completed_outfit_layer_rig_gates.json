@@ -1,0 +1,562 @@
+[
+  {
+    "file": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
+    "sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[407,475,848,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.00x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      407,
+      475,
+      848,
+      1139
+    ],
+    "trait_center_x": 627.5,
+    "width_ratio": 1.0,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 665,
+      "target_height": 999,
+      "scale_to_target": 1.5023,
+      "shift_center_x_by": -0.5,
+      "shift_head_top_by": -334
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
+    "sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[475,476,778,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.69x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      475,
+      476,
+      778,
+      1138
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.69,
+    "crown_offset": -335,
+    "guidance": {
+      "silhouette_height": 663,
+      "target_height": 999,
+      "scale_to_target": 1.5068,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -335
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
+    "sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[463,476,790,1137]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.74x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      463,
+      476,
+      790,
+      1137
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.74,
+    "crown_offset": -335,
+    "guidance": {
+      "silhouette_height": 662,
+      "target_height": 999,
+      "scale_to_target": 1.5091,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -335
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
+    "sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[482,476,771,1137]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.65x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      482,
+      476,
+      771,
+      1137
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.65,
+    "crown_offset": -335,
+    "guidance": {
+      "silhouette_height": 662,
+      "target_height": 999,
+      "scale_to_target": 1.5091,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -335
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+    "sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[493,476,761,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.61x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      493,
+      476,
+      761,
+      1138
+    ],
+    "trait_center_x": 627.0,
+    "width_ratio": 0.61,
+    "crown_offset": -335,
+    "guidance": {
+      "silhouette_height": 663,
+      "target_height": 999,
+      "scale_to_target": 1.5068,
+      "shift_center_x_by": 0.0,
+      "shift_head_top_by": -335
+    },
+    "deviation": 0.0
+  },
+  {
+    "file": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
+    "sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[432,475,821,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.88x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      432,
+      475,
+      821,
+      1138
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.88,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 664,
+      "target_height": 999,
+      "scale_to_target": 1.5045,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -334
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_007_brown_leather_long_coat.png",
+    "sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[425,475,828,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.91x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      425,
+      475,
+      828,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.91,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 665,
+      "target_height": 999,
+      "scale_to_target": 1.5023,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -334
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_008_olive_ragged_cloak.png",
+    "sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[404,475,850,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.01x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      404,
+      475,
+      850,
+      1138
+    ],
+    "trait_center_x": 627.0,
+    "width_ratio": 1.01,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 664,
+      "target_height": 999,
+      "scale_to_target": 1.5045,
+      "shift_center_x_by": 0.0,
+      "shift_head_top_by": -334
+    },
+    "deviation": 0.0
+  },
+  {
+    "file": "assets/outfits/outfit_009_navy_high_collar_coat.png",
+    "sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[410,475,843,1138]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.98x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      410,
+      475,
+      843,
+      1138
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 0.98,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 664,
+      "target_height": 999,
+      "scale_to_target": 1.5045,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -334
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+    "sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[418,475,834,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "0.94x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      418,
+      475,
+      834,
+      1139
+    ],
+    "trait_center_x": 626.0,
+    "width_ratio": 0.94,
+    "crown_offset": -334,
+    "guidance": {
+      "silhouette_height": 665,
+      "target_height": 999,
+      "scale_to_target": 1.5023,
+      "shift_center_x_by": 1.0,
+      "shift_head_top_by": -334
+    },
+    "deviation": 1.0
+  }
+]

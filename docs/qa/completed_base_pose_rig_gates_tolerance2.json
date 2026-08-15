@@ -1,0 +1,332 @@
+[
+  {
+    "file": "assets/base_bodies/base_body_001_neutral_master.png",
+    "sha256": "390a4c78f18f01e51349c37433a0d1d20b61d5272cd6515eb7db97c335bf3e24",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "top_of_head_y",
+        true,
+        141,
+        141,
+        0
+      ],
+      [
+        "foot_baseline_y",
+        true,
+        1139,
+        1139,
+        0
+      ],
+      [
+        "body_center_x",
+        true,
+        625.8,
+        627,
+        -1.2
+      ],
+      [
+        "max_bounds",
+        true,
+        "[405,141,847,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      405,
+      141,
+      847,
+      1139
+    ],
+    "body_center_x": {
+      "head": 626.0,
+      "legs": 625.5,
+      "mean": 625.8
+    },
+    "silhouette_center_x": 626.0,
+    "guidance": {
+      "silhouette_height": 999,
+      "target_height": 999,
+      "scale_to_target": 1.0,
+      "shift_center_x_by": 1.0,
+      "shift_head_top_by": 0
+    },
+    "deviation": 1.2
+  },
+  {
+    "file": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+    "sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "top_of_head_y",
+        true,
+        141,
+        141,
+        0
+      ],
+      [
+        "foot_baseline_y",
+        true,
+        1139,
+        1139,
+        0
+      ],
+      [
+        "body_center_x",
+        true,
+        627.5,
+        627,
+        0.5
+      ],
+      [
+        "max_bounds",
+        true,
+        "[412,141,866,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      412,
+      141,
+      866,
+      1139
+    ],
+    "body_center_x": {
+      "head": 628.0,
+      "legs": 627.0,
+      "mean": 627.5
+    },
+    "silhouette_center_x": 639.0,
+    "guidance": {
+      "silhouette_height": 999,
+      "target_height": 999,
+      "scale_to_target": 1.0,
+      "shift_center_x_by": -12.0,
+      "shift_head_top_by": 0
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+    "sha256": "c47eeddf3f4e7974d9e2d025bb4673b6ba048c8f9707070cb4dc132746047d66",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "top_of_head_y",
+        true,
+        141,
+        141,
+        0
+      ],
+      [
+        "foot_baseline_y",
+        true,
+        1139,
+        1139,
+        0
+      ],
+      [
+        "body_center_x",
+        true,
+        625.8,
+        627,
+        -1.2
+      ],
+      [
+        "max_bounds",
+        true,
+        "[407,141,820,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      407,
+      141,
+      820,
+      1139
+    ],
+    "body_center_x": {
+      "head": 626.0,
+      "legs": 625.5,
+      "mean": 625.8
+    },
+    "silhouette_center_x": 613.5,
+    "guidance": {
+      "silhouette_height": 999,
+      "target_height": 999,
+      "scale_to_target": 1.0,
+      "shift_center_x_by": 13.5,
+      "shift_head_top_by": 0
+    },
+    "deviation": 1.2
+  },
+  {
+    "file": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+    "sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "top_of_head_y",
+        true,
+        141,
+        141,
+        0
+      ],
+      [
+        "foot_baseline_y",
+        true,
+        1139,
+        1139,
+        0
+      ],
+      [
+        "body_center_x",
+        true,
+        626.0,
+        627,
+        -1.0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[397,141,835,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      397,
+      141,
+      835,
+      1139
+    ],
+    "body_center_x": {
+      "head": 626.5,
+      "legs": 625.5,
+      "mean": 626.0
+    },
+    "silhouette_center_x": 616.0,
+    "guidance": {
+      "silhouette_height": 999,
+      "target_height": 999,
+      "scale_to_target": 1.0,
+      "shift_center_x_by": 11.0,
+      "shift_head_top_by": 0
+    },
+    "deviation": 1.0
+  },
+  {
+    "file": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+    "sha256": "6b688c49e87caa637eaf17e44ceddef97578034f1034d56a097fdba75d130d24",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "top_of_head_y",
+        true,
+        141,
+        141,
+        0
+      ],
+      [
+        "foot_baseline_y",
+        true,
+        1139,
+        1139,
+        0
+      ],
+      [
+        "body_center_x",
+        true,
+        625.5,
+        627,
+        -1.5
+      ],
+      [
+        "max_bounds",
+        true,
+        "[449,141,804,1139]",
+        "[233,129,1021,1139]",
+        "0"
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      449,
+      141,
+      804,
+      1139
+    ],
+    "body_center_x": {
+      "head": 626.5,
+      "legs": 624.5,
+      "mean": 625.5
+    },
+    "silhouette_center_x": 626.5,
+    "guidance": {
+      "silhouette_height": 999,
+      "target_height": 999,
+      "scale_to_target": 1.0,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 0
+    },
+    "deviation": 1.5
+  }
+]

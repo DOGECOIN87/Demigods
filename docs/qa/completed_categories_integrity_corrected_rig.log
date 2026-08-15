@@ -1,0 +1,197 @@
+>>> python3 scripts/rig_gate_report.py --pose-variant assets/base_bodies --json-report docs/qa/completed_base_pose_rig_gates.json
+==============================================================================
+base_body_001_neutral_master.png
+  sha256: 390a4c78f18f01e51349c37433a0d1d20b61d5272cd6515eb7db97c335bf3e24
+  inclusive visible bounds: [405, 141, 847, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   FAIL    625.8           627             -1.2
+  max_bounds      PASS    [405,141,847,1139][233,129,1021,1139]0
+  guidance: scale x1.0 (h 999->999), shift head_top +0 px, center_x +1.0 px
+  >>> FAIL — do not register
+==============================================================================
+base_pose_002_viewer_left_vertical_grip.png
+  sha256: cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7
+  inclusive visible bounds: [412, 141, 866, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    627.5           627             0.5
+  max_bounds      PASS    [412,141,866,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_003_viewer_right_vertical_grip.png
+  sha256: c47eeddf3f4e7974d9e2d025bb4673b6ba048c8f9707070cb4dc132746047d66
+  inclusive visible bounds: [407, 141, 820, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   FAIL    625.8           627             -1.2
+  max_bounds      PASS    [407,141,820,1139][233,129,1021,1139]0
+  guidance: scale x1.0 (h 999->999), shift head_top +0 px, center_x +13.5 px
+  >>> FAIL — do not register
+==============================================================================
+base_pose_004_viewer_left_palm_up.png
+  sha256: 660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685
+  inclusive visible bounds: [397, 141, 835, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   PASS    626.0           627             -1.0
+  max_bounds      PASS    [397,141,835,1139][233,129,1021,1139]0
+  >>> PASS — silhouette gates met
+==============================================================================
+base_pose_005_centered_two_hand_grip.png
+  sha256: 6b688c49e87caa637eaf17e44ceddef97578034f1034d56a097fdba75d130d24
+  inclusive visible bounds: [449, 141, 804, 1139]
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  top_of_head_y   PASS    141             141             0
+  foot_baseline_y PASS    1139            1139            0
+  body_center_x   FAIL    625.5           627             -1.5
+  max_bounds      PASS    [449,141,804,1139][233,129,1021,1139]0
+  guidance: scale x1.0 (h 999->999), shift head_top +0 px, center_x +0.5 px
+  >>> FAIL — do not register
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.5     base_pose_002_viewer_left_vertical_grip.png
+  PASS  dev=1.0     base_pose_004_viewer_left_palm_up.png
+  FAIL  dev=1.2     base_body_001_neutral_master.png
+  FAIL  dev=1.2     base_pose_003_viewer_right_vertical_grip.png
+  FAIL  dev=1.5     base_pose_005_centered_two_hand_grip.png
+------------------------------------------------------------------------------
+2/5 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/completed_base_pose_rig_gates.json
+EXIT 
+>>> python3 scripts/rig_gate_report.py --trait assets/outfits --json-report docs/qa/completed_outfit_layer_rig_gates.json
+==============================================================================
+outfit_001_celestial_scholar_pose_001.png
+  sha256: 5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958
+  inclusive visible bounds: [407, 475, 848, 1139]
+  width vs base body: 1.0x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [407,475,848,1139][233,129,1021,1139]0
+  width_ratio     PASS    1.00x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_002_storm_guardian_pose_002.png
+  sha256: f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263
+  inclusive visible bounds: [475, 476, 778, 1138]
+  width vs base body: 0.69x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [475,476,778,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.69x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_003_verdant_alchemist_pose_003.png
+  sha256: 7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0
+  inclusive visible bounds: [463, 476, 790, 1137]
+  width vs base body: 0.74x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [463,476,790,1137][233,129,1021,1139]0
+  width_ratio     PASS    0.74x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_004_lunar_oracle_pose_004.png
+  sha256: a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a
+  inclusive visible bounds: [482, 476, 771, 1137]
+  width vs base body: 0.65x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [482,476,771,1137][233,129,1021,1139]0
+  width_ratio     PASS    0.65x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_005_sun_temple_pose_005.png
+  sha256: b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96
+  inclusive visible bounds: [493, 476, 761, 1138]
+  width vs base body: 0.61x; crown offset -335 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [493,476,761,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.61x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_006_black_layered_hooded_robe.png
+  sha256: 82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05
+  inclusive visible bounds: [432, 475, 821, 1138]
+  width vs base body: 0.88x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [432,475,821,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.88x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_007_brown_leather_long_coat.png
+  sha256: 053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113
+  inclusive visible bounds: [425, 475, 828, 1139]
+  width vs base body: 0.91x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [425,475,828,1139][233,129,1021,1139]0
+  width_ratio     PASS    0.91x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_008_olive_ragged_cloak.png
+  sha256: ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6
+  inclusive visible bounds: [404, 475, 850, 1138]
+  width vs base body: 1.01x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [404,475,850,1138][233,129,1021,1139]0
+  width_ratio     PASS    1.01x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_009_navy_high_collar_coat.png
+  sha256: 1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8
+  inclusive visible bounds: [410, 475, 843, 1138]
+  width vs base body: 0.98x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [410,475,843,1138][233,129,1021,1139]0
+  width_ratio     PASS    0.98x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+outfit_010_celestial_robe_white_gold.png
+  sha256: 87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182
+  inclusive visible bounds: [418, 475, 834, 1139]
+  width vs base body: 0.94x; crown offset -334 px (+ = above the head top)
+  CHECK           RESULT  ACTUAL          TARGET          DELTA
+  canvas          PASS    1254x1254       1254x1254       0
+  transparent_bg  PASS    alpha_min=0     0               0
+  max_bounds      PASS    [418,475,834,1139][233,129,1021,1139]0
+  width_ratio     PASS    0.94x           report-only     0
+  >>> PASS — silhouette gates met
+==============================================================================
+CLOSEST FIRST (total silhouette deviation in px; lower is better):
+  PASS  dev=0.0     outfit_005_sun_temple_pose_005.png
+  PASS  dev=0.0     outfit_008_olive_ragged_cloak.png
+  PASS  dev=0.5     outfit_001_celestial_scholar_pose_001.png
+  PASS  dev=0.5     outfit_002_storm_guardian_pose_002.png
+  PASS  dev=0.5     outfit_003_verdant_alchemist_pose_003.png
+  PASS  dev=0.5     outfit_004_lunar_oracle_pose_004.png
+  PASS  dev=0.5     outfit_006_black_layered_hooded_robe.png
+  PASS  dev=0.5     outfit_007_brown_leather_long_coat.png
+  PASS  dev=0.5     outfit_009_navy_high_collar_coat.png
+  PASS  dev=1.0     outfit_010_celestial_robe_white_gold.png
+------------------------------------------------------------------------------
+10/10 candidate(s) meet the silhouette rig gate (tolerance +/-1px). Face, hand, waist, clothing, anatomy, lighting and identity remain manual overlay gates.
+JSON report written to docs/qa/completed_outfit_layer_rig_gates.json
+EXIT 

@@ -1,0 +1,1010 @@
+[
+  {
+    "file": "assets/rear_auras/aura_rear_001_blue_floor_ring.png",
+    "sha256": "03273fb15878b663caa7cbc6e129555c29a0111b8de79e6b338f33f363feb4ab",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1035,960,1221]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -894,
+    "guidance": {
+      "silhouette_height": 187,
+      "target_height": 999,
+      "scale_to_target": 5.3422,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -894
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_002_violet_radial_glow.png",
+    "sha256": "aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[340,428,913,1131]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.30x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      340,
+      428,
+      913,
+      1131
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.3,
+    "crown_offset": -287,
+    "guidance": {
+      "silhouette_height": 704,
+      "target_height": 999,
+      "scale_to_target": 1.419,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -287
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+    "sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[337,400,916,921]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.31x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      337,
+      400,
+      916,
+      921
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.31,
+    "crown_offset": -259,
+    "guidance": {
+      "silhouette_height": 522,
+      "target_height": 999,
+      "scale_to_target": 1.9138,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -259
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_004_violet_void_flame.png",
+    "sha256": "ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[383,172,869,1149]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.10x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      383,
+      172,
+      869,
+      1149
+    ],
+    "trait_center_x": 626.0,
+    "width_ratio": 1.1,
+    "crown_offset": -31,
+    "guidance": {
+      "silhouette_height": 978,
+      "target_height": 999,
+      "scale_to_target": 1.0215,
+      "shift_center_x_by": 1.0,
+      "shift_head_top_by": -31
+    },
+    "deviation": 1.0
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
+    "sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[377,350,876,1056]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.13x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      377,
+      350,
+      876,
+      1056
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.13,
+    "crown_offset": -209,
+    "guidance": {
+      "silhouette_height": 707,
+      "target_height": 999,
+      "scale_to_target": 1.413,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -209
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_006_gold_radiance.png",
+    "sha256": "3c3e78fa570aad87c84fa004a09c052fc7f6b930b162ab15a52c424bb719c558",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[343,432,910,1127]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.28x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      343,
+      432,
+      910,
+      1127
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.28,
+    "crown_offset": -291,
+    "guidance": {
+      "silhouette_height": 696,
+      "target_height": 999,
+      "scale_to_target": 1.4353,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -291
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_007_green_neon_ring.png",
+    "sha256": "89c6f4f8ccd1a3b3b9f1e1615add056d1dad8af706fbff8c323be5b9dba04369",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1035,960,1221]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -894,
+    "guidance": {
+      "silhouette_height": 187,
+      "target_height": 999,
+      "scale_to_target": 5.3422,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -894
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_008_gold_neon_ring.png",
+    "sha256": "7216d772e2f91b42cdf7ef316c2e5dc998d8a66cd1b17895f4f5a989a005558c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1035,960,1221]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -894,
+    "guidance": {
+      "silhouette_height": 187,
+      "target_height": 999,
+      "scale_to_target": 5.3422,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -894
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_009_pink_neon_ring.png",
+    "sha256": "d55fd93fe7582ba4d93e0132c2c0964d9c4208cc6d140d222e63d283aae1b9d2",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1035,960,1221]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -894,
+    "guidance": {
+      "silhouette_height": 187,
+      "target_height": 999,
+      "scale_to_target": 5.3422,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -894
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_010_white_neon_ring.png",
+    "sha256": "cb4b276c7e43d09218f625859fe01bdb2f31e7eb7d55fb547d9949c721065283",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1035,960,1221]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1035,
+      960,
+      1221
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -894,
+    "guidance": {
+      "silhouette_height": 187,
+      "target_height": 999,
+      "scale_to_target": 5.3422,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -894
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_011_fire_ring.png",
+    "sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1020,960,1139]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1020,
+      960,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -879,
+    "guidance": {
+      "silhouette_height": 120,
+      "target_height": 999,
+      "scale_to_target": 8.325,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -879
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_012_lightning_ring.png",
+    "sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1015,960,1136]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1015,
+      960,
+      1136
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -874,
+    "guidance": {
+      "silhouette_height": 122,
+      "target_height": 999,
+      "scale_to_target": 8.1885,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -874
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
+    "sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1009,960,1139]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1009,
+      960,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -868,
+    "guidance": {
+      "silhouette_height": 131,
+      "target_height": 999,
+      "scale_to_target": 7.626,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -868
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
+    "sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1033,960,1139]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1033,
+      960,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -892,
+    "guidance": {
+      "silhouette_height": 107,
+      "target_height": 999,
+      "scale_to_target": 9.3364,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -892
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
+    "sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1047,960,1139]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1047,
+      960,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -906,
+    "guidance": {
+      "silhouette_height": 93,
+      "target_height": 999,
+      "scale_to_target": 10.7419,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -906
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+    "sha256": "eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[302,161,951,1128]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.47x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      302,
+      161,
+      951,
+      1128
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.47,
+    "crown_offset": -20,
+    "guidance": {
+      "silhouette_height": 968,
+      "target_height": 999,
+      "scale_to_target": 1.032,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -20
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
+    "sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[293,1069,960,1139]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.51x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      293,
+      1069,
+      960,
+      1139
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.51,
+    "crown_offset": -928,
+    "guidance": {
+      "silhouette_height": 71,
+      "target_height": 999,
+      "scale_to_target": 14.0704,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -928
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "assets/rear_auras/aura_rear_018_blue_flame_ring.png",
+    "sha256": "37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[306,240,947,1130]",
+        "[233,129,1021,1252]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.45x",
+        "report-only",
+        0
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      306,
+      240,
+      947,
+      1130
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.45,
+    "crown_offset": -99,
+    "guidance": {
+      "silhouette_height": 891,
+      "target_height": 999,
+      "scale_to_target": 1.1212,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": -99
+    },
+    "deviation": 0.5
+  }
+]
