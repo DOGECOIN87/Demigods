@@ -59,3 +59,7 @@ The replacement DG-118 source resolves the earlier face-visibility failure. Its 
 ## Blue Hair Pair Review — DG-033 and DG-119
 
 The deep-blue rear hair and pointed-bang front layer pass full-context review. Both eyes, eyebrows, nose, and mouth remain visible, the pointed fringe provides a distinctive silhouette without facial obstruction, and the sapphire-blue highlights merge cleanly with the rear waves. **Approved for paired registration.**
+
+## Pink Hair Pair Review — DG-034 and DG-120
+
+The pink rear hair and soft-bang front layer pass full-context review. The warm rose palette is coherent, both eyes and facial features remain readable, and the flowing rear silhouette integrates cleanly with the compact fringe. **Approved for paired registration.**
