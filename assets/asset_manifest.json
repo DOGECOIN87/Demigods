@@ -1048,6 +1048,72 @@
       "approved_on": "2026-07-29",
       "qa_report": "docs/global-finish-definition.md",
       "prompt": null
+    },
+    {
+      "id": "hair_front_003",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
+      "status": "production_ready",
+      "sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-117",
+      "qa_composite": "docs/qa/composites/hair_front_003_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_front/hair_front_003_silver_straight_bangs_candidate_attempt_005.png",
+        "source_sha256": "358a612a9f575e3d5d129c7b8aabe7d10b95df89fea7e3d0b19fd72990dd56b2",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 120
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            442,
+            231,
+            1464,
+            1417
+          ],
+          "crop_dimensions": [
+            1023,
+            1187
+          ],
+          "scale": 0.41055718,
+          "target_dimensions": [
+            420,
+            487
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              417,
+              132,
+              836,
+              618
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/face_completion_pilot/hair_front_003_silver_straight_bangs.png",
+        "output_sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/face_completion_pilot_hair_front_003_attempt_005_report.json"
     }
   ],
   "approved_visual_references": [

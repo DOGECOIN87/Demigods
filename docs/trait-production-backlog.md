@@ -257,7 +257,7 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 |---|---|---|---|---|---|---|---|
 | DG-115 | hair front | Gold-blonde parted bangs and face-framing strands | `HAIR`, lower row cell 1 | Matching DG-029 and approved face opening | `assets/hair_front/hair_front_001_gold_parted_bangs.png` | `prompts/05_hair_front.md` | pending |
 | DG-116 | hair front | Black side-swept bangs and face-framing strands | `HAIR`, lower row cell 2 | DG-115 representative test; matching DG-030 | `assets/hair_front/hair_front_002_black_side_swept.png` | `prompts/05_hair_front.md` | pending |
-| DG-117 | hair front | White-silver straight bangs and face-framing strands | `HAIR`, lower row cell 3 | Matching DG-031 | `assets/hair_front/hair_front_003_silver_straight_bangs.png` | `prompts/05_hair_front.md` | pending |
+| DG-117 | hair front | White-silver straight bangs and face-framing strands | `HAIR`, lower row cell 3 | Matching DG-031 | `assets/hair_front/hair_front_003_silver_straight_bangs.png` | `prompts/05_hair_front.md` | registered |
 | DG-118 | hair front | Violet parted bangs and face-framing strands | `HAIR`, lower row cell 4 | Matching DG-032 | `assets/hair_front/hair_front_004_violet_parted_bangs.png` | `prompts/05_hair_front.md` | pending |
 | DG-119 | hair front | Deep-blue pointed bangs and face-framing strands | `HAIR`, lower row cell 5 | Matching DG-033 | `assets/hair_front/hair_front_005_blue_pointed_bangs.png` | `prompts/05_hair_front.md` | pending |
 | DG-120 | hair front | Pink soft bangs and face-framing strands | `HAIR`, lower row cell 6 | Matching DG-034 | `assets/hair_front/hair_front_006_pink_soft_bangs.png` | `prompts/05_hair_front.md` | pending |

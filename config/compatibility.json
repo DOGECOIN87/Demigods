@@ -25,6 +25,11 @@
       "trait": "outfit_005_sun_temple_pose_005.png",
       "requires": "base_pose_005_centered_two_hand_grip.png",
       "reason": "The torso opening is fitted around the centered two-hand grip."
+    },
+    {
+      "trait": "hair_front_003_silver_straight_bangs.png",
+      "requires": "hair_back_003_silver_long_wavy.png",
+      "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
     }
   ],
   "excludes": [],
