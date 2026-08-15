@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg023_cyan_fairy_wings_source.png",
+  "source_sha256": "973fb2475bc84e11f85fdf9d0e4aec732bdfbc6081ced37424a71fd73261371f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      84,
+      317,
+      1832,
+      1601
+    ],
+    "crop_dimensions": [
+      1749,
+      1285
+    ],
+    "scale": 0.33733562,
+    "target_dimensions": [
+      590,
+      433
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        852
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+  "output_sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278"
+}

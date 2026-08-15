@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg021_silver_feathered_wings_source.png",
+  "source_sha256": "17cab0d0b7d909137b1a70425ef6eef422ec8a5b0a31c189c6c4c1f90b9a92ce",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      120,
+      447,
+      1803,
+      1272
+    ],
+    "crop_dimensions": [
+      1684,
+      826
+    ],
+    "scale": 0.35035629,
+    "target_dimensions": [
+      590,
+      289
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        708
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories/back_accessory_001_silver_feathered_wings.png",
+  "output_sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c"
+}

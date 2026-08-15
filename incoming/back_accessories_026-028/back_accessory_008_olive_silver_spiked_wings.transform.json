@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg028_olive_silver_spiked_wings_source_retry.png",
+  "source_sha256": "945640e68f75a7415d285ae447e02f2e97b6721fe8c9bc84007322352861a63e",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      112,
+      502,
+      1806,
+      1340
+    ],
+    "crop_dimensions": [
+      1695,
+      839
+    ],
+    "scale": 0.3480826,
+    "target_dimensions": [
+      590,
+      292
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        711
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories_026-028/back_accessory_008_olive_silver_spiked_wings.png",
+  "output_sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29"
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "filename": "back_accessory_006_pale_blue_crystal_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories_026-028/back_accessory_006_pale_blue_crystal_wings.png",
+    "sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
+    "passed": true,
+    "failures": [],
+    "id": "DG-026",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+    "description": "Pale-blue crystalline wing/mantle pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,853]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_006_over_base.png"
+  },
+  {
+    "filename": "back_accessory_007_gold_luminous_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories_026-028/back_accessory_007_gold_luminous_wings.png",
+    "sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
+    "passed": true,
+    "failures": [],
+    "id": "DG-027",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
+    "description": "Luminous gold feathered wing pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,753]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_007_over_base.png"
+  },
+  {
+    "filename": "back_accessory_008_olive_silver_spiked_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories_026-028/back_accessory_008_olive_silver_spiked_wings.png",
+    "sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
+    "passed": true,
+    "failures": [],
+    "id": "DG-028",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+    "description": "Olive-silver mechanical/spiked wing pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,711]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_008_over_base.png"
+  }
+]

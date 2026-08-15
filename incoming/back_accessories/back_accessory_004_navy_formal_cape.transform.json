@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg024_navy_formal_cape_source.png",
+  "source_sha256": "634f2e3875361d23b66ef4a6819049435f7de43eb2edaf1a37a827e7c16aecbe",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      193,
+      174,
+      1724,
+      1761
+    ],
+    "crop_dimensions": [
+      1532,
+      1588
+    ],
+    "scale": 0.38511749,
+    "target_dimensions": [
+      590,
+      612
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 500,
+      "bounds": [
+        332,
+        500,
+        921,
+        1111
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories/back_accessory_004_navy_formal_cape.png",
+  "output_sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990"
+}

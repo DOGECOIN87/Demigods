@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg027_gold_luminous_wings_source_retry.png",
+  "source_sha256": "408ae7be0bb5b1a4a79b1357acea6c606b29edc18a44f77d92e9a9583d79f7ed",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      133,
+      471,
+      1786,
+      1405
+    ],
+    "crop_dimensions": [
+      1654,
+      935
+    ],
+    "scale": 0.356711,
+    "target_dimensions": [
+      590,
+      334
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        753
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories_026-028/back_accessory_007_gold_luminous_wings.png",
+  "output_sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c"
+}

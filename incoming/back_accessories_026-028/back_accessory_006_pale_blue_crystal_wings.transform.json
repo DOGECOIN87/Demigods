@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg026_pale_blue_crystal_wings_source_retry.png",
+  "source_sha256": "5dfcf0da2317a8e1418ed446a9e153c22b2dc16776788b75289cf2b7a268eb08",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      180,
+      374,
+      1739,
+      1520
+    ],
+    "crop_dimensions": [
+      1560,
+      1147
+    ],
+    "scale": 0.37820513,
+    "target_dimensions": [
+      590,
+      434
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        853
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories_026-028/back_accessory_006_pale_blue_crystal_wings.png",
+  "output_sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c"
+}

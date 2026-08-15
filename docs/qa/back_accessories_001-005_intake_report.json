@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "back_accessory_001_silver_feathered_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories/back_accessory_001_silver_feathered_wings.png",
+    "sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
+    "passed": true,
+    "failures": [],
+    "id": "DG-021",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
+    "description": "Pale silver feathered wing pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,708]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_001_over_base.png"
+  },
+  {
+    "filename": "back_accessory_002_black_violet_bat_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+    "sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2",
+    "passed": true,
+    "failures": [],
+    "id": "DG-022",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+    "description": "Black-violet bat wing pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,727]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_002_over_base.png"
+  },
+  {
+    "filename": "back_accessory_003_cyan_fairy_wings.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+    "sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278",
+    "passed": true,
+    "failures": [],
+    "id": "DG-023",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+    "description": "Translucent cyan fairy wing pair",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,420,921,852]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_003_over_base.png"
+  },
+  {
+    "filename": "back_accessory_004_navy_formal_cape.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories/back_accessory_004_navy_formal_cape.png",
+    "sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990",
+    "passed": true,
+    "failures": [],
+    "id": "DG-024",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_004_navy_formal_cape.png",
+    "description": "Deep navy formal cape",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,500,921,1111]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_004_over_base.png"
+  },
+  {
+    "filename": "back_accessory_005_black_violet_ragged_cloak.png",
+    "source": "/home/ubuntu/Demigods/incoming/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+    "sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70",
+    "passed": true,
+    "failures": [],
+    "id": "DG-025",
+    "backlog_status": "pending",
+    "category": "back_accessories",
+    "production_path": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+    "description": "Black-purple ragged cloak",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[332,440,921,1120]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/back_accessory_005_over_base.png"
+  }
+]

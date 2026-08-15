@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg022_black_violet_bat_wings_source.png",
+  "source_sha256": "328b956cd5a3b6c6cd90956af7a24db52034115d070085fb738936e861b19155",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      136,
+      525,
+      1778,
+      1382
+    ],
+    "crop_dimensions": [
+      1643,
+      858
+    ],
+    "scale": 0.35909921,
+    "target_dimensions": [
+      590,
+      308
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 420,
+      "bounds": [
+        332,
+        420,
+        921,
+        727
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+  "output_sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2"
+}

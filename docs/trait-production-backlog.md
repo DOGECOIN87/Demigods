@@ -113,14 +113,14 @@ Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-021 | back accessory | Pale silver feathered wing pair | `AURA`, upper row cell 1 | Locked pose family | `assets/back_accessories/back_accessory_001_silver_feathered_wings.png` | `prompts/11_back_accessories.md` | pending |
-| DG-022 | back accessory | Black-violet bat wing pair | `AURA`, upper row cell 2 | DG-021 representative test | `assets/back_accessories/back_accessory_002_black_violet_bat_wings.png` | `prompts/11_back_accessories.md` | pending |
-| DG-023 | back accessory | Translucent cyan fairy wing pair | `AURA`, upper row cell 3 | DG-021 | `assets/back_accessories/back_accessory_003_cyan_fairy_wings.png` | `prompts/11_back_accessories.md` | pending |
-| DG-024 | back accessory | Deep navy formal cape | `AURA`, upper row cell 4 | DG-021 | `assets/back_accessories/back_accessory_004_navy_formal_cape.png` | `prompts/11_back_accessories.md` | pending |
-| DG-025 | back accessory | Black-purple ragged cloak | `AURA`, upper row cell 5 | DG-021 | `assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png` | `prompts/11_back_accessories.md` | pending |
-| DG-026 | back accessory | Pale-blue crystalline wing/mantle pair | `AURA`, upper row cell 6 | DG-021 | `assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png` | `prompts/11_back_accessories.md` | pending |
-| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | pending |
-| DG-028 | back accessory | Olive-silver mechanical/spiked wing pair | `AURA`, upper row cell 8 | DG-021 | `assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png` | `prompts/11_back_accessories.md` | pending |
+| DG-021 | back accessory | Pale silver feathered wing pair | `AURA`, upper row cell 1 | Locked pose family | `assets/back_accessories/back_accessory_001_silver_feathered_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-022 | back accessory | Black-violet bat wing pair | `AURA`, upper row cell 2 | DG-021 representative test | `assets/back_accessories/back_accessory_002_black_violet_bat_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-023 | back accessory | Translucent cyan fairy wing pair | `AURA`, upper row cell 3 | DG-021 | `assets/back_accessories/back_accessory_003_cyan_fairy_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-024 | back accessory | Deep navy formal cape | `AURA`, upper row cell 4 | DG-021 | `assets/back_accessories/back_accessory_004_navy_formal_cape.png` | `prompts/11_back_accessories.md` | registered |
+| DG-025 | back accessory | Black-purple ragged cloak | `AURA`, upper row cell 5 | DG-021 | `assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png` | `prompts/11_back_accessories.md` | registered |
+| DG-026 | back accessory | Pale-blue crystalline wing/mantle pair | `AURA`, upper row cell 6 | DG-021 | `assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-028 | back accessory | Olive-silver mechanical/spiked wing pair | `AURA`, upper row cell 8 | DG-021 | `assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png` | `prompts/11_back_accessories.md` | registered |
 
 ### Hair back
 

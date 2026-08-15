@@ -2311,6 +2311,222 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
+    },
+    {
+      "id": "back_accessory_001",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
+      "status": "production_ready",
+      "sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-021",
+      "qa_composite": "docs/qa/composites/back_accessory_001_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pale silver feathered wing pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+    },
+    {
+      "id": "back_accessory_002",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+      "status": "production_ready",
+      "sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-022",
+      "qa_composite": "docs/qa/composites/back_accessory_002_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Black-violet bat wing pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+    },
+    {
+      "id": "back_accessory_003",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+      "status": "production_ready",
+      "sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-023",
+      "qa_composite": "docs/qa/composites/back_accessory_003_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Translucent cyan fairy wing pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+    },
+    {
+      "id": "back_accessory_004",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_004_navy_formal_cape.png",
+      "status": "production_ready",
+      "sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-024",
+      "qa_composite": "docs/qa/composites/back_accessory_004_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Deep navy formal cape",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+    },
+    {
+      "id": "back_accessory_005",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+      "status": "production_ready",
+      "sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-025",
+      "qa_composite": "docs/qa/composites/back_accessory_005_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Black-purple ragged cloak",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+    },
+    {
+      "id": "back_accessory_006",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+      "status": "production_ready",
+      "sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-026",
+      "qa_composite": "docs/qa/composites/back_accessory_006_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pale-blue crystalline wing/mantle pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+    },
+    {
+      "id": "back_accessory_007",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
+      "status": "production_ready",
+      "sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-027",
+      "qa_composite": "docs/qa/composites/back_accessory_007_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Luminous gold feathered wing pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+    },
+    {
+      "id": "back_accessory_008",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+      "status": "production_ready",
+      "sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-028",
+      "qa_composite": "docs/qa/composites/back_accessory_008_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Olive-silver mechanical/spiked wing pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
     }
   ],
   "approved_visual_references": [
@@ -2531,7 +2747,6 @@
     "neck_accessories",
     "head_accessories",
     "hand_objects",
-    "back_accessories",
     "front_auras"
   ],
   "legendary_one_of_ones": [

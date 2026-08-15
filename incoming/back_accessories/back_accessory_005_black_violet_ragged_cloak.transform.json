@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg025_black_violet_ragged_cloak_source.png",
+  "source_sha256": "7563ee9ad33ae1f5d1dedf204ec5a058534f2c5e13ef8c308c7dd2b57444fb71",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      335,
+      239,
+      1593,
+      1691
+    ],
+    "crop_dimensions": [
+      1259,
+      1453
+    ],
+    "scale": 0.46862589,
+    "target_dimensions": [
+      590,
+      681
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 440,
+      "bounds": [
+        332,
+        440,
+        921,
+        1120
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+  "output_sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70"
+}
