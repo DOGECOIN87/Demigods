@@ -1,0 +1,238 @@
+[
+  {
+    "filename": "hair_back_005_blue_long_wavy.png",
+    "source": "incoming/blue_hair_pair/hair_back_005_blue_long_wavy.png",
+    "sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d",
+    "passed": true,
+    "failures": [],
+    "id": "DG-033",
+    "backlog_status": "pending",
+    "category": "hair_back",
+    "production_path": "assets/hair_back/hair_back_005_blue_long_wavy.png",
+    "description": "Long wavy deep-blue rear hair",
+    "provenance": {
+      "origin": "generator_source_transform",
+      "source_path": "images/trait_candidates/hair_back/hair_back_005_blue_long_wavy_candidate_attempt_001.png",
+      "source_sha256": "0db3de3392890e4ad681293981f44f7505c9a23d781c53862dda97ca31d2fa17",
+      "source_dimensions": [
+        1920,
+        1920
+      ],
+      "source_mode": "RGBA",
+      "alpha_cleanup": {
+        "method": "clear_negligible_alpha_haze",
+        "threshold": 120
+      },
+      "transform": {
+        "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+        "source_visible_bounds": [
+          330,
+          156,
+          1590,
+          1782
+        ],
+        "crop_dimensions": [
+          1261,
+          1627
+        ],
+        "scale": 0.42030135,
+        "target_dimensions": [
+          530,
+          684
+        ],
+        "placement": {
+          "center_x": 627,
+          "top_y": 132,
+          "bounds": [
+            362,
+            132,
+            891,
+            815
+          ]
+        }
+      },
+      "final_dimensions": [
+        1254,
+        1254
+      ],
+      "normalization_script": "scripts/normalize_generator_source.py",
+      "output_path": "incoming/blue_hair_pair/hair_back_005_blue_long_wavy.png",
+      "output_sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d"
+    },
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.35",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[362,132,891,815]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hair_back_005_over_base.png"
+  },
+  {
+    "filename": "hair_front_005_blue_pointed_bangs.png",
+    "source": "incoming/blue_hair_pair/hair_front_005_blue_pointed_bangs.png",
+    "sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb",
+    "passed": true,
+    "failures": [],
+    "id": "DG-119",
+    "backlog_status": "pending",
+    "category": "hair_front",
+    "production_path": "assets/hair_front/hair_front_005_blue_pointed_bangs.png",
+    "description": "Deep-blue pointed bangs and face-framing strands",
+    "provenance": {
+      "origin": "generator_source_transform",
+      "source_path": "images/trait_candidates/hair_front/hair_front_005_blue_pointed_bangs_candidate_attempt_001.png",
+      "source_sha256": "dff498d054534d76af80bee278cc412a0cbb7bc41c615e609636e222e840dd82",
+      "source_dimensions": [
+        1920,
+        1920
+      ],
+      "source_mode": "RGBA",
+      "alpha_cleanup": {
+        "method": "clear_negligible_alpha_haze",
+        "threshold": 192
+      },
+      "transform": {
+        "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+        "source_visible_bounds": [
+          311,
+          270,
+          1584,
+          1256
+        ],
+        "crop_dimensions": [
+          1274,
+          987
+        ],
+        "scale": 0.32967033,
+        "target_dimensions": [
+          420,
+          325
+        ],
+        "placement": {
+          "center_x": 627,
+          "top_y": 132,
+          "bounds": [
+            417,
+            132,
+            836,
+            456
+          ]
+        }
+      },
+      "final_dimensions": [
+        1254,
+        1254
+      ],
+      "normalization_script": "scripts/normalize_generator_source.py",
+      "output_path": "incoming/blue_hair_pair/hair_front_005_blue_pointed_bangs.png",
+      "output_sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb"
+    },
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait --max-width-ratio 1.35",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[417,132,836,456]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hair_front_005_over_base.png"
+  }
+]

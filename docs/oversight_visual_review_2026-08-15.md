@@ -55,3 +55,7 @@ The violet rear-hair layer is technically strong, with a coherent amethyst silho
 ### Violet correction — attempt 002
 
 The replacement DG-118 source resolves the earlier face-visibility failure. Its compact fringe now stops above the eyebrows, both eyes and eyebrows remain fully visible, and its purple highlight language blends cleanly into the violet rear-hair mass. **The corrected DG-032/DG-118 pair is approved for registration.**
+
+## Blue Hair Pair Review — DG-033 and DG-119
+
+The deep-blue rear hair and pointed-bang front layer pass full-context review. Both eyes, eyebrows, nose, and mouth remain visible, the pointed fringe provides a distinctive silhouette without facial obstruction, and the sapphire-blue highlights merge cleanly with the rear waves. **Approved for paired registration.**
