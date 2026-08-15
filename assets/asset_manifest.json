@@ -1906,6 +1906,60 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/teal_hair_pair_report.json"
+    },
+    {
+      "id": "hair_back_008",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_008_red_long_wavy.png",
+      "status": "production_ready",
+      "sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-036",
+      "qa_composite": "docs/qa/composites/hair_back_008_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Long wavy red rear hair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
+    },
+    {
+      "id": "hair_front_008",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_008_red_short_bangs.png",
+      "status": "production_ready",
+      "sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-122",
+      "qa_composite": "docs/qa/composites/hair_front_008_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Red short bangs and face-framing strands",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
     }
   ],
   "approved_visual_references": [
@@ -2119,8 +2173,6 @@
   "blocked_assets": [],
   "queued_base_poses": [],
   "pending_categories": [
-    "hair_back",
-    "hair_front",
     "eyes",
     "eyebrows",
     "mouths",

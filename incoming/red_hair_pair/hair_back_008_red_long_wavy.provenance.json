@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hair_back/hair_back_008_red_long_wavy_source_attempt_001.png",
+  "source_sha256": "362c45481a0c63e9a13652e1d4ef7fdad34d9d155d1d52d22744eb83b6bc008a",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 120
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      296,
+      153,
+      1595,
+      1673
+    ],
+    "crop_dimensions": [
+      1300,
+      1521
+    ],
+    "scale": 0.40769231,
+    "target_dimensions": [
+      530,
+      620
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 132,
+      "bounds": [
+        362,
+        132,
+        891,
+        751
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/red_hair_pair/hair_back_008_red_long_wavy.png",
+  "output_sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc"
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hair_front/hair_front_008_red_short_bangs_source_attempt_001.png",
+  "source_sha256": "5de0747569dc0792eadd23d4142aefb1544e1ccf7a09fec736aacabe400b92ba",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      394,
+      380,
+      1515,
+      1531
+    ],
+    "crop_dimensions": [
+      1122,
+      1152
+    ],
+    "scale": 0.37433155,
+    "target_dimensions": [
+      420,
+      431
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 132,
+      "bounds": [
+        417,
+        132,
+        836,
+        562
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/red_hair_pair/hair_front_008_red_short_bangs.png",
+  "output_sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625"
+}

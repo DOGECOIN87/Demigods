@@ -67,3 +67,11 @@ The pink rear hair and soft-bang front layer pass full-context review. The warm 
 ## Teal Hair Pair Review — DG-035 and DG-121
 
 The teal rear hair and open-center front layer pass full-context review. Both eyes and facial features remain visible, the center opening is intentional and balanced, and the aqua highlight treatment integrates cleanly with the rear silhouette. **Approved for paired registration.**
+
+## Red Hair Pair Review — DG-036 and DG-122
+
+The red/auburn long-wavy rear hair and short, layered front-bang layer pass the provenance-aware batch review and full-context review. They were inspected together over the registered neutral base and celestial-scholar outfit against both the celestial throne hall and violet void portal. The shared scalp alignment is centered, the crown overlap is coherent, and the dark auburn linework and upper-left highlight treatment remain consistent across both pieces.
+
+The compact fringe and narrow temple strands leave both eyes, cheeks, nose, and mouth readable. No unacceptable face obstruction, seam, crop, residual presentation matte, rig misalignment, or layer-order failure is visible at the review scale. The richer red/auburn palette remains legible and stylistically coherent against both a bright celestial and a dark arcane background.
+
+**Art-direction disposition: approved for paired registration.** Retain the immutable generator sources, reduction-only transform reports, batch-intake evidence, and full-context composite artifacts. DG-122 must carry the required automatic compatibility rule binding it to DG-036.
