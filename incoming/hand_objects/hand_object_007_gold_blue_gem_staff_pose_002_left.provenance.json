@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-139_gold_blue_gem_staff_source.png",
+  "source_sha256": "80af5f941a796777df3fd56916d0e1e2ef23009c01ac0f4a0fd16c0f1053017b",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      765,
+      48,
+      1153,
+      1858
+    ],
+    "crop_dimensions": [
+      389,
+      1811
+    ],
+    "scale": 0.35989717,
+    "target_dimensions": [
+      140,
+      652
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 180,
+      "bounds": [
+        334,
+        180,
+        473,
+        831
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+  "output_sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415"
+}

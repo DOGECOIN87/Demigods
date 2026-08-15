@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-138_gold_lantern_source.png",
+  "source_sha256": "7bf32ec7511120ab8ee28cbf0a55be6c3e215601298296e58ecb700e4327fafd",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      690,
+      184,
+      1228,
+      1736
+    ],
+    "crop_dimensions": [
+      539,
+      1553
+    ],
+    "scale": 0.25974026,
+    "target_dimensions": [
+      140,
+      403
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 735,
+      "bounds": [
+        334,
+        735,
+        473,
+        1137
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+  "output_sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34"
+}

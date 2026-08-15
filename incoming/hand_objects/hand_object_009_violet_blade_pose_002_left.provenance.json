@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-141_violet_blade_source.png",
+  "source_sha256": "9d4aba2d337215f8ddf7c850006f811a0a1d457f446128974535afa3e2cc9f7d",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      759,
+      102,
+      1161,
+      1762
+    ],
+    "crop_dimensions": [
+      403,
+      1661
+    ],
+    "scale": 0.47146402,
+    "target_dimensions": [
+      190,
+      783
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 300,
+      "bounds": [
+        309,
+        300,
+        498,
+        1082
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+  "output_sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc"
+}

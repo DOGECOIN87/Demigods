@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-140_blue_crescent_staff_source_v3.png",
+  "source_sha256": "547855ff4f3ac2d4b80b26782da120b419c9194c0550f9fefe025f693b02ccab",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      795,
+      143,
+      1091,
+      1782
+    ],
+    "crop_dimensions": [
+      297,
+      1640
+    ],
+    "scale": 0.50505051,
+    "target_dimensions": [
+      150,
+      828
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 180,
+      "bounds": [
+        329,
+        180,
+        478,
+        1007
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+  "output_sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f"
+}
