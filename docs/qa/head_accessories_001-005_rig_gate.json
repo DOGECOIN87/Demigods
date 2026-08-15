@@ -1,0 +1,282 @@
+[
+  {
+    "file": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_001_gold_pointed_crown.png",
+    "sha256": "a428566398f2103f6e1deacd2b6a8bb26720935d7f58e74812c758b12a78658c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[367,129,886,488]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.17x",
+        "<=1.35x",
+        -0.18
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      367,
+      129,
+      886,
+      488
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.17,
+    "crown_offset": 12,
+    "guidance": {
+      "silhouette_height": 360,
+      "target_height": 999,
+      "scale_to_target": 2.775,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 12
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_002_large_gold_halo.png",
+    "sha256": "b0e06436310154c5292d61b76936a2b79e48cb9d28453ecf01983b47d0e96ce5",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[367,129,886,654]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.17x",
+        "<=1.35x",
+        -0.18
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      367,
+      129,
+      886,
+      654
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.17,
+    "crown_offset": 12,
+    "guidance": {
+      "silhouette_height": 526,
+      "target_height": 999,
+      "scale_to_target": 1.8992,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 12
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_003_green_laurel.png",
+    "sha256": "bd9d6ae7959cff66995612c4b3875353fd2ea834293d38ff8f931e912b82abc3",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[367,129,886,570]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.17x",
+        "<=1.35x",
+        -0.18
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      367,
+      129,
+      886,
+      570
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.17,
+    "crown_offset": 12,
+    "guidance": {
+      "silhouette_height": 442,
+      "target_height": 999,
+      "scale_to_target": 2.2602,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 12
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_004_black_curved_horns.png",
+    "sha256": "c2c11e4e2c1dcb9ef39b32ffcc0ba6a09cf5e7dd17712a12b11fbcb6cd05d53c",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[377,129,876,579]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.13x",
+        "<=1.35x",
+        -0.22
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      377,
+      129,
+      876,
+      579
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.13,
+    "crown_offset": 12,
+    "guidance": {
+      "silhouette_height": 451,
+      "target_height": 999,
+      "scale_to_target": 2.2151,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 12
+    },
+    "deviation": 0.5
+  },
+  {
+    "file": "/home/ubuntu/Demigods/incoming/head_accessories/head_accessory_005_silver_winged_circlet.png",
+    "sha256": "d6898b1dd67e6735bd9f4a0ec41ac52f7528dc7a99abf52e133727d384a7bee6",
+    "checks": [
+      [
+        "canvas",
+        true,
+        "1254x1254",
+        "1254x1254",
+        0
+      ],
+      [
+        "transparent_bg",
+        true,
+        "alpha_min=0",
+        "0",
+        0
+      ],
+      [
+        "max_bounds",
+        true,
+        "[367,129,886,406]",
+        "[233,129,1021,1139]",
+        "0"
+      ],
+      [
+        "width_ratio",
+        true,
+        "1.17x",
+        "<=1.35x",
+        -0.18
+      ]
+    ],
+    "passed": true,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "inclusive_bounds": [
+      367,
+      129,
+      886,
+      406
+    ],
+    "trait_center_x": 626.5,
+    "width_ratio": 1.17,
+    "crown_offset": 12,
+    "guidance": {
+      "silhouette_height": 278,
+      "target_height": 999,
+      "scale_to_target": 3.5935,
+      "shift_center_x_by": 0.5,
+      "shift_head_top_by": 12
+    },
+    "deviation": 0.5
+  }
+]

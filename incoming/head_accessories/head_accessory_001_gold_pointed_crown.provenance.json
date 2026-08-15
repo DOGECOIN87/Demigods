@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_001_gold_pointed_crown_regen1.png",
+  "source_sha256": "b8d06f1e872d708c42c923cddaf470e370bd004b1fc8460ed8b98579a95b0723",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      203,
+      401,
+      1713,
+      1445
+    ],
+    "crop_dimensions": [
+      1511,
+      1045
+    ],
+    "scale": 0.34414295,
+    "target_dimensions": [
+      520,
+      360
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        367,
+        129,
+        886,
+        488
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_001_gold_pointed_crown.png",
+  "output_sha256": "a428566398f2103f6e1deacd2b6a8bb26720935d7f58e74812c758b12a78658c"
+}

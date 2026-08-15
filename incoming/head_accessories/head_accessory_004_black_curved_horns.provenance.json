@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_004_black_curved_horns_regen1.png",
+  "source_sha256": "f36e02765398e888814cfb73dbd656f637b6b9d7b030f28a7e269173d7b120b3",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      314,
+      380,
+      1600,
+      1540
+    ],
+    "crop_dimensions": [
+      1287,
+      1161
+    ],
+    "scale": 0.38850039,
+    "target_dimensions": [
+      500,
+      451
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        377,
+        129,
+        876,
+        579
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_004_black_curved_horns.png",
+  "output_sha256": "c2c11e4e2c1dcb9ef39b32ffcc0ba6a09cf5e7dd17712a12b11fbcb6cd05d53c"
+}

@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
+  "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      239,
+      339,
+      1677,
+      1562
+    ],
+    "crop_dimensions": [
+      1439,
+      1224
+    ],
+    "scale": 0.36136206,
+    "target_dimensions": [
+      520,
+      442
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        367,
+        129,
+        886,
+        570
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/head_accessories/head_accessory_003_green_laurel.png",
+  "output_sha256": "bd9d6ae7959cff66995612c4b3875353fd2ea834293d38ff8f931e912b82abc3"
+}
