@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "hand_object_006_gold_lantern_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+    "sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
+    "passed": true,
+    "failures": [],
+    "id": "DG-138",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+    "description": "Warm-gold hanging lantern",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[334,735,473,1137]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_006_over_base.png"
+  },
+  {
+    "filename": "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+    "sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
+    "passed": true,
+    "failures": [],
+    "id": "DG-139",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+    "description": "Gold staff with blue gem",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[334,180,473,831]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_007_over_base.png"
+  },
+  {
+    "filename": "hand_object_008_blue_crescent_staff_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+    "sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
+    "passed": true,
+    "failures": [],
+    "id": "DG-140",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+    "description": "Blue crescent-moon staff",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[329,180,478,1007]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_008_over_base.png"
+  },
+  {
+    "filename": "hand_object_009_violet_blade_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+    "sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
+    "passed": true,
+    "failures": [],
+    "id": "DG-141",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+    "description": "Violet short blade/dagger",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[309,300,498,1082]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_009_over_base.png"
+  },
+  {
+    "filename": "hand_object_010_horned_skull_scepter_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+    "sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+    "passed": true,
+    "failures": [],
+    "id": "DG-142",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+    "description": "Horned skull scepter",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[329,180,478,804]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_010_over_base.png"
+  }
+]

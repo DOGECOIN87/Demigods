@@ -288,11 +288,11 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-135 | hand object | Slender dark wand | `HAND`, r1c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
 | DG-136 | hand object | Silver straight sword | `HAND`, r1c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
 | DG-137 | hand object | Dark spellbook with gold star emblem | `HAND`, r1c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png` | `prompts/10_hand_objects.md` | pending |
-| DG-138 | hand object | Warm-gold hanging lantern | `HAND`, r1c6 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
-| DG-139 | hand object | Gold staff with blue gem | `HAND`, r2c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
-| DG-140 | hand object | Blue crescent-moon staff | `HAND`, r2c2 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
-| DG-141 | hand object | Violet short blade/dagger | `HAND`, r2c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
-| DG-142 | hand object | Horned skull scepter | `HAND`, r2c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png` | `prompts/10_hand_objects.md` | pending |
+| DG-138 | hand object | Warm-gold hanging lantern | `HAND`, r1c6 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-139 | hand object | Gold staff with blue gem | `HAND`, r2c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-140 | hand object | Blue crescent-moon staff | `HAND`, r2c2 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-141 | hand object | Violet short blade/dagger | `HAND`, r2c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-142 | hand object | Horned skull scepter | `HAND`, r2c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
 | DG-143 | hand object | Round dark compass/watch talisman | `HAND`, r2c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png` | `prompts/10_hand_objects.md` | pending |
 | DG-144 | hand object | Brown closed tome | `HAND`, r2c6 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png` | `prompts/10_hand_objects.md` | pending |
 

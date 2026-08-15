@@ -2743,6 +2743,141 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "/home/ubuntu/Demigods/docs/qa/neck_accessories_006-008_review.md"
+    },
+    {
+      "id": "hand_object_006",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-138",
+      "qa_composite": "docs/qa/composites/hand_object_006_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Warm-gold hanging lantern",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-138\u2013DG-142."
+    },
+    {
+      "id": "hand_object_007",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-139",
+      "qa_composite": "docs/qa/composites/hand_object_007_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold staff with blue gem",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-138\u2013DG-142."
+    },
+    {
+      "id": "hand_object_008",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-140",
+      "qa_composite": "docs/qa/composites/hand_object_008_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Blue crescent-moon staff",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-138\u2013DG-142."
+    },
+    {
+      "id": "hand_object_009",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-141",
+      "qa_composite": "docs/qa/composites/hand_object_009_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Violet short blade/dagger",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-138\u2013DG-142."
+    },
+    {
+      "id": "hand_object_010",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-142",
+      "qa_composite": "docs/qa/composites/hand_object_010_over_base.png",
+      "provenance": {
+        "origin": "native_image_generation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Horned skull scepter",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/bulk_intake.py"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "Approved production export for DG-138\u2013DG-142."
     }
   ],
   "approved_visual_references": [
