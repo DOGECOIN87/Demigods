@@ -1246,6 +1246,138 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/gold_hair_pair_report.json"
+    },
+    {
+      "id": "hair_back_002",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_002_black_long_wavy.png",
+      "status": "production_ready",
+      "sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-030",
+      "qa_composite": "docs/qa/composites/hair_back_002_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_back/hair_back_002_black_long_wavy_candidate_attempt_001.png",
+        "source_sha256": "6a04b7856f668c374fd7bad056cc7935ab58cfe6aea6ddf8328e26d88452cc1c",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 120
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            405,
+            194,
+            1509,
+            1697
+          ],
+          "crop_dimensions": [
+            1105,
+            1504
+          ],
+          "scale": 0.47963801,
+          "target_dimensions": [
+            530,
+            721
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              362,
+              132,
+              891,
+              852
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/black_hair_pair/hair_back_002_black_long_wavy.png",
+        "output_sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/black_hair_pair_report.json"
+    },
+    {
+      "id": "hair_front_002",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_002_black_side_swept.png",
+      "status": "production_ready",
+      "sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-116",
+      "qa_composite": "docs/qa/composites/hair_front_002_over_base.png",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "source_path": "images/trait_candidates/hair_front/hair_front_002_black_side_swept_candidate_attempt_001.png",
+        "source_sha256": "b82b8828ec285a6557ba6dc48a585201c2c0fb5e58c3cbf1bfcc183e9d63b71a",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "source_mode": "RGBA",
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 192
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            423,
+            289,
+            1470,
+            1319
+          ],
+          "crop_dimensions": [
+            1048,
+            1031
+          ],
+          "scale": 0.40076336,
+          "target_dimensions": [
+            420,
+            413
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 132,
+            "bounds": [
+              417,
+              132,
+              836,
+              544
+            ]
+          }
+        },
+        "final_dimensions": [
+          1254,
+          1254
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "output_path": "incoming/black_hair_pair/hair_front_002_black_side_swept.png",
+        "output_sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b"
+      },
+      "approved_on": "2026-08-15",
+      "qa_report": "docs/qa/black_hair_pair_report.json"
     }
   ],
   "approved_visual_references": [

@@ -39,3 +39,9 @@ The revised DG-117 source produces a materially improved normalized candidate. I
 The paired gold long-wavy rear hair and gold parted bangs pass full-context art-direction review. The rear layer supplies a rich, balanced wavy silhouette behind the shoulders; the front layer retains a clear facial opening, with the eyes, eyebrows, nose, and mouth fully legible. Their honey-gold palette, line weight, highlight treatment, crown overlap, and strand rhythm match convincingly. No unacceptable matte, clipping, seam, or layer-order defect is visible at review scale.
 
 **Art-direction disposition: approved for paired registration.** Both files must retain their generator-source-transform provenance, and the front-bang asset must carry the automatic requirement for its matching gold rear-hair layer.
+
+## Black Hair Pair Review — DG-030 and DG-116
+
+The black long-wavy rear layer and black side-swept front layer pass full-context review as a paired hairstyle. The rear layer provides strong contrast and controlled blue-black highlight structure; the asymmetric bang preserves the intended side-swept character while leaving the facial expression, the visible eye, brows, nose, and mouth readable. The partial overlap over the viewer-left eye is an intentional, category-specific feature of the side-swept design rather than an uncontrolled fringe failure. The crown, temple strands, and rear silhouette merge convincingly without visible matte, clipping, or layer-order defects.
+
+**Art-direction disposition: approved for paired registration.** Retain generator-source-transform provenance for both assets and apply the standard matching rear-hair requirement to the black front-bang asset.
