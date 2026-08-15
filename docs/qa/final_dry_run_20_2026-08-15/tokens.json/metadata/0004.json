@@ -1,0 +1,55 @@
+{
+  "name": "Demigods #0004",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0004.png",
+  "token_id": 4,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_001_celestial_throne_hall",
+      "source_file": "backgrounds/background_001_celestial_throne_hall.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_006_pale_blue_crystal_wings",
+      "source_file": "back_accessories/back_accessory_006_pale_blue_crystal_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_001_gold_long_wavy",
+      "source_file": "hair_back/hair_back_001_gold_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_body_001_neutral_master",
+      "source_file": "base_bodies/base_body_001_neutral_master.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_010_celestial_robe_white_gold",
+      "source_file": "outfits/outfit_010_celestial_robe_white_gold.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_004_silver_dark_round_pendant",
+      "source_file": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_001_gold_parted_bangs",
+      "source_file": "hair_front/hair_front_001_gold_parted_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_012_brown_tome_pose_004_left",
+      "source_file": "hand_objects/hand_object_012_brown_tome_pose_004_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_001_orange_rising_flame",
+      "source_file": "front_auras/aura_front_001_orange_rising_flame.png"
+    }
+  ],
+  "trait_signature": "3cb8a24974906e75c0715f4ad24a1216d2ed6895f915b5a2d9ba9980224326cd",
+  "image_sha256": null
+}
