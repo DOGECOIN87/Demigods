@@ -1,0 +1,632 @@
+>>> python3 scripts/validate_assets.py assets
+PASS assets/backgrounds/background_001_celestial_throne_hall.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_002_violet_gothic_sanctum.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_003_arcane_library.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_004_crescent_star_dreamscape.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_005_solar_sky_temple.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_006_moonlit_marble_balcony.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_007_golden_celestial_gateway.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/backgrounds/background_008_violet_void_portal.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_001_blue_floor_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_002_violet_radial_glow.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_003_blue_crystalline_burst.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_004_violet_void_flame.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_005_lavender_lightning.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_006_gold_radiance.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_007_green_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_008_gold_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_009_pink_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_010_white_neon_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_011_fire_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_012_lightning_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_013_violet_flame_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_014_ice_crystal_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_015_smoke_void_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_017_water_splash_ring.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/rear_auras/aura_rear_018_blue_flame_ring.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_001_silver_feathered_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_002_black_violet_bat_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_003_cyan_fairy_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_004_navy_formal_cape.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_007_gold_luminous_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_001_gold_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_002_black_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_003_silver_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_004_violet_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_005_blue_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_006_pink_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_007_teal_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_back/hair_back_008_red_long_wavy.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_body_001_neutral_master.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_004_viewer_left_palm_up.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/base_bodies/base_pose_005_centered_two_hand_grip.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_001_celestial_scholar_pose_001.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_002_storm_guardian_pose_002.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_003_verdant_alchemist_pose_003.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_004_lunar_oracle_pose_004.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_005_sun_temple_pose_005.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_006_black_layered_hooded_robe.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_007_brown_leather_long_coat.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_008_olive_ragged_cloak.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_009_navy_high_collar_coat.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/outfits/outfit_010_celestial_robe_white_gold.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_001_black_choker.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_001_gold_parted_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_002_black_side_swept.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_003_silver_straight_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_004_violet_parted_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_005_blue_pointed_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_006_pink_soft_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_007_teal_open_center.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hair_front/hair_front_008_red_short_bangs.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/front_auras/aura_front_001_orange_rising_flame.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/front_auras/aura_front_002_gold_light_pillars.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_001_soft_bloom.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_002_gilded_warm.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+PASS assets/global_finish/global_finish_003_cool_veil.png
+  - WARNING: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: no embedded ICC profile; confirm sRGB interpretation
+Ignored 8 non-production reference image(s).
+Checked 85 production file(s); 0 failed; 85 with warnings.
+EXIT 
+>>> python3 scripts/validate_manifest_consistency.py
+PASS registered production asset manifest
+  - WARNING: background_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: background_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_body_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: base_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_006: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_016: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_018: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_rear_018: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: global_finish_003: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: global_finish_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_back_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hair_front_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: outfit_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_011: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_012: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_013: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_014: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_015: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_rear_017: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: back_accessory_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_003: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_004: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_005: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: neck_accessory_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_006: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_007: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_008: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_009: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_010: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_011: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: hand_object_012: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_front_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_front_001: asset QA: no embedded ICC profile; confirm sRGB interpretation
+  - WARNING: aura_front_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency
+  - WARNING: aura_front_002: asset QA: no embedded ICC profile; confirm sRGB interpretation
+Checked 85 registered production asset(s).
+EXIT 
+>>> python3 scripts/report_production_status.py --check
+PASS production status ledger
+85 registered asset(s) across 16 categories; 160 backlog asset(s).
+<!-- BEGIN GENERATED PRODUCTION LEDGER -->
+
+Generated by `python scripts/report_production_status.py --write`. Do not edit this block by hand.
+
+- Registered production assets: **85**
+- Distinct backlog assets: **160**
+- Completed categories: **10 of 16** (backgrounds, rear_auras, back_accessories, hair_back, base_bodies, outfits, neck_accessories, hair_front, front_auras, global_finish)
+
+| Category | Registered | Backlog assets | Remaining | State |
+|---|---|---|---|---|
+| `backgrounds` | 8 | 8 | 0 | complete |
+| `rear_auras` | 18 | 18 | 0 | complete |
+| `back_accessories` | 8 | 8 | 0 | complete |
+| `hair_back` | 8 | 8 | 0 | complete |
+| `base_bodies` | 5 | 5 | 0 | complete |
+| `outfits` | 10 | 10 | 0 | complete |
+| `neck_accessories` | 8 | 8 | 0 | complete |
+| `eyes` | 0 | 24 | 24 | not started |
+| `eyebrows` | 0 | 16 | 16 | not started |
+| `mouths` | 0 | 12 | 12 | not started |
+| `expression_marks` | 0 | 8 | 8 | not started |
+| `hair_front` | 8 | 8 | 0 | complete |
+| `head_accessories` | 0 | 10 | 10 | not started |
+| `hand_objects` | 7 | 12 | 5 | in progress |
+| `front_auras` | 2 | 2 | 0 | complete |
+| `global_finish` | 3 | 3 | 0 | complete |
+
+Backlog status tally: pending 75, candidate 0, QA-failed 0, approved 0, registered 86.
+
+<!-- END GENERATED PRODUCTION LEDGER -->
+EXIT 
+>>> python3 scripts/generate_777.py --preflight-only
+Preflight passed.
+Theoretical combination space: 1961164800 (ceiling, ignores compatibility rules).
+Rule-valid combination space:  30005821 (1.5% of the ceiling survives the rules).
+Supply saturation: 770/30005821 = 0.0% of the valid space.
+Optional: rear_auras=0.82, hair_back=0.62, global_finish=0.75
+EXIT 
+>>> python3 -m unittest discover -s tests -v
+test_blur_reduces_local_contrast (test_apply_background_depth.BackgroundDepthTests.test_blur_reduces_local_contrast) ... ok
+test_corners_are_darkened_and_the_centre_is_not (test_apply_background_depth.BackgroundDepthTests.test_corners_are_darkened_and_the_centre_is_not)
+Vignette only: blur is isolated out so a single sample stays meaningful. ... /home/ubuntu/Demigods/tests/test_apply_background_depth.py:50: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  data = list(region.getdata())
+ok
+test_output_keeps_canvas_mode_and_full_opacity (test_apply_background_depth.BackgroundDepthTests.test_output_keeps_canvas_mode_and_full_opacity) ... ok
+test_refuses_to_write_into_assets (test_apply_background_depth.BackgroundDepthTests.test_refuses_to_write_into_assets)
+Registered backgrounds are pinned by SHA-256; treated files are candidates. ... ok
+test_treatment_is_deterministic (test_apply_background_depth.BackgroundDepthTests.test_treatment_is_deterministic)
+Re-running must reproduce identical bytes, or provenance is meaningless. ... ok
+test_wrong_canvas_is_rejected (test_apply_background_depth.BackgroundDepthTests.test_wrong_canvas_is_rejected) ... ok
+test_fully_opaque_layer_has_no_genuine_alpha (test_bulk_intake.BinaryQATests.test_fully_opaque_layer_has_no_genuine_alpha) ... ok
+test_fully_transparent_layer_has_no_visible_pixels (test_bulk_intake.BinaryQATests.test_fully_transparent_layer_has_no_visible_pixels) ... ok
+test_native_rgba_layer_passes (test_bulk_intake.BinaryQATests.test_native_rgba_layer_passes) ... ok
+test_truncated_file_is_reported_not_raised (test_bulk_intake.BinaryQATests.test_truncated_file_is_reported_not_raised) ... ok
+test_wrong_dimensions_fail (test_bulk_intake.BinaryQATests.test_wrong_dimensions_fail) ... ok
+test_hair_back_is_hidden_behind_the_body (test_bulk_intake.CompositeLayerOrderTests.test_hair_back_is_hidden_behind_the_body) ... ok
+test_outfit_covers_the_body (test_bulk_intake.CompositeLayerOrderTests.test_outfit_covers_the_body) ... ok
+test_backlog_rows_confirm_the_colour_alignment_the_rule_assumes (test_bulk_intake.HairPairingRuleTests.test_backlog_rows_confirm_the_colour_alignment_the_rule_assumes)
+hair_front_00N binds to hair_back_00N only if index N means one colour. ... ok
+test_front_layer_binds_to_the_matching_rear_layer (test_bulk_intake.HairPairingRuleTests.test_front_layer_binds_to_the_matching_rear_layer) ... ok
+test_indices_are_not_cross_matched (test_bulk_intake.HairPairingRuleTests.test_indices_are_not_cross_matched) ... ok
+test_no_rule_when_the_counterpart_is_not_registered (test_bulk_intake.HairPairingRuleTests.test_no_rule_when_the_counterpart_is_not_registered) ... ok
+test_non_hair_assets_get_no_rule (test_bulk_intake.HairPairingRuleTests.test_non_hair_assets_get_no_rule) ... ok
+test_asset_id_strips_the_descriptive_tail (test_bulk_intake.HelperTests.test_asset_id_strips_the_descriptive_tail) ... ok
+test_manifest_category_comes_from_the_path (test_bulk_intake.HelperTests.test_manifest_category_comes_from_the_path) ... ok
+test_width_ceiling_is_read_from_the_shared_gate_table (test_bulk_intake.HelperTests.test_width_ceiling_is_read_from_the_shared_gate_table)
+Hair hugs the head; wings and capes legitimately exceed body width. ... ok
+test_category_with_no_rows_is_not_cleared (test_bulk_intake.PendingCategoryTests.test_category_with_no_rows_is_not_cleared)
+An empty category is unstarted, not finished. ... ok
+test_fully_registered_category_is_cleared (test_bulk_intake.PendingCategoryTests.test_fully_registered_category_is_cleared) ... ok
+test_live_manifest_agrees_with_the_live_backlog (test_bulk_intake.PendingCategoryTests.test_live_manifest_agrees_with_the_live_backlog)
+Regression guard: registering global_finish left this list stale. ... ok
+test_missing_key_is_tolerated (test_bulk_intake.PendingCategoryTests.test_missing_key_is_tolerated) ... ok
+test_partially_registered_category_stays_pending (test_bulk_intake.PendingCategoryTests.test_partially_registered_category_stays_pending) ... ok
+test_body_centred_glows_gate_as_traits (test_bulk_intake.PromptResolutionTests.test_body_centred_glows_gate_as_traits) ... ok
+test_every_backlog_category_has_a_layer_mapping (test_bulk_intake.PromptResolutionTests.test_every_backlog_category_has_a_layer_mapping)
+A category with no template would silently drop out of every batch. ... ok
+test_every_emitted_gate_command_is_runnable (test_bulk_intake.PromptResolutionTests.test_every_emitted_gate_command_is_runnable)
+GATES holds prose for layer 02; a per-asset prompt must print flags. ... ok
+test_ground_plane_rings_gate_as_floor_auras (test_bulk_intake.PromptResolutionTests.test_ground_plane_rings_gate_as_floor_auras)
+A ring is seated on the baseline, so --trait would fail it by design. ... ok
+test_hair_first_batch_covers_the_three_visible_gaps (test_bulk_intake.PromptResolutionTests.test_hair_first_batch_covers_the_three_visible_gaps) ... ok
+test_hair_prompts_forbid_the_recolour_shortcut (test_bulk_intake.PromptResolutionTests.test_hair_prompts_forbid_the_recolour_shortcut)
+The eight HAIR cells are distinct cuts, not one design in eight colours. ... ok
+test_prompt_names_the_canonical_output_file (test_bulk_intake.PromptResolutionTests.test_prompt_names_the_canonical_output_file) ... ok
+test_resolved_prompt_carries_its_own_reference_cell (test_bulk_intake.PromptResolutionTests.test_resolved_prompt_carries_its_own_reference_cell) ... ok
+test_resolved_prompt_has_no_placeholders_left (test_bulk_intake.PromptResolutionTests.test_resolved_prompt_has_no_placeholders_left) ... ok
+test_source_keys_resolve_to_repository_paths (test_bulk_intake.PromptResolutionTests.test_source_keys_resolve_to_repository_paths) ... ok
+test_failed_registration_copies_nothing (test_bulk_intake.RegistrationAtomicityTests.test_failed_registration_copies_nothing) ... error: could not flip backlog status for DG-999 (matched 0 rows); nothing written
+ok
+test_already_registered_does_not_flip (test_bulk_intake.RegistrationStatusTests.test_already_registered_does_not_flip)
+Guards against a re-run silently double-registering an asset. ... ok
+test_approved_flips (test_bulk_intake.RegistrationStatusTests.test_approved_flips) ... ok
+test_candidate_flips (test_bulk_intake.RegistrationStatusTests.test_candidate_flips)
+Art in hand awaiting review is exactly what gets registered. ... ok
+test_pending_flips (test_bulk_intake.RegistrationStatusTests.test_pending_flips) ... ok
+test_qa_failed_does_not_flip (test_bulk_intake.RegistrationStatusTests.test_qa_failed_does_not_flip) ... ok
+test_clean_layer_is_left_alone (test_clean_chroma_key.DespillSafetyTests.test_clean_layer_is_left_alone) ... ok
+test_contract_erodes_the_alpha_edge (test_clean_chroma_key.DespillSafetyTests.test_contract_erodes_the_alpha_edge) ... ok
+test_edge_spill_is_removed (test_clean_chroma_key.DespillSafetyTests.test_edge_spill_is_removed) ... ok
+test_interior_green_artwork_is_preserved (test_clean_chroma_key.DespillSafetyTests.test_interior_green_artwork_is_preserved) ... ok
+test_report_fields_are_populated (test_clean_chroma_key.DespillSafetyTests.test_report_fields_are_populated) ... ok
+test_counts_only_contaminated_opaque_pixels (test_clean_chroma_key.GreenCountTests.test_counts_only_contaminated_opaque_pixels) ... ok
+test_green_at_or_below_neighbours_is_not_contamination (test_clean_chroma_key.GreenCountTests.test_green_at_or_below_neighbours_is_not_contamination) ... ok
+test_registered_outfits_carry_no_meaningful_green_spill (test_clean_chroma_key.RegisteredOutfitTests.test_registered_outfits_carry_no_meaningful_green_spill)
+Regression guard for the defect this script was written to fix. ... ok
+test_clip_removing_too_much_of_the_layer_is_refused (test_clip_trait_to_bounds.ClipTests.test_clip_removing_too_much_of_the_layer_is_refused)
+A shallow but very wide clip can still be removing real artwork. ... ok
+test_clip_reports_what_it_removed (test_clip_trait_to_bounds.ClipTests.test_clip_reports_what_it_removed) ... ok
+test_clipped_pixels_are_fully_transparent (test_clip_trait_to_bounds.ClipTests.test_clipped_pixels_are_fully_transparent) ... ok
+test_colour_channels_are_untouched (test_clip_trait_to_bounds.ClipTests.test_colour_channels_are_untouched)
+A clip edits alpha only; the approved design must not change. ... ok
+test_deep_overhang_is_refused (test_clip_trait_to_bounds.ClipTests.test_deep_overhang_is_refused)
+A deep overhang means a misplaced layer, which a clip would amputate. ... ok
+test_fully_transparent_layer_is_rejected (test_clip_trait_to_bounds.ClipTests.test_fully_transparent_layer_is_rejected) ... ok
+test_horizontal_overhang_is_clipped_too (test_clip_trait_to_bounds.ClipTests.test_horizontal_overhang_is_clipped_too) ... ok
+test_layer_already_within_bounds_is_refused (test_clip_trait_to_bounds.ClipTests.test_layer_already_within_bounds_is_refused)
+Clipping a compliant layer would be a silent no-op edit. ... ok
+test_small_bottom_overhang_is_clipped_to_the_baseline (test_clip_trait_to_bounds.ClipTests.test_small_bottom_overhang_is_clipped_to_the_baseline)
+The outfit_001 case: boot soles tapering five pixels past the floor. ... ok
+test_wrong_canvas_is_rejected (test_clip_trait_to_bounds.ClipTests.test_wrong_canvas_is_rejected) ... ok
+test_every_registered_outfit_is_within_the_locked_bounds (test_clip_trait_to_bounds.RegisteredOutfitTests.test_every_registered_outfit_is_within_the_locked_bounds)
+Regression guard for the defect this script was written to fix. ... ok
+test_capacity_failure_is_early_and_explicit (test_generate_777.Generate777Tests.test_capacity_failure_is_early_and_explicit) ... ok
+test_dry_run_generates_exact_unique_supply (test_generate_777.Generate777Tests.test_dry_run_generates_exact_unique_supply) ... ok
+test_nonempty_output_requires_overwrite (test_generate_777.Generate777Tests.test_nonempty_output_requires_overwrite) ... ok
+test_optional_category_is_sometimes_absent (test_generate_777.Generate777Tests.test_optional_category_is_sometimes_absent) ... ok
+test_rendered_run_records_image_hashes (test_generate_777.Generate777Tests.test_rendered_run_records_image_hashes) ... ok
+test_required_category_cannot_be_optional (test_generate_777.Generate777Tests.test_required_category_cannot_be_optional) ... ok
+test_same_seed_is_deterministic (test_generate_777.Generate777Tests.test_same_seed_is_deterministic) ... ok
+test_colour_channels_never_darken_toward_gray (test_global_finish.GlobalFinishBuilderTests.test_colour_channels_never_darken_toward_gray)
+Matte contamination is the failure mode the aura builders exist to avoid. ... /home/ubuntu/Demigods/tests/test_global_finish.py:39: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colours = {px[:3] for px in image.getdata()}
+ok
+test_every_variant_stays_under_the_alpha_ceiling (test_global_finish.GlobalFinishBuilderTests.test_every_variant_stays_under_the_alpha_ceiling)
+A finish that can reach opacity would hide the art it grades. ... ok
+test_gradient_is_directional (test_global_finish.GlobalFinishBuilderTests.test_gradient_is_directional)
+Peak alpha sits on the key-light side, falling off toward the opposite corner. ... ok
+test_render_is_full_canvas_rgba (test_global_finish.GlobalFinishBuilderTests.test_render_is_full_canvas_rgba) ... ok
+test_variants_are_visually_distinct (test_global_finish.GlobalFinishBuilderTests.test_variants_are_visually_distinct)
+Three recolours of one identical ramp would not be three assets. ... ok
+test_exemption_does_not_leak_into_trait_mode (test_global_finish.GlobalFinishGateTests.test_exemption_does_not_leak_into_trait_mode)
+A full-canvas grade must still fail an ordinary partial-layer gate. ... ok
+test_finish_over_the_ceiling_fails (test_global_finish.GlobalFinishGateTests.test_finish_over_the_ceiling_fails) ... ok
+test_fully_opaque_finish_fails (test_global_finish.GlobalFinishGateTests.test_fully_opaque_finish_fails) ... ok
+test_valid_finish_passes_global_finish_mode (test_global_finish.GlobalFinishGateTests.test_valid_finish_passes_global_finish_mode) ... ok
+test_wrong_canvas_fails_even_within_the_ceiling (test_global_finish.GlobalFinishGateTests.test_wrong_canvas_fails_even_within_the_ceiling) ... ok
+test_no_pair_meaningfully_exposes_undergarment (test_hide_undergarment.RegisteredBaseTests.test_no_pair_meaningfully_exposes_undergarment) ... ok
+test_verification_is_stricter_than_the_repaint_mask (test_hide_undergarment.RegisteredBaseTests.test_verification_is_stricter_than_the_repaint_mask)
+Verifying at the mask's own tolerance re-flags correct output. ... ok
+test_alpha_is_never_modified (test_hide_undergarment.RepaintTests.test_alpha_is_never_modified) ... /home/ubuntu/Demigods/tests/test_hide_undergarment.py:73: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  list(base.getchannel("A").getdata()),
+/home/ubuntu/Demigods/tests/test_hide_undergarment.py:74: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  list(result.getchannel("A").getdata()),
+ok
+test_covered_undergarment_is_left_alone (test_hide_undergarment.RepaintTests.test_covered_undergarment_is_left_alone)
+The fix is deliberately limited to what can actually be seen. ... ok
+test_exposed_undergarment_is_eliminated (test_hide_undergarment.RepaintTests.test_exposed_undergarment_is_eliminated) ... ok
+test_repaint_uses_skin_colour_not_garment_colour (test_hide_undergarment.RepaintTests.test_repaint_uses_skin_colour_not_garment_colour)
+Values must come from real skin, so nothing is invented. ... ok
+test_mask_finds_the_garment_and_not_the_skin (test_hide_undergarment.UndergarmentMaskTests.test_mask_finds_the_garment_and_not_the_skin) ... ok
+test_tolerance_bounds_the_grow (test_hide_undergarment.UndergarmentMaskTests.test_tolerance_bounds_the_grow) ... ok
+test_decentered_silhouette_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_decentered_silhouette_fails) ... ok
+test_exact_locked_geometry_passes (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_exact_locked_geometry_passes) ... ok
+test_pixels_outside_maximum_bounds_fail (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_pixels_outside_maximum_bounds_fail) ... ok
+test_wrong_foot_baseline_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_wrong_foot_baseline_fails) ... ok
+test_wrong_head_top_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_wrong_head_top_fails) ... ok
+test_edge_touching_source_is_rejected (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_edge_touching_source_is_rejected) ... ok
+test_intake_rejects_tampered_transform_provenance (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_intake_rejects_tampered_transform_provenance) ... ok
+test_low_opacity_matte_source_normalizes_to_locked_canvas (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_low_opacity_matte_source_normalizes_to_locked_canvas) ... ok
+test_opaque_source_is_rejected_before_any_transform (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_opaque_source_is_rejected_before_any_transform) ... ok
+test_bottom_edge_is_crisp_not_faded (test_open_collar.OpenCollarTests.test_bottom_edge_is_crisp_not_faded)
+A crossfade reads as a smear, not as fabric. ... ok
+test_collar_rim_outside_the_neck_is_untouched (test_open_collar.OpenCollarTests.test_collar_rim_outside_the_neck_is_untouched) ... ok
+test_garment_closes_below_the_rim (test_open_collar.OpenCollarTests.test_garment_closes_below_the_rim) ... ok
+test_horizontal_edges_inherit_the_base_anti_aliasing (test_open_collar.OpenCollarTests.test_horizontal_edges_inherit_the_base_anti_aliasing) ... ok
+test_neck_becomes_visible (test_open_collar.OpenCollarTests.test_neck_becomes_visible) ... ok
+test_nothing_above_the_span_is_touched (test_open_collar.OpenCollarTests.test_nothing_above_the_span_is_touched) ... ok
+test_rim_arc_is_lower_at_the_centre (test_open_collar.OpenCollarTests.test_rim_arc_is_lower_at_the_centre)
+The opening follows the collar's own rim, which dips at the middle. ... ok
+test_repaired_collars_show_the_neck (test_open_collar.RegisteredOutfitNeckTests.test_repaired_collars_show_the_neck) ... ok
+test_crown_offset_sign_marks_a_bald_gap (test_refit_trait_layer.GateProportionTests.test_crown_offset_sign_marks_a_bald_gap) ... ok
+test_in_proportion_layer_passes (test_refit_trait_layer.GateProportionTests.test_in_proportion_layer_passes) ... ok
+test_over_wide_layer_fails_when_a_threshold_is_set (test_refit_trait_layer.GateProportionTests.test_over_wide_layer_fails_when_a_threshold_is_set) ... ok
+test_threshold_is_opt_in_so_wings_are_not_false_failed (test_refit_trait_layer.GateProportionTests.test_threshold_is_opt_in_so_wings_are_not_false_failed)
+Back accessories legitimately exceed body width; default is report-only. ... ok
+test_canvas_is_preserved (test_refit_trait_layer.RefitTraitLayerTests.test_canvas_is_preserved)
+A refit must never change the native canvas. ... ok
+test_fully_transparent_layer_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_fully_transparent_layer_is_rejected) ... ok
+test_non_positive_scale_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_non_positive_scale_is_rejected) ... ok
+test_registered_hair_back_meets_its_proportion_target (test_refit_trait_layer.RefitTraitLayerTests.test_registered_hair_back_meets_its_proportion_target)
+Regression: the registered layer must stay near 1.2x, not 1.46x. ... ok
+test_result_is_centred_on_the_locked_axis (test_refit_trait_layer.RefitTraitLayerTests.test_result_is_centred_on_the_locked_axis) ... ok
+test_scaling_reduces_width_by_the_requested_factor (test_refit_trait_layer.RefitTraitLayerTests.test_scaling_reduces_width_by_the_requested_factor) ... ok
+test_top_is_seated_at_the_requested_y (test_refit_trait_layer.RefitTraitLayerTests.test_top_is_seated_at_the_requested_y) ... ok
+test_wrong_canvas_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_wrong_canvas_is_rejected) ... ok
+test_backlog_registered_without_manifest_entry_fails (test_report_production_status.ProductionStatusTests.test_backlog_registered_without_manifest_entry_fails) ... ok
+test_category_without_backlog_rows_is_source_gated (test_report_production_status.ProductionStatusTests.test_category_without_backlog_rows_is_source_gated) ... ok
+test_malformed_row_fails_closed_instead_of_being_skipped (test_report_production_status.ProductionStatusTests.test_malformed_row_fails_closed_instead_of_being_skipped)
+A DG row with the wrong column count was once silently ignored. ... ok
+test_manifest_entry_without_backlog_row_fails (test_report_production_status.ProductionStatusTests.test_manifest_entry_without_backlog_row_fails) ... ok
+test_non_backlog_table_without_dg_ids_is_ignored_quietly (test_report_production_status.ProductionStatusTests.test_non_backlog_table_without_dg_ids_is_ignored_quietly)
+Documentation tables are fine as long as column 0 is not a DG id. ... ok
+test_registered_and_pending_counts_are_derived_from_manifest (test_report_production_status.ProductionStatusTests.test_registered_and_pending_counts_are_derived_from_manifest) ... ok
+test_replace_block_requires_markers (test_report_production_status.ProductionStatusTests.test_replace_block_requires_markers) ... ok
+test_repository_status_document_is_current (test_report_production_status.ProductionStatusTests.test_repository_status_document_is_current)
+The committed ledger must match what the manifest and backlog imply. ... ok
+test_shared_production_path_counts_once (test_report_production_status.ProductionStatusTests.test_shared_production_path_counts_once)
+DG-001 and DG-002 both resolve to the neutral master in the real backlog. ... ok
+test_stale_pending_category_fails (test_report_production_status.ProductionStatusTests.test_stale_pending_category_fails) ... ok
+test_unknown_backlog_status_is_rejected (test_report_production_status.ProductionStatusTests.test_unknown_backlog_status_is_rejected) ... ok
+test_every_partial_alpha_pixel_stays_bright (test_rig_gate_report.FloorRingBuilderTests.test_every_partial_alpha_pixel_stays_bright)
+The matte failure of attempt 001: fringe luminance tracking alpha. ... /home/ubuntu/Demigods/tests/test_rig_gate_report.py:121: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  for r, g, b, a in image.getdata():
+ok
+test_ring_is_seated_so_the_near_arc_passes_below_the_foot_baseline (test_rig_gate_report.FloorRingBuilderTests.test_ring_is_seated_so_the_near_arc_passes_below_the_foot_baseline) ... ok
+test_floor_aura_allows_the_near_arc_below_the_foot_baseline (test_rig_gate_report.RigGateModeTests.test_floor_aura_allows_the_near_arc_below_the_foot_baseline) ... ok
+test_floor_aura_just_clear_of_the_canvas_edge_passes (test_rig_gate_report.RigGateModeTests.test_floor_aura_just_clear_of_the_canvas_edge_passes) ... ok
+test_floor_aura_requires_genuine_transparency (test_rig_gate_report.RigGateModeTests.test_floor_aura_requires_genuine_transparency) ... ok
+test_floor_aura_still_enforces_horizontal_bounds (test_rig_gate_report.RigGateModeTests.test_floor_aura_still_enforces_horizontal_bounds) ... ok
+test_floor_aura_still_enforces_the_top_bound (test_rig_gate_report.RigGateModeTests.test_floor_aura_still_enforces_the_top_bound) ... ok
+test_floor_aura_touching_the_canvas_edge_is_clipped_and_fails (test_rig_gate_report.RigGateModeTests.test_floor_aura_touching_the_canvas_edge_is_clipped_and_fails)
+Reaching the final row means the glow is cut off, not merely low. ... ok
+test_registered_floor_ring_candidate_passes_floor_aura_mode (test_rig_gate_report.RigGateModeTests.test_registered_floor_ring_candidate_passes_floor_aura_mode) ... ok
+test_trait_mode_still_rejects_pixels_below_the_foot_baseline (test_rig_gate_report.RigGateModeTests.test_trait_mode_still_rejects_pixels_below_the_foot_baseline)
+The floor-aura exemption must not leak into ordinary partial layers. ... ok
+test_empty_library_is_zero (test_saturation.EstimateValidSpaceTests.test_empty_library_is_zero) ... ok
+test_estimate_is_deterministic (test_saturation.EstimateValidSpaceTests.test_estimate_is_deterministic) ... ok
+test_excludes_reduce_the_space (test_saturation.EstimateValidSpaceTests.test_excludes_reduce_the_space) ... ok
+test_no_rules_leaves_the_ceiling_intact (test_saturation.EstimateValidSpaceTests.test_no_rules_leaves_the_ceiling_intact) ... ok
+test_optional_category_absence_is_counted (test_saturation.EstimateValidSpaceTests.test_optional_category_absence_is_counted) ... ok
+test_pose_locked_outfits_collapse_the_space (test_saturation.EstimateValidSpaceTests.test_pose_locked_outfits_collapse_the_space) ... ok
+test_allocation_stays_sequential_and_unique (test_saturation.ReservedTokenIdTests.test_allocation_stays_sequential_and_unique) ... ok
+test_config_reserves_exactly_the_legendary_count (test_saturation.ReservedTokenIdTests.test_config_reserves_exactly_the_legendary_count) ... ok
+test_no_reservations_is_plain_counting (test_saturation.ReservedTokenIdTests.test_no_reservations_is_plain_counting) ... ok
+test_production_split_totals_the_collection (test_saturation.ReservedTokenIdTests.test_production_split_totals_the_collection) ... ok
+test_reserved_ids_are_skipped (test_saturation.ReservedTokenIdTests.test_reserved_ids_are_skipped) ... ok
+test_reserved_ids_reject_bad_input (test_saturation.ReservedTokenIdTests.test_reserved_ids_reject_bad_input) ... ok
+test_healthy_saturation_carries_no_warning (test_saturation.SaturationReportTests.test_healthy_saturation_carries_no_warning) ... ok
+test_reports_both_the_ceiling_and_the_valid_space (test_saturation.SaturationReportTests.test_reports_both_the_ceiling_and_the_valid_space) ... ok
+test_warns_at_moderate_saturation (test_saturation.SaturationReportTests.test_warns_at_moderate_saturation) ... ok
+test_warns_when_the_supply_nearly_exhausts_the_space (test_saturation.SaturationReportTests.test_warns_when_the_supply_nearly_exhausts_the_space) ... ok
+test_zero_valid_space_does_not_divide_by_zero (test_saturation.SaturationReportTests.test_zero_valid_space_does_not_divide_by_zero) ... ok
+test_asymmetric_grip_pose_may_shift_silhouette_center (test_validate_assets.ValidateAssetsTests.test_asymmetric_grip_pose_may_shift_silhouette_center) ... ok
+test_aura_may_touch_canvas_edges (test_validate_assets.ValidateAssetsTests.test_aura_may_touch_canvas_edges) ... ok
+test_background_must_not_contain_transparency (test_validate_assets.ValidateAssetsTests.test_background_must_not_contain_transparency) ... ok
+test_base_pose_locked_geometry_is_enforced (test_validate_assets.ValidateAssetsTests.test_base_pose_locked_geometry_is_enforced) ... ok
+test_corrupted_png_fails_complete_decode (test_validate_assets.ValidateAssetsTests.test_corrupted_png_fails_complete_decode) ... ok
+test_folder_category_must_match_filename (test_validate_assets.ValidateAssetsTests.test_folder_category_must_match_filename) ... ok
+test_manifest_accepts_blocked_reference (test_validate_assets.ValidateAssetsTests.test_manifest_accepts_blocked_reference) ... ok
+test_manifest_requires_all_eight_background_candidates (test_validate_assets.ValidateAssetsTests.test_manifest_requires_all_eight_background_candidates) ... ok
+test_manifest_verifies_background_candidate_provenance (test_validate_assets.ValidateAssetsTests.test_manifest_verifies_background_candidate_provenance) ... ok
+test_non_effect_trait_may_not_touch_edge (test_validate_assets.ValidateAssetsTests.test_non_effect_trait_may_not_touch_edge) ... ok
+test_three_digit_sequence_required (test_validate_assets.ValidateAssetsTests.test_three_digit_sequence_required) ... ok
+test_valid_transparent_pose_passes (test_validate_assets.ValidateAssetsTests.test_valid_transparent_pose_passes) ... ok
+test_changed_locked_anchor_fails (test_validate_config.ValidateConfigTests.test_changed_locked_anchor_fails) ... ok
+test_locked_collection_and_empty_rules_pass (test_validate_config.ValidateConfigTests.test_locked_collection_and_empty_rules_pass) ... ok
+test_missing_trait_reference_fails (test_validate_config.ValidateConfigTests.test_missing_trait_reference_fails) ... ok
+test_mutual_requirement_warns_but_passes (test_validate_config.ValidateConfigTests.test_mutual_requirement_warns_but_passes) ... ok
+test_requires_and_excludes_contradiction_fails (test_validate_config.ValidateConfigTests.test_requires_and_excludes_contradiction_fails) ... ok
+test_reserved_ids_outside_the_collection_are_rejected (test_validate_config.ValidateConfigTests.test_reserved_ids_outside_the_collection_are_rejected) ... ok
+test_same_category_requirement_is_impossible (test_validate_config.ValidateConfigTests.test_same_category_requirement_is_impossible) ... ok
+test_supply_and_reserved_ids_must_total_the_collection (test_validate_config.ValidateConfigTests.test_supply_and_reserved_ids_must_total_the_collection) ... ok
+test_any_transparency_fails (test_validate_legendary.CheckTests.test_any_transparency_fails)
+A transparent pixel means a background was keyed, not painted. ... ok
+test_digest_is_stable_and_content_derived (test_validate_legendary.CheckTests.test_digest_is_stable_and_content_derived) ... ok
+test_truncated_file_is_reported_not_raised (test_validate_legendary.CheckTests.test_truncated_file_is_reported_not_raised) ... ok
+test_valid_piece_passes (test_validate_legendary.CheckTests.test_valid_piece_passes) ... ok
+test_wrong_canvas_fails (test_validate_legendary.CheckTests.test_wrong_canvas_fails) ... ok
+test_artwork_is_unique (test_validate_legendary.RegisteredLegendaryTests.test_artwork_is_unique)
+'1 of 1' is the premise; a duplicate would destroy it silently. ... ok
+test_every_piece_passes_its_checks (test_validate_legendary.RegisteredLegendaryTests.test_every_piece_passes_its_checks) ... ok
+test_generator_cannot_see_the_legendary_folder (test_validate_legendary.RegisteredLegendaryTests.test_generator_cannot_see_the_legendary_folder)
+assets/legendary/ must never be discovered as a trait category. ... ok
+test_legendaries_stay_out_of_the_trait_ledger (test_validate_legendary.RegisteredLegendaryTests.test_legendaries_stay_out_of_the_trait_ledger)
+Mixing them in would corrupt the category counts in the status report. ... ok
+test_no_finish_or_depth_pass_was_applied (test_validate_legendary.RegisteredLegendaryTests.test_no_finish_or_depth_pass_was_applied) ... ok
+test_seven_pieces_are_registered (test_validate_legendary.RegisteredLegendaryTests.test_seven_pieces_are_registered) ... ok
+test_dimension_mismatch_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_dimension_mismatch_fails) ... ok
+test_empty_registry_passes_during_preproduction (test_validate_manifest_consistency.ManifestConsistencyTests.test_empty_registry_passes_during_preproduction) ... ok
+test_missing_registered_asset_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_missing_registered_asset_fails) ... ok
+test_nonproduction_ready_status_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_nonproduction_ready_status_fails) ... ok
+test_sha256_mismatch_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_sha256_mismatch_fails) ... ok
+test_valid_registered_asset_passes (test_validate_manifest_consistency.ManifestConsistencyTests.test_valid_registered_asset_passes) ... ok
+test_attribute_layer_order_tampering_fails (test_validate_output.ValidateOutputTests.test_attribute_layer_order_tampering_fails) ... ok
+test_dry_run_requires_explicit_allowance (test_validate_output.ValidateOutputTests.test_dry_run_requires_explicit_allowance) ... ok
+test_duplicate_trait_signature_fails (test_validate_output.ValidateOutputTests.test_duplicate_trait_signature_fails) ... ok
+test_missing_metadata_file_fails (test_validate_output.ValidateOutputTests.test_missing_metadata_file_fails) ... ok
+test_tampered_image_hash_fails (test_validate_output.ValidateOutputTests.test_tampered_image_hash_fails) ... ok
+test_valid_rendered_output_passes (test_validate_output.ValidateOutputTests.test_valid_rendered_output_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 196 tests in 36.086s
+
+OK
+refusing to write into assets/: treated files are candidates, not registered assets
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Prepared 0001/8
+Prepared 0002/8
+Prepared 0003/8
+Prepared 0004/8
+Prepared 0005/8
+Prepared 0006/8
+Prepared 0007/8
+Prepared 0008/8
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+EXIT 
+## [32mmain[m...[31morigin/main[m
+[31m??[m docs/qa/registered_trait_sheets_2026-08-15/
+[31m??[m docs/qa/registered_trait_visual_findings_2026-08-15.md
+[31m??[m docs/qa/strict_canvas_position_final_validation_2026-08-15.log
+[31m??[m scripts/render_registered_trait_sheets.py
