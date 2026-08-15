@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/hand_object_004_silver_sword_pose_002_left_source1.png",
+  "source_sha256": "0874b199cb89b0c0088d2a098c90b88787d76039948b184bd844b0dcec099957",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 128
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      842,
+      185,
+      1076,
+      1741
+    ],
+    "crop_dimensions": [
+      235,
+      1557
+    ],
+    "scale": 0.5106383,
+    "target_dimensions": [
+      120,
+      795
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 129,
+      "bounds": [
+        344,
+        129,
+        463,
+        923
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+  "output_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d"
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "filename": "hand_object_001_arcane_staff_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+    "sha256": "dfde3ecaf3a24af456123511396134ee99e99f68bb224ba85e2392edff93b175",
+    "passed": true,
+    "failures": [],
+    "id": "DG-133",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+    "description": "Gnarled wood staff with blue flame/crystal",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[324,250,483,1108]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_001_over_base.png"
+  },
+  {
+    "filename": "hand_object_002_violet_orb_pose_004_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+    "sha256": "203d7cada07015dda3133229245af1675ce4f76c41ec00c461d1644001f08b41",
+    "passed": true,
+    "failures": [],
+    "id": "DG-134",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+    "description": "Purple crystal orb",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[314,548,493,767]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_002_over_base.png"
+  },
+  {
+    "filename": "hand_object_003_dark_wand_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+    "sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398",
+    "passed": true,
+    "failures": [],
+    "id": "DG-135",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+    "description": "Slender dark wand",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[369,250,438,1055]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_003_over_base.png"
+  },
+  {
+    "filename": "hand_object_004_silver_sword_pose_002_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+    "sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
+    "passed": true,
+    "failures": [],
+    "id": "DG-136",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+    "description": "Silver straight sword",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[344,129,463,923]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_004_over_base.png"
+  },
+  {
+    "filename": "hand_object_005_star_spellbook_pose_004_left.png",
+    "source": "/home/ubuntu/Demigods/incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+    "sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8",
+    "passed": true,
+    "failures": [],
+    "id": "DG-137",
+    "backlog_status": "pending",
+    "category": "hand_objects",
+    "production_path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+    "description": "Dark spellbook with gold star emblem",
+    "binary_qa": [
+      {
+        "check": "decode",
+        "passed": true,
+        "value": "full decode ok"
+      },
+      {
+        "check": "format",
+        "passed": true,
+        "value": "PNG"
+      },
+      {
+        "check": "dimensions",
+        "passed": true,
+        "value": "1254x1254"
+      },
+      {
+        "check": "mode",
+        "passed": true,
+        "value": "RGBA"
+      },
+      {
+        "check": "genuine_alpha",
+        "passed": true,
+        "value": "alpha_min=0"
+      },
+      {
+        "check": "visible_pixels",
+        "passed": true,
+        "value": "alpha_max=255"
+      }
+    ],
+    "gate_mode": "--trait",
+    "rig_gate": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "canvas",
+          "passed": true,
+          "value": "1254x1254",
+          "expected": "1254x1254"
+        },
+        {
+          "check": "transparent_bg",
+          "passed": true,
+          "value": "alpha_min=0",
+          "expected": "0"
+        },
+        {
+          "check": "max_bounds",
+          "passed": true,
+          "value": "[289,612,518,772]",
+          "expected": "[233,129,1021,1139]"
+        }
+      ]
+    },
+    "composite": "docs/qa/composites/hand_object_005_over_base.png"
+  }
+]

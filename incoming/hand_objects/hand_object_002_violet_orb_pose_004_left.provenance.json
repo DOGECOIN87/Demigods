@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/hand_object_002_violet_orb_pose_004_left_source1.png",
+  "source_sha256": "1ffe56368914f6a3cb75b0d1d30b98568daca0fddd789f86c9f48a0e55752773",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 128
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      694,
+      616,
+      1225,
+      1264
+    ],
+    "crop_dimensions": [
+      532,
+      649
+    ],
+    "scale": 0.33834586,
+    "target_dimensions": [
+      180,
+      220
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 548,
+      "bounds": [
+        314,
+        548,
+        493,
+        767
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+  "output_sha256": "203d7cada07015dda3133229245af1675ce4f76c41ec00c461d1644001f08b41"
+}

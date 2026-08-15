@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/hand_object_005_star_spellbook_pose_004_left_source1.png",
+  "source_sha256": "ac3d9679f08f498cd1c3f2afbb2083f1c96074ec4bfceb1d670f3ce3265dfa0f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 128
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      397,
+      540,
+      1519,
+      1325
+    ],
+    "crop_dimensions": [
+      1123,
+      786
+    ],
+    "scale": 0.20480855,
+    "target_dimensions": [
+      230,
+      161
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 612,
+      "bounds": [
+        289,
+        612,
+        518,
+        772
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+  "output_sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8"
+}

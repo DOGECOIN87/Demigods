@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/hand_object_001_arcane_staff_pose_002_left_source1.png",
+  "source_sha256": "5dc18e5a25c83472e3a8b6104040af4c19a62a69baf49f83e4500662e0cd3ee0",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      802,
+      117,
+      1115,
+      1802
+    ],
+    "crop_dimensions": [
+      314,
+      1686
+    ],
+    "scale": 0.50955414,
+    "target_dimensions": [
+      160,
+      859
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 250,
+      "bounds": [
+        324,
+        250,
+        483,
+        1108
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+  "output_sha256": "dfde3ecaf3a24af456123511396134ee99e99f68bb224ba85e2392edff93b175"
+}

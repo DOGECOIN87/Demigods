@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/hand_object_003_dark_wand_pose_002_left_source1.png",
+  "source_sha256": "9a35078cc107d5faf982d22c854bf1ed1a72ce419dbb851bcdcc85efaf75aff6",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 128
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      892,
+      174,
+      1029,
+      1761
+    ],
+    "crop_dimensions": [
+      138,
+      1588
+    ],
+    "scale": 0.50724638,
+    "target_dimensions": [
+      70,
+      806
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 250,
+      "bounds": [
+        369,
+        250,
+        438,
+        1055
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+  "output_sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398"
+}
