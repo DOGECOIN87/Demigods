@@ -1,0 +1,65 @@
+{
+  "name": "Demigods #0001",
+  "description": "A 777-piece modular chibi-fantasy collection: 770 generative tokens plus 7 legendary 1-of-1 illustrations.",
+  "image": "images/0001.png",
+  "token_id": 1,
+  "attributes": [
+    {
+      "trait_type": "backgrounds",
+      "value": "background_004_crescent_star_dreamscape",
+      "source_file": "backgrounds/background_004_crescent_star_dreamscape.png"
+    },
+    {
+      "trait_type": "rear_auras",
+      "value": "aura_rear_001_blue_floor_ring",
+      "source_file": "rear_auras/aura_rear_001_blue_floor_ring.png"
+    },
+    {
+      "trait_type": "back_accessories",
+      "value": "back_accessory_002_black_violet_bat_wings",
+      "source_file": "back_accessories/back_accessory_002_black_violet_bat_wings.png"
+    },
+    {
+      "trait_type": "hair_back",
+      "value": "hair_back_008_red_long_wavy",
+      "source_file": "hair_back/hair_back_008_red_long_wavy.png"
+    },
+    {
+      "trait_type": "base_bodies",
+      "value": "base_body_001_neutral_master",
+      "source_file": "base_bodies/base_body_001_neutral_master.png"
+    },
+    {
+      "trait_type": "outfits",
+      "value": "outfit_010_celestial_robe_white_gold",
+      "source_file": "outfits/outfit_010_celestial_robe_white_gold.png"
+    },
+    {
+      "trait_type": "neck_accessories",
+      "value": "neck_accessory_008_violet_ribbon_bow",
+      "source_file": "neck_accessories/neck_accessory_008_violet_ribbon_bow.png"
+    },
+    {
+      "trait_type": "hair_front",
+      "value": "hair_front_008_red_short_bangs",
+      "source_file": "hair_front/hair_front_008_red_short_bangs.png"
+    },
+    {
+      "trait_type": "hand_objects",
+      "value": "hand_object_007_gold_blue_gem_staff_pose_002_left",
+      "source_file": "hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png"
+    },
+    {
+      "trait_type": "front_auras",
+      "value": "aura_front_002_gold_light_pillars",
+      "source_file": "front_auras/aura_front_002_gold_light_pillars.png"
+    },
+    {
+      "trait_type": "global_finish",
+      "value": "global_finish_002_gilded_warm",
+      "source_file": "global_finish/global_finish_002_gilded_warm.png"
+    }
+  ],
+  "trait_signature": "10311d5fdbba65972247daae164497515bc4217b9d5cfe7d76d841b1b8e6273a",
+  "image_sha256": null
+}

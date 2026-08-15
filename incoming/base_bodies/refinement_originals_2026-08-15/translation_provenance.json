@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-08-15",
+  "records": [
+    {
+      "production_path": "assets/base_bodies/base_body_001_neutral_master.png",
+      "backup_path": "incoming/base_bodies/refinement_originals_2026-08-15/base_body_001_neutral_master.png",
+      "operation": "native integer translation",
+      "shift_x": 1,
+      "shift_y": 0,
+      "canvas": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "original_sha256": "390a4c78f18f01e51349c37433a0d1d20b61d5272cd6515eb7db97c335bf3e24",
+      "translated_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107"
+    },
+    {
+      "production_path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+      "backup_path": "incoming/base_bodies/refinement_originals_2026-08-15/base_pose_003_viewer_right_vertical_grip.png",
+      "operation": "native integer translation",
+      "shift_x": 1,
+      "shift_y": 0,
+      "canvas": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "original_sha256": "c47eeddf3f4e7974d9e2d025bb4673b6ba048c8f9707070cb4dc132746047d66",
+      "translated_sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16"
+    },
+    {
+      "production_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+      "backup_path": "incoming/base_bodies/refinement_originals_2026-08-15/base_pose_005_centered_two_hand_grip.png",
+      "operation": "native integer translation",
+      "shift_x": 1,
+      "shift_y": 0,
+      "canvas": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "original_sha256": "6b688c49e87caa637eaf17e44ceddef97578034f1034d56a097fdba75d130d24",
+      "translated_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0"
+    }
+  ]
+}
