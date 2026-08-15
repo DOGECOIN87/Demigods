@@ -2840,7 +2840,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
+      "sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
       "dimensions": [
         1254,
         1254
@@ -2857,17 +2857,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
+        "post_hand_recalibration_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": 2,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-138–DG-142."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_007",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
+      "sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
       "dimensions": [
         1254,
         1254
@@ -2884,17 +2892,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
+        "post_hand_recalibration_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": 122,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-138–DG-142."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_008",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
+      "sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
       "dimensions": [
         1254,
         1254
@@ -2911,17 +2927,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
+        "post_hand_recalibration_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": 122,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-138–DG-142."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_009",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
+      "sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
       "dimensions": [
         1254,
         1254
@@ -2938,17 +2962,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
+        "post_hand_recalibration_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": -143,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-138–DG-142."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_010",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+      "sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
       "dimensions": [
         1254,
         1254
@@ -2965,17 +2997,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+        "post_hand_recalibration_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": 122,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-138–DG-142."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_011",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
       "status": "production_ready",
-      "sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
+      "sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
       "dimensions": [
         1254,
         1254
@@ -2992,17 +3032,25 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
+        "post_hand_recalibration_sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
+        "hand_recalibration_dx": 34,
+        "hand_recalibration_dy": 120,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-143–DG-144."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "hand_object_012",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
       "status": "production_ready",
-      "sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c",
+      "sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
       "dimensions": [
         1254,
         1254
@@ -3019,10 +3067,18 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+        ],
+        "pre_hand_recalibration_sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c",
+        "post_hand_recalibration_sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
+        "hand_recalibration_dx": 35,
+        "hand_recalibration_dy": 0,
+        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-143–DG-144."
+      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
       "id": "aura_front_001",

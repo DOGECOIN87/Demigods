@@ -1,0 +1,14 @@
+{
+  "output": "docs/qa/final_dry_run_100_after_hand_recalibration_2026-08-15/tokens.json",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "expected_supply": 100,
+  "metadata_files": 100,
+  "image_files": 0,
+  "unique_trait_signatures": 100,
+  "unique_image_hashes": 0,
+  "dry_run": true,
+  "trait_provenance_hash": "df7e8737c56dc8c086eaa5a3b1aee910258a5bfa3aed6d5f3cf89f75494a073a",
+  "image_provenance_hash": null
+}

@@ -1,0 +1,134 @@
+{
+  "total_registered": 85,
+  "backlog_total": 160,
+  "categories": [
+    {
+      "category": "backgrounds",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "rear_auras",
+      "registered": 18,
+      "backlog_total": 18,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "back_accessories",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "hair_back",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "base_bodies",
+      "registered": 5,
+      "backlog_total": 5,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "outfits",
+      "registered": 10,
+      "backlog_total": 10,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "neck_accessories",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "eyes",
+      "registered": 0,
+      "backlog_total": 24,
+      "remaining": 24,
+      "state": "not started"
+    },
+    {
+      "category": "eyebrows",
+      "registered": 0,
+      "backlog_total": 16,
+      "remaining": 16,
+      "state": "not started"
+    },
+    {
+      "category": "mouths",
+      "registered": 0,
+      "backlog_total": 12,
+      "remaining": 12,
+      "state": "not started"
+    },
+    {
+      "category": "expression_marks",
+      "registered": 0,
+      "backlog_total": 8,
+      "remaining": 8,
+      "state": "not started"
+    },
+    {
+      "category": "hair_front",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "head_accessories",
+      "registered": 0,
+      "backlog_total": 10,
+      "remaining": 10,
+      "state": "not started"
+    },
+    {
+      "category": "hand_objects",
+      "registered": 7,
+      "backlog_total": 12,
+      "remaining": 5,
+      "state": "in progress"
+    },
+    {
+      "category": "front_auras",
+      "registered": 2,
+      "backlog_total": 2,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "global_finish",
+      "registered": 3,
+      "backlog_total": 3,
+      "remaining": 0,
+      "state": "complete"
+    }
+  ],
+  "status_counts": {
+    "pending": 75,
+    "candidate": 0,
+    "QA-failed": 0,
+    "approved": 0,
+    "registered": 86
+  },
+  "pending_categories": [
+    "eyes",
+    "eyebrows",
+    "mouths",
+    "expression_marks",
+    "head_accessories",
+    "hand_objects"
+  ],
+  "errors": []
+}
