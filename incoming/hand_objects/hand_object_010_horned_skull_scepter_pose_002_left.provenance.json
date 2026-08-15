@@ -1,0 +1,49 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/hand_objects/DG-142_horned_skull_scepter_source_v3.png",
+  "source_sha256": "19714ed19aeec2d6afba182af6fbdf28ba97aad53e0024a7a05220a9ca4fc925",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 192
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      742,
+      55,
+      1176,
+      1866
+    ],
+    "crop_dimensions": [
+      435,
+      1812
+    ],
+    "scale": 0.34482759,
+    "target_dimensions": [
+      150,
+      625
+    ],
+    "placement": {
+      "center_x": 404,
+      "top_y": 180,
+      "bounds": [
+        329,
+        180,
+        478,
+        804
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+  "output_sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483"
+}
