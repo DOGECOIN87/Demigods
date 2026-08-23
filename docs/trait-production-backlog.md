@@ -284,6 +284,45 @@ is recorded in each manifest entry's `postprocessing` as
 | DG-203 | outfit | Purple and black robe, amethyst-set gold trim | `images/outfit_references/robe_ref_005_purple_black_gold.png` | DG-199 | `assets/outfits/outfit_005_purple_black_gold_painted.png` | `prompts/22_outfit_prompts.md` | registered |
 | DG-204 | outfit | White and navy star robe, sapphire drops | `images/outfit_references/robe_ref_006_white_navy_star.png` | DG-199 | `assets/outfits/outfit_006_white_navy_star_painted.png` | `prompts/22_outfit_prompts.md` | registered |
 
+#### Silhouette briefs — DG-250 to DG-259 (added 2026-07-27)
+
+The six registered painted robes are **one garment in six colourways**. Measured
+as silhouette IoU against each other they run 0.823 to 0.920, median 0.894, with
+near-identical width profiles row by row: every one is 217–235 px across at
+Y 560 and 359–398 px at Y 740, and every one flares to a floor-length skirt.
+
+That matters because of what survives to marketplace size. `build_token_sheet.py
+--salience` puts outfits second only to backgrounds at moving a 210 px thumbnail
+— 11.8 against 47.1 for backgrounds and under 1 for all 35 face assets — so the
+category is carrying six colours where it could be carrying six garments.
+
+These ten briefs specify **silhouette**, not palette. Each carries a target width
+profile at seven canvas rows, and each departs from the robe profile somewhere
+obvious: a straight narrow column, hard armour breaks, square kimono sleeves, a
+hem that stops above the knee, bare upper arms, a widening triangle, a flat
+central slab, stepped tiers, a deliberate asymmetry, and a form-fitting suit.
+
+`intake_painted_outfit.py` now reports silhouette IoU against every registered
+outfit and calls anything at or above **0.75** TOO SIMILAR, alongside the
+chin-clearance and shoulder-coverage checks.
+
+| ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
+|---|---|---|---|---|---|---|---|
+| DG-250 | outfit | Fitted longcoat and trousers, straight narrow column | silhouette brief | DG-199 silhouette measurement | `assets/outfits/outfit_016_fitted_longcoat.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-251 | outfit | Segmented plate armour with pauldrons, tassets and greaves | silhouette brief | DG-250 | `assets/outfits/outfit_017_segmented_plate.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-252 | outfit | Layered kimono with wide rectangular sleeves and obi | silhouette brief | DG-250 | `assets/outfits/outfit_018_layered_kimono.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-253 | outfit | Cropped jacket and belted short skirt, lower leg bare | silhouette brief | DG-250 | `assets/outfits/outfit_019_jacket_and_skirt.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-254 | outfit | Sleeveless battle dress with forearm wraps and split skirt | silhouette brief | DG-250 | `assets/outfits/outfit_020_sleeveless_battledress.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-255 | outfit | Hooded travelling cloak over tunic, hood down | silhouette brief | DG-250 | `assets/outfits/outfit_021_hooded_cloak.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-256 | outfit | Scholar's tabard over shirt, open sides | silhouette brief | DG-250 | `assets/outfits/outfit_022_scholar_tabard.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-257 | outfit | Tiered ceremonial gown with fitted bodice and long gloves | silhouette brief | DG-250 | `assets/outfits/outfit_023_tiered_gown.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-258 | outfit | Asymmetric monastic wrap over one shoulder with rope sash | silhouette brief | DG-250 | `assets/outfits/outfit_024_asymmetric_wrap.png` | `prompts/24_outfit_silhouettes.md` | pending |
+| DG-259 | outfit | Panelled bodysuit with segmented harness | silhouette brief | DG-250 | `assets/outfits/outfit_025_panelled_bodysuit.png` | `prompts/24_outfit_silhouettes.md` | pending |
+
+Numbered from 016 so 001–015 stay with the registered robes and the reserved
+`OUTFIT` sheet cells. These are new directions, not the sheet designs, so
+**DG-037 to DG-046 remain pending** regardless of how many of these land.
+
 These are distinct painted designs, not recolours of one another, so the category
 gains six *designs* rather than six colours. They do not correspond to cells in
 the `OUTFIT` sheet, so **DG-037 to DG-046 stay `pending`** and are not satisfied

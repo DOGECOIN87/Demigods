@@ -95,6 +95,14 @@ BASE_BODIES = [
 ARM_BAND = (640, 860)
 POSE_BAND = (560, 1000)
 
+# Rows the garment occupies, for silhouette comparison.
+GARMENT_BAND = (440, 1120)
+
+# Above this IoU against an already-registered outfit, a design is a recolour of
+# something the collection already has, whatever its palette. The first six
+# painted robes measure 0.82-0.92 against each other.
+MAX_SILHOUETTE_OVERLAP = 0.75
+
 
 def background_mask(image: Image.Image) -> Image.Image:
     """Flood fill the backdrop from the canvas border."""
@@ -178,6 +186,29 @@ def shoulder_gap(layer: Image.Image, body_path: Path) -> int:
                if body[x, y] > 128 and outfit[x, y] <= 128)
 
 
+def silhouette_overlap(layer: Image.Image, registered: Path) -> list[tuple[str, float]]:
+    """IoU of this garment's silhouette against every registered outfit.
+
+    Palette variety is not silhouette variety, and only silhouette survives to
+    210 px. This is the check that would have caught six robes being one robe.
+    """
+    def mask(image: Image.Image) -> set[tuple[int, int]]:
+        alpha = image.getchannel("A").load()
+        return {(x, y)
+                for y in range(GARMENT_BAND[0], GARMENT_BAND[1])
+                for x in range(MAX_BOUNDS[0], MAX_BOUNDS[2])
+                if alpha[x, y] > 128}
+
+    theirs = mask(layer)
+    scores = []
+    for path in sorted(registered.glob("*.png")):
+        with Image.open(path) as handle:
+            other = mask(handle.convert("RGBA"))
+        union = len(theirs | other)
+        scores.append((path.name, len(theirs & other) / union if union else 0.0))
+    return sorted(scores, key=lambda pair: pair[1], reverse=True)
+
+
 def chin_intrusion(layer: Image.Image) -> int:
     """Opaque garment pixels above the jaw, inside the face. Must be zero."""
     alpha = layer.getchannel("A").load()
@@ -249,6 +280,12 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  bare shoulder pixels: {bare_shoulder};  collar over the chin: {chin}")
     if chin:
         print("  FAIL: the collar covers the jaw; the chin will be missing")
+
+    overlaps = silhouette_overlap(fitted, Path("assets/outfits"))
+    if overlaps:
+        worst, score = overlaps[0]
+        verdict = "DISTINCT" if score < MAX_SILHOUETTE_OVERLAP else "TOO SIMILAR"
+        print(f"  closest registered silhouette: {worst} at {score:.3f}  [{verdict}]")
 
     if args.pose_report:
         print(f"  {'pose':44s} {'bare arm px':>12s} {'pose detail hidden':>20s}")

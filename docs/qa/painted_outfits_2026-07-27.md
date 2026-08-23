@@ -147,3 +147,24 @@ DG-046 stay pending.
 The garments are drawn for a standing figure with arms down. Any future base pose
 with raised arms will not work with them at all, rather than merely hiding
 detail.
+
+## Follow-up — the six are one silhouette (2026-07-27)
+
+Asked for more diversity, the honest measurement is that these six are **one
+garment in six colourways**. Silhouette IoU against each other:
+
+| Pair | Overlap |
+|---|---|
+| black/gold vs navy/gold star | 0.920 |
+| crimson/gold vs purple/black | 0.913 |
+| white/gold vs black/gold | 0.910 |
+| *least alike:* white/gold vs white/navy star | 0.823 |
+
+Median 0.894. Width profiles agree row by row: 217–235 px at Y 560, 359–398 px at
+Y 740, all flaring to a floor-length skirt. It is the same failure the mouths had
+— variation along one axis that does not survive to thumbnail size.
+
+`intake_painted_outfit.py` now reports silhouette IoU against every registered
+outfit and calls anything at or above 0.75 TOO SIMILAR. Ten replacement briefs
+specifying silhouette rather than palette are in
+`prompts/24_outfit_silhouettes.md`, queued as DG-250 to DG-259.
