@@ -104,6 +104,18 @@ python scripts/report_production_status.py --check   # what CI enforces
 
 The reporter derives per-category registered, remaining, and completion counts from `assets/asset_manifest.json` and `docs/trait-production-backlog.md`, rewrites the generated block in `docs/production_status.md`, and fails when a backlog row marked `registered` is missing from the manifest, when the manifest registers a path no backlog row claims, or when `pending_categories` names a category whose assets are all registered.
 
+Review what the collection actually looks like after every registration batch:
+
+```bash
+python scripts/render_composition_sheet.py --count 25 --seed review-2026-08-24 \
+  --out docs/qa/composition_sheet_25_2026-08-24.png \
+  --json-report docs/qa/composition_sheet_25_2026-08-24.json
+```
+
+The sheet samples rule-valid compositions with the generator's own selection, rule, and layer-order code, so every cell is a token the real run could emit. Cells are deduplicated by trait signature and the seed is recorded, so a sheet regenerates byte-for-byte. Use it to catch what the counting checks cannot: a category that is registered but unreachable, a layer that dominates every cell, two assets that read as one. `--optional CATEGORY=P` re-renders under a proposed rule change without touching any config, and the sidecar JSON traces each cell back to its exact assets.
+
+Counting checks and distinctness checks fail differently. `generate_777.py --preflight-only` currently reports a rule-valid space of 2,451,456 and 0.0% saturation while only two of ten registered outfits can ever appear — see `docs/qa/composition_sheet_25_2026-08-24.md`.
+
 ## Exact-777 generation
 
 After the production library is complete:

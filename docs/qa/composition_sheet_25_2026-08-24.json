@@ -1,0 +1,429 @@
+{
+  "seed": "review-2026-08-24",
+  "count": 25,
+  "columns": 5,
+  "thumb": 320,
+  "sheet": "docs/qa/composition_sheet_25_2026-08-24.png",
+  "categories_with_no_registered_assets": [
+    "eyes",
+    "eyebrows",
+    "mouths",
+    "expression_marks",
+    "head_accessories"
+  ],
+  "compositions": [
+    {
+      "cell": 1,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|back_accessories:back_accessory_005_black_violet_ragged_cloak.png|hair_back:hair_back_004_violet_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_004_violet_parted_bangs.png|hand_objects:hand_object_011_round_talisman_pose_004_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_003_cool_veil.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "back_accessories": "back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+        "hair_back": "hair_back/hair_back_004_violet_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_004_violet_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_003_cool_veil.png"
+      }
+    },
+    {
+      "cell": 2,
+      "signature": "backgrounds:background_008_violet_void_portal.png|rear_auras:aura_rear_007_green_neon_ring.png|back_accessories:back_accessory_002_black_violet_bat_wings.png|hair_back:hair_back_007_teal_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_007_teal_open_center.png|hand_objects:hand_object_009_violet_blade_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_008_violet_void_portal.png",
+        "rear_auras": "rear_auras/aura_rear_007_green_neon_ring.png",
+        "back_accessories": "back_accessories/back_accessory_002_black_violet_bat_wings.png",
+        "hair_back": "hair_back/hair_back_007_teal_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_007_teal_open_center.png",
+        "hand_objects": "hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 3,
+      "signature": "backgrounds:background_004_crescent_star_dreamscape.png|rear_auras:aura_rear_018_blue_flame_ring.png|back_accessories:back_accessory_002_black_violet_bat_wings.png|hair_back:hair_back_002_black_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_007_gold_teardrop_pendant.png|hair_front:hair_front_002_black_side_swept.png|hand_objects:hand_object_011_round_talisman_pose_004_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_004_crescent_star_dreamscape.png",
+        "rear_auras": "rear_auras/aura_rear_018_blue_flame_ring.png",
+        "back_accessories": "back_accessories/back_accessory_002_black_violet_bat_wings.png",
+        "hair_back": "hair_back/hair_back_002_black_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+        "hair_front": "hair_front/hair_front_002_black_side_swept.png",
+        "hand_objects": "hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 4,
+      "signature": "backgrounds:background_007_golden_celestial_gateway.png|rear_auras:aura_rear_011_fire_ring.png|back_accessories:back_accessory_001_silver_feathered_wings.png|hair_back:hair_back_001_gold_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_001_gold_parted_bangs.png|hand_objects:hand_object_010_horned_skull_scepter_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_007_golden_celestial_gateway.png",
+        "rear_auras": "rear_auras/aura_rear_011_fire_ring.png",
+        "back_accessories": "back_accessories/back_accessory_001_silver_feathered_wings.png",
+        "hair_back": "hair_back/hair_back_001_gold_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_001_gold_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png"
+      }
+    },
+    {
+      "cell": 5,
+      "signature": "backgrounds:background_002_violet_gothic_sanctum.png|rear_auras:aura_rear_016_cosmic_sparkle_ring.png|back_accessories:back_accessory_008_olive_silver_spiked_wings.png|hair_back:hair_back_007_teal_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_005_silver_navy_long_pendant.png|hair_front:hair_front_007_teal_open_center.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_002_violet_gothic_sanctum.png",
+        "rear_auras": "rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+        "back_accessories": "back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+        "hair_back": "hair_back/hair_back_007_teal_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+        "hair_front": "hair_front/hair_front_007_teal_open_center.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 6,
+      "signature": "backgrounds:background_008_violet_void_portal.png|rear_auras:aura_rear_013_violet_flame_ring.png|back_accessories:back_accessory_003_cyan_fairy_wings.png|hair_back:hair_back_007_teal_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_006_silver_pale_circle_charm.png|hair_front:hair_front_007_teal_open_center.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_008_violet_void_portal.png",
+        "rear_auras": "rear_auras/aura_rear_013_violet_flame_ring.png",
+        "back_accessories": "back_accessories/back_accessory_003_cyan_fairy_wings.png",
+        "hair_back": "hair_back/hair_back_007_teal_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+        "hair_front": "hair_front/hair_front_007_teal_open_center.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png"
+      }
+    },
+    {
+      "cell": 7,
+      "signature": "backgrounds:background_007_golden_celestial_gateway.png|rear_auras:aura_rear_003_blue_crystalline_burst.png|back_accessories:back_accessory_001_silver_feathered_wings.png|hair_back:hair_back_008_red_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_008_red_short_bangs.png|hand_objects:hand_object_009_violet_blade_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_007_golden_celestial_gateway.png",
+        "rear_auras": "rear_auras/aura_rear_003_blue_crystalline_burst.png",
+        "back_accessories": "back_accessories/back_accessory_001_silver_feathered_wings.png",
+        "hair_back": "hair_back/hair_back_008_red_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_008_red_short_bangs.png",
+        "hand_objects": "hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png"
+      }
+    },
+    {
+      "cell": 8,
+      "signature": "backgrounds:background_002_violet_gothic_sanctum.png|back_accessories:back_accessory_005_black_violet_ragged_cloak.png|hair_back:hair_back_004_violet_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_004_violet_parted_bangs.png|hand_objects:hand_object_009_violet_blade_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_002_violet_gothic_sanctum.png",
+        "back_accessories": "back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+        "hair_back": "hair_back/hair_back_004_violet_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_004_violet_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png"
+      }
+    },
+    {
+      "cell": 9,
+      "signature": "backgrounds:background_003_arcane_library.png|back_accessories:back_accessory_008_olive_silver_spiked_wings.png|hair_back:hair_back_001_gold_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_003_black_ribbon_bow.png|hair_front:hair_front_001_gold_parted_bangs.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_002_gold_light_pillars.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_003_arcane_library.png",
+        "back_accessories": "back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+        "hair_back": "hair_back/hair_back_001_gold_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_001_gold_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png"
+      }
+    },
+    {
+      "cell": 10,
+      "signature": "backgrounds:background_008_violet_void_portal.png|rear_auras:aura_rear_009_pink_neon_ring.png|back_accessories:back_accessory_005_black_violet_ragged_cloak.png|hair_back:hair_back_007_teal_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_007_teal_open_center.png|hand_objects:hand_object_011_round_talisman_pose_004_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_008_violet_void_portal.png",
+        "rear_auras": "rear_auras/aura_rear_009_pink_neon_ring.png",
+        "back_accessories": "back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+        "hair_back": "hair_back/hair_back_007_teal_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_007_teal_open_center.png",
+        "hand_objects": "hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 11,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|rear_auras:aura_rear_016_cosmic_sparkle_ring.png|back_accessories:back_accessory_006_pale_blue_crystal_wings.png|hair_back:hair_back_003_silver_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_003_silver_straight_bangs.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "rear_auras": "rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+        "back_accessories": "back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+        "hair_back": "hair_back/hair_back_003_silver_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_003_silver_straight_bangs.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 12,
+      "signature": "backgrounds:background_004_crescent_star_dreamscape.png|rear_auras:aura_rear_004_violet_void_flame.png|back_accessories:back_accessory_007_gold_luminous_wings.png|hair_back:hair_back_008_red_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_008_red_short_bangs.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_004_crescent_star_dreamscape.png",
+        "rear_auras": "rear_auras/aura_rear_004_violet_void_flame.png",
+        "back_accessories": "back_accessories/back_accessory_007_gold_luminous_wings.png",
+        "hair_back": "hair_back/hair_back_008_red_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_008_red_short_bangs.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 13,
+      "signature": "backgrounds:background_005_solar_sky_temple.png|back_accessories:back_accessory_003_cyan_fairy_wings.png|hair_back:hair_back_008_red_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_002_gold_blue_drop_choker.png|hair_front:hair_front_008_red_short_bangs.png|hand_objects:hand_object_011_round_talisman_pose_004_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_003_cool_veil.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_005_solar_sky_temple.png",
+        "back_accessories": "back_accessories/back_accessory_003_cyan_fairy_wings.png",
+        "hair_back": "hair_back/hair_back_008_red_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+        "hair_front": "hair_front/hair_front_008_red_short_bangs.png",
+        "hand_objects": "hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_003_cool_veil.png"
+      }
+    },
+    {
+      "cell": 14,
+      "signature": "backgrounds:background_008_violet_void_portal.png|rear_auras:aura_rear_008_gold_neon_ring.png|back_accessories:back_accessory_007_gold_luminous_wings.png|hair_back:hair_back_006_pink_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_008_violet_ribbon_bow.png|hair_front:hair_front_006_pink_soft_bangs.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_008_violet_void_portal.png",
+        "rear_auras": "rear_auras/aura_rear_008_gold_neon_ring.png",
+        "back_accessories": "back_accessories/back_accessory_007_gold_luminous_wings.png",
+        "hair_back": "hair_back/hair_back_006_pink_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_006_pink_soft_bangs.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 15,
+      "signature": "backgrounds:background_003_arcane_library.png|rear_auras:aura_rear_003_blue_crystalline_burst.png|back_accessories:back_accessory_006_pale_blue_crystal_wings.png|hair_back:hair_back_007_teal_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_007_teal_open_center.png|hand_objects:hand_object_012_brown_tome_pose_004_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_003_arcane_library.png",
+        "rear_auras": "rear_auras/aura_rear_003_blue_crystalline_burst.png",
+        "back_accessories": "back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+        "hair_back": "hair_back/hair_back_007_teal_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_007_teal_open_center.png",
+        "hand_objects": "hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 16,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|back_accessories:back_accessory_004_navy_formal_cape.png|hair_back:hair_back_005_blue_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_005_silver_navy_long_pendant.png|hair_front:hair_front_005_blue_pointed_bangs.png|hand_objects:hand_object_012_brown_tome_pose_004_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "back_accessories": "back_accessories/back_accessory_004_navy_formal_cape.png",
+        "hair_back": "hair_back/hair_back_005_blue_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+        "hair_front": "hair_front/hair_front_005_blue_pointed_bangs.png",
+        "hand_objects": "hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 17,
+      "signature": "backgrounds:background_008_violet_void_portal.png|rear_auras:aura_rear_011_fire_ring.png|back_accessories:back_accessory_001_silver_feathered_wings.png|hair_back:hair_back_002_black_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_006_silver_pale_circle_charm.png|hair_front:hair_front_002_black_side_swept.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_008_violet_void_portal.png",
+        "rear_auras": "rear_auras/aura_rear_011_fire_ring.png",
+        "back_accessories": "back_accessories/back_accessory_001_silver_feathered_wings.png",
+        "hair_back": "hair_back/hair_back_002_black_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+        "hair_front": "hair_front/hair_front_002_black_side_swept.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 18,
+      "signature": "backgrounds:background_007_golden_celestial_gateway.png|rear_auras:aura_rear_003_blue_crystalline_burst.png|back_accessories:back_accessory_006_pale_blue_crystal_wings.png|hair_back:hair_back_001_gold_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_008_violet_ribbon_bow.png|hair_front:hair_front_001_gold_parted_bangs.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_003_cool_veil.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_007_golden_celestial_gateway.png",
+        "rear_auras": "rear_auras/aura_rear_003_blue_crystalline_burst.png",
+        "back_accessories": "back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+        "hair_back": "hair_back/hair_back_001_gold_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_001_gold_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_003_cool_veil.png"
+      }
+    },
+    {
+      "cell": 19,
+      "signature": "backgrounds:background_007_golden_celestial_gateway.png|rear_auras:aura_rear_016_cosmic_sparkle_ring.png|back_accessories:back_accessory_002_black_violet_bat_wings.png|hair_back:hair_back_006_pink_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_008_violet_ribbon_bow.png|hair_front:hair_front_006_pink_soft_bangs.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_007_golden_celestial_gateway.png",
+        "rear_auras": "rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+        "back_accessories": "back_accessories/back_accessory_002_black_violet_bat_wings.png",
+        "hair_back": "hair_back/hair_back_006_pink_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_006_pink_soft_bangs.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 20,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|rear_auras:aura_rear_018_blue_flame_ring.png|back_accessories:back_accessory_008_olive_silver_spiked_wings.png|hair_back:hair_back_004_violet_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_004_violet_parted_bangs.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_002_gold_light_pillars.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "rear_auras": "rear_auras/aura_rear_018_blue_flame_ring.png",
+        "back_accessories": "back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+        "hair_back": "hair_back/hair_back_004_violet_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_004_violet_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png"
+      }
+    },
+    {
+      "cell": 21,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|rear_auras:aura_rear_015_smoke_void_ring.png|back_accessories:back_accessory_007_gold_luminous_wings.png|hair_back:hair_back_006_pink_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_008_violet_ribbon_bow.png|hair_front:hair_front_006_pink_soft_bangs.png|hand_objects:hand_object_007_gold_blue_gem_staff_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "rear_auras": "rear_auras/aura_rear_015_smoke_void_ring.png",
+        "back_accessories": "back_accessories/back_accessory_007_gold_luminous_wings.png",
+        "hair_back": "hair_back/hair_back_006_pink_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_006_pink_soft_bangs.png",
+        "hand_objects": "hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 22,
+      "signature": "backgrounds:background_003_arcane_library.png|rear_auras:aura_rear_017_water_splash_ring.png|back_accessories:back_accessory_003_cyan_fairy_wings.png|hair_back:hair_back_002_black_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_001_black_choker.png|hair_front:hair_front_002_black_side_swept.png|hand_objects:hand_object_012_brown_tome_pose_004_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_001_soft_bloom.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_003_arcane_library.png",
+        "rear_auras": "rear_auras/aura_rear_017_water_splash_ring.png",
+        "back_accessories": "back_accessories/back_accessory_003_cyan_fairy_wings.png",
+        "hair_back": "hair_back/hair_back_002_black_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_001_black_choker.png",
+        "hair_front": "hair_front/hair_front_002_black_side_swept.png",
+        "hand_objects": "hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_001_soft_bloom.png"
+      }
+    },
+    {
+      "cell": 23,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|rear_auras:aura_rear_018_blue_flame_ring.png|back_accessories:back_accessory_008_olive_silver_spiked_wings.png|hair_back:hair_back_006_pink_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_003_black_ribbon_bow.png|hair_front:hair_front_006_pink_soft_bangs.png|hand_objects:hand_object_006_gold_lantern_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "rear_auras": "rear_auras/aura_rear_018_blue_flame_ring.png",
+        "back_accessories": "back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+        "hair_back": "hair_back/hair_back_006_pink_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+        "hair_front": "hair_front/hair_front_006_pink_soft_bangs.png",
+        "hand_objects": "hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png"
+      }
+    },
+    {
+      "cell": 24,
+      "signature": "backgrounds:background_001_celestial_throne_hall.png|rear_auras:aura_rear_003_blue_crystalline_burst.png|back_accessories:back_accessory_003_cyan_fairy_wings.png|hair_back:hair_back_008_red_long_wavy.png|base_bodies:base_pose_002_viewer_left_vertical_grip.png|outfits:outfit_002_storm_guardian_pose_002.png|neck_accessories:neck_accessory_004_silver_dark_round_pendant.png|hair_front:hair_front_008_red_short_bangs.png|hand_objects:hand_object_008_blue_crescent_staff_pose_002_left.png|front_auras:aura_front_001_orange_rising_flame.png|global_finish:global_finish_002_gilded_warm.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_001_celestial_throne_hall.png",
+        "rear_auras": "rear_auras/aura_rear_003_blue_crystalline_burst.png",
+        "back_accessories": "back_accessories/back_accessory_003_cyan_fairy_wings.png",
+        "hair_back": "hair_back/hair_back_008_red_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "outfits": "outfits/outfit_002_storm_guardian_pose_002.png",
+        "neck_accessories": "neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+        "hair_front": "hair_front/hair_front_008_red_short_bangs.png",
+        "hand_objects": "hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "front_auras": "front_auras/aura_front_001_orange_rising_flame.png",
+        "global_finish": "global_finish/global_finish_002_gilded_warm.png"
+      }
+    },
+    {
+      "cell": 25,
+      "signature": "backgrounds:background_006_moonlit_marble_balcony.png|rear_auras:aura_rear_013_violet_flame_ring.png|back_accessories:back_accessory_007_gold_luminous_wings.png|hair_back:hair_back_001_gold_long_wavy.png|base_bodies:base_pose_004_viewer_left_palm_up.png|outfits:outfit_004_lunar_oracle_pose_004.png|neck_accessories:neck_accessory_007_gold_teardrop_pendant.png|hair_front:hair_front_001_gold_parted_bangs.png|hand_objects:hand_object_012_brown_tome_pose_004_left.png|front_auras:aura_front_002_gold_light_pillars.png|global_finish:global_finish_003_cool_veil.png",
+      "traits": {
+        "backgrounds": "backgrounds/background_006_moonlit_marble_balcony.png",
+        "rear_auras": "rear_auras/aura_rear_013_violet_flame_ring.png",
+        "back_accessories": "back_accessories/back_accessory_007_gold_luminous_wings.png",
+        "hair_back": "hair_back/hair_back_001_gold_long_wavy.png",
+        "base_bodies": "base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "outfits": "outfits/outfit_004_lunar_oracle_pose_004.png",
+        "neck_accessories": "neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+        "hair_front": "hair_front/hair_front_001_gold_parted_bangs.png",
+        "hand_objects": "hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+        "front_auras": "front_auras/aura_front_002_gold_light_pillars.png",
+        "global_finish": "global_finish/global_finish_003_cool_veil.png"
+      }
+    }
+  ]
+}

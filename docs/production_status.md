@@ -176,52 +176,79 @@ Eight distinct user-supplied 1024 × 1024 RGB JPEGs are preserved byte-for-byte 
 - Backgrounds 001–004 depth pass: **re-registered 2026-07-27 with postprocessing recorded**
 - Latest completed GitHub Actions baseline: **passed — Production validation run #25**
 
-## Supply saturation — the live blocker on minting
+## Supply saturation — cleared
 
-The generator preflight passes and a 777 dry run completes, but neither means the
-collection is ready to mint. `theoretical_space` multiplies category counts and
-ignores compatibility rules entirely, so it reported 4000. Every registered
-outfit is locked to exactly one base pose, which collapses the outfit × pose
-factor from 25 to 5, and the space that actually survives the rules is **800**.
+`scripts/generate_777.py` estimates the rule-valid space by sampling and prints a
+saturation line on every preflight and run, warning above 50% and flagging above
+90%. Sampling rather than enumerating keeps it usable once the library is large
+enough that enumeration is not an option.
 
-Minting 777 of 800 is **97% saturation**: nearly every legal character exists, so
-rarity carries no information and tokens differ only by background and aura.
+The hair, outfit, accessory and aura families closed this out. Current preflight:
 
-`scripts/generate_777.py` now estimates the rule-valid space by sampling and
-prints a saturation line on every preflight and run, warning above 50% and
-flagging above 90%. Sampling rather than enumerating keeps it usable once the
-library is large enough that enumeration is not an option.
+```text
+Theoretical combination space: 1961164800 (ceiling, ignores compatibility rules).
+Rule-valid combination space:  2451456 (0.1% of the ceiling survives the rules).
+Supply saturation: 770/2451456 = 0.0% of the valid space.
+```
 
-Completing the hair-first batch takes the valid space to roughly 20,000–65,000
-and saturation to low single digits.
+Saturation is no longer a blocker. **It has been replaced by a distinctness
+blocker that the saturation metric cannot see** — see below.
+
+## Distinctness — the live blocker on minting
+
+A large valid space does not mean tokens look different. Sampling 25 real
+compositions with `scripts/render_composition_sheet.py` shows only **2 of 10
+outfits and 2 of 5 base poses** can ever appear, because every hand object is
+authored for pose 002 or 004 and `hand_objects` is not optional. Eight
+registered, human-approved outfits and three registered poses are unreachable in
+all 777 tokens.
+
+Separately, `eyes`, `eyebrows`, `mouths`, `expression_marks` and
+`head_accessories` have no registered assets, so every token wears the face baked
+into the base master.
+
+Full evidence, measurements, and the two decisions this needs:
+`docs/qa/composition_sheet_25_2026-08-24.md`.
+
+Re-render the sheet after any registration batch:
+
+```bash
+python scripts/render_composition_sheet.py --count 25 --seed review-2026-08-24 \
+  --out docs/qa/composition_sheet_25_2026-08-24.png \
+  --json-report docs/qa/composition_sheet_25_2026-08-24.json
+```
 
 ## Next production sequence
 
-1. **Hair-first batch (20 assets).** Generate against the fully resolved prompts
-   in `prompts/batch_hair-first.md` — 7 hair-back colours, 8 hair-front bang
-   sets, 5 outfits. This is the minimum set that removes bald tokens and outfit
-   repetition, and it is what breaks the saturation blocker above.
-2. Drop the returned PNGs into a folder and run `python scripts/bulk_intake.py
+1. **Decide the hand-object reachability rule.** Either add `hand_objects` to
+   `optional_categories` in `config/collection.json`, or queue hand objects for
+   poses 001, 003 and 005. Until one lands, eight registered outfits and three
+   registered poses cannot appear in any token. Evidence and the measured effect
+   of each route: `docs/qa/composition_sheet_25_2026-08-24.md`.
+2. **Decide how facial traits meet the baked-in face.** The base master carries
+   warm-brown eyes, eyebrows and a mouth; the 60 queued facial assets are layers
+   8–11 above it. Either author them to fully cover the measured occlusion
+   envelope and gate on it, or re-produce a face-free base master. This must be
+   settled before the facial batch is generated, not after.
+3. Generate the facial batch against the resolved prompts from
+   `python scripts/build_asset_prompts.py --batch faces` (24 eyes, 16 eyebrows,
+   12 mouths, 8 expression marks), carrying whichever occlusion rule step 2
+   settles on.
+4. Drop the returned PNGs into a folder and run `python scripts/bulk_intake.py
    <folder>`. It matches each file to its backlog row, runs binary QA and the
    category's rig gate, composites over the base master in correct layer order,
    and renders one review sheet for a single approval pass.
-3. Approve on the sheet, then `python scripts/bulk_intake.py <folder>
+5. Approve on the sheet, then `python scripts/bulk_intake.py <folder>
    --register-approved <DG-IDs>`. Registration copies exact approved bytes,
-   writes manifest entries, binds each front-hair layer to its matching rear-hair
-   layer in `config/compatibility.json`, flips backlog status, and regenerates
-   the ledger.
-4. Approve or reject the three global-finish candidates in
-   `images/trait_candidates/global_finish/` — see `docs/global-finish-definition.md`
-   and the preview at `docs/qa/global_finish_preview.png`. On approval, register
-   them and add `global_finish` to `optional_categories`.
-5. Re-run `python scripts/generate_777.py --preflight` and confirm the saturation
-   warning has cleared.
-6. Remaining categories in canonical layer order; back accessory DG-021 is the
-   next representative test. Generate resolved prompts for any batch with
-   `python scripts/build_asset_prompts.py --batch <faces|accessories|effects>`.
-7. Composite cross-category stress tests, correct collisions, clipping, hidden
+   writes manifest entries, flips backlog status, and regenerates the ledger.
+6. Register or reject the ten head-accessory candidates (DG-123–DG-132) and the
+   five remaining hand objects (DG-133–DG-137), which already have QA-passed
+   unregistered candidates under `incoming/`.
+7. Re-render the 25-composition sheet and confirm the distinctness blocker has
+   cleared before any further batch.
+8. Composite cross-category stress tests, correct collisions, clipping, hidden
    overlaps, and layer order.
-8. Run configuration, asset, manifest, ledger, generator, and output verification
+9. Run configuration, asset, manifest, ledger, generator, and output verification
    at their corresponding production gates.
 
 ## Resolved — outfit_001 foot-baseline breach
