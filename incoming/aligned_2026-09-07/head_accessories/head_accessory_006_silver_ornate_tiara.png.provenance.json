@@ -23,21 +23,21 @@
       1651,
       999
     ],
-    "scale": 0.27256208,
-    "vertical_scale": 0.27256208,
+    "scale": 0.2241066,
+    "vertical_scale": 0.2241066,
     "anisotropic": false,
     "target_dimensions": [
-      450,
-      272
+      370,
+      224
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        402,
+        442,
         129,
-        851,
-        400
+        811,
+        352
       ]
     }
   },
@@ -47,19 +47,19 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_006_silver_ornate_tiara.png",
-  "output_sha256": "118f4a503275f64197787ce0a0b4a9a4964f0f0282321165bb77892f563c24ae",
+  "output_sha256": "39aac6c53e991e3ff9817f8889286ad036dcf1aeea4e85151468135628a7cbd9",
   "backlog_id": "DG-128",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "band on the hairline, side arcs past the ears",
-    "target_width": 450,
+    "seat": "band on the skull dome, side arcs past the temples",
+    "target_width": 370,
     "top_y": 129,
     "target_height": null
   },
   "output_bounds": [
-    402,
+    442,
     129,
-    851,
-    400
+    811,
+    352
   ]
 }

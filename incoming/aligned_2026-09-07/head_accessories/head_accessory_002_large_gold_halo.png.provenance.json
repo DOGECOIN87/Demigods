@@ -23,21 +23,21 @@
       1148,
       1162
     ],
-    "scale": 0.37456446,
-    "vertical_scale": 0.11187608,
+    "scale": 0.34843206,
+    "vertical_scale": 0.0989673,
     "anisotropic": true,
     "target_dimensions": [
-      430,
-      130
+      400,
+      115
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 132,
+      "top_y": 129,
       "bounds": [
-        412,
-        132,
-        841,
-        261
+        427,
+        129,
+        826,
+        243
       ]
     }
   },
@@ -47,19 +47,19 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_002_large_gold_halo.png",
-  "output_sha256": "0428f25bb54b4d4e182fa7ac933dc0c8f974b47681e45de170a1c677db855838",
+  "output_sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
   "backlog_id": "DG-124",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
     "seat": "foreshortened ring hovering above the crown",
-    "target_width": 430,
-    "top_y": 132,
-    "target_height": 130
+    "target_width": 400,
+    "top_y": 129,
+    "target_height": 115
   },
   "output_bounds": [
-    412,
-    132,
-    841,
-    261
+    427,
+    129,
+    826,
+    243
   ]
 }

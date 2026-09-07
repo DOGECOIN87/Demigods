@@ -41,16 +41,16 @@ PANEL = (22, 23, 28)
 PAPER = (13, 14, 18)
 
 HEAD_ROWS = [
-    ("DG-123", "head_accessory_001_gold_pointed_crown", "520 -> 400 wide, seat 129 -> 132"),
-    ("DG-124", "head_accessory_002_large_gold_halo", "520 circle -> 430x130 ellipse above the crown"),
-    ("DG-125", "head_accessory_003_green_laurel", "520 -> 450 wide, seat 129 -> 132"),
-    ("DG-126", "head_accessory_004_black_curved_horns", "500 -> 440 wide"),
-    ("DG-127", "head_accessory_005_silver_winged_circlet", "520 -> 420 wide"),
-    ("DG-128", "head_accessory_006_silver_ornate_tiara", "520 -> 450 wide"),
-    ("DG-129", "head_accessory_007_silver_drop_circlet", "520 -> 440 wide, seat 129 -> 215"),
-    ("DG-130", "head_accessory_008_translucent_white_veil", "unchanged - already seated"),
-    ("DG-131", "head_accessory_009_pale_blue_spiked_tiara", "520 -> 470 wide"),
-    ("DG-132", "head_accessory_010_gold_low_circlet", "520 -> 430 wide, seat 129 -> 240"),
+    ("DG-123", "head_accessory_001_gold_pointed_crown", "520 -> 330 wide; lowest ink Y408 -> Y356"),
+    ("DG-124", "head_accessory_002_large_gold_halo", "520 circle -> 400x115 ellipse; Y655 -> Y243"),
+    ("DG-125", "head_accessory_003_green_laurel", "520 -> 310 wide; Y571 -> Y392"),
+    ("DG-126", "head_accessory_004_black_curved_horns", "500 -> 360 wide; Y580 -> Y453"),
+    ("DG-127", "head_accessory_005_silver_winged_circlet", "520 -> 350 wide; Y407 -> Y315"),
+    ("DG-128", "head_accessory_006_silver_ornate_tiara", "520 -> 370 wide; Y444 -> Y352"),
+    ("DG-129", "head_accessory_007_silver_drop_circlet", "520 -> 370 wide, seat 129 -> 180; Y313 -> Y310"),
+    ("DG-130", "head_accessory_008_translucent_white_veil", "480 -> 420 wide; Y511 -> Y462"),
+    ("DG-131", "head_accessory_009_pale_blue_spiked_tiara", "520 -> 390 wide; Y339 -> Y285"),
+    ("DG-132", "head_accessory_010_gold_low_circlet", "520 -> 360 wide, seat 129 -> 200; Y279 -> Y303"),
 ]
 
 HAND_ROWS = [
@@ -108,6 +108,13 @@ def composite(paths) -> Image.Image:
     return canvas
 
 
+def brow_line(image: Image.Image) -> Image.Image:
+    """Mark the eyebrow line a head-worn band has to clear."""
+    marked = image.copy()
+    ImageDraw.Draw(marked).line([(350, 308), (910, 308)], fill=(255, 70, 70, 140), width=3)
+    return marked
+
+
 def pair_row(before: Image.Image, after: Image.Image, crop, size, dg, name, change):
     width = size * 2 + 30
     tile = Image.new("RGBA", (width, size + 64), PANEL)
@@ -125,16 +132,16 @@ def build_head_sheet(old_dir: Path, new_dir: Path, size: int = 300) -> Image.Ima
     crop = (300, 80, 960, 740)
     tiles = []
     for dg, name, change in HEAD_ROWS:
-        before = composite(HEAD_STACK + [old_dir / f"{name}.png"])
-        after = composite(HEAD_STACK + [new_dir / f"{name}.png"])
+        before = brow_line(composite(HEAD_STACK + [old_dir / f"{name}.png"]))
+        after = brow_line(composite(HEAD_STACK + [new_dir / f"{name}.png"]))
         tiles.append(pair_row(before, after, crop, size, dg, name, change))
     cols, tile_w, tile_h = 2, tiles[0].width, tiles[0].height
     rows = (len(tiles) + cols - 1) // cols
     sheet = Image.new("RGBA", (cols * (tile_w + 18) + 18, 96 + rows * (tile_h + 18)), PAPER)
     draw = ImageDraw.Draw(sheet)
     draw.text((18, 18), "Head accessories DG-123 … DG-132 — resize and reseat", fill=INK, font=font(30))
-    draw.text((18, 58), "Every row was normalized at 520 px wide with its top at Y 129. Each is now sized and seated "
-                        "for its own design against the measured skull curve.", fill=DIM, font=font(16))
+    draw.text((18, 58), "Every row was normalized at 520 px wide with its top at Y 129, so bands crossed the face. Each now "
+                        "sits on the skull dome and clears the eyebrow line at Y 308-323 (marked red).", fill=DIM, font=font(16))
     for index, tile in enumerate(tiles):
         x = 18 + (index % cols) * (tile_w + 18)
         y = 96 + (index // cols) * (tile_h + 18)

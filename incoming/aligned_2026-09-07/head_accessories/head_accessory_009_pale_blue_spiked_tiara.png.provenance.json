@@ -23,21 +23,21 @@
       1533,
       619
     ],
-    "scale": 0.30658839,
-    "vertical_scale": 0.30658839,
+    "scale": 0.25440313,
+    "vertical_scale": 0.25440313,
     "anisotropic": false,
     "target_dimensions": [
-      470,
-      190
+      390,
+      157
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        392,
+        432,
         129,
-        861,
-        318
+        821,
+        285
       ]
     }
   },
@@ -47,19 +47,19 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
-  "output_sha256": "7fda4585716ad24eb9f8b24310119b5e085ca5243060aed6af4310fe68b3b521",
+  "output_sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
   "backlog_id": "DG-131",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "band on the hairline, points clear of the brow",
-    "target_width": 470,
+    "seat": "band on the skull dome, points well clear of the brow",
+    "target_width": 390,
     "top_y": 129,
     "target_height": null
   },
   "output_bounds": [
-    392,
+    432,
     129,
-    861,
-    318
+    821,
+    285
   ]
 }

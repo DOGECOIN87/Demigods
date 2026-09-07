@@ -10,8 +10,9 @@ anchor instead of the anchor the design actually needs.
   circlet: a forehead band seated at the top of the canvas floats above the
   skull, and 520 px is wider than the head (329 px) and the hair (419-529 px).
   Each row here carries the width and seat Y its own design needs, measured
-  against the base master's skull curve, so the head-contact band lands on the
-  hairline just above the eyebrow line at Y 308-323.
+  against the base master's skull curve, so the head-contact band sits on the
+  skull dome and clears the eyebrow line at Y 308-323 rather than crossing the
+  face.
 
 * Hand objects 001-005 were normalized against the retired shared hand anchor
   X 404, which `docs/qa/hand_object_recalibration_findings_2026-08-15.md` showed
@@ -53,44 +54,44 @@ POSE_LEAN_DEGREES = {2: 12.0, 4: 0.0}
 HEAD_ACCESSORIES: list[dict[str, Any]] = [
     dict(id="DG-123", name="head_accessory_001_gold_pointed_crown",
          source="head_accessory_001_gold_pointed_crown_regen1.png", alpha=32,
-         width=400, top_y=132, height=None,
-         seat="crown of the skull, band on the hairline"),
+         width=330, top_y=129, height=None,
+         seat="crown seated on the skull dome, band clear of the brow line"),
     dict(id="DG-124", name="head_accessory_002_large_gold_halo",
          source="head_accessory_002_large_gold_halo_regen2.png", alpha=32,
-         width=430, top_y=132, height=130,
+         width=400, top_y=129, height=115,
          seat="foreshortened ring hovering above the crown"),
     dict(id="DG-125", name="head_accessory_003_green_laurel",
          source="head_accessory_003_green_laurel_regen1.png", alpha=64,
-         width=450, top_y=132, height=None,
-         seat="wreath framing the skull above the brow"),
+         width=310, top_y=129, height=None,
+         seat="laurel worn on the crown of the head"),
     dict(id="DG-126", name="head_accessory_004_black_curved_horns",
          source="head_accessory_004_black_curved_horns_regen1.png", alpha=64,
-         width=440, top_y=129, height=None,
+         width=360, top_y=129, height=None,
          seat="horn bases on the upper skull"),
     dict(id="DG-127", name="head_accessory_005_silver_winged_circlet",
          source="head_accessory_005_silver_winged_circlet_regen1.png", alpha=80,
-         width=420, top_y=129, height=None,
-         seat="band on the hairline, wings at the temples"),
+         width=350, top_y=129, height=None,
+         seat="band on the skull dome, wings above the temples"),
     dict(id="DG-128", name="head_accessory_006_silver_ornate_tiara",
          source="head_accessory_006_silver_ornate_tiara_source2.png", alpha=64,
-         width=450, top_y=129, height=None,
-         seat="band on the hairline, side arcs past the ears"),
+         width=370, top_y=129, height=None,
+         seat="band on the skull dome, side arcs past the temples"),
     dict(id="DG-129", name="head_accessory_007_silver_drop_circlet",
          source="head_accessory_007_silver_drop_circlet_source2.png", alpha=64,
-         width=440, top_y=215, height=None,
-         seat="forehead band with the drop centred above the eye line"),
+         width=370, top_y=180, height=None,
+         seat="band on the skull dome, drop above the brow line"),
     dict(id="DG-130", name="head_accessory_008_translucent_white_veil",
          source="head_accessory_008_translucent_white_veil_source3.png", alpha=32,
-         width=480, top_y=129, height=None,
+         width=420, top_y=129, height=None,
          seat="draped from the crown, face window preserved"),
     dict(id="DG-131", name="head_accessory_009_pale_blue_spiked_tiara",
          source="head_accessory_009_pale_blue_spiked_tiara_source3.png", alpha=32,
-         width=470, top_y=129, height=None,
-         seat="band on the hairline, points clear of the brow"),
+         width=390, top_y=129, height=None,
+         seat="band on the skull dome, points well clear of the brow"),
     dict(id="DG-132", name="head_accessory_010_gold_low_circlet",
          source="head_accessory_010_gold_low_circlet_source2.png", alpha=32,
-         width=430, top_y=240, height=None,
-         seat="low headband seated on the hairline"),
+         width=360, top_y=200, height=None,
+         seat="headband on the skull dome above the brow line"),
 ]
 
 # backlog id -> (production name, pose, translation applied to the normalized layer)

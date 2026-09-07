@@ -23,6 +23,11 @@ band seated at Y 129 floats above the skull with nothing under it. DG-129 and DG
 hovering rings; DG-124's face-on circle read as a hoop the character stands inside rather
 than a halo.
 
+A first correction pass sized each design against the skull curve but still let most bands
+land on the eyebrow line at Y 308–323, which on a head this large reads as headwear slipping
+down over the face. The seats here are the second pass: every band now sits on the skull dome
+and clears the brow.
+
 **Hand objects — the retired shared anchor.** All five were normalized against
 `viewer_left_hand_anchor` X 404. `docs/qa/hand_object_recalibration_findings_2026-08-15.md`
 established that this coordinate sits at the wrist, not through the hand, and replaced it
@@ -44,29 +49,30 @@ Both axes still reduce, so the transform stays reduction-only.
 The five hand objects keep their already-normalized bytes and receive only the same integer
 translation and lean the registered family received.
 
-| ID | Asset | Change | New bounds |
-|---|---|---|---|
-| DG-123 | gold pointed crown | 520 → 400 wide, seat 129 → 132 | `[427,132,826,408]` |
-| DG-124 | large gold halo | 520 px circle → 430 × 130 ellipse above the crown | `[412,132,841,261]` |
-| DG-125 | green laurel | 520 → 450 wide, seat 129 → 132 | `[402,132,851,514]` |
-| DG-126 | black curved horns | 500 → 440 wide | `[407,129,846,525]` |
-| DG-127 | silver winged circlet | 520 → 420 wide | `[417,129,836,352]` |
-| DG-128 | silver ornate tiara | 520 → 450 wide | `[402,129,851,400]` |
-| DG-129 | silver drop circlet | 520 → 440 wide, seat 129 → 215 | `[407,215,846,369]` |
-| DG-130 | translucent white veil | unchanged — already seated | `[387,129,866,510]` |
-| DG-131 | pale-blue spiked tiara | 520 → 470 wide | `[392,129,861,318]` |
-| DG-132 | gold low circlet | 520 → 430 wide, seat 129 → 240 | `[412,240,841,363]` |
-| DG-133 | arcane staff | dx +34 to grip `(438,772)`, +12° lean | `[278,261,523,1101]` |
-| DG-134 | violet orb | dx +34, dy −30 to palm `(438,748)` | `[348,518,527,737]` |
-| DG-135 | dark wand | dx +34 to grip `(438,772)`, +12° lean | `[316,261,506,1049]` |
-| DG-136 | silver sword | dx +34 to grip `(438,772)`, +12° lean | `[300,142,490,921]` |
-| DG-137 | star spellbook | dx +34, dy −25 to palm `(438,748)` | `[323,587,552,747]` |
+| ID | Asset | Change | Lowest ink | New bounds |
+|---|---|---|---|---|
+| DG-123 | gold pointed crown | 520 → 330 wide | Y408 → Y356 | `[462,129,791,356]` |
+| DG-124 | large gold halo | 520 px circle → 400 × 115 ellipse above the crown | Y655 → Y243 | `[427,129,826,243]` |
+| DG-125 | green laurel | 520 → 310 wide | Y571 → Y392 | `[472,129,781,392]` |
+| DG-126 | black curved horns | 500 → 360 wide | Y580 → Y453 | `[447,129,806,453]` |
+| DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
+| DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
+| DG-129 | silver drop circlet | 520 → 370 wide, seat 129 → 180 | Y313 → Y310 | `[442,180,811,310]` |
+| DG-130 | translucent white veil | 480 → 420 wide | Y511 → Y462 | `[417,129,836,462]` |
+| DG-131 | pale-blue spiked tiara | 520 → 390 wide | Y339 → Y285 | `[432,129,821,285]` |
+| DG-132 | gold low circlet | 520 → 360 wide, seat 129 → 200 | Y279 → Y303 | `[447,200,806,303]` |
+| DG-133 | arcane staff | dx +34 to grip `(438,772)`, +12° lean | — | `[278,261,523,1101]` |
+| DG-134 | violet orb | dx +34, dy −30 to palm `(438,748)` | — | `[348,518,527,737]` |
+| DG-135 | dark wand | dx +34 to grip `(438,772)`, +12° lean | — | `[316,261,506,1049]` |
+| DG-136 | silver sword | dx +34 to grip `(438,772)`, +12° lean | — | `[300,142,490,921]` |
+| DG-137 | star spellbook | dx +34, dy −25 to palm `(438,748)` | — | `[323,587,552,747]` |
 
 ## Automated result
 
 All fifteen pass `python scripts/rig_gate_report.py --trait` and remain inside the locked
 bounds `[233,129,1021,1139]`. The head-accessory width ratios moved from 1.13–1.17× the base
-body down to 0.90–1.08×, so no accessory is now wider than the character wearing it.
+body down to 0.70–0.95×, so no accessory is now wider than the character wearing it, and
+every head-contact band clears the eyebrow line.
 
 ## Visual evidence
 
