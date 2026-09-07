@@ -44,7 +44,7 @@ HEAD_ROWS = [
     ("DG-123", "head_accessory_001_gold_pointed_crown", "520 -> 330 wide; lowest ink Y408 -> Y356"),
     ("DG-124", "head_accessory_002_large_gold_halo", "520 circle -> 400x115 ellipse; Y655 -> Y243"),
     ("DG-125", "head_accessory_003_green_laurel", "520 -> 310 wide; Y571 -> Y392"),
-    ("DG-126", "head_accessory_004_black_curved_horns", "500 -> 360 wide; Y580 -> Y453"),
+    ("DG-126", "head_accessory_004_black_curved_horns", "500 -> 240 wide; Y580 -> Y345, bases above the eyes"),
     ("DG-127", "head_accessory_005_silver_winged_circlet", "520 -> 350 wide; Y407 -> Y315"),
     ("DG-128", "head_accessory_006_silver_ornate_tiara", "520 -> 370 wide; Y444 -> Y352"),
     ("DG-129", "head_accessory_007_silver_drop_circlet", "520 -> 370 wide, seat 129 -> 180; Y313 -> Y310"),

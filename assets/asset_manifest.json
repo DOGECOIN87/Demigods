@@ -293,7 +293,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_body_001_neutral_master.png",
       "status": "production_ready",
-      "sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
+      "sha256": "6561c3186027398b830b40a40e5412fd715df44d2c22d1724733da07f26996ef",
       "dimensions": [
         1254,
         1254
@@ -312,16 +312,19 @@
         ],
         "postprocessing": [
           "native_integer_translation_x_plus_1_px_2026-08-15",
-          "hide_undergarment_repaint_2026-08-15"
+          "hide_undergarment_repaint_2026-08-15",
+          "hide_undergarment_fit_gap_repaint_2026-09-07"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
-        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
+        "undergarment_note": "Neutral tank/shorts repainted as skin where a paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. The 2026-09-07 pass covered outfits 006-010, which were registered after the original run and were never in its hardcoded pair list: outfit_007 exposed 3569 px, outfit_009 1362 px, outfit_008 749 px and outfit_010 344 px. Pairs are now read from config/compatibility.json so a newly bound outfit cannot be missed. Only repairable fit gaps were repainted - a region smaller than 40 px in an axis and touching genuine skin. Designed neckline openings are left alone (outfit_007's 82x77 chest V, outfit_009's 44x41 collar, outfit_008's neck), where the tank reads as a linen undershirt; covering those needs the outfit to carry its own inner garment, which is a re-render, not an edit. Alpha and every rig anchor are untouched: 1967 RGB pixels changed inside x543-698, y500-682.",
         "pre_translation_sha256": "390a4c78f18f01e51349c37433a0d1d20b61d5272cd6515eb7db97c335bf3e24",
         "post_translation_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
         "pre_geometry_correction_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
         "post_geometry_correction_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
+        "pre_fit_gap_repaint_sha256": "bb0ea083c7917ccf3db92ab0da0d1de0dfc08e04239645008a224a0065f88107",
+        "post_fit_gap_repaint_sha256": "6561c3186027398b830b40a40e5412fd715df44d2c22d1724733da07f26996ef"
       },
       "approved_on": "2026-07-26"
     },
@@ -3123,7 +3126,7 @@
         "intake_script": "scripts/bulk_intake.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145–DG-146."
+      "qa_report": "Approved production export for DG-145\u2013DG-146."
     },
     {
       "id": "aura_front_002",
@@ -3150,7 +3153,7 @@
         "intake_script": "scripts/bulk_intake.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145–DG-146."
+      "qa_report": "Approved production export for DG-145\u2013DG-146."
     }
   ],
   "approved_visual_references": [

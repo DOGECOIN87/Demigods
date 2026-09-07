@@ -42,27 +42,60 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import json
 from collections import deque
 from pathlib import Path
+from typing import Iterable
 
-from PIL import Image, ImageFilter
+from PIL import Image, ImageChops, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SEEDS = ((627, 560), (627, 780))
 TOLERANCE = 26      # generous: find enough garment to repaint
 VERIFY_TOLERANCE = 14  # strict: does *fabric* still show?
 MARGIN = 4  # px of repaint carried under the garment edge
+# A gap wider and taller than this is a neckline the outfit means to leave open,
+# not a fit error. outfit_007's chest V is 82 x 77 px and reads as a linen
+# undershirt; outfit_009's shoulder slivers are 14 x 24 and read as a mistake.
+# Repainting only the small gaps fixes the errors without redesigning a garment.
+MAX_FIT_GAP = 40
 RELAX = 60  # Laplace relaxation passes that remove fill-order streaking
 
-# Each base pose is locked 1:1 to its outfit in config/compatibility.json, so a
-# base only ever needs the gaps that its own outfit leaves.
-PAIRS = [
-    ("base_body_001_neutral_master.png", "outfit_001_celestial_scholar_pose_001.png"),
-    ("base_pose_002_viewer_left_vertical_grip.png", "outfit_002_storm_guardian_pose_002.png"),
-    ("base_pose_003_viewer_right_vertical_grip.png", "outfit_003_verdant_alchemist_pose_003.png"),
-    ("base_pose_004_viewer_left_palm_up.png", "outfit_004_lunar_oracle_pose_004.png"),
-    ("base_pose_005_centered_two_hand_grip.png", "outfit_005_sun_temple_pose_005.png"),
-]
+COMPATIBILITY = ROOT / "config" / "compatibility.json"
+
+
+def base_outfit_pairs(compatibility: Path = COMPATIBILITY) -> dict[str, list[str]]:
+    """Read each base's outfits out of the locked compatibility rules.
+
+    This was once a hardcoded list of five 1:1 pairs, which silently went stale
+    the moment outfits 006-010 were registered against the neutral master: four
+    of them expose the tank and none of them was in the list. Deriving the
+    mapping means a newly bound outfit is covered the next time this runs.
+
+    A base with several outfits needs the union of the gaps they leave. That is
+    safe because a region one outfit exposes is hidden by any outfit that covers
+    it, so repainting the union never shows through a garment.
+    """
+    rules = json.loads(compatibility.read_text())
+    pairs: dict[str, list[str]] = {}
+    for rule in rules.get("requires", []):
+        trait, required = rule.get("trait", ""), rule.get("requires", "")
+        if trait.startswith("outfit_") and required.startswith("base_"):
+            pairs.setdefault(required, []).append(trait)
+    return {base: sorted(outfits) for base, outfits in sorted(pairs.items())}
+
+
+def cover_alpha(outfits: Image.Image | Iterable[Image.Image]) -> Image.Image:
+    """The alpha a base is covered by: the minimum across every paired outfit."""
+    if isinstance(outfits, Image.Image):
+        return outfits.getchannel("A")
+    channels = [outfit.getchannel("A") for outfit in outfits]
+    if not channels:
+        raise ValueError("at least one outfit is required")
+    combined = channels[0]
+    for channel in channels[1:]:
+        combined = ImageChops.darker(combined, channel)
+    return combined
 
 
 def undergarment_mask(base: Image.Image, seeds=SEEDS, tolerance: int = TOLERANCE) -> Image.Image:
@@ -90,8 +123,8 @@ def undergarment_mask(base: Image.Image, seeds=SEEDS, tolerance: int = TOLERANCE
     return mask
 
 
-def exposed_count(base: Image.Image, outfit: Image.Image,
-                  tolerance: int = VERIFY_TOLERANCE) -> int:
+def exposed_count(base: Image.Image, outfit: Image.Image | Iterable[Image.Image],
+                  tolerance: int = VERIFY_TOLERANCE, max_gap: int | None = None) -> int:
     """Count pixels where the neutral garment is still visibly showing.
 
     This uses a tighter tolerance than the repaint mask, and the split matters.
@@ -101,38 +134,138 @@ def exposed_count(base: Image.Image, outfit: Image.Image,
     because the tank and skin are that close. Verifying at the mask's tolerance
     therefore re-flags the script's own correct output as a defect.
     """
-    mask = undergarment_mask(base, tolerance=tolerance).load()
-    oal = outfit.getchannel("A").load()
-    return sum(
-        1
-        for y in range(300, 1140)
-        for x in range(200, 1054)
-        if mask[x, y] > 0 and oal[x, y] < 40
-    )
+    garment = undergarment_mask(base, tolerance=tolerance)
+    ml = garment.load()
+    total = Image.new("L", base.size, 0)
+    for single in ([outfit] if isinstance(outfit, Image.Image) else list(outfit)):
+        sal = single.getchannel("A").load()
+        layer_gap = Image.new("L", base.size, 0)
+        lg = layer_gap.load()
+        for y in range(300, 1140):
+            for x in range(200, 1054):
+                if ml[x, y] > 0 and sal[x, y] < 40:
+                    lg[x, y] = 255
+        if max_gap is not None:
+            layer_gap = fit_gaps_only(layer_gap, max_gap, base=base, garment=garment)
+        total = ImageChops.lighter(total, layer_gap)
+    return sum(1 for value in total.tobytes() if value)
 
 
-def repaint(base: Image.Image, outfit: Image.Image, margin: int = MARGIN,
-            relax: int = RELAX) -> tuple[Image.Image, dict]:
+def fit_gaps_only(exposed: Image.Image, max_gap: int = MAX_FIT_GAP,
+                  base: Image.Image | None = None,
+                  garment: Image.Image | None = None) -> Image.Image:
+    """Keep only the exposed regions that are repairable fit gaps.
+
+    A region qualifies on two counts, and both are needed:
+
+    * It is smaller than `max_gap` in at least one axis. A region larger than
+      that in both is a neckline the outfit means to leave open - outfit_007's
+      chest V is 82 x 77 - not a place where the garment failed to meet the arm.
+    * Some of its boundary is genuine skin. The repaint sources colour from
+      adjacent skin, so a region enclosed entirely by more undergarment has
+      nothing to diffuse from and would only stall. outfit_008 has one such
+      region, 20 x 34 under the cloak's neck opening, which passes the size test
+      and still cannot be repainted.
+    """
+    from collections import deque as _deque
+
+    pixels = exposed.load()
+    width, height = exposed.size
+    mask_pixels = garment.load() if garment is not None else None
+    base_pixels = base.load() if base is not None else None
+    kept = Image.new("L", (width, height), 0)
+    kp = kept.load()
+    seen: set[tuple[int, int]] = set()
+    for y in range(height):
+        for x in range(width):
+            if pixels[x, y] == 0 or (x, y) in seen:
+                continue
+            queue = _deque([(x, y)])
+            component = []
+            while queue:
+                cx, cy = queue.popleft()
+                if (cx, cy) in seen:
+                    continue
+                if not (0 <= cx < width and 0 <= cy < height) or pixels[cx, cy] == 0:
+                    continue
+                seen.add((cx, cy))
+                component.append((cx, cy))
+                queue.extend(((cx + 1, cy), (cx - 1, cy), (cx, cy + 1), (cx, cy - 1)))
+            xs = [p[0] for p in component]
+            ys = [p[1] for p in component]
+            if (max(xs) - min(xs) + 1) > max_gap and (max(ys) - min(ys) + 1) > max_gap:
+                continue
+            if mask_pixels is not None and base_pixels is not None:
+                touches_skin = any(
+                    0 <= nx < width and 0 <= ny < height
+                    and pixels[nx, ny] == 0
+                    and base_pixels[nx, ny][3] > 200
+                    and mask_pixels[nx, ny] == 0
+                    for cx, cy in component
+                    for nx, ny in ((cx + 1, cy), (cx - 1, cy), (cx, cy + 1), (cx, cy - 1))
+                )
+                if not touches_skin:
+                    continue
+            for px_, py_ in component:
+                kp[px_, py_] = 255
+    return kept
+
+
+def gap_target(base: Image.Image, outfit: Image.Image | Iterable[Image.Image],
+               margin: int = MARGIN, max_gap: int = MAX_FIT_GAP) -> Image.Image:
+    """The region to repaint, decided once against the untouched base.
+
+    This has to be frozen before the first pass. Repainting changes the colours
+    the mask is grown from, so re-deriving the target on a later pass reclassifies
+    a designed neckline as a fit gap and lets the fill bleed into it - which
+    showed up as a blotchy patch inside outfit_007's chest V and a dirty smear in
+    outfit_009's collar.
+    """
+    garment = undergarment_mask(base)
+    ml = garment.load()
+    width, height = base.size
+    exposed = Image.new("L", (width, height), 0)
+    for single in ([outfit] if isinstance(outfit, Image.Image) else list(outfit)):
+        sal = single.getchannel("A").load()
+        layer_gap = Image.new("L", (width, height), 0)
+        lg = layer_gap.load()
+        for y in range(300, 1140):
+            for x in range(200, width - 200):
+                if ml[x, y] > 0 and sal[x, y] < 60:
+                    lg[x, y] = 255
+        if max_gap is not None:
+            layer_gap = fit_gaps_only(layer_gap, max_gap, base=base, garment=garment)
+        exposed = ImageChops.lighter(exposed, layer_gap)
+
+    grown = exposed.filter(ImageFilter.MaxFilter(2 * margin + 1))
+    gp, mp = grown.load(), ml
+    target = Image.new("L", (width, height), 0)
+    tp = target.load()
+    for y in range(300, 1140):
+        for x in range(200, width - 200):
+            if gp[x, y] > 0 and mp[x, y] > 0:
+                tp[x, y] = 255
+    return target
+
+
+def repaint(base: Image.Image, outfit: Image.Image | Iterable[Image.Image],
+            margin: int = MARGIN, relax: int = RELAX,
+            max_gap: int = MAX_FIT_GAP,
+            target_mask: Image.Image | None = None) -> tuple[Image.Image, dict]:
     result = base.copy()
     px = result.load()
     width, height = result.size
     mask = undergarment_mask(result)
     ml = mask.load()
-    oal = outfit.getchannel("A").load()
 
-    exposed = Image.new("L", (width, height), 0)
-    el = exposed.load()
-    for y in range(300, 1140):
-        for x in range(200, width - 200):
-            if ml[x, y] > 0 and oal[x, y] < 60:
-                el[x, y] = 255
-
-    grown = exposed.filter(ImageFilter.MaxFilter(2 * margin + 1)).load()
+    if target_mask is None:
+        target_mask = gap_target(base, outfit, margin, max_gap)
+    tp = target_mask.load()
     target = {
         (x, y)
         for y in range(300, 1140)
         for x in range(200, width - 200)
-        if grown[x, y] > 0 and ml[x, y] > 0
+        if tp[x, y] > 0
     }
 
     remaining = set(target)
@@ -197,23 +330,28 @@ def repaint(base: Image.Image, outfit: Image.Image, margin: int = MARGIN,
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--all", action="store_true", help="process every registered base/outfit pair")
+    parser.add_argument("--all", action="store_true",
+                        help="process every base against all outfits bound to it in config/compatibility.json")
     parser.add_argument("--base", type=Path)
-    parser.add_argument("--outfit", type=Path)
+    parser.add_argument("--outfit", type=Path, nargs="+")
     parser.add_argument("--in-place", action="store_true")
     parser.add_argument("--out-dir", type=Path)
     parser.add_argument("--margin", type=int, default=MARGIN)
     parser.add_argument("--relax", type=int, default=RELAX)
+    parser.add_argument("--max-gap", type=int, default=MAX_FIT_GAP,
+                        help="a gap wider AND taller than this is treated as a designed neckline "
+                             "opening and left alone; pass 0 to repaint every exposed pixel")
     parser.add_argument("--max-passes", type=int, default=6)
     args = parser.parse_args(argv)
 
     if args.all:
         pairs = [
-            (ROOT / "assets" / "base_bodies" / b, ROOT / "assets" / "outfits" / o)
-            for b, o in PAIRS
+            (ROOT / "assets" / "base_bodies" / base,
+             [ROOT / "assets" / "outfits" / outfit for outfit in outfits])
+            for base, outfits in base_outfit_pairs().items()
         ]
     elif args.base and args.outfit:
-        pairs = [(args.base, args.outfit)]
+        pairs = [(args.base, list(args.outfit))]
     else:
         print("error: pass --all, or both --base and --outfit")
         return 1
@@ -222,31 +360,41 @@ def main(argv: list[str] | None = None) -> int:
         print("error: pass --in-place or --out-dir")
         return 1
 
-    for base_path, outfit_path in pairs:
+    for base_path, outfit_paths in pairs:
         base = Image.open(base_path).convert("RGBA")
-        outfit = Image.open(outfit_path).convert("RGBA")
-        before = exposed_count(base, outfit)
+        outfit = [Image.open(path).convert("RGBA") for path in outfit_paths]
+        max_gap = args.max_gap or None
+        before = exposed_count(base, outfit, max_gap=max_gap)
 
         # Iterate to convergence. One pass is not always enough: the relaxation
         # can nudge a boundary pixel back across the mask's tolerance, and the
         # tank and skin are close enough in colour that "back across" is only a
         # few levels. Each pass re-detects whatever is still showing.
-        result, report = repaint(base, outfit, args.margin, args.relax)
-        after = exposed_count(result, outfit)
+        frozen = gap_target(base, outfit, args.margin, max_gap)
+        result, report = repaint(base, outfit, args.margin, args.relax, max_gap, frozen)
+        after = exposed_count(result, outfit, max_gap=max_gap)
         for _ in range(args.max_passes - 1):
             if after == 0:
                 break
-            result, extra = repaint(result, outfit, args.margin, args.relax)
+            result, extra = repaint(result, outfit, args.margin, args.relax, max_gap, frozen)
             report["repainted"] += extra["repainted"]
-            previous, after = after, exposed_count(result, outfit)
+            previous, after = after, exposed_count(result, outfit, max_gap=max_gap)
             if after >= previous:
                 break
+        if args.in_place and after >= before:
+            # Rewriting a registered base that gained nothing costs it a new
+            # SHA-256, a manifest entry and a re-QA for no visible change.
+            print(
+                f"{base_path.name}: exposed {before} -> {after}; unchanged, not rewritten"
+            )
+            continue
         destination = base_path if args.in_place else args.out_dir / base_path.name
         destination.parent.mkdir(parents=True, exist_ok=True)
         result.save(destination)
         print(
             f"{base_path.name}: exposed {before} -> {after}"
-            f"  (repainted {report['repainted']}/{report['target']} px)"
+            f"  (repainted {report['repainted']}/{report['target']} px"
+            f" across {len(outfit_paths)} outfit(s))"
         )
     return 0
 

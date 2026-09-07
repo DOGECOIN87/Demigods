@@ -1,8 +1,11 @@
 # Pending candidate realignment — 2026-09-07
 
-**Categories:** head accessories (DG-123 … DG-132), hand objects (DG-133 … DG-137)
-**Scope:** unregistered review candidates only. No manifest, backlog, ledger, compatibility,
-metadata, release, minting, or on-chain change has been performed.
+**Categories:** head accessories (DG-123 … DG-132), hand objects (DG-133 … DG-137), plus a
+correction to the registered base master's undergarment coverage.
+**Scope:** the fifteen candidates remain unregistered review candidates. The one registered
+change is `assets/base_bodies/base_body_001_neutral_master.png`, whose manifest entry, SHA-256
+and provenance are updated in the same commit. No backlog, ledger, compatibility, metadata,
+release, minting or on-chain change has been performed.
 
 ## Why this pass exists
 
@@ -54,7 +57,7 @@ translation and lean the registered family received.
 | DG-123 | gold pointed crown | 520 → 330 wide | Y408 → Y356 | `[462,129,791,356]` |
 | DG-124 | large gold halo | 520 px circle → 400 × 115 ellipse above the crown | Y655 → Y243 | `[427,129,826,243]` |
 | DG-125 | green laurel | 520 → 310 wide | Y571 → Y392 | `[472,129,781,392]` |
-| DG-126 | black curved horns | 500 → 360 wide | Y580 → Y453 | `[447,129,806,453]` |
+| DG-126 | black curved horns | 500 → 240 wide | Y580 → Y345 | `[507,129,746,345]` |
 | DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
 | DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
 | DG-129 | silver drop circlet | 520 → 370 wide, seat 129 → 180 | Y313 → Y310 | `[442,180,811,310]` |
@@ -74,12 +77,55 @@ bounds `[233,129,1021,1139]`. The head-accessory width ratios moved from 1.13–
 body down to 0.70–0.95×, so no accessory is now wider than the character wearing it, and
 every head-contact band clears the eyebrow line.
 
+## Undergarment coverage — the registered base master
+
+The base bodies wear a neutral tank and shorts so the mannequin is never nude, and outfits are
+meant to cover it. `scripts/hide_undergarment.py` existed for exactly this and carried a
+hardcoded list of five 1:1 base/outfit pairs. Outfits 006–010 were registered later, all bound
+to the neutral master, and none was in that list. Four of them left the tank showing:
+outfit_007 3569 px, outfit_009 1362 px, outfit_008 749 px, outfit_010 344 px.
+
+The pair list now comes from `config/compatibility.json`, so a newly bound outfit cannot be
+missed again, and a base with several outfits is repainted against the union of the gaps they
+leave — safe, because a region one outfit exposes is hidden by any outfit that covers it.
+
+Two kinds of exposure turned out to be showing, and only one is fixable by editing pixels.
+
+**Fit gaps — fixed.** Narrow strips where a garment fails to meet the arm or shoulder and a
+tank strap shows. They touch genuine skin, so colour diffuses into them cleanly. Both of
+outfit_009's shoulder slivers, outfit_010's entire exposure, and outfit_007's side strips are
+gone.
+
+**Neckline openings — left alone.** outfit_007's 82 × 77 chest V, outfit_009's 44 × 41 collar,
+outfit_008's neck. These are enclosed by more tank rather than skin, so there is nothing to
+diffuse from; forcing it produced a blotchy patch in the coat's V and a smear in the collar.
+The tank reads there as a linen undershirt. Covering them properly means the outfit carrying
+its own inner garment, which is a re-render, not an edit.
+
+| Outfit | Exposed before | After | Outcome |
+|---|---:|---:|---|
+| `outfit_007_brown_leather_long_coat` | 3569 | 2858 | side strips fixed; chest V left |
+| `outfit_008_olive_ragged_cloak` | 749 | 391 | upper gap fixed; enclosed neck opening left |
+| `outfit_009_navy_high_collar_coat` | 1362 | 467 | both shoulder slivers fixed; collar V left |
+| `outfit_010_celestial_robe_white_gold` | 344 | 0 | fully fixed |
+
+Alpha and every rig anchor are untouched: 1967 RGB pixels changed inside x 543–698, y 500–682,
+and the master still passes the full-figure rig gate at top-of-head Y 141, foot baseline
+Y 1139 and centre X 627. Only the neutral master was rewritten; the four pose variants gained
+nothing and were deliberately left at their existing bytes rather than taking a new SHA-256 for
+no visible change.
+
+`tests/test_hide_undergarment.py` now derives its pairs the same way and pins a per-outfit
+exposure ceiling, so a new outfit with no recorded ceiling fails until someone measures it.
+
 ## Visual evidence
 
 - `head_accessories_approval.png` — ten before/after pairs over the base master with the
   silver hair pair and an outfit.
 - `hand_objects_approval.png` — five before/after pairs in the object's own approved pose,
   plus four finished tokens built from the realigned candidates.
+- `undergarment_approval.png` — the four affected outfits before and after, each with a marked
+  pass showing fit gaps in red and designed neckline openings in amber.
 
 ## Disposition
 
