@@ -1,0 +1,38 @@
+{
+  "origin": "hand_object_contact_realignment",
+  "backlog_id": "DG-136",
+  "source_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+  "source_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
+  "source_bounds": [
+    344,
+    129,
+    463,
+    923
+  ],
+  "pose": 2,
+  "contact_point": [
+    438,
+    772
+  ],
+  "contact_feature": "wrapped grip through the closed fist",
+  "transform": {
+    "method": "integer_translation_then_lean_about_contact_point",
+    "dx": 34,
+    "dy": 0,
+    "lean_degrees": 12.0,
+    "resample": "bicubic"
+  },
+  "reason": "retired shared hand anchor X 404 replaced by the measured grip contact",
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "output_path": "incoming/aligned_2026-09-07/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+  "output_bounds": [
+    300,
+    142,
+    490,
+    921
+  ],
+  "output_sha256": "7ac50d2acc8d2d7f36c7467519307cb33744971517a6e2d1f8e967934e289176"
+}

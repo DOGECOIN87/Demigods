@@ -1,0 +1,65 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
+  "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      239,
+      339,
+      1677,
+      1562
+    ],
+    "crop_dimensions": [
+      1439,
+      1224
+    ],
+    "scale": 0.31271716,
+    "vertical_scale": 0.31271716,
+    "anisotropic": false,
+    "target_dimensions": [
+      450,
+      383
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 132,
+      "bounds": [
+        402,
+        132,
+        851,
+        514
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_003_green_laurel.png",
+  "output_sha256": "194cf1bf6e788baabb8e841f5d3627a1e8a37dde952923cfed9d91d83fa32958",
+  "backlog_id": "DG-125",
+  "alignment": {
+    "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+    "seat": "wreath framing the skull above the brow",
+    "target_width": 450,
+    "top_y": 132,
+    "target_height": null
+  },
+  "output_bounds": [
+    402,
+    132,
+    851,
+    514
+  ]
+}

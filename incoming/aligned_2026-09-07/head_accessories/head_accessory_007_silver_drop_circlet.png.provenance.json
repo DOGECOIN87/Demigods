@@ -1,0 +1,65 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
+  "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 64
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      67,
+      670,
+      1851,
+      1299
+    ],
+    "crop_dimensions": [
+      1785,
+      630
+    ],
+    "scale": 0.2464986,
+    "vertical_scale": 0.2464986,
+    "anisotropic": false,
+    "target_dimensions": [
+      440,
+      155
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 215,
+      "bounds": [
+        407,
+        215,
+        846,
+        369
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_007_silver_drop_circlet.png",
+  "output_sha256": "4bdf910407e59c26652f66f42e40bcaf02a63f256082e0b40b418d10f0b7986a",
+  "backlog_id": "DG-129",
+  "alignment": {
+    "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+    "seat": "forehead band with the drop centred above the eye line",
+    "target_width": 440,
+    "top_y": 215,
+    "target_height": null
+  },
+  "output_bounds": [
+    407,
+    215,
+    846,
+    369
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "origin": "hand_object_contact_realignment",
+  "backlog_id": "DG-135",
+  "source_path": "incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+  "source_sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398",
+  "source_bounds": [
+    369,
+    250,
+    438,
+    1055
+  ],
+  "pose": 2,
+  "contact_point": [
+    438,
+    772
+  ],
+  "contact_feature": "shaft centre through the closed grip",
+  "transform": {
+    "method": "integer_translation_then_lean_about_contact_point",
+    "dx": 34,
+    "dy": 0,
+    "lean_degrees": 12.0,
+    "resample": "bicubic"
+  },
+  "reason": "retired shared hand anchor X 404 replaced by the measured grip contact",
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "output_path": "incoming/aligned_2026-09-07/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+  "output_bounds": [
+    316,
+    261,
+    506,
+    1049
+  ],
+  "output_sha256": "f091361a5526398d1090ab3a236ffae8726c138c73343535337710505ec67f51"
+}

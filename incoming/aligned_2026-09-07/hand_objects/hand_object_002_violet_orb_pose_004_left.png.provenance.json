@@ -1,0 +1,38 @@
+{
+  "origin": "hand_object_contact_realignment",
+  "backlog_id": "DG-134",
+  "source_path": "incoming/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+  "source_sha256": "203d7cada07015dda3133229245af1675ce4f76c41ec00c461d1644001f08b41",
+  "source_bounds": [
+    314,
+    548,
+    493,
+    767
+  ],
+  "pose": 4,
+  "contact_point": [
+    438,
+    748
+  ],
+  "contact_feature": "cradle base seated on the open palm, fingers visible below",
+  "transform": {
+    "method": "integer_translation_then_lean_about_contact_point",
+    "dx": 34,
+    "dy": -30,
+    "lean_degrees": 0.0,
+    "resample": "none"
+  },
+  "reason": "retired shared hand anchor X 404 replaced by the measured grip contact",
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "output_path": "incoming/aligned_2026-09-07/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+  "output_bounds": [
+    348,
+    518,
+    527,
+    737
+  ],
+  "output_sha256": "361790bc1c07434cf86e620b7fad66c151df96bc36f59cd2cbdc7c0b53f4a163"
+}

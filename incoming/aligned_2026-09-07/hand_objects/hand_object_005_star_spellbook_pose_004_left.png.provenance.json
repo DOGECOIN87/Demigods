@@ -1,0 +1,38 @@
+{
+  "origin": "hand_object_contact_realignment",
+  "backlog_id": "DG-137",
+  "source_path": "incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+  "source_sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8",
+  "source_bounds": [
+    289,
+    612,
+    518,
+    772
+  ],
+  "pose": 4,
+  "contact_point": [
+    438,
+    748
+  ],
+  "contact_feature": "lower cover resting across the palm, fingers visible below",
+  "transform": {
+    "method": "integer_translation_then_lean_about_contact_point",
+    "dx": 34,
+    "dy": -25,
+    "lean_degrees": 0.0,
+    "resample": "none"
+  },
+  "reason": "retired shared hand anchor X 404 replaced by the measured grip contact",
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "output_path": "incoming/aligned_2026-09-07/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+  "output_bounds": [
+    323,
+    587,
+    552,
+    747
+  ],
+  "output_sha256": "8ea98111062c79f73c61c7ac0337977bf9880bacaaaf1a06aebf8f062b7d97e4"
+}

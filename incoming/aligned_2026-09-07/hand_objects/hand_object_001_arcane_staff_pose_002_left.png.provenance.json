@@ -1,0 +1,38 @@
+{
+  "origin": "hand_object_contact_realignment",
+  "backlog_id": "DG-133",
+  "source_path": "incoming/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+  "source_sha256": "dfde3ecaf3a24af456123511396134ee99e99f68bb224ba85e2392edff93b175",
+  "source_bounds": [
+    324,
+    250,
+    483,
+    1108
+  ],
+  "pose": 2,
+  "contact_point": [
+    438,
+    772
+  ],
+  "contact_feature": "shaft centre through the closed grip",
+  "transform": {
+    "method": "integer_translation_then_lean_about_contact_point",
+    "dx": 34,
+    "dy": 0,
+    "lean_degrees": 12.0,
+    "resample": "bicubic"
+  },
+  "reason": "retired shared hand anchor X 404 replaced by the measured grip contact",
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "output_path": "incoming/aligned_2026-09-07/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+  "output_bounds": [
+    278,
+    261,
+    523,
+    1101
+  ],
+  "output_sha256": "e99b2ccbfd0108d83b1774499b05cb0bdd657f9736224ab1a56ce02c3daf8fed"
+}

@@ -1,0 +1,65 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/head_accessories/head_accessory_009_pale_blue_spiked_tiara_source3.png",
+  "source_sha256": "2866dcb1e8003a1010ff7aa17de8928acdaa0b3c1782c66db041692c572e268e",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      190,
+      602,
+      1722,
+      1220
+    ],
+    "crop_dimensions": [
+      1533,
+      619
+    ],
+    "scale": 0.30658839,
+    "vertical_scale": 0.30658839,
+    "anisotropic": false,
+    "target_dimensions": [
+      470,
+      190
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 129,
+      "bounds": [
+        392,
+        129,
+        861,
+        318
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+  "output_sha256": "7fda4585716ad24eb9f8b24310119b5e085ca5243060aed6af4310fe68b3b521",
+  "backlog_id": "DG-131",
+  "alignment": {
+    "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+    "seat": "band on the hairline, points clear of the brow",
+    "target_width": 470,
+    "top_y": 129,
+    "target_height": null
+  },
+  "output_bounds": [
+    392,
+    129,
+    861,
+    318
+  ]
+}

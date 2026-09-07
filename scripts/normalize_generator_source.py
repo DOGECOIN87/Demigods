@@ -89,6 +89,7 @@ def normalize(
     top_y: int,
     alpha_threshold: int = 8,
     center_x: int = CENTER_X,
+    target_height: int | None = None,
 ) -> tuple[Image.Image, dict[str, Any]]:
     has_source_alpha, source_mode, source_size = has_alpha(source_path)
     if not has_source_alpha:
@@ -117,7 +118,21 @@ def normalize(
         raise ValueError(
             f"normalization allows reduction only; requested scale {scale:.4f} would not reduce source content"
         )
-    target_height = max(1, round(content.height * scale))
+    if target_height is None:
+        target_height = max(1, round(content.height * scale))
+        vertical_scale = scale
+    else:
+        # Anisotropic reduction foreshortens a flat ring or disc that the generator
+        # drew face-on into the ellipse the locked front-facing rig requires. Both
+        # axes must still reduce, so no detail is invented on either one.
+        if target_height <= 0:
+            raise ValueError("target height must be positive")
+        vertical_scale = target_height / content.height
+        if vertical_scale >= 1.0:
+            raise ValueError(
+                f"normalization allows reduction only; requested vertical scale {vertical_scale:.4f} "
+                "would not reduce source content"
+            )
     scaled = resize_premultiplied(content, target_width, target_height)
 
     out_left = round(center_x - target_width / 2)
@@ -132,9 +147,13 @@ def normalize(
 
     output = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
     output.alpha_composite(scaled, (out_left, out_top))
+    try:
+        recorded_source = source_path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        recorded_source = source_path.as_posix()
     report: dict[str, Any] = {
         "origin": "generator_source_transform",
-        "source_path": source_path.relative_to(ROOT).as_posix(),
+        "source_path": recorded_source,
         "source_sha256": sha256_file(source_path),
         "source_dimensions": list(source_size),
         "source_mode": source_mode,
@@ -144,6 +163,8 @@ def normalize(
             "source_visible_bounds": [left, top, right, bottom],
             "crop_dimensions": [content.width, content.height],
             "scale": round(scale, 8),
+            "vertical_scale": round(vertical_scale, 8),
+            "anisotropic": vertical_scale != scale,
             "target_dimensions": [target_width, target_height],
             "placement": {"center_x": center_x, "top_y": top_y, "bounds": [out_left, out_top, out_right, out_bottom]},
         },
@@ -159,6 +180,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", type=Path, required=True, help="normalized review-candidate PNG")
     parser.add_argument("--target-width", type=int, required=True, help="final trait width in pixels; must downscale source content")
     parser.add_argument("--top-y", type=int, required=True, help="locked-canvas top coordinate for normalized content")
+    parser.add_argument(
+        "--target-height", type=int, default=None,
+        help="final trait height in pixels; omit to keep the source aspect ratio. Supplying it foreshortens "
+             "a face-on ring or disc into the ellipse the front-facing rig needs; both axes must still reduce",
+    )
     parser.add_argument("--center-x", type=int, default=CENTER_X)
     parser.add_argument(
         "--alpha-threshold", type=int, default=8,
@@ -173,10 +199,14 @@ def main(argv: list[str] | None = None) -> int:
         top_y=args.top_y,
         alpha_threshold=args.alpha_threshold,
         center_x=args.center_x,
+        target_height=args.target_height,
     )
     args.out.parent.mkdir(parents=True, exist_ok=True)
     output.save(args.out)
-    report["output_path"] = args.out.relative_to(ROOT).as_posix() if args.out.is_absolute() else args.out.as_posix()
+    try:
+        report["output_path"] = args.out.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        report["output_path"] = args.out.as_posix()
     report["output_sha256"] = sha256_file(args.out)
     report_path = args.report or args.out.with_suffix(args.out.suffix + ".provenance.json")
     report_path.parent.mkdir(parents=True, exist_ok=True)
