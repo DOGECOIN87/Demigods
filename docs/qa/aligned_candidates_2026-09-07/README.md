@@ -109,6 +109,32 @@ crown with nothing under it, so the piece read as two curtains either side of th
 than a veil. At 460 px seated at Y 180 the arch rests on the crown and the drapes frame the
 face.
 
+### Brow clearance, and a gate for it
+
+Widening the circlets grew their height with their width, which dropped their lowest row and
+put them back over the face — the crown's band ended up cutting across both upper eyelids. The
+three circlets and the crown are now held to a seat that clears the eyes, using the
+`--target-height` foreshortening where the Y 129 ceiling left no room to simply move up: a band
+wrapping a head is foreshortened anyway, so compressing it is what the geometry already implies.
+
+`tests/test_face_occlusion.py` makes this measurable rather than a matter of review. It asserts
+that no head accessory puts opaque pixels over the measured eye regions, and pins each trait's
+approved lowest row so a future widening fails there first, before it reaches the eyes. The
+veil carries its own recorded ceiling because its sheer panels legitimately drape past the face.
+
+| ID | Width | Lowest ink |
+|---|---:|---:|
+| DG-123 crown | 389 | Y318 |
+| DG-124 halo | 396 | Y243 |
+| DG-125 laurel | 240 | Y332 |
+| DG-126 horns | 200 | Y308 |
+| DG-127 winged circlet | 440 | Y318 |
+| DG-128 ornate tiara | 370 | Y352 |
+| DG-129 drop circlet | 420 | Y351 |
+| DG-130 veil | 458 | Y544 |
+| DG-131 spiked tiara | 390 | Y285 |
+| DG-132 gold circlet | 418 | Y319 |
+
 ### Circlet scale
 
 Correcting the seats left the three circlets too narrow: the head is 326 px wide and the hair

@@ -24,20 +24,20 @@
       630
     ],
     "scale": 0.23529412,
-    "vertical_scale": 0.23529412,
-    "anisotropic": false,
+    "vertical_scale": 0.19047619,
+    "anisotropic": true,
     "target_dimensions": [
       420,
-      148
+      120
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 250,
+      "top_y": 232,
       "bounds": [
         417,
-        250,
+        232,
         836,
-        397
+        351
       ]
     }
   },
@@ -47,20 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_007_silver_drop_circlet.png",
-  "output_sha256": "1608bda49dc9319576dd0a659b5c977e9363fa2823b301a1efea225977684fcd",
+  "output_sha256": "bc6b8bff2178bbb1b7f4f783b452f0dd4b8dcbadd5b730dcc948dc4348ccce2d",
   "backlog_id": "DG-129",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "band spanning the hair with its arms tucked into it at the temples, drop centred",
+    "seat": "band spanning the hair with its arms tucked into it, drop centred above the eyes",
     "target_width": 420,
-    "top_y": 250,
-    "target_height": null,
+    "top_y": 232,
+    "target_height": 120,
     "front_arc_only": false
   },
   "output_bounds": [
     417,
-    250,
+    232,
     836,
-    397
+    351
   ]
 }

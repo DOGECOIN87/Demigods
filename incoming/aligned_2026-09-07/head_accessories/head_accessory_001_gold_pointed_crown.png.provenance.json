@@ -23,21 +23,21 @@
       1511,
       1045
     ],
-    "scale": 0.21839841,
-    "vertical_scale": 0.21839841,
-    "anisotropic": false,
+    "scale": 0.25810721,
+    "vertical_scale": 0.18181818,
+    "anisotropic": true,
     "target_dimensions": [
-      330,
-      228
+      390,
+      190
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        462,
+        432,
         129,
-        791,
-        356
+        821,
+        318
       ]
     }
   },
@@ -47,20 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_001_gold_pointed_crown.png",
-  "output_sha256": "d2e89ae22edafc36c270d67b2c535f7eead9e04b94a941d68d250288131176ed",
+  "output_sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b",
   "backlog_id": "DG-123",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "crown seated on the skull dome, band clear of the brow line",
-    "target_width": 330,
+    "seat": "crown seated on the skull dome, band clear of the eyes",
+    "target_width": 390,
     "top_y": 129,
-    "target_height": null,
+    "target_height": 190,
     "front_arc_only": false
   },
   "output_bounds": [
-    462,
+    432,
     129,
-    791,
-    356
+    821,
+    318
   ]
 }
