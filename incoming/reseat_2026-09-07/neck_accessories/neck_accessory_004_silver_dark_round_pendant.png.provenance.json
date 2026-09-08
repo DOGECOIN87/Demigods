@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg050_silver_dark_pendant_source.png",
+  "source_sha256": "15cc9bb58b147cd1c3b3c3c9eb2b51f28cc84fdb71f74c6f36744052ce0e40b1",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      491,
+      506,
+      1436,
+      1343
+    ],
+    "crop_dimensions": [
+      946,
+      838
+    ],
+    "scale": 0.18498943,
+    "vertical_scale": 0.18498943,
+    "anisotropic": false,
+    "target_dimensions": [
+      175,
+      155
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 482,
+      "bounds": [
+        540,
+        482,
+        714,
+        636
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+  "output_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
+  "asset_id": "neck_accessory_004",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "chain at the throat, pendant on the chest",
+    "target_width": 175,
+    "top_y": 482
+  },
+  "output_bounds": [
+    540,
+    482,
+    714,
+    636
+  ]
+}

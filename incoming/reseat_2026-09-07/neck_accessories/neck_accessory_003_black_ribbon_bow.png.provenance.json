@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/neck_accessories/dg049_black_ribbon_bow_source.png",
+  "source_sha256": "a277d1628e2a060b1fef673f4cf3a6516397d06695ca21c5104c2e7ac3b8c31e",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      611,
+      638,
+      1307,
+      1288
+    ],
+    "crop_dimensions": [
+      697,
+      651
+    ],
+    "scale": 0.24390244,
+    "vertical_scale": 0.24390244,
+    "anisotropic": false,
+    "target_dimensions": [
+      170,
+      159
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 482,
+      "bounds": [
+        542,
+        482,
+        711,
+        640
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+  "output_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
+  "asset_id": "neck_accessory_003",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "bow tied at the throat",
+    "target_width": 170,
+    "top_y": 482
+  },
+  "output_bounds": [
+    542,
+    482,
+    711,
+    640
+  ]
+}

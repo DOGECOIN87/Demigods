@@ -2355,7 +2355,7 @@
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
       "status": "production_ready",
-      "sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
+      "sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d",
       "dimensions": [
         1254,
         1254
@@ -2365,24 +2365,82 @@
       "backlog_id": "DG-021",
       "qa_composite": "docs/qa/composites/back_accessory_001_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Pale silver feathered wing pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg021_silver_feathered_wings_source.png",
+        "source_sha256": "17cab0d0b7d909137b1a70425ef6eef422ec8a5b0a31c189c6c4c1f90b9a92ce",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            120,
+            447,
+            1803,
+            1272
+          ],
+          "crop_dimensions": [
+            1684,
+            826
+          ],
+          "scale": 0.45130641,
+          "vertical_scale": 0.45130641,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            373
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 374,
+            "bounds": [
+              247,
+              374,
+              1006,
+              746
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 374
+        },
+        "output_bounds": [
+          247,
+          374,
+          1006,
+          746
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
+        "post_anatomy_reseat_sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "back_accessory_002",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
       "status": "production_ready",
-      "sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2",
+      "sha256": "37350f99bd4fa18d9e3341e443c31ca7f0333f0dda504a072b2c7b64ff96a91b",
       "dimensions": [
         1254,
         1254
@@ -2392,24 +2450,82 @@
       "backlog_id": "DG-022",
       "qa_composite": "docs/qa/composites/back_accessory_002_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Black-violet bat wing pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg022_black_violet_bat_wings_source.png",
+        "source_sha256": "328b956cd5a3b6c6cd90956af7a24db52034115d070085fb738936e861b19155",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            136,
+            525,
+            1778,
+            1382
+          ],
+          "crop_dimensions": [
+            1643,
+            858
+          ],
+          "scale": 0.46256847,
+          "vertical_scale": 0.46256847,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            397
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 362,
+            "bounds": [
+              247,
+              362,
+              1006,
+              758
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 362
+        },
+        "output_bounds": [
+          247,
+          362,
+          1006,
+          758
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "85a6502fd7fce1d57b5cc6de9e2996340bc272aa6f33207e2aa5886d0fad08b2",
+        "post_anatomy_reseat_sha256": "37350f99bd4fa18d9e3341e443c31ca7f0333f0dda504a072b2c7b64ff96a91b"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "back_accessory_003",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
       "status": "production_ready",
-      "sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278",
+      "sha256": "454554e0dbb99b84710875706454ff2d5571cbb53ac048f2a70b8348229e4132",
       "dimensions": [
         1254,
         1254
@@ -2419,17 +2535,75 @@
       "backlog_id": "DG-023",
       "qa_composite": "docs/qa/composites/back_accessory_003_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Translucent cyan fairy wing pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg023_cyan_fairy_wings_source.png",
+        "source_sha256": "973fb2475bc84e11f85fdf9d0e4aec732bdfbc6081ced37424a71fd73261371f",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            84,
+            317,
+            1832,
+            1601
+          ],
+          "crop_dimensions": [
+            1749,
+            1285
+          ],
+          "scale": 0.43453402,
+          "vertical_scale": 0.43453402,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            558
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 300,
+            "bounds": [
+              247,
+              300,
+              1006,
+              857
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 300
+        },
+        "output_bounds": [
+          247,
+          300,
+          1006,
+          857
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "29a7e42e33419826d1b3f29fbf98ada18480a1c1f66f058be2200a84c16a8278",
+        "post_anatomy_reseat_sha256": "454554e0dbb99b84710875706454ff2d5571cbb53ac048f2a70b8348229e4132"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "back_accessory_004",
@@ -2490,7 +2664,7 @@
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
       "status": "production_ready",
-      "sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
+      "sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115",
       "dimensions": [
         1254,
         1254
@@ -2500,24 +2674,82 @@
       "backlog_id": "DG-026",
       "qa_composite": "docs/qa/composites/back_accessory_006_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Pale-blue crystalline wing/mantle pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg026_pale_blue_crystal_wings_source_retry.png",
+        "source_sha256": "5dfcf0da2317a8e1418ed446a9e153c22b2dc16776788b75289cf2b7a268eb08",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            180,
+            374,
+            1739,
+            1520
+          ],
+          "crop_dimensions": [
+            1560,
+            1147
+          ],
+          "scale": 0.48717949,
+          "vertical_scale": 0.48717949,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            559
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 300,
+            "bounds": [
+              247,
+              300,
+              1006,
+              858
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 300
+        },
+        "output_bounds": [
+          247,
+          300,
+          1006,
+          858
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
+        "post_anatomy_reseat_sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "back_accessory_007",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
       "status": "production_ready",
-      "sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
+      "sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6",
       "dimensions": [
         1254,
         1254
@@ -2527,24 +2759,82 @@
       "backlog_id": "DG-027",
       "qa_composite": "docs/qa/composites/back_accessory_007_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Luminous gold feathered wing pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg027_gold_luminous_wings_source_retry.png",
+        "source_sha256": "408ae7be0bb5b1a4a79b1357acea6c606b29edc18a44f77d92e9a9583d79f7ed",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            133,
+            471,
+            1786,
+            1405
+          ],
+          "crop_dimensions": [
+            1654,
+            935
+          ],
+          "scale": 0.45949214,
+          "vertical_scale": 0.45949214,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            430
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 345,
+            "bounds": [
+              247,
+              345,
+              1006,
+              774
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 345
+        },
+        "output_bounds": [
+          247,
+          345,
+          1006,
+          774
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
+        "post_anatomy_reseat_sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "back_accessory_008",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
       "status": "production_ready",
-      "sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
+      "sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da",
       "dimensions": [
         1254,
         1254
@@ -2554,24 +2844,82 @@
       "backlog_id": "DG-028",
       "qa_composite": "docs/qa/composites/back_accessory_008_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Olive-silver mechanical/spiked wing pair",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/reseat_registered_accessories.py",
+        "source_path": "images/trait_candidates/back_accessories/dg028_olive_silver_spiked_wings_source_retry.png",
+        "source_sha256": "945640e68f75a7415d285ae447e02f2e97b6721fe8c9bc84007322352861a63e",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            112,
+            502,
+            1806,
+            1340
+          ],
+          "crop_dimensions": [
+            1695,
+            839
+          ],
+          "scale": 0.44837758,
+          "vertical_scale": 0.44837758,
+          "anisotropic": false,
+          "target_dimensions": [
+            760,
+            376
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 372,
+            "bounds": [
+              247,
+              372,
+              1006,
+              747
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "wing pair spread from the upper back",
+          "target_width": 760,
+          "top_y": 372
+        },
+        "output_bounds": [
+          247,
+          372,
+          1006,
+          747
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "anatomy_reseat_2026-09-07"
+        ],
+        "pre_anatomy_reseat_sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
+        "post_anatomy_reseat_sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_006-008_review.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_001",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
       "status": "production_ready",
-      "sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
+      "sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
       "dimensions": [
         1254,
         1254
@@ -2581,31 +2929,87 @@
       "backlog_id": "DG-047",
       "qa_composite": "docs/qa/composites/neck_accessory_001_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Plain black curved choker",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
         "post_geometry_correction_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg047_black_choker_source.png",
+        "source_sha256": "eb22a1a1c39b2a3dd42c73f864caff75d8f2fbfa55b243cb0c2b1ab642d94c4b",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            681,
+            867,
+            1238,
+            1058
+          ],
+          "crop_dimensions": [
+            558,
+            192
+          ],
+          "scale": 0.3046595,
+          "vertical_scale": 0.3046595,
+          "anisotropic": false,
+          "target_dimensions": [
+            170,
+            58
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              542,
+              482,
+              711,
+              539
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "band ringing the throat",
+          "target_width": 170,
+          "top_y": 482
+        },
+        "output_bounds": [
+          542,
+          482,
+          711,
+          539
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
+        "post_anatomy_reseat_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_002",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
       "status": "production_ready",
-      "sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
+      "sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
       "dimensions": [
         1254,
         1254
@@ -2615,31 +3019,87 @@
       "backlog_id": "DG-048",
       "qa_composite": "docs/qa/composites/neck_accessory_002_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Warm-gold choker with dark-blue drop",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
         "post_geometry_correction_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg048_gold_blue_drop_choker_source.png",
+        "source_sha256": "7dd6cdf530177b8499dbc2c2bd1aaf239944e7d346038b8f26d22f0ea5870ea1",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            518,
+            650,
+            1400,
+            1236
+          ],
+          "crop_dimensions": [
+            883,
+            587
+          ],
+          "scale": 0.198188,
+          "vertical_scale": 0.198188,
+          "anisotropic": false,
+          "target_dimensions": [
+            175,
+            116
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              540,
+              482,
+              714,
+              597
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "band at the throat with the drop on the upper chest",
+          "target_width": 175,
+          "top_y": 482
+        },
+        "output_bounds": [
+          540,
+          482,
+          714,
+          597
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
+        "post_anatomy_reseat_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_003",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
+      "sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
       "dimensions": [
         1254,
         1254
@@ -2649,31 +3109,87 @@
       "backlog_id": "DG-049",
       "qa_composite": "docs/qa/composites/neck_accessory_003_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Black ribbon bow",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
         "post_geometry_correction_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg049_black_ribbon_bow_source.png",
+        "source_sha256": "a277d1628e2a060b1fef673f4cf3a6516397d06695ca21c5104c2e7ac3b8c31e",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            611,
+            638,
+            1307,
+            1288
+          ],
+          "crop_dimensions": [
+            697,
+            651
+          ],
+          "scale": 0.24390244,
+          "vertical_scale": 0.24390244,
+          "anisotropic": false,
+          "target_dimensions": [
+            170,
+            159
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              542,
+              482,
+              711,
+              640
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "bow tied at the throat",
+          "target_width": 170,
+          "top_y": 482
+        },
+        "output_bounds": [
+          542,
+          482,
+          711,
+          640
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
+        "post_anatomy_reseat_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_004",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
       "status": "production_ready",
-      "sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
+      "sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
       "dimensions": [
         1254,
         1254
@@ -2683,31 +3199,87 @@
       "backlog_id": "DG-050",
       "qa_composite": "docs/qa/composites/neck_accessory_004_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Fine silver chain with dark round pendant",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
         "post_geometry_correction_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg050_silver_dark_pendant_source.png",
+        "source_sha256": "15cc9bb58b147cd1c3b3c3c9eb2b51f28cc84fdb71f74c6f36744052ce0e40b1",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            491,
+            506,
+            1436,
+            1343
+          ],
+          "crop_dimensions": [
+            946,
+            838
+          ],
+          "scale": 0.18498943,
+          "vertical_scale": 0.18498943,
+          "anisotropic": false,
+          "target_dimensions": [
+            175,
+            155
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              540,
+              482,
+              714,
+              636
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "chain at the throat, pendant on the chest",
+          "target_width": 175,
+          "top_y": 482
+        },
+        "output_bounds": [
+          540,
+          482,
+          714,
+          636
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
+        "post_anatomy_reseat_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_005",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
       "status": "production_ready",
-      "sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
+      "sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
       "dimensions": [
         1254,
         1254
@@ -2717,31 +3289,87 @@
       "backlog_id": "DG-051",
       "qa_composite": "docs/qa/composites/neck_accessory_005_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Silver V-chain with long navy pendant",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
         "post_geometry_correction_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg051_silver_navy_pendant_source.png",
+        "source_sha256": "2da66e07a015e565e9866c4a9bca06f00d340e5c6e341b92511e182132d9e174",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            693,
+            512,
+            1227,
+            1380
+          ],
+          "crop_dimensions": [
+            535,
+            869
+          ],
+          "scale": 0.3271028,
+          "vertical_scale": 0.3271028,
+          "anisotropic": false,
+          "target_dimensions": [
+            175,
+            284
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 478,
+            "bounds": [
+              540,
+              478,
+              714,
+              761
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "chain at the throat, long pendant down the chest",
+          "target_width": 175,
+          "top_y": 478
+        },
+        "output_bounds": [
+          540,
+          478,
+          714,
+          761
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
+        "post_anatomy_reseat_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_006",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
       "status": "production_ready",
-      "sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
+      "sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
       "dimensions": [
         1254,
         1254
@@ -2751,31 +3379,87 @@
       "backlog_id": "DG-052",
       "qa_composite": "docs/qa/composites/neck_accessory_006_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Fine silver chain with pale circular charm",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
         "post_geometry_correction_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg052_silver_pale_circle_charm_source.png",
+        "source_sha256": "348181319841f7d378e2e0d70f4951ec7dc4bfccead4865ea0f8d54500f26aa7",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            517,
+            547,
+            1403,
+            1222
+          ],
+          "crop_dimensions": [
+            887,
+            676
+          ],
+          "scale": 0.19729425,
+          "vertical_scale": 0.19729425,
+          "anisotropic": false,
+          "target_dimensions": [
+            175,
+            133
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              540,
+              482,
+              714,
+              614
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "chain at the throat, charm on the chest",
+          "target_width": 175,
+          "top_y": 482
+        },
+        "output_bounds": [
+          540,
+          482,
+          714,
+          614
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
+        "post_anatomy_reseat_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_007",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
       "status": "production_ready",
-      "sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
+      "sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
       "dimensions": [
         1254,
         1254
@@ -2785,31 +3469,87 @@
       "backlog_id": "DG-053",
       "qa_composite": "docs/qa/composites/neck_accessory_007_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Gold chain with long teardrop pendant",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
         "post_geometry_correction_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg053_gold_teardrop_pendant_source.png",
+        "source_sha256": "fc8008216f9919e2ea04b926e58688bc6dff396979b57c82aa1fdd86f42e3c4f",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            507,
+            553,
+            1433,
+            1323
+          ],
+          "crop_dimensions": [
+            927,
+            771
+          ],
+          "scale": 0.18878101,
+          "vertical_scale": 0.18878101,
+          "anisotropic": false,
+          "target_dimensions": [
+            175,
+            146
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              540,
+              482,
+              714,
+              627
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "chain at the throat, teardrop on the chest",
+          "target_width": 175,
+          "top_y": 482
+        },
+        "output_bounds": [
+          540,
+          482,
+          714,
+          627
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
+        "post_anatomy_reseat_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "neck_accessory_008",
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
+      "sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
       "dimensions": [
         1254,
         1254
@@ -2819,24 +3559,80 @@
       "backlog_id": "DG-054",
       "qa_composite": "docs/qa/composites/neck_accessory_008_over_base.png",
       "provenance": {
-        "origin": "native_image_generation",
+        "origin": "generator_source_transform",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Violet ribbon bow",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
+        "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15"
+          "reduction_only_neck_refit_2026-08-15",
+          "anatomy_reseat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
         "post_geometry_correction_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15"
+        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
+        "source_path": "images/trait_candidates/neck_accessories/dg054_violet_ribbon_bow_source.png",
+        "source_sha256": "281bf22bc05215a5eae84f8a38c5f342b71bcdba0bc5814ea1b3eb8899a27867",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            650,
+            736,
+            1261,
+            1193
+          ],
+          "crop_dimensions": [
+            612,
+            458
+          ],
+          "scale": 0.27777778,
+          "vertical_scale": 0.27777778,
+          "anisotropic": false,
+          "target_dimensions": [
+            170,
+            127
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 482,
+            "bounds": [
+              542,
+              482,
+              711,
+              608
+            ]
+          }
+        },
+        "alignment": {
+          "reason": "re-seated from a batch-wide fixed width and seat",
+          "seat": "bow tied at the throat",
+          "target_width": 170,
+          "top_y": 482
+        },
+        "output_bounds": [
+          542,
+          482,
+          711,
+          608
+        ],
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "pre_anatomy_reseat_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
+        "post_anatomy_reseat_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
     },
     {
       "id": "hand_object_006",

@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg028_olive_silver_spiked_wings_source_retry.png",
+  "source_sha256": "945640e68f75a7415d285ae447e02f2e97b6721fe8c9bc84007322352861a63e",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      112,
+      502,
+      1806,
+      1340
+    ],
+    "crop_dimensions": [
+      1695,
+      839
+    ],
+    "scale": 0.44837758,
+    "vertical_scale": 0.44837758,
+    "anisotropic": false,
+    "target_dimensions": [
+      760,
+      376
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 372,
+      "bounds": [
+        247,
+        372,
+        1006,
+        747
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+  "output_sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da",
+  "asset_id": "back_accessory_008",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "wing pair spread from the upper back",
+    "target_width": 760,
+    "top_y": 372
+  },
+  "output_bounds": [
+    247,
+    372,
+    1006,
+    747
+  ]
+}

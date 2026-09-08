@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg027_gold_luminous_wings_source_retry.png",
+  "source_sha256": "408ae7be0bb5b1a4a79b1357acea6c606b29edc18a44f77d92e9a9583d79f7ed",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      133,
+      471,
+      1786,
+      1405
+    ],
+    "crop_dimensions": [
+      1654,
+      935
+    ],
+    "scale": 0.45949214,
+    "vertical_scale": 0.45949214,
+    "anisotropic": false,
+    "target_dimensions": [
+      760,
+      430
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 345,
+      "bounds": [
+        247,
+        345,
+        1006,
+        774
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/back_accessories/back_accessory_007_gold_luminous_wings.png",
+  "output_sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6",
+  "asset_id": "back_accessory_007",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "wing pair spread from the upper back",
+    "target_width": 760,
+    "top_y": 345
+  },
+  "output_bounds": [
+    247,
+    345,
+    1006,
+    774
+  ]
+}

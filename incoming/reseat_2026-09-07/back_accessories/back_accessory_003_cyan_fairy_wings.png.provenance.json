@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg023_cyan_fairy_wings_source.png",
+  "source_sha256": "973fb2475bc84e11f85fdf9d0e4aec732bdfbc6081ced37424a71fd73261371f",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      84,
+      317,
+      1832,
+      1601
+    ],
+    "crop_dimensions": [
+      1749,
+      1285
+    ],
+    "scale": 0.43453402,
+    "vertical_scale": 0.43453402,
+    "anisotropic": false,
+    "target_dimensions": [
+      760,
+      558
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 300,
+      "bounds": [
+        247,
+        300,
+        1006,
+        857
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+  "output_sha256": "454554e0dbb99b84710875706454ff2d5571cbb53ac048f2a70b8348229e4132",
+  "asset_id": "back_accessory_003",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "wing pair spread from the upper back",
+    "target_width": 760,
+    "top_y": 300
+  },
+  "output_bounds": [
+    247,
+    300,
+    1006,
+    857
+  ]
+}

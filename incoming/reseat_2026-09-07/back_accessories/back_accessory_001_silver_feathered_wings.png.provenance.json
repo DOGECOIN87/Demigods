@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg021_silver_feathered_wings_source.png",
+  "source_sha256": "17cab0d0b7d909137b1a70425ef6eef422ec8a5b0a31c189c6c4c1f90b9a92ce",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      120,
+      447,
+      1803,
+      1272
+    ],
+    "crop_dimensions": [
+      1684,
+      826
+    ],
+    "scale": 0.45130641,
+    "vertical_scale": 0.45130641,
+    "anisotropic": false,
+    "target_dimensions": [
+      760,
+      373
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 374,
+      "bounds": [
+        247,
+        374,
+        1006,
+        746
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/back_accessories/back_accessory_001_silver_feathered_wings.png",
+  "output_sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d",
+  "asset_id": "back_accessory_001",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "wing pair spread from the upper back",
+    "target_width": 760,
+    "top_y": 374
+  },
+  "output_bounds": [
+    247,
+    374,
+    1006,
+    746
+  ]
+}

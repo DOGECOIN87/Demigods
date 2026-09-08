@@ -1,0 +1,64 @@
+{
+  "origin": "generator_source_transform",
+  "source_path": "images/trait_candidates/back_accessories/dg026_pale_blue_crystal_wings_source_retry.png",
+  "source_sha256": "5dfcf0da2317a8e1418ed446a9e153c22b2dc16776788b75289cf2b7a268eb08",
+  "source_dimensions": [
+    1920,
+    1920
+  ],
+  "source_mode": "RGBA",
+  "alpha_cleanup": {
+    "method": "clear_negligible_alpha_haze",
+    "threshold": 32
+  },
+  "transform": {
+    "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+    "source_visible_bounds": [
+      180,
+      374,
+      1739,
+      1520
+    ],
+    "crop_dimensions": [
+      1560,
+      1147
+    ],
+    "scale": 0.48717949,
+    "vertical_scale": 0.48717949,
+    "anisotropic": false,
+    "target_dimensions": [
+      760,
+      559
+    ],
+    "placement": {
+      "center_x": 627,
+      "top_y": 300,
+      "bounds": [
+        247,
+        300,
+        1006,
+        858
+      ]
+    }
+  },
+  "final_dimensions": [
+    1254,
+    1254
+  ],
+  "normalization_script": "scripts/normalize_generator_source.py",
+  "output_path": "incoming/reseat_2026-09-07/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+  "output_sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115",
+  "asset_id": "back_accessory_006",
+  "alignment": {
+    "reason": "re-seated from a batch-wide fixed width and seat",
+    "seat": "wing pair spread from the upper back",
+    "target_width": 760,
+    "top_y": 300
+  },
+  "output_bounds": [
+    247,
+    300,
+    1006,
+    858
+  ]
+}
