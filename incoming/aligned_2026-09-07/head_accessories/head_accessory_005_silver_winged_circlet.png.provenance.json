@@ -23,21 +23,21 @@
       1514,
       808
     ],
-    "scale": 0.23117569,
-    "vertical_scale": 0.23117569,
+    "scale": 0.29062087,
+    "vertical_scale": 0.29062087,
     "anisotropic": false,
     "target_dimensions": [
-      350,
-      187
+      440,
+      235
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        452,
+        407,
         129,
-        801,
-        315
+        846,
+        363
       ]
     }
   },
@@ -47,20 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_005_silver_winged_circlet.png",
-  "output_sha256": "8475b7cc215984239cf9b12214240e5e7010415fdf78d02c52c3a4ab60d03d09",
+  "output_sha256": "8d99c157365fd7cd8fb618aa42c2c070988bfde0555c049e5c3175fc36d45a7e",
   "backlog_id": "DG-127",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "band on the skull dome, wings above the temples",
-    "target_width": 350,
+    "seat": "band across the forehead with the wings reaching the hair at the temples",
+    "target_width": 440,
     "top_y": 129,
     "target_height": null,
     "front_arc_only": false
   },
   "output_bounds": [
-    452,
+    407,
     129,
-    801,
-    315
+    846,
+    363
   ]
 }

@@ -57,12 +57,12 @@ translation and lean the registered family received.
 | DG-124 | large gold halo | 520 px circle → 400 × 115 ellipse above the crown | Y655 → Y243 | `[427,129,826,243]` |
 | DG-125 | green laurel | 520 → 240 wide | Y571 → Y332 | `[507,129,746,332]` |
 | DG-126 | black curved horns | 500 → 200 wide | Y580 → Y308 | `[527,129,726,308]` |
-| DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
+| DG-127 | silver winged circlet | 520 → 440 wide | Y407 → Y363 | `[407,129,846,363]` |
 | DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
-| DG-129 | silver drop circlet | 520 → 320 wide, seat 129 → 276 | Y313 → Y388 | `[467,276,786,388]` |
+| DG-129 | silver drop circlet | 520 → 420 wide, seat 129 → 250 | Y313 → Y397 | `[417,250,836,397]` |
 | DG-130 | translucent white veil | 480 → 460 wide, seat 129 → 180 | Y511 → Y545 | `[397,180,856,545]` |
 | DG-131 | pale-blue spiked tiara | 520 → 390 wide | Y339 → Y285 | `[432,129,821,285]` |
-| DG-132 | gold low circlet | 520 → 320 wide, seat 129 → 240, front arc only | Y279 → Y331 | `[467,252,786,331]` |
+| DG-132 | gold low circlet | 520 → 420 wide, seat 129 → 212, front arc only | Y279 → Y332 | `[417,228,836,332]` |
 | DG-133 | arcane staff | dx +34 to grip `(438,772)`, +12° lean | — | `[278,261,523,1101]` |
 | DG-134 | violet orb | dx +34, dy −30 to palm `(438,748)` | — | `[348,518,527,737]` |
 | DG-135 | dark wand | dx +34 to grip `(438,772)`, +12° lean | — | `[316,261,506,1049]` |
@@ -108,6 +108,14 @@ an inverted U with a narrow apex and two long drapes. Seated at Y 129 the apex s
 crown with nothing under it, so the piece read as two curtains either side of the face rather
 than a veil. At 460 px seated at Y 180 the arch rests on the crown and the drapes frame the
 face.
+
+### Circlet scale
+
+Correcting the seats left the three circlets too narrow: the head is 326 px wide and the hair
+419–529 px, so a 320–350 px band read as a small ring perched on a much larger head. All three
+now span the hair, which is what anchors them — the ends tuck into it rather than stopping in
+open air. DG-127 goes to 440, DG-129 and DG-132 to 420. Width against the base body across the
+whole category is now 0.45–1.04×.
 
 ## Undergarment coverage — the registered base master
 
