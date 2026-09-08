@@ -52,7 +52,9 @@
   "optional_categories": {
     "rear_auras": 0.82,
     "hair_back": 0.62,
-    "global_finish": 0.75
+    "global_finish": 0.75,
+    "head_accessories": 0.55,
+    "hand_objects": 0.6
   },
   "legendary_token_ids": [
     111,

@@ -125,6 +125,31 @@
       "trait": "hand_object_012_brown_tome_pose_004_left.png",
       "requires": "base_pose_004_viewer_left_palm_up.png",
       "reason": "The tome contact is anchored to the viewer-left palm-up pose."
+    },
+    {
+      "trait": "hand_object_001_arcane_staff_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
+    },
+    {
+      "trait": "hand_object_002_violet_orb_pose_004_left.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Fitted to the viewer-left open palm at the measured contact (438, 748)."
+    },
+    {
+      "trait": "hand_object_003_dark_wand_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
+    },
+    {
+      "trait": "hand_object_004_silver_sword_pose_002_left.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
+    },
+    {
+      "trait": "hand_object_005_star_spellbook_pose_004_left.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Fitted to the viewer-left open palm at the measured contact (438, 748)."
     }
   ],
   "excludes": [],

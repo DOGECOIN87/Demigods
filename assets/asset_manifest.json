@@ -3154,6 +3154,1151 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved production export for DG-145\u2013DG-146."
+    },
+    {
+      "id": "head_accessory_001",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_001_gold_pointed_crown.png",
+      "status": "production_ready",
+      "sha256": "d2e89ae22edafc36c270d67b2c535f7eead9e04b94a941d68d250288131176ed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-123",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold pointed crown",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          462,
+          129,
+          791,
+          356
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_001_gold_pointed_crown_regen1.png",
+        "source_sha256": "b8d06f1e872d708c42c923cddaf470e370bd004b1fc8460ed8b98579a95b0723",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            203,
+            401,
+            1713,
+            1445
+          ],
+          "crop_dimensions": [
+            1511,
+            1045
+          ],
+          "scale": 0.21839841,
+          "vertical_scale": 0.21839841,
+          "anisotropic": false,
+          "target_dimensions": [
+            330,
+            228
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              462,
+              129,
+              791,
+              356
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "crown seated on the skull dome, band clear of the brow line",
+          "target_width": 330,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_001_over_base.png"
+    },
+    {
+      "id": "head_accessory_002",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_002_large_gold_halo.png",
+      "status": "production_ready",
+      "sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-124",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Large gold halo ring",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          427,
+          129,
+          826,
+          243
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_002_large_gold_halo_regen2.png",
+        "source_sha256": "803add35bb7c6e302c51a0a0ff54c75948be605c077d705d769904536343e13e",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            384,
+            372,
+            1531,
+            1533
+          ],
+          "crop_dimensions": [
+            1148,
+            1162
+          ],
+          "scale": 0.34843206,
+          "vertical_scale": 0.0989673,
+          "anisotropic": true,
+          "target_dimensions": [
+            400,
+            115
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              427,
+              129,
+              826,
+              243
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "foreshortened ring hovering above the crown",
+          "target_width": 400,
+          "top_y": 129,
+          "target_height": 115
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_002_over_base.png"
+    },
+    {
+      "id": "head_accessory_003",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_003_green_laurel.png",
+      "status": "production_ready",
+      "sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-125",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Green laurel wreath",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          472,
+          129,
+          781,
+          392
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
+        "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 64
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            239,
+            339,
+            1677,
+            1562
+          ],
+          "crop_dimensions": [
+            1439,
+            1224
+          ],
+          "scale": 0.21542738,
+          "vertical_scale": 0.21542738,
+          "anisotropic": false,
+          "target_dimensions": [
+            310,
+            264
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              472,
+              129,
+              781,
+              392
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "laurel worn on the crown of the head",
+          "target_width": 310,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_003_over_base.png"
+    },
+    {
+      "id": "head_accessory_004",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_004_black_curved_horns.png",
+      "status": "production_ready",
+      "sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-126",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Balanced black curved horn set",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          527,
+          129,
+          726,
+          308
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_004_black_curved_horns_regen1.png",
+        "source_sha256": "f36e02765398e888814cfb73dbd656f637b6b9d7b030f28a7e269173d7b120b3",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 64
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            314,
+            380,
+            1600,
+            1540
+          ],
+          "crop_dimensions": [
+            1287,
+            1161
+          ],
+          "scale": 0.15540016,
+          "vertical_scale": 0.15540016,
+          "anisotropic": false,
+          "target_dimensions": [
+            200,
+            180
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              527,
+              129,
+              726,
+              308
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "horn bases on the skull dome at the brow line, fully clear of the eyes",
+          "target_width": 200,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_004_over_base.png"
+    },
+    {
+      "id": "head_accessory_005",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_005_silver_winged_circlet.png",
+      "status": "production_ready",
+      "sha256": "8475b7cc215984239cf9b12214240e5e7010415fdf78d02c52c3a4ab60d03d09",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-127",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Silver winged circlet",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          452,
+          129,
+          801,
+          315
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_005_silver_winged_circlet_regen1.png",
+        "source_sha256": "f9bcc9010d8d10c8bf904cc8b72eaba1f355d9404228338885ff5612097e7880",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 80
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            204,
+            563,
+            1717,
+            1370
+          ],
+          "crop_dimensions": [
+            1514,
+            808
+          ],
+          "scale": 0.23117569,
+          "vertical_scale": 0.23117569,
+          "anisotropic": false,
+          "target_dimensions": [
+            350,
+            187
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              452,
+              129,
+              801,
+              315
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "band on the skull dome, wings above the temples",
+          "target_width": 350,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_005_over_base.png"
+    },
+    {
+      "id": "head_accessory_006",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_006_silver_ornate_tiara.png",
+      "status": "production_ready",
+      "sha256": "39aac6c53e991e3ff9817f8889286ad036dcf1aeea4e85151468135628a7cbd9",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-128",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Silver ornate tiara",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          442,
+          129,
+          811,
+          352
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_006_silver_ornate_tiara_source2.png",
+        "source_sha256": "24c3ef06805aee3df4ced9e90957b64b825368319f4bef2447382cfdd308787c",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 64
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            132,
+            423,
+            1782,
+            1421
+          ],
+          "crop_dimensions": [
+            1651,
+            999
+          ],
+          "scale": 0.2241066,
+          "vertical_scale": 0.2241066,
+          "anisotropic": false,
+          "target_dimensions": [
+            370,
+            224
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              442,
+              129,
+              811,
+              352
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "band on the skull dome, side arcs past the temples",
+          "target_width": 370,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_006_over_base.png"
+    },
+    {
+      "id": "head_accessory_007",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
+      "status": "production_ready",
+      "sha256": "98bc453f906b58c0565716e9c6adfc270a3dca08a12ac7abb18d7c1bf81f8b4c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-129",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Silver forehead circlet with central drop",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          442,
+          180,
+          811,
+          310
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
+        "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 64
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            67,
+            670,
+            1851,
+            1299
+          ],
+          "crop_dimensions": [
+            1785,
+            630
+          ],
+          "scale": 0.20728291,
+          "vertical_scale": 0.20728291,
+          "anisotropic": false,
+          "target_dimensions": [
+            370,
+            131
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 180,
+            "bounds": [
+              442,
+              180,
+              811,
+              310
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "band on the skull dome, drop above the brow line",
+          "target_width": 370,
+          "top_y": 180,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_007_over_base.png"
+    },
+    {
+      "id": "head_accessory_008",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
+      "status": "production_ready",
+      "sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-130",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Translucent white veil",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          417,
+          129,
+          836,
+          462
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_008_translucent_white_veil_source3.png",
+        "source_sha256": "3a00f90deac0b4842ec6b7737291e7dd244b0ce886bd3490594d8d0de0569b22",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            348,
+            435,
+            1570,
+            1408
+          ],
+          "crop_dimensions": [
+            1223,
+            974
+          ],
+          "scale": 0.34341783,
+          "vertical_scale": 0.34341783,
+          "anisotropic": false,
+          "target_dimensions": [
+            420,
+            334
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              417,
+              129,
+              836,
+              462
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "draped from the crown, face window preserved",
+          "target_width": 420,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_008_over_base.png"
+    },
+    {
+      "id": "head_accessory_009",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+      "status": "production_ready",
+      "sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-131",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pale-blue spiked crown/tiara",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          432,
+          129,
+          821,
+          285
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_009_pale_blue_spiked_tiara_source3.png",
+        "source_sha256": "2866dcb1e8003a1010ff7aa17de8928acdaa0b3c1782c66db041692c572e268e",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            190,
+            602,
+            1722,
+            1220
+          ],
+          "crop_dimensions": [
+            1533,
+            619
+          ],
+          "scale": 0.25440313,
+          "vertical_scale": 0.25440313,
+          "anisotropic": false,
+          "target_dimensions": [
+            390,
+            157
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 129,
+            "bounds": [
+              432,
+              129,
+              821,
+              285
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "band on the skull dome, points well clear of the brow",
+          "target_width": 390,
+          "top_y": 129,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_009_over_base.png"
+    },
+    {
+      "id": "head_accessory_010",
+      "category": "head_accessories",
+      "path": "assets/head_accessories/head_accessory_010_gold_low_circlet.png",
+      "status": "production_ready",
+      "sha256": "6093481477afbbeba57059778a9331d0889a6327c8fd3415a39db382f031accf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-132",
+      "provenance": {
+        "origin": "generator_source_transform",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold low-profile circlet",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          447,
+          200,
+          806,
+          303
+        ],
+        "source_path": "images/trait_candidates/head_accessories/head_accessory_010_gold_low_circlet_source2.png",
+        "source_sha256": "413cc76ec74d0f345f4b910f6de23e509da67ce1146263fb0a69dfb022a5e265",
+        "source_dimensions": [
+          1920,
+          1920
+        ],
+        "alpha_cleanup": {
+          "method": "clear_negligible_alpha_haze",
+          "threshold": 32
+        },
+        "transform": {
+          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
+          "source_visible_bounds": [
+            214,
+            767,
+            1705,
+            1196
+          ],
+          "crop_dimensions": [
+            1492,
+            430
+          ],
+          "scale": 0.24128686,
+          "vertical_scale": 0.24128686,
+          "anisotropic": false,
+          "target_dimensions": [
+            360,
+            104
+          ],
+          "placement": {
+            "center_x": 627,
+            "top_y": 200,
+            "bounds": [
+              447,
+              200,
+              806,
+              303
+            ]
+          }
+        },
+        "normalization_script": "scripts/normalize_generator_source.py",
+        "postprocessing": [
+          "reduction_only_head_reseat_2026-09-07"
+        ],
+        "alignment": {
+          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
+          "seat": "headband on the skull dome above the brow line",
+          "target_width": 360,
+          "top_y": 200,
+          "target_height": null
+        }
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/head_accessory_010_over_base.png"
+    },
+    {
+      "id": "hand_object_001",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "e99b2ccbfd0108d83b1774499b05cb0bdd657f9736224ab1a56ce02c3daf8fed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-133",
+      "provenance": {
+        "origin": "hand_object_contact_realignment",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gnarled wood staff with blue flame/crystal",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          278,
+          261,
+          523,
+          1101
+        ],
+        "source_path": "incoming/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+        "source_sha256": "dfde3ecaf3a24af456123511396134ee99e99f68bb224ba85e2392edff93b175",
+        "source_bounds": [
+          324,
+          250,
+          483,
+          1108
+        ],
+        "pose": 2,
+        "contact_point": [
+          438,
+          772
+        ],
+        "contact_feature": "shaft centre through the closed grip",
+        "transform": {
+          "method": "integer_translation_then_lean_about_contact_point",
+          "dx": 34,
+          "dy": 0,
+          "lean_degrees": 12.0,
+          "resample": "bicubic"
+        },
+        "postprocessing": [
+          "hand_object_contact_realignment_2026-09-07"
+        ],
+        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/hand_object_001_over_base.png"
+    },
+    {
+      "id": "hand_object_002",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+      "status": "production_ready",
+      "sha256": "361790bc1c07434cf86e620b7fad66c151df96bc36f59cd2cbdc7c0b53f4a163",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-134",
+      "provenance": {
+        "origin": "hand_object_contact_realignment",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Purple crystal orb",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          348,
+          518,
+          527,
+          737
+        ],
+        "source_path": "incoming/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+        "source_sha256": "203d7cada07015dda3133229245af1675ce4f76c41ec00c461d1644001f08b41",
+        "source_bounds": [
+          314,
+          548,
+          493,
+          767
+        ],
+        "pose": 4,
+        "contact_point": [
+          438,
+          748
+        ],
+        "contact_feature": "cradle base seated on the open palm, fingers visible below",
+        "transform": {
+          "method": "integer_translation_then_lean_about_contact_point",
+          "dx": 34,
+          "dy": -30,
+          "lean_degrees": 0.0,
+          "resample": "none"
+        },
+        "postprocessing": [
+          "hand_object_contact_realignment_2026-09-07"
+        ],
+        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/hand_object_002_over_base.png"
+    },
+    {
+      "id": "hand_object_003",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "f091361a5526398d1090ab3a236ffae8726c138c73343535337710505ec67f51",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-135",
+      "provenance": {
+        "origin": "hand_object_contact_realignment",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Slender dark wand",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          316,
+          261,
+          506,
+          1049
+        ],
+        "source_path": "incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+        "source_sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398",
+        "source_bounds": [
+          369,
+          250,
+          438,
+          1055
+        ],
+        "pose": 2,
+        "contact_point": [
+          438,
+          772
+        ],
+        "contact_feature": "shaft centre through the closed grip",
+        "transform": {
+          "method": "integer_translation_then_lean_about_contact_point",
+          "dx": 34,
+          "dy": 0,
+          "lean_degrees": 12.0,
+          "resample": "bicubic"
+        },
+        "postprocessing": [
+          "hand_object_contact_realignment_2026-09-07"
+        ],
+        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/hand_object_003_over_base.png"
+    },
+    {
+      "id": "hand_object_004",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+      "status": "production_ready",
+      "sha256": "7ac50d2acc8d2d7f36c7467519307cb33744971517a6e2d1f8e967934e289176",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-136",
+      "provenance": {
+        "origin": "hand_object_contact_realignment",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Silver straight sword",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          300,
+          142,
+          490,
+          921
+        ],
+        "source_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+        "source_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
+        "source_bounds": [
+          344,
+          129,
+          463,
+          923
+        ],
+        "pose": 2,
+        "contact_point": [
+          438,
+          772
+        ],
+        "contact_feature": "wrapped grip through the closed fist",
+        "transform": {
+          "method": "integer_translation_then_lean_about_contact_point",
+          "dx": 34,
+          "dy": 0,
+          "lean_degrees": 12.0,
+          "resample": "bicubic"
+        },
+        "postprocessing": [
+          "hand_object_contact_realignment_2026-09-07"
+        ],
+        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/hand_object_004_over_base.png"
+    },
+    {
+      "id": "hand_object_005",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+      "status": "production_ready",
+      "sha256": "8ea98111062c79f73c61c7ac0337977bf9880bacaaaf1a06aebf8f062b7d97e4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-137",
+      "provenance": {
+        "origin": "hand_object_contact_realignment",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark spellbook with gold star emblem",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "intake_script": "scripts/align_pending_candidates.py",
+        "alignment_pass": "aligned_candidates_2026-09-07",
+        "output_bounds": [
+          323,
+          587,
+          552,
+          747
+        ],
+        "source_path": "incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+        "source_sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8",
+        "source_bounds": [
+          289,
+          612,
+          518,
+          772
+        ],
+        "pose": 4,
+        "contact_point": [
+          438,
+          748
+        ],
+        "contact_feature": "lower cover resting across the palm, fingers visible below",
+        "transform": {
+          "method": "integer_translation_then_lean_about_contact_point",
+          "dx": 34,
+          "dy": -25,
+          "lean_degrees": 0.0,
+          "resample": "none"
+        },
+        "postprocessing": [
+          "hand_object_contact_realignment_2026-09-07"
+        ],
+        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+      },
+      "approved_on": "2026-09-07",
+      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
+      "qa_composite": "docs/qa/composites/hand_object_005_over_base.png"
     }
   ],
   "approved_visual_references": [
@@ -3370,9 +4515,7 @@
     "eyes",
     "eyebrows",
     "mouths",
-    "expression_marks",
-    "head_accessories",
-    "hand_objects"
+    "expression_marks"
   ],
   "legendary_one_of_ones": [
     {

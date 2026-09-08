@@ -127,7 +127,34 @@ exposure ceiling, so a new outfit with no recorded ceiling fails until someone m
 - `undergarment_approval.png` — the four affected outfits before and after, each with a marked
   pass showing fit gaps in red and designed neckline openings in amber.
 
-## Disposition
+## Disposition — registered 2026-09-07
 
-All fifteen are **automated-pass** and are presented for human approval. They remain
-unregistered. Registration is a separate explicit step.
+All fifteen were approved on the sheets above and are registered by
+`scripts/register_aligned_candidates.py`, which copies the exact approved bytes into
+`assets/`, writes a manifest entry per asset carrying the alignment provenance, flips
+DG-123 … DG-137 to `registered`, binds each hand object to the pose it was fitted for, drops
+both categories from `pending_categories`, and adds them to `optional_categories`
+(`head_accessories` 0.55, `hand_objects` 0.60) so a token without a crown or a prop stays a
+normal token.
+
+The library goes from 85 registered assets to **100**, and `head_accessories` and
+`hand_objects` are both complete at 10 and 12.
+
+### Verification
+
+| Gate | Result |
+|---|---|
+| `validate_config.py` | PASS — 100 traits, 30 requires rules |
+| `validate_assets.py` | 100 files checked, 0 failed |
+| `validate_manifest_consistency.py` | 100 registered assets checked |
+| `report_production_status.py --check` | ledger agrees with manifest and backlog |
+| `python -m unittest discover -s tests` | 196 passed |
+| `generate_777.py --preflight-only` | PASS |
+
+**Supply saturation cleared.** The rule-valid combination space goes from 800 to
+**300,478,464**, and saturation from **97% to 0.0%**. Both new categories are optional, so
+they multiply the space rather than constraining it. Minting 770 of 800 meant nearly every
+legal character existed and rarity carried no information; that is no longer true.
+
+Per-asset composites over the required base are in `docs/qa/composites/`, one per registered
+asset, and each manifest entry points at its own.
