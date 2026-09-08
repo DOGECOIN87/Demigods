@@ -23,21 +23,21 @@
       1287,
       1161
     ],
-    "scale": 0.18648019,
-    "vertical_scale": 0.18648019,
+    "scale": 0.15540016,
+    "vertical_scale": 0.15540016,
     "anisotropic": false,
     "target_dimensions": [
-      240,
-      217
+      200,
+      180
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        507,
+        527,
         129,
-        746,
-        345
+        726,
+        308
       ]
     }
   },
@@ -47,19 +47,19 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_004_black_curved_horns.png",
-  "output_sha256": "656fe4dcbac115297a2a57cfae8f3d75ccfed7d214c4621a9c761cb078deeca7",
+  "output_sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
   "backlog_id": "DG-126",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "horn bases on the skull dome above the eye line",
-    "target_width": 240,
+    "seat": "horn bases on the skull dome at the brow line, fully clear of the eyes",
+    "target_width": 200,
     "top_y": 129,
     "target_height": null
   },
   "output_bounds": [
-    507,
+    527,
     129,
-    746,
-    345
+    726,
+    308
   ]
 }

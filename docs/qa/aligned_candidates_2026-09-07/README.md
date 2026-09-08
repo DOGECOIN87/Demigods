@@ -57,7 +57,7 @@ translation and lean the registered family received.
 | DG-123 | gold pointed crown | 520 → 330 wide | Y408 → Y356 | `[462,129,791,356]` |
 | DG-124 | large gold halo | 520 px circle → 400 × 115 ellipse above the crown | Y655 → Y243 | `[427,129,826,243]` |
 | DG-125 | green laurel | 520 → 310 wide | Y571 → Y392 | `[472,129,781,392]` |
-| DG-126 | black curved horns | 500 → 240 wide | Y580 → Y345 | `[507,129,746,345]` |
+| DG-126 | black curved horns | 500 → 200 wide | Y580 → Y308 | `[527,129,726,308]` |
 | DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
 | DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
 | DG-129 | silver drop circlet | 520 → 370 wide, seat 129 → 180 | Y313 → Y310 | `[442,180,811,310]` |
