@@ -56,14 +56,57 @@ already hang from the shoulder to the hem, and widening them would push the hem
 past the locked foot baseline. Re-running the transform on them reproduced their
 registered bytes exactly, which confirms the pipeline is faithful.
 
+## Outfits — footwear narrower than the leg it covers
+
+The base bodies have bare legs and feet and an outfit's boots are drawn over
+them. Nine of the ten outfits had footwear **narrower than the leg by 7–17 px a
+side**, so a strip of bare skin showed along the outer edge of every boot, on
+every token those outfits appear in. `outfit_010` exposed 5469 px, `outfit_009`
+3332, `outfit_008` 2698.
+
+The cause is proportional, not positional. Outfits 001–005 were rig-refit at
+scales of 0.756–0.929 and 006–010 were normalized to widths of 390–447 px; in
+both cases the garment was sized by its torso fit and the footwear came along at
+whatever width that implied. `outfit_001` happens to be wider than the leg at
+every row and showed nothing, which is what the correct case looks like.
+
+`scripts/fit_boots_to_legs.py` closes each exposed strip by resampling the
+garment run beside it across the strip. Resampling rather than smearing matters:
+repeating the edge column drags the boot's rim into horizontal stripes, glaring on
+a laced sandal or a patterned boot. Stretching the run's own pixels makes a 10–15
+px correction on a ~110 px boot read as the boot simply being that width.
+
+It works from the exposed strips rather than the garment's outer edge, which is
+what makes it correct on `outfit_009`: its cape is the outermost run at boot
+height and already reaches past the leg, so a rule extending only the outermost
+run leaves the boot's own gap — an interior one — untouched.
+
+| Outfit | Exposed before | After |
+|---|---:|---:|
+| 001 celestial scholar | 11 | 0 |
+| 002 storm guardian | 845 | 189 |
+| 003 verdant alchemist | 115 | 6 |
+| 004 lunar oracle | 1315 | 5 |
+| 005 sun temple | 2389 | 0 |
+| 006 black hooded robe | 2015 | 10 |
+| 007 brown leather coat | 937 | 10 |
+| 008 olive ragged cloak | 2698 | 8 |
+| 009 navy high collar coat | 3332 | 0 |
+| 010 celestial robe | 5469 | 12 |
+
+`outfit_002` keeps a larger residual because its greaves genuinely stop above the
+ankle. This is a repair, not a production method — the clean fix is footwear drawn
+to the leg it covers — and it is recorded in each outfit's `postprocessing`.
+
 ## Categories checked and found correct
 
 - **Hair front** — the bangs cross the eye regions on most designs, which is what
   bangs do; the eyes read clearly under every one. No change.
 - **Hand objects** — all twelve sit on their measured grip contact in their bound
   pose. No change.
-- **Outfits** — all ten cover the base body's undergarment except the neckline
-  openings recorded in `docs/qa/aligned_candidates_2026-09-07/`.
+- **Outfits** — torso, shoulder and hem fit are correct, and all ten cover the base
+  body's undergarment except the neckline openings recorded in
+  `docs/qa/aligned_candidates_2026-09-07/`. Their footwear was not correct; see above.
 - **Rear and front auras, backgrounds, global finish** — the sweep's face-occlusion
   hits are all on layers that composite *behind* the base body, so they cannot
   occlude anything.
@@ -78,12 +121,13 @@ this silently:
   so a piece cannot be at the right height and attached to nothing;
 - every wing pair clears the body silhouette by at least 120 px on both sides;
 - both capes start at or above the shoulder line and hang to between Y 1000 and
-  the foot baseline.
+  the foot baseline;
+- every outfit leaves no more bare leg showing than its recorded ceiling.
 
 With `tests/test_face_occlusion.py` from the previous pass, the three categories
 that shipped mis-seated are now all gated by measurement rather than by review.
 
 ## Verification
 
-100 assets validate, manifest consistency passes, the ledger agrees, and 202 tests
+100 assets validate, manifest consistency passes, the ledger agrees, and 203 tests
 pass.

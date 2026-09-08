@@ -771,7 +771,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
       "status": "production_ready",
-      "sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958",
+      "sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
       "dimensions": [
         1254,
         1254
@@ -792,9 +792,13 @@
         "postprocessing": [
           "chroma_key_to_alpha",
           "alpha_edge_contract_1",
-          "clip_to_max_bounds_y1139"
+          "clip_to_max_bounds_y1139",
+          "fit_boots_to_legs_2026-09-07"
         ],
-        "postprocessing_script": "scripts/clip_trait_to_bounds.py"
+        "postprocessing_script": "scripts/clip_trait_to_bounds.py",
+        "pre_boot_fit_sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958",
+        "post_boot_fit_sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 11 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-07-28"
     },
@@ -803,7 +807,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
       "status": "production_ready",
-      "sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
+      "sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
       "dimensions": [
         1254,
         1254
@@ -826,11 +830,15 @@
           "rig_refit_scale_0.929_top_y_475",
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
-          "open_collar_crisp_rim_c502_r12_h32"
+          "open_collar_crisp_rim_c502_r12_h32",
+          "fit_boots_to_legs_2026-09-07"
         ],
         "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "collar_note": "Collar interior was painted opaque. Cut above the traced rim arc; full-layer despill (verified safe: every green run 1-5px, i.e. edge spill, no green in the design)."
+        "collar_note": "Collar interior was painted opaque. Cut above the traced rim arc; full-layer despill (verified safe: every green run 1-5px, i.e. edge spill, no green in the design).",
+        "pre_boot_fit_sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
+        "post_boot_fit_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 845 to 189. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-07-28"
     },
@@ -839,7 +847,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
       "status": "production_ready",
-      "sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0",
+      "sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
       "dimensions": [
         1254,
         1254
@@ -862,11 +870,15 @@
           "rig_refit_scale_0.88_top_y_475",
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
-          "open_collar_crisp_rim_c520_r27_h30"
+          "open_collar_crisp_rim_c520_r27_h30",
+          "fit_boots_to_legs_2026-09-07"
         ],
         "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "collar_note": "A duller neck was painted into the garment. Cut above the shirt-collar opening; 3px-band despill only, because the potion bottles are legitimately green."
+        "collar_note": "A duller neck was painted into the garment. Cut above the shirt-collar opening; 3px-band despill only, because the potion bottles are legitimately green.",
+        "pre_boot_fit_sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0",
+        "post_boot_fit_sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 115 to 6. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-07-28"
     },
@@ -875,7 +887,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
       "status": "production_ready",
-      "sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
+      "sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
       "dimensions": [
         1254,
         1254
@@ -897,10 +909,14 @@
           "alpha_edge_contract_1",
           "rig_refit_scale_0.761_top_y_475",
           "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3"
+          "chroma_despill_edge_band_3",
+          "fit_boots_to_legs_2026-09-07"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
+        "pre_boot_fit_sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
+        "post_boot_fit_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 1315 to 5. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-07-28"
     },
@@ -909,7 +925,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
       "status": "production_ready",
-      "sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
+      "sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
       "dimensions": [
         1254,
         1254
@@ -931,11 +947,15 @@
           "alpha_edge_contract_1",
           "rig_refit_scale_0.756_top_y_475",
           "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3"
+          "chroma_despill_edge_band_3",
+          "fit_boots_to_legs_2026-09-07"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
         "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample."
+        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
+        "pre_boot_fit_sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
+        "post_boot_fit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2389 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-07-28"
     },
@@ -2004,7 +2024,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
       "status": "production_ready",
-      "sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
+      "sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
       "dimensions": [
         1254,
         1254
@@ -2021,7 +2041,13 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "fit_boots_to_legs_2026-09-07"
+        ],
+        "pre_boot_fit_sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
+        "post_boot_fit_sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2015 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2031,7 +2057,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
       "status": "production_ready",
-      "sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
+      "sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
       "dimensions": [
         1254,
         1254
@@ -2048,7 +2074,13 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "fit_boots_to_legs_2026-09-07"
+        ],
+        "pre_boot_fit_sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
+        "post_boot_fit_sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 937 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2058,7 +2090,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
       "status": "production_ready",
-      "sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
+      "sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
       "dimensions": [
         1254,
         1254
@@ -2075,7 +2107,13 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "fit_boots_to_legs_2026-09-07"
+        ],
+        "pre_boot_fit_sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
+        "post_boot_fit_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2698 to 8. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2085,7 +2123,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
       "status": "production_ready",
-      "sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
+      "sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
       "dimensions": [
         1254,
         1254
@@ -2102,7 +2140,13 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "fit_boots_to_legs_2026-09-07"
+        ],
+        "pre_boot_fit_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
+        "post_boot_fit_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 3332 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2112,7 +2156,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
       "status": "production_ready",
-      "sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
+      "sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
       "dimensions": [
         1254,
         1254
@@ -2129,7 +2173,13 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "fit_boots_to_legs_2026-09-07"
+        ],
+        "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
+        "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 5469 to 12. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."

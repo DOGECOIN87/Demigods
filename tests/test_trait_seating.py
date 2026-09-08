@@ -159,3 +159,49 @@ class BackAccessorySeatingTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OutfitFootwearTests(unittest.TestCase):
+    """An outfit's footwear has to cover the leg it is drawn over.
+
+    The base bodies have bare legs and feet. Nine of the ten outfits had footwear
+    narrower than the leg by 7-17 px a side, so a strip of skin showed along each
+    boot's outer edge on every token those outfits appeared in - up to 5469 px on
+    `outfit_010`. No existing gate could see it: the garment was inside bounds, on
+    the baseline, and the right width for its own torso.
+
+    `outfit_002` keeps a larger allowance because its greaves genuinely stop above
+    the ankle, and `outfit_005` and `outfit_010` are sandals whose straps are meant
+    to leave skin between them - but that skin is interior, not a strip along the
+    silhouette edge, and the numbers below pin it.
+    """
+
+    EXPOSED_LEG_CEILING = {
+        "outfit_001_celestial_scholar_pose_001.png": 20,     # was 11
+        "outfit_002_storm_guardian_pose_002.png": 220,       # was 845, open greave
+        "outfit_003_verdant_alchemist_pose_003.png": 20,     # was 115
+        "outfit_004_lunar_oracle_pose_004.png": 20,          # was 1315
+        "outfit_005_sun_temple_pose_005.png": 20,            # was 2389
+        "outfit_006_black_layered_hooded_robe.png": 25,      # was 2015
+        "outfit_007_brown_leather_long_coat.png": 25,        # was 937
+        "outfit_008_olive_ragged_cloak.png": 25,             # was 2698
+        "outfit_009_navy_high_collar_coat.png": 20,          # was 3332
+        "outfit_010_celestial_robe_white_gold.png": 30,      # was 5469
+    }
+
+    def test_no_outfit_leaves_the_leg_bare(self) -> None:
+        from scripts.fit_boots_to_legs import exposed_leg_pixels, outfit_base_pairs
+
+        for outfit_name, base_name in sorted(outfit_base_pairs().items()):
+            with self.subTest(outfit=outfit_name):
+                self.assertIn(outfit_name, self.EXPOSED_LEG_CEILING,
+                              "new outfit: measure its exposed leg pixels and record a ceiling")
+                with Image.open(ROOT / "assets" / "outfits" / outfit_name) as outfit_image:
+                    outfit = outfit_image.convert("RGBA")
+                with Image.open(ROOT / "assets" / "base_bodies" / base_name) as base_image:
+                    base = base_image.convert("RGBA")
+                exposed = exposed_leg_pixels(outfit, base)
+                self.assertLessEqual(
+                    exposed, self.EXPOSED_LEG_CEILING[outfit_name],
+                    f"{outfit_name} leaves {exposed} px of bare leg showing below Y1000",
+                )
