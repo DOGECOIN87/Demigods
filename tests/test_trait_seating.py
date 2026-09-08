@@ -28,6 +28,11 @@ BODY_LEFT, BODY_RIGHT = 406, 848           # widest silhouette, arms included
 # drop, the tails of a bow - is free to hang.
 NECK_CLASP_BAND = (THROAT_TOP, THROAT_BOTTOM + 10)
 
+# How many of a layer's topmost ink rows must land inside the body silhouette.
+# One row could be a stray antialiased pixel; four is the piece genuinely
+# touching what it hangs from.
+CONTACT_ROWS = 4
+
 # A wing pair has to clear the body to read as wings rather than as fins behind
 # the shoulders. At the batch-wide 590 px the overhang was 74 px a side and every
 # pair read as small; at 760 px it is 158 px a side.
@@ -69,6 +74,48 @@ class NeckAccessorySeatingTests(unittest.TestCase):
                     f"{path.name} starts at Y{top}; a clasp belongs in the throat band "
                     f"Y{low}-Y{high}",
                 )
+
+    def test_every_neck_accessory_touches_the_body(self) -> None:
+        """Being at the right height is not the same as being attached.
+
+        Correcting the seat to the throat at Y 482 traded one error for another.
+        These pieces are 150-175 px wide and the neck at Y 482 is 61 px, so the
+        chain ends and band tips hung in open air either side of it - at the
+        right height and attached to nothing. A necklace has to touch what it
+        hangs from, so its topmost rows must land inside the silhouette.
+        """
+        directory = ROOT / "assets" / "neck_accessories"
+        if not directory.is_dir():
+            self.skipTest("neck_accessories not registered")
+        with Image.open(ROOT / "assets" / "base_bodies" / "base_body_001_neutral_master.png") as image:
+            body = image.convert("RGBA").getchannel("A").point(lambda v: 255 if v > 128 else 0)
+        width, _height = body.size
+
+        def body_span(row: int):
+            line = body.crop((0, row, width, row + 1)).tobytes()
+            columns = [x for x, value in enumerate(line) if value]
+            return (columns[0], columns[-1]) if columns else None
+
+        for path in sorted(directory.glob("*.png")):
+            with self.subTest(asset=path.name):
+                with Image.open(path) as image:
+                    alpha = image.convert("RGBA").getchannel("A")
+                top = visible_bounds(path)[1]
+                for row in range(top, top + CONTACT_ROWS):
+                    line = alpha.crop((0, row, width, row + 1)).tobytes()
+                    columns = [x for x, value in enumerate(line) if value > VISIBLE]
+                    if not columns:
+                        continue
+                    span = body_span(row)
+                    self.assertIsNotNone(span, f"{path.name}: no body at Y{row}")
+                    self.assertGreaterEqual(
+                        columns[0], span[0],
+                        f"{path.name} reaches X{columns[0]} at Y{row}, past the body's X{span[0]}",
+                    )
+                    self.assertLessEqual(
+                        columns[-1], span[1],
+                        f"{path.name} reaches X{columns[-1]} at Y{row}, past the body's X{span[1]}",
+                    )
 
 
 class BackAccessorySeatingTests(unittest.TestCase):

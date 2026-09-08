@@ -32,12 +32,12 @@
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 482,
+      "top_y": 498,
       "bounds": [
         542,
-        482,
+        498,
         711,
-        539
+        555
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_001_black_choker.png",
-  "output_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
+  "output_sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d",
   "asset_id": "neck_accessory_001",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "band ringing the throat",
+    "seat": "band meeting the neck at the shoulder junction",
     "target_width": 170,
-    "top_y": 482
+    "top_y": 498
   },
   "output_bounds": [
     542,
-    482,
+    498,
     711,
-    539
+    555
   ]
 }

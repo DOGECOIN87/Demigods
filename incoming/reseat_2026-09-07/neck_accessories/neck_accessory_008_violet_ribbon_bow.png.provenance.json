@@ -32,12 +32,12 @@
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 482,
+      "top_y": 500,
       "bounds": [
         542,
-        482,
+        500,
         711,
-        608
+        626
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
-  "output_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
+  "output_sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77",
   "asset_id": "neck_accessory_008",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "bow tied at the throat",
+    "seat": "bow tied at the base of the neck",
     "target_width": 170,
-    "top_y": 482
+    "top_y": 500
   },
   "output_bounds": [
     542,
-    482,
+    500,
     711,
-    608
+    626
   ]
 }

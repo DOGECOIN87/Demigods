@@ -23,21 +23,21 @@
       887,
       676
     ],
-    "scale": 0.19729425,
-    "vertical_scale": 0.19729425,
+    "scale": 0.16910936,
+    "vertical_scale": 0.16910936,
     "anisotropic": false,
     "target_dimensions": [
-      175,
-      133
+      150,
+      114
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 482,
+      "top_y": 500,
       "bounds": [
-        540,
-        482,
-        714,
-        614
+        552,
+        500,
+        701,
+        613
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
-  "output_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
+  "output_sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979",
   "asset_id": "neck_accessory_006",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "chain at the throat, charm on the chest",
-    "target_width": 175,
-    "top_y": 482
+    "seat": "chain ends meeting the neck, charm on the chest",
+    "target_width": 150,
+    "top_y": 500
   },
   "output_bounds": [
-    540,
-    482,
-    714,
-    614
+    552,
+    500,
+    701,
+    613
   ]
 }

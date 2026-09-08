@@ -32,12 +32,12 @@
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 482,
+      "top_y": 496,
       "bounds": [
         540,
-        482,
+        496,
         714,
-        597
+        611
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
-  "output_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
+  "output_sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c",
   "asset_id": "neck_accessory_002",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "band at the throat with the drop on the upper chest",
+    "seat": "band meeting the neck, drop on the upper chest",
     "target_width": 175,
-    "top_y": 482
+    "top_y": 496
   },
   "output_bounds": [
     540,
-    482,
+    496,
     714,
-    597
+    611
   ]
 }

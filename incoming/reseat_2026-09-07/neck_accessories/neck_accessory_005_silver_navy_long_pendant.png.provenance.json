@@ -23,21 +23,21 @@
       535,
       869
     ],
-    "scale": 0.3271028,
-    "vertical_scale": 0.3271028,
+    "scale": 0.28037383,
+    "vertical_scale": 0.28037383,
     "anisotropic": false,
     "target_dimensions": [
-      175,
-      284
+      150,
+      244
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 478,
+      "top_y": 500,
       "bounds": [
-        540,
-        478,
-        714,
-        761
+        552,
+        500,
+        701,
+        743
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
-  "output_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
+  "output_sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e",
   "asset_id": "neck_accessory_005",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "chain at the throat, long pendant down the chest",
-    "target_width": 175,
-    "top_y": 478
+    "seat": "chain ends meeting the neck, long pendant down the chest",
+    "target_width": 150,
+    "top_y": 500
   },
   "output_bounds": [
-    540,
-    478,
-    714,
-    761
+    552,
+    500,
+    701,
+    743
   ]
 }

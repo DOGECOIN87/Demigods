@@ -22,19 +22,26 @@ anatomy rather than against the canvas.
 piece sat 50–90 px below where it attaches: the chokers read as chest straps and
 every pendant chain began below the collarbone with nothing holding it up.
 
-Each is now re-derived from its immutable source with its clasp in the throat
-band. `neck_accessory_005`'s long pendant keeps its longer drop.
+Moving them all to the throat at Y 482 then traded one error for another. These
+pieces are 150–175 px wide and the neck at Y 482 is **61 px**, so every chain end
+and band tip hung in open air either side of it: the right height, attached to
+nothing. Being at the right height is not the same as being attached.
 
-| Asset | Top before | Top after |
-|---|---:|---:|
-| 001 black choker | Y555 | Y482 |
-| 002 gold blue drop choker | Y550 | Y482 |
-| 003 black ribbon bow | Y550 | Y482 |
-| 004 silver dark round pendant | Y550 | Y482 |
-| 005 silver navy long pendant | Y545 | Y478 |
-| 006 silver pale circle charm | Y550 | Y482 |
-| 007 gold teardrop pendant | Y550 | Y482 |
-| 008 violet ribbon bow | Y550 | Y482 |
+Each is now seated at the row where its own topmost ink lands inside the body
+silhouette — the neck-to-shoulder junction — so the chain disappears behind the
+neck instead of ending in space. The four pendants also narrow from 175 to 150 px,
+which is what lets their chains meet the neck rather than the upper arms.
+
+| Asset | Original | Throat pass | Final |
+|---|---:|---:|---:|
+| 001 black choker | Y555 | Y482 | **Y498** |
+| 002 gold blue drop choker | Y550 | Y482 | **Y496** |
+| 003 black ribbon bow | Y550 | Y482 | **Y504** |
+| 004 silver dark round pendant | Y550 | Y482 | **Y500** |
+| 005 silver navy long pendant | Y545 | Y478 | **Y500** |
+| 006 silver pale circle charm | Y550 | Y482 | **Y500** |
+| 007 gold teardrop pendant | Y550 | Y482 | **Y500** |
+| 008 violet ribbon bow | Y550 | Y482 | **Y500** |
 
 ## Back accessories — six wing pairs too small and seated at the jaw
 
@@ -67,6 +74,8 @@ registered bytes exactly, which confirms the pipeline is faithful.
 this silently:
 
 - every neck accessory's topmost ink falls in the throat band Y 465–515;
+- every neck accessory's four topmost ink rows land **inside the body silhouette**,
+  so a piece cannot be at the right height and attached to nothing;
 - every wing pair clears the body silhouette by at least 120 px on both sides;
 - both capes start at or above the shoulder line and hang to between Y 1000 and
   the foot baseline.
@@ -76,5 +85,5 @@ that shipped mis-seated are now all gated by measurement rather than by review.
 
 ## Verification
 
-100 assets validate, manifest consistency passes, the ledger agrees, and 201 tests
+100 assets validate, manifest consistency passes, the ledger agrees, and 202 tests
 pass.

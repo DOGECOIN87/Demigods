@@ -8,9 +8,16 @@ behaviour, maximum bounds and width ratio are all satisfied by a layer sitting i
 the wrong place.
 
 **Neck accessories** were all refit to `top_y` 545–555 at a uniform 0.45 scale.
-The base body's neck spans Y 470–505; 550 is the middle of the chest. Every
+The base body's neck spans Y 470–505; 550 is the middle of the chest, so every
 choker read as a chest strap and every pendant chain began below the collarbone
-with nothing holding it up. Each row now seats its clasp at the throat.
+with nothing holding it up.
+
+A first correction moved them all to the throat at Y 482 and traded one error for
+another. These pieces are 150–175 px wide and the neck at Y 482 is 61 px, so the
+chain ends and band tips hung in open air either side of it. A necklace has to
+*touch* where it attaches. Each row is now seated at the row where its own topmost
+ink lands inside the body silhouette — Y 496–504, the neck-to-shoulder junction —
+so the chain disappears behind the neck instead of ending in space.
 
 **Back accessories** were all normalized at 590 px wide with `top_y` 420. That is
 1.33× the body width, which for a wing pair is barely wider than the character —
@@ -42,35 +49,35 @@ CANVAS = 1254
 MAX_BOUNDS = (233, 129, 1021, 1139)
 
 # Measured on the registered base master.
-NECK_SPAN = (470, 505)      # chin to shoulder line
+NECK_SPAN = (470, 505)      # chin to shoulder line; only 61 px wide at Y 482
 SHOULDER_LINE = 569
 FOOT_BASELINE = 1139
 
 NECK_ACCESSORIES: list[dict[str, Any]] = [
     dict(id="neck_accessory_001", name="neck_accessory_001_black_choker",
-         source="dg047_black_choker_source.png", alpha=32, width=170, top_y=482,
-         seat="band ringing the throat"),
+         source="dg047_black_choker_source.png", alpha=32, width=170, top_y=498,
+         seat="band meeting the neck at the shoulder junction"),
     dict(id="neck_accessory_002", name="neck_accessory_002_gold_blue_drop_choker",
-         source="dg048_gold_blue_drop_choker_source.png", alpha=32, width=175, top_y=482,
-         seat="band at the throat with the drop on the upper chest"),
+         source="dg048_gold_blue_drop_choker_source.png", alpha=32, width=175, top_y=496,
+         seat="band meeting the neck, drop on the upper chest"),
     dict(id="neck_accessory_003", name="neck_accessory_003_black_ribbon_bow",
-         source="dg049_black_ribbon_bow_source.png", alpha=32, width=170, top_y=482,
-         seat="bow tied at the throat"),
+         source="dg049_black_ribbon_bow_source.png", alpha=32, width=170, top_y=504,
+         seat="bow tied at the base of the neck"),
     dict(id="neck_accessory_004", name="neck_accessory_004_silver_dark_round_pendant",
-         source="dg050_silver_dark_pendant_source.png", alpha=32, width=175, top_y=482,
-         seat="chain at the throat, pendant on the chest"),
+         source="dg050_silver_dark_pendant_source.png", alpha=32, width=150, top_y=500,
+         seat="chain ends meeting the neck, pendant on the chest"),
     dict(id="neck_accessory_005", name="neck_accessory_005_silver_navy_long_pendant",
-         source="dg051_silver_navy_pendant_source.png", alpha=32, width=175, top_y=478,
-         seat="chain at the throat, long pendant down the chest"),
+         source="dg051_silver_navy_pendant_source.png", alpha=32, width=150, top_y=500,
+         seat="chain ends meeting the neck, long pendant down the chest"),
     dict(id="neck_accessory_006", name="neck_accessory_006_silver_pale_circle_charm",
-         source="dg052_silver_pale_circle_charm_source.png", alpha=32, width=175, top_y=482,
-         seat="chain at the throat, charm on the chest"),
+         source="dg052_silver_pale_circle_charm_source.png", alpha=32, width=150, top_y=500,
+         seat="chain ends meeting the neck, charm on the chest"),
     dict(id="neck_accessory_007", name="neck_accessory_007_gold_teardrop_pendant",
-         source="dg053_gold_teardrop_pendant_source.png", alpha=32, width=175, top_y=482,
-         seat="chain at the throat, teardrop on the chest"),
+         source="dg053_gold_teardrop_pendant_source.png", alpha=32, width=150, top_y=500,
+         seat="chain ends meeting the neck, teardrop on the chest"),
     dict(id="neck_accessory_008", name="neck_accessory_008_violet_ribbon_bow",
-         source="dg054_violet_ribbon_bow_source.png", alpha=32, width=170, top_y=482,
-         seat="bow tied at the throat"),
+         source="dg054_violet_ribbon_bow_source.png", alpha=32, width=170, top_y=500,
+         seat="bow tied at the base of the neck"),
 ]
 
 # Wing pairs meet at their centre, so top_y is chosen to put that meeting point at

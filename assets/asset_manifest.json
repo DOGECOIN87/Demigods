@@ -2919,7 +2919,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
       "status": "production_ready",
-      "sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
+      "sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d",
       "dimensions": [
         1254,
         1254
@@ -2939,7 +2939,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
         "post_geometry_correction_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
@@ -2976,30 +2977,32 @@
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 498,
             "bounds": [
               542,
-              482,
+              498,
               711,
-              539
+              555
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "band ringing the throat",
+          "seat": "band meeting the neck at the shoulder junction",
           "target_width": 170,
-          "top_y": 482
+          "top_y": 498
         },
         "output_bounds": [
           542,
-          482,
+          498,
           711,
-          539
+          555
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
-        "post_anatomy_reseat_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd"
+        "post_anatomy_reseat_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
+        "pre_neck_contact_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
+        "post_neck_contact_sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3009,7 +3012,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
       "status": "production_ready",
-      "sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
+      "sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c",
       "dimensions": [
         1254,
         1254
@@ -3029,7 +3032,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
         "post_geometry_correction_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
@@ -3066,30 +3070,32 @@
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 496,
             "bounds": [
               540,
-              482,
+              496,
               714,
-              597
+              611
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "band at the throat with the drop on the upper chest",
+          "seat": "band meeting the neck, drop on the upper chest",
           "target_width": 175,
-          "top_y": 482
+          "top_y": 496
         },
         "output_bounds": [
           540,
-          482,
+          496,
           714,
-          597
+          611
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
-        "post_anatomy_reseat_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a"
+        "post_anatomy_reseat_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
+        "pre_neck_contact_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
+        "post_neck_contact_sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3099,7 +3105,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
+      "sha256": "63b01bc3ba8f3e17d3a847ac5844944c5bad489b8490992a6c1b3b996c1e6e3b",
       "dimensions": [
         1254,
         1254
@@ -3119,7 +3125,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
         "post_geometry_correction_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
@@ -3156,30 +3163,32 @@
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 504,
             "bounds": [
               542,
-              482,
+              504,
               711,
-              640
+              662
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "bow tied at the throat",
+          "seat": "bow tied at the base of the neck",
           "target_width": 170,
-          "top_y": 482
+          "top_y": 504
         },
         "output_bounds": [
           542,
-          482,
+          504,
           711,
-          640
+          662
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
-        "post_anatomy_reseat_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2"
+        "post_anatomy_reseat_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
+        "pre_neck_contact_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
+        "post_neck_contact_sha256": "63b01bc3ba8f3e17d3a847ac5844944c5bad489b8490992a6c1b3b996c1e6e3b"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3189,7 +3198,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
       "status": "production_ready",
-      "sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
+      "sha256": "5ff18fb971036d1f82c92b6122d2e4210c5f91a9e951fbcddef9ecfb46fcbb3a",
       "dimensions": [
         1254,
         1254
@@ -3209,7 +3218,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
         "post_geometry_correction_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
@@ -3237,39 +3247,41 @@
             946,
             838
           ],
-          "scale": 0.18498943,
-          "vertical_scale": 0.18498943,
+          "scale": 0.15856237,
+          "vertical_scale": 0.15856237,
           "anisotropic": false,
           "target_dimensions": [
-            175,
-            155
+            150,
+            133
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 500,
             "bounds": [
-              540,
-              482,
-              714,
-              636
+              552,
+              500,
+              701,
+              632
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain at the throat, pendant on the chest",
-          "target_width": 175,
-          "top_y": 482
+          "seat": "chain ends meeting the neck, pendant on the chest",
+          "target_width": 150,
+          "top_y": 500
         },
         "output_bounds": [
-          540,
-          482,
-          714,
-          636
+          552,
+          500,
+          701,
+          632
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
-        "post_anatomy_reseat_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f"
+        "post_anatomy_reseat_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
+        "pre_neck_contact_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
+        "post_neck_contact_sha256": "5ff18fb971036d1f82c92b6122d2e4210c5f91a9e951fbcddef9ecfb46fcbb3a"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3279,7 +3291,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
       "status": "production_ready",
-      "sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
+      "sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e",
       "dimensions": [
         1254,
         1254
@@ -3299,7 +3311,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
         "post_geometry_correction_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
@@ -3327,39 +3340,41 @@
             535,
             869
           ],
-          "scale": 0.3271028,
-          "vertical_scale": 0.3271028,
+          "scale": 0.28037383,
+          "vertical_scale": 0.28037383,
           "anisotropic": false,
           "target_dimensions": [
-            175,
-            284
+            150,
+            244
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 478,
+            "top_y": 500,
             "bounds": [
-              540,
-              478,
-              714,
-              761
+              552,
+              500,
+              701,
+              743
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain at the throat, long pendant down the chest",
-          "target_width": 175,
-          "top_y": 478
+          "seat": "chain ends meeting the neck, long pendant down the chest",
+          "target_width": 150,
+          "top_y": 500
         },
         "output_bounds": [
-          540,
-          478,
-          714,
-          761
+          552,
+          500,
+          701,
+          743
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
-        "post_anatomy_reseat_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8"
+        "post_anatomy_reseat_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
+        "pre_neck_contact_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
+        "post_neck_contact_sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3369,7 +3384,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
       "status": "production_ready",
-      "sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
+      "sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979",
       "dimensions": [
         1254,
         1254
@@ -3389,7 +3404,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
         "post_geometry_correction_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
@@ -3417,39 +3433,41 @@
             887,
             676
           ],
-          "scale": 0.19729425,
-          "vertical_scale": 0.19729425,
+          "scale": 0.16910936,
+          "vertical_scale": 0.16910936,
           "anisotropic": false,
           "target_dimensions": [
-            175,
-            133
+            150,
+            114
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 500,
             "bounds": [
-              540,
-              482,
-              714,
-              614
+              552,
+              500,
+              701,
+              613
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain at the throat, charm on the chest",
-          "target_width": 175,
-          "top_y": 482
+          "seat": "chain ends meeting the neck, charm on the chest",
+          "target_width": 150,
+          "top_y": 500
         },
         "output_bounds": [
-          540,
-          482,
-          714,
-          614
+          552,
+          500,
+          701,
+          613
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
-        "post_anatomy_reseat_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26"
+        "post_anatomy_reseat_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
+        "pre_neck_contact_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
+        "post_neck_contact_sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3459,7 +3477,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
       "status": "production_ready",
-      "sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
+      "sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff",
       "dimensions": [
         1254,
         1254
@@ -3479,7 +3497,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
         "post_geometry_correction_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
@@ -3507,39 +3526,41 @@
             927,
             771
           ],
-          "scale": 0.18878101,
-          "vertical_scale": 0.18878101,
+          "scale": 0.1618123,
+          "vertical_scale": 0.1618123,
           "anisotropic": false,
           "target_dimensions": [
-            175,
-            146
+            150,
+            125
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 500,
             "bounds": [
-              540,
-              482,
-              714,
-              627
+              552,
+              500,
+              701,
+              624
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain at the throat, teardrop on the chest",
-          "target_width": 175,
-          "top_y": 482
+          "seat": "chain ends meeting the neck, teardrop on the chest",
+          "target_width": 150,
+          "top_y": 500
         },
         "output_bounds": [
-          540,
-          482,
-          714,
-          627
+          552,
+          500,
+          701,
+          624
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
-        "post_anatomy_reseat_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121"
+        "post_anatomy_reseat_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
+        "pre_neck_contact_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
+        "post_neck_contact_sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -3549,7 +3570,7 @@
       "category": "neck_accessories",
       "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
       "status": "production_ready",
-      "sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
+      "sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77",
       "dimensions": [
         1254,
         1254
@@ -3569,7 +3590,8 @@
         "intake_script": "scripts/reseat_registered_accessories.py",
         "postprocessing": [
           "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "neck_contact_seat_2026-09-07"
         ],
         "pre_geometry_correction_sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
         "post_geometry_correction_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
@@ -3606,30 +3628,32 @@
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 482,
+            "top_y": 500,
             "bounds": [
               542,
-              482,
+              500,
               711,
-              608
+              626
             ]
           }
         },
         "alignment": {
           "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "bow tied at the throat",
+          "seat": "bow tied at the base of the neck",
           "target_width": 170,
-          "top_y": 482
+          "top_y": 500
         },
         "output_bounds": [
           542,
-          482,
+          500,
           711,
-          608
+          626
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "pre_anatomy_reseat_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
-        "post_anatomy_reseat_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783"
+        "post_anatomy_reseat_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
+        "pre_neck_contact_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
+        "post_neck_contact_sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"

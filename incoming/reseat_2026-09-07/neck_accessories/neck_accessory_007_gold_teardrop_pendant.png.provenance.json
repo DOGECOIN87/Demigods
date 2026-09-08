@@ -23,21 +23,21 @@
       927,
       771
     ],
-    "scale": 0.18878101,
-    "vertical_scale": 0.18878101,
+    "scale": 0.1618123,
+    "vertical_scale": 0.1618123,
     "anisotropic": false,
     "target_dimensions": [
-      175,
-      146
+      150,
+      125
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 482,
+      "top_y": 500,
       "bounds": [
-        540,
-        482,
-        714,
-        627
+        552,
+        500,
+        701,
+        624
       ]
     }
   },
@@ -47,18 +47,18 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/reseat_2026-09-07/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
-  "output_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
+  "output_sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff",
   "asset_id": "neck_accessory_007",
   "alignment": {
     "reason": "re-seated from a batch-wide fixed width and seat",
-    "seat": "chain at the throat, teardrop on the chest",
-    "target_width": 175,
-    "top_y": 482
+    "seat": "chain ends meeting the neck, teardrop on the chest",
+    "target_width": 150,
+    "top_y": 500
   },
   "output_bounds": [
-    540,
-    482,
-    714,
-    627
+    552,
+    500,
+    701,
+    624
   ]
 }
