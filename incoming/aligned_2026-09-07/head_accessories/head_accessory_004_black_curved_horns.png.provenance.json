@@ -54,7 +54,8 @@
     "seat": "horn bases on the skull dome at the brow line, fully clear of the eyes",
     "target_width": 200,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
     527,

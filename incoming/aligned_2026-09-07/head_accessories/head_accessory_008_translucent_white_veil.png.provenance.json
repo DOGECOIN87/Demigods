@@ -54,7 +54,8 @@
     "seat": "draped from the crown, face window preserved",
     "target_width": 420,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
     417,

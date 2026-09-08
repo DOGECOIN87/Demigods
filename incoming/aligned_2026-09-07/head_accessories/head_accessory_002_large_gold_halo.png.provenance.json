@@ -54,7 +54,8 @@
     "seat": "foreshortened ring hovering above the crown",
     "target_width": 400,
     "top_y": 129,
-    "target_height": 115
+    "target_height": 115,
+    "front_arc_only": false
   },
   "output_bounds": [
     427,

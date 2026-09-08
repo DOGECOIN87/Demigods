@@ -54,7 +54,8 @@
     "seat": "crown seated on the skull dome, band clear of the brow line",
     "target_width": 330,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
     462,

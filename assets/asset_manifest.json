@@ -3330,7 +3330,7 @@
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_003_green_laurel.png",
       "status": "production_ready",
-      "sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
+      "sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
       "dimensions": [
         1254,
         1254
@@ -3349,10 +3349,10 @@
         "intake_script": "scripts/align_pending_candidates.py",
         "alignment_pass": "aligned_candidates_2026-09-07",
         "output_bounds": [
-          472,
+          507,
           129,
-          781,
-          392
+          746,
+          332
         ],
         "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
         "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
@@ -3376,35 +3376,39 @@
             1439,
             1224
           ],
-          "scale": 0.21542738,
-          "vertical_scale": 0.21542738,
+          "scale": 0.16678249,
+          "vertical_scale": 0.16678249,
           "anisotropic": false,
           "target_dimensions": [
-            310,
-            264
+            240,
+            204
           ],
           "placement": {
             "center_x": 627,
             "top_y": 129,
             "bounds": [
-              472,
+              507,
               129,
-              781,
-              392
+              746,
+              332
             ]
           }
         },
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
+          "reduction_only_head_reseat_2026-09-07",
+          "head_seat_revision_2026-09-07"
         ],
         "alignment": {
           "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "laurel worn on the crown of the head",
-          "target_width": 310,
+          "seat": "crossed stems at the hairline, branches arcing over the crown",
+          "target_width": 240,
           "top_y": 129,
-          "target_height": null
-        }
+          "target_height": null,
+          "front_arc_only": false
+        },
+        "pre_seat_revision_sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
+        "post_seat_revision_sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae"
       },
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
@@ -3670,7 +3674,7 @@
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
       "status": "production_ready",
-      "sha256": "98bc453f906b58c0565716e9c6adfc270a3dca08a12ac7abb18d7c1bf81f8b4c",
+      "sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
       "dimensions": [
         1254,
         1254
@@ -3689,10 +3693,10 @@
         "intake_script": "scripts/align_pending_candidates.py",
         "alignment_pass": "aligned_candidates_2026-09-07",
         "output_bounds": [
-          442,
-          180,
-          811,
-          310
+          507,
+          265,
+          746,
+          349
         ],
         "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
         "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
@@ -3716,35 +3720,39 @@
             1785,
             630
           ],
-          "scale": 0.20728291,
-          "vertical_scale": 0.20728291,
+          "scale": 0.13445378,
+          "vertical_scale": 0.13445378,
           "anisotropic": false,
           "target_dimensions": [
-            370,
-            131
+            240,
+            85
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 180,
+            "top_y": 265,
             "bounds": [
-              442,
-              180,
-              811,
-              310
+              507,
+              265,
+              746,
+              349
             ]
           }
         },
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
+          "reduction_only_head_reseat_2026-09-07",
+          "head_seat_revision_2026-09-07"
         ],
         "alignment": {
           "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band on the skull dome, drop above the brow line",
-          "target_width": 370,
-          "top_y": 180,
-          "target_height": null
-        }
+          "seat": "band across the forehead, drop centred above the brow, arms inside the head width",
+          "target_width": 240,
+          "top_y": 265,
+          "target_height": null,
+          "front_arc_only": false
+        },
+        "pre_seat_revision_sha256": "98bc453f906b58c0565716e9c6adfc270a3dca08a12ac7abb18d7c1bf81f8b4c",
+        "post_seat_revision_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b"
       },
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
@@ -3925,7 +3933,7 @@
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_010_gold_low_circlet.png",
       "status": "production_ready",
-      "sha256": "6093481477afbbeba57059778a9331d0889a6327c8fd3415a39db382f031accf",
+      "sha256": "011f2d5836aacd2dd4692f9e03d19999450787d18246a7042303679b0d1ff8e7",
       "dimensions": [
         1254,
         1254
@@ -3944,10 +3952,10 @@
         "intake_script": "scripts/align_pending_candidates.py",
         "alignment_pass": "aligned_candidates_2026-09-07",
         "output_bounds": [
-          447,
-          200,
-          806,
-          303
+          467,
+          252,
+          786,
+          331
         ],
         "source_path": "images/trait_candidates/head_accessories/head_accessory_010_gold_low_circlet_source2.png",
         "source_sha256": "413cc76ec74d0f345f4b910f6de23e509da67ce1146263fb0a69dfb022a5e265",
@@ -3971,35 +3979,39 @@
             1492,
             430
           ],
-          "scale": 0.24128686,
-          "vertical_scale": 0.24128686,
+          "scale": 0.21447721,
+          "vertical_scale": 0.21447721,
           "anisotropic": false,
           "target_dimensions": [
-            360,
-            104
+            320,
+            92
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 200,
+            "top_y": 240,
             "bounds": [
-              447,
-              200,
-              806,
-              303
+              467,
+              240,
+              786,
+              331
             ]
           }
         },
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
+          "reduction_only_head_reseat_2026-09-07",
+          "head_seat_revision_2026-09-07"
         ],
         "alignment": {
           "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "headband on the skull dome above the brow line",
-          "target_width": 360,
-          "top_y": 200,
-          "target_height": null
-        }
+          "seat": "front band across the forehead; the ring's far side passes behind the head",
+          "target_width": 320,
+          "top_y": 240,
+          "target_height": null,
+          "front_arc_only": true
+        },
+        "pre_seat_revision_sha256": "6093481477afbbeba57059778a9331d0889a6327c8fd3415a39db382f031accf",
+        "post_seat_revision_sha256": "011f2d5836aacd2dd4692f9e03d19999450787d18246a7042303679b0d1ff8e7"
       },
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",

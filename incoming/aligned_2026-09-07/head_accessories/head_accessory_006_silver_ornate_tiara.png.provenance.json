@@ -54,7 +54,8 @@
     "seat": "band on the skull dome, side arcs past the temples",
     "target_width": 370,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
     442,

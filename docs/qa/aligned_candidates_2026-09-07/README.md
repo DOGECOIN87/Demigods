@@ -2,10 +2,9 @@
 
 **Categories:** head accessories (DG-123 … DG-132), hand objects (DG-133 … DG-137), plus a
 correction to the registered base master's undergarment coverage.
-**Scope:** the fifteen candidates remain unregistered review candidates. The one registered
-change is `assets/base_bodies/base_body_001_neutral_master.png`, whose manifest entry, SHA-256
-and provenance are updated in the same commit. No backlog, ledger, compatibility, metadata,
-release, minting or on-chain change has been performed.
+**Scope:** all fifteen candidates are registered (see Disposition), alongside a correction to
+the registered base master's undergarment coverage. No metadata, release, minting or on-chain
+change has been performed.
 
 ## Why this pass exists
 
@@ -56,14 +55,14 @@ translation and lean the registered family received.
 |---|---|---|---|---|
 | DG-123 | gold pointed crown | 520 → 330 wide | Y408 → Y356 | `[462,129,791,356]` |
 | DG-124 | large gold halo | 520 px circle → 400 × 115 ellipse above the crown | Y655 → Y243 | `[427,129,826,243]` |
-| DG-125 | green laurel | 520 → 310 wide | Y571 → Y392 | `[472,129,781,392]` |
+| DG-125 | green laurel | 520 → 240 wide | Y571 → Y332 | `[507,129,746,332]` |
 | DG-126 | black curved horns | 500 → 200 wide | Y580 → Y308 | `[527,129,726,308]` |
 | DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
 | DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
-| DG-129 | silver drop circlet | 520 → 370 wide, seat 129 → 180 | Y313 → Y310 | `[442,180,811,310]` |
+| DG-129 | silver drop circlet | 520 → 240 wide, seat 129 → 265 | Y313 → Y349 | `[507,265,746,349]` |
 | DG-130 | translucent white veil | 480 → 420 wide | Y511 → Y462 | `[417,129,836,462]` |
 | DG-131 | pale-blue spiked tiara | 520 → 390 wide | Y339 → Y285 | `[432,129,821,285]` |
-| DG-132 | gold low circlet | 520 → 360 wide, seat 129 → 200 | Y279 → Y303 | `[447,200,806,303]` |
+| DG-132 | gold low circlet | 520 → 320 wide, seat 129 → 240, front arc only | Y279 → Y331 | `[467,252,786,331]` |
 | DG-133 | arcane staff | dx +34 to grip `(438,772)`, +12° lean | — | `[278,261,523,1101]` |
 | DG-134 | violet orb | dx +34, dy −30 to palm `(438,748)` | — | `[348,518,527,737]` |
 | DG-135 | dark wand | dx +34 to grip `(438,772)`, +12° lean | — | `[316,261,506,1049]` |
@@ -76,6 +75,30 @@ All fifteen pass `python scripts/rig_gate_report.py --trait` and remain inside t
 bounds `[233,129,1021,1139]`. The head-accessory width ratios moved from 1.13–1.17× the base
 body down to 0.70–0.95×, so no accessory is now wider than the character wearing it, and
 every head-contact band clears the eyebrow line.
+
+## Seat revision — three designs that still read wrong
+
+A third pass over the ten, composited against three hair volumes rather than one, caught three
+that cleared every measurement and still looked wrong.
+
+**DG-132 gold low circlet — the far side of the ring was drawn in front of the head.** The
+generator drew this as a closed ellipse: two strokes in every column, the near one crossing the
+forehead and the far one passing behind the skull. Head accessories composite in front of the
+hair, so the far stroke was drawn over the head it should be hidden by, and the band read as a
+hoop hovering around the character. `keep_front_arc()` in
+`scripts/align_pending_candidates.py` keeps only the lowest stroke in each column, which leaves
+the near arc and lets it disappear at the temples exactly as a worn band does. It removes
+pixels and invents none.
+
+**DG-125 green laurel — the wreath framed the face instead of sitting on the head.** The design
+is a U of two branches with the stems crossed at the bottom, and at 310 px the crossing landed
+at the mouth with the branches flanking the eyes. At 240 px the crossing sits at the hairline
+and the branches arc over the crown, which is how a laurel crown is worn.
+
+**DG-129 silver drop circlet — the arms swept out past the hair.** Its side arms rise well above
+the centre, so at 370 px they ended in open air beyond the silhouette. At 240 px seated at
+Y 265 the arms stay inside the head width and the piece reads as a slim tiara with the drop
+centred on the forehead.
 
 ## Undergarment coverage — the registered base master
 

@@ -23,21 +23,21 @@
       1439,
       1224
     ],
-    "scale": 0.21542738,
-    "vertical_scale": 0.21542738,
+    "scale": 0.16678249,
+    "vertical_scale": 0.16678249,
     "anisotropic": false,
     "target_dimensions": [
-      310,
-      264
+      240,
+      204
     ],
     "placement": {
       "center_x": 627,
       "top_y": 129,
       "bounds": [
-        472,
+        507,
         129,
-        781,
-        392
+        746,
+        332
       ]
     }
   },
@@ -47,19 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_003_green_laurel.png",
-  "output_sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
+  "output_sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
   "backlog_id": "DG-125",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "laurel worn on the crown of the head",
-    "target_width": 310,
+    "seat": "crossed stems at the hairline, branches arcing over the crown",
+    "target_width": 240,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
-    472,
+    507,
     129,
-    781,
-    392
+    746,
+    332
   ]
 }

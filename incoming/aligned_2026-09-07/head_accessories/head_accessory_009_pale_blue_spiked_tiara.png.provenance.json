@@ -54,7 +54,8 @@
     "seat": "band on the skull dome, points well clear of the brow",
     "target_width": 390,
     "top_y": 129,
-    "target_height": null
+    "target_height": null,
+    "front_arc_only": false
   },
   "output_bounds": [
     432,

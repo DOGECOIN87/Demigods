@@ -23,21 +23,21 @@
       1492,
       430
     ],
-    "scale": 0.24128686,
-    "vertical_scale": 0.24128686,
+    "scale": 0.21447721,
+    "vertical_scale": 0.21447721,
     "anisotropic": false,
     "target_dimensions": [
-      360,
-      104
+      320,
+      92
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 200,
+      "top_y": 240,
       "bounds": [
-        447,
-        200,
-        806,
-        303
+        467,
+        240,
+        786,
+        331
       ]
     }
   },
@@ -47,19 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_010_gold_low_circlet.png",
-  "output_sha256": "6093481477afbbeba57059778a9331d0889a6327c8fd3415a39db382f031accf",
+  "output_sha256": "011f2d5836aacd2dd4692f9e03d19999450787d18246a7042303679b0d1ff8e7",
   "backlog_id": "DG-132",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "headband on the skull dome above the brow line",
-    "target_width": 360,
-    "top_y": 200,
-    "target_height": null
+    "seat": "front band across the forehead; the ring's far side passes behind the head",
+    "target_width": 320,
+    "top_y": 240,
+    "target_height": null,
+    "front_arc_only": true
   },
   "output_bounds": [
-    447,
-    200,
-    806,
-    303
+    467,
+    252,
+    786,
+    331
   ]
 }

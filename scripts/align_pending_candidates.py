@@ -39,6 +39,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -50,7 +51,7 @@ POSE_CONTACT = {2: (438, 772), 4: (438, 748)}
 POSE_LEAN_DEGREES = {2: 12.0, 4: 0.0}
 
 # backlog id -> (production name, immutable source, alpha threshold, width, seat Y, height)
-# height is None for a proportional reduction.
+# height is None for a proportional reduction. front_arc drops a ring's far side.
 HEAD_ACCESSORIES: list[dict[str, Any]] = [
     dict(id="DG-123", name="head_accessory_001_gold_pointed_crown",
          source="head_accessory_001_gold_pointed_crown_regen1.png", alpha=32,
@@ -62,8 +63,8 @@ HEAD_ACCESSORIES: list[dict[str, Any]] = [
          seat="foreshortened ring hovering above the crown"),
     dict(id="DG-125", name="head_accessory_003_green_laurel",
          source="head_accessory_003_green_laurel_regen1.png", alpha=64,
-         width=310, top_y=129, height=None,
-         seat="laurel worn on the crown of the head"),
+         width=240, top_y=129, height=None,
+         seat="crossed stems at the hairline, branches arcing over the crown"),
     dict(id="DG-126", name="head_accessory_004_black_curved_horns",
          source="head_accessory_004_black_curved_horns_regen1.png", alpha=64,
          width=200, top_y=129, height=None,
@@ -78,8 +79,8 @@ HEAD_ACCESSORIES: list[dict[str, Any]] = [
          seat="band on the skull dome, side arcs past the temples"),
     dict(id="DG-129", name="head_accessory_007_silver_drop_circlet",
          source="head_accessory_007_silver_drop_circlet_source2.png", alpha=64,
-         width=370, top_y=180, height=None,
-         seat="band on the skull dome, drop above the brow line"),
+         width=240, top_y=265, height=None,
+         seat="band across the forehead, drop centred above the brow, arms inside the head width"),
     dict(id="DG-130", name="head_accessory_008_translucent_white_veil",
          source="head_accessory_008_translucent_white_veil_source3.png", alpha=32,
          width=420, top_y=129, height=None,
@@ -90,8 +91,8 @@ HEAD_ACCESSORIES: list[dict[str, Any]] = [
          seat="band on the skull dome, points well clear of the brow"),
     dict(id="DG-132", name="head_accessory_010_gold_low_circlet",
          source="head_accessory_010_gold_low_circlet_source2.png", alpha=32,
-         width=360, top_y=200, height=None,
-         seat="headband on the skull dome above the brow line"),
+         width=320, top_y=240, height=None, front_arc=True,
+         seat="front band across the forehead; the ring's far side passes behind the head"),
 ]
 
 # backlog id -> (production name, pose, translation applied to the normalized layer)
@@ -114,6 +115,34 @@ HAND_CANDIDATE_DIR = "incoming/hand_objects"
 
 def sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def keep_front_arc(image: Image.Image) -> Image.Image:
+    """Drop the far side of a band the generator drew as a closed ring.
+
+    A circlet drawn face-on as a full ellipse has two strokes in every column:
+    the near one crossing the forehead and the far one passing behind the head.
+    Head accessories composite in front of the hair, so the far stroke is drawn
+    over the skull it should be hidden by, and the whole thing reads as a hoop
+    hovering around the character rather than a band worn on them.
+
+    Keeping only the lowest stroke in each column leaves the near arc, which
+    disappears at the temples exactly as a worn band does. It removes pixels and
+    invents none.
+    """
+    pixels = np.array(image.convert("RGBA"))
+    alpha = pixels[:, :, 3]
+    for x in range(alpha.shape[1]):
+        rows = np.nonzero(alpha[:, x] > 16)[0]
+        if rows.size == 0:
+            continue
+        breaks = np.nonzero(np.diff(rows) > 1)[0]
+        if breaks.size == 0:
+            continue
+        # every run but the last one is behind the head
+        last_run_start = rows[breaks[-1] + 1]
+        pixels[: last_run_start, x, 3] = 0
+    return Image.fromarray(pixels, "RGBA")
 
 
 def visible_bounds(image: Image.Image) -> list[int]:
@@ -147,6 +176,11 @@ def build_head_accessory(row: dict[str, Any], out_dir: Path) -> dict[str, Any]:
     if result.returncode != 0:
         raise RuntimeError(f"{row['name']}: normalization failed\n{result.stderr}")
 
+    if row.get("front_arc"):
+        with Image.open(out) as image:
+            trimmed = keep_front_arc(image)
+        trimmed.save(out)
+
     with Image.open(out) as image:
         bounds = visible_bounds(image.convert("RGBA"))
     check_bounds(bounds, row["name"])
@@ -159,6 +193,7 @@ def build_head_accessory(row: dict[str, Any], out_dir: Path) -> dict[str, Any]:
         "target_width": row["width"],
         "top_y": row["top_y"],
         "target_height": row["height"],
+        "front_arc_only": bool(row.get("front_arc")),
     }
     record["output_bounds"] = bounds
     record["output_sha256"] = sha256_file(out)
