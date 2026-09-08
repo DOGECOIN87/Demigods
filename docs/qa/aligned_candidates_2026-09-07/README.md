@@ -59,8 +59,8 @@ translation and lean the registered family received.
 | DG-126 | black curved horns | 500 → 200 wide | Y580 → Y308 | `[527,129,726,308]` |
 | DG-127 | silver winged circlet | 520 → 350 wide | Y407 → Y315 | `[452,129,801,315]` |
 | DG-128 | silver ornate tiara | 520 → 370 wide | Y444 → Y352 | `[442,129,811,352]` |
-| DG-129 | silver drop circlet | 520 → 240 wide, seat 129 → 265 | Y313 → Y349 | `[507,265,746,349]` |
-| DG-130 | translucent white veil | 480 → 420 wide | Y511 → Y462 | `[417,129,836,462]` |
+| DG-129 | silver drop circlet | 520 → 320 wide, seat 129 → 276 | Y313 → Y388 | `[467,276,786,388]` |
+| DG-130 | translucent white veil | 480 → 460 wide, seat 129 → 180 | Y511 → Y545 | `[397,180,856,545]` |
 | DG-131 | pale-blue spiked tiara | 520 → 390 wide | Y339 → Y285 | `[432,129,821,285]` |
 | DG-132 | gold low circlet | 520 → 320 wide, seat 129 → 240, front arc only | Y279 → Y331 | `[467,252,786,331]` |
 | DG-133 | arcane staff | dx +34 to grip `(438,772)`, +12° lean | — | `[278,261,523,1101]` |
@@ -78,8 +78,10 @@ every head-contact band clears the eyebrow line.
 
 ## Seat revision — three designs that still read wrong
 
-A third pass over the ten, composited against three hair volumes rather than one, caught three
-that cleared every measurement and still looked wrong.
+Two further passes over the ten, composited against three hair volumes rather than one, caught
+five that cleared every measurement and still looked wrong. The lesson is that no measurement
+available to the automated gates distinguishes a band worn on a head from a band floating
+beside one; only a composite does, and only against varied hair.
 
 **DG-132 gold low circlet — the far side of the ring was drawn in front of the head.** The
 generator drew this as a closed ellipse: two strokes in every column, the near one crossing the
@@ -95,10 +97,17 @@ is a U of two branches with the stems crossed at the bottom, and at 310 px the c
 at the mouth with the branches flanking the eyes. At 240 px the crossing sits at the hairline
 and the branches arc over the crown, which is how a laurel crown is worn.
 
-**DG-129 silver drop circlet — the arms swept out past the hair.** Its side arms rise well above
-the centre, so at 370 px they ended in open air beyond the silhouette. At 240 px seated at
-Y 265 the arms stay inside the head width and the piece reads as a slim tiara with the drop
-centred on the forehead.
+**DG-129 silver drop circlet — the arms ended in open air.** Its side arms rise well above the
+centre, so at 370 px they swept out past the hair. Narrowing to 240 px kept them inside the
+head width but left them unanchored: too thin and too high to touch anything, so the band still
+read as a wire floating over the hair. At 320 px seated at Y 276 the arms land on the hair at
+the temples and the drop hangs centred on the forehead.
+
+**DG-130 translucent white veil — an arch hanging from a point above the head.** The design is
+an inverted U with a narrow apex and two long drapes. Seated at Y 129 the apex sat above the
+crown with nothing under it, so the piece read as two curtains either side of the face rather
+than a veil. At 460 px seated at Y 180 the arch rests on the crown and the drapes frame the
+face.
 
 ## Undergarment coverage — the registered base master
 

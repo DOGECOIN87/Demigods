@@ -3674,7 +3674,7 @@
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
       "status": "production_ready",
-      "sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
+      "sha256": "2d18b7305203cb2879fb43ced345117796bddcc12cb5c30ba91625c09df9e5f0",
       "dimensions": [
         1254,
         1254
@@ -3693,10 +3693,10 @@
         "intake_script": "scripts/align_pending_candidates.py",
         "alignment_pass": "aligned_candidates_2026-09-07",
         "output_bounds": [
-          507,
-          265,
-          746,
-          349
+          467,
+          276,
+          786,
+          388
         ],
         "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
         "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
@@ -3720,39 +3720,42 @@
             1785,
             630
           ],
-          "scale": 0.13445378,
-          "vertical_scale": 0.13445378,
+          "scale": 0.17927171,
+          "vertical_scale": 0.17927171,
           "anisotropic": false,
           "target_dimensions": [
-            240,
-            85
+            320,
+            113
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 265,
+            "top_y": 276,
             "bounds": [
-              507,
-              265,
-              746,
-              349
+              467,
+              276,
+              786,
+              388
             ]
           }
         },
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
           "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_2026-09-07"
+          "head_seat_revision_2026-09-07",
+          "head_seat_revision_b_2026-09-07"
         ],
         "alignment": {
           "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band across the forehead, drop centred above the brow, arms inside the head width",
-          "target_width": 240,
-          "top_y": 265,
+          "seat": "band across the forehead with its arms landing on the hair at the temples, drop centred",
+          "target_width": 320,
+          "top_y": 276,
           "target_height": null,
           "front_arc_only": false
         },
         "pre_seat_revision_sha256": "98bc453f906b58c0565716e9c6adfc270a3dca08a12ac7abb18d7c1bf81f8b4c",
-        "post_seat_revision_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b"
+        "post_seat_revision_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
+        "pre_seat_revision_b_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
+        "post_seat_revision_b_sha256": "2d18b7305203cb2879fb43ced345117796bddcc12cb5c30ba91625c09df9e5f0"
       },
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
@@ -3763,7 +3766,7 @@
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
       "status": "production_ready",
-      "sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
+      "sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
       "dimensions": [
         1254,
         1254
@@ -3782,10 +3785,10 @@
         "intake_script": "scripts/align_pending_candidates.py",
         "alignment_pass": "aligned_candidates_2026-09-07",
         "output_bounds": [
-          417,
-          129,
-          836,
-          462
+          397,
+          180,
+          856,
+          545
         ],
         "source_path": "images/trait_candidates/head_accessories/head_accessory_008_translucent_white_veil_source3.png",
         "source_sha256": "3a00f90deac0b4842ec6b7737291e7dd244b0ce886bd3490594d8d0de0569b22",
@@ -3809,35 +3812,39 @@
             1223,
             974
           ],
-          "scale": 0.34341783,
-          "vertical_scale": 0.34341783,
+          "scale": 0.37612428,
+          "vertical_scale": 0.37612428,
           "anisotropic": false,
           "target_dimensions": [
-            420,
-            334
+            460,
+            366
           ],
           "placement": {
             "center_x": 627,
-            "top_y": 129,
+            "top_y": 180,
             "bounds": [
-              417,
-              129,
-              836,
-              462
+              397,
+              180,
+              856,
+              545
             ]
           }
         },
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
+          "reduction_only_head_reseat_2026-09-07",
+          "head_seat_revision_b_2026-09-07"
         ],
         "alignment": {
           "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "draped from the crown, face window preserved",
-          "target_width": 420,
-          "top_y": 129,
-          "target_height": null
-        }
+          "seat": "arch resting on the crown with the drapes framing the face",
+          "target_width": 460,
+          "top_y": 180,
+          "target_height": null,
+          "front_arc_only": false
+        },
+        "pre_seat_revision_b_sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
+        "post_seat_revision_b_sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445"
       },
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",

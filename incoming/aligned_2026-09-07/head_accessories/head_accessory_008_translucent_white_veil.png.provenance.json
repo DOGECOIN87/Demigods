@@ -23,21 +23,21 @@
       1223,
       974
     ],
-    "scale": 0.34341783,
-    "vertical_scale": 0.34341783,
+    "scale": 0.37612428,
+    "vertical_scale": 0.37612428,
     "anisotropic": false,
     "target_dimensions": [
-      420,
-      334
+      460,
+      366
     ],
     "placement": {
       "center_x": 627,
-      "top_y": 129,
+      "top_y": 180,
       "bounds": [
-        417,
-        129,
-        836,
-        462
+        397,
+        180,
+        856,
+        545
       ]
     }
   },
@@ -47,20 +47,20 @@
   ],
   "normalization_script": "scripts/normalize_generator_source.py",
   "output_path": "incoming/aligned_2026-09-07/head_accessories/head_accessory_008_translucent_white_veil.png",
-  "output_sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
+  "output_sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
   "backlog_id": "DG-130",
   "alignment": {
     "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-    "seat": "draped from the crown, face window preserved",
-    "target_width": 420,
-    "top_y": 129,
+    "seat": "arch resting on the crown with the drapes framing the face",
+    "target_width": 460,
+    "top_y": 180,
     "target_height": null,
     "front_arc_only": false
   },
   "output_bounds": [
-    417,
-    129,
-    836,
-    462
+    397,
+    180,
+    856,
+    545
   ]
 }
