@@ -3972,33 +3972,6 @@
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
-      "id": "aura_front_001",
-      "category": "front_auras",
-      "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
-      "status": "production_ready",
-      "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-145",
-      "qa_composite": "docs/qa/composites/aura_front_001_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Orange rising foreground flame",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145\u2013DG-146."
-    },
-    {
       "id": "aura_front_002",
       "category": "front_auras",
       "path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
@@ -5421,13 +5394,26 @@
       "intended_production_path": "assets/backgrounds/background_008_violet_void_portal.png"
     }
   ],
-  "blocked_assets": [],
+  "blocked_assets": [
+    {
+      "id": "aura_front_001",
+      "backlog_id": "DG-145",
+      "intended_path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+      "status": "QA-failed",
+      "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874",
+      "source_candidate": "images/trait_candidates/front_auras/aura_front_001_orange_rising_flame_candidate.png",
+      "failed_on": "2026-09-09",
+      "reason": "Flat-shaded placeholder, not a rendered flame. 126,276 opaque pixels carry only three distinct colour buckets: hard-edged orange and gold triangles plus a few solid circles, with no internal value structure. As a front aura it composites over the character, so it covered every token it appeared on with opaque geometry. production_status.md bars a placeholder from counting as a completed production asset; it should not have been registered. Retained as candidate evidence.",
+      "qa_report": "docs/qa/front_aura_001_placeholder_rejected_2026-09-09.md"
+    }
+  ],
   "queued_base_poses": [],
   "pending_categories": [
     "eyes",
     "eyebrows",
     "mouths",
-    "expression_marks"
+    "expression_marks",
+    "front_auras"
   ],
   "legendary_one_of_ones": [
     {
