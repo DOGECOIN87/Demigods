@@ -175,81 +175,81 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-055 | eyes | Dark neutral eye pair, cell r1c1 | `FACE`, eyes r1c1 | Approved face anchors | `assets/eyes/eyes_001_sheet_r1c1_dark_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-056 | eyes | Dark eye pair, cell r1c2 | `FACE`, eyes r1c2 | DG-055 representative test | `assets/eyes/eyes_002_sheet_r1c2_dark.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-057 | eyes | Dark eye pair, cell r1c3 | `FACE`, eyes r1c3 | DG-055 | `assets/eyes/eyes_003_sheet_r1c3_dark.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-058 | eyes | Deep-olive eye pair, cell r1c4 | `FACE`, eyes r1c4 | DG-055 | `assets/eyes/eyes_004_sheet_r1c4_deep_olive.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-059 | eyes | Deep-blue eye pair, cell r1c5 | `FACE`, eyes r1c5 | DG-055 | `assets/eyes/eyes_005_sheet_r1c5_deep_blue.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-060 | eyes | Violet eye pair, cell r1c6 | `FACE`, eyes r1c6 | DG-055 | `assets/eyes/eyes_006_sheet_r1c6_violet.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-061 | eyes | Near-black eye pair, cell r1c7 | `FACE`, eyes r1c7 | DG-055 | `assets/eyes/eyes_007_sheet_r1c7_near_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-062 | eyes | Dark-brown eye pair, cell r1c8 | `FACE`, eyes r1c8 | DG-055 | `assets/eyes/eyes_008_sheet_r1c8_dark_brown.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-063 | eyes | Gold eye pair, cell r2c1 | `FACE`, eyes r2c1 | DG-055 | `assets/eyes/eyes_009_sheet_r2c1_gold.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-064 | eyes | Yellow-green eye pair, cell r2c2 | `FACE`, eyes r2c2 | DG-055 | `assets/eyes/eyes_010_sheet_r2c2_yellow_green.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-065 | eyes | Cyan eye pair, cell r2c3 | `FACE`, eyes r2c3 | DG-055 | `assets/eyes/eyes_011_sheet_r2c3_cyan.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-066 | eyes | Emerald eye pair, cell r2c4 | `FACE`, eyes r2c4 | DG-055 | `assets/eyes/eyes_012_sheet_r2c4_emerald.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-067 | eyes | Crimson eye pair, cell r2c5 | `FACE`, eyes r2c5 | DG-055 | `assets/eyes/eyes_013_sheet_r2c5_crimson.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-068 | eyes | Magenta eye pair, cell r2c6 | `FACE`, eyes r2c6 | DG-055 | `assets/eyes/eyes_014_sheet_r2c6_magenta.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-069 | eyes | Charcoal eye pair, cell r2c7 | `FACE`, eyes r2c7 | DG-055 | `assets/eyes/eyes_015_sheet_r2c7_charcoal.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-070 | eyes | Black eye pair, cell r2c8 | `FACE`, eyes r2c8 | DG-055 | `assets/eyes/eyes_016_sheet_r2c8_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-071 | eyes | Dark neutral eye pair, cell r3c1 | `FACE`, eyes r3c1 | DG-055 | `assets/eyes/eyes_017_sheet_r3c1_dark_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-072 | eyes | Gray eye pair, cell r3c2 | `FACE`, eyes r3c2 | DG-055 | `assets/eyes/eyes_018_sheet_r3c2_gray.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-073 | eyes | Rose eye pair, cell r3c3 | `FACE`, eyes r3c3 | DG-055 | `assets/eyes/eyes_019_sheet_r3c3_rose.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-074 | eyes | Pink eye pair, cell r3c4 | `FACE`, eyes r3c4 | DG-055 | `assets/eyes/eyes_020_sheet_r3c4_pink.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-075 | eyes | Amber eye pair, cell r3c5 | `FACE`, eyes r3c5 | DG-055 | `assets/eyes/eyes_021_sheet_r3c5_amber.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-076 | eyes | Orange-gold eye pair, cell r3c6 | `FACE`, eyes r3c6 | DG-055 | `assets/eyes/eyes_022_sheet_r3c6_orange_gold.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-077 | eyes | Charcoal eye pair, cell r3c7 | `FACE`, eyes r3c7 | DG-055 | `assets/eyes/eyes_023_sheet_r3c7_charcoal.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-078 | eyes | Black eye pair, cell r3c8 | `FACE`, eyes r3c8 | DG-055 | `assets/eyes/eyes_024_sheet_r3c8_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
+| DG-055 | eyes | Dark neutral iris | `FACE`, eyes r1c1 | Approved face anchors | `assets/eyes/eyes_001_dark_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-056 | eyes | Dark umber iris | `FACE`, eyes r1c2 | DG-055 representative test | `assets/eyes/eyes_002_dark_umber.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-057 | eyes | Dark slate iris | `FACE`, eyes r1c3 | DG-055 | `assets/eyes/eyes_003_dark_slate.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-058 | eyes | Deep olive iris | `FACE`, eyes r1c4 | DG-055 | `assets/eyes/eyes_004_deep_olive.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-059 | eyes | Deep blue iris | `FACE`, eyes r1c5 | DG-055 | `assets/eyes/eyes_005_deep_blue.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-060 | eyes | Violet iris | `FACE`, eyes r1c6 | DG-055 | `assets/eyes/eyes_006_violet.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-061 | eyes | Near-black iris | `FACE`, eyes r1c7 | DG-055 | `assets/eyes/eyes_007_near_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-062 | eyes | Dark brown iris | `FACE`, eyes r1c8 | DG-055 | `assets/eyes/eyes_008_dark_brown.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-063 | eyes | Gold iris | `FACE`, eyes r2c1 | DG-055 | `assets/eyes/eyes_009_gold.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-064 | eyes | Yellow-green iris | `FACE`, eyes r2c2 | DG-055 | `assets/eyes/eyes_010_yellow_green.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-065 | eyes | Cyan iris | `FACE`, eyes r2c3 | DG-055 | `assets/eyes/eyes_011_cyan.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-066 | eyes | Emerald iris | `FACE`, eyes r2c4 | DG-055 | `assets/eyes/eyes_012_emerald.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-067 | eyes | Crimson iris | `FACE`, eyes r2c5 | DG-055 | `assets/eyes/eyes_013_crimson.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-068 | eyes | Magenta iris | `FACE`, eyes r2c6 | DG-055 | `assets/eyes/eyes_014_magenta.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-069 | eyes | Charcoal iris | `FACE`, eyes r2c7 | DG-055 | `assets/eyes/eyes_015_charcoal.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-070 | eyes | Black iris | `FACE`, eyes r2c8 | DG-055 | `assets/eyes/eyes_016_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-071 | eyes | Warm neutral iris | `FACE`, eyes r3c1 | DG-055 | `assets/eyes/eyes_017_warm_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-072 | eyes | Gray iris | `FACE`, eyes r3c2 | DG-055 | `assets/eyes/eyes_018_gray.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-073 | eyes | Rose iris | `FACE`, eyes r3c3 | DG-055 | `assets/eyes/eyes_019_rose.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-074 | eyes | Pink iris | `FACE`, eyes r3c4 | DG-055 | `assets/eyes/eyes_020_pink.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-075 | eyes | Amber iris | `FACE`, eyes r3c5 | DG-055 | `assets/eyes/eyes_021_amber.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-076 | eyes | Orange-gold iris | `FACE`, eyes r3c6 | DG-055 | `assets/eyes/eyes_022_orange_gold.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-077 | eyes | Cool charcoal iris | `FACE`, eyes r3c7 | DG-055 | `assets/eyes/eyes_023_cool_charcoal.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-078 | eyes | Blue-black iris | `FACE`, eyes r3c8 | DG-055 | `assets/eyes/eyes_024_blue_black.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
 
 ### Eyebrows
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-079 | eyebrows | Matched pair, reference cell r1c1 | `FACE`, eyebrows r1c1 | Approved face anchors | `assets/eyebrows/eyebrows_001_sheet_r1c1.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-080 | eyebrows | Matched pair, reference cell r1c2 | `FACE`, eyebrows r1c2 | DG-079 representative test | `assets/eyebrows/eyebrows_002_sheet_r1c2.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-081 | eyebrows | Matched pair, reference cell r1c3 | `FACE`, eyebrows r1c3 | DG-079 | `assets/eyebrows/eyebrows_003_sheet_r1c3.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-082 | eyebrows | Matched pair, reference cell r1c4 | `FACE`, eyebrows r1c4 | DG-079 | `assets/eyebrows/eyebrows_004_sheet_r1c4.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-083 | eyebrows | Matched pair, reference cell r2c1 | `FACE`, eyebrows r2c1 | DG-079 | `assets/eyebrows/eyebrows_005_sheet_r2c1.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-084 | eyebrows | Matched pair, reference cell r2c2 | `FACE`, eyebrows r2c2 | DG-079 | `assets/eyebrows/eyebrows_006_sheet_r2c2.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-085 | eyebrows | Matched pair, reference cell r2c3 | `FACE`, eyebrows r2c3 | DG-079 | `assets/eyebrows/eyebrows_007_sheet_r2c3.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-086 | eyebrows | Matched pair, reference cell r2c4 | `FACE`, eyebrows r2c4 | DG-079 | `assets/eyebrows/eyebrows_008_sheet_r2c4.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-087 | eyebrows | Matched pair, reference cell r3c1 | `FACE`, eyebrows r3c1 | DG-079 | `assets/eyebrows/eyebrows_009_sheet_r3c1.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-088 | eyebrows | Matched pair, reference cell r3c2 | `FACE`, eyebrows r3c2 | DG-079 | `assets/eyebrows/eyebrows_010_sheet_r3c2.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-089 | eyebrows | Matched pair, reference cell r3c3 | `FACE`, eyebrows r3c3 | DG-079 | `assets/eyebrows/eyebrows_011_sheet_r3c3.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-090 | eyebrows | Matched pair, reference cell r3c4 | `FACE`, eyebrows r3c4 | DG-079 | `assets/eyebrows/eyebrows_012_sheet_r3c4.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-091 | eyebrows | Matched pair, reference cell r4c1 | `FACE`, eyebrows r4c1 | DG-079 | `assets/eyebrows/eyebrows_013_sheet_r4c1.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-092 | eyebrows | Matched pair, reference cell r4c2 | `FACE`, eyebrows r4c2 | DG-079 | `assets/eyebrows/eyebrows_014_sheet_r4c2.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-093 | eyebrows | Matched pair, reference cell r4c3 | `FACE`, eyebrows r4c3 | DG-079 | `assets/eyebrows/eyebrows_015_sheet_r4c3.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-094 | eyebrows | Matched pair, reference cell r4c4 | `FACE`, eyebrows r4c4 | DG-079 | `assets/eyebrows/eyebrows_016_sheet_r4c4.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
+| DG-079 | eyebrows | Neutral brow pair, as painted | `FACE`, eyebrows r1c1 | Approved face anchors | `assets/eyebrows/eyebrows_001_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-080 | eyebrows | Raised brow pair | `FACE`, eyebrows r1c2 | DG-079 representative test | `assets/eyebrows/eyebrows_002_raised.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-081 | eyebrows | Lowered brow pair | `FACE`, eyebrows r1c3 | DG-079 | `assets/eyebrows/eyebrows_003_lowered.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-082 | eyebrows | Angry brow pair, inner ends down | `FACE`, eyebrows r1c4 | DG-079 | `assets/eyebrows/eyebrows_004_angry.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-083 | eyebrows | Furious brow pair, driven down and in | `FACE`, eyebrows r2c1 | DG-079 | `assets/eyebrows/eyebrows_005_furious.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-084 | eyebrows | Worried brow pair, inner ends up | `FACE`, eyebrows r2c2 | DG-079 | `assets/eyebrows/eyebrows_006_worried.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-085 | eyebrows | Pleading brow pair, inner ends high | `FACE`, eyebrows r2c3 | DG-079 | `assets/eyebrows/eyebrows_007_pleading.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-086 | eyebrows | Arched brow pair | `FACE`, eyebrows r2c4 | DG-079 | `assets/eyebrows/eyebrows_008_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-087 | eyebrows | Flat brow pair | `FACE`, eyebrows r3c1 | DG-079 | `assets/eyebrows/eyebrows_009_flat.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-088 | eyebrows | Thin brow pair | `FACE`, eyebrows r3c2 | DG-079 | `assets/eyebrows/eyebrows_010_thin.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-089 | eyebrows | Thick brow pair | `FACE`, eyebrows r3c3 | DG-079 | `assets/eyebrows/eyebrows_011_thick.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-090 | eyebrows | Bold raised brow pair | `FACE`, eyebrows r3c4 | DG-079 | `assets/eyebrows/eyebrows_012_bold_raised.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-091 | eyebrows | Fine arched brow pair | `FACE`, eyebrows r4c1 | DG-079 | `assets/eyebrows/eyebrows_013_fine_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-092 | eyebrows | Wide-set brow pair | `FACE`, eyebrows r4c2 | DG-079 | `assets/eyebrows/eyebrows_014_wide_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-093 | eyebrows | Close-set brow pair | `FACE`, eyebrows r4c3 | DG-079 | `assets/eyebrows/eyebrows_015_close_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-094 | eyebrows | Quizzical brow pair, one raised | `FACE`, eyebrows r4c4 | DG-079 | `assets/eyebrows/eyebrows_016_quizzical.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
 
 ### Mouths
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-095 | mouth | Fine closed neutral mouth, cell r1c1 | `FACE`, mouths r1c1 | Approved mouth anchor | `assets/mouths/mouth_001_closed_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-096 | mouth | Small pink open smile, cell r1c2 | `FACE`, mouths r1c2 | DG-095 representative test | `assets/mouths/mouth_002_small_open_smile.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-097 | mouth | Small dark open/fang mouth, cell r1c3 | `FACE`, mouths r1c3 | DG-095 | `assets/mouths/mouth_003_small_dark_open.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-098 | mouth | Wide pink open smile, cell r1c4 | `FACE`, mouths r1c4 | DG-095 | `assets/mouths/mouth_004_wide_open_smile.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-099 | mouth | Fine short mouth line, cell r2c1 | `FACE`, mouths r2c1 | DG-095 | `assets/mouths/mouth_005_short_line.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-100 | mouth | Small soft curve, cell r2c2 | `FACE`, mouths r2c2 | DG-095 | `assets/mouths/mouth_006_soft_curve.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-101 | mouth | Fine flat line, cell r2c3 | `FACE`, mouths r2c3 | DG-095 | `assets/mouths/mouth_007_flat_line.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-102 | mouth | Small downturned/open mouth, cell r2c4 | `FACE`, mouths r2c4 | DG-095 | `assets/mouths/mouth_008_small_downturned.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-103 | mouth | Tiny neutral mark, cell r3c1 | `FACE`, mouths r3c1 | DG-095 | `assets/mouths/mouth_009_tiny_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-104 | mouth | Tiny curved mark, cell r3c2 | `FACE`, mouths r3c2 | DG-095 | `assets/mouths/mouth_010_tiny_curve.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-105 | mouth | Pink open pout, cell r3c3 | `FACE`, mouths r3c3 | DG-095 | `assets/mouths/mouth_011_pink_open_pout.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
-| DG-106 | mouth | Tiny dark round mouth, cell r3c4 | `FACE`, mouths r3c4 | DG-095 | `assets/mouths/mouth_012_tiny_round.png` | `prompts/06_eyes_eyebrows_mouths.md` | pending |
+| DG-095 | mouth | Fine closed neutral mouth, the master's own | `FACE`, mouths r1c1 | Approved mouth anchor | `assets/mouths/mouth_001_closed_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-096 | mouth | Small open smile with tongue | `FACE`, mouths r1c2 | DG-095 representative test | `assets/mouths/mouth_002_small_open_smile.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-097 | mouth | Small dark open mouth with upper teeth | `FACE`, mouths r1c3 | DG-095 | `assets/mouths/mouth_003_small_dark_open.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-098 | mouth | Wide open smile | `FACE`, mouths r1c4 | DG-095 | `assets/mouths/mouth_004_wide_open_smile.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-099 | mouth | Fine short mouth line | `FACE`, mouths r2c1 | DG-095 | `assets/mouths/mouth_005_short_line.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-100 | mouth | Small soft curved smile | `FACE`, mouths r2c2 | DG-095 | `assets/mouths/mouth_006_soft_curve.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-101 | mouth | Fine flat line | `FACE`, mouths r2c3 | DG-095 | `assets/mouths/mouth_007_flat_line.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-102 | mouth | Small downturned open mouth | `FACE`, mouths r2c4 | DG-095 | `assets/mouths/mouth_008_small_downturned.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-103 | mouth | Tiny neutral mark | `FACE`, mouths r3c1 | DG-095 | `assets/mouths/mouth_009_tiny_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-104 | mouth | Tiny curved mark | `FACE`, mouths r3c2 | DG-095 | `assets/mouths/mouth_010_tiny_curve.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-105 | mouth | Open pout with tongue | `FACE`, mouths r3c3 | DG-095 | `assets/mouths/mouth_011_pink_open_pout.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-106 | mouth | Tiny dark round mouth | `FACE`, mouths r3c4 | DG-095 | `assets/mouths/mouth_012_tiny_round.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
 
 ### Expression marks
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-107 | expression mark | Pink blush strokes | `FACE`, expression marks r1c1 | Approved face anchors | `assets/expression_marks/expression_mark_001_pink_blush_strokes.png` | `prompts/07_expression_marks.md` | pending |
-| DG-108 | expression mark | Yellow stress/attention marks | `FACE`, expression marks r1c2 | DG-107 representative test | `assets/expression_marks/expression_mark_002_yellow_stress_marks.png` | `prompts/07_expression_marks.md` | pending |
-| DG-109 | expression mark | Dark vertical gloom lines | `FACE`, expression marks r1c3 | DG-107 | `assets/expression_marks/expression_mark_003_dark_gloom_lines.png` | `prompts/07_expression_marks.md` | pending |
-| DG-110 | expression mark | Gold sparkle/star | `FACE`, expression marks r1c4 | DG-107 | `assets/expression_marks/expression_mark_004_gold_sparkle.png` | `prompts/07_expression_marks.md` | pending |
-| DG-111 | expression mark | Cyan sweat drop | `FACE`, expression marks r2c1 | DG-107 | `assets/expression_marks/expression_mark_005_cyan_sweat_drop.png` | `prompts/07_expression_marks.md` | pending |
-| DG-112 | expression mark | Pink anger cross | `FACE`, expression marks r2c2 | DG-107 | `assets/expression_marks/expression_mark_006_pink_anger_cross.png` | `prompts/07_expression_marks.md` | pending |
-| DG-113 | expression mark | Yellow-green square emphasis mark | `FACE`, expression marks r2c3 | DG-107 | `assets/expression_marks/expression_mark_007_yellow_green_emphasis.png` | `prompts/07_expression_marks.md` | pending |
-| DG-114 | expression mark | Pink curved motion/surprise mark | `FACE`, expression marks r2c4 | DG-107 | `assets/expression_marks/expression_mark_008_pink_curved_mark.png` | `prompts/07_expression_marks.md` | pending |
+| DG-107 | expression mark | Pink blush strokes on both cheeks | `FACE`, expression marks r1c1 | Approved face anchors | `assets/expression_marks/expression_mark_001_pink_blush_strokes.png` | `prompts/07_expression_marks.md` | registered |
+| DG-108 | expression mark | Yellow stress marks | `FACE`, expression marks r1c2 | DG-107 representative test | `assets/expression_marks/expression_mark_002_yellow_stress_marks.png` | `prompts/07_expression_marks.md` | registered |
+| DG-109 | expression mark | Dark gloom lines under both eyes | `FACE`, expression marks r1c3 | DG-107 | `assets/expression_marks/expression_mark_003_dark_gloom_lines.png` | `prompts/07_expression_marks.md` | registered |
+| DG-110 | expression mark | Gold sparkle cluster | `FACE`, expression marks r1c4 | DG-107 | `assets/expression_marks/expression_mark_004_gold_sparkle.png` | `prompts/07_expression_marks.md` | registered |
+| DG-111 | expression mark | Cyan sweat drop | `FACE`, expression marks r2c1 | DG-107 | `assets/expression_marks/expression_mark_005_cyan_sweat_drop.png` | `prompts/07_expression_marks.md` | registered |
+| DG-112 | expression mark | Pink anger vein mark | `FACE`, expression marks r2c2 | DG-107 | `assets/expression_marks/expression_mark_006_pink_anger_cross.png` | `prompts/07_expression_marks.md` | registered |
+| DG-113 | expression mark | Yellow-green square emphasis mark | `FACE`, expression marks r2c3 | DG-107 | `assets/expression_marks/expression_mark_007_yellow_green_emphasis.png` | `prompts/07_expression_marks.md` | registered |
+| DG-114 | expression mark | Pink curved surprise mark | `FACE`, expression marks r2c4 | DG-107 | `assets/expression_marks/expression_mark_008_pink_curved_mark.png` | `prompts/07_expression_marks.md` | registered |
 
 ### Hair front
 
@@ -300,7 +300,7 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | `prompts/12_auras.md` | QA-failed |
+| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | procedural — `scripts/build_front_aura_flame.py` | registered |
 | DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | registered |
 
 ## Global finish

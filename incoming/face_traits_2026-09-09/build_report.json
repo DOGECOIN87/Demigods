@@ -1,0 +1,654 @@
+[
+  {
+    "category": "eyes",
+    "name": "eyes_001_dark_neutral.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_002_dark_umber.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_003_dark_slate.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_004_deep_olive.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_005_deep_blue.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_006_violet.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_007_near_black.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_008_dark_brown.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_009_gold.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_010_yellow_green.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_011_cyan.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_012_emerald.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_013_crimson.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_014_magenta.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_015_charcoal.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_016_black.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_017_warm_neutral.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_018_gray.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_019_rose.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_020_pink.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_021_amber.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_022_orange_gold.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_023_cool_charcoal.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyes",
+    "name": "eyes_024_blue_black.png",
+    "bounds": [
+      486,
+      326,
+      767,
+      413
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_001_neutral.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_002_raised.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_003_lowered.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_004_angry.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_005_furious.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_006_worried.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_007_pleading.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_008_arched.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_009_flat.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_010_thin.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_011_thick.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_012_bold_raised.png",
+    "bounds": [
+      499,
+      294,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_013_fine_arched.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_014_wide_set.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_015_close_set.png",
+    "bounds": [
+      499,
+      299,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "eyebrows",
+    "name": "eyebrows_016_quizzical.png",
+    "bounds": [
+      499,
+      297,
+      758,
+      339
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_001_closed_neutral.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_002_small_open_smile.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      454
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_003_small_dark_open.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      457
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_004_wide_open_smile.png",
+    "bounds": [
+      596,
+      427,
+      659,
+      458
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_005_short_line.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_006_soft_curve.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_007_flat_line.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_008_small_downturned.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_009_tiny_neutral.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_010_tiny_curve.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_011_pink_open_pout.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      456
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "mouths",
+    "name": "mouth_012_tiny_round.png",
+    "bounds": [
+      597,
+      427,
+      659,
+      452
+    ],
+    "uncovered_baked_pixels": 0
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_001_pink_blush_strokes.png",
+    "bounds": [
+      487,
+      400,
+      767,
+      444
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_002_yellow_stress_marks.png",
+    "bounds": [
+      704,
+      405,
+      736,
+      440
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_003_dark_gloom_lines.png",
+    "bounds": [
+      515,
+      403,
+      740,
+      437
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_004_gold_sparkle.png",
+    "bounds": [
+      689,
+      401,
+      747,
+      445
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_005_cyan_sweat_drop.png",
+    "bounds": [
+      711,
+      405,
+      729,
+      438
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_006_pink_anger_cross.png",
+    "bounds": [
+      703,
+      405,
+      737,
+      439
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_007_yellow_green_emphasis.png",
+    "bounds": [
+      704,
+      406,
+      736,
+      438
+    ]
+  },
+  {
+    "category": "expression_marks",
+    "name": "expression_mark_008_pink_curved_mark.png",
+    "bounds": [
+      700,
+      417,
+      740,
+      441
+    ]
+  }
+]

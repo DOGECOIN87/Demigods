@@ -39,7 +39,11 @@ NOTE = (
     "Pose 005's head was already the collection's width, so only its height needed to "
     "move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so "
     "it takes the identical map and their fit is preserved exactly. Resampling is linear "
-    "on premultiplied alpha along Y only."
+    "on premultiplied alpha along Y only. The pre-refit bytes are kept at "
+    "incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is "
+    "ignored by incoming/.gitignore like every other candidate drop, so the durable record "
+    "of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest "
+    "carried in the preceding commit."
 )
 
 

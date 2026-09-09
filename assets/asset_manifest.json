@@ -477,7 +477,7 @@
         "pre_pose_005_refit_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
         "post_pose_005_refit_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
         "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/base_pose_005_centered_two_hand_grip.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only."
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit."
       },
       "approved_on": "2026-07-26",
       "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md"
@@ -967,7 +967,7 @@
         "pre_pose_005_refit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
         "post_pose_005_refit_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
         "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/outfit_005_sun_temple_pose_005.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only."
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit."
       },
       "approved_on": "2026-07-28"
     },
@@ -5196,6 +5196,2143 @@
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
       "qa_composite": "docs/qa/composites/hand_object_005_over_base.png"
+    },
+    {
+      "id": "eyes_001",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_001_dark_neutral.png",
+      "status": "production_ready",
+      "sha256": "6d49f544869945d0346638d15f8ea22bcf04cddc0bd2105b41298bd0d1c7f70a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-055",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark neutral iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_002",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_002_dark_umber.png",
+      "status": "production_ready",
+      "sha256": "6e6f3a4ad5dc2987df26049ca055b3a822f3c0f879775aad6a7c783d0e23699e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-056",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark umber iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_003",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_003_dark_slate.png",
+      "status": "production_ready",
+      "sha256": "222e282e4ef0dfb5fb83a6efeef9ac655ba844f888c24f4354a00adab02ba8e3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-057",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark slate iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_004",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_004_deep_olive.png",
+      "status": "production_ready",
+      "sha256": "2f3868fa109fc3fb134c0d291aeb1f4433ddf60533840aa2b090d506d0c6f197",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-058",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Deep olive iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_005",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_005_deep_blue.png",
+      "status": "production_ready",
+      "sha256": "07ef952191f7137e28ddabc7445deda999b57db78cc10a0aeb36a1a640295920",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-059",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Deep blue iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_006",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_006_violet.png",
+      "status": "production_ready",
+      "sha256": "6a942848ea3629be6afac4d78a6999a249f226d406591eedab3658d8136cf237",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-060",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Violet iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_007",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_007_near_black.png",
+      "status": "production_ready",
+      "sha256": "6b2b915ba18aee4a679d44430b09f9a30b5effe0f0778b0b82ac6560073e495b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-061",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Near-black iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_008",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_008_dark_brown.png",
+      "status": "production_ready",
+      "sha256": "679f02d6d36efc592cf4ad40333941ab2e1cc53e61673bf4c2c82c96092619ac",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-062",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark brown iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_009",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_009_gold.png",
+      "status": "production_ready",
+      "sha256": "35a6305e7a1a61502bb81f5701c7e0cb49fa2adc0eb8bb908e29f3702a8e98ae",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-063",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_010",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_010_yellow_green.png",
+      "status": "production_ready",
+      "sha256": "eb2567df61ae7817ef0c8f8e72f719a9827fadf5392dd6fc1bb57702714911ee",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-064",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Yellow-green iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_011",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_011_cyan.png",
+      "status": "production_ready",
+      "sha256": "4eea4baaa0f331fdd30dab95b0b78ee3960063f00479697c0e31581af033b407",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-065",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Cyan iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_012",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_012_emerald.png",
+      "status": "production_ready",
+      "sha256": "bd80d25662bc177d8f44e7cacd8821c8862e413b97a15b0dd4b415b5cc449eb3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-066",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Emerald iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_013",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_013_crimson.png",
+      "status": "production_ready",
+      "sha256": "25cf52556e07c4b8f85c5b9aeb72e09752c6954e3db6460a7e6872cc1e312d28",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-067",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Crimson iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_014",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_014_magenta.png",
+      "status": "production_ready",
+      "sha256": "e1bc4412dd90904f6fd89413224b6f6120f4947f0c3552b8dc60a78230b84adf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-068",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Magenta iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_015",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_015_charcoal.png",
+      "status": "production_ready",
+      "sha256": "273c23096b434a4a8a63716720a0fffaab322c0372fe13f5af0357aa5c27def4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-069",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Charcoal iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_016",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_016_black.png",
+      "status": "production_ready",
+      "sha256": "a53a293f9d1b9b62dd4cfc6a382767b866278df64d056c0dcb7eff6257bbd3f5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-070",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Black iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_017",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_017_warm_neutral.png",
+      "status": "production_ready",
+      "sha256": "751bb1d0321bea5aa7735a67292629089660e873b553bb22b1c0f76149bdbe59",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-071",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Warm neutral iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_018",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_018_gray.png",
+      "status": "production_ready",
+      "sha256": "9044d4fa51f2c13c2e9441620a2647e758757d8551755d0d7f664a3d61ed02f3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-072",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gray iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_019",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_019_rose.png",
+      "status": "production_ready",
+      "sha256": "fb709843524effe2206cdaf53c3678545080f24e20111c7dd920d923f3e2d74e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-073",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Rose iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_020",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_020_pink.png",
+      "status": "production_ready",
+      "sha256": "36614c9cbb9098becb5834f1ae036923ec18564e6366232ef62d4ff484035647",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-074",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pink iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_021",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_021_amber.png",
+      "status": "production_ready",
+      "sha256": "cd5fc3250dc9fceab7bb63523c7264c4efae0e76b489716b1b8aab2751696693",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-075",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Amber iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_022",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_022_orange_gold.png",
+      "status": "production_ready",
+      "sha256": "56df2349fbd8ffc1c5834a3946e5346056317cf838c7c07952315bab15322fbe",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-076",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Orange-gold iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_023",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_023_cool_charcoal.png",
+      "status": "production_ready",
+      "sha256": "1b6844bb79efe37f30fcfc84efc5438eb50de536be187266d59707c50d24a8bc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-077",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Cool charcoal iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyes_024",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_024_blue_black.png",
+      "status": "production_ready",
+      "sha256": "1f1c20460a3cc48d1157b44c48a901e9a2c21d1b691a3a5367801f5ac11a9527",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-078",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Blue-black iris",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          486,
+          326,
+          767,
+          413
+        ],
+        "family_method": "The master's eye pair, separated from the skin it is painted on, with the iris remapped through a three-stop ramp. Lash line, sclera and the shared upper-left catchlight are the master's own, so the pair stays on-model and on-rig; only the iris body changes colour, and the ramp keeps the pupil dark and the rim light where the painting put them. A feathered skin patch beneath the art covers the baked eyes across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_001",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_001_neutral.png",
+      "status": "production_ready",
+      "sha256": "750dbe54b674b11db09ccfac16bdfa64f233731bbcb689ccd22ee617ade61d60",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-079",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Neutral brow pair, as painted",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_002",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_002_raised.png",
+      "status": "production_ready",
+      "sha256": "bd2515fa8bceeae2246d7a21455a22c91fcf1028f32e163c9fcb4c4ecfc6c9e3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-080",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Raised brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_003",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_003_lowered.png",
+      "status": "production_ready",
+      "sha256": "e2762176b9ecadbc050e4fd7939a8a7aecd491504c5419e1a394006e53ae0eb4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-081",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Lowered brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_004",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_004_angry.png",
+      "status": "production_ready",
+      "sha256": "66b882773475b6be7f6acfd9df7088232a564cf1b0509dc7e0809706b7386dca",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-082",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Angry brow pair, inner ends down",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_005",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_005_furious.png",
+      "status": "production_ready",
+      "sha256": "353aad3a5cd2c7327e8715b731832ee50ab3761e6d7edaf6f6ae490a56adda7c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-083",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Furious brow pair, driven down and in",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_006",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_006_worried.png",
+      "status": "production_ready",
+      "sha256": "703db0cfc2da19ae6b47ec1c069da7685fd3c17da0229dc9ec4db32dddcc0eb0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-084",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Worried brow pair, inner ends up",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_007",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_007_pleading.png",
+      "status": "production_ready",
+      "sha256": "dedd9b85d2426836a3be4efdd248c4716f6edde738c68553db0eed69be8c0c00",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-085",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pleading brow pair, inner ends high",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_008",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_008_arched.png",
+      "status": "production_ready",
+      "sha256": "bcde9351b4a723bcc032bb49dce8488ef404875a1cbc726465867938c180b28d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-086",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Arched brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_009",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_009_flat.png",
+      "status": "production_ready",
+      "sha256": "b1a9f1880af76759a8ccb1c46c7a2a131882a2cb3e606c5b616f7b448d63004a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-087",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Flat brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_010",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_010_thin.png",
+      "status": "production_ready",
+      "sha256": "c9550b1cf0adcecb7108caec1c80265071f2044b8608380b575fc07ac293eb2a",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-088",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Thin brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_011",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_011_thick.png",
+      "status": "production_ready",
+      "sha256": "f3911f6b3459eb53ce19edcd0249b3510c375b3ca70c8be1a9e1abc74501d283",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-089",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Thick brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_012",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_012_bold_raised.png",
+      "status": "production_ready",
+      "sha256": "d2745ff5c32a5a3ef1d19894c2d918d35eb9bde11a073e54c0ea96c66e395393",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-090",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Bold raised brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          294,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_013",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_013_fine_arched.png",
+      "status": "production_ready",
+      "sha256": "84ec73c4f95b1072f18100242653e6b248210ba5da3e372ce5a546ebc1cafab3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-091",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine arched brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_014",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_014_wide_set.png",
+      "status": "production_ready",
+      "sha256": "585b09bbdf16e42c57be83df3127f1054a7c9da317afb0692f7c463b01b7a8e3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-092",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Wide-set brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_015",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_015_close_set.png",
+      "status": "production_ready",
+      "sha256": "3a6620f849a2644509fcfb10007ba41581014d7a799f8f7640c4f5feb8dee6d1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-093",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Close-set brow pair",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          299,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "eyebrows_016",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_016_quizzical.png",
+      "status": "production_ready",
+      "sha256": "7610a2aa259976c40c51eebfdbc4a7a6acacf8d24ab1fa8a04f4ab76a38e224b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-094",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Quizzical brow pair, one raised",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          499,
+          297,
+          758,
+          339
+        ],
+        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_001",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_001_closed_neutral.png",
+      "status": "production_ready",
+      "sha256": "04e351fb4ddadd05a596c2dcbf71e65a242c426df15fe98e4d4381dcc088b029",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-095",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine closed neutral mouth, the master's own",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_002",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_002_small_open_smile.png",
+      "status": "production_ready",
+      "sha256": "d253090615f8999a4b8758ca12bbe5ab071866ca455e5ce7c07d08e6dcd85a70",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-096",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Small open smile with tongue",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          454
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_003",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_003_small_dark_open.png",
+      "status": "production_ready",
+      "sha256": "334f63a70bc9cda81e54c74bd827a1b589872831b94efe3aae28fb2e56dd4079",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-097",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Small dark open mouth with upper teeth",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          457
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_004",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_004_wide_open_smile.png",
+      "status": "production_ready",
+      "sha256": "0b5287147b6e42bd04a479ea3bf4e904694b7df0c638bb51d5b66359f157f866",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-098",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Wide open smile",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          596,
+          427,
+          659,
+          458
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_005",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_005_short_line.png",
+      "status": "production_ready",
+      "sha256": "a25797b57754289f6264fff60807d638ab72c01dd69498835b5e1dcb10f4ef0f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-099",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine short mouth line",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_006",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_006_soft_curve.png",
+      "status": "production_ready",
+      "sha256": "a0abca9bdb063f169d4b34f9d0b06c0c3901950e683ff0de6f3436500d5260c5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-100",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Small soft curved smile",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_007",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_007_flat_line.png",
+      "status": "production_ready",
+      "sha256": "9ee367e92be786910797c3d017a292f5d59046a7a4493baedc57e8dbb5067359",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-101",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Fine flat line",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_008",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_008_small_downturned.png",
+      "status": "production_ready",
+      "sha256": "a00b3f9899574fac4fe4adcb7e820c3394498bdbafdad6adb05dd369d2165c15",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-102",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Small downturned open mouth",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_009",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_009_tiny_neutral.png",
+      "status": "production_ready",
+      "sha256": "7bad2a471ab8966c0a86d0d09a0b9e5eca675f2bed96b514a890008150e5950c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-103",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Tiny neutral mark",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_010",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_010_tiny_curve.png",
+      "status": "production_ready",
+      "sha256": "d9480e3dfbb1dce6cba6416da438fd8890e2634da58175ee34a5672c9a21ec1b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-104",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Tiny curved mark",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_011",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_011_pink_open_pout.png",
+      "status": "production_ready",
+      "sha256": "c1a74485df3b8f4ceb88a5afba3ddadca4989891ddb9d57ba57cd16191e5e687",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-105",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Open pout with tongue",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          456
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "mouth_012",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_012_tiny_round.png",
+      "status": "production_ready",
+      "sha256": "0a769637a272b837337ffa08c3f6b4132cbb8aec81ccad231e6dff5512eed9c6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-106",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Tiny dark round mouth",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          597,
+          427,
+          659,
+          452
+        ],
+        "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_001",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_001_pink_blush_strokes.png",
+      "status": "production_ready",
+      "sha256": "e92ae3b0fb6f1c2d138403ac417b3d07cca81424edb36f91aae55df0f2831c0c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-107",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pink blush strokes on both cheeks",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          487,
+          400,
+          767,
+          444
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_002",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_002_yellow_stress_marks.png",
+      "status": "production_ready",
+      "sha256": "6deb2c775e729455256395617706da4d2ea48e294a9a39ac7c0d2d77d9b7a7d6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-108",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Yellow stress marks",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          704,
+          405,
+          736,
+          440
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_003",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_003_dark_gloom_lines.png",
+      "status": "production_ready",
+      "sha256": "0221977d7eff38186e53508b120f8c4595bb8e80cf84f4d052084ea4cf78d2fc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-109",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Dark gloom lines under both eyes",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          515,
+          403,
+          740,
+          437
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_004",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_004_gold_sparkle.png",
+      "status": "production_ready",
+      "sha256": "d481d7ea94ce5aff744750030bd7566878c7b2b7b3323ed00f2b92b3a121e7ed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-110",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Gold sparkle cluster",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          689,
+          401,
+          747,
+          445
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_005",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_005_cyan_sweat_drop.png",
+      "status": "production_ready",
+      "sha256": "6fe893091759bb3219670fc73b04ece4cc6336c7edb2086f8ca76dbc41d28979",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-111",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Cyan sweat drop",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          711,
+          405,
+          729,
+          438
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_006",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_006_pink_anger_cross.png",
+      "status": "production_ready",
+      "sha256": "b8790ec7c19022b6f8756dbc9010f8253326aa7d4e5a0f82c743fa5a1a766446",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-112",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pink anger vein mark",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          703,
+          405,
+          737,
+          439
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_007",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_007_yellow_green_emphasis.png",
+      "status": "production_ready",
+      "sha256": "309601dcd87f0bb95f7707faa53c9263e1a402ab0cbda6c6b4d5f5c9be1bbe27",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-113",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Yellow-green square emphasis mark",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          704,
+          406,
+          736,
+          438
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "expression_mark_008",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_008_pink_curved_mark.png",
+      "status": "production_ready",
+      "sha256": "4587b6ec778ac37d5bc33cd27951005b41a5e563092392e5bf0935b8d1a68bf5",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-114",
+      "provenance": {
+        "origin": "approved_master_face_derivation",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Pink curved surprise mark",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_face_traits.py",
+        "separation_script": "scripts/extract_face_features.py",
+        "output_bounds": [
+          700,
+          417,
+          740,
+          441
+        ],
+        "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
+        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
+    },
+    {
+      "id": "aura_front_001",
+      "category": "front_auras",
+      "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+      "status": "production_ready",
+      "sha256": "c32db29fa593df4049edb43af3bce88fa94d8cd3a750e03e1193b4a554d4db09",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-145",
+      "provenance": {
+        "origin": "procedural_effect_render",
+        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "trait": "Orange rising foreground flame",
+        "native_dimensions": [
+          1254,
+          1254
+        ],
+        "build_script": "scripts/build_front_aura_flame.py",
+        "output_bounds": [
+          249,
+          706,
+          1014,
+          1129
+        ],
+        "replaces": "the flat-shaded aura_front_001 placeholder deregistered on 2026-09-09",
+        "method": "Four octaves of fractal value noise, advected upward and used both to modulate six tongue envelopes and to carve them into separate licks by a threshold that rises with height. Intensity is compressed rather than clipped, so no lick's core lands on a single flat value, and colour is compressed on a longer scale than opacity so the body reads orange and only the hottest cores reach pale gold. Nothing is drawn above Y 582, below the shoulder line, so the flame never crosses the face.",
+        "flatness_measurements": {
+          "note": "Calibrated against the two front auras the collection already had. The accepted aura_front_002 measures 83 alpha levels, a 0.067 top-value share and a 0.219 flat-neighbourhood share; the rejected placeholder measures 28, 0.334 and 0.883."
+        }
+      },
+      "approved_on": "2026-09-09",
+      "qa_report": "docs/qa/front_aura_001_rebuilt_2026-09-09.md"
     }
   ],
   "approved_visual_references": [
@@ -5406,27 +7543,9 @@
       "intended_production_path": "assets/backgrounds/background_008_violet_void_portal.png"
     }
   ],
-  "blocked_assets": [
-    {
-      "id": "aura_front_001",
-      "backlog_id": "DG-145",
-      "intended_path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
-      "status": "QA-failed",
-      "sha256": "2421da05a0ccbe7279a858a49528e827f87ea4b4bfc7f52d198a3d1e5cc2b874",
-      "source_candidate": "images/trait_candidates/front_auras/aura_front_001_orange_rising_flame_candidate.png",
-      "failed_on": "2026-09-09",
-      "reason": "Flat-shaded placeholder, not a rendered flame. 126,276 opaque pixels carry only three distinct colour buckets: hard-edged orange and gold triangles plus a few solid circles, with no internal value structure. As a front aura it composites over the character, so it covered every token it appeared on with opaque geometry. production_status.md bars a placeholder from counting as a completed production asset; it should not have been registered. Retained as candidate evidence.",
-      "qa_report": "docs/qa/front_aura_001_placeholder_rejected_2026-09-09.md"
-    }
-  ],
+  "blocked_assets": [],
   "queued_base_poses": [],
-  "pending_categories": [
-    "eyes",
-    "eyebrows",
-    "mouths",
-    "expression_marks",
-    "front_auras"
-  ],
+  "pending_categories": [],
   "legendary_one_of_ones": [
     {
       "id": "legendary_001",

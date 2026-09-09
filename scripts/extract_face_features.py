@@ -85,6 +85,24 @@ def skin_mask(rgb: np.ndarray) -> np.ndarray:
     )
 
 
+def known_skin(rgb: np.ndarray) -> np.ndarray:
+    """Skin the reconstruction may treat as known, with painted highlights removed.
+
+    The style paints a pale warm highlight along the top of each eyebrow. It is
+    light enough to pass as skin, so holding it fixed diffuses its brightness
+    across the whole reconstruction and the patch comes out lighter than the
+    forehead around it - which shows as a pale crescent wherever the trait's own
+    brow no longer covers it. Skin near a feature varies smoothly by a few units;
+    the highlight runs 13-17 above it. Excluding the bright tail puts the highlight
+    where it belongs, in the feature that moves with the trait.
+    """
+    skin = skin_mask(rgb.astype(int))
+    if not skin.any():
+        return skin
+    limit = np.percentile(rgb[skin][:, 2], 60) + 8.0
+    return skin & (rgb[..., 2] <= limit)
+
+
 def _box_blur(field: np.ndarray, radius: int = 2) -> np.ndarray:
     padded = np.pad(field, ((radius, radius), (radius, radius), (0, 0)), mode="edge")
     rolling = np.cumsum(padded, axis=0)
@@ -149,7 +167,7 @@ def extract(name: str, master: Image.Image | None = None):
     left, top, right, bottom = REGIONS[name]
     patch = rgb[top:bottom, left:right]
 
-    skin = reconstruct_skin(patch, skin_mask(patch.astype(int)))
+    skin = reconstruct_skin(patch, known_skin(patch))
     difference = np.abs(patch - skin).max(axis=2)
     core = _grow(difference > CORE_THRESHOLD).astype(float)
     alpha, feature = unmix(patch, skin, core)

@@ -53,7 +53,8 @@
     "rear_auras": 0.82,
     "global_finish": 0.75,
     "head_accessories": 0.55,
-    "hand_objects": 0.6
+    "hand_objects": 0.6,
+    "expression_marks": 0.3
   },
   "legendary_token_ids": [
     111,
