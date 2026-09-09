@@ -157,9 +157,6 @@ class BackAccessorySeatingTests(unittest.TestCase):
                 self.assertGreaterEqual(bottom, 1000, f"{name} stops well short of the hem")
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class OutfitFootwearTests(unittest.TestCase):
     """An outfit's footwear has to cover the leg it is drawn over.
@@ -205,3 +202,7 @@ class OutfitFootwearTests(unittest.TestCase):
                     exposed, self.EXPOSED_LEG_CEILING[outfit_name],
                     f"{outfit_name} leaves {exposed} px of bare leg showing below Y1000",
                 )
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -443,7 +443,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
       "status": "production_ready",
-      "sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
+      "sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
       "dimensions": [
         1254,
         1254
@@ -462,7 +462,8 @@
         ],
         "postprocessing": [
           "native_integer_translation_x_plus_1_px_2026-08-15",
-          "hide_undergarment_repaint_2026-08-15"
+          "hide_undergarment_repaint_2026-08-15",
+          "pose_005_proportion_refit_2026-09-09"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
@@ -471,10 +472,15 @@
         "pre_geometry_correction_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
         "post_geometry_correction_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
+        "pose_005_refit_script": "scripts/refit_pose_005_proportions.py",
+        "pre_pose_005_refit_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
+        "post_pose_005_refit_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
+        "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/base_pose_005_centered_two_hand_grip.png",
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only."
       },
       "approved_on": "2026-07-26",
-      "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
+      "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md"
     },
     {
       "id": "hair_back_003",
@@ -925,7 +931,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
       "status": "production_ready",
-      "sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
+      "sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
       "dimensions": [
         1254,
         1254
@@ -933,7 +939,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
+      "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
@@ -948,14 +954,20 @@
           "rig_refit_scale_0.756_top_y_475",
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "pose_005_proportion_refit_2026-09-09"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
         "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
         "pre_boot_fit_sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
         "post_boot_fit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2389 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2389 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "pose_005_refit_script": "scripts/refit_pose_005_proportions.py",
+        "pre_pose_005_refit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
+        "post_pose_005_refit_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
+        "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/outfit_005_sun_temple_pose_005.png",
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only."
       },
       "approved_on": "2026-07-28"
     },
@@ -3996,7 +4008,7 @@
         "intake_script": "scripts/bulk_intake.py"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145\u2013DG-146."
+      "qa_report": "Approved production export for DG-145–DG-146."
     },
     {
       "id": "head_accessory_001",

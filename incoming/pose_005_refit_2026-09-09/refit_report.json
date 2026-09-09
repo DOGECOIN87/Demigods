@@ -1,0 +1,81 @@
+[
+  {
+    "asset": "base_pose_005_centered_two_hand_grip.png",
+    "output": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+    "sha256_before": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
+    "sha256_after": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
+    "landmark_map": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        141.0,
+        141.0
+      ],
+      [
+        350.8,
+        370.3
+      ],
+      [
+        452.0,
+        476.5
+      ],
+      [
+        472.0,
+        496.3
+      ],
+      [
+        1139.0,
+        1139.0
+      ],
+      [
+        1253.0,
+        1253.0
+      ]
+    ],
+    "landmarks_after": {
+      "top_of_head": 141.0,
+      "foot_baseline": 1139.0,
+      "eye_line": 370.0,
+      "chin": 476.0,
+      "shoulder": 496.0
+    }
+  },
+  {
+    "asset": "outfit_005_sun_temple_pose_005.png",
+    "output": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+    "sha256_before": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
+    "sha256_after": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
+    "landmark_map": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        141.0,
+        141.0
+      ],
+      [
+        350.8,
+        370.3
+      ],
+      [
+        452.0,
+        476.5
+      ],
+      [
+        472.0,
+        496.3
+      ],
+      [
+        1139.0,
+        1139.0
+      ],
+      [
+        1253.0,
+        1253.0
+      ]
+    ]
+  }
+]
