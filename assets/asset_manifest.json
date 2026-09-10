@@ -2283,7 +2283,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
       "status": "production_ready",
-      "sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
+      "sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
       "dimensions": [
         1254,
         1254
@@ -2303,7 +2303,8 @@
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
           "fit_boots_to_legs_2026-09-07",
-          "outfit_neckline_inner_garment_2026-09-10"
+          "outfit_neckline_inner_garment_2026-09-10",
+          "sleeve_widening_2026-09-10"
         ],
         "pre_boot_fit_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
         "post_boot_fit_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
@@ -2311,17 +2312,21 @@
         "neckline_script": "scripts/fix_outfit_necklines.py",
         "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
         "post_outfit_neckline_inner_garment_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
-        "neckline_note": "2202 px of inner garment painted into the opening: pale grey-blue shirt under a navy coat."
+        "neckline_note": "2202 px of inner garment painted into the opening: pale grey-blue shirt under a navy coat.",
+        "sleeve_script": "scripts/widen_sleeves.py",
+        "pre_sleeve_widening_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
+        "post_sleeve_widening_2026-09-10_sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
+        "sleeve_note": "sleeve edge warped outward over 182 rows; bare arm along the sleeve 5193 px -> 0 px"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
+      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
     },
     {
       "id": "outfit_010",
       "category": "outfits",
       "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
       "status": "production_ready",
-      "sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
+      "sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
       "dimensions": [
         1254,
         1254
@@ -2342,7 +2347,8 @@
         "postprocessing": [
           "fit_boots_to_legs_2026-09-07",
           "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10"
+          "outfit_neckline_inner_garment_2026-09-10",
+          "sleeve_widening_2026-09-10"
         ],
         "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
         "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
@@ -2354,10 +2360,14 @@
         "neckline_script": "scripts/fix_outfit_necklines.py",
         "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
         "post_outfit_neckline_inner_garment_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
-        "neckline_note": "1079 px of painted collar interior cleared: stand collar; the slate interior capped the neck. 1226 px of inner garment painted into the opening: pale shirt inside the stand collar."
+        "neckline_note": "1079 px of painted collar interior cleared: stand collar; the slate interior capped the neck. 1226 px of inner garment painted into the opening: pale shirt inside the stand collar.",
+        "sleeve_script": "scripts/widen_sleeves.py",
+        "pre_sleeve_widening_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
+        "post_sleeve_widening_2026-09-10_sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
+        "sleeve_note": "sleeve edge warped outward over 177 rows; bare arm along the sleeve 4482 px -> 0 px"
       },
       "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
+      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
     },
     {
       "id": "aura_rear_003",
@@ -3861,281 +3871,6 @@
       "qa_composite": "docs/qa/composites/head_accessory_004_over_base.png"
     },
     {
-      "id": "head_accessory_005",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_005_silver_winged_circlet.png",
-      "status": "production_ready",
-      "sha256": "4863ca646bfd56179e205af1ab1fa9611be9dec1ff0b1f9e66ba49e42dc85189",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-127",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver winged circlet",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          407,
-          129,
-          846,
-          318
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_005_silver_winged_circlet_regen1.png",
-        "source_sha256": "f9bcc9010d8d10c8bf904cc8b72eaba1f355d9404228338885ff5612097e7880",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 80
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            204,
-            563,
-            1717,
-            1370
-          ],
-          "crop_dimensions": [
-            1514,
-            808
-          ],
-          "scale": 0.29062087,
-          "vertical_scale": 0.23514851,
-          "anisotropic": true,
-          "target_dimensions": [
-            440,
-            190
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              407,
-              129,
-              846,
-              318
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "circlet_scale_revision_2026-09-07",
-          "circlet_brow_clearance_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band just above the brow with the wings reaching the hair at the temples",
-          "target_width": 440,
-          "top_y": 129,
-          "target_height": 190,
-          "front_arc_only": false
-        },
-        "pre_circlet_scale_sha256": "8475b7cc215984239cf9b12214240e5e7010415fdf78d02c52c3a4ab60d03d09",
-        "post_circlet_scale_sha256": "8d99c157365fd7cd8fb618aa42c2c070988bfde0555c049e5c3175fc36d45a7e",
-        "pre_brow_clearance_sha256": "8d99c157365fd7cd8fb618aa42c2c070988bfde0555c049e5c3175fc36d45a7e",
-        "post_brow_clearance_sha256": "4863ca646bfd56179e205af1ab1fa9611be9dec1ff0b1f9e66ba49e42dc85189"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_005_over_base.png"
-    },
-    {
-      "id": "head_accessory_006",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_006_silver_ornate_tiara.png",
-      "status": "production_ready",
-      "sha256": "39aac6c53e991e3ff9817f8889286ad036dcf1aeea4e85151468135628a7cbd9",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-128",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver ornate tiara",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          442,
-          129,
-          811,
-          352
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_006_silver_ornate_tiara_source2.png",
-        "source_sha256": "24c3ef06805aee3df4ced9e90957b64b825368319f4bef2447382cfdd308787c",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            132,
-            423,
-            1782,
-            1421
-          ],
-          "crop_dimensions": [
-            1651,
-            999
-          ],
-          "scale": 0.2241066,
-          "vertical_scale": 0.2241066,
-          "anisotropic": false,
-          "target_dimensions": [
-            370,
-            224
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              442,
-              129,
-              811,
-              352
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band on the skull dome, side arcs past the temples",
-          "target_width": 370,
-          "top_y": 129,
-          "target_height": null
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_006_over_base.png"
-    },
-    {
-      "id": "head_accessory_007",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
-      "status": "production_ready",
-      "sha256": "bc6b8bff2178bbb1b7f4f783b452f0dd4b8dcbadd5b730dcc948dc4348ccce2d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-129",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver forehead circlet with central drop",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          417,
-          232,
-          836,
-          351
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_007_silver_drop_circlet_source2.png",
-        "source_sha256": "a18ccece9823f2dc0f4168bbc1a9d4eb5784fc8b4a5b8d573c84ce636fa28d3b",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            67,
-            670,
-            1851,
-            1299
-          ],
-          "crop_dimensions": [
-            1785,
-            630
-          ],
-          "scale": 0.23529412,
-          "vertical_scale": 0.19047619,
-          "anisotropic": true,
-          "target_dimensions": [
-            420,
-            120
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 232,
-            "bounds": [
-              417,
-              232,
-              836,
-              351
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_2026-09-07",
-          "head_seat_revision_b_2026-09-07",
-          "circlet_scale_revision_2026-09-07",
-          "circlet_brow_clearance_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band spanning the hair with its arms tucked into it, drop centred above the eyes",
-          "target_width": 420,
-          "top_y": 232,
-          "target_height": 120,
-          "front_arc_only": false
-        },
-        "pre_seat_revision_sha256": "98bc453f906b58c0565716e9c6adfc270a3dca08a12ac7abb18d7c1bf81f8b4c",
-        "post_seat_revision_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
-        "pre_seat_revision_b_sha256": "69faeaca75c8d2cbfbc460cd6a18eba73a3da5055c34e6d92720e97267cf076b",
-        "post_seat_revision_b_sha256": "2d18b7305203cb2879fb43ced345117796bddcc12cb5c30ba91625c09df9e5f0",
-        "pre_circlet_scale_sha256": "2d18b7305203cb2879fb43ced345117796bddcc12cb5c30ba91625c09df9e5f0",
-        "post_circlet_scale_sha256": "1608bda49dc9319576dd0a659b5c977e9363fa2823b301a1efea225977684fcd",
-        "pre_brow_clearance_sha256": "1608bda49dc9319576dd0a659b5c977e9363fa2823b301a1efea225977684fcd",
-        "post_brow_clearance_sha256": "bc6b8bff2178bbb1b7f4f783b452f0dd4b8dcbadd5b730dcc948dc4348ccce2d"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_007_over_base.png"
-    },
-    {
       "id": "head_accessory_008",
       "category": "head_accessories",
       "path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
@@ -4308,101 +4043,6 @@
       "approved_on": "2026-09-07",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
       "qa_composite": "docs/qa/composites/head_accessory_009_over_base.png"
-    },
-    {
-      "id": "head_accessory_010",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_010_gold_low_circlet.png",
-      "status": "production_ready",
-      "sha256": "04fb2a73320c6706fc6757553d2714febee17d42fad69b0583d84da61ae0ae6e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-132",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold low-profile circlet",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          417,
-          216,
-          836,
-          320
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_010_gold_low_circlet_source2.png",
-        "source_sha256": "413cc76ec74d0f345f4b910f6de23e509da67ce1146263fb0a69dfb022a5e265",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            214,
-            767,
-            1705,
-            1196
-          ],
-          "crop_dimensions": [
-            1492,
-            430
-          ],
-          "scale": 0.28150134,
-          "vertical_scale": 0.28150134,
-          "anisotropic": false,
-          "target_dimensions": [
-            420,
-            121
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 200,
-            "bounds": [
-              417,
-              200,
-              836,
-              320
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_2026-09-07",
-          "circlet_scale_revision_2026-09-07",
-          "circlet_brow_clearance_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "front band spanning the hair above the brow; the ring's far side passes behind the head",
-          "target_width": 420,
-          "top_y": 200,
-          "target_height": null,
-          "front_arc_only": true
-        },
-        "pre_seat_revision_sha256": "6093481477afbbeba57059778a9331d0889a6327c8fd3415a39db382f031accf",
-        "post_seat_revision_sha256": "011f2d5836aacd2dd4692f9e03d19999450787d18246a7042303679b0d1ff8e7",
-        "pre_circlet_scale_sha256": "011f2d5836aacd2dd4692f9e03d19999450787d18246a7042303679b0d1ff8e7",
-        "post_circlet_scale_sha256": "c36b8614e75d45fade321759b63da62f5d553f1f2b55e15a4476ec1936075f4a",
-        "pre_brow_clearance_sha256": "c36b8614e75d45fade321759b63da62f5d553f1f2b55e15a4476ec1936075f4a",
-        "post_brow_clearance_sha256": "04fb2a73320c6706fc6757553d2714febee17d42fad69b0583d84da61ae0ae6e"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_010_over_base.png"
     },
     {
       "id": "hand_object_001",
@@ -7147,11 +6787,60 @@
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
       "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "head_accessory_005",
+      "backlog_id": "DG-127",
+      "intended_path": "assets/head_accessories/head_accessory_005_silver_winged_circlet.png",
+      "status": "retired",
+      "sha256": "4863ca646bfd56179e205af1ab1fa9611be9dec1ff0b1f9e66ba49e42dc85189",
+      "retained_at": "incoming/head_accessories_retired_2026-09-10/head_accessory_005_silver_winged_circlet.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: silver band across the forehead; the wings read as filigree at token size. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+    },
+    {
+      "id": "head_accessory_006",
+      "backlog_id": "DG-128",
+      "intended_path": "assets/head_accessories/head_accessory_006_silver_ornate_tiara.png",
+      "status": "retired",
+      "sha256": "39aac6c53e991e3ff9817f8889286ad036dcf1aeea4e85151468135628a7cbd9",
+      "retained_at": "incoming/head_accessories_retired_2026-09-10/head_accessory_006_silver_ornate_tiara.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: silver band across the forehead, the most ornate of four alike. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+    },
+    {
+      "id": "head_accessory_007",
+      "backlog_id": "DG-129",
+      "intended_path": "assets/head_accessories/head_accessory_007_silver_drop_circlet.png",
+      "status": "retired",
+      "sha256": "bc6b8bff2178bbb1b7f4f783b452f0dd4b8dcbadd5b730dcc948dc4348ccce2d",
+      "retained_at": "incoming/head_accessories_retired_2026-09-10/head_accessory_007_silver_drop_circlet.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: silver band across the forehead with a drop. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+    },
+    {
+      "id": "head_accessory_010",
+      "backlog_id": "DG-132",
+      "intended_path": "assets/head_accessories/head_accessory_010_gold_low_circlet.png",
+      "status": "retired",
+      "sha256": "04fb2a73320c6706fc6757553d2714febee17d42fad69b0583d84da61ae0ae6e",
+      "retained_at": "incoming/head_accessories_retired_2026-09-10/head_accessory_010_gold_low_circlet.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: gold band across the forehead. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
     }
   ],
   "queued_base_poses": [],
   "pending_categories": [
-    "neck_accessories"
+    "neck_accessories",
+    "head_accessories"
   ],
   "legendary_one_of_ones": [
     {
