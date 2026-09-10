@@ -33,22 +33,41 @@ are covered and what the brief measured is the neck, which is meant to show.
 it, so its shoulders are not the design choice the brief listed them as. That
 made five sleeved garments with a bare shoulder rather than four.
 
-Separately, where the cream tank and shorts were actually visible, measured with
-a mask grown along the undergarment's own shading so the lit face of the tank is
-found as well as its shadowed side:
+Separately, where the cream tank and shorts were actually visible. Two masks
+were used during this pass and they do not agree, so the mask is named here
+rather than left to be inferred: a region grow at a fixed distance from the seed
+colour finds only the face of the tank the seed sits on, while one that follows
+the gradient from each pixel to its neighbour carries across the tank's own
+shading and stops on its drawn outline. The second is the better mask and every
+number below is from it, split by where the exposure falls.
 
-| Outfit | Undergarment showing |
-|---|---:|
-| `outfit_010` | 2680 |
-| `outfit_009` | 2671 |
-| `outfit_005` | 2067 |
-| `outfit_007` | 975 |
-| `outfit_003` | 659 |
-| `outfit_001` | 536 |
-| `outfit_004` | 442 |
-| `outfit_002` | 358 |
-| `outfit_006` | 122 |
-| `outfit_008` | 0 |
+| Outfit | Shoulder, rows < 556 | Torso and hip | Total |
+|---|---:|---:|---:|
+| `outfit_005_sun_temple` | 2205 | 3023 | 5228 |
+| `outfit_010_celestial_robe_white_gold` | 51 | 2779 | 2830 |
+| `outfit_009_navy_high_collar_coat` | 52 | 2571 | 2623 |
+| `outfit_004_lunar_oracle` | 302 | 1360 | 1662 |
+| `outfit_003_verdant_alchemist` | 0 | 1113 | 1113 |
+| `outfit_007_brown_leather_long_coat` | 0 | 838 | 838 |
+| `outfit_001_celestial_scholar` | 0 | 752 | 752 |
+| `outfit_002_storm_guardian` | 117 | 474 | 591 |
+| `outfit_006_black_layered_hooded_robe` | 0 | 5 | 5 |
+| `outfit_008_olive_ragged_cloak` | 0 | 0 | 0 |
+
+The split matters, and it is the reason **making the outfits sleeveless does not
+fix this**. Apart from the sun temple tunic, whose straps really do show, the
+undergarment is a torso and hip defect: every sleeved outfit registers zero or
+near-zero at the shoulder, and the three outfits that are already sleeveless are
+among the worst offenders.
+
+![the sleeveless outfits still show the tank](outfit_refit_2026-09-10/sleeveless_outfits_still_show_the_tank.png)
+
+`outfit_001`, `outfit_002` and `outfit_004` have no sleeves at all and show 752,
+591 and 1662 px of tank between the garment and the arm. A sleeve was never what
+covered the waist. Removing the sleeves from the sleeved outfits would close the
+bare shoulder crescents on `outfit_006` and `outfit_007`, which are skin rather
+than tank, at the cost of turning a long coat into a jerkin, and it would leave
+every band at the flank exactly where it is.
 
 ## The neck on outfit_006
 
@@ -148,16 +167,19 @@ Honestly, on the seven that are registered:
 
 | Outfit | Undergarment showing | Reads as |
 |---|---:|---|
-| `outfit_007_brown_leather_long_coat` | 975 | a cream band down the viewer-left flank, armpit to hip, clearly visible at 1× |
-| `outfit_003_verdant_alchemist` | 659 | slivers at both hips and below the shorts' hem |
-| `outfit_001_celestial_scholar` | 536 | slivers at both hips |
-| `outfit_004_lunar_oracle` | 442 | a sliver at the waist beside the wrap, and the tank strap on the viewer-left shoulder |
-| `outfit_002_storm_guardian` | 358 | traces at the hip |
-| `outfit_006_black_layered_hooded_robe` | 122 | a pale trace at each flank, plus a bare shoulder crescent that is skin, not tank |
+| `outfit_004_lunar_oracle` | 1662 | a band at the waist beside the wrap on both sides, and the tank strap on the viewer-left shoulder |
+| `outfit_003_verdant_alchemist` | 1113 | slivers at both hips and below the shorts' hem |
+| `outfit_007_brown_leather_long_coat` | 838 | a cream band down the viewer-left flank, armpit to hip, clearly visible at 1× |
+| `outfit_001_celestial_scholar` | 752 | slivers at both hips |
+| `outfit_002_storm_guardian` | 591 | traces at the hip |
+| `outfit_006_black_layered_hooded_robe` | 5 | clean of tank; it still has a bare shoulder crescent, which is skin |
 | `outfit_008_olive_ragged_cloak` | 0 | clean |
 
-`outfit_007` is the one that still fails the bar. It is left rather than
-widened, because widening it moves its belt.
+`outfit_007` is the one that most clearly fails the bar by eye, because its band
+is one continuous strip against dark leather rather than slivers. It is left
+rather than widened, because widening it moves its belt. `outfit_004` measures
+the largest area but reads more quietly, being narrow traces beside a
+sleeveless wrap.
 
 ## Gates
 
