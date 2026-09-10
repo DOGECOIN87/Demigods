@@ -11,6 +11,7 @@ registered base master, so a future batch cannot repeat it silently.
 """
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -54,68 +55,61 @@ def visible_bounds(path: Path) -> tuple[int, int, int, int]:
     return box[0], box[1], box[2] - 1, box[3] - 1
 
 
-class NeckAccessorySeatingTests(unittest.TestCase):
-    def test_every_neck_accessory_clasps_at_the_throat(self) -> None:
-        """The whole category was refit to Y 545-555, which is mid-chest.
+class NeckAccessoryWithdrawalTests(unittest.TestCase):
+    """The neck accessory category is withdrawn, and must not come back untouched.
 
-        The base body's throat is Y 465-505. Seated 50 px below it, every choker
-        read as a chest strap and every pendant chain started below the
-        collarbone with nothing holding it up.
-        """
+    Two passes were spent seating these eight pieces - out of mid-chest to the
+    throat, then to the row where each one's topmost ink lands inside the
+    silhouette - and both were fixing the wrong thing. Rendered over an outfit
+    they are chest-wide bands and bows lying across the collarbones and the
+    garment's own collar, and pendants hanging from points outside the neck. A
+    150-175 px ornament cannot be seated on a 61 px neck.
+
+    The seating assertions that used to live here would have passed on the
+    re-registered files, because they measured where the pieces sit. This measures
+    the thing that was actually wrong: how big they are against the anatomy.
+
+    `docs/qa/neck_accessories_withdrawn_2026-09-10.md`.
+    """
+
+    # The base master's neck is 61 px across at Y 482. A choker wraps it; a chain
+    # meets it. Neither is twice its width.
+    NECK_WIDTH = 61
+    MAX_WIDTH_RATIO = 1.6
+
+    def test_no_neck_accessory_is_registered_without_being_redrawn(self) -> None:
         directory = ROOT / "assets" / "neck_accessories"
         if not directory.is_dir():
-            self.skipTest("neck_accessories not registered")
-        low, high = NECK_CLASP_BAND
+            return
         for path in sorted(directory.glob("*.png")):
             with self.subTest(asset=path.name):
-                top = visible_bounds(path)[1]
-                self.assertTrue(
-                    low <= top <= high,
-                    f"{path.name} starts at Y{top}; a clasp belongs in the throat band "
-                    f"Y{low}-Y{high}",
+                left, _top, right, _bottom = visible_bounds(path)
+                width = right - left + 1
+                self.assertLessEqual(
+                    width / self.NECK_WIDTH, self.MAX_WIDTH_RATIO,
+                    f"{path.name} is {width} px wide against a {self.NECK_WIDTH} px neck. The "
+                    f"category was withdrawn on 2026-09-10 for exactly this; a re-registered "
+                    f"piece has to be drawn to the neck, not re-seated onto it",
                 )
 
-    def test_every_neck_accessory_touches_the_body(self) -> None:
-        """Being at the right height is not the same as being attached.
-
-        Correcting the seat to the throat at Y 482 traded one error for another.
-        These pieces are 150-175 px wide and the neck at Y 482 is 61 px, so the
-        chain ends and band tips hung in open air either side of it - at the
-        right height and attached to nothing. A necklace has to touch what it
-        hangs from, so its topmost rows must land inside the silhouette.
-        """
-        directory = ROOT / "assets" / "neck_accessories"
-        if not directory.is_dir():
-            self.skipTest("neck_accessories not registered")
-        with Image.open(ROOT / "assets" / "base_bodies" / "base_body_001_neutral_master.png") as image:
-            body = image.convert("RGBA").getchannel("A").point(lambda v: 255 if v > 128 else 0)
-        width, _height = body.size
-
-        def body_span(row: int):
-            line = body.crop((0, row, width, row + 1)).tobytes()
-            columns = [x for x, value in enumerate(line) if value]
-            return (columns[0], columns[-1]) if columns else None
-
-        for path in sorted(directory.glob("*.png")):
-            with self.subTest(asset=path.name):
-                with Image.open(path) as image:
-                    alpha = image.convert("RGBA").getchannel("A")
-                top = visible_bounds(path)[1]
-                for row in range(top, top + CONTACT_ROWS):
-                    line = alpha.crop((0, row, width, row + 1)).tobytes()
-                    columns = [x for x, value in enumerate(line) if value > VISIBLE]
-                    if not columns:
-                        continue
-                    span = body_span(row)
-                    self.assertIsNotNone(span, f"{path.name}: no body at Y{row}")
-                    self.assertGreaterEqual(
-                        columns[0], span[0],
-                        f"{path.name} reaches X{columns[0]} at Y{row}, past the body's X{span[0]}",
-                    )
-                    self.assertLessEqual(
-                        columns[-1], span[1],
-                        f"{path.name} reaches X{columns[-1]} at Y{row}, past the body's X{span[1]}",
-                    )
+    def test_the_withdrawal_is_recorded(self) -> None:
+        manifest = json.loads((ROOT / "assets" / "asset_manifest.json").read_text())
+        registered = [e for e in manifest["registered_production_assets"]
+                      if e["category"] == "neck_accessories"]
+        withdrawn = [b for b in manifest.get("blocked_assets", [])
+                     if str(b.get("id", "")).startswith("neck_accessory")]
+        if registered:
+            self.skipTest("neck accessories have been redrawn and re-registered")
+        self.assertEqual(len(withdrawn), 8,
+                         "the eight withdrawn neck accessories must stay on the record "
+                         "with their reason, so the category is not quietly forgotten")
+        for entry in withdrawn:
+            with self.subTest(asset=entry["id"]):
+                self.assertTrue(entry.get("reason"), f"{entry['id']} is withdrawn with no reason")
+                self.assertTrue(entry.get("requirement"),
+                                f"{entry['id']} is withdrawn with no requirement for its replacement")
+                self.assertTrue((ROOT / entry["retained_at"]).exists(),
+                                f"{entry['id']}'s withdrawn bytes are not where the manifest says")
 
 
 class BackAccessorySeatingTests(unittest.TestCase):

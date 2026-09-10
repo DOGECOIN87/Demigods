@@ -913,7 +913,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
       "status": "production_ready",
-      "sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
+      "sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
       "dimensions": [
         1254,
         1254
@@ -921,7 +921,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
@@ -936,13 +936,18 @@
           "rig_refit_scale_0.761_top_y_475",
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
         "pre_boot_fit_sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
         "post_boot_fit_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 1315 to 5. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 1315 to 5. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
+        "neckline_note": "920 px of inner garment painted into the opening: muted violet-grey underlayer inside the wrap."
       },
       "approved_on": "2026-07-28"
     },
@@ -951,7 +956,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
       "status": "production_ready",
-      "sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
+      "sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
       "dimensions": [
         1254,
         1254
@@ -959,7 +964,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md",
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
@@ -976,7 +981,8 @@
           "chroma_despill_edge_band_3",
           "fit_boots_to_legs_2026-09-07",
           "pose_005_proportion_refit_2026-09-09",
-          "chroma_residue_despeckle_2026-09-10"
+          "chroma_residue_despeckle_2026-09-10",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
         "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
@@ -992,7 +998,11 @@
         "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
         "pre_chroma_residue_despeckle_2026-09-10_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
         "post_chroma_residue_despeckle_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
-        "chroma_despeckle_note": "23 px of surviving chroma key removed. The asset carried 3 saturated key-green pixels, 0.002% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
+        "chroma_despeckle_note": "23 px of surviving chroma key removed. The asset carried 3 saturated key-green pixels, 0.002% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
+        "neckline_note": "807 px of inner garment painted into the opening: warm cream underlayer inside the tunic's round neck."
       },
       "approved_on": "2026-07-28"
     },
@@ -2192,7 +2202,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
       "status": "production_ready",
-      "sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
+      "sha256": "b4391f3e6f3be75e192da91cf76d42b664fb438148032e5c893aefb4b93cbf43",
       "dimensions": [
         1254,
         1254
@@ -2211,21 +2221,26 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "pre_boot_fit_sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
         "post_boot_fit_sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 937 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 937 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "b4391f3e6f3be75e192da91cf76d42b664fb438148032e5c893aefb4b93cbf43",
+        "neckline_note": "4736 px of inner garment painted into the opening: cream linen under a brown leather coat."
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
     },
     {
       "id": "outfit_008",
       "category": "outfits",
       "path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
       "status": "production_ready",
-      "sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
+      "sha256": "c96f3fa8372250994d552c4a7656abfc6fedea63b039a8155874960e5e6f2836",
       "dimensions": [
         1254,
         1254
@@ -2245,7 +2260,8 @@
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
           "fit_boots_to_legs_2026-09-07",
-          "chroma_residue_despeckle_2026-09-10"
+          "chroma_residue_despeckle_2026-09-10",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "pre_boot_fit_sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
         "post_boot_fit_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
@@ -2253,17 +2269,21 @@
         "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
         "pre_chroma_residue_despeckle_2026-09-10_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
         "post_chroma_residue_despeckle_2026-09-10_sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
-        "chroma_despeckle_note": "164 px of surviving chroma key removed. The asset carried 15 saturated key-green pixels, 0.009% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
+        "chroma_despeckle_note": "164 px of surviving chroma key removed. The asset carried 15 saturated key-green pixels, 0.009% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "c96f3fa8372250994d552c4a7656abfc6fedea63b039a8155874960e5e6f2836",
+        "neckline_note": "2282 px of inner garment painted into the opening: olive linen tunic under a ragged cloak."
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
     },
     {
       "id": "outfit_009",
       "category": "outfits",
       "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
       "status": "production_ready",
-      "sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
+      "sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
       "dimensions": [
         1254,
         1254
@@ -2282,21 +2302,26 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "pre_boot_fit_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
         "post_boot_fit_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 3332 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 3332 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
+        "neckline_note": "2202 px of inner garment painted into the opening: pale grey-blue shirt under a navy coat."
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
     },
     {
       "id": "outfit_010",
       "category": "outfits",
       "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
       "status": "production_ready",
-      "sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
+      "sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
       "dimensions": [
         1254,
         1254
@@ -2316,7 +2341,8 @@
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
           "fit_boots_to_legs_2026-09-07",
-          "chroma_residue_despeckle_2026-09-10"
+          "chroma_residue_despeckle_2026-09-10",
+          "outfit_neckline_inner_garment_2026-09-10"
         ],
         "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
         "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
@@ -2324,10 +2350,14 @@
         "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
         "pre_chroma_residue_despeckle_2026-09-10_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
         "post_chroma_residue_despeckle_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
-        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
+        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
+        "neckline_script": "scripts/fix_outfit_necklines.py",
+        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
+        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
+        "neckline_note": "1079 px of painted collar interior cleared: stand collar; the slate interior capped the neck. 1226 px of inner garment painted into the opening: pale shirt inside the stand collar."
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
     },
     {
       "id": "aura_rear_003",
@@ -3173,750 +3203,6 @@
         ],
         "pre_anatomy_reseat_sha256": "2b6f4c63acb6f8240b6c3b379885247ffba52c42acd4f81e283f91182a191c29",
         "post_anatomy_reseat_sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_001",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
-      "status": "production_ready",
-      "sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-047",
-      "qa_composite": "docs/qa/composites/neck_accessory_001_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Plain black curved choker",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "f77cd44b6adaecffd83a94394e1f4a66f361dfafab9d57d8901db9a9919d2c22",
-        "post_geometry_correction_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg047_black_choker_source.png",
-        "source_sha256": "eb22a1a1c39b2a3dd42c73f864caff75d8f2fbfa55b243cb0c2b1ab642d94c4b",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            681,
-            867,
-            1238,
-            1058
-          ],
-          "crop_dimensions": [
-            558,
-            192
-          ],
-          "scale": 0.3046595,
-          "vertical_scale": 0.3046595,
-          "anisotropic": false,
-          "target_dimensions": [
-            170,
-            58
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 498,
-            "bounds": [
-              542,
-              498,
-              711,
-              555
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "band meeting the neck at the shoulder junction",
-          "target_width": 170,
-          "top_y": 498
-        },
-        "output_bounds": [
-          542,
-          498,
-          711,
-          555
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "72e2f42eddc77c102ed76e8317eca7a5ce685031785605208cf2064e11723368",
-        "post_anatomy_reseat_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
-        "pre_neck_contact_sha256": "803243e4db2fe316dd59ff15718795e8541a797cf767b3080a2b93cd8ef85bfd",
-        "post_neck_contact_sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_002",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
-      "status": "production_ready",
-      "sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-048",
-      "qa_composite": "docs/qa/composites/neck_accessory_002_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Warm-gold choker with dark-blue drop",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "fa6bb092e29c130de7bd0a493abff7506a16bbe741e3893293c7a82ec109a813",
-        "post_geometry_correction_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg048_gold_blue_drop_choker_source.png",
-        "source_sha256": "7dd6cdf530177b8499dbc2c2bd1aaf239944e7d346038b8f26d22f0ea5870ea1",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            518,
-            650,
-            1400,
-            1236
-          ],
-          "crop_dimensions": [
-            883,
-            587
-          ],
-          "scale": 0.198188,
-          "vertical_scale": 0.198188,
-          "anisotropic": false,
-          "target_dimensions": [
-            175,
-            116
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 496,
-            "bounds": [
-              540,
-              496,
-              714,
-              611
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "band meeting the neck, drop on the upper chest",
-          "target_width": 175,
-          "top_y": 496
-        },
-        "output_bounds": [
-          540,
-          496,
-          714,
-          611
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "c37bc8c3e489fe3782db0dfd16c708c14e1844fd1df4d5a251083ffd39a1e691",
-        "post_anatomy_reseat_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
-        "pre_neck_contact_sha256": "df568f2c4557dc7f7964e7c8a524432ed2f9b3994fcc9ebf4f4ff35a8aa9d38a",
-        "post_neck_contact_sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_003",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
-      "status": "production_ready",
-      "sha256": "63b01bc3ba8f3e17d3a847ac5844944c5bad489b8490992a6c1b3b996c1e6e3b",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-049",
-      "qa_composite": "docs/qa/composites/neck_accessory_003_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Black ribbon bow",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "2cb51dfe163f87c3d789f3c46754e0ff3d4dfc3abd9bbb04adf370d8e9e03adb",
-        "post_geometry_correction_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg049_black_ribbon_bow_source.png",
-        "source_sha256": "a277d1628e2a060b1fef673f4cf3a6516397d06695ca21c5104c2e7ac3b8c31e",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            611,
-            638,
-            1307,
-            1288
-          ],
-          "crop_dimensions": [
-            697,
-            651
-          ],
-          "scale": 0.24390244,
-          "vertical_scale": 0.24390244,
-          "anisotropic": false,
-          "target_dimensions": [
-            170,
-            159
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 504,
-            "bounds": [
-              542,
-              504,
-              711,
-              662
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "bow tied at the base of the neck",
-          "target_width": 170,
-          "top_y": 504
-        },
-        "output_bounds": [
-          542,
-          504,
-          711,
-          662
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "416957439f292ebef81596953af7182ed3740e90810f73b153618bf519cd6ab7",
-        "post_anatomy_reseat_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
-        "pre_neck_contact_sha256": "7db6dce6f47727a265217f34d5396d1e07c347f0b2e2107d109ee4ac36f598b2",
-        "post_neck_contact_sha256": "63b01bc3ba8f3e17d3a847ac5844944c5bad489b8490992a6c1b3b996c1e6e3b"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_004",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
-      "status": "production_ready",
-      "sha256": "5ff18fb971036d1f82c92b6122d2e4210c5f91a9e951fbcddef9ecfb46fcbb3a",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-050",
-      "qa_composite": "docs/qa/composites/neck_accessory_004_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Fine silver chain with dark round pendant",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "80c87e9d7851296a4a33e418c8c2ccba25c3641923f30b3c8fbdec70226f687d",
-        "post_geometry_correction_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg050_silver_dark_pendant_source.png",
-        "source_sha256": "15cc9bb58b147cd1c3b3c3c9eb2b51f28cc84fdb71f74c6f36744052ce0e40b1",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            491,
-            506,
-            1436,
-            1343
-          ],
-          "crop_dimensions": [
-            946,
-            838
-          ],
-          "scale": 0.15856237,
-          "vertical_scale": 0.15856237,
-          "anisotropic": false,
-          "target_dimensions": [
-            150,
-            133
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 500,
-            "bounds": [
-              552,
-              500,
-              701,
-              632
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain ends meeting the neck, pendant on the chest",
-          "target_width": 150,
-          "top_y": 500
-        },
-        "output_bounds": [
-          552,
-          500,
-          701,
-          632
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "d1d958eb8b09b22ee362cc7988f2024fcc9107ed183eb8a092a44e29cb6eb669",
-        "post_anatomy_reseat_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
-        "pre_neck_contact_sha256": "85daaf4843d2528a69c89ff3b53c3aa4e5f4137e044d4aaa9f51d28401eebe3f",
-        "post_neck_contact_sha256": "5ff18fb971036d1f82c92b6122d2e4210c5f91a9e951fbcddef9ecfb46fcbb3a"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_005",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
-      "status": "production_ready",
-      "sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-051",
-      "qa_composite": "docs/qa/composites/neck_accessory_005_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver V-chain with long navy pendant",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "402cb4f79c6203489cd5bd145d611120d7cb7bd66170994ec6c2f98a24e5ca15",
-        "post_geometry_correction_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg051_silver_navy_pendant_source.png",
-        "source_sha256": "2da66e07a015e565e9866c4a9bca06f00d340e5c6e341b92511e182132d9e174",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            693,
-            512,
-            1227,
-            1380
-          ],
-          "crop_dimensions": [
-            535,
-            869
-          ],
-          "scale": 0.28037383,
-          "vertical_scale": 0.28037383,
-          "anisotropic": false,
-          "target_dimensions": [
-            150,
-            244
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 500,
-            "bounds": [
-              552,
-              500,
-              701,
-              743
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain ends meeting the neck, long pendant down the chest",
-          "target_width": 150,
-          "top_y": 500
-        },
-        "output_bounds": [
-          552,
-          500,
-          701,
-          743
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "52d1ce3000ad694a72164beef40bdda4261f56a0ad5f85af3de87ee5374ef4a5",
-        "post_anatomy_reseat_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
-        "pre_neck_contact_sha256": "1836ebab8b353656368f7d9937239ff04efae96972d1ff6a27bb997079f501a8",
-        "post_neck_contact_sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_006",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
-      "status": "production_ready",
-      "sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-052",
-      "qa_composite": "docs/qa/composites/neck_accessory_006_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Fine silver chain with pale circular charm",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "f44ed38788edeef3d5a20a25dbb76b4e678e702849494b01b3fe5008fdc2a787",
-        "post_geometry_correction_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg052_silver_pale_circle_charm_source.png",
-        "source_sha256": "348181319841f7d378e2e0d70f4951ec7dc4bfccead4865ea0f8d54500f26aa7",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            517,
-            547,
-            1403,
-            1222
-          ],
-          "crop_dimensions": [
-            887,
-            676
-          ],
-          "scale": 0.16910936,
-          "vertical_scale": 0.16910936,
-          "anisotropic": false,
-          "target_dimensions": [
-            150,
-            114
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 500,
-            "bounds": [
-              552,
-              500,
-              701,
-              613
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain ends meeting the neck, charm on the chest",
-          "target_width": 150,
-          "top_y": 500
-        },
-        "output_bounds": [
-          552,
-          500,
-          701,
-          613
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "045b6b8858189396d47e4c840560426fe128f31d0300f2acc29564bb6b9d2983",
-        "post_anatomy_reseat_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
-        "pre_neck_contact_sha256": "d4644b40c8174cd294a6da87bfa82f8e51c4f27b298f16d2cbd0947078046c26",
-        "post_neck_contact_sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_007",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
-      "status": "production_ready",
-      "sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-053",
-      "qa_composite": "docs/qa/composites/neck_accessory_007_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold chain with long teardrop pendant",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "df78588ebba5ad19f416a0497a2b1278a128ea56632db871faffa70dceb42b0e",
-        "post_geometry_correction_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg053_gold_teardrop_pendant_source.png",
-        "source_sha256": "fc8008216f9919e2ea04b926e58688bc6dff396979b57c82aa1fdd86f42e3c4f",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            507,
-            553,
-            1433,
-            1323
-          ],
-          "crop_dimensions": [
-            927,
-            771
-          ],
-          "scale": 0.1618123,
-          "vertical_scale": 0.1618123,
-          "anisotropic": false,
-          "target_dimensions": [
-            150,
-            125
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 500,
-            "bounds": [
-              552,
-              500,
-              701,
-              624
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "chain ends meeting the neck, teardrop on the chest",
-          "target_width": 150,
-          "top_y": 500
-        },
-        "output_bounds": [
-          552,
-          500,
-          701,
-          624
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "d04db9236be660b7177a5563d1cf36bab981238cac7617e6943b50826e0756b4",
-        "post_anatomy_reseat_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
-        "pre_neck_contact_sha256": "72fa9a5be0100afdd1e58c7487f59fe395482b76f5a77eebfcc40a0bc5c44121",
-        "post_neck_contact_sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "neck_accessory_008",
-      "category": "neck_accessories",
-      "path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
-      "status": "production_ready",
-      "sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-054",
-      "qa_composite": "docs/qa/composites/neck_accessory_008_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Violet ribbon bow",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "postprocessing": [
-          "reduction_only_neck_refit_2026-08-15",
-          "anatomy_reseat_2026-09-07",
-          "neck_contact_seat_2026-09-07"
-        ],
-        "pre_geometry_correction_sha256": "86a75af4fd115d9435a74884d5909be187ee900755ca94f604544fe2e72d5e0e",
-        "post_geometry_correction_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "reduction_only_neck_refit_2026-08-15",
-        "source_path": "images/trait_candidates/neck_accessories/dg054_violet_ribbon_bow_source.png",
-        "source_sha256": "281bf22bc05215a5eae84f8a38c5f342b71bcdba0bc5814ea1b3eb8899a27867",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            650,
-            736,
-            1261,
-            1193
-          ],
-          "crop_dimensions": [
-            612,
-            458
-          ],
-          "scale": 0.27777778,
-          "vertical_scale": 0.27777778,
-          "anisotropic": false,
-          "target_dimensions": [
-            170,
-            127
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 500,
-            "bounds": [
-              542,
-              500,
-              711,
-              626
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "bow tied at the base of the neck",
-          "target_width": 170,
-          "top_y": 500
-        },
-        "output_bounds": [
-          542,
-          500,
-          711,
-          626
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "pre_anatomy_reseat_sha256": "4963a75191b2e5a4798e0af95da5a4768651f8182348a5c4a3664a5c1efa2eb7",
-        "post_anatomy_reseat_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
-        "pre_neck_contact_sha256": "1580c515b51a55833415eeef5972c3c1a53c162d61e193bf64ea13ea879f4783",
-        "post_neck_contact_sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -7765,9 +7051,108 @@
       "intended_production_path": "assets/backgrounds/background_008_violet_void_portal.png"
     }
   ],
-  "blocked_assets": [],
+  "blocked_assets": [
+    {
+      "id": "neck_accessory_001",
+      "backlog_id": "DG-047",
+      "intended_path": "assets/neck_accessories/neck_accessory_001_black_choker.png",
+      "status": "withdrawn",
+      "sha256": "7e125b2fe72c771d33a3bec5150bdf5042df7b1fa362d86d208033defb2b0b1d",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_001_black_choker.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_002",
+      "backlog_id": "DG-048",
+      "intended_path": "assets/neck_accessories/neck_accessory_002_gold_blue_drop_choker.png",
+      "status": "withdrawn",
+      "sha256": "2d541ed5fe9574e5102ca0cf9cdf11f97e74d5ae1435b376937872f3ec7e067c",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_002_gold_blue_drop_choker.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_003",
+      "backlog_id": "DG-049",
+      "intended_path": "assets/neck_accessories/neck_accessory_003_black_ribbon_bow.png",
+      "status": "withdrawn",
+      "sha256": "63b01bc3ba8f3e17d3a847ac5844944c5bad489b8490992a6c1b3b996c1e6e3b",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_003_black_ribbon_bow.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_004",
+      "backlog_id": "DG-050",
+      "intended_path": "assets/neck_accessories/neck_accessory_004_silver_dark_round_pendant.png",
+      "status": "withdrawn",
+      "sha256": "5ff18fb971036d1f82c92b6122d2e4210c5f91a9e951fbcddef9ecfb46fcbb3a",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_004_silver_dark_round_pendant.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_005",
+      "backlog_id": "DG-051",
+      "intended_path": "assets/neck_accessories/neck_accessory_005_silver_navy_long_pendant.png",
+      "status": "withdrawn",
+      "sha256": "abfbcd4dfde37ba15fa0e0801a0ac26852b0fec28c311f013fcc6b984589262e",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_005_silver_navy_long_pendant.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_006",
+      "backlog_id": "DG-052",
+      "intended_path": "assets/neck_accessories/neck_accessory_006_silver_pale_circle_charm.png",
+      "status": "withdrawn",
+      "sha256": "60e5455d54b3d8ada5438854785b572f05335860ce6aa2de096bd9e2e97e0979",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_006_silver_pale_circle_charm.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_007",
+      "backlog_id": "DG-053",
+      "intended_path": "assets/neck_accessories/neck_accessory_007_gold_teardrop_pendant.png",
+      "status": "withdrawn",
+      "sha256": "c6c12c8d6d6bfbdff75bbe05d6a2c9f650945ed226edceef688ec308838a77ff",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_007_gold_teardrop_pendant.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    },
+    {
+      "id": "neck_accessory_008",
+      "backlog_id": "DG-054",
+      "intended_path": "assets/neck_accessories/neck_accessory_008_violet_ribbon_bow.png",
+      "status": "withdrawn",
+      "sha256": "2499558b2b969883a6e4cdeecc613f49fd800094ac0c0429a266dd3914e81d77",
+      "retained_at": "incoming/neck_accessories_withdrawn_2026-09-10/neck_accessory_008_violet_ribbon_bow.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
+      "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+    }
+  ],
   "queued_base_poses": [],
-  "pending_categories": [],
+  "pending_categories": [
+    "neck_accessories"
+  ],
   "legendary_one_of_ones": [
     {
       "id": "legendary_001",
