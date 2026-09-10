@@ -1,5 +1,31 @@
 # Handoff: refit the eight remaining outfits to the base body
 
+## Paste this to open the next session
+
+> Work on `DOGECOIN87/Demigods`, branch `claude/collection-assets-alignment-fdxdzw`,
+> which is at `9485094` and equal to `main`.
+>
+> Read `docs/handoff/outfit-refit-brief.md` first and follow it. It names the
+> remaining defect, the five repairs that were already tried and reverted, the
+> two routes worth taking, and what done means. Read the four QA notes it
+> points at before you write any code — they exist so you do not rebuild a
+> repair that was already thrown away.
+>
+> The job: eight of the ten outfits are drawn narrower than the base body, so
+> the base's cream tank and shorts show beside the garment at the waist and
+> hip, and four sleeved garments leave a crescent of bare shoulder. Close all
+> of it without changing any garment's silhouette, trim, lapel, sash or hem.
+>
+> One rule above the others: **passing tests are not evidence**. Every defect
+> in this collection was found by compositing an asset over its bound base body
+> and enlarging it, and the tests were written afterwards. Render and look
+> before you claim anything is fixed, and look at the parts you did not intend
+> to touch. Do not report a number as proof.
+>
+> Start by regenerating the measurements yourself and rendering all ten outfits
+> over their bases, so you are working from what is on disk rather than from
+> the brief's tables. Tell me what you find before you change anything.
+
 You are picking up the Demigods collection (`DOGECOIN87/Demigods`, 777 pieces:
 770 generative + 7 legendary, locked 1254×1254 canvas). Work on branch
 `claude/collection-assets-alignment-fdxdzw`, which is at `1534d8d`.
