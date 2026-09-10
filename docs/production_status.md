@@ -1,6 +1,6 @@
 # Demigods Production Status
 
-Last updated: 2026-07-28
+Last updated: 2026-09-10
 
 ## Current phase
 
@@ -13,8 +13,26 @@ The base-body pose family and all eight backgrounds are registered, and the firs
 **Supply saturation cleared 2026-09-07.** Registering the head-accessory and hand-object
 families took the rule-valid combination space from 800 to 300,478,464 and saturation from
 **97% to 0.0%**. Minting 770 of 800 meant nearly every legal character existed and rarity
-carried no information; that is no longer the case. The remaining art gap is the facial
-system.
+carried no information; that is no longer the case.
+
+**Mintable as it stands, 2026-09-10.** The facial system is complete, and the rule-valid
+combination space is now 429,472,597,672 against a supply of 770, so saturation is 0.0%.
+`scripts/generate_777.py` runs clean end to end on the registered set. Every category that
+still reads `in progress` in the ledger below does so because withdrawn rows stay on the
+backlog as `QA-failed`, not because anything is half-built: 0 rows are `pending` and 0 are
+`candidate`. The open art debt is a list of deliberate replacements, each with its
+requirement recorded in `blocked_assets`:
+
+| Withdrawn | Count | Why | Recorded in |
+|---|---:|---|---|
+| Neck accessories | 8 | chest-wide ornaments on a 61 px neck | `docs/qa/neck_accessories_withdrawn_2026-09-10.md` |
+| Rear auras and one wing pair | 11 | one floor ring recoloured eleven times | `docs/qa/effect_trait_count_2026-09-10.md` |
+| Head accessories | 4 | four forehead bands that read alike at token size | `docs/qa/head_accessory_count_2026-09-10.md` |
+| Outfits and one pose | 4 | drawn narrower than the body they cover | `docs/qa/outfit_refit_2026-09-10.md` |
+
+The one defect knowingly left in the registered set is a band of the base body's tank down
+`outfit_007`'s viewer-left flank. It is visible at 1×. Closing it needs the coat redrawn at
+the body's width; every mechanical widening moves its belt.
 
 ## Live production ledger
 
@@ -82,17 +100,23 @@ Backlog status tally: pending 0, candidate 0, QA-failed 27, approved 0, register
 
 ## Registered production assets
 
-### Base family — complete
+### Base family — four of five poses
 
-The full base-body pose family is registered. `base_body_001_neutral_master.png` is the locked collection master and simultaneously fulfils the relaxed-open pose (backlog DG-001 and DG-002).
+`base_body_001_neutral_master.png` is the locked collection master and simultaneously
+fulfils the relaxed-open pose (backlog DG-001 and DG-002).
 
 | Asset | Canonical path | Registered |
 |---|---|---|
-| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 (SHA `b344cffe…`) |
+| Approved neutral master / relaxed-open pose | `assets/base_bodies/base_body_001_neutral_master.png` | 2026-07-26 |
 | Viewer-left vertical grip | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` | 2026-07-26 |
 | Viewer-right vertical grip | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` | 2026-07-26 |
 | Viewer-left palm-up | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` | 2026-07-26 |
-| Centered two-hand grip | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` | 2026-07-26 |
+| Centered two-hand grip | withdrawn 2026-09-10 | — |
+
+The centred two-hand grip was withdrawn with `outfit_005`, the only outfit bound to it.
+Outfits are not an optional category, so a pose with no compatible outfit yields no valid
+token at all. `tests/test_outfit_body_fit.py` now fails if any registered base is left
+without one.
 
 Asymmetric poses are judged with `python scripts/rig_gate_report.py --pose-variant --tolerance 2 <file>`, which measures the arm-free body center (head plus leg bands) rather than the full silhouette. Every pose landed within 1.5 px of the locked X 627 axis at foot Y 1139 and top-of-head Y 141.
 
@@ -102,9 +126,13 @@ All eight backgrounds are registered. Background 004 was regenerated on 2026-07-
 
 It is a post-process, not a prompt instruction, because an image generator will not reproduce the same blur radius and vignette falloff across eight renders. `prompts/17` requires backgrounds to be generated fully sharp and unvignetted; requesting the effect on top of this pass double-treats the image.
 
-### Rear auras — six registered
+### Rear auras — eight registered
 
-The rear-aura category opened on 2026-07-27 with six procedural assets. See `docs/qa/rear_aura_family_2026-07-27.md`.
+The rear-aura category opened on 2026-07-27 with six procedural assets, grew to eighteen,
+and was cut back to eight on 2026-09-10 when eleven of them turned out to be one floor
+ring in eleven colours. See `docs/qa/rear_aura_family_2026-07-27.md` for the opening set
+and `docs/qa/effect_trait_count_2026-09-10.md` for the thinning. Four of the six listed
+below (`001`, `007`, `008`, `009`) are among the retired.
 
 | Asset | Gate mode | Form |
 |---|---|---|
