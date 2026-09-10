@@ -534,34 +534,6 @@
       "qa_report": "docs/qa/cross_category_composites_2026-07-27.md"
     },
     {
-      "id": "aura_rear_001",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_001_blue_floor_ring.png",
-      "status": "production_ready",
-      "sha256": "03273fb15878b663caa7cbc6e129555c29a0111b8de79e6b338f33f363feb4ab",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_floor_ring.py",
-        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
-        "reference_sha256": "2acac934db9a854dadc29ce9800a9f581dfa0812462fe27b642a2e9f7394fe52",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "blue"
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
       "id": "aura_rear_006",
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_006_gold_radiance.png",
@@ -585,90 +557,6 @@
           1254
         ],
         "postprocessing": []
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "aura_rear_007",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_007_green_neon_ring.png",
-      "status": "production_ready",
-      "sha256": "89c6f4f8ccd1a3b3b9f1e1615add056d1dad8af706fbff8c323be5b9dba04369",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_floor_ring.py",
-        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
-        "reference_sha256": "5a021402be6bd2ef13b3eac8bcf8ad9f94b9186a78cecf845a8c708eae1f17ee",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "green"
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "aura_rear_008",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_008_gold_neon_ring.png",
-      "status": "production_ready",
-      "sha256": "7216d772e2f91b42cdf7ef316c2e5dc998d8a66cd1b17895f4f5a989a005558c",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_floor_ring.py",
-        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
-        "reference_sha256": "5a021402be6bd2ef13b3eac8bcf8ad9f94b9186a78cecf845a8c708eae1f17ee",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "gold"
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "aura_rear_009",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_009_pink_neon_ring.png",
-      "status": "production_ready",
-      "sha256": "d55fd93fe7582ba4d93e0132c2c0964d9c4208cc6d140d222e63d283aae1b9d2",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_floor_ring.py",
-        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
-        "reference_sha256": "5a021402be6bd2ef13b3eac8bcf8ad9f94b9186a78cecf845a8c708eae1f17ee",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "pink"
       },
       "approved_on": "2026-07-27"
     },
@@ -833,7 +721,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
       "status": "production_ready",
-      "sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
+      "sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
       "dimensions": [
         1254,
         1254
@@ -841,7 +729,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
+      "qa_report": "docs/qa/outfit_body_fit_2026-09-10.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
@@ -857,14 +745,19 @@
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
           "open_collar_crisp_rim_c502_r12_h32",
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "outfit_body_fit_2026-09-10"
         ],
         "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
         "collar_note": "Collar interior was painted opaque. Cut above the traced rim arc; full-layer despill (verified safe: every green run 1-5px, i.e. edge spill, no green in the design).",
         "pre_boot_fit_sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
         "post_boot_fit_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 845 to 189. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 845 to 189. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "body_fit_script": "scripts/fit_outfit_torso.py",
+        "pre_outfit_body_fit_2026-09-10_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
+        "post_outfit_body_fit_2026-09-10_sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
+        "body_fit_note": "garment closed over 273 rows; base body showing beside it 7745 px -> 449 px"
       },
       "approved_on": "2026-07-28"
     },
@@ -873,7 +766,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
       "status": "production_ready",
-      "sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
+      "sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
       "dimensions": [
         1254,
         1254
@@ -881,7 +774,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_chroma_key_cleanup_2026-07-29.md",
+      "qa_report": "docs/qa/outfit_body_fit_2026-09-10.md",
       "provenance": {
         "origin": "native_image_generation",
         "reference_path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
@@ -897,14 +790,19 @@
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
           "open_collar_crisp_rim_c520_r27_h30",
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "outfit_body_fit_2026-09-10"
         ],
         "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
         "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
         "collar_note": "A duller neck was painted into the garment. Cut above the shirt-collar opening; 3px-band despill only, because the potion bottles are legitimately green.",
         "pre_boot_fit_sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0",
         "post_boot_fit_sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 115 to 6. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 115 to 6. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "body_fit_script": "scripts/fit_outfit_torso.py",
+        "pre_outfit_body_fit_2026-09-10_sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
+        "post_outfit_body_fit_2026-09-10_sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
+        "body_fit_note": "garment closed over 166 rows; base body showing beside it 2236 px -> 1190 px"
       },
       "approved_on": "2026-07-28"
     },
@@ -2438,210 +2336,6 @@
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
     },
     {
-      "id": "aura_rear_011",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_011_fire_ring.png",
-      "status": "production_ready",
-      "sha256": "0916e98a1e1e05a790a7969b55bfee4d071ad1bec6e3a2cd038468c004215723",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-151",
-      "qa_composite": "docs/qa/composites/aura_rear_011_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Orange fire ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "0916e98a1e1e05a790a7969b55bfee4d071ad1bec6e3a2cd038468c004215723",
-        "chroma_despeckle_note": "6343 px of surviving chroma key removed. The asset carried 1876 saturated key-green pixels, 7.629% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
-    },
-    {
-      "id": "aura_rear_012",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
-      "status": "production_ready",
-      "sha256": "df9652239dcccbc2dd6665f99a25e15b703e09dced9b74240339ac4144cbe50b",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-152",
-      "qa_composite": "docs/qa/composites/aura_rear_012_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Blue lightning ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "df9652239dcccbc2dd6665f99a25e15b703e09dced9b74240339ac4144cbe50b",
-        "chroma_despeckle_note": "14819 px of surviving chroma key removed. The asset carried 7748 saturated key-green pixels, 18.590% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
-    },
-    {
-      "id": "aura_rear_013",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
-      "status": "production_ready",
-      "sha256": "fc765c7cc944568f0517fa0585f1646071c5cf37ef4f1f9d08063f2893a92e24",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-153",
-      "qa_composite": "docs/qa/composites/aura_rear_013_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Violet flame ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "fc765c7cc944568f0517fa0585f1646071c5cf37ef4f1f9d08063f2893a92e24",
-        "chroma_despeckle_note": "3712 px of surviving chroma key removed. The asset carried 808 saturated key-green pixels, 2.433% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
-    },
-    {
-      "id": "aura_rear_014",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
-      "status": "production_ready",
-      "sha256": "3192b1c6b1b1d18ca408c28d260e03ce09f0ad701ba079ff47b1f9bfe9aa2bf7",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-154",
-      "qa_composite": "docs/qa/composites/aura_rear_014_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Pale-blue ice crystal ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "3192b1c6b1b1d18ca408c28d260e03ce09f0ad701ba079ff47b1f9bfe9aa2bf7",
-        "chroma_despeckle_note": "13810 px of surviving chroma key removed. The asset carried 7253 saturated key-green pixels, 25.799% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
-    },
-    {
-      "id": "aura_rear_015",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
-      "status": "production_ready",
-      "sha256": "ccc72043bf1eeba0e03448acb354348d2c9881c74dd19dc7c7e3e6de8a86254e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-155",
-      "qa_composite": "docs/qa/composites/aura_rear_015_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Black smoke void ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "ccc72043bf1eeba0e03448acb354348d2c9881c74dd19dc7c7e3e6de8a86254e",
-        "chroma_despeckle_note": "771 px of surviving chroma key removed. The asset carried 151 saturated key-green pixels, 0.521% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
-    },
-    {
-      "id": "aura_rear_017",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
-      "status": "production_ready",
-      "sha256": "ce59a465c4b0812a242b0348699a209e5f977bbdc21e732c38fe6532c66d8030",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-157",
-      "qa_composite": "docs/qa/composites/aura_rear_017_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Cyan water splash ring (generator)",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "ce59a465c4b0812a242b0348699a209e5f977bbdc21e732c38fe6532c66d8030",
-        "chroma_despeckle_note": "73 px of surviving chroma key removed. The asset carried 9 saturated key-green pixels, 0.049% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
-    },
-    {
       "id": "back_accessory_001",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
@@ -3043,91 +2737,6 @@
         ],
         "pre_anatomy_reseat_sha256": "295220f1dd6689ad023a6b285088a597f240bc7e069369f77bead451adbb5b0c",
         "post_anatomy_reseat_sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "back_accessory_007",
-      "category": "back_accessories",
-      "path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
-      "status": "production_ready",
-      "sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-027",
-      "qa_composite": "docs/qa/composites/back_accessory_007_over_base.png",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Luminous gold feathered wing pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/reseat_registered_accessories.py",
-        "source_path": "images/trait_candidates/back_accessories/dg027_gold_luminous_wings_source_retry.png",
-        "source_sha256": "408ae7be0bb5b1a4a79b1357acea6c606b29edc18a44f77d92e9a9583d79f7ed",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            133,
-            471,
-            1786,
-            1405
-          ],
-          "crop_dimensions": [
-            1654,
-            935
-          ],
-          "scale": 0.45949214,
-          "vertical_scale": 0.45949214,
-          "anisotropic": false,
-          "target_dimensions": [
-            760,
-            430
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 345,
-            "bounds": [
-              247,
-              345,
-              1006,
-              774
-            ]
-          }
-        },
-        "alignment": {
-          "reason": "re-seated from a batch-wide fixed width and seat",
-          "seat": "wing pair spread from the upper back",
-          "target_width": 760,
-          "top_y": 345
-        },
-        "output_bounds": [
-          247,
-          345,
-          1006,
-          774
-        ],
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "anatomy_reseat_2026-09-07"
-        ],
-        "pre_anatomy_reseat_sha256": "61b08c6af1f3a344d671b570cf77f6a4c7ebec30d6d63320a3747369dc46d34c",
-        "post_anatomy_reseat_sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -6835,12 +6444,146 @@
       "reason": "Retired to thin the category: gold band across the forehead. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
       "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_001",
+      "backlog_id": null,
+      "intended_path": "assets/rear_auras/aura_rear_001_blue_floor_ring.png",
+      "status": "retired",
+      "sha256": "03273fb15878b663caa7cbc6e129555c29a0111b8de79e6b338f33f363feb4ab",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_001_blue_floor_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: blue floor ring; the same ellipse as ten others. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_007",
+      "backlog_id": null,
+      "intended_path": "assets/rear_auras/aura_rear_007_green_neon_ring.png",
+      "status": "retired",
+      "sha256": "89c6f4f8ccd1a3b3b9f1e1615add056d1dad8af706fbff8c323be5b9dba04369",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_007_green_neon_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: green floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_008",
+      "backlog_id": null,
+      "intended_path": "assets/rear_auras/aura_rear_008_gold_neon_ring.png",
+      "status": "retired",
+      "sha256": "7216d772e2f91b42cdf7ef316c2e5dc998d8a66cd1b17895f4f5a989a005558c",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_008_gold_neon_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: gold floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_009",
+      "backlog_id": null,
+      "intended_path": "assets/rear_auras/aura_rear_009_pink_neon_ring.png",
+      "status": "retired",
+      "sha256": "d55fd93fe7582ba4d93e0132c2c0964d9c4208cc6d140d222e63d283aae1b9d2",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_009_pink_neon_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: pink floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_011",
+      "backlog_id": "DG-151",
+      "intended_path": "assets/rear_auras/aura_rear_011_fire_ring.png",
+      "status": "retired",
+      "sha256": "0916e98a1e1e05a790a7969b55bfee4d071ad1bec6e3a2cd038468c004215723",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_011_fire_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: orange floor ring; flame texture on the same ellipse, and the raised flame ring keeps that idea. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_012",
+      "backlog_id": "DG-152",
+      "intended_path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
+      "status": "retired",
+      "sha256": "df9652239dcccbc2dd6665f99a25e15b703e09dced9b74240339ac4144cbe50b",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_012_lightning_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: blue floor ring with an arc texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_013",
+      "backlog_id": "DG-153",
+      "intended_path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
+      "status": "retired",
+      "sha256": "fc765c7cc944568f0517fa0585f1646071c5cf37ef4f1f9d08063f2893a92e24",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_013_violet_flame_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: violet floor ring with a flame texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_014",
+      "backlog_id": "DG-154",
+      "intended_path": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
+      "status": "retired",
+      "sha256": "3192b1c6b1b1d18ca408c28d260e03ce09f0ad701ba079ff47b1f9bfe9aa2bf7",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_014_ice_crystal_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: pale blue floor ring with a crystal texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_015",
+      "backlog_id": "DG-155",
+      "intended_path": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
+      "status": "retired",
+      "sha256": "ccc72043bf1eeba0e03448acb354348d2c9881c74dd19dc7c7e3e6de8a86254e",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_015_smoke_void_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: violet floor ring with a smoke texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "aura_rear_017",
+      "backlog_id": "DG-157",
+      "intended_path": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
+      "status": "retired",
+      "sha256": "ce59a465c4b0812a242b0348699a209e5f977bbdc21e732c38fe6532c66d8030",
+      "retained_at": "incoming/effects_retired_2026-09-10/aura_rear_017_water_splash_ring.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: cyan floor ring with a splash texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "back_accessory_007",
+      "backlog_id": "DG-027",
+      "intended_path": "assets/back_accessories/back_accessory_007_gold_luminous_wings.png",
+      "status": "retired",
+      "sha256": "1c3572b2466a28cefc6bd02999ff06010b20c768c7b59368f2785f84867ed5c6",
+      "retained_at": "incoming/effects_retired_2026-09-10/back_accessory_007_gold_luminous_wings.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Retired to thin the category: gold feathered wings; the same silhouette as the silver pair. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
+      "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
     }
   ],
   "queued_base_poses": [],
   "pending_categories": [
     "neck_accessories",
-    "head_accessories"
+    "head_accessories",
+    "rear_auras",
+    "back_accessories"
   ],
   "legendary_one_of_ones": [
     {

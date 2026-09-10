@@ -54,7 +54,7 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | registered |
+| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | QA-failed |
 | DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | registered |
 | DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | registered |
 | DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | registered |
@@ -69,17 +69,17 @@ The neon variants are the *same geometry* in a different palette, so they are re
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
-| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
-| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
+| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
+| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
+| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
 | DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
-| DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
+| DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
+| DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
+| DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
+| DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
+| DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
 | DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
+| DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
 | DG-161 | rear aura | Blue rising flame above a luminous floor ring | co-created candidate `images/trait_candidates/grok_1784755724820.png`; no reference cell | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_018_blue_flame_ring.png` | `prompts/12_auras.md` | registered |
 
 All eleven are ground-plane effects and are gated with `rig_gate_report.py --floor-aura`. The generator variants must match DG-015's seating exactly so the family stacks consistently: same ellipse, same foot-baseline placement, differing only in surface treatment.
@@ -119,7 +119,7 @@ Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; 
 | DG-024 | back accessory | Deep navy formal cape | `AURA`, upper row cell 4 | DG-021 | `assets/back_accessories/back_accessory_004_navy_formal_cape.png` | `prompts/11_back_accessories.md` | registered |
 | DG-025 | back accessory | Black-purple ragged cloak | `AURA`, upper row cell 5 | DG-021 | `assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png` | `prompts/11_back_accessories.md` | registered |
 | DG-026 | back accessory | Pale-blue crystalline wing/mantle pair | `AURA`, upper row cell 6 | DG-021 | `assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png` | `prompts/11_back_accessories.md` | registered |
-| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | registered |
+| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | QA-failed |
 | DG-028 | back accessory | Olive-silver mechanical/spiked wing pair | `AURA`, upper row cell 8 | DG-021 | `assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png` | `prompts/11_back_accessories.md` | registered |
 
 ### Hair back

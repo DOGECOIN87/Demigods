@@ -77,9 +77,6 @@ GREEN_BY_DESIGN = {
         "a laurel wreath - the green fills the leaves",
     "assets/eyes/eyes_012_emerald.png":
         "the emerald iris of this collection's own eye palette",
-    "assets/rear_auras/aura_rear_007_green_neon_ring.png":
-        "built procedurally by scripts/build_aura_floor_ring.py --palette green; the "
-        "green is smooth and unspeckled",
     "assets/legendary/legendary_007_verdant_archivist.png":
         "the verdant legendary - green foliage throughout",
 }

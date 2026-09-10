@@ -197,6 +197,46 @@ def _smoothed(rows: dict[int, tuple[int, int]]) -> dict[int, float]:
     return out
 
 
+def warp_row(result: np.ndarray, premultiplied: np.ndarray, y: int, edge: int,
+             step: int, shift: float, reach: int) -> None:
+    """Move one row's garment edge outward by `shift`, in place.
+
+    The outermost `MARGIN` columns - the contour line and the rim shading behind
+    it - ride out as a block, so the drawn outline is translated rather than
+    resampled. Everything behind them takes up the difference on a ramp that
+    reaches zero at the inner end, so the join is seamless. `shift` must be a
+    whole number of pixels, or the margin lands off the column grid and the
+    outline comes back dotted.
+    """
+    inward = np.arange(reach, dtype=np.float64)
+    travel = np.where(
+        inward <= MARGIN,
+        shift,
+        shift * (1.0 - (inward - MARGIN) / (reach - 1 - MARGIN)),
+    )
+    src = edge + step * inward
+    dst = src - step * travel
+    order = np.argsort(dst)
+    lo, hi = int(np.floor(dst.min())), int(np.ceil(dst.max()))
+    column = np.arange(lo, hi + 1, dtype=np.float64)
+    for channel in range(4):
+        values = premultiplied[y, src.astype(int), channel]
+        result[y, lo:hi + 1, channel] = np.interp(column, dst[order], values[order])
+
+
+def premultiply(source: np.ndarray) -> np.ndarray:
+    out = source.astype(np.float64)
+    out[..., :3] *= out[..., 3:4] / 255.0
+    return out
+
+
+def unpremultiply(result: np.ndarray) -> Image.Image:
+    alpha = np.clip(result[..., 3:4], 0.0, 255.0)
+    rgb = np.where(alpha > 0.0, result[..., :3] * 255.0 / np.maximum(alpha, 1e-6), 0.0)
+    out = np.concatenate([np.clip(rgb, 0, 255), alpha], axis=2)
+    return Image.fromarray(np.round(out).astype(np.uint8), "RGBA")
+
+
 def widen(outfit: Image.Image, base: Image.Image, max_px: int) -> tuple[Image.Image, dict]:
     source = np.array(outfit.convert("RGBA"))
     body = np.asarray(base.convert("RGBA"))
@@ -204,8 +244,7 @@ def widen(outfit: Image.Image, base: Image.Image, max_px: int) -> tuple[Image.Im
     if not any(found.values()):
         return outfit, {"rows": 0, "pixels_added": 0}
 
-    premultiplied = source.astype(np.float64)
-    premultiplied[..., :3] *= premultiplied[..., 3:4] / 255.0
+    premultiplied = premultiply(source)
     result = premultiplied.copy()
 
     rows, added = set(), 0
@@ -234,30 +273,11 @@ def widen(outfit: Image.Image, base: Image.Image, max_px: int) -> tuple[Image.Im
             # it takes what it can rather than dropping the row and leaving a
             # notch between two rows that did move.
             shift = min(shift, reach - MARGIN - 1.0)
-            # Distance inward from the sleeve's own edge, and how far each of
-            # those columns moves: the margin rides out as a block, the fabric
-            # behind it takes up the difference, and the join is at zero.
-            inward = np.arange(reach, dtype=np.float64)
-            travel = np.where(
-                inward <= MARGIN,
-                shift,
-                shift * (1.0 - (inward - MARGIN) / (reach - 1 - MARGIN)),
-            )
-            src = edge + step * inward
-            dst = src - step * travel
-            order = np.argsort(dst)
-            lo, hi = int(np.floor(dst.min())), int(np.ceil(dst.max()))
-            column = np.arange(lo, hi + 1, dtype=np.float64)
-            for channel in range(4):
-                values = premultiplied[y, src.astype(int), channel]
-                result[y, lo:hi + 1, channel] = np.interp(column, dst[order], values[order])
+            warp_row(result, premultiplied, y, edge, step, shift, reach)
             rows.add(y)
             added += gap
 
-    alpha = np.clip(result[..., 3:4], 0.0, 255.0)
-    rgb = np.where(alpha > 0.0, result[..., :3] * 255.0 / np.maximum(alpha, 1e-6), 0.0)
-    out = np.concatenate([np.clip(rgb, 0, 255), alpha], axis=2)
-    return Image.fromarray(np.round(out).astype(np.uint8), "RGBA"), {"rows": len(rows), "pixels_added": added}
+    return unpremultiply(result), {"rows": len(rows), "pixels_added": added}
 
 
 def exposed_strip_pixels(outfit: Image.Image, base: Image.Image, max_px: int = DEFAULT_MAX_PX) -> int:
