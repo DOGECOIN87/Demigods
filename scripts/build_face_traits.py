@@ -45,11 +45,12 @@ within about 10/255, which the feather absorbs.
 Expression marks carry no patch. They are additive overlays on skin that is
 already there.
 
-    python scripts/build_face_traits.py --out-dir incoming/face_traits_2026-09-09
+    python scripts/build_face_traits.py --out-dir incoming/face_traits_2026-09-09 --install
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -70,6 +71,9 @@ BASES = ROOT / "assets" / "base_bodies"
 
 # Rig anchors this module places against.
 EYE_LINE_Y = 370
+# How far from an eye's centre the baked eye can reach: the master's own eye spans
+# 498-759 across and 337-405 down, and the four other bases agree within 6 px.
+EYE_REACH = (58.0, 55.0)
 MOUTH_CENTER = (627, 441)
 CENTER_X = 627
 
@@ -171,22 +175,23 @@ BROW_MOODS: list[dict] = [
 MOUTHS: list[dict] = [
     dict(name="closed_neutral", source=True),
     dict(name="small_open_smile", width=34, curve=4, weight=2.4,
-         open=dict(rx=17, ry=11, tongue=True, teeth=False, lift=2)),
+         open=dict(rx=17, ry=11, tongue=True, teeth=False, lift=2, lip=0.70)),
     dict(name="small_dark_open", width=28, curve=2, weight=2.4,
-         open=dict(rx=14, ry=13, tongue=False, teeth=True, lift=3)),
+         open=dict(rx=14, ry=13, tongue=False, teeth=True, lift=3, lip=0.66)),
     dict(name="wide_open_smile", width=60, curve=7, weight=2.6,
-         open=dict(rx=30, ry=15, tongue=True, teeth=True, lift=2)),
+         open=dict(rx=30, ry=15, tongue=True, teeth=True, lift=2, lip=0.60)),
     dict(name="short_line", width=26, curve=3, weight=2.4),
     dict(name="soft_curve", width=38, curve=9, weight=2.6),
     dict(name="flat_line", width=42, curve=0, weight=2.4),
-    dict(name="small_downturned", width=32, curve=-7, weight=2.6,
-         open=dict(rx=13, ry=9, tongue=False, teeth=False, lift=1)),
+    # Downturned reads from the line's own droop. As an opening it read as a plain
+    # round mouth, because a small dark ellipse carries no direction.
+    dict(name="small_downturned", width=32, curve=-8, weight=2.8),
     dict(name="tiny_neutral", width=18, curve=1, weight=2.2),
     dict(name="tiny_curve", width=20, curve=5, weight=2.2),
     dict(name="pink_open_pout", width=24, curve=2, weight=2.2,
-         open=dict(rx=13, ry=14, tongue=True, teeth=False, lift=1)),
+         open=dict(rx=13, ry=14, tongue=True, teeth=False, lift=1, lip=0.86)),
     dict(name="tiny_round", width=14, curve=0, weight=2.0,
-         open=dict(rx=8, ry=9, tongue=False, teeth=False, lift=0)),
+         open=dict(rx=8, ry=9, tongue=False, teeth=False, lift=0, lip=0.92)),
 ]
 
 # Expression marks sit on the cheeks. Two constraints fix that: hair_front renders
@@ -224,13 +229,36 @@ def _blob(mask: np.ndarray, seed: np.ndarray) -> np.ndarray:
         current = grown
 
 
+def _local_skin(luminance: np.ndarray, ink: np.ndarray, radius: int = 26) -> np.ndarray:
+    """The skin level each pixel sits against, averaged over nearby non-feature skin."""
+    weight = (~ink).astype(float)
+    value = _box_blur((luminance * weight)[..., None], radius)[..., 0]
+    mass = _box_blur(weight[..., None], radius)[..., 0]
+    return value / np.maximum(mass, 1e-6)
+
+
+def _deviates(luminance: np.ndarray, seed_margin: float, margin: float) -> np.ndarray:
+    """Pixels that differ from the skin around them, in either direction.
+
+    Both directions matter, and getting that wrong is what shipped: the footprint
+    was "darker than the skin", which is the brow's ink but not the pale highlight
+    the style paints along its upper edge. The patch therefore left the highlight
+    on the face, and every mood that moved the brow left a ghost of it behind - a
+    mottled cream crescent under the new brow. The same omission left the sclera
+    out of the eye footprint.
+    """
+    coarse = luminance < np.percentile(luminance, 85) - seed_margin
+    level = _local_skin(luminance, coarse)
+    return np.abs(luminance - level) > margin
+
+
 def baked_footprints() -> dict[str, np.ndarray]:
     """Where each baked feature lands, unioned over every registered base.
 
     A trait is one layer shared by all of them, so what it has to cover is the
     union rather than the master's own footprint. The eyes are found as the
-    connected dark blob seeded at each iris, which keeps the ear outline and the
-    jaw shadow at the search box's edge out of it.
+    connected deviation blob seeded at each iris, which keeps the ear outline and
+    the jaw shadow at the search box's edge out of it.
     """
     union = {name: np.zeros((CANVAS, CANVAS), bool) for name in FOOTPRINT_BOXES}
     for path in sorted(BASES.glob("*.png")):
@@ -241,7 +269,14 @@ def baked_footprints() -> dict[str, np.ndarray]:
         eyes = np.zeros((CANVAS, CANVAS), bool)
         for (left, top, right, bottom), guess in zip(FOOTPRINT_BOXES["eyes"], (548, 708)):
             patch = luminance[top:bottom, left:right]
-            ink = _grow(patch < np.percentile(patch, 85) - 22)
+            # Clipped to a generous ellipse around the eye. Deviation from skin is
+            # a looser test than darkness, and without the clip the blob walks out
+            # through the ear outline and the jaw shadow and fills the corner of
+            # the search box - which would put a skin patch over the cheek.
+            rows, columns = np.mgrid[top:bottom, left:right].astype(float)
+            reach = (((columns - guess) / EYE_REACH[0]) ** 2
+                     + ((rows - EYE_LINE_Y) / EYE_REACH[1]) ** 2) <= 1.0
+            ink = _grow(_deviates(patch, 22.0, 12.0)) & reach
             window = np.full(patch.shape, np.inf)
             band = slice(330 - top, 400 - top), slice(guess - left - 20, guess - left + 20)
             window[band] = patch[band]
@@ -251,15 +286,18 @@ def baked_footprints() -> dict[str, np.ndarray]:
             eyes[top:bottom, left:right] |= _blob(ink, seed)
         union["eyes"] |= eyes
 
+        # The brow band's lower edge abuts the top of the eye. Subtracting the eye
+        # blob - dilated, so its soft rim goes too - keeps the eyebrow patch from
+        # erasing the top of the eyes layer, which renders underneath it.
         left, top, right, bottom = FOOTPRINT_BOXES["eyebrows"][0]
         patch = luminance[top:bottom, left:right]
         union["eyebrows"][top:bottom, left:right] |= (
-            (patch < np.percentile(patch, 80) - 18) & ~eyes[top:bottom, left:right]
+            _deviates(patch, 18.0, 9.0) & ~_grow(eyes, 3)[top:bottom, left:right]
         )
 
         left, top, right, bottom = FOOTPRINT_BOXES["mouth"][0]
         patch = luminance[top:bottom, left:right]
-        union["mouth"][top:bottom, left:right] |= patch < np.percentile(patch, 90) - 10
+        union["mouth"][top:bottom, left:right] |= _deviates(patch, 10.0, 7.0)
     return union
 
 
@@ -267,10 +305,17 @@ def baked_footprints() -> dict[str, np.ndarray]:
 # Skin, and the patch that erases a baked feature
 # ---------------------------------------------------------------------------
 
+# Which measured footprint bounds each separated feature. Without this the
+# eyebrow region's separation also picks up the top of the eye, which sits inside
+# it: every mood that raised the brow painted a second copy of the eyelid line
+# eight pixels above the real one.
+CONFINED_TO = {"eyebrows": "eyebrows", "mouth": "mouth"}
+
+
 class Face:
     """The master's face, separated into skin and the features painted on it."""
 
-    def __init__(self) -> None:
+    def __init__(self, footprints: dict[str, np.ndarray]) -> None:
         with Image.open(MASTER) as image:
             self.rgb = np.asarray(image.convert("RGBA")).astype(float)[..., :3]
         self.skin: dict[str, np.ndarray] = {}
@@ -281,6 +326,9 @@ class Face:
             skin = reconstruct_skin(patch, known_skin(patch))
             core = _grow(np.abs(patch - skin).max(axis=2) > 26.0).astype(float)
             alpha, feature = unmix(patch, skin, core)
+            confine = CONFINED_TO.get(name)
+            if confine is not None:
+                alpha = np.where(_grow(footprints[confine][top:bottom, left:right], 3), alpha, 0.0)
             self.skin[name] = skin
             self.alpha[name] = alpha
             self.feature[name] = feature
@@ -374,14 +422,30 @@ class Brush:
             width = np.where(closer, local, width)
         self._blend(np.clip((width - distance) / softness + 0.5, 0, 1) * opacity, colour)
 
-    def ellipse(self, cx: float, cy: float, rx: float, ry: float, colour,
-                softness: float = 1.1, opacity: float = 1.0, above: float | None = None) -> None:
-        """A soft filled ellipse, optionally clipped to the rows below `above`."""
+    def disc(self, cx: float, cy: float, rx: float, ry: float, softness: float = 1.1) -> np.ndarray:
+        """Coverage of a soft filled ellipse."""
         scaled = np.hypot((self.columns - cx) / max(rx, 1e-6), (self.rows - cy) / max(ry, 1e-6))
-        coverage = np.clip((1.0 - scaled) * min(rx, ry) / softness + 0.5, 0, 1)
-        if above is not None:
-            coverage *= np.clip((self.rows - above) / softness + 0.5, 0, 1)
+        return np.clip((1.0 - scaled) * min(rx, ry) / softness + 0.5, 0, 1)
+
+    def under(self, x0: float, x1: float, y: float, sag: float,
+              softness: float = 1.0) -> np.ndarray:
+        """Coverage of everything below a quadratic curve.
+
+        An open mouth's top edge is its upper lip, and a lip is a curve. Clipping
+        the opening with a straight line - or leaving the ellipse unclipped and
+        drawing a straight stroke over it - is what put a flat bar across the top
+        of every open mouth in the first build.
+        """
+        span = np.clip((self.columns - x0) / max(x1 - x0, 1e-6), 0.0, 1.0)
+        curve = y + 4 * sag * span * (1 - span)
+        return np.clip((self.rows - curve) / softness + 0.5, 0, 1)
+
+    def fill(self, coverage: np.ndarray, colour, opacity: float = 1.0) -> None:
         self._blend(coverage * opacity, colour)
+
+    def ellipse(self, cx: float, cy: float, rx: float, ry: float, colour,
+                softness: float = 1.1, opacity: float = 1.0) -> None:
+        self._blend(self.disc(cx, cy, rx, ry, softness) * opacity, colour)
 
     def layer(self) -> tuple[np.ndarray, np.ndarray, tuple]:
         return self.alpha, self.rgb, self.box
@@ -397,47 +461,132 @@ def arc(x0: float, x1: float, y: float, sag: float, samples: int = 41) -> np.nda
 # Eyes
 # ---------------------------------------------------------------------------
 
-def iris_ramp(base: tuple[int, int, int]) -> np.ndarray:
-    """Three stops the iris luminance is remapped through.
+# The dark end of the iris ramp. The lash line and the pupil both land here, and
+# both should read as dark rather than as a dark tint of the eye colour.
+IRIS_DARK = (14.0, 13.0, 16.0)
 
-    The painting runs from a near-black pupil through the iris body to a light rim.
-    Remapping through stops rather than tinting keeps that structure: the pupil
-    stays dark whatever the colour, and a pale iris does not wash the pupil out.
+
+def iris_ramp(base: tuple[int, int, int]) -> np.ndarray:
+    """Three stops the eye's luminance is remapped through.
+
+    The painting runs from a near-black lash and pupil through the iris body to a
+    light rim. Remapping through stops rather than tinting keeps that structure:
+    the dark end stays dark whatever the colour, and a pale iris does not wash the
+    pupil out.
+
+    The light stop is the base colour taken to full value and then lifted slightly
+    toward white, not the base mixed *with* white. Mixing with white was the first
+    version and it desaturated every iris in the collection: `gold` (214, 166, 54)
+    ended up at a mean of (131, 107, 51), which reads as olive, and `pink` came out
+    dusty mauve. Scaling to full value keeps the hue and only raises the brightness.
     """
     colour = np.asarray(base, float)
-    return np.stack([colour * 0.10, colour, colour + (255.0 - colour) * 0.72])
+    peak = colour * (255.0 / max(float(colour.max()), 1.0))
+    return np.stack([np.asarray(IRIS_DARK), colour, peak * 0.82 + 255.0 * 0.18])
+
+
+def measure_iris(face: Face, side: str) -> tuple[float, float, float]:
+    """Fit the painted iris disc, rather than trusting a recorded seed.
+
+    The recolour has to stop where the iris stops. The first version used the iris
+    seed recorded by the extraction - radius 28.5 at (559, 374) and (694, 374) -
+    which is 5 to 8 px off centre and a little small, so the recolour stopped short
+    of the lash on one side and left a crescent of the original brown behind it.
+    Removing the boundary instead of fixing it was worse: recolouring everything
+    inside the eye tinted the lash flat and threw coloured speckles onto the cheek.
+
+    The disc is measured from the art. Each row's run of non-sclera pixels around
+    the eye's centre is a chord of the iris; rows whose run is off-centre are
+    dropped, because those are the lash cutting across. A least-squares circle
+    through the rest gives the centre and radius: (554.7, 377.6, 26.5) and
+    (700.8, 377.6, 26.5) on the master, against the recorded seed's 28.5.
+    """
+    alpha, rgb, (left, top, right, bottom) = face.eye_art(side)
+    luminance = 0.299 * rgb[..., 0] + 0.587 * rgb[..., 1] + 0.114 * rgb[..., 2]
+    spread = rgb.max(axis=2) - rgb.min(axis=2)
+    inside = (alpha > 0.5) & ~((luminance > 190) & (spread < 45))
+
+    columns = np.nonzero(inside.any(axis=0))[0]
+    seed = int(np.median(np.nonzero(inside[inside.any(axis=1).nonzero()[0].mean().astype(int)])[0])) \
+        if inside.any() else int(columns.mean())
+
+    chords = []
+    for row in range(inside.shape[0]):
+        if not inside[row, seed]:
+            continue
+        first = seed
+        while first > 0 and inside[row, first - 1]:
+            first -= 1
+        last = seed
+        while last < inside.shape[1] - 1 and inside[row, last + 1]:
+            last += 1
+        chords.append((row, (first + last) / 2, (last - first + 1) / 2))
+    if len(chords) < 8:
+        raise ValueError(f"{side}: too few iris chords to fit")
+
+    # Only the lower part of the eye is fitted. The lash crosses the iris's upper
+    # half and widens those chords, and because it is roughly centred a
+    # centre-offset filter does not catch it; fitting the flared rows pulled the
+    # circle 9 px up and 4 px wide, and the recolour then ran over the lash.
+    top_row = min(row for row, _c, _half in chords)
+    bottom_row = max(row for row, _c, _half in chords)
+    floor_row = top_row + 0.55 * (bottom_row - top_row)
+    centre = np.median([c for row, c, _half in chords if row >= floor_row])
+    clean = [(row, half) for row, c, half in chords
+             if row >= floor_row and abs(c - centre) <= 3 and half > 4]
+    if len(clean) < 6:
+        raise ValueError(f"{side}: too few clean iris chords to fit")
+
+    rows = np.array([row for row, _half in clean], float)
+    halves = np.array([half for _row, half in clean], float)
+    # (w/2)^2 + y^2 = 2*cy*y + (R^2 - cy^2): linear in the two unknowns.
+    design = np.stack([rows, np.ones_like(rows)], axis=1)
+    (twice_cy, offset), *_ = np.linalg.lstsq(design, halves ** 2 + rows ** 2, rcond=None)
+    cy = twice_cy / 2
+    radius = float(np.sqrt(max(offset + cy ** 2, 1.0)))
+    return left + centre, top + cy, radius
 
 
 def recoloured_eye(face: Face, side: str, base: tuple[int, int, int]):
+    """Remap the iris through the colour ramp, leaving lash, sclera and catchlight.
+
+    The disc is grown a little past the fitted radius so the recolour reaches under
+    the lash that overlaps it, and its edge is feathered, so the boundary sits on
+    the lash's own edge rather than drawing a new one across smooth paint.
+    """
     alpha, rgb, box = face.eye_art(side)
     left, top, right, bottom = box
-    height, width = alpha.shape
-    rows, columns = np.mgrid[0:height, 0:width]
-    cx, cy, rx, ry = IRIS[f"eye_{side}"]
-    inside = (((columns + left - cx) / rx) ** 2 + ((rows + top - cy) / ry) ** 2) <= 1.0
+    cx, cy, radius = measure_iris(face, side)
+
+    rows, columns = np.mgrid[top:bottom, left:right].astype(float)
+    distance = np.hypot(columns - cx, rows - cy)
+    disc = np.clip((radius + 3.0 - distance) / 2.0, 0.0, 1.0)
 
     luminance = 0.299 * rgb[..., 0] + 0.587 * rgb[..., 1] + 0.114 * rgb[..., 2]
     spread = rgb.max(axis=2) - rgb.min(axis=2)
-    # The catchlight is the one near-neutral bright patch inside the iris; it is the
-    # shared upper-left highlight the whole collection uses, so it is left alone.
-    catchlight = inside & (luminance > 175) & (spread < 26)
-    target = inside & (alpha > 0.05) & ~catchlight
+    visible = alpha > 0.05
+    white = (luminance > 190) & (spread < 45)
+    target = visible & ~white & (disc > 0)
     if not target.any():
         raise ValueError(f"{side}: no iris pixels found")
 
     low, high = np.percentile(luminance[target], [2, 98])
     t = np.clip((luminance - low) / max(high - low, 1e-6), 0.0, 1.0)
     stops = iris_ramp(base)
-    mid = 0.5
+    # The base colour sits at the iris's own median brightness rather than at the
+    # middle of the range. The painted iris is dark - its median lands near 0.25 -
+    # so anchoring the base at 0.5 put most of it between black and the base and
+    # every eye rendered far darker than its palette.
+    mid = float(np.median(t[target]))
     lower = t < mid
-    weight = np.where(lower, t / mid, (t - mid) / (1 - mid))[..., None]
+    weight = np.where(lower, t / max(mid, 1e-6), (t - mid) / max(1 - mid, 1e-6))[..., None]
     ramped = np.where(
         lower[..., None],
         stops[0] * (1 - weight) + stops[1] * weight,
         stops[1] * (1 - weight) + stops[2] * weight,
     )
-    out = np.where(target[..., None], ramped, rgb)
-    return alpha, np.clip(out, 0, 255), box
+    strength = (disc * target * np.clip(alpha / 0.6, 0.0, 1.0))[..., None]
+    return alpha, np.clip(rgb * (1 - strength) + ramped * strength, 0, 255), box
 
 
 def build_eyes(face: Face, footprints: dict[str, np.ndarray]) -> list[tuple[str, Image.Image]]:
@@ -458,19 +607,26 @@ def build_eyes(face: Face, footprints: dict[str, np.ndarray]) -> list[tuple[str,
 # ---------------------------------------------------------------------------
 
 def brow_halves(face: Face) -> list[tuple[int, int]]:
-    """Column ranges of the two painted brows inside the eyebrow region."""
-    alpha = face.alpha["eyebrows"]
-    columns = np.nonzero((alpha > 0.05).any(axis=0))[0]
-    runs, start, previous = [], columns[0], columns[0]
-    for column in columns[1:]:
-        if column > previous + 6:
-            runs.append((int(start), int(previous)))
-            start = column
-        previous = column
-    runs.append((int(start), int(previous)))
-    if len(runs) != 2:
-        raise ValueError(f"expected two brows, found {len(runs)}")
-    return runs
+    """Column ranges of the two painted brows inside the eyebrow region.
+
+    Split at the face's centre line rather than at a gap in the ink. Gap-finding
+    needs an alpha threshold, and the threshold is not stable: a change to the skin
+    estimate left a few thousandths of alpha across the nose bridge and the two
+    brows merged into one run. There are two brows, one either side of centre, and
+    that is what the split should say.
+    """
+    left, _top, _right, _bottom = FEATURE_REGIONS["eyebrows"]
+    ink = (face.alpha["eyebrows"] > 0.12).any(axis=0)
+    columns = np.nonzero(ink)[0]
+    if columns.size == 0:
+        raise ValueError("no eyebrow ink found")
+    middle = CENTER_X - left
+    halves = []
+    for side in (columns[columns < middle], columns[columns >= middle]):
+        if side.size == 0:
+            raise ValueError("one side of the brow pair carries no ink")
+        halves.append((int(side.min()), int(side.max())))
+    return halves
 
 
 def _brow_spine(weights: np.ndarray, columns: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -599,16 +755,27 @@ def build_mouth(face: Face, spec: dict, footprints: dict[str, np.ndarray]):
     opening = spec.get("open")
 
     if opening:
-        top = cy - opening["ry"] + opening["lift"]
-        brush.ellipse(cx, cy + opening["lift"], opening["rx"], opening["ry"], MOUTH_INTERIOR)
+        radius_x, radius_y = opening["rx"], opening["ry"]
+        centre_y = cy + opening["lift"]
+        # The upper lip is a curve, and the opening is what lies below it. Both
+        # are built from the same curve so the lip sits on the opening's own edge.
+        lip_y = centre_y - radius_y * opening.get("lip", 0.70)
+        sag = curve * 0.32
+        mouth = brush.disc(cx, centre_y, radius_x, radius_y) * brush.under(
+            cx - radius_x, cx + radius_x, lip_y, sag)
+        brush.fill(mouth, MOUTH_INTERIOR)
+
         if opening["teeth"]:
-            brush.ellipse(cx, top + 3, opening["rx"] * 0.86, 4.0, MOUTH_TEETH, softness=0.9)
+            band = mouth * (1.0 - brush.under(cx - radius_x, cx + radius_x, lip_y + 5.0, sag))
+            brush.fill(band, MOUTH_TEETH)
         if opening["tongue"]:
-            brush.ellipse(cx, cy + opening["lift"] + opening["ry"] * 0.45,
-                          opening["rx"] * 0.62, opening["ry"] * 0.42, MOUTH_TONGUE, softness=0.9)
-        # The lip line rides the opening's upper edge so the two read as one mouth.
-        brush.stroke(arc(cx - opening["rx"], cx + opening["rx"], top, curve * 0.3),
-                     lambda t: weight * 0.5 * (0.45 + 0.55 * np.sin(np.pi * t)), MOUTH_INK)
+            brush.fill(mouth * brush.disc(cx, centre_y + radius_y * 0.52,
+                                          radius_x * 0.66, radius_y * 0.40), MOUTH_TONGUE)
+
+        # The lip stroke tapers to nothing at both corners, so it reads as a lip
+        # rather than as a rule laid across the mouth.
+        brush.stroke(arc(cx - radius_x * 0.96, cx + radius_x * 0.96, lip_y, sag),
+                     lambda t: weight * 0.62 * np.sin(np.pi * t) ** 0.55, MOUTH_INK)
     else:
         brush.stroke(arc(cx - half, cx + half, cy, curve),
                      lambda t: weight * 0.5 * (0.3 + 0.7 * np.sin(np.pi * t) ** 0.7), MOUTH_INK)
@@ -642,14 +809,13 @@ def build_mark(spec: dict):
                     np.array([[bx + offset - 4, by - length / 2], [bx + offset + 4, by + length / 2]]),
                     2.0, BLUSH, opacity=0.75)
     elif kind == "stress":
-        # Three slashes fanning off a bracket - the shorthand for a rattled beat.
-        for angle in (-1.35, -0.9, -0.45):
-            direction = np.array([np.cos(angle), np.sin(angle)])
-            start = np.array([cx - 8, cy + 17]) + direction * 4
-            brush.stroke(np.stack([start, start + direction * 16]),
-                         lambda t: 3.0 * (1 - 0.4 * t), colour)
-        brush.stroke(arc(cx - 16, cx + 16, cy - 17, 6),
-                     lambda t: 3.0 * np.sin(np.pi * t) ** 0.4, colour)
+        # Three parallel tapered slashes. An earlier version fanned them off a
+        # curved bracket and the four strokes ran together into an unreadable
+        # squiggle; separated and parallel, they read as a hatch of tension.
+        for offset in (-11, 0, 11):
+            top = np.array([cx + offset + 5.0, cy - 14.0])
+            brush.stroke(np.stack([top, top + np.array([-9.0, 28.0])]),
+                         lambda t: 3.2 * (1.0 - 0.55 * t), colour)
     elif kind == "gloom":
         for (bx, by) in (LEFT_CHEEK, RIGHT_CHEEK):
             for offset in (-16, -5, 6, 17):
@@ -677,19 +843,17 @@ def build_mark(spec: dict):
                 ends = np.stack([rotate @ point + (cx, cy) for point in along])
                 brush.stroke(ends, lambda t: 2.7 * (0.6 + 0.4 * np.sin(np.pi * t)), colour)
     elif kind == "emphasis":
-        # A square emphasis mark, set on its corner and ringed by four short
-        # radiating dashes so it reads as a struck accent rather than a drawn box.
-        half = 10.5
-        corners = [(0, -half), (half, 0), (0, half), (-half, 0), (0, -half)]
+        # A square emphasis mark: a bold square with two accent dashes clear of it.
+        # Setting the square on its corner and ringing it with four dashes, as the
+        # first version did, read as an X inside a diamond rather than as a square.
+        half = 10.0
+        corners = [(-half, -half), (half, -half), (half, half), (-half, half), (-half, -half)]
         for index in range(4):
             (x0, y0), (x1, y1) = corners[index], corners[index + 1]
-            brush.stroke(np.array([[cx + x0, cy + y0], [cx + x1, cy + y1]]), 3.0, colour)
-        brush.ellipse(cx, cy, 4.0, 4.0, colour, softness=1.2)
-        for turn in range(4):
-            angle = turn * np.pi / 2 + np.pi / 4
-            direction = np.array([np.cos(angle), np.sin(angle)])
-            centre = np.array([cx, cy])
-            brush.stroke(np.stack([centre + direction * 12, centre + direction * 19]), 2.4, colour)
+            brush.stroke(np.array([[cx + x0, cy + y0], [cx + x1, cy + y1]]), 3.2, colour)
+        for sign in (-1, 1):
+            brush.stroke(np.array([[cx + sign * 17, cy - sign * 15],
+                                   [cx + sign * 22, cy - sign * 9]]), 2.6, colour)
     elif kind == "curve":
         # Two concentric arcs and a beat mark: the surprise / motion accent.
         for radius, sag in ((12, -9), (20, -14)):
@@ -737,15 +901,43 @@ def coverage_shortfall(image: Image.Image, footprint: np.ndarray) -> int:
     return int((footprint & (alpha <= 200)).sum())
 
 
+def install(built: Path, summary: list[dict]) -> None:
+    """Overwrite the registered assets and refresh their manifest hashes.
+
+    A rebuild of an already-registered family has to land in the manifest in the
+    same pass, or the recorded hash stops describing the bytes on disk.
+    """
+    manifest_path = ROOT / "assets" / "asset_manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    by_path = {entry["path"]: entry for entry in manifest["registered_production_assets"]}
+
+    installed = 0
+    for item in summary:
+        relative = f"assets/{item['category']}/{item['name']}"
+        entry = by_path.get(relative)
+        if entry is None:
+            raise SystemExit(f"{relative} is not registered; run scripts/register_face_traits.py first")
+        destination = ROOT / relative
+        destination.write_bytes((built / item["category"] / item["name"]).read_bytes())
+        entry["sha256"] = hashlib.sha256(destination.read_bytes()).hexdigest()
+        entry.setdefault("provenance", {})["output_bounds"] = item["bounds"]
+        installed += 1
+
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"installed {installed} assets and refreshed their manifest hashes")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out-dir", type=Path, default=Path("incoming/face_traits"))
+    parser.add_argument("--install", action="store_true",
+                        help="also overwrite assets/<category>/ and refresh the manifest hashes")
     args = parser.parse_args(argv)
     out_root = args.out_dir if args.out_dir.is_absolute() else ROOT / args.out_dir
 
     check_palette_distinctness()
     footprints = baked_footprints()
-    face = Face()
+    face = Face(footprints)
 
     families = {
         "eyes": (build_eyes(face, footprints), footprints["eyes"]),
@@ -769,6 +961,9 @@ def main(argv: list[str] | None = None) -> int:
             if footprint is not None:
                 entry["uncovered_baked_pixels"] = coverage_shortfall(image, footprint)
             summary.append(entry)
+
+    if args.install:
+        install(out_root, summary)
 
     (out_root / "build_report.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     for entry in summary:

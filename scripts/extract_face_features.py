@@ -113,21 +113,27 @@ def _box_blur(field: np.ndarray, radius: int = 2) -> np.ndarray:
     return (rolling[:, 2 * radius + 1:] - rolling[:, :-2 * radius - 1]) / (2 * radius + 1)
 
 
-def reconstruct_skin(rgb: np.ndarray, known: np.ndarray, iterations: int = 600) -> np.ndarray:
-    """Diffuse the surrounding skin across the feature.
+def reconstruct_skin(rgb: np.ndarray, known: np.ndarray, radius: int = 24) -> np.ndarray:
+    """Estimate the skin behind a feature as a weighted average of the skin around it.
 
-    Repeated blurring with the known pixels held fixed converges on the harmonic
-    interpolation of the boundary - the smooth gradient the surrounding cheek and
-    forehead imply - rather than a flat average.
+    This is a normalized convolution: the image and the known-pixel mask are each
+    blurred, and their ratio is the average of the genuine skin within `radius`,
+    with unknown pixels contributing nothing. It is smooth by construction and its
+    colour is the colour of the neighbours.
+
+    It replaces an iterated hold-and-blur relaxation, which is the textbook
+    harmonic fill and looked right in isolation but shipped a visible defect: over
+    a band as long and thin as the eyebrow the relaxation had not converged, so the
+    patch came out mottled, and it drifted about 4/255 down in red against the
+    surrounding skin. Composited, that is a pale grey crescent sitting on the brow
+    line of every token whose eyebrow trait moved the brow off it.
     """
-    field = rgb.astype(float).copy()
-    if known.any():
-        field[~known] = rgb[known].mean(axis=0)
-    keep = known[..., None]
-    for _ in range(iterations):
-        field = _box_blur(field)
-        field = np.where(keep, rgb.astype(float), field)
-    return field
+    if not known.any():
+        return rgb.astype(float)
+    weight = known.astype(float)[..., None]
+    value = _box_blur(rgb.astype(float) * weight, radius)
+    mass = _box_blur(np.repeat(weight, 3, axis=2), radius)
+    return value / np.maximum(mass, 1e-6)
 
 
 def unmix(observed: np.ndarray, skin: np.ndarray, core: np.ndarray):

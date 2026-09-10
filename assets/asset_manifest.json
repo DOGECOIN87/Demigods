@@ -5418,7 +5418,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_001_dark_neutral.png",
       "status": "production_ready",
-      "sha256": "6d49f544869945d0346638d15f8ea22bcf04cddc0bd2105b41298bd0d1c7f70a",
+      "sha256": "fa53972286fe89fabb099defa6bde15a6517c98940f45e54107934f201d26d62",
       "dimensions": [
         1254,
         1254
@@ -5453,7 +5453,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_002_dark_umber.png",
       "status": "production_ready",
-      "sha256": "6e6f3a4ad5dc2987df26049ca055b3a822f3c0f879775aad6a7c783d0e23699e",
+      "sha256": "43990cd13e35f34fa36baabd8be0d917442d428255f0906d30bd5dd5aac9ee0d",
       "dimensions": [
         1254,
         1254
@@ -5488,7 +5488,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_003_dark_slate.png",
       "status": "production_ready",
-      "sha256": "222e282e4ef0dfb5fb83a6efeef9ac655ba844f888c24f4354a00adab02ba8e3",
+      "sha256": "c3a09c9c18a4bd49b04ad63abd2bd7b821ca5b5a25d8f237cd21103a126344ad",
       "dimensions": [
         1254,
         1254
@@ -5523,7 +5523,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_004_deep_olive.png",
       "status": "production_ready",
-      "sha256": "2f3868fa109fc3fb134c0d291aeb1f4433ddf60533840aa2b090d506d0c6f197",
+      "sha256": "d067e476fa20a6d716e9a67b00de6e0c96ee8d7ce5a07d6e7e21db0b5a10db2d",
       "dimensions": [
         1254,
         1254
@@ -5558,7 +5558,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_005_deep_blue.png",
       "status": "production_ready",
-      "sha256": "07ef952191f7137e28ddabc7445deda999b57db78cc10a0aeb36a1a640295920",
+      "sha256": "f242e33fbddfeeb0e2b84fff6c6b0f6458d98282c85c5d545d4a16255b1ae8c3",
       "dimensions": [
         1254,
         1254
@@ -5593,7 +5593,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_006_violet.png",
       "status": "production_ready",
-      "sha256": "6a942848ea3629be6afac4d78a6999a249f226d406591eedab3658d8136cf237",
+      "sha256": "08c79d1db40da142c1bcbf7d77e5da29882dd1a804afc2eca4cc9a191100feed",
       "dimensions": [
         1254,
         1254
@@ -5628,7 +5628,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_007_near_black.png",
       "status": "production_ready",
-      "sha256": "6b2b915ba18aee4a679d44430b09f9a30b5effe0f0778b0b82ac6560073e495b",
+      "sha256": "68c3e15a962477c15e7390573d1e5c26ffd9193c9f874b3db4cbe2019a71a849",
       "dimensions": [
         1254,
         1254
@@ -5663,7 +5663,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_008_dark_brown.png",
       "status": "production_ready",
-      "sha256": "679f02d6d36efc592cf4ad40333941ab2e1cc53e61673bf4c2c82c96092619ac",
+      "sha256": "cab1c0d0c42c0ee2521ea139d083493951db031b2d4aa78ea458408ea4f1fdfb",
       "dimensions": [
         1254,
         1254
@@ -5698,7 +5698,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_009_gold.png",
       "status": "production_ready",
-      "sha256": "35a6305e7a1a61502bb81f5701c7e0cb49fa2adc0eb8bb908e29f3702a8e98ae",
+      "sha256": "f4e96bff9626eefea0909a8a97d4a9a04607068d1a1e51ee94355018e9d09288",
       "dimensions": [
         1254,
         1254
@@ -5733,7 +5733,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_010_yellow_green.png",
       "status": "production_ready",
-      "sha256": "eb2567df61ae7817ef0c8f8e72f719a9827fadf5392dd6fc1bb57702714911ee",
+      "sha256": "25d770c3b7adda9c664885df3f2e85998f9f4f820c90c3676b6ce7dc4be20107",
       "dimensions": [
         1254,
         1254
@@ -5768,7 +5768,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_011_cyan.png",
       "status": "production_ready",
-      "sha256": "4eea4baaa0f331fdd30dab95b0b78ee3960063f00479697c0e31581af033b407",
+      "sha256": "9bce1f6328de56cabf14de926203cae4e06c0967eeea90df1a035793c39ecd44",
       "dimensions": [
         1254,
         1254
@@ -5803,7 +5803,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_012_emerald.png",
       "status": "production_ready",
-      "sha256": "bd80d25662bc177d8f44e7cacd8821c8862e413b97a15b0dd4b415b5cc449eb3",
+      "sha256": "2ad30eec61061d6691d6633b381901c14f77183d765890d6fbaa78925e832652",
       "dimensions": [
         1254,
         1254
@@ -5838,7 +5838,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_013_crimson.png",
       "status": "production_ready",
-      "sha256": "25cf52556e07c4b8f85c5b9aeb72e09752c6954e3db6460a7e6872cc1e312d28",
+      "sha256": "0e730506113b502914f152f8d21b4c8e3b938c58fc2c860fb2676c7ec87ac581",
       "dimensions": [
         1254,
         1254
@@ -5873,7 +5873,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_014_magenta.png",
       "status": "production_ready",
-      "sha256": "e1bc4412dd90904f6fd89413224b6f6120f4947f0c3552b8dc60a78230b84adf",
+      "sha256": "d25f18e196afcc449afc619d357a5c8409a6ec82ffebbc158dc79a5e1df27f25",
       "dimensions": [
         1254,
         1254
@@ -5908,7 +5908,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_015_charcoal.png",
       "status": "production_ready",
-      "sha256": "273c23096b434a4a8a63716720a0fffaab322c0372fe13f5af0357aa5c27def4",
+      "sha256": "dce9b52b179b67939740eda0ca2da3db013bbf1a24a047d611cab3044cc2e3d8",
       "dimensions": [
         1254,
         1254
@@ -5943,7 +5943,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_016_black.png",
       "status": "production_ready",
-      "sha256": "a53a293f9d1b9b62dd4cfc6a382767b866278df64d056c0dcb7eff6257bbd3f5",
+      "sha256": "761f6b1a06522fa8a17a3bc996edd59d42b62b01ed627814636884c5dcbf2c29",
       "dimensions": [
         1254,
         1254
@@ -5978,7 +5978,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_017_warm_neutral.png",
       "status": "production_ready",
-      "sha256": "751bb1d0321bea5aa7735a67292629089660e873b553bb22b1c0f76149bdbe59",
+      "sha256": "ccaa1557d221a593ccde9a686e64f0630083412ca2b2c80777c1ed0268ae503a",
       "dimensions": [
         1254,
         1254
@@ -6013,7 +6013,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_018_gray.png",
       "status": "production_ready",
-      "sha256": "9044d4fa51f2c13c2e9441620a2647e758757d8551755d0d7f664a3d61ed02f3",
+      "sha256": "3be01ec1234a281d13d06bb7adc08d3561521ed9a4d55d6455186bbbd46e89ab",
       "dimensions": [
         1254,
         1254
@@ -6048,7 +6048,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_019_rose.png",
       "status": "production_ready",
-      "sha256": "fb709843524effe2206cdaf53c3678545080f24e20111c7dd920d923f3e2d74e",
+      "sha256": "a812bc6fee392d550c91e3e7a60e4021c340118674eca8da3cb6e2473c772223",
       "dimensions": [
         1254,
         1254
@@ -6083,7 +6083,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_020_pink.png",
       "status": "production_ready",
-      "sha256": "36614c9cbb9098becb5834f1ae036923ec18564e6366232ef62d4ff484035647",
+      "sha256": "47c88d3150fda08964d97eba52520a58da1805319e2dc8f657cc3b09bff6139f",
       "dimensions": [
         1254,
         1254
@@ -6118,7 +6118,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_021_amber.png",
       "status": "production_ready",
-      "sha256": "cd5fc3250dc9fceab7bb63523c7264c4efae0e76b489716b1b8aab2751696693",
+      "sha256": "57e3cf6a15aaf0d238d99992c9e1d46bab9fa9c313d258315c63d64105191479",
       "dimensions": [
         1254,
         1254
@@ -6153,7 +6153,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_022_orange_gold.png",
       "status": "production_ready",
-      "sha256": "56df2349fbd8ffc1c5834a3946e5346056317cf838c7c07952315bab15322fbe",
+      "sha256": "29231582217790f3abe55305858b7296d6c2afe92fe9479ee2e4388fd1b8d14f",
       "dimensions": [
         1254,
         1254
@@ -6188,7 +6188,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_023_cool_charcoal.png",
       "status": "production_ready",
-      "sha256": "1b6844bb79efe37f30fcfc84efc5438eb50de536be187266d59707c50d24a8bc",
+      "sha256": "2aed0eaad02860cb8cf73dd2c15ced29a0ceeb070ca15ec60534538015883269",
       "dimensions": [
         1254,
         1254
@@ -6223,7 +6223,7 @@
       "category": "eyes",
       "path": "assets/eyes/eyes_024_blue_black.png",
       "status": "production_ready",
-      "sha256": "1f1c20460a3cc48d1157b44c48a901e9a2c21d1b691a3a5367801f5ac11a9527",
+      "sha256": "54e717c9fe5b1dd827a476d148d371ff3233f316378ba9f4f8ce2be31fd2bc93",
       "dimensions": [
         1254,
         1254
@@ -6258,7 +6258,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_001_neutral.png",
       "status": "production_ready",
-      "sha256": "750dbe54b674b11db09ccfac16bdfa64f233731bbcb689ccd22ee617ade61d60",
+      "sha256": "bcf343c657d8e50db8119b3d93046a1924cfb84f8b8c921d08a2e72728cd899a",
       "dimensions": [
         1254,
         1254
@@ -6278,9 +6278,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6293,7 +6293,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_002_raised.png",
       "status": "production_ready",
-      "sha256": "bd2515fa8bceeae2246d7a21455a22c91fcf1028f32e163c9fcb4c4ecfc6c9e3",
+      "sha256": "f8919f50f88d1912f1a3c12b54e8eb30696954d81113eea06c98084938adab85",
       "dimensions": [
         1254,
         1254
@@ -6313,9 +6313,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          295,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6328,7 +6328,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_003_lowered.png",
       "status": "production_ready",
-      "sha256": "e2762176b9ecadbc050e4fd7939a8a7aecd491504c5419e1a394006e53ae0eb4",
+      "sha256": "a8b2a10a5b1e55c405d53b710d255b04c95e7db74973c08cd9fef10712e21161",
       "dimensions": [
         1254,
         1254
@@ -6348,9 +6348,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          336
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6363,7 +6363,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_004_angry.png",
       "status": "production_ready",
-      "sha256": "66b882773475b6be7f6acfd9df7088232a564cf1b0509dc7e0809706b7386dca",
+      "sha256": "5e06b523589878f883fca062a87b60a9d7f0aa3886f8583560f93293a132014a",
       "dimensions": [
         1254,
         1254
@@ -6383,9 +6383,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6398,7 +6398,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_005_furious.png",
       "status": "production_ready",
-      "sha256": "353aad3a5cd2c7327e8715b731832ee50ab3761e6d7edaf6f6ae490a56adda7c",
+      "sha256": "14919e62f6c61b245dba15f6837ec909b994a30c7e30edcd1ffff97836799b66",
       "dimensions": [
         1254,
         1254
@@ -6418,9 +6418,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          297,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6433,7 +6433,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_006_worried.png",
       "status": "production_ready",
-      "sha256": "703db0cfc2da19ae6b47ec1c069da7685fd3c17da0229dc9ec4db32dddcc0eb0",
+      "sha256": "a9c370d91d599a78af494ca1b6d8bf5d9ab93a9def45713276cb5241aa250fb2",
       "dimensions": [
         1254,
         1254
@@ -6453,9 +6453,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          336
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6468,7 +6468,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_007_pleading.png",
       "status": "production_ready",
-      "sha256": "dedd9b85d2426836a3be4efdd248c4716f6edde738c68553db0eed69be8c0c00",
+      "sha256": "1afccb15a2762daccc993f21727c568a5930b8317132c12a1bcfca89b3d208f5",
       "dimensions": [
         1254,
         1254
@@ -6488,9 +6488,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          337
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6503,7 +6503,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_008_arched.png",
       "status": "production_ready",
-      "sha256": "bcde9351b4a723bcc032bb49dce8488ef404875a1cbc726465867938c180b28d",
+      "sha256": "fc0d3cf72be1fb409d89444a73cfd3f906fd4d4ab078f2ef6d9adfbcb3e625b2",
       "dimensions": [
         1254,
         1254
@@ -6523,9 +6523,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          295,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6538,7 +6538,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_009_flat.png",
       "status": "production_ready",
-      "sha256": "b1a9f1880af76759a8ccb1c46c7a2a131882a2cb3e606c5b616f7b448d63004a",
+      "sha256": "4a5c8ebe050fb4b5286507898b345e9f05ca0ec1ee36e0d18a55c28be8af9a1f",
       "dimensions": [
         1254,
         1254
@@ -6558,9 +6558,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6573,7 +6573,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_010_thin.png",
       "status": "production_ready",
-      "sha256": "c9550b1cf0adcecb7108caec1c80265071f2044b8608380b575fc07ac293eb2a",
+      "sha256": "3cc385c31c612b97e060b61271a0cfdad1f1ed2b611d9774c6fb34a6aaf12945",
       "dimensions": [
         1254,
         1254
@@ -6593,9 +6593,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6608,7 +6608,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_011_thick.png",
       "status": "production_ready",
-      "sha256": "f3911f6b3459eb53ce19edcd0249b3510c375b3ca70c8be1a9e1abc74501d283",
+      "sha256": "39018ac1109edace21325571fe9d4489c0fdf6617a3953fc1b8608ce6d90a8c0",
       "dimensions": [
         1254,
         1254
@@ -6628,9 +6628,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          297,
           758,
-          339
+          338
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6643,7 +6643,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_012_bold_raised.png",
       "status": "production_ready",
-      "sha256": "d2745ff5c32a5a3ef1d19894c2d918d35eb9bde11a073e54c0ea96c66e395393",
+      "sha256": "c3452e3904d28847a9cbba203e0564081805ccafe785d19e0a640d6e210b4a18",
       "dimensions": [
         1254,
         1254
@@ -6663,9 +6663,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          294,
+          290,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6678,7 +6678,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_013_fine_arched.png",
       "status": "production_ready",
-      "sha256": "84ec73c4f95b1072f18100242653e6b248210ba5da3e372ce5a546ebc1cafab3",
+      "sha256": "7913fd25b87f0e79b104cfa25397d977eb143886d433c5e61dbad22a313d47cb",
       "dimensions": [
         1254,
         1254
@@ -6698,9 +6698,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6713,7 +6713,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_014_wide_set.png",
       "status": "production_ready",
-      "sha256": "585b09bbdf16e42c57be83df3127f1054a7c9da317afb0692f7c463b01b7a8e3",
+      "sha256": "ea0d89cebe315362bd803d6ee5f828216737cc553a1fd55e1bdebe216d674a6b",
       "dimensions": [
         1254,
         1254
@@ -6733,9 +6733,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6748,7 +6748,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_015_close_set.png",
       "status": "production_ready",
-      "sha256": "3a6620f849a2644509fcfb10007ba41581014d7a799f8f7640c4f5feb8dee6d1",
+      "sha256": "f2740b068b7d8c66617de5a223009e022f32f75220261347cf65b0e94fda7f96",
       "dimensions": [
         1254,
         1254
@@ -6768,9 +6768,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          299,
+          298,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6783,7 +6783,7 @@
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_016_quizzical.png",
       "status": "production_ready",
-      "sha256": "7610a2aa259976c40c51eebfdbc4a7a6acacf8d24ab1fa8a04f4ab76a38e224b",
+      "sha256": "ed9730494bf4652d9c91182821fba50b4abddf9db42e3d0eb9920a25144d09df",
       "dimensions": [
         1254,
         1254
@@ -6803,9 +6803,9 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           499,
-          297,
+          292,
           758,
-          339
+          334
         ],
         "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6818,7 +6818,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_001_closed_neutral.png",
       "status": "production_ready",
-      "sha256": "04e351fb4ddadd05a596c2dcbf71e65a242c426df15fe98e4d4381dcc088b029",
+      "sha256": "e33dd426e00548fa0e7079acd718e25d7446d842cbfedde762b69d2d37d237f9",
       "dimensions": [
         1254,
         1254
@@ -6837,10 +6837,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6853,7 +6853,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_002_small_open_smile.png",
       "status": "production_ready",
-      "sha256": "d253090615f8999a4b8758ca12bbe5ab071866ca455e5ce7c07d08e6dcd85a70",
+      "sha256": "e8a422ef8cb42bc1349bfdba71f5f6652d314b03c252b801251f3aa4cf30a23b",
       "dimensions": [
         1254,
         1254
@@ -6872,10 +6872,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          454
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6888,7 +6888,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_003_small_dark_open.png",
       "status": "production_ready",
-      "sha256": "334f63a70bc9cda81e54c74bd827a1b589872831b94efe3aae28fb2e56dd4079",
+      "sha256": "3c1e7220733a1651d4de3804921e02e49a2ad858c67367e49828f127fc36c2dc",
       "dimensions": [
         1254,
         1254
@@ -6907,9 +6907,9 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
+          596,
+          426,
+          660,
           457
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
@@ -6923,7 +6923,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_004_wide_open_smile.png",
       "status": "production_ready",
-      "sha256": "0b5287147b6e42bd04a479ea3bf4e904694b7df0c638bb51d5b66359f157f866",
+      "sha256": "7fc98ed9f5089f9a5414f845fe3c73609cd45abe883dedabd8f95efdb53857a7",
       "dimensions": [
         1254,
         1254
@@ -6943,8 +6943,8 @@
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
           596,
-          427,
-          659,
+          426,
+          660,
           458
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
@@ -6958,7 +6958,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_005_short_line.png",
       "status": "production_ready",
-      "sha256": "a25797b57754289f6264fff60807d638ab72c01dd69498835b5e1dcb10f4ef0f",
+      "sha256": "7de40d95126d878f5ef55157e678c56fd99798b3438017ba888a5c0dfda9b83a",
       "dimensions": [
         1254,
         1254
@@ -6977,10 +6977,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -6993,7 +6993,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_006_soft_curve.png",
       "status": "production_ready",
-      "sha256": "a0abca9bdb063f169d4b34f9d0b06c0c3901950e683ff0de6f3436500d5260c5",
+      "sha256": "4203073f04fce53fc07b568b69920ab4dc49e6e16f21dc302aa52604ee31d2b0",
       "dimensions": [
         1254,
         1254
@@ -7012,10 +7012,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7028,7 +7028,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_007_flat_line.png",
       "status": "production_ready",
-      "sha256": "9ee367e92be786910797c3d017a292f5d59046a7a4493baedc57e8dbb5067359",
+      "sha256": "7cf55d27c4f4f6c787b8f3e100d15314dc3d16a24354e946df4d80f95633f742",
       "dimensions": [
         1254,
         1254
@@ -7047,10 +7047,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7063,7 +7063,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_008_small_downturned.png",
       "status": "production_ready",
-      "sha256": "a00b3f9899574fac4fe4adcb7e820c3394498bdbafdad6adb05dd369d2165c15",
+      "sha256": "cbf6890a5d5ee3b9824691ef0341c51c151c7ccf1281880db2732a4c11845b55",
       "dimensions": [
         1254,
         1254
@@ -7082,10 +7082,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7098,7 +7098,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_009_tiny_neutral.png",
       "status": "production_ready",
-      "sha256": "7bad2a471ab8966c0a86d0d09a0b9e5eca675f2bed96b514a890008150e5950c",
+      "sha256": "42d7a557f21a3c94067598d53db9587222a17b824d68cf8dc15b291c6964ee5c",
       "dimensions": [
         1254,
         1254
@@ -7117,10 +7117,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7133,7 +7133,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_010_tiny_curve.png",
       "status": "production_ready",
-      "sha256": "d9480e3dfbb1dce6cba6416da438fd8890e2634da58175ee34a5672c9a21ec1b",
+      "sha256": "5aeb9c13415e56ea2ee5db90b1c6cd52b42b34dd6a3e823544cd5538bc37de16",
       "dimensions": [
         1254,
         1254
@@ -7152,10 +7152,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7168,7 +7168,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_011_pink_open_pout.png",
       "status": "production_ready",
-      "sha256": "c1a74485df3b8f4ceb88a5afba3ddadca4989891ddb9d57ba57cd16191e5e687",
+      "sha256": "e626e2ea8ba463c21b32bdf09b3295c82957fab0b4ec114e8df6180e0ca9ed1c",
       "dimensions": [
         1254,
         1254
@@ -7187,9 +7187,9 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
+          596,
+          426,
+          660,
           456
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
@@ -7203,7 +7203,7 @@
       "category": "mouths",
       "path": "assets/mouths/mouth_012_tiny_round.png",
       "status": "production_ready",
-      "sha256": "0a769637a272b837337ffa08c3f6b4132cbb8aec81ccad231e6dff5512eed9c6",
+      "sha256": "f7aaf75f12ab35f8c7e8584cfde06cffc01807f6ca3fd12427dae2c96e2e18ff",
       "dimensions": [
         1254,
         1254
@@ -7222,10 +7222,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          597,
-          427,
-          659,
-          452
+          596,
+          426,
+          660,
+          455
         ],
         "family_method": "Drawn with soft round brushes in the master's own mouth-line colour, calibrated to the painted mouth: X 605-650, dropping 7 px from end to centre. mouth_001 is that painted mouth itself rather than a redrawing of it. A feathered skin patch beneath the art covers the baked mouth across every registered base.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7273,7 +7273,7 @@
       "category": "expression_marks",
       "path": "assets/expression_marks/expression_mark_002_yellow_stress_marks.png",
       "status": "production_ready",
-      "sha256": "6deb2c775e729455256395617706da4d2ea48e294a9a39ac7c0d2d77d9b7a7d6",
+      "sha256": "6eb9616aeaa4f1562288caf1d2074d19c1062338c29e46a64e3972f5333faba4",
       "dimensions": [
         1254,
         1254
@@ -7294,8 +7294,8 @@
         "output_bounds": [
           704,
           405,
-          736,
-          440
+          739,
+          437
         ],
         "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
@@ -7448,7 +7448,7 @@
       "category": "expression_marks",
       "path": "assets/expression_marks/expression_mark_007_yellow_green_emphasis.png",
       "status": "production_ready",
-      "sha256": "309601dcd87f0bb95f7707faa53c9263e1a402ab0cbda6c6b4d5f5c9be1bbe27",
+      "sha256": "16e3a75480c9a8d5c8530791a0c01fc050ca842b4745935c02de7a0785ca4334",
       "dimensions": [
         1254,
         1254
@@ -7467,10 +7467,10 @@
         "build_script": "scripts/build_face_traits.py",
         "separation_script": "scripts/extract_face_features.py",
         "output_bounds": [
-          704,
-          406,
-          736,
-          438
+          695,
+          404,
+          745,
+          440
         ],
         "family_method": "Drawn accents on the cheeks. They carry no skin patch, being additive overlays on skin that is already there. They sit below the eye line because the face narrows fast under the eyes, and off the forehead because hair_front renders above them.",
         "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."

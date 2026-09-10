@@ -268,9 +268,9 @@
     "name": "eyebrows_001_neutral.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -279,9 +279,9 @@
     "name": "eyebrows_002_raised.png",
     "bounds": [
       499,
-      299,
+      295,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -290,9 +290,9 @@
     "name": "eyebrows_003_lowered.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      336
     ],
     "uncovered_baked_pixels": 0
   },
@@ -301,9 +301,9 @@
     "name": "eyebrows_004_angry.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -312,9 +312,9 @@
     "name": "eyebrows_005_furious.png",
     "bounds": [
       499,
-      299,
+      297,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -323,9 +323,9 @@
     "name": "eyebrows_006_worried.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      336
     ],
     "uncovered_baked_pixels": 0
   },
@@ -334,9 +334,9 @@
     "name": "eyebrows_007_pleading.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      337
     ],
     "uncovered_baked_pixels": 0
   },
@@ -345,9 +345,9 @@
     "name": "eyebrows_008_arched.png",
     "bounds": [
       499,
-      299,
+      295,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -356,9 +356,9 @@
     "name": "eyebrows_009_flat.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -367,9 +367,9 @@
     "name": "eyebrows_010_thin.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -378,9 +378,9 @@
     "name": "eyebrows_011_thick.png",
     "bounds": [
       499,
-      299,
+      297,
       758,
-      339
+      338
     ],
     "uncovered_baked_pixels": 0
   },
@@ -389,9 +389,9 @@
     "name": "eyebrows_012_bold_raised.png",
     "bounds": [
       499,
-      294,
+      290,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -400,9 +400,9 @@
     "name": "eyebrows_013_fine_arched.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -411,9 +411,9 @@
     "name": "eyebrows_014_wide_set.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -422,9 +422,9 @@
     "name": "eyebrows_015_close_set.png",
     "bounds": [
       499,
-      299,
+      298,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -433,9 +433,9 @@
     "name": "eyebrows_016_quizzical.png",
     "bounds": [
       499,
-      297,
+      292,
       758,
-      339
+      334
     ],
     "uncovered_baked_pixels": 0
   },
@@ -443,10 +443,10 @@
     "category": "mouths",
     "name": "mouth_001_closed_neutral.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -454,10 +454,10 @@
     "category": "mouths",
     "name": "mouth_002_small_open_smile.png",
     "bounds": [
-      597,
-      427,
-      659,
-      454
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -465,9 +465,9 @@
     "category": "mouths",
     "name": "mouth_003_small_dark_open.png",
     "bounds": [
-      597,
-      427,
-      659,
+      596,
+      426,
+      660,
       457
     ],
     "uncovered_baked_pixels": 0
@@ -477,8 +477,8 @@
     "name": "mouth_004_wide_open_smile.png",
     "bounds": [
       596,
-      427,
-      659,
+      426,
+      660,
       458
     ],
     "uncovered_baked_pixels": 0
@@ -487,10 +487,10 @@
     "category": "mouths",
     "name": "mouth_005_short_line.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -498,10 +498,10 @@
     "category": "mouths",
     "name": "mouth_006_soft_curve.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -509,10 +509,10 @@
     "category": "mouths",
     "name": "mouth_007_flat_line.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -520,10 +520,10 @@
     "category": "mouths",
     "name": "mouth_008_small_downturned.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -531,10 +531,10 @@
     "category": "mouths",
     "name": "mouth_009_tiny_neutral.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -542,10 +542,10 @@
     "category": "mouths",
     "name": "mouth_010_tiny_curve.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -553,9 +553,9 @@
     "category": "mouths",
     "name": "mouth_011_pink_open_pout.png",
     "bounds": [
-      597,
-      427,
-      659,
+      596,
+      426,
+      660,
       456
     ],
     "uncovered_baked_pixels": 0
@@ -564,10 +564,10 @@
     "category": "mouths",
     "name": "mouth_012_tiny_round.png",
     "bounds": [
-      597,
-      427,
-      659,
-      452
+      596,
+      426,
+      660,
+      455
     ],
     "uncovered_baked_pixels": 0
   },
@@ -587,8 +587,8 @@
     "bounds": [
       704,
       405,
-      736,
-      440
+      739,
+      437
     ]
   },
   {
@@ -635,10 +635,10 @@
     "category": "expression_marks",
     "name": "expression_mark_007_yellow_green_emphasis.png",
     "bounds": [
-      704,
-      406,
-      736,
-      438
+      695,
+      404,
+      745,
+      440
     ]
   },
   {

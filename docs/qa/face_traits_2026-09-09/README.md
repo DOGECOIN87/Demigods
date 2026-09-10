@@ -21,6 +21,48 @@ painted in. That face is on-model, on-rig, in the locked style, and positioned b
 the artist rather than by a placement rule. The backlog rows now carry the real
 filenames, and every manifest entry records why the cell reference was dropped.
 
+## Five defects the first build shipped
+
+None of these failed a test. Every one was found by rendering a token at full
+size and looking at it, and each measurement below was written afterwards.
+
+1. **The cover patch was visible.** The skin behind a feature was reconstructed by
+   an iterated hold-and-blur relaxation — the textbook harmonic fill. Over a band
+   as long and thin as the eyebrow it had not converged, so the patch came out
+   mottled, and it drifted about 4/255 down in red against the surrounding skin.
+   Composited, that is a pale grey crescent on the brow line of every token whose
+   eyebrow trait moved the brow off it. It is now a normalized convolution — the
+   image and the known-pixel mask each blurred, and their ratio — which is smooth
+   by construction and matches the surrounding skin to 0.3/255.
+2. **The footprint counted only pixels darker than skin.** That is the brow's ink
+   but not the pale highlight the style paints along its upper edge, so the patch
+   left the highlight on the face and every mood that moved the brow left a ghost
+   of it behind. The footprint is now deviation from the local skin level in
+   either direction, which also brings the sclera into the eye footprint.
+3. **The brow's difference field included the top of the eye**, which sits inside
+   the eyebrow region. Raising the brow painted a second copy of the eyelid line
+   eight pixels above the real one. Each separated feature is now confined to its
+   own measured footprint.
+4. **The iris recolour was clipped to the wrong disc.** It used the iris seed the
+   extraction recorded — radius 28.5 at (559, 374) and (694, 374) — which is 5 to
+   8 px off centre, so the recolour stopped short of the lash and left a crescent
+   of the original brown. Removing the boundary was worse: recolouring everything
+   inside the eye tinted the lash flat and threw coloured speckles onto the cheek.
+   The disc is now fitted from the art, by least squares through the chords of the
+   rows the lash does not cross: (555.0, 378.0, 25.7) and (700.5, 378.4, 25.8).
+5. **The ramp desaturated and darkened every colour.** Its light stop was the base
+   mixed *with* white, and its base sat at the middle of the luminance range while
+   the painted iris's median is near 0.25. `gold` (214, 166, 54) rendered at a mean
+   of (131, 107, 51), which reads as olive; `pink` came out dusty mauve. The light
+   stop is now the base taken to full value, and the base sits at the iris's own
+   median: `gold` renders at (183, 146, 61) and `pink` at (194, 130, 155).
+
+Two more were in the drawn families. Every open mouth had a straight bar across
+its top, because the lip was a stroke laid over an unclipped ellipse rather than
+the edge of the opening; the opening is now the ellipse below a curved lip, both
+built from the same curve. And `small_downturned` was an ellipse, which carries no
+direction and read as a plain round mouth; it is a downturned line now.
+
 ## The consequence nobody had written down
 
 A face trait does not sit on an empty face. It **replaces** one. A trait smaller
