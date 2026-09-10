@@ -28,11 +28,13 @@ It is also kept clear of the face: nothing is drawn above Y 582, which is below
 the shoulder line at Y 569, so the flame licks up the figure's body and never
 across its expression.
 
-    python scripts/build_front_aura_flame.py --out incoming/front_auras/aura_front_001_orange_rising_flame.png
+    python scripts/build_front_aura_flame.py --install
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 from collections import Counter
 from pathlib import Path
 
@@ -51,14 +53,14 @@ PEAK_ALPHA = 152     # near the registered aura_front_002's 141; still read thro
 # Each tongue is (centre x, width, height, lean, strength). They are placed to
 # frame the figure rather than mask it: two outside each leg, none up the centre.
 TONGUES = [
-    (288, 60, 300, -30, 0.85),
-    (360, 84, 470, -18, 1.05),
-    (438, 68, 366, -10, 0.90),
-    (506, 54, 252, -6, 0.66),
-    (748, 56, 264, 8, 0.68),
-    (816, 70, 374, 12, 0.92),
-    (894, 86, 482, 22, 1.05),
-    (966, 62, 312, 32, 0.85),
+    (286, 48, 340, -34, 0.92),
+    (348, 62, 520, -22, 1.06),
+    (410, 52, 400, -14, 0.96),
+    (468, 44, 290, -8, 0.78),
+    (786, 44, 300, 8, 0.78),
+    (844, 54, 412, 14, 0.96),
+    (906, 64, 530, 24, 1.06),
+    (968, 48, 348, 34, 0.92),
 ]
 
 # Ember through flame to a pale core, sampled by density.
@@ -109,49 +111,61 @@ def turbulence(shape: tuple[int, int], seed: int) -> np.ndarray:
     rng = np.random.default_rng(seed)
     field = np.zeros(shape)
     amplitude, total = 1.0, 0.0
-    for cells in (9, 19, 41, 83):
+    for cells in (9, 19, 41, 83, 167):
         field += amplitude * value_noise(shape, cells, rng)
         total += amplitude
-        amplitude *= 0.55
-    return field / total
+        amplitude *= 0.62
+    field /= total
+    # Stretched to its own 2nd-98th percentile. Summed octaves pile up near the
+    # middle of the range, and an unstretched field only dents the envelope -
+    # which leaves smooth cones rather than torn licks.
+    low, high = np.percentile(field, [2, 98])
+    return np.clip((field - low) / max(high - low, 1e-6), 0.0, 1.0)
 
 
 def density_field() -> np.ndarray:
-    """Tongue envelopes broken up by upward-advected turbulence."""
+    """Tongue envelopes broken up by upward-advected turbulence.
+
+    Tongues are combined by **maximum**, not by sum. Summing eight overlapping
+    Gaussians saturates everywhere they meet, and after the intensity compression
+    that came out as a filled slab with a hard bottom edge and hard sides - two
+    orange rectangles washing over the character's coat, which is the placeholder's
+    failure in a different costume. Taking the maximum keeps each tongue its own
+    shape, so the licks stay separate and the character reads between them.
+
+    The noise is subtracted at every height rather than only high up, for the same
+    reason: a flame is gaps as much as it is fire, and a base that is solid across
+    its whole width is a block with flames drawn on top.
+    """
     rows, columns = np.mgrid[0:CANVAS, 0:CANVAS].astype(float)
-    noise = turbulence((CANVAS, CANVAS), seed=20260909)
+    coarse = turbulence((CANVAS, CANVAS), seed=20260909)
+    fine = turbulence((CANVAS, CANVAS), seed=20260910)
 
     field = np.zeros((CANVAS, CANVAS))
     for centre_x, width, height, lean, strength in TONGUES:
         rise = np.clip((BASELINE - rows) / height, 0.0, 1.0)
         # The tongue narrows and drifts sideways as it rises.
         axis = centre_x + lean * rise ** 1.6
-        spread = width * (1.0 - 0.62 * rise)
+        spread = width * (1.0 - 0.55 * rise)
         across = np.exp(-((columns - axis) / np.maximum(spread, 1.0)) ** 2)
-        along = np.clip(1.0 - rise, 0.0, 1.0) ** 0.30 * np.clip(rise * 7.0, 0.0, 1.0)
+        taper = np.clip(1.0 - rise, 0.0, 1.0) ** 0.35
+
         # Sampling the noise higher up than the pixel makes the licks lean and
-        # tear rather than sit still inside the envelope.
-        advected = np.roll(noise, int(-height * 0.18), axis=0)
-        # Subtracting a threshold that rises with height carves the plume into
-        # separate licks instead of leaving one smooth tongue: near the base the
-        # envelope wins, and higher up only the noise's peaks survive.
-        field += np.clip(
-            strength * across * along * (0.30 + 1.35 * advected) - 0.24 * rise ** 0.75 * across,
-            0.0, None)
+        # tear rather than sit still inside the envelope; the two octave sets are
+        # advected by different amounts so the structure does not move as a block.
+        turbulent = (0.62 * np.roll(coarse, int(-height * 0.22), axis=0)
+                     + 0.38 * np.roll(fine, int(-height * 0.40), axis=1))
+        carved = strength * across * taper * (0.08 + 1.85 * turbulent) - (0.26 + 0.13 * rise)
+        field = np.maximum(field, np.clip(carved, 0.0, None))
 
-    glow = np.exp(-(((columns - 627) / 330.0) ** 2 + ((rows - 1010) / 190.0) ** 2))
-    field += 0.10 * glow * np.clip((BASELINE - rows) / 420.0, 0.0, 1.0)
-
-    # A soft threshold is what turns the envelope into licks. Without it the noise
-    # only modulates a plume and the layer renders as haze: at 333k visible pixels
-    # and a mean alpha of 28 the first attempt was invisible over a background.
-    field = np.clip((field - 0.30) / 0.75, 0.0, None) ** 1.35
-
-    field *= np.clip((rows - TOP_Y) / 90.0, 0.0, 1.0)          # nothing near the face
-    field *= np.clip((BASELINE + 4 - rows) / 8.0, 0.0, 1.0)    # nothing past the baseline
-    field *= np.clip((columns - LEFT_X) / 26.0, 0.0, 1.0)
-    field *= np.clip((RIGHT_X - columns) / 26.0, 0.0, 1.0)
-    return _box_blur(field, 1)
+    # Nothing near the face, and a scalloped rather than sliced bottom: the licks
+    # already end at different rows, so the baseline only has to stop the last of
+    # them, over enough pixels that it is not a drawn line.
+    field *= np.clip((rows - TOP_Y) / 120.0, 0.0, 1.0)
+    field *= np.clip((BASELINE - rows) / 26.0, 0.0, 1.0)
+    field *= np.clip((columns - LEFT_X) / 70.0, 0.0, 1.0)
+    field *= np.clip((RIGHT_X - columns) / 70.0, 0.0, 1.0)
+    return field
 
 
 def render() -> Image.Image:
@@ -201,10 +215,42 @@ def report(image: Image.Image) -> dict:
     }
 
 
+def install(built: Path, measured: dict) -> None:
+    """Copy into assets/ and refresh the manifest entry's hash and measurements.
+
+    The measurements live in the manifest because they are the reason this asset
+    is registered and its predecessor is not, so they have to describe the bytes
+    that actually shipped rather than an earlier render.
+    """
+    destination = ROOT / "assets" / "front_auras" / built.name
+    destination.write_bytes(built.read_bytes())
+    digest = hashlib.sha256(destination.read_bytes()).hexdigest()
+
+    manifest_path = ROOT / "assets" / "asset_manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    for entry in manifest["registered_production_assets"]:
+        if entry.get("id") != "aura_front_001":
+            continue
+        entry["sha256"] = digest
+        provenance = entry.setdefault("provenance", {})
+        provenance["output_bounds"] = measured["bounds"]
+        note = provenance.setdefault("flatness_measurements", {})
+        note.update({key: measured[key] for key in
+                     ("opaque_pixels", "alpha_levels", "top_value_share",
+                      "flat_neighbourhood_share", "peak_alpha", "visible_pixels")})
+        manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+                                 encoding="utf-8")
+        print(f"installed {destination.relative_to(ROOT)}  {digest[:12]}")
+        return
+    raise SystemExit("aura_front_001 is not registered; run scripts/register_face_traits.py first")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out", type=Path,
                         default=Path("incoming/front_auras/aura_front_001_orange_rising_flame.png"))
+    parser.add_argument("--install", action="store_true",
+                        help="also write assets/front_auras/ and refresh the manifest entry")
     args = parser.parse_args(argv)
     out = args.out if args.out.is_absolute() else ROOT / args.out
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -235,6 +281,8 @@ def main(argv: list[str] | None = None) -> int:
             )
 
     image.save(out)
+    if args.install:
+        install(out, measured)
     for key, value in measured.items():
         print(f"{key:26s} {value}")
     print(f"\nwritten to {out.relative_to(ROOT)}")

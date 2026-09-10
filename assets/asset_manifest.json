@@ -333,7 +333,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
       "status": "production_ready",
-      "sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
+      "sha256": "5c8bd6bd187a1c5efc91e15433f558461ec8f3412e561497a4df6fed35679693",
       "dimensions": [
         1254,
         1254
@@ -352,14 +352,19 @@
         ],
         "postprocessing": [
           "hide_undergarment_repaint_skin_laplace_relaxed",
-          "hide_undergarment_repaint_2026-08-15"
+          "hide_undergarment_repaint_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "postprocessing_script": "scripts/hide_undergarment.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
         "pre_geometry_correction_sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
         "post_geometry_correction_sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "cc3850ef0ece760076c38ed71efc738f2fe1efc5d711f3bfecf59399428662f7",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "5c8bd6bd187a1c5efc91e15433f558461ec8f3412e561497a4df6fed35679693",
+        "chroma_despeckle_note": "3204 px of surviving chroma key removed. The asset carried 511 saturated key-green pixels, 0.209% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-07-26",
       "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
@@ -369,7 +374,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
       "status": "production_ready",
-      "sha256": "be0fa16c81ade864f4de05f56761744c19cd29a9f427fe6357ebd9ac83999631",
+      "sha256": "bac3ae2db654e6cbf8185e56f714f72608d95c72652c4a270e4fdfb6d1bbeef8",
       "dimensions": [
         1254,
         1254
@@ -388,7 +393,8 @@
         ],
         "postprocessing": [
           "native_integer_translation_x_plus_1_px_2026-08-15",
-          "hide_undergarment_repaint_2026-08-15"
+          "hide_undergarment_repaint_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
@@ -397,7 +403,11 @@
         "pre_geometry_correction_sha256": "c385dcdc8090fba4269235d8e4d3431b1bec5322d7ff9dc8dde0d1a08809ed16",
         "post_geometry_correction_sha256": "be0fa16c81ade864f4de05f56761744c19cd29a9f427fe6357ebd9ac83999631",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "be0fa16c81ade864f4de05f56761744c19cd29a9f427fe6357ebd9ac83999631",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "bac3ae2db654e6cbf8185e56f714f72608d95c72652c4a270e4fdfb6d1bbeef8",
+        "chroma_despeckle_note": "2648 px of surviving chroma key removed. The asset carried 399 saturated key-green pixels, 0.173% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-07-26",
       "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
@@ -407,7 +417,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
       "status": "production_ready",
-      "sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
+      "sha256": "32ea9264d47e7f47cd47f7effee5493deb518e573561f9a3dbdb4dcdd1b57365",
       "dimensions": [
         1254,
         1254
@@ -426,14 +436,19 @@
         ],
         "postprocessing": [
           "hide_undergarment_repaint_skin_laplace_relaxed",
-          "hide_undergarment_repaint_2026-08-15"
+          "hide_undergarment_repaint_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "postprocessing_script": "scripts/hide_undergarment.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
         "pre_geometry_correction_sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
         "post_geometry_correction_sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
         "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15"
+        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "660058c3da4e31002d6356c6261c96f91dbdecb465144913fe9864f37d650685",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "32ea9264d47e7f47cd47f7effee5493deb518e573561f9a3dbdb4dcdd1b57365",
+        "chroma_despeckle_note": "4061 px of surviving chroma key removed. The asset carried 669 saturated key-green pixels, 0.282% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-07-26",
       "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
@@ -443,7 +458,7 @@
       "category": "base_bodies",
       "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
       "status": "production_ready",
-      "sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
+      "sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
       "dimensions": [
         1254,
         1254
@@ -463,7 +478,8 @@
         "postprocessing": [
           "native_integer_translation_x_plus_1_px_2026-08-15",
           "hide_undergarment_repaint_2026-08-15",
-          "pose_005_proportion_refit_2026-09-09"
+          "pose_005_proportion_refit_2026-09-09",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "postprocessing_script": "scripts/translate_base_bodies_x.py",
         "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
@@ -477,7 +493,11 @@
         "pre_pose_005_refit_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
         "post_pose_005_refit_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
         "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/base_pose_005_centered_two_hand_grip.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit."
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit.",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
+        "chroma_despeckle_note": "2032 px of surviving chroma key removed. The asset carried 311 saturated key-green pixels, 0.138% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-07-26",
       "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md"
@@ -931,7 +951,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
       "status": "production_ready",
-      "sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
+      "sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
       "dimensions": [
         1254,
         1254
@@ -955,7 +975,8 @@
           "alpha_edge_contract_1_post_refit",
           "chroma_despill_edge_band_3",
           "fit_boots_to_legs_2026-09-07",
-          "pose_005_proportion_refit_2026-09-09"
+          "pose_005_proportion_refit_2026-09-09",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "postprocessing_script": "scripts/clean_chroma_key.py",
         "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
@@ -967,7 +988,11 @@
         "pre_pose_005_refit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
         "post_pose_005_refit_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
         "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/outfit_005_sun_temple_pose_005.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit."
+        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit.",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
+        "chroma_despeckle_note": "23 px of surviving chroma key removed. The asset carried 3 saturated key-green pixels, 0.002% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-07-28"
     },
@@ -1124,7 +1149,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
       "status": "production_ready",
-      "sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f",
+      "sha256": "d12a277430840a10b396d947d6c089359e740b5775452faf6c7a035f88448170",
       "dimensions": [
         1254,
         1254
@@ -1180,7 +1205,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/face_completion_pilot/hair_front_003_silver_straight_bangs.png",
-        "output_sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f"
+        "output_sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "c75a103c8a5a7b3e3adccc1f50b4c40f792e453fc2204fca3264daefb4f7670f",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "d12a277430840a10b396d947d6c089359e740b5775452faf6c7a035f88448170",
+        "chroma_despeckle_note": "263 px of surviving chroma key removed. The asset carried 33 saturated key-green pixels, 0.034% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/face_completion_pilot_hair_front_003_attempt_005_report.json"
@@ -1190,7 +1222,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_001_gold_long_wavy.png",
       "status": "production_ready",
-      "sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+      "sha256": "0fa3a442d50e03e1e400dc333f95c9b1a745d905d7372a18e1d8bd55e015cd16",
       "dimensions": [
         1254,
         1254
@@ -1246,7 +1278,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/gold_hair_pair/hair_back_001_gold_long_wavy.png",
-        "output_sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed"
+        "output_sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "9b9a8713da2fdbc3b43c82cd0bb1b0282c773f0e2d9911e9799c86f4c50a09ed",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "0fa3a442d50e03e1e400dc333f95c9b1a745d905d7372a18e1d8bd55e015cd16",
+        "chroma_despeckle_note": "204 px of surviving chroma key removed. The asset carried 22 saturated key-green pixels, 0.015% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/gold_hair_pair_report.json"
@@ -1256,7 +1295,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
       "status": "production_ready",
-      "sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+      "sha256": "8b636e0484876bd2ea966e2a176e48c7ffd0d154eb089f70b02f313e221d7481",
       "dimensions": [
         1254,
         1254
@@ -1312,7 +1351,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/gold_hair_pair/hair_front_001_gold_parted_bangs.png",
-        "output_sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d"
+        "output_sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "b9c13e460ccd6423a4b40a7613b3e209164a40e5ac1b180f2e6a343740c68d2d",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "8b636e0484876bd2ea966e2a176e48c7ffd0d154eb089f70b02f313e221d7481",
+        "chroma_despeckle_note": "111 px of surviving chroma key removed. The asset carried 14 saturated key-green pixels, 0.024% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/gold_hair_pair_report.json"
@@ -1322,7 +1368,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_002_black_long_wavy.png",
       "status": "production_ready",
-      "sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b",
+      "sha256": "8b688d75915dee64b1c0437d0c99ca0d0b43cd837088f4e73bab11c82a37e842",
       "dimensions": [
         1254,
         1254
@@ -1378,7 +1424,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/black_hair_pair/hair_back_002_black_long_wavy.png",
-        "output_sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b"
+        "output_sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "5fff880ef43d6819fc424544c8458c9b9a6be03149ac305ab165e2867a50495b",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "8b688d75915dee64b1c0437d0c99ca0d0b43cd837088f4e73bab11c82a37e842",
+        "chroma_despeckle_note": "439 px of surviving chroma key removed. The asset carried 52 saturated key-green pixels, 0.021% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/black_hair_pair_report.json"
@@ -1454,7 +1507,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_004_violet_long_wavy.png",
       "status": "production_ready",
-      "sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46",
+      "sha256": "c50292e51d462b59ef605b295af31ab1053283d8e8f47e1b2b63460faa1acbfe",
       "dimensions": [
         1254,
         1254
@@ -1510,7 +1563,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/violet_hair_pair/hair_back_004_violet_long_wavy.png",
-        "output_sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46"
+        "output_sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "e00222144cf715f027d43f91cd27ec4e036718d72d4b9bfed1d03e5110597f46",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "c50292e51d462b59ef605b295af31ab1053283d8e8f47e1b2b63460faa1acbfe",
+        "chroma_despeckle_note": "354 px of surviving chroma key removed. The asset carried 62 saturated key-green pixels, 0.022% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/violet_hair_pair_report_retry.json"
@@ -1520,7 +1580,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_004_violet_parted_bangs.png",
       "status": "production_ready",
-      "sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0",
+      "sha256": "628f1945cb467d8bd564ac13e8b0f2e8873b4d13e362478e0759a3d70c89609c",
       "dimensions": [
         1254,
         1254
@@ -1576,7 +1636,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/violet_hair_pair/hair_front_004_violet_parted_bangs.png",
-        "output_sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0"
+        "output_sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "67b1f936ae1f0898cec838f183fd33acc25def8a5c0f117599267235c0a6bca0",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "628f1945cb467d8bd564ac13e8b0f2e8873b4d13e362478e0759a3d70c89609c",
+        "chroma_despeckle_note": "388 px of surviving chroma key removed. The asset carried 62 saturated key-green pixels, 0.080% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/violet_hair_pair_report_retry.json"
@@ -1586,7 +1653,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_005_blue_long_wavy.png",
       "status": "production_ready",
-      "sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d",
+      "sha256": "58f556c5b12183909bd8e65c6a1912ee9ae48e17268748afac0b1bf72eadc7b6",
       "dimensions": [
         1254,
         1254
@@ -1642,7 +1709,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/blue_hair_pair/hair_back_005_blue_long_wavy.png",
-        "output_sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d"
+        "output_sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "c5f8865613a938b5d5c4bc182f4befca17a39c11d8142ef798ed51f669fe273d",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "58f556c5b12183909bd8e65c6a1912ee9ae48e17268748afac0b1bf72eadc7b6",
+        "chroma_despeckle_note": "26 px of surviving chroma key removed. The asset carried 2 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/blue_hair_pair_report.json"
@@ -1652,7 +1726,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_005_blue_pointed_bangs.png",
       "status": "production_ready",
-      "sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb",
+      "sha256": "c3ce49a768c5ea8b1a0e0e225f61b113422724139968d924bcbeba9eeb7bd68c",
       "dimensions": [
         1254,
         1254
@@ -1708,7 +1782,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/blue_hair_pair/hair_front_005_blue_pointed_bangs.png",
-        "output_sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb"
+        "output_sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "30f7709295062c88048b0158d94b088999d6a6edd0b9645782683d3dc5db45cb",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "c3ce49a768c5ea8b1a0e0e225f61b113422724139968d924bcbeba9eeb7bd68c",
+        "chroma_despeckle_note": "25 px of surviving chroma key removed. The asset carried 2 saturated key-green pixels, 0.003% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/blue_hair_pair_report.json"
@@ -1718,7 +1799,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_006_pink_long_wavy.png",
       "status": "production_ready",
-      "sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4",
+      "sha256": "e01f17599ee48295d60c5499c94f3dc1b5153a710974c32aa9c67bd7265fb436",
       "dimensions": [
         1254,
         1254
@@ -1774,7 +1855,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/pink_hair_pair/hair_back_006_pink_long_wavy.png",
-        "output_sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4"
+        "output_sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "4dc4065a4a930fa0fa2fea007c751655bbc4520a7ab9cdb684c5146279d9a2d4",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "e01f17599ee48295d60c5499c94f3dc1b5153a710974c32aa9c67bd7265fb436",
+        "chroma_despeckle_note": "770 px of surviving chroma key removed. The asset carried 120 saturated key-green pixels, 0.056% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/pink_hair_pair_report.json"
@@ -1784,7 +1872,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_006_pink_soft_bangs.png",
       "status": "production_ready",
-      "sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c",
+      "sha256": "922dc45e3e120195f4cbd5222c7c1d263b364a39308a7014618cbd2cab16b6f5",
       "dimensions": [
         1254,
         1254
@@ -1840,7 +1928,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/pink_hair_pair/hair_front_006_pink_soft_bangs.png",
-        "output_sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c"
+        "output_sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "eafc4b9cfd5c1fd2621c7987f69fec5d9e79baa244444e13c0a4cf7d3e46291c",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "922dc45e3e120195f4cbd5222c7c1d263b364a39308a7014618cbd2cab16b6f5",
+        "chroma_despeckle_note": "386 px of surviving chroma key removed. The asset carried 69 saturated key-green pixels, 0.082% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/pink_hair_pair_report.json"
@@ -1850,7 +1945,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_007_teal_long_wavy.png",
       "status": "production_ready",
-      "sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f",
+      "sha256": "a7b2256d6de15d3cbcfdcce1e26450bab78f16a39726e234799c83997d93e529",
       "dimensions": [
         1254,
         1254
@@ -1906,7 +2001,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/teal_hair_pair/hair_back_007_teal_long_wavy.png",
-        "output_sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f"
+        "output_sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "6f791e3a54b3520a2604fd1203142b90b8a02103f628f76130d4b3c4b1ad0d0f",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "a7b2256d6de15d3cbcfdcce1e26450bab78f16a39726e234799c83997d93e529",
+        "chroma_despeckle_note": "192 px of surviving chroma key removed. The asset carried 46 saturated key-green pixels, 0.019% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/teal_hair_pair_report.json"
@@ -1916,7 +2018,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_007_teal_open_center.png",
       "status": "production_ready",
-      "sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974",
+      "sha256": "fa8d1d8f5cc83e9744089752cd00dc746af9e84ba791cd8f4d8b14208f3eda5b",
       "dimensions": [
         1254,
         1254
@@ -1972,7 +2074,14 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "output_path": "incoming/teal_hair_pair/hair_front_007_teal_open_center.png",
-        "output_sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974"
+        "output_sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "3676a8c1dcc7461630633a6177b39e7156c5d9ca2fe5ed8720a6699983323974",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "fa8d1d8f5cc83e9744089752cd00dc746af9e84ba791cd8f4d8b14208f3eda5b",
+        "chroma_despeckle_note": "396 px of surviving chroma key removed. The asset carried 74 saturated key-green pixels, 0.084% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/teal_hair_pair_report.json"
@@ -1982,7 +2091,7 @@
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_008_red_long_wavy.png",
       "status": "production_ready",
-      "sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc",
+      "sha256": "ce098b47fc66d0a269eaf3c4b29083bf7711455a09491e51f8aa97204bce1758",
       "dimensions": [
         1254,
         1254
@@ -1999,7 +2108,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "fc73ce3fde97ff5d3b6326371baeb061618198bd2bb773dd34fbf171d7510fbc",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "ce098b47fc66d0a269eaf3c4b29083bf7711455a09491e51f8aa97204bce1758",
+        "chroma_despeckle_note": "71 px of surviving chroma key removed. The asset carried 12 saturated key-green pixels, 0.007% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
@@ -2009,7 +2125,7 @@
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_008_red_short_bangs.png",
       "status": "production_ready",
-      "sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625",
+      "sha256": "e71b16f32be9adfd64698ed07b776c51cdf5cf3890a57834d24f94d33c5e4aab",
       "dimensions": [
         1254,
         1254
@@ -2026,7 +2142,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "19ff90415993898823dde7cb5b3681cea6e7ebabb554fca279e00e3cd5ed2625",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "e71b16f32be9adfd64698ed07b776c51cdf5cf3890a57834d24f94d33c5e4aab",
+        "chroma_despeckle_note": "56 px of surviving chroma key removed. The asset carried 4 saturated key-green pixels, 0.005% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
@@ -2102,7 +2225,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
       "status": "production_ready",
-      "sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
+      "sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
       "dimensions": [
         1254,
         1254
@@ -2121,11 +2244,16 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_boot_fit_sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
         "post_boot_fit_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2698 to 8. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2698 to 8. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
+        "chroma_despeckle_note": "164 px of surviving chroma key removed. The asset carried 15 saturated key-green pixels, 0.009% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2168,7 +2296,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
       "status": "production_ready",
-      "sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
+      "sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
       "dimensions": [
         1254,
         1254
@@ -2187,11 +2315,16 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
         "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 5469 to 12. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 5469 to 12. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
+        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
@@ -2201,7 +2334,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
       "status": "production_ready",
-      "sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
+      "sha256": "396de4fb8f1291208be80f4f3adf9ce5d71f31db7e8f693dffd116d0582a7886",
       "dimensions": [
         1254,
         1254
@@ -2218,7 +2351,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "396de4fb8f1291208be80f4f3adf9ce5d71f31db7e8f693dffd116d0582a7886",
+        "chroma_despeckle_note": "2594 px of surviving chroma key removed. The asset carried 965 saturated key-green pixels, 0.763% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
@@ -2228,7 +2368,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
       "status": "production_ready",
-      "sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
+      "sha256": "d367b00e26026131034b4ca886fbb8ba2fcb8cc2c64200e52f90e22184294f51",
       "dimensions": [
         1254,
         1254
@@ -2245,7 +2385,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "d367b00e26026131034b4ca886fbb8ba2fcb8cc2c64200e52f90e22184294f51",
+        "chroma_despeckle_note": "48687 px of surviving chroma key removed. The asset carried 26143 saturated key-green pixels, 20.503% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
@@ -2255,7 +2402,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_011_fire_ring.png",
       "status": "production_ready",
-      "sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
+      "sha256": "0916e98a1e1e05a790a7969b55bfee4d071ad1bec6e3a2cd038468c004215723",
       "dimensions": [
         1254,
         1254
@@ -2272,7 +2419,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "efd66ddd40e2c02bea748219271387ba83049c412210e377f87136ad47903dd7",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "0916e98a1e1e05a790a7969b55bfee4d071ad1bec6e3a2cd038468c004215723",
+        "chroma_despeckle_note": "6343 px of surviving chroma key removed. The asset carried 1876 saturated key-green pixels, 7.629% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
@@ -2282,7 +2436,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_012_lightning_ring.png",
       "status": "production_ready",
-      "sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
+      "sha256": "df9652239dcccbc2dd6665f99a25e15b703e09dced9b74240339ac4144cbe50b",
       "dimensions": [
         1254,
         1254
@@ -2299,7 +2453,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "e90fdc69bbdac26ce06951cb40019efa18539a16bea7d857db682003d3ade65f",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "df9652239dcccbc2dd6665f99a25e15b703e09dced9b74240339ac4144cbe50b",
+        "chroma_despeckle_note": "14819 px of surviving chroma key removed. The asset carried 7748 saturated key-green pixels, 18.590% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
@@ -2309,7 +2470,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_013_violet_flame_ring.png",
       "status": "production_ready",
-      "sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
+      "sha256": "fc765c7cc944568f0517fa0585f1646071c5cf37ef4f1f9d08063f2893a92e24",
       "dimensions": [
         1254,
         1254
@@ -2326,7 +2487,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "4027916bbb77562c34633e1684f374bb24494eb0dbf7b05676c5c416d7a777d0",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "fc765c7cc944568f0517fa0585f1646071c5cf37ef4f1f9d08063f2893a92e24",
+        "chroma_despeckle_note": "3712 px of surviving chroma key removed. The asset carried 808 saturated key-green pixels, 2.433% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
@@ -2336,7 +2504,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_014_ice_crystal_ring.png",
       "status": "production_ready",
-      "sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f",
+      "sha256": "3192b1c6b1b1d18ca408c28d260e03ce09f0ad701ba079ff47b1f9bfe9aa2bf7",
       "dimensions": [
         1254,
         1254
@@ -2353,7 +2521,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "9dadb56290e7e40c502315f274eeff9091f9b4cc49cc6ccc0c0242cd76eb2b4f",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "3192b1c6b1b1d18ca408c28d260e03ce09f0ad701ba079ff47b1f9bfe9aa2bf7",
+        "chroma_despeckle_note": "13810 px of surviving chroma key removed. The asset carried 7253 saturated key-green pixels, 25.799% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
@@ -2363,7 +2538,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_015_smoke_void_ring.png",
       "status": "production_ready",
-      "sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5",
+      "sha256": "ccc72043bf1eeba0e03448acb354348d2c9881c74dd19dc7c7e3e6de8a86254e",
       "dimensions": [
         1254,
         1254
@@ -2380,7 +2555,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "415bad1aee898c825732a3356cf8e484c5344b726e18fa07390aff12d3145cd5",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "ccc72043bf1eeba0e03448acb354348d2c9881c74dd19dc7c7e3e6de8a86254e",
+        "chroma_despeckle_note": "771 px of surviving chroma key removed. The asset carried 151 saturated key-green pixels, 0.521% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
@@ -2390,7 +2572,7 @@
       "category": "rear_auras",
       "path": "assets/rear_auras/aura_rear_017_water_splash_ring.png",
       "status": "production_ready",
-      "sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2",
+      "sha256": "ce59a465c4b0812a242b0348699a209e5f977bbdc21e732c38fe6532c66d8030",
       "dimensions": [
         1254,
         1254
@@ -2407,7 +2589,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "26aca5961481a0ba73fad1534e2146d6fdf71c671e96f71ee52238258f78b3e2",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "ce59a465c4b0812a242b0348699a209e5f977bbdc21e732c38fe6532c66d8030",
+        "chroma_despeckle_note": "73 px of surviving chroma key removed. The asset carried 9 saturated key-green pixels, 0.049% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "Approved after full-context review: distinct ice, smoke, and water material reads; low rings retain transparent foot openings and locked-baseline seating."
@@ -2417,7 +2606,7 @@
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
       "status": "production_ready",
-      "sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d",
+      "sha256": "5718f04f1a05cfc53fa9ec39c2101ca273ca6a59a185c44b18a38f6b2192a2dd",
       "dimensions": [
         1254,
         1254
@@ -2489,10 +2678,15 @@
         ],
         "normalization_script": "scripts/normalize_generator_source.py",
         "postprocessing": [
-          "anatomy_reseat_2026-09-07"
+          "anatomy_reseat_2026-09-07",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_anatomy_reseat_sha256": "47eeaee3859105b720fcca3f29036186a9fe64edaa74690dd678adc591a2680c",
-        "post_anatomy_reseat_sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d"
+        "post_anatomy_reseat_sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "13584da4f4747721438c20922a2d71c8b38c6a7ee261b4a2e1bb02b461edea2d",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "5718f04f1a05cfc53fa9ec39c2101ca273ca6a59a185c44b18a38f6b2192a2dd",
+        "chroma_despeckle_note": "103 px of surviving chroma key removed. The asset carried 8 saturated key-green pixels, 0.006% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
@@ -2699,7 +2893,7 @@
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
       "status": "production_ready",
-      "sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70",
+      "sha256": "3821d5acd1b8ffe44bdd37549b958b4ddee5779beea266a0f46cf6b5a875b796",
       "dimensions": [
         1254,
         1254
@@ -2716,7 +2910,14 @@
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py"
+        "intake_script": "scripts/bulk_intake.py",
+        "postprocessing": [
+          "chroma_residue_despeckle_2026-09-10"
+        ],
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "9b24d2e52e889f1aaeab2b14afc1db2ab7de690300887e417cf770cfa7014b70",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "3821d5acd1b8ffe44bdd37549b958b4ddee5779beea266a0f46cf6b5a875b796",
+        "chroma_despeckle_note": "70 px of surviving chroma key removed. The asset carried 6 saturated key-green pixels, 0.003% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "/home/ubuntu/Demigods/docs/qa/back_accessories_001-005_review.md"
@@ -3725,7 +3926,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "699f6130c4f10148a02b53c704e0ebb349bc7df6d1148e1ff9a82e6e5f1ea242",
+      "sha256": "9b120a0f741e59e243a8e99da9f03178bc5a4992ed17590dc6e13badb94aabd5",
       "dimensions": [
         1254,
         1254
@@ -3744,7 +3945,8 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_hand_recalibration_sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
         "post_hand_recalibration_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
@@ -3753,7 +3955,11 @@
         "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
         "pre_pose_aware_revision_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
         "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "699f6130c4f10148a02b53c704e0ebb349bc7df6d1148e1ff9a82e6e5f1ea242",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "9b120a0f741e59e243a8e99da9f03178bc5a4992ed17590dc6e13badb94aabd5",
+        "chroma_despeckle_note": "36 px of surviving chroma key removed. The asset carried 5 saturated key-green pixels, 0.014% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -3763,7 +3969,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "08000ffbfe92df356c48ba44ebb0547bec5df6a747377d659a39b73df0ccb547",
+      "sha256": "1297600b2ae7a5eff734dddda48768247d3fa79180b31e153aefffc44ca83618",
       "dimensions": [
         1254,
         1254
@@ -3782,7 +3988,8 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_hand_recalibration_sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
         "post_hand_recalibration_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
@@ -3791,7 +3998,11 @@
         "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
         "pre_pose_aware_revision_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
         "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "08000ffbfe92df356c48ba44ebb0547bec5df6a747377d659a39b73df0ccb547",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "1297600b2ae7a5eff734dddda48768247d3fa79180b31e153aefffc44ca83618",
+        "chroma_despeckle_note": "105 px of surviving chroma key removed. The asset carried 17 saturated key-green pixels, 0.069% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -3801,7 +4012,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "91ccb017ac6e9f7596ee8f588e132a4ec5278ce8abda6f670678a9d80e8dbe73",
+      "sha256": "2c660d88954cd6c0eb912e2a47d0af32e500636fd5dcf1f28f91814ed56ca2df",
       "dimensions": [
         1254,
         1254
@@ -3820,7 +4031,8 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
+          "chroma_residue_despeckle_2026-09-10"
         ],
         "pre_hand_recalibration_sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
         "post_hand_recalibration_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
@@ -3829,7 +4041,11 @@
         "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
         "pre_pose_aware_revision_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
         "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
+        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
+        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
+        "pre_chroma_residue_despeckle_2026-09-10_sha256": "91ccb017ac6e9f7596ee8f588e132a4ec5278ce8abda6f670678a9d80e8dbe73",
+        "post_chroma_residue_despeckle_2026-09-10_sha256": "2c660d88954cd6c0eb912e2a47d0af32e500636fd5dcf1f28f91814ed56ca2df",
+        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.003% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -7302,7 +7518,7 @@
       "category": "front_auras",
       "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
       "status": "production_ready",
-      "sha256": "c32db29fa593df4049edb43af3bce88fa94d8cd3a750e03e1193b4a554d4db09",
+      "sha256": "9e9fddc388182a585cf59ba6888d8e97b5842948582ce920d39cc37e1affdf89",
       "dimensions": [
         1254,
         1254
@@ -7320,15 +7536,21 @@
         ],
         "build_script": "scripts/build_front_aura_flame.py",
         "output_bounds": [
-          249,
-          706,
-          1014,
-          1129
+          250,
+          637,
+          1013,
+          1138
         ],
         "replaces": "the flat-shaded aura_front_001 placeholder deregistered on 2026-09-09",
         "method": "Four octaves of fractal value noise, advected upward and used both to modulate six tongue envelopes and to carve them into separate licks by a threshold that rises with height. Intensity is compressed rather than clipped, so no lick's core lands on a single flat value, and colour is compressed on a longer scale than opacity so the body reads orange and only the hottest cores reach pale gold. Nothing is drawn above Y 582, below the shoulder line, so the flame never crosses the face.",
         "flatness_measurements": {
-          "note": "Calibrated against the two front auras the collection already had. The accepted aura_front_002 measures 83 alpha levels, a 0.067 top-value share and a 0.219 flat-neighbourhood share; the rejected placeholder measures 28, 0.334 and 0.883."
+          "note": "Calibrated against the two front auras the collection already had. The accepted aura_front_002 measures 83 alpha levels, a 0.067 top-value share and a 0.219 flat-neighbourhood share; the rejected placeholder measures 28, 0.334 and 0.883.",
+          "opaque_pixels": 0,
+          "alpha_levels": 143,
+          "top_value_share": 0.0078,
+          "flat_neighbourhood_share": 0.085,
+          "peak_alpha": 151,
+          "visible_pixels": 152340
         }
       },
       "approved_on": "2026-09-09",
