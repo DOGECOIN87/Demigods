@@ -454,55 +454,6 @@
       "qa_report": "docs/qa/geometry_corrections_2026-08-15.md"
     },
     {
-      "id": "base_pose_005",
-      "category": "base_bodies",
-      "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
-      "status": "production_ready",
-      "sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/03_hand_poses.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "derived_from": "base_body_001",
-        "hand_pose": "centered two-handed grip",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "native_integer_translation_x_plus_1_px_2026-08-15",
-          "hide_undergarment_repaint_2026-08-15",
-          "pose_005_proportion_refit_2026-09-09",
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/translate_base_bodies_x.py",
-        "undergarment_note": "Neutral tank/shorts repainted as skin where the paired outfit exposes them; colour diffused inward from adjacent real skin, then Laplace-relaxed to remove fill-order streaking. Residual 4 px across all five bases are pale skin tones that fall inside the garment colour ball, since tank (251,218,182) and thigh skin (252,202,161) overlap. The undergarment remains beneath the garment where it cannot be seen; full removal needs a base re-render.",
-        "pre_translation_sha256": "6b688c49e87caa637eaf17e44ceddef97578034f1034d56a097fdba75d130d24",
-        "post_translation_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
-        "pre_geometry_correction_sha256": "eff393f7d85ef38c9b10e61bc8412e436f3d16d262e2b70faf4627cfd87f0bf0",
-        "post_geometry_correction_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
-        "geometry_correction_script": "scripts/update_geometry_correction_manifest.py",
-        "geometry_correction_method": "hide_undergarment_repaint_2026-08-15",
-        "pose_005_refit_script": "scripts/refit_pose_005_proportions.py",
-        "pre_pose_005_refit_sha256": "7d919cb0449f096d05c0a8264e8d3d31d2e4c034528f1e69244216a4f3731316",
-        "post_pose_005_refit_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
-        "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/base_pose_005_centered_two_hand_grip.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "0fde12223c89b1db856553223828df1881786cd029437c56151115aca946746f",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
-        "chroma_despeckle_note": "2032 px of surviving chroma key removed. The asset carried 311 saturated key-green pixels, 0.138% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-07-26",
-      "qa_report": "docs/qa/pose_005_proportions_2026-09-09.md"
-    },
-    {
       "id": "hair_back_003",
       "category": "hair_back",
       "path": "assets/hair_back/hair_back_003_silver_long_wavy.png",
@@ -846,61 +797,6 @@
         "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
         "post_outfit_neckline_inner_garment_2026-09-10_sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
         "neckline_note": "920 px of inner garment painted into the opening: muted violet-grey underlayer inside the wrap."
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_005",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
-      "status": "production_ready",
-      "sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
-        "required_pose": "base_pose_005_centered_two_hand_grip.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.756_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "fit_boots_to_legs_2026-09-07",
-          "pose_005_proportion_refit_2026-09-09",
-          "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/clean_chroma_key.py",
-        "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "pre_boot_fit_sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
-        "post_boot_fit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2389 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "pose_005_refit_script": "scripts/refit_pose_005_proportions.py",
-        "pre_pose_005_refit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
-        "post_pose_005_refit_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
-        "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/outfit_005_sun_temple_pose_005.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
-        "chroma_despeckle_note": "23 px of surviving chroma key removed. The asset carried 3 saturated key-green pixels, 0.002% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
-        "neckline_note": "807 px of inner garment painted into the opening: warm cream underlayer inside the tunic's round neck."
       },
       "approved_on": "2026-07-28"
     },
@@ -2067,7 +1963,7 @@
       "category": "outfits",
       "path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
       "status": "production_ready",
-      "sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
+      "sha256": "9d95ed0111c55ebb280e0d5152a18bac234125baa5f8cb61031928fa8ee9c81b",
       "dimensions": [
         1254,
         1254
@@ -2086,14 +1982,19 @@
         ],
         "intake_script": "scripts/bulk_intake.py",
         "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
+          "fit_boots_to_legs_2026-09-07",
+          "open_collar_crisp_rim_c510_r20_h30"
         ],
         "pre_boot_fit_sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
         "post_boot_fit_sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2015 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
+        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2015 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
+        "postprocessing_script": "scripts/open_collar.py",
+        "pre_hood_opening_sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
+        "post_hood_opening_sha256": "9d95ed0111c55ebb280e0d5152a18bac234125baa5f8cb61031928fa8ee9c81b",
+        "collar_note": "The cowl's interior was painted opaque as a flat near-black shape whose top arc reached y475, one row above the rig's chin at 476.5, so it covered the whole neck and the head read as sitting on a black dome. Cut above the rim arc traced from the art, bounded by the base body's own neck alpha, so the opening's walls close on the neck's silhouette where it flares at about y490. 1768 px cleared; no other pixel of the garment is touched."
       },
       "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
+      "qa_report": "docs/qa/outfit_refit_2026-09-10.md"
     },
     {
       "id": "outfit_007",
@@ -2175,97 +2076,6 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
-    },
-    {
-      "id": "outfit_009",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
-      "status": "production_ready",
-      "sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-045",
-      "qa_composite": "docs/qa/composites/outfit_009_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Deep-navy high-collar long coat",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_neckline_inner_garment_2026-09-10",
-          "sleeve_widening_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
-        "post_boot_fit_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 3332 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
-        "neckline_note": "2202 px of inner garment painted into the opening: pale grey-blue shirt under a navy coat.",
-        "sleeve_script": "scripts/widen_sleeves.py",
-        "pre_sleeve_widening_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
-        "post_sleeve_widening_2026-09-10_sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
-        "sleeve_note": "sleeve edge warped outward over 182 rows; bare arm along the sleeve 5193 px -> 0 px"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
-    },
-    {
-      "id": "outfit_010",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
-      "status": "production_ready",
-      "sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-046",
-      "qa_composite": "docs/qa/composites/outfit_010_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver-white high-collar ceremonial robe",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10",
-          "sleeve_widening_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
-        "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 5469 to 12. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
-        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
-        "neckline_note": "1079 px of painted collar interior cleared: stand collar; the slate interior capped the neck. 1226 px of inner garment painted into the opening: pale shirt inside the stand collar.",
-        "sleeve_script": "scripts/widen_sleeves.py",
-        "pre_sleeve_widening_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
-        "post_sleeve_widening_2026-09-10_sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
-        "sleeve_note": "sleeve edge warped outward over 177 rows; bare arm along the sleeve 4482 px -> 0 px"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
     },
     {
       "id": "aura_rear_003",
@@ -6576,6 +6386,54 @@
       "reason": "Retired to thin the category: gold feathered wings; the same silhouette as the silver pair. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
       "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "base_pose_005",
+      "backlog_id": null,
+      "intended_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+      "status": "retired",
+      "sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
+      "retained_at": "incoming/outfits_retired_2026-09-10/base_pose_005_centered_two_hand_grip.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Withdrawn with outfit_005, which was the only outfit bound to this pose. Outfits are not an optional category, so with that binding gone the generator can build no valid token on this pose. Nothing is wrong with the pose itself.",
+      "requirement": "Bring this pose back together with an outfit drawn for its clasped two-hand grip. The outfits bound to base_body_001 are drawn for hanging arms and their sleeves miss these hands.",
+      "qa_report": "docs/qa/outfit_refit_2026-09-10.md"
+    },
+    {
+      "id": "outfit_005",
+      "backlog_id": null,
+      "intended_path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+      "status": "retired",
+      "sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
+      "retained_at": "incoming/outfits_retired_2026-09-10/outfit_005_sun_temple_pose_005.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Drawn narrower than the base body it covers. The cream tank showed as a band from the armpit past the hip on both sides, and the shoulder was bare above a sleeve drawn to reach it. Closing that needs the garment redrawn at the body's measured width: warping the edge outward drags the trim behind it, and filling the strip leaves the garment's own contour line in the middle of the fabric. On the sun temple tunic the strip was 12-16 px down both flanks and both tank straps showed above the shoulder line.",
+      "requirement": "A replacement must reach the base body's own silhouette at the flank and cover the shoulder to the deltoid, measured against base_pose_005_centered_two_hand_grip before it is registered.",
+      "qa_report": "docs/qa/outfit_refit_2026-09-10.md"
+    },
+    {
+      "id": "outfit_009",
+      "backlog_id": "DG-045",
+      "intended_path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
+      "status": "retired",
+      "sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
+      "retained_at": "incoming/outfits_retired_2026-09-10/outfit_009_navy_high_collar_coat.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Drawn narrower than the base body it covers. The cream tank showed as a band from the armpit past the hip on both sides, and the shoulder was bare above a sleeve drawn to reach it. Closing that needs the garment redrawn at the body's measured width: warping the edge outward drags the trim behind it, and filling the strip leaves the garment's own contour line in the middle of the fabric. On the navy coat the tank ran 14-22 px wide between the coat's body and its own sleeve, from the armpit to below the hip.",
+      "requirement": "A replacement must close the side seam between body and sleeve and cover the shoulder cap, measured against base_body_001_neutral_master before it is registered.",
+      "qa_report": "docs/qa/outfit_refit_2026-09-10.md"
+    },
+    {
+      "id": "outfit_010",
+      "backlog_id": "DG-046",
+      "intended_path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+      "status": "retired",
+      "sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
+      "retained_at": "incoming/outfits_retired_2026-09-10/outfit_010_celestial_robe_white_gold.png",
+      "withdrawn_on": "2026-09-10",
+      "reason": "Drawn narrower than the base body it covers. The cream tank showed as a band from the armpit past the hip on both sides, and the shoulder was bare above a sleeve drawn to reach it. Closing that needs the garment redrawn at the body's measured width: warping the edge outward drags the trim behind it, and filling the strip leaves the garment's own contour line in the middle of the fabric. On the celestial robe the same band ran beside the sash, which is why the edge could not be moved without moving the sash.",
+      "requirement": "A replacement must close the side seam between body and sleeve and cover the shoulder cap, measured against base_body_001_neutral_master before it is registered.",
+      "qa_report": "docs/qa/outfit_refit_2026-09-10.md"
     }
   ],
   "queued_base_poses": [],
@@ -6583,7 +6441,9 @@
     "neck_accessories",
     "head_accessories",
     "rear_auras",
-    "back_accessories"
+    "back_accessories",
+    "outfits",
+    "base_bodies"
   ],
   "legendary_one_of_ones": [
     {

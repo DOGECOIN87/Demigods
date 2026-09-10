@@ -24,14 +24,16 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# A garment may legitimately close over the neck. Cutting an opening into this
-# one was tried and gave a rectangular window through the cowl rather than a
-# neckline: the hood's art does not have a neckline in it to reveal. A high cowl
-# closing at the jaw is a garment, where outfit_010's painted-shut collar interior
-# was a stand collar that visibly should have been open.
-CLOSED_BY_DESIGN = {
-    "outfit_006_black_layered_hooded_robe.png": "hooded robe with a high cowl",
-}
+# A garment may legitimately close over the neck, and nothing registered does.
+#
+# `outfit_006` was exempted here as "a high cowl closing at the jaw is a
+# garment". Rendered over the base and enlarged it was not: the cowl's opening
+# was a flat near-black shape, values around (17,18,21) with no fold, seam or
+# shading anywhere in it, arched up to y475 against a chin at 476.5. It covered
+# the whole neck and the head read as sitting on a black dome. The cowl was
+# opened on 2026-09-10 with the same cut `outfit_010`'s stand collar got, so the
+# exemption is gone and every outfit is now measured.
+CLOSED_BY_DESIGN: dict[str, str] = {}
 
 # A few pixels can survive at a lapel's soft edge without reading as a panel.
 # The measurement is confined to the torso's core by `exposed_tank`, because skin

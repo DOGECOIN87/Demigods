@@ -11,6 +11,7 @@ registered base master, so a future batch cannot repeat it silently.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import unittest
 from pathlib import Path
@@ -108,8 +109,22 @@ class NeckAccessoryWithdrawalTests(unittest.TestCase):
                 self.assertTrue(entry.get("reason"), f"{entry['id']} is withdrawn with no reason")
                 self.assertTrue(entry.get("requirement"),
                                 f"{entry['id']} is withdrawn with no requirement for its replacement")
-                self.assertTrue((ROOT / entry["retained_at"]).exists(),
-                                f"{entry['id']}'s withdrawn bytes are not where the manifest says")
+                # `incoming/.gitignore` excludes *.png, so the withdrawn bytes never
+                # travel with the repository: on any fresh clone the retained file is
+                # absent and only the manifest record survives. Asserting the file
+                # exists therefore passed only on the machine that did the withdrawal.
+                # What has to be here is the record - where the bytes were put, and
+                # the hash they were retired at, which is what identifies them if
+                # they are ever brought back.
+                self.assertTrue(entry.get("retained_at"),
+                                f"{entry['id']} is withdrawn with no record of where its bytes went")
+                self.assertRegex(str(entry.get("sha256", "")), r"^[0-9a-f]{64}$",
+                                 f"{entry['id']} is withdrawn without the SHA-256 it was retired at")
+                retained = ROOT / entry["retained_at"]
+                if retained.exists():
+                    self.assertEqual(
+                        hashlib.sha256(retained.read_bytes()).hexdigest(), entry["sha256"],
+                        f"{entry['id']}'s retained bytes do not match the hash on the record")
 
 
 class BackAccessorySeatingTests(unittest.TestCase):
