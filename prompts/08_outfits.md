@@ -94,6 +94,65 @@ face of the rim, so a deep collar will read flatter than one drawn open.
 Target at least ~25% of the neck band (jaw Y 457 to shoulder Y 569) visible.
 Measure with `scripts/open_collar.py`'s `neck_visibility()`.
 
+## Sleeveless, and drawn to the body's width
+
+Every outfit in this collection is sleeveless. Bare arms from the armhole down,
+on all of them, so the set reads as one family and no garment carries a sleeve
+that fails to meet the shoulder or the body.
+
+Do not generate a sleeve and expect it to be cut off afterwards. It cannot be:
+a sleeve and the body of a garment are one painted region with no drawn edge
+between them, so removing the sleeve in the alpha leaves flat interior colour
+along a synthetic edge and the armhole reads as a rectangle punched out of the
+coat. Draw the armhole.
+
+### The armhole
+
+Measured off `outfit_004`, which was drawn sleeveless and is the reference:
+
+- the shoulder strap spans **x548 to x714**, about 87 px either side of the
+  centre line at x627
+- it opens at **y516** and runs down to the armpit at about **y615**
+- above y516 the garment keeps its collar and its shoulder; the body is only a
+  few pixels wider than the armhole up there
+
+### The width the garment has to reach
+
+The base bodies wear a cream tank and shorts so they read as dressed alone.
+Every outfit goes over them, and a garment drawn narrower than the body shows
+the undergarment down the flank and at the hip. Three registered outfits were
+withdrawn for exactly this. Draw the garment out to these columns, which are the
+widest of the four registered bases at each row, so one drawing covers any of
+them:
+
+| Row | Cover from | Cover to |
+|---:|---:|---:|
+| 620 | x541 | x715 |
+| 640 | x540 | x715 |
+| 660 | x532 | x723 |
+| 680 | x533 | x723 |
+| 700 | x526 | x729 |
+| 720 | x518 | x738 |
+| 740 | x512 | x743 |
+| 760 | x508 | x747 |
+| 780 | x505 | x750 |
+
+Below the hip the legs are separate. A garment that covers them has to reach
+x497 to x758 at y840, x501 to x753 at y960, and x498 to x757 at y1110.
+
+Rows 500 to 615 are not in the table because the arms are merged into the
+shoulders there and the outer part of that silhouette is arm, which a sleeveless
+garment is meant to leave bare. What the garment must still cover in that band is
+the tank's shoulder strap, which sits inside the armhole columns.
+
+### Checking it
+
+Composite over the bound base and measure what shows beside the garment with
+`scripts/fit_outfit_torso.py`'s `exposed_body_pixels`, and the undergarment
+specifically with the mask described in `docs/qa/outfit_refit_2026-09-10.md`.
+Then look at it at 4x. Every defect in this collection was found by looking, and
+each gate was written afterwards.
+
 ## Never resample after keying without re-contracting
 
 If a keyed layer is rescaled or refit, run the alpha edge contract **after** the
