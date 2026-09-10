@@ -36,7 +36,9 @@ own. Eight of the ten outfits are drawn narrower than that body, so the
 undergarment shows beside the garment: a strip at the waist and hip, and a
 crescent of bare shoulder where a sleeved garment does not reach the deltoid.
 
-Measure it yourself — do not trust these numbers, regenerate them:
+The numbers below locate the defect. They do not define done — see
+**Definition of done** at the end. Measure it yourself rather than trusting
+them:
 
 ```
 PYTHONPATH=scripts python3 -c "
@@ -181,15 +183,45 @@ Do not mix the routes. If Route A lands, Route B is unnecessary.
 
 ## Definition of done
 
-- Torso and leg shortfall under 300 px per outfit, verified by eye, not by the
-  gate alone.
-- The bare shoulder crescent gone on `outfit_006`, and on `003`, `005`, `007`,
-  `008`, `009`, `010` unless you can show it reads as design.
-- No garment silhouette, trim line, lapel, sash or hem changed shape.
-- `tests/test_outfit_body_fit.py` extended to cover every outfit rather than
-  the two in `FITTED`, with the budget lowered accordingly.
-- QA note at `docs/qa/outfit_refit_<date>.md` with before/after crops.
+No pixel budget. A budget is what let every earlier defect through: the gates
+measured clean while the art was visibly wrong, and a number to hit is a number
+to optimise instead of looking. The bar is the render.
+
+**Done means: on every one of the ten outfits, composited over its bound base
+body, no part of the base body's cream tank or shorts is visible anywhere, and
+no bare skin is visible except where the garment is cut to show it.**
+
+Where the garment is cut to show skin, per outfit, so you are not guessing:
+
+| Outfit | Skin that is meant to show |
+|---|---|
+| `outfit_001_celestial_scholar` | both arms and one shoulder; it is sleeveless under a half-cape |
+| `outfit_002_storm_guardian` | both arms and the left shoulder; sleeveless armour with one pauldron |
+| `outfit_004_lunar_oracle` | both arms and both shoulders; a sleeveless wrap |
+| `outfit_005_sun_temple` | both forearms below a short sleeve |
+| `outfit_003`, `006`, `007`, `008`, `009`, `010` | hands and neck only |
+
+Everything else showing is a defect, including the shoulder crescent on
+`outfit_006`, `007`, `009` and `010`, which are sleeved garments that do not
+reach the deltoid.
+
+Also required:
+
+- No garment silhouette, trim line, lapel, sash, belt end or hem changed shape.
+  Put before beside after for each outfit and check the parts you did not
+  intend to touch.
+- `tests/test_outfit_body_fit.py` extended to every outfit rather than the two
+  in `FITTED`. Set its threshold *after* the art is accepted, at whatever the
+  accepted art measures plus a small margin, and say in the test docstring that
+  the number describes the art rather than defining it. It exists to catch a
+  regression later, not to decide whether you are finished now.
+- QA note at `docs/qa/outfit_refit_<date>.md` with before/after crops and the
+  approaches that failed.
 - Ledger and manifest regenerated and consistent.
+
+If some part cannot be fixed without redrawing more than you were asked to
+change, say so plainly, name the outfit and the region, and leave it. Do not
+ship a garment whose lapel moved in order to close a strip.
 
 ## Conventions
 
