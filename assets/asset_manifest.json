@@ -942,117 +942,6 @@
       "prompt": "prompts/12_auras.md"
     },
     {
-      "id": "global_finish_001",
-      "category": "global_finish",
-      "path": "assets/global_finish/global_finish_001_soft_bloom.png",
-      "status": "production_ready",
-      "sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-158",
-      "qa_composite": "docs/qa/composites/global_finish_001_over_base.png",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_global_finish.py",
-        "trait": "full-canvas directional light grade restating the locked lighting",
-        "tint_rgb": [
-          255,
-          246,
-          226
-        ],
-        "peak_alpha": 40,
-        "alpha_ceiling": 64,
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "gate_mode": "--global-finish",
-        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-07-29",
-      "qa_report": "docs/global-finish-definition.md",
-      "prompt": null
-    },
-    {
-      "id": "global_finish_002",
-      "category": "global_finish",
-      "path": "assets/global_finish/global_finish_002_gilded_warm.png",
-      "status": "production_ready",
-      "sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-159",
-      "qa_composite": "docs/qa/composites/global_finish_002_over_base.png",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_global_finish.py",
-        "trait": "full-canvas directional light grade restating the locked lighting",
-        "tint_rgb": [
-          255,
-          214,
-          138
-        ],
-        "peak_alpha": 56,
-        "alpha_ceiling": 64,
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "gate_mode": "--global-finish",
-        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-07-29",
-      "qa_report": "docs/global-finish-definition.md",
-      "prompt": null
-    },
-    {
-      "id": "global_finish_003",
-      "category": "global_finish",
-      "path": "assets/global_finish/global_finish_003_cool_veil.png",
-      "status": "production_ready",
-      "sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-160",
-      "qa_composite": "docs/qa/composites/global_finish_003_over_base.png",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_global_finish.py",
-        "trait": "full-canvas directional light grade restating the locked lighting",
-        "tint_rgb": [
-          176,
-          214,
-          255
-        ],
-        "peak_alpha": 48,
-        "alpha_ceiling": 64,
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "gate_mode": "--global-finish",
-        "note": "Adds no object: a constant hue varying only in alpha. Peak alpha is capped so the layer can never obscure the art beneath it.",
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-07-29",
-      "qa_report": "docs/global-finish-definition.md",
-      "prompt": null
-    },
-    {
       "id": "hair_front_003",
       "category": "hair_front",
       "path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
@@ -2948,555 +2837,6 @@
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
     },
     {
-      "id": "aura_front_002",
-      "category": "front_auras",
-      "path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
-      "status": "production_ready",
-      "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-146",
-      "qa_composite": "docs/qa/composites/aura_front_002_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold vertical foreground light pillars",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145–DG-146."
-    },
-    {
-      "id": "head_accessory_001",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_001_gold_pointed_crown.png",
-      "status": "production_ready",
-      "sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-123",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold pointed crown",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          432,
-          129,
-          821,
-          318
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_001_gold_pointed_crown_regen1.png",
-        "source_sha256": "b8d06f1e872d708c42c923cddaf470e370bd004b1fc8460ed8b98579a95b0723",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            203,
-            401,
-            1713,
-            1445
-          ],
-          "crop_dimensions": [
-            1511,
-            1045
-          ],
-          "scale": 0.25810721,
-          "vertical_scale": 0.18181818,
-          "anisotropic": true,
-          "target_dimensions": [
-            390,
-            190
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              432,
-              129,
-              821,
-              318
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "circlet_brow_clearance_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "crown seated on the skull dome, band clear of the eyes",
-          "target_width": 390,
-          "top_y": 129,
-          "target_height": 190,
-          "front_arc_only": false
-        },
-        "pre_brow_clearance_sha256": "d2e89ae22edafc36c270d67b2c535f7eead9e04b94a941d68d250288131176ed",
-        "post_brow_clearance_sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_001_over_base.png"
-    },
-    {
-      "id": "head_accessory_002",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_002_large_gold_halo.png",
-      "status": "production_ready",
-      "sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-124",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Large gold halo ring",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          427,
-          129,
-          826,
-          243
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_002_large_gold_halo_regen2.png",
-        "source_sha256": "803add35bb7c6e302c51a0a0ff54c75948be605c077d705d769904536343e13e",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            384,
-            372,
-            1531,
-            1533
-          ],
-          "crop_dimensions": [
-            1148,
-            1162
-          ],
-          "scale": 0.34843206,
-          "vertical_scale": 0.0989673,
-          "anisotropic": true,
-          "target_dimensions": [
-            400,
-            115
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              427,
-              129,
-              826,
-              243
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "foreshortened ring hovering above the crown",
-          "target_width": 400,
-          "top_y": 129,
-          "target_height": 115
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_002_over_base.png"
-    },
-    {
-      "id": "head_accessory_003",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_003_green_laurel.png",
-      "status": "production_ready",
-      "sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-125",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Green laurel wreath",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          507,
-          129,
-          746,
-          332
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
-        "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            239,
-            339,
-            1677,
-            1562
-          ],
-          "crop_dimensions": [
-            1439,
-            1224
-          ],
-          "scale": 0.16678249,
-          "vertical_scale": 0.16678249,
-          "anisotropic": false,
-          "target_dimensions": [
-            240,
-            204
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              507,
-              129,
-              746,
-              332
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "crossed stems at the hairline, branches arcing over the crown",
-          "target_width": 240,
-          "top_y": 129,
-          "target_height": null,
-          "front_arc_only": false
-        },
-        "pre_seat_revision_sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
-        "post_seat_revision_sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_003_over_base.png"
-    },
-    {
-      "id": "head_accessory_004",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_004_black_curved_horns.png",
-      "status": "production_ready",
-      "sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-126",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Balanced black curved horn set",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          527,
-          129,
-          726,
-          308
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_004_black_curved_horns_regen1.png",
-        "source_sha256": "f36e02765398e888814cfb73dbd656f637b6b9d7b030f28a7e269173d7b120b3",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            314,
-            380,
-            1600,
-            1540
-          ],
-          "crop_dimensions": [
-            1287,
-            1161
-          ],
-          "scale": 0.15540016,
-          "vertical_scale": 0.15540016,
-          "anisotropic": false,
-          "target_dimensions": [
-            200,
-            180
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              527,
-              129,
-              726,
-              308
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "horn bases on the skull dome at the brow line, fully clear of the eyes",
-          "target_width": 200,
-          "top_y": 129,
-          "target_height": null
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_004_over_base.png"
-    },
-    {
-      "id": "head_accessory_008",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
-      "status": "production_ready",
-      "sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-130",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Translucent white veil",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          397,
-          180,
-          856,
-          545
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_008_translucent_white_veil_source3.png",
-        "source_sha256": "3a00f90deac0b4842ec6b7737291e7dd244b0ce886bd3490594d8d0de0569b22",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            348,
-            435,
-            1570,
-            1408
-          ],
-          "crop_dimensions": [
-            1223,
-            974
-          ],
-          "scale": 0.37612428,
-          "vertical_scale": 0.37612428,
-          "anisotropic": false,
-          "target_dimensions": [
-            460,
-            366
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 180,
-            "bounds": [
-              397,
-              180,
-              856,
-              545
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_b_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "arch resting on the crown with the drapes framing the face",
-          "target_width": 460,
-          "top_y": 180,
-          "target_height": null,
-          "front_arc_only": false
-        },
-        "pre_seat_revision_b_sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
-        "post_seat_revision_b_sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_008_over_base.png"
-    },
-    {
-      "id": "head_accessory_009",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
-      "status": "production_ready",
-      "sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-131",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Pale-blue spiked crown/tiara",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          432,
-          129,
-          821,
-          285
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_009_pale_blue_spiked_tiara_source3.png",
-        "source_sha256": "2866dcb1e8003a1010ff7aa17de8928acdaa0b3c1782c66db041692c572e268e",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            190,
-            602,
-            1722,
-            1220
-          ],
-          "crop_dimensions": [
-            1533,
-            619
-          ],
-          "scale": 0.25440313,
-          "vertical_scale": 0.25440313,
-          "anisotropic": false,
-          "target_dimensions": [
-            390,
-            157
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              432,
-              129,
-              821,
-              285
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band on the skull dome, points well clear of the brow",
-          "target_width": 390,
-          "top_y": 129,
-          "target_height": null
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_009_over_base.png"
-    },
-    {
       "id": "hand_object_001",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
@@ -4702,41 +4042,6 @@
       "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
     },
     {
-      "id": "eyebrows_003",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_003_lowered.png",
-      "status": "production_ready",
-      "sha256": "a8b2a10a5b1e55c405d53b710d255b04c95e7db74973c08cd9fef10712e21161",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-081",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Lowered brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          336
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
       "id": "eyebrows_004",
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_004_angry.png",
@@ -4762,41 +4067,6 @@
         "output_bounds": [
           499,
           298,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_005",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_005_furious.png",
-      "status": "production_ready",
-      "sha256": "14919e62f6c61b245dba15f6837ec909b994a30c7e30edcd1ffff97836799b66",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-083",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Furious brow pair, driven down and in",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          297,
           758,
           334
         ],
@@ -4842,76 +4112,6 @@
       "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
     },
     {
-      "id": "eyebrows_007",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_007_pleading.png",
-      "status": "production_ready",
-      "sha256": "1afccb15a2762daccc993f21727c568a5930b8317132c12a1bcfca89b3d208f5",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-085",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Pleading brow pair, inner ends high",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          337
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_008",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_008_arched.png",
-      "status": "production_ready",
-      "sha256": "fc0d3cf72be1fb409d89444a73cfd3f906fd4d4ab078f2ef6d9adfbcb3e625b2",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-086",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Arched brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          295,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
       "id": "eyebrows_009",
       "category": "eyebrows",
       "path": "assets/eyebrows/eyebrows_009_flat.png",
@@ -4928,216 +4128,6 @@
         "origin": "approved_master_face_derivation",
         "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
         "trait": "Flat brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_010",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_010_thin.png",
-      "status": "production_ready",
-      "sha256": "3cc385c31c612b97e060b61271a0cfdad1f1ed2b611d9774c6fb34a6aaf12945",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-088",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Thin brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_011",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_011_thick.png",
-      "status": "production_ready",
-      "sha256": "39018ac1109edace21325571fe9d4489c0fdf6617a3953fc1b8608ce6d90a8c0",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-089",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Thick brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          297,
-          758,
-          338
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_012",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_012_bold_raised.png",
-      "status": "production_ready",
-      "sha256": "c3452e3904d28847a9cbba203e0564081805ccafe785d19e0a640d6e210b4a18",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-090",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Bold raised brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          290,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_013",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_013_fine_arched.png",
-      "status": "production_ready",
-      "sha256": "7913fd25b87f0e79b104cfa25397d977eb143886d433c5e61dbad22a313d47cb",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-091",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Fine arched brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_014",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_014_wide_set.png",
-      "status": "production_ready",
-      "sha256": "ea0d89cebe315362bd803d6ee5f828216737cc553a1fd55e1bdebe216d674a6b",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-092",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Wide-set brow pair",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_face_traits.py",
-        "separation_script": "scripts/extract_face_features.py",
-        "output_bounds": [
-          499,
-          298,
-          758,
-          334
-        ],
-        "family_method": "The master's brow pair, remapped per column: how high it sits, how far the inner end lifts or falls, how much of the painted arch is kept and how heavy the line is. The transform runs on the brow's difference from the skin behind it, not on its separated alpha and colour, which is what keeps a moved brow from carrying a halo. A feathered skin patch beneath the art covers the baked brows across every registered base.",
-        "naming_note": "The backlog cites cells of a FACE reference sheet for this family. That sheet is present only as images/reference_sheets/anime_character_creation_asset_sheet.webp at 128x96 px - a browsing preview, per its own index - so a 1254 px facial trait cannot be reconstructed from it. The family is built from the approved base master's own painted face instead, and the sheet-cell reference is dropped from the filenames rather than claiming a source the asset does not have."
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "eyebrows_015",
-      "category": "eyebrows",
-      "path": "assets/eyebrows/eyebrows_015_close_set.png",
-      "status": "production_ready",
-      "sha256": "f2740b068b7d8c66617de5a223009e022f32f75220261347cf65b0e94fda7f96",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-093",
-      "provenance": {
-        "origin": "approved_master_face_derivation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Close-set brow pair",
         "native_dimensions": [
           1254,
           1254
@@ -5890,49 +4880,6 @@
       },
       "approved_on": "2026-09-09",
       "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
-    },
-    {
-      "id": "aura_front_001",
-      "category": "front_auras",
-      "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
-      "status": "production_ready",
-      "sha256": "9e9fddc388182a585cf59ba6888d8e97b5842948582ce920d39cc37e1affdf89",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-145",
-      "provenance": {
-        "origin": "procedural_effect_render",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Orange rising foreground flame",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_front_aura_flame.py",
-        "output_bounds": [
-          250,
-          637,
-          1013,
-          1138
-        ],
-        "replaces": "the flat-shaded aura_front_001 placeholder deregistered on 2026-09-09",
-        "method": "Four octaves of fractal value noise, advected upward and used both to modulate six tongue envelopes and to carve them into separate licks by a threshold that rises with height. Intensity is compressed rather than clipped, so no lick's core lands on a single flat value, and colour is compressed on a longer scale than opacity so the body reads orange and only the hottest cores reach pale gold. Nothing is drawn above Y 582, below the shoulder line, so the flame never crosses the face.",
-        "flatness_measurements": {
-          "note": "Calibrated against the two front auras the collection already had. The accepted aura_front_002 measures 83 alpha levels, a 0.067 top-value share and a 0.219 flat-neighbourhood share; the rejected placeholder measures 28, 0.334 and 0.883.",
-          "opaque_pixels": 0,
-          "alpha_levels": 143,
-          "top_value_share": 0.0078,
-          "flat_neighbourhood_share": 0.085,
-          "peak_alpha": 151,
-          "visible_pixels": 152340
-        }
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/front_aura_001_rebuilt_2026-09-09.md"
     },
     {
       "id": "outfit_006_pose_001",
@@ -7488,7 +6435,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead; the wings read as filigree at token size. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count."
     },
     {
       "id": "head_accessory_006",
@@ -7500,7 +6448,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead, the most ornate of four alike. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count."
     },
     {
       "id": "head_accessory_007",
@@ -7512,7 +6461,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead with a drop. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count."
     },
     {
       "id": "head_accessory_010",
@@ -7524,7 +6474,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: gold band across the forehead. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count."
     },
     {
       "id": "aura_rear_001",
@@ -7705,11 +6656,283 @@
       "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_009_navy_high_collar_coat_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
       "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
       "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_003",
+      "backlog_id": "DG-081",
+      "intended_path": "assets/eyebrows/eyebrows_003_lowered.png",
+      "status": "withdrawn",
+      "sha256": "a8b2a10a5b1e55c405d53b710d255b04c95e7db74973c08cd9fef10712e21161",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_003_lowered.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_005",
+      "backlog_id": "DG-083",
+      "intended_path": "assets/eyebrows/eyebrows_005_furious.png",
+      "status": "withdrawn",
+      "sha256": "14919e62f6c61b245dba15f6837ec909b994a30c7e30edcd1ffff97836799b66",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_005_furious.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_007",
+      "backlog_id": "DG-085",
+      "intended_path": "assets/eyebrows/eyebrows_007_pleading.png",
+      "status": "withdrawn",
+      "sha256": "1afccb15a2762daccc993f21727c568a5930b8317132c12a1bcfca89b3d208f5",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_007_pleading.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_008",
+      "backlog_id": "DG-086",
+      "intended_path": "assets/eyebrows/eyebrows_008_arched.png",
+      "status": "withdrawn",
+      "sha256": "fc0d3cf72be1fb409d89444a73cfd3f906fd4d4ab078f2ef6d9adfbcb3e625b2",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_008_arched.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_010",
+      "backlog_id": "DG-088",
+      "intended_path": "assets/eyebrows/eyebrows_010_thin.png",
+      "status": "withdrawn",
+      "sha256": "3cc385c31c612b97e060b61271a0cfdad1f1ed2b611d9774c6fb34a6aaf12945",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_010_thin.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_011",
+      "backlog_id": "DG-089",
+      "intended_path": "assets/eyebrows/eyebrows_011_thick.png",
+      "status": "withdrawn",
+      "sha256": "39018ac1109edace21325571fe9d4489c0fdf6617a3953fc1b8608ce6d90a8c0",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_011_thick.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_012",
+      "backlog_id": "DG-090",
+      "intended_path": "assets/eyebrows/eyebrows_012_bold_raised.png",
+      "status": "withdrawn",
+      "sha256": "c3452e3904d28847a9cbba203e0564081805ccafe785d19e0a640d6e210b4a18",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_012_bold_raised.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_013",
+      "backlog_id": "DG-091",
+      "intended_path": "assets/eyebrows/eyebrows_013_fine_arched.png",
+      "status": "withdrawn",
+      "sha256": "7913fd25b87f0e79b104cfa25397d977eb143886d433c5e61dbad22a313d47cb",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_013_fine_arched.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_014",
+      "backlog_id": "DG-092",
+      "intended_path": "assets/eyebrows/eyebrows_014_wide_set.png",
+      "status": "withdrawn",
+      "sha256": "ea0d89cebe315362bd803d6ee5f828216737cc553a1fd55e1bdebe216d674a6b",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_014_wide_set.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "eyebrows_015",
+      "backlog_id": "DG-093",
+      "intended_path": "assets/eyebrows/eyebrows_015_close_set.png",
+      "status": "withdrawn",
+      "sha256": "f2740b068b7d8c66617de5a223009e022f32f75220261347cf65b0e94fda7f96",
+      "retained_at": "incoming/trait_reduction_2026-09-25/eyebrows/eyebrows_015_close_set.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical). Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "Withdrawn when the owner cut the eyebrows from sixteen to six on 2026-09-25. On average 74% of a brow's line sits under the front hair, and this one is a near-copy of a brow kept (neutral, raised, angry, worried, flat or quizzical).",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "aura_front_001",
+      "backlog_id": "DG-145",
+      "intended_path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+      "status": "withdrawn",
+      "sha256": "9e9fddc388182a585cf59ba6888d8e97b5842948582ce920d39cc37e1affdf89",
+      "retained_at": "incoming/trait_reduction_2026-09-25/front_auras/aura_front_001_orange_rising_flame.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed front auras on 2026-09-25. They were mandatory, so every token wore flames or light pillars across the legs. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed front auras on 2026-09-25. They were mandatory, so every token wore flames or light pillars across the legs.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "aura_front_002",
+      "backlog_id": "DG-146",
+      "intended_path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
+      "status": "withdrawn",
+      "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
+      "retained_at": "incoming/trait_reduction_2026-09-25/front_auras/aura_front_002_gold_light_pillars.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed front auras on 2026-09-25. They were mandatory, so every token wore flames or light pillars across the legs. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed front auras on 2026-09-25. They were mandatory, so every token wore flames or light pillars across the legs.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "global_finish_001",
+      "backlog_id": "DG-158",
+      "intended_path": "assets/global_finish/global_finish_001_soft_bloom.png",
+      "status": "withdrawn",
+      "sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
+      "retained_at": "incoming/trait_reduction_2026-09-25/global_finish/global_finish_001_soft_bloom.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "global_finish_002",
+      "backlog_id": "DG-159",
+      "intended_path": "assets/global_finish/global_finish_002_gilded_warm.png",
+      "status": "withdrawn",
+      "sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
+      "retained_at": "incoming/trait_reduction_2026-09-25/global_finish/global_finish_002_gilded_warm.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "global_finish_003",
+      "backlog_id": "DG-160",
+      "intended_path": "assets/global_finish/global_finish_003_cool_veil.png",
+      "status": "withdrawn",
+      "sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
+      "retained_at": "incoming/trait_reduction_2026-09-25/global_finish/global_finish_003_cool_veil.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed the global finish on 2026-09-25: a whole-image colour wash listed as a trait.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_001",
+      "backlog_id": "DG-123",
+      "intended_path": "assets/head_accessories/head_accessory_001_gold_pointed_crown.png",
+      "status": "withdrawn",
+      "sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_001_gold_pointed_crown.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_002",
+      "backlog_id": "DG-124",
+      "intended_path": "assets/head_accessories/head_accessory_002_large_gold_halo.png",
+      "status": "withdrawn",
+      "sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_002_large_gold_halo.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_003",
+      "backlog_id": "DG-125",
+      "intended_path": "assets/head_accessories/head_accessory_003_green_laurel.png",
+      "status": "withdrawn",
+      "sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_003_green_laurel.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_004",
+      "backlog_id": "DG-126",
+      "intended_path": "assets/head_accessories/head_accessory_004_black_curved_horns.png",
+      "status": "withdrawn",
+      "sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_004_black_curved_horns.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_008",
+      "backlog_id": "DG-130",
+      "intended_path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
+      "status": "withdrawn",
+      "sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_008_translucent_white_veil.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
+    },
+    {
+      "id": "head_accessory_009",
+      "backlog_id": "DG-131",
+      "intended_path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+      "status": "withdrawn",
+      "sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
+      "retained_at": "incoming/trait_reduction_2026-09-25/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count. Nothing is wrong with this asset.",
+      "requirement": "Return only by the owner's decision, restored from the retained bytes and re-registered.",
+      "owner_decision": "The owner removed head accessories from the collection on 2026-09-25 to reduce the trait count.",
+      "qa_report": "docs/qa/trait_reduction_2026-09-25.md"
     }
   ],
   "queued_base_poses": [],
   "pending_categories": [
-    "head_accessories",
     "rear_auras",
     "back_accessories"
   ],

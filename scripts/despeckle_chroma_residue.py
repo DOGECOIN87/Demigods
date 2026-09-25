@@ -71,10 +71,9 @@ SPILL_REACH = 10
 VISIBLE = 60
 
 # Assets whose green is the art. Each was rendered against a dark ground and
-# looked at; the note is what was seen.
+# looked at; the note is what was seen. (The green laurel was listed here until
+# the head accessories were withdrawn on 2026-09-25.)
 GREEN_BY_DESIGN = {
-    "assets/head_accessories/head_accessory_003_green_laurel.png":
-        "a laurel wreath - the green fills the leaves",
     "assets/eyes/eyes_012_emerald.png":
         "the emerald iris of this collection's own eye palette",
     "assets/legendary/legendary_007_verdant_archivist.png":
