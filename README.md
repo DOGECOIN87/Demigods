@@ -6,7 +6,7 @@ Production specifications, category prompts, reference images, validation tools,
 
 **Phase 2 uses a locked 1254 × 1254 canvas. Every category the generator draws from is populated and passes preflight; the collection is ready to generate. There is no active blocker.**
 
-As of 2026-09-25: 132 registered assets, including 20 dressed-body outfits - four families in all five poses, painted with the body intact - which bind their base pose and hide it in the render (`docs/workflows/dressed_body_intake.md`). Neckwear, head accessories, front auras and the global finish are omitted, and the eyebrows cut to six, by the owner's decision (`docs/qa/trait_reduction_2026-09-25.md`). Outfits 001–005 and 010 remain single-pose garment layers until dressed renders replace them (`prompts/dressed_body_pose_pack_2026-09-25.md`).
+As of 2026-09-25: 129 registered assets, including 20 dressed-body outfits - four families in all five poses, painted with the body intact - which bind their base pose and hide it in the render (`docs/workflows/dressed_body_intake.md`). Neckwear, head accessories, front auras and the global finish are omitted, and the eyebrows cut to six, by the owner's decision (`docs/qa/trait_reduction_2026-09-25.md`). Outfits 001–005 and 010 remain single-pose garment layers until dressed renders replace them (`prompts/dressed_body_pose_pack_2026-09-25.md`).
 
 - Live ledger: `docs/production_status.md` (the status table is generated — see below)
 - Ordered asset backlog: `docs/trait-production-backlog.md`

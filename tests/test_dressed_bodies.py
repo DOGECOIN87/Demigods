@@ -36,8 +36,18 @@ class DressedBodyTests(unittest.TestCase):
         with Image.open(ROOT / "assets" / "outfits" / name) as image:
             return np.asarray(image.convert("RGBA"))
 
-    def test_the_collection_has_dressed_bodies(self) -> None:
-        self.assertGreaterEqual(len(self.dressed), 20)
+    def test_registered_dressed_bodies_are_the_approved_renders(self) -> None:
+        """What is registered is exactly what the review approved, no more, no less.
+
+        A render withdrawn after registration keeps its source and its review
+        record, marked withdrawn, so intake cannot register it again.
+        """
+        sources = json.loads((ROOT / "images" / "trait_candidates" / "outfits_dressed"
+                              / "sources.json").read_text())
+        approved = {r["target"] for r in sources["renders"]
+                    if r.get("review", {}).get("decision") == "approved"}
+        self.assertTrue(approved, "no approved dressed-body renders on record")
+        self.assertEqual(set(self.dressed), approved)
 
     def test_each_is_bound_to_exactly_one_base_pose(self) -> None:
         for name in self.dressed:

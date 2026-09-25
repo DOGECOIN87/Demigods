@@ -22,11 +22,6 @@
       "reason": "Armholes are fitted to the viewer-left palm-up pose."
     },
     {
-      "trait": "outfit_005_sun_temple_pose_005.png",
-      "requires": "base_pose_005_centered_two_hand_grip.png",
-      "reason": "The torso opening is fitted around the centered two-hand grip."
-    },
-    {
       "trait": "hair_front_003_silver_straight_bangs.png",
       "requires": "hair_back_003_silver_long_wavy.png",
       "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
@@ -65,11 +60,6 @@
       "trait": "hair_front_008_red_short_bangs.png",
       "requires": "hair_back_008_red_long_wavy.png",
       "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
-    },
-    {
-      "trait": "outfit_010_celestial_robe_white_gold.png",
-      "requires": "base_body_001_neutral_master.png",
-      "reason": "The ceremonial robe armholes are fitted to Pose 001."
     },
     {
       "trait": "hand_object_006_gold_lantern_pose_002_left.png",
@@ -145,11 +135,6 @@
       "trait": "outfit_006_black_layered_hooded_robe_pose_003.png",
       "requires": "base_pose_003_viewer_right_vertical_grip.png",
       "reason": "Painted with the body intact in Pose 003 (viewer-right vertical grip); the base binds the pose and the hand objects."
-    },
-    {
-      "trait": "outfit_006_black_layered_hooded_robe_pose_004.png",
-      "requires": "base_pose_004_viewer_left_palm_up.png",
-      "reason": "Painted with the body intact in Pose 004 (viewer-left palm up); the base binds the pose and the hand objects."
     },
     {
       "trait": "outfit_006_black_layered_hooded_robe_pose_005.png",
@@ -267,11 +252,6 @@
     },
     {
       "trait": "outfit_006_black_layered_hooded_robe_pose_003.png",
-      "hides": "base_bodies",
-      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
-    },
-    {
-      "trait": "outfit_006_black_layered_hooded_robe_pose_004.png",
       "hides": "base_bodies",
       "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
     },
