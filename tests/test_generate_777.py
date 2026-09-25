@@ -158,6 +158,53 @@ class Generate777Tests(unittest.TestCase):
         metadata = json.loads((output / "metadata" / "0001.json").read_text())
         self.assertIn("base_bodies", [a["trait_type"] for a in metadata["attributes"]])
 
+    def test_a_pose_bound_trait_does_not_skew_the_pose(self) -> None:
+        """Hand objects fit one pose; that pose must not be drawn more often for it.
+
+        Drawing every category independently and discarding broken combinations
+        kept a pose-A draw whenever it had an object and a pose-B draw only when it
+        had none, so pose A took about 71% of tokens and objects fell well under
+        their configured rate. Drawn in layer order, the pose comes first and evenly.
+        """
+        assets = {
+            "base_bodies": [Path("base_body_001_a.png"), Path("base_pose_002_b.png")],
+            "hand_objects": [Path("hand_object_001_staff.png"), Path("hand_object_002_sword.png")],
+        }
+        rules = {"requires": [
+            {"trait": "hand_object_001_staff.png", "requires": "base_body_001_a.png"},
+            {"trait": "hand_object_002_sword.png", "requires": "base_body_001_a.png"},
+        ]}
+        rng = __import__("random").Random(7)
+        draws = [generate_777.choose_selection(rng, assets, {"hand_objects": 0.6}, rules)
+                 for _ in range(4000)]
+        self.assertFalse(any(generate_777.violates_rules(s, rules) for s in draws))
+        on_a = [s for s in draws if s["base_bodies"].name == "base_body_001_a.png"]
+        self.assertAlmostEqual(len(on_a) / len(draws), 0.5, delta=0.04)
+        with_object = sum("hand_objects" in s for s in on_a)
+        self.assertAlmostEqual(with_object / len(on_a), 0.6, delta=0.04)
+
+    def test_requirements_and_exclusions_are_met_as_they_are_drawn(self) -> None:
+        assets = {
+            "hair_back": [Path("hair_back_001_gold.png"), Path("hair_back_002_black.png")],
+            "outfits": [Path("outfit_001_robe.png"), Path("outfit_002_coat.png")],
+            "hair_front": [Path("hair_front_001_gold.png"), Path("hair_front_002_black.png")],
+            "hand_objects": [Path("hand_object_001_staff.png")],
+        }
+        rules = {
+            "requires": [
+                {"trait": "hair_front_001_gold.png", "requires": "hair_back_001_gold.png"},
+                {"trait": "hair_front_002_black.png", "requires": "hair_back_002_black.png"},
+            ],
+            "excludes": [{"trait": "outfit_002_coat.png", "excludes": ["hand_object_001_staff.png"]}],
+        }
+        rng = __import__("random").Random(3)
+        for _ in range(500):
+            selection = generate_777.choose_selection(rng, assets, {"hand_objects": 0.9}, rules)
+            self.assertIsNotNone(selection)
+            self.assertFalse(generate_777.violates_rules(selection, rules), selection)
+            self.assertEqual(selection["hair_front"].name.split("_")[3],
+                             selection["hair_back"].name.split("_")[3])
+
     def test_optional_category_is_sometimes_absent(self) -> None:
         root = self.make_root()
         assets = self.build_assets(root)

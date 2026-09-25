@@ -312,26 +312,89 @@ def violates_rules(selection: dict[str, Path], rules: dict[str, Any]) -> bool:
     return False
 
 
+def _names(value: Any) -> set[str]:
+    return {value} if isinstance(value, str) else set(value or [])
+
+
 def choose_selection(
     rng: random.Random,
     assets: dict[str, list[Path]],
     optional: dict[str, float] | None = None,
-) -> dict[str, Path]:
-    """Pick one asset per non-empty category; skip optional categories by probability.
+    rules: dict[str, Any] | None = None,
+) -> dict[str, Path] | None:
+    """Pick one asset per non-empty category, each from what the traits already
+    chosen allow; skip optional categories by probability.
 
-    The rng.random() gate is drawn for every optional category in layer order,
-    before the rng.choice, so the sequence stays deterministic for a fixed seed.
+    Categories are decided in layer order, and each draws only from the files
+    compatible with the traits chosen before it: its requirements on decided
+    categories are met, nothing chosen excludes it, and a chosen trait that
+    requires something in this category gets exactly that. Every current rule
+    points back up the order - an outfit to its base pose, a hand object to its
+    pose, front hair to its rear hair - so every draw is valid as it is made.
+
+    Drawing everything independently and discarding what broke a rule skewed the
+    collection. Hand objects fit only Poses 002 and 004, so a draw with an object
+    survived only on those poses: across 770 tokens Pose 002 took 28% and Poses
+    001, 003 and 005 14-19%, and 19% of tokens held an object although the
+    configured rate is 60%. Here a pose is chosen first and evenly, and the
+    optional rate applies to the tokens whose pose and outfit can take an object.
+
+    The rng.random() gate is drawn for every optional category in layer order that
+    no chosen trait demands, before the rng.choice, so the sequence stays
+    deterministic for a fixed seed.
+    Returns None when a mandatory category has no compatible file, which the
+    caller counts as a failed attempt; the final rule check stays as a backstop
+    for a rule that points down the order.
     """
     optional = optional or {}
+    rules = rules or {}
+    category_of = {path.name: category for category, files in assets.items() for path in files}
+    requires: dict[str, set[str]] = {}
+    for rule in rules.get("requires", []):
+        if isinstance(rule, dict) and isinstance(rule.get("trait"), str):
+            requires.setdefault(rule["trait"], set()).update(_names(rule.get("requires")))
+    excludes: dict[str, set[str]] = {}
+    for rule in rules.get("excludes", []):
+        if isinstance(rule, dict) and isinstance(rule.get("trait"), str):
+            for other in _names(rule.get("excludes")):
+                excludes.setdefault(rule["trait"], set()).add(other)
+                excludes.setdefault(other, set()).add(rule["trait"])
+
     selection: dict[str, Path] = {}
+    chosen: set[str] = set()
+    decided: set[str] = set()
+
+    def allowed(name: str) -> bool:
+        for needed in requires.get(name, ()):
+            if needed not in category_of:
+                return False
+            if category_of[needed] in decided and needed not in chosen:
+                return False
+        return not (excludes.get(name, set()) & chosen)
+
     for category in LAYER_ORDER:
         files = assets.get(category)
         if not files:
             continue
+        demanded = {
+            needed for name in chosen for needed in requires.get(name, ())
+            if category_of.get(needed) == category
+        }
+        candidates = [
+            path for path in files
+            if allowed(path.name) and (not demanded or path.name in demanded)
+        ]
         probability = optional.get(category)
-        if probability is not None and rng.random() >= probability:
+        present = demanded or probability is None or rng.random() < probability
+        decided.add(category)
+        if not present:
             continue
-        selection[category] = rng.choice(files)
+        if not candidates:
+            if demanded or probability is None:
+                return None
+            continue
+        selection[category] = rng.choice(candidates)
+        chosen.add(selection[category].name)
     return selection
 
 
@@ -352,8 +415,8 @@ def generate_tokens(
 
     while len(tokens) < supply and attempts < max_attempts:
         attempts += 1
-        selection = choose_selection(rng, assets, optional)
-        if violates_rules(selection, rules):
+        selection = choose_selection(rng, assets, optional, rules)
+        if selection is None or violates_rules(selection, rules):
             continue
 
         raw = raw_signature(selection)
