@@ -339,7 +339,8 @@ def clear_finished_categories(manifest: dict, backlog_text: str) -> list[str]:
     finished = []
     for category in list(manifest.get("pending_categories", [])):
         category_rows = [r for r in rows if manifest_category(r["path"]) == category]
-        if category_rows and all(r["status"] == "registered" for r in category_rows):
+        # A withdrawn row is closed by recorded decision, not waiting on art.
+        if category_rows and all(r["status"] in ("registered", "withdrawn") for r in category_rows):
             manifest["pending_categories"].remove(category)
             finished.append(category)
     return finished

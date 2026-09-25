@@ -1,5 +1,11 @@
 # Handoff: refit the eight remaining outfits to the base body
 
+> **Status 2026-09-25.** The owner took Route A further than this brief: outfits are now
+> painted *with the body intact*, so there is no garment edge to fit. Outfits 006-009 are
+> replaced by dressed bodies in all five poses (`docs/qa/dressed_bodies_2026-09-25.md`) and
+> their single-pose layers are retired. The defects below still describe outfits 001, 004,
+> 005 and 010 until their dressed renders arrive (`prompts/dressed_body_pose_pack_2026-09-25.md`).
+
 ## Paste this to open the next session
 
 > Work on `DOGECOIN87/Demigods`, branch `claude/collection-assets-alignment-fdxdzw`,

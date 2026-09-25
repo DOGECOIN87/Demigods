@@ -78,6 +78,49 @@ class ProductionStatusTests(unittest.TestCase):
         self.assertEqual(by_category["hair_back"].remaining, 1)
         self.assertEqual(by_category["hair_back"].state, "not started")
 
+    def test_withdrawn_rows_close_a_category_without_registration(self) -> None:
+        """A category the owner dropped is out of scope, not unfinished work."""
+        rows = (
+            self.backlog_row("DG-001", "assets/base_bodies/base_body_001_neutral.png", "registered")
+            + self.backlog_row("DG-002", "assets/hair_back/hair_back_001_gold.png", "withdrawn")
+            + self.backlog_row("DG-003", "assets/hair_back/hair_back_002_black.png", "withdrawn")
+        )
+        manifest = self.manifest(
+            registered=[("base_bodies", "assets/base_bodies/base_body_001_neutral.png")],
+            pending=[],
+        )
+        status = self.build(manifest, rows)
+        self.assertTrue(status.passed, status.errors)
+        by_category = {item.category: item for item in status.categories}
+        self.assertEqual(by_category["hair_back"].state, "withdrawn")
+        self.assertEqual(by_category["hair_back"].remaining, 0)
+        self.assertEqual(status.backlog_total, 1)
+        self.assertEqual(status.withdrawn_total, 2)
+        self.assertEqual(status.pending_categories, [])
+
+    def test_withdrawn_row_does_not_count_against_a_live_category(self) -> None:
+        """A superseded asset leaves its category complete once the rest is registered."""
+        rows = (
+            self.backlog_row("DG-001", "assets/base_bodies/base_body_001_neutral.png", "registered")
+            + self.backlog_row("DG-002", "assets/base_bodies/base_body_002_old.png", "withdrawn")
+        )
+        manifest = self.manifest(
+            registered=[("base_bodies", "assets/base_bodies/base_body_001_neutral.png")],
+            pending=["hair_back"],
+        )
+        status = self.build(manifest, rows)
+        by_category = {item.category: item for item in status.categories}
+        self.assertEqual(by_category["base_bodies"].state, "complete")
+        self.assertEqual(by_category["base_bodies"].backlog_total, 1)
+
+    def test_withdrawn_asset_may_not_stay_registered(self) -> None:
+        path = "assets/base_bodies/base_body_001_neutral.png"
+        rows = self.backlog_row("DG-001", path, "withdrawn")
+        manifest = self.manifest(registered=[("base_bodies", path)], pending=["hair_back"])
+        status = self.build(manifest, rows)
+        self.assertFalse(status.passed)
+        self.assertTrue(any("not marked registered" in e for e in status.errors), status.errors)
+
     def test_shared_production_path_counts_once(self) -> None:
         """DG-001 and DG-002 both resolve to the neutral master in the real backlog."""
         shared = "assets/base_bodies/base_body_001_neutral.png"

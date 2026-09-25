@@ -2063,163 +2063,6 @@
       "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
     },
     {
-      "id": "outfit_006",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
-      "status": "production_ready",
-      "sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-042",
-      "qa_composite": "docs/qa/composites/outfit_006_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Black layered hooded long robe",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07"
-        ],
-        "pre_boot_fit_sha256": "82eed99b55f6ffc51129ddba9774768d98d8f3e09fc25355d30c89b6e057ae05",
-        "post_boot_fit_sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2015 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after foot-baseline correction, full-context review on contrasting approved backgrounds, collar assessment, and narrow edge-spill diagnostic."
-    },
-    {
-      "id": "outfit_007",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
-      "status": "production_ready",
-      "sha256": "b4391f3e6f3be75e192da91cf76d42b664fb438148032e5c893aefb4b93cbf43",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-043",
-      "qa_composite": "docs/qa/composites/outfit_007_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Brown leather long coat/robe",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_neckline_inner_garment_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "053428a3a8c279dd9f5cae27c933077b43888fd6418f5e11e62f9f5b9232e113",
-        "post_boot_fit_sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 937 to 10. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "362a01b88fd33377c4cf8f61f04b5c9ff14f34f42cd0f14cfcc84060761c82ba",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "b4391f3e6f3be75e192da91cf76d42b664fb438148032e5c893aefb4b93cbf43",
-        "neckline_note": "4736 px of inner garment painted into the opening: cream linen under a brown leather coat."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
-    },
-    {
-      "id": "outfit_008",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
-      "status": "production_ready",
-      "sha256": "c96f3fa8372250994d552c4a7656abfc6fedea63b039a8155874960e5e6f2836",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-044",
-      "qa_composite": "docs/qa/composites/outfit_008_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Olive-green ragged cloak outfit",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "ee2dd3eebd4a450da5bb6b06f8045726272b53656642d81c308a6b10148aeaa6",
-        "post_boot_fit_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2698 to 8. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "d228fcb60d6de9025278aef57504f901407f6b9120904bb5dca105723a55e87c",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
-        "chroma_despeckle_note": "164 px of surviving chroma key removed. The asset carried 15 saturated key-green pixels, 0.009% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "4982e4326efb09acde1007b94185a27d9a6a00d823dab3c912fb8252f64c2850",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "c96f3fa8372250994d552c4a7656abfc6fedea63b039a8155874960e5e6f2836",
-        "neckline_note": "2282 px of inner garment painted into the opening: olive linen tunic under a ragged cloak."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md"
-    },
-    {
-      "id": "outfit_009",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
-      "status": "production_ready",
-      "sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-045",
-      "qa_composite": "docs/qa/composites/outfit_009_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Deep-navy high-collar long coat",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_neckline_inner_garment_2026-09-10",
-          "sleeve_widening_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "1cc4f4f6882f292d5cbd632b264df8517425d3faf8a1b3093a7ca7abf07448b8",
-        "post_boot_fit_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 3332 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a89440ed602704bd3539b500db4f5f671fc7e50e720b05abfe2293d17fbebcb7",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
-        "neckline_note": "2202 px of inner garment painted into the opening: pale grey-blue shirt under a navy coat.",
-        "sleeve_script": "scripts/widen_sleeves.py",
-        "pre_sleeve_widening_2026-09-10_sha256": "a60b68ffd9c57d9ac9a1101a9aa3a1863ff8aea8106e7b3cd576a32d4f838821",
-        "post_sleeve_widening_2026-09-10_sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
-        "sleeve_note": "sleeve edge warped outward over 182 rows; bare arm along the sleeve 5193 px -> 0 px"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
-    },
-    {
       "id": "outfit_010",
       "category": "outfits",
       "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
@@ -6090,6 +5933,1236 @@
       },
       "approved_on": "2026-09-09",
       "qa_report": "docs/qa/front_aura_001_rebuilt_2026-09-09.md"
+    },
+    {
+      "id": "outfit_006_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png",
+      "status": "production_ready",
+      "sha256": "ba17296f778fc2190b12717bfd8c448964754b9802b1078c07ea02fb8edf646d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-162",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_0000000021d8822f8a5b79fae6210041.png",
+        "source_sha256": "b41ba5b196bc02da951a679e07ada80d30c7af28c440b15f9f8b9acd126fd9b3",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGBA",
+        "alpha_recovery": {
+          "method": "relevel_generator_matte",
+          "haze_threshold": 24,
+          "measured_interior_ceiling": 253.0,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 40,
+          "source_chin_row": 380,
+          "source_sole_row": 1184,
+          "source_head_center_x": 627.5,
+          "head_scale": 0.941176,
+          "body_scale": 0.840347,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            401,
+            141,
+            853,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_body_001_neutral_master.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_006_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_002.png",
+      "status": "production_ready",
+      "sha256": "17c4b453e79a051aee237ee94a86ad2605660458fa07df25b6cce77d6e2228bc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-163",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000b5a481f69c05430aa0d7409f.png",
+        "source_sha256": "fe607cd9c1c1faed36cc69839fbd7b5caef83280789ce5f03a67aad9e537aa9a",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGBA",
+        "alpha_recovery": {
+          "method": "relevel_generator_matte",
+          "haze_threshold": 24,
+          "measured_interior_ceiling": 253.0,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 107,
+          "source_chin_row": 426,
+          "source_sole_row": 1184,
+          "source_head_center_x": 627.5,
+          "head_scale": 1.0,
+          "body_scale": 0.892371,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            412,
+            141,
+            849,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds. Hand objects excluded; see excludes_reason."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_006_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_003.png",
+      "status": "production_ready",
+      "sha256": "0fd5821f5c126a4b190fd642d03f42f9daadad3d48be0816cc65c7f498e325fb",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-164",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000007eb0820cbbcc7d350702c9d7.png",
+        "source_sha256": "6de5f11753bfdd41a1328975ca2eae6124bf6c6df7ad2b5539c620345b9e9902",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGBA",
+        "alpha_recovery": {
+          "method": "relevel_generator_matte",
+          "haze_threshold": 24,
+          "measured_interior_ceiling": 253.0,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 461,
+          "source_sole_row": 1177,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.993789,
+          "body_scale": 0.945311,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            413,
+            141,
+            833,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_006_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_004.png",
+      "status": "production_ready",
+      "sha256": "4bf79f1b9e4c944468b245600a30dbb028073280c032c7a0868471e88cee500c",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-165",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_0000000067a081fb8aaeb9a4c68c422b.png",
+        "source_sha256": "15925ab31ef004055b9a0fb1909c009b71e686e92e519cea7ec209b448050229",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGBA",
+        "alpha_recovery": {
+          "method": "relevel_generator_matte",
+          "haze_threshold": 24,
+          "measured_interior_ceiling": 253.0,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 464,
+          "source_sole_row": 1163,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.984615,
+          "body_scale": 0.969459,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            406,
+            141,
+            845,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_006_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_005.png",
+      "status": "production_ready",
+      "sha256": "3da65c07b7c81fd3e008f51f005fa502a708bfdac73515f45938f130f7ec2e26",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-166",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000b6e4820db716b6683ffb828f.png",
+        "source_sha256": "4f48cb5a8e0d17ef36bf9350016f43772396bf643324cc96a3fe40da86a832ff",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGBA",
+        "alpha_recovery": {
+          "method": "relevel_generator_matte",
+          "haze_threshold": 24,
+          "measured_interior_ceiling": 253.0,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 142,
+          "source_chin_row": 462,
+          "source_sole_row": 1178,
+          "source_head_center_x": 628.0,
+          "head_scale": 1.0,
+          "body_scale": 0.945087,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            412,
+            141,
+            841,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_001.png",
+      "status": "production_ready",
+      "sha256": "45cdcc8283735cdb527282150790e89f40848b5bcdf125bfb56c191397a9b194",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-167",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000004108822f9b82e4880a3c4f2d.png",
+        "source_sha256": "a6a00b012b79c46e70f981a6a7e05f94ddc550b99f864a095dc9f47ebf43bcfd",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 6,
+            "kept_components": 1,
+            "dropped_components": 5,
+            "dropped_pixels": 6
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 462,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.993789,
+          "body_scale": 0.994157,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            400,
+            141,
+            853,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_body_001_neutral_master.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_002.png",
+      "status": "production_ready",
+      "sha256": "866496bb685f96ffe673963d7f200d286fc6d335c19ce8aa050641b49192f8cc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-168",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000c09c822f9355f9df28d61895.png",
+        "source_sha256": "f90b6d9e76a7bb4aedfc26f2ac0b8cb1e8a1bea01c9b61b010b8b6a287a2f481",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 2,
+            "kept_components": 1,
+            "dropped_components": 1,
+            "dropped_pixels": 1
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 462,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.993789,
+          "body_scale": 0.994157,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            411,
+            141,
+            865,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_003.png",
+      "status": "production_ready",
+      "sha256": "d3a7eabf4be74ab7a5a0ee79fcca6500b37e879d8974e6b13c0cee889b5ed637",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-169",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000726481f7b28d970c2ef50b90.png",
+        "source_sha256": "d4b9484aeb00c01bcca950831fe7a1f49e750bb08e634de9600b94a98ab5ada8",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 3,
+            "kept_components": 1,
+            "dropped_components": 2,
+            "dropped_pixels": 4
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.996885,
+          "body_scale": 0.992531,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            404,
+            141,
+            820,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_004.png",
+      "status": "production_ready",
+      "sha256": "9e60da1a8362fc87ab3e4e3a45b142b257e2939dd77bd164f323ee1a8ee9db4f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-170",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000005d4c81f6b5a31850715a9c4f.png",
+        "source_sha256": "8ad80e094da5c9eaa78d4b2e49410e133656de7c6aa4c7471ad1bd600c78fc32",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 3,
+            "kept_components": 1,
+            "dropped_components": 2,
+            "dropped_pixels": 4
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1144,
+          "source_head_center_x": 627.0,
+          "head_scale": 0.996885,
+          "body_scale": 0.992531,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            396,
+            141,
+            839,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_005.png",
+      "status": "production_ready",
+      "sha256": "bfd6235d84b41fde2478e5ef8aa00157073ea99c730ff637da1f3868ab43baa1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-171",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000005c4081f59248146fe735af0d.png",
+        "source_sha256": "c2fe87c23abf87ef6437890b664ab18efe4553bd8f941a799868e187819e90cd",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 2,
+            "kept_components": 1,
+            "dropped_components": 1,
+            "dropped_pixels": 1
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 459,
+          "source_sole_row": 1144,
+          "source_head_center_x": 627.5,
+          "head_scale": 1.0,
+          "body_scale": 0.990923,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            426,
+            141,
+            824,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_001.png",
+      "status": "production_ready",
+      "sha256": "2f4015865e00dfd4db10d4ac2a07a5e651bb5a37a530096752bacea9bc879165",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-172",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000641881f5a3349e1357482c8e.png",
+        "source_sha256": "39b7b1a3a5186250dc4ba7e016c88efcd1d5ddb855b1f8b6859bd7ce0163c3d9",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 7,
+            "kept_components": 1,
+            "dropped_components": 6,
+            "dropped_pixels": 12
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 462,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.5,
+          "head_scale": 0.993789,
+          "body_scale": 0.994157,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            404,
+            141,
+            848,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_body_001_neutral_master.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_002.png",
+      "status": "production_ready",
+      "sha256": "fd89f5a7a1a68c76509cabe45d698b950d42e735ff941e6fb2609032a8f1ca60",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-173",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000358081f58c2c54f038c3bec7.png",
+        "source_sha256": "3cb4b044ca2b4474f1138f577d9a6541d05f3d016dce798b0872033936fc5ae7",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 3,
+            "kept_components": 1,
+            "dropped_components": 2,
+            "dropped_pixels": 3
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 462,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.990712,
+          "body_scale": 0.994274,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            410,
+            141,
+            865,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_003.png",
+      "status": "production_ready",
+      "sha256": "35e580543be5177676aaa4e10412d3a51899d67759231c0e37800fd6759c56dc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-174",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000e3c081f5a44db0b8713898a3.png",
+        "source_sha256": "4d39cd361bc13bda806c2abce057815ca34a747e55173bd8b6329dbaa56f162c",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 4,
+            "kept_components": 1,
+            "dropped_components": 3,
+            "dropped_pixels": 4
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1144,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.996885,
+          "body_scale": 0.992531,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            405,
+            141,
+            821,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_004.png",
+      "status": "production_ready",
+      "sha256": "f70287415d511145d523f96279556a6d6668af53a5bcf4ed16ca479326056356",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-175",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000aaec822f9f86022ba8162429.png",
+        "source_sha256": "06eb244c0f82eb27f986ae41e3c04920945bba9cb5fc93c73cd920b734c40cf1",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1144,
+          "source_head_center_x": 627.0,
+          "head_scale": 0.996885,
+          "body_scale": 0.992531,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            396,
+            141,
+            844,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_005.png",
+      "status": "production_ready",
+      "sha256": "7918cd826e745248488e646725b306ae14596f7cfbbf06ddc70bcf64a7fad6b4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-176",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000001c7481f9be8b448eb8a9432d.png",
+        "source_sha256": "cdc188ba4011ab4841e47d0d690e74651608b027275d2553b6cf0a9e64f07316",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 1,
+            "kept_components": 1,
+            "dropped_components": 0,
+            "dropped_pixels": 0
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 461,
+          "source_sole_row": 1145,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.993789,
+          "body_scale": 0.991144,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            421,
+            141,
+            826,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_001.png",
+      "status": "production_ready",
+      "sha256": "e14cef0484181b615eb9c9f3706068e6afc6985579d80436f41ef54fc822ea68",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-177",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000ef5481f5a0375d43b5e50eb9.png",
+        "source_sha256": "fbc5febb091dd9640da67cb3171b16fc2f5d2bc88a7a9d330ea23a6d53a2c358",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 3,
+            "kept_components": 1,
+            "dropped_components": 2,
+            "dropped_pixels": 2
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 462,
+          "source_sole_row": 1147,
+          "source_head_center_x": 628.5,
+          "head_scale": 0.993789,
+          "body_scale": 0.989645,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            405,
+            141,
+            850,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_body_001_neutral_master.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_002.png",
+      "status": "production_ready",
+      "sha256": "68784c38c6673a928fd9db9ac6ab82dadf5f36bb1bcf673357d246c3649c9808",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-178",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000c72c81f594f792f4d0566d23.png",
+        "source_sha256": "6b7a7de283502324c7d1d6119f465e701526fcdd4792b4cc6eebc440610bf0e3",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 4,
+            "kept_components": 1,
+            "dropped_components": 3,
+            "dropped_pixels": 4
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 461,
+          "source_sole_row": 1147,
+          "source_head_center_x": 626.5,
+          "head_scale": 0.993789,
+          "body_scale": 0.98815,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            412,
+            141,
+            862,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_003.png",
+      "status": "production_ready",
+      "sha256": "ffad2940e36f11d2affdfcd9b7c02fbc2c96fb8899f104ef990e3274b656e40d",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-179",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000fe2081f591abe4f3d19c9d14.png",
+        "source_sha256": "62215dc6dad1bfb57e62ca15c541036baf1996e860a3dd84baa7ccac0602a3a0",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 5,
+            "kept_components": 1,
+            "dropped_components": 4,
+            "dropped_pixels": 7
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1147,
+          "source_head_center_x": 628.5,
+          "head_scale": 0.996885,
+          "body_scale": 0.988033,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            407,
+            141,
+            850,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_004.png",
+      "status": "production_ready",
+      "sha256": "2b58ab0600773e8abd4a10691f29b9af41743f0728cee3b88cdd6b58ec417bb6",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-180",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_00000000c0e081f597e3ff141302d818.png",
+        "source_sha256": "7af3d0705ef12936fcd1b25f773fc7425b4fdc4d36617c8791c31fede9118fc1",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 4,
+            "kept_components": 1,
+            "dropped_components": 3,
+            "dropped_pixels": 6
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 140,
+          "source_chin_row": 461,
+          "source_sole_row": 1148,
+          "source_head_center_x": 628.0,
+          "head_scale": 0.996885,
+          "body_scale": 0.986543,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            397,
+            141,
+            849,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_005.png",
+      "status": "production_ready",
+      "sha256": "70d80b6fa109cb03d752709e33e1eb9bcc009999a7ebefcefc2c63e017d93084",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGBA",
+      "backlog_id": "DG-181",
+      "qa_composite": "docs/qa/dressed_bodies_2026-09-25/figures_over_base_silhouette.png",
+      "provenance": {
+        "origin": "dressed_body_render",
+        "source_path": "images/trait_candidates/outfits_dressed/file_000000003a5c81f690fcae93456d24b0.png",
+        "source_sha256": "ce1534c8066efe02707883194595cec1a2c6e785d5cca64aedbcf10a0644b903",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "source_mode": "RGB",
+        "alpha_recovery": {
+          "method": "key_from_black_unpremultiplied",
+          "floor": 8,
+          "opaque": 64,
+          "band_px": 2,
+          "min_alpha": 0.08,
+          "isolation": {
+            "components": 2,
+            "kept_components": 1,
+            "dropped_components": 1,
+            "dropped_pixels": 2
+          }
+        },
+        "fit": {
+          "method": "two_zone_premultiplied_lanczos_reduction",
+          "source_crown_row": 139,
+          "source_chin_row": 460,
+          "source_sole_row": 1147,
+          "source_head_center_x": 628.5,
+          "head_scale": 0.996885,
+          "body_scale": 0.986543,
+          "blend_rows_below_chin": 50,
+          "output_bounds": [
+            412,
+            141,
+            848,
+            1139
+          ]
+        },
+        "normalization_script": "scripts/normalize_dressed_body.py",
+        "binds_pose": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+        "hides": [
+          "base_bodies"
+        ],
+        "review": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      },
+      "approved_on": "2026-09-25",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
     }
   ],
   "approved_visual_references": [
@@ -6311,7 +7384,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_002",
@@ -6323,7 +7397,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_003",
@@ -6335,7 +7410,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_004",
@@ -6347,7 +7423,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_005",
@@ -6359,7 +7436,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_006",
@@ -6371,7 +7449,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_007",
@@ -6383,7 +7462,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "neck_accessory_008",
@@ -6395,7 +7475,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Not neckwear at this scale. Rendered over an outfit the chokers are chest-wide bands lying across the collarbones and over the garment's own collar, the bows cover the whole upper chest, and the pendants hang from points outside the neck, resting on the shoulders. Two earlier passes corrected where the pieces sit - out of mid-chest to the throat, then to the row where each one's topmost ink lands inside the silhouette - and both were fixing the wrong thing. A 150-175 px ornament cannot be seated on a 61 px neck; the designs have to be redrawn to the neck's proportions. Retained as candidate evidence.",
       "requirement": "Redraw to the neck: the base body's neck is 61 px across at Y 482 and spans Y 476-496 from chin to shoulder junction. A choker is a band no wider than the neck plus a few pixels of wrap; a pendant's chain must start inside the neck silhouette and its drop hang on the chest below Y 520, clear of an outfit's collar.",
-      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md"
+      "qa_report": "docs/qa/neck_accessories_withdrawn_2026-09-10.md",
+      "owner_decision": "Omitted from the collection by the owner on 2026-09-25. The category stays defined so a redrawn set could return, but no neckwear is planned."
     },
     {
       "id": "head_accessory_005",
@@ -6576,11 +7657,58 @@
       "reason": "Retired to thin the category: gold feathered wings; the same silhouette as the silver pair. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
       "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+    },
+    {
+      "id": "outfit_006",
+      "backlog_id": "DG-042",
+      "intended_path": "assets/outfits/outfit_006_black_layered_hooded_robe.png",
+      "status": "retired",
+      "sha256": "2f44fe469fdba45d513e591075fed8a061e03e16e37ead7e17020d5147567d41",
+      "retained_at": "incoming/outfits_superseded_2026-09-25/outfit_006_black_layered_hooded_robe.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
+      "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_007",
+      "backlog_id": "DG-043",
+      "intended_path": "assets/outfits/outfit_007_brown_leather_long_coat.png",
+      "status": "retired",
+      "sha256": "b4391f3e6f3be75e192da91cf76d42b664fb438148032e5c893aefb4b93cbf43",
+      "retained_at": "incoming/outfits_superseded_2026-09-25/outfit_007_brown_leather_long_coat.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_007_brown_leather_long_coat_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
+      "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_008",
+      "backlog_id": "DG-044",
+      "intended_path": "assets/outfits/outfit_008_olive_ragged_cloak.png",
+      "status": "retired",
+      "sha256": "c96f3fa8372250994d552c4a7656abfc6fedea63b039a8155874960e5e6f2836",
+      "retained_at": "incoming/outfits_superseded_2026-09-25/outfit_008_olive_ragged_cloak.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_008_olive_ragged_cloak_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
+      "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "outfit_009",
+      "backlog_id": "DG-045",
+      "intended_path": "assets/outfits/outfit_009_navy_high_collar_coat.png",
+      "status": "retired",
+      "sha256": "fe21a26318223ec5c11850d9bdbe4c81f29c69c32a5dc09a3597dcd84d9c9713",
+      "retained_at": "incoming/outfits_superseded_2026-09-25/outfit_009_navy_high_collar_coat.png",
+      "withdrawn_on": "2026-09-25",
+      "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_009_navy_high_collar_coat_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
+      "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
+      "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
     }
   ],
   "queued_base_poses": [],
   "pending_categories": [
-    "neck_accessories",
     "head_accessories",
     "rear_auras",
     "back_accessories"

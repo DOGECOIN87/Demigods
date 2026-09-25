@@ -1,0 +1,41 @@
+{
+  "origin": "dressed_body_render",
+  "source_path": "images/trait_candidates/outfits_dressed/file_00000000fe2081f591abe4f3d19c9d14.png",
+  "source_sha256": "62215dc6dad1bfb57e62ca15c541036baf1996e860a3dd84baa7ccac0602a3a0",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "source_mode": "RGB",
+  "alpha_recovery": {
+    "method": "key_from_black_unpremultiplied",
+    "floor": 8,
+    "opaque": 64,
+    "band_px": 2,
+    "min_alpha": 0.08,
+    "isolation": {
+      "components": 5,
+      "kept_components": 1,
+      "dropped_components": 4,
+      "dropped_pixels": 7
+    }
+  },
+  "fit": {
+    "method": "two_zone_premultiplied_lanczos_reduction",
+    "source_crown_row": 140,
+    "source_chin_row": 461,
+    "source_sole_row": 1147,
+    "source_head_center_x": 628.5,
+    "head_scale": 0.996885,
+    "body_scale": 0.988033,
+    "blend_rows_below_chin": 50,
+    "output_bounds": [
+      407,
+      141,
+      850,
+      1139
+    ]
+  },
+  "normalization_script": "scripts/normalize_dressed_body.py",
+  "output_sha256": "ffad2940e36f11d2affdfcd9b7c02fbc2c96fb8899f104ef990e3274b656e40d"
+}

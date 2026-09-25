@@ -67,26 +67,6 @@
       "reason": "Front bangs must match the rear hair colour, and must not appear on a token whose rear hair is absent."
     },
     {
-      "trait": "outfit_006_black_layered_hooded_robe.png",
-      "requires": "base_body_001_neutral_master.png",
-      "reason": "The robe armholes and relaxed hand clearance are fitted to Pose 001."
-    },
-    {
-      "trait": "outfit_007_brown_leather_long_coat.png",
-      "requires": "base_body_001_neutral_master.png",
-      "reason": "The travel-coat armholes and relaxed hand clearance are fitted to Pose 001."
-    },
-    {
-      "trait": "outfit_008_olive_ragged_cloak.png",
-      "requires": "base_body_001_neutral_master.png",
-      "reason": "The layered cloak armholes and relaxed hand clearance are fitted to Pose 001."
-    },
-    {
-      "trait": "outfit_009_navy_high_collar_coat.png",
-      "requires": "base_body_001_neutral_master.png",
-      "reason": "The formal coat armholes and relaxed hand clearance are fitted to Pose 001."
-    },
-    {
       "trait": "outfit_010_celestial_robe_white_gold.png",
       "requires": "base_body_001_neutral_master.png",
       "reason": "The ceremonial robe armholes are fitted to Pose 001."
@@ -150,13 +130,230 @@
       "trait": "hand_object_005_star_spellbook_pose_004_left.png",
       "requires": "base_pose_004_viewer_left_palm_up.png",
       "reason": "Fitted to the viewer-left open palm at the measured contact (438, 748)."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_001.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "Painted with the body intact in Pose 001 (neutral, both hands open); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_002.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 002 (viewer-left vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_003.png",
+      "requires": "base_pose_003_viewer_right_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 003 (viewer-right vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_004.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Painted with the body intact in Pose 004 (viewer-left palm up); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_005.png",
+      "requires": "base_pose_005_centered_two_hand_grip.png",
+      "reason": "Painted with the body intact in Pose 005 (centered two-hand grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_001.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "Painted with the body intact in Pose 001 (neutral, both hands open); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_002.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 002 (viewer-left vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_003.png",
+      "requires": "base_pose_003_viewer_right_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 003 (viewer-right vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_004.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Painted with the body intact in Pose 004 (viewer-left palm up); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_005.png",
+      "requires": "base_pose_005_centered_two_hand_grip.png",
+      "reason": "Painted with the body intact in Pose 005 (centered two-hand grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_001.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "Painted with the body intact in Pose 001 (neutral, both hands open); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_002.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 002 (viewer-left vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_003.png",
+      "requires": "base_pose_003_viewer_right_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 003 (viewer-right vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_004.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Painted with the body intact in Pose 004 (viewer-left palm up); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_005.png",
+      "requires": "base_pose_005_centered_two_hand_grip.png",
+      "reason": "Painted with the body intact in Pose 005 (centered two-hand grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_001.png",
+      "requires": "base_body_001_neutral_master.png",
+      "reason": "Painted with the body intact in Pose 001 (neutral, both hands open); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_002.png",
+      "requires": "base_pose_002_viewer_left_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 002 (viewer-left vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_003.png",
+      "requires": "base_pose_003_viewer_right_vertical_grip.png",
+      "reason": "Painted with the body intact in Pose 003 (viewer-right vertical grip); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_004.png",
+      "requires": "base_pose_004_viewer_left_palm_up.png",
+      "reason": "Painted with the body intact in Pose 004 (viewer-left palm up); the base binds the pose and the hand objects."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_005.png",
+      "requires": "base_pose_005_centered_two_hand_grip.png",
+      "reason": "Painted with the body intact in Pose 005 (centered two-hand grip); the base binds the pose and the hand objects."
     }
   ],
-  "excludes": [],
+  "excludes": [
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_002.png",
+      "excludes": [
+        "hand_object_001_arcane_staff_pose_002_left.png",
+        "hand_object_003_dark_wand_pose_002_left.png",
+        "hand_object_004_silver_sword_pose_002_left.png",
+        "hand_object_006_gold_lantern_pose_002_left.png",
+        "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+        "hand_object_008_blue_crescent_staff_pose_002_left.png",
+        "hand_object_009_violet_blade_pose_002_left.png",
+        "hand_object_010_horned_skull_scepter_pose_002_left.png"
+      ],
+      "reason": "This render draws the gripping fist 20 px inside the base's. Every vertical-grip object is seated at the base fist, measured at (438, 772), so on this figure each one hung beside the hand instead of in it. The pose still appears, empty-handed."
+    }
+  ],
   "notes": [
     "Add only visually necessary rules after cross-category compositing tests.",
     "Hand objects must reference a compatible approved hand-pose filename.",
     "Do not merge traits to solve collisions; document the compatibility rule instead.",
     "Every pose-specific outfit requires its exact approved base-pose filename."
+  ],
+  "hides": [
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_001.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_002.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_003.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_004.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_006_black_layered_hooded_robe_pose_005.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_001.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_002.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_003.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_004.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_007_brown_leather_long_coat_pose_005.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_001.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_002.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_003.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_004.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_008_olive_ragged_cloak_pose_005.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_001.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_002.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_003.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_004.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    },
+    {
+      "trait": "outfit_009_navy_high_collar_coat_pose_005.png",
+      "hides": "base_bodies",
+      "reason": "Painted with the body intact; a bare copy of the base under it would show wherever the two silhouettes differ, so the base is selected but not drawn."
+    }
   ]
 }

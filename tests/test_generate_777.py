@@ -130,6 +130,34 @@ class Generate777Tests(unittest.TestCase):
         self.assertTrue(metadata["image_sha256"])
         self.assertEqual(metadata["image"], "images/0001.png")
 
+    def test_a_dressed_outfit_keeps_its_base_out_of_the_render(self) -> None:
+        """The base stays in the metadata as the pose but is not drawn under the figure."""
+        root = self.make_root()
+        assets = root / "assets"
+        self.save_background(assets / "backgrounds" / "background_001_one.png", 10)
+        base = assets / "base_bodies" / "base_body_001_one.png"
+        base.parent.mkdir(parents=True, exist_ok=True)
+        wide = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+        wide.paste((0, 200, 0, 255), (2, 2, 14, 14))  # a base wider than the figure
+        wide.save(base)
+        self.save_trait(assets / "outfits" / "outfit_001_dressed_pose_001.png", 90)
+        rules = {
+            "requires": [{"trait": "outfit_001_dressed_pose_001.png", "requires": "base_body_001_one.png"}],
+            "excludes": [],
+            "hides": [{"trait": "outfit_001_dressed_pose_001.png", "hides": "base_bodies", "reason": "r"}],
+        }
+        output = root / "output"
+        generate_777.generate_collection(
+            assets_root=assets, output=output, collection=self.collection(), compatibility=rules,
+            seed="fixed-seed", supply=1, max_attempts=100, dry_run=False, overwrite=False,
+        )
+        with Image.open(output / "images" / "0001.png") as image:
+            pixels = image.convert("RGBA")
+            self.assertEqual(pixels.getpixel((2, 2)), (10, 10, 10, 255), "the hidden base was drawn")
+            self.assertEqual(pixels.getpixel((8, 8)), (90, 0, 0, 255))
+        metadata = json.loads((output / "metadata" / "0001.json").read_text())
+        self.assertIn("base_bodies", [a["trait_type"] for a in metadata["attributes"]])
+
     def test_optional_category_is_sometimes_absent(self) -> None:
         root = self.make_root()
         assets = self.build_assets(root)

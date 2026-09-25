@@ -11,6 +11,7 @@ registered base master, so a future batch cannot repeat it silently.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import unittest
 from pathlib import Path
@@ -93,6 +94,14 @@ class NeckAccessoryWithdrawalTests(unittest.TestCase):
                 )
 
     def test_the_withdrawal_is_recorded(self) -> None:
+        """The record travels with the repository; the retired bytes do not.
+
+        `incoming/.gitignore` keeps PNGs out of git, so the retained files exist
+        only in the working copy that retired them - this used to assert they
+        were present and failed on every fresh checkout, CI included. The hash is
+        the durable record: required always, and checked against the bytes
+        wherever they are present.
+        """
         manifest = json.loads((ROOT / "assets" / "asset_manifest.json").read_text())
         registered = [e for e in manifest["registered_production_assets"]
                       if e["category"] == "neck_accessories"]
@@ -108,8 +117,16 @@ class NeckAccessoryWithdrawalTests(unittest.TestCase):
                 self.assertTrue(entry.get("reason"), f"{entry['id']} is withdrawn with no reason")
                 self.assertTrue(entry.get("requirement"),
                                 f"{entry['id']} is withdrawn with no requirement for its replacement")
-                self.assertTrue((ROOT / entry["retained_at"]).exists(),
-                                f"{entry['id']}'s withdrawn bytes are not where the manifest says")
+                self.assertTrue(entry.get("owner_decision"),
+                                f"{entry['id']}: the owner's 2026-09-25 decision to omit neckwear "
+                                "is not on the record")
+                self.assertRegex(entry.get("sha256", ""), r"^[0-9a-f]{64}$",
+                                 f"{entry['id']} is withdrawn without the hash of its bytes")
+                retained = ROOT / entry["retained_at"]
+                if retained.exists():
+                    digest = hashlib.sha256(retained.read_bytes()).hexdigest()
+                    self.assertEqual(digest, entry["sha256"],
+                                     f"{entry['id']}'s retained bytes do not match the record")
 
 
 class BackAccessorySeatingTests(unittest.TestCase):
