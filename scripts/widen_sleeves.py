@@ -52,6 +52,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
+try:
+    from scripts.hidden_layers import dressed_outfits
+except ImportError:  # Direct execution from scripts/.
+    from hidden_layers import dressed_outfits  # type: ignore[no-redef]
+
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "assets" / "asset_manifest.json"
 COMPATIBILITY = ROOT / "config" / "compatibility.json"
@@ -101,10 +106,12 @@ TAPER_TOP = 14
 
 def outfit_base_pairs() -> dict[str, str]:
     rules = json.loads(COMPATIBILITY.read_text())
+    dressed = dressed_outfits(rules)  # painted with the body intact; nothing under them to fit
     return {
         rule["trait"]: rule["requires"]
         for rule in rules.get("requires", [])
         if rule.get("trait", "").startswith("outfit_") and rule.get("requires", "").startswith("base_")
+        and rule["trait"] not in dressed
     }
 
 

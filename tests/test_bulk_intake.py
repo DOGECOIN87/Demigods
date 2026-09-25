@@ -241,6 +241,16 @@ class PendingCategoryTests(unittest.TestCase):
         self.assertEqual(bulk_intake.clear_finished_categories(manifest, text), [])
         self.assertEqual(manifest["pending_categories"], ["front_auras"])
 
+    def test_withdrawn_rows_count_as_resolved(self) -> None:
+        """Rows closed by recorded decision do not hold a category open."""
+        manifest = {"pending_categories": ["front_auras", "eyes"]}
+        text = self.backlog(("DG-901", "front_auras", "registered"),
+                            ("DG-902", "front_auras", "withdrawn"),
+                            ("DG-903", "eyes", "withdrawn"))
+        self.assertEqual(bulk_intake.clear_finished_categories(manifest, text),
+                         ["front_auras", "eyes"])
+        self.assertEqual(manifest["pending_categories"], [])
+
     def test_category_with_no_rows_is_not_cleared(self) -> None:
         """An empty category is unstarted, not finished."""
         manifest = {"pending_categories": ["front_auras"]}

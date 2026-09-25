@@ -17,8 +17,9 @@ from typing import Any
 from PIL import Image
 
 try:
-    from scripts import validate_assets
+    from scripts import hidden_layers, validate_assets
 except ImportError:  # Direct execution from scripts/.
+    import hidden_layers  # type: ignore[no-redef]
     import validate_assets  # type: ignore[no-redef]
 
 LAYER_ORDER = [
@@ -416,11 +417,18 @@ def prepare_output(output: Path, overwrite: bool) -> tuple[Path, Path]:
     return images_dir, metadata_dir
 
 
-def render(selection: dict[str, Path], output_path: Path, size: tuple[int, int]) -> str:
+def render(
+    selection: dict[str, Path],
+    output_path: Path,
+    size: tuple[int, int],
+    hidden: set[str] | frozenset[str] = frozenset(),
+) -> str:
+    """Composite the selection. Categories in `hidden` stay in the metadata but are
+    not drawn: a dressed-body outfit hides the base body it was painted over."""
     canvas = Image.new("RGBA", size, (0, 0, 0, 0))
     for category in RENDER_LAYER_ORDER:
         path = selection.get(category)
-        if path is None:
+        if path is None or category in hidden:
             continue
         with Image.open(path) as source:
             source.load()
@@ -518,7 +526,10 @@ def generate_collection(
     for token in tokens:
         image_hash: str | None = None
         if not dry_run:
-            image_hash = render(token.selection, images_dir / f"{token.token_label}.png", size)
+            hidden = hidden_layers.hidden_categories(selected_names(token.selection), compatibility)
+            image_hash = render(
+                token.selection, images_dir / f"{token.token_label}.png", size, hidden
+            )
             image_hashes.append(image_hash)
 
         record = metadata_record(token, collection, assets_root, image_hash)

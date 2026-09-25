@@ -4,7 +4,9 @@ Production specifications, category prompts, reference images, validation tools,
 
 ## Current production status
 
-**Phase 2 uses a locked 1254 × 1254 canvas. The base-body pose family is complete, backgrounds 001–004 are registered, and hair-back 003 is the first registered character trait. There is no active blocker.**
+**Phase 2 uses a locked 1254 × 1254 canvas. Every category the generator draws from is populated and passes preflight; the collection is ready to generate. There is no active blocker.**
+
+As of 2026-09-25: 153 registered assets, including 20 dressed-body outfits - four families in all five poses, painted with the body intact - which bind their base pose and hide it in the render (`docs/workflows/dressed_body_intake.md`). Neckwear is omitted by the owner's decision. Outfits 001–005 and 010 remain single-pose garment layers until dressed renders replace them (`prompts/dressed_body_pose_pack_2026-09-25.md`).
 
 - Live ledger: `docs/production_status.md` (the status table is generated — see below)
 - Ordered asset backlog: `docs/trait-production-backlog.md`

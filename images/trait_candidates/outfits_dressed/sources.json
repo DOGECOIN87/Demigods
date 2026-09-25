@@ -1,0 +1,397 @@
+{
+  "description": "User-supplied dressed-body renders: base pose and outfit painted as one bald, faceless figure. Uploaded to the repository root on 2026-09-25 (commits 9d23ad7 and 20c7e97) and moved here unchanged. Pose read from the hands against assets/base_bodies/.",
+  "received": "2026-09-25",
+  "renders": [
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_0000000021d8822f8a5b79fae6210041.png",
+      "sha256": "b41ba5b196bc02da951a679e07ada80d30c7af28c440b15f9f8b9acd126fd9b3",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "006",
+      "outfit_slug": "black_layered_hooded_robe",
+      "outfit_label": "Black layered hooded robe",
+      "pose": "001",
+      "target": "outfit_006_black_layered_hooded_robe_pose_001.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000b5a481f69c05430aa0d7409f.png",
+      "sha256": "fe607cd9c1c1faed36cc69839fbd7b5caef83280789ce5f03a67aad9e537aa9a",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "006",
+      "outfit_slug": "black_layered_hooded_robe",
+      "outfit_label": "Black layered hooded robe",
+      "pose": "002",
+      "target": "outfit_006_black_layered_hooded_robe_pose_002.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds. Hand objects excluded; see excludes_reason.",
+        "excludes": [
+          "hand_object_001_arcane_staff_pose_002_left.png",
+          "hand_object_003_dark_wand_pose_002_left.png",
+          "hand_object_004_silver_sword_pose_002_left.png",
+          "hand_object_006_gold_lantern_pose_002_left.png",
+          "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+          "hand_object_008_blue_crescent_staff_pose_002_left.png",
+          "hand_object_009_violet_blade_pose_002_left.png",
+          "hand_object_010_horned_skull_scepter_pose_002_left.png"
+        ],
+        "excludes_reason": "This render draws the gripping fist 20 px inside the base's. Every vertical-grip object is seated at the base fist, measured at (438, 772), so on this figure each one hung beside the hand instead of in it. The pose still appears, empty-handed."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000007eb0820cbbcc7d350702c9d7.png",
+      "sha256": "6de5f11753bfdd41a1328975ca2eae6124bf6c6df7ad2b5539c620345b9e9902",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "006",
+      "outfit_slug": "black_layered_hooded_robe",
+      "outfit_label": "Black layered hooded robe",
+      "pose": "003",
+      "target": "outfit_006_black_layered_hooded_robe_pose_003.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_0000000067a081fb8aaeb9a4c68c422b.png",
+      "sha256": "15925ab31ef004055b9a0fb1909c009b71e686e92e519cea7ec209b448050229",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "006",
+      "outfit_slug": "black_layered_hooded_robe",
+      "outfit_label": "Black layered hooded robe",
+      "pose": "004",
+      "target": "outfit_006_black_layered_hooded_robe_pose_004.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000b6e4820db716b6683ffb828f.png",
+      "sha256": "4f48cb5a8e0d17ef36bf9350016f43772396bf643324cc96a3fe40da86a832ff",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "006",
+      "outfit_slug": "black_layered_hooded_robe",
+      "outfit_label": "Black layered hooded robe",
+      "pose": "005",
+      "target": "outfit_006_black_layered_hooded_robe_pose_005.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000004108822f9b82e4880a3c4f2d.png",
+      "sha256": "a6a00b012b79c46e70f981a6a7e05f94ddc550b99f864a095dc9f47ebf43bcfd",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "007",
+      "outfit_slug": "brown_leather_long_coat",
+      "outfit_label": "Brown leather long coat",
+      "pose": "001",
+      "target": "outfit_007_brown_leather_long_coat_pose_001.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000c09c822f9355f9df28d61895.png",
+      "sha256": "f90b6d9e76a7bb4aedfc26f2ac0b8cb1e8a1bea01c9b61b010b8b6a287a2f481",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "007",
+      "outfit_slug": "brown_leather_long_coat",
+      "outfit_label": "Brown leather long coat",
+      "pose": "002",
+      "target": "outfit_007_brown_leather_long_coat_pose_002.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000726481f7b28d970c2ef50b90.png",
+      "sha256": "d4b9484aeb00c01bcca950831fe7a1f49e750bb08e634de9600b94a98ab5ada8",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "007",
+      "outfit_slug": "brown_leather_long_coat",
+      "outfit_label": "Brown leather long coat",
+      "pose": "003",
+      "target": "outfit_007_brown_leather_long_coat_pose_003.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000005d4c81f6b5a31850715a9c4f.png",
+      "sha256": "8ad80e094da5c9eaa78d4b2e49410e133656de7c6aa4c7471ad1bd600c78fc32",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "007",
+      "outfit_slug": "brown_leather_long_coat",
+      "outfit_label": "Brown leather long coat",
+      "pose": "004",
+      "target": "outfit_007_brown_leather_long_coat_pose_004.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000005c4081f59248146fe735af0d.png",
+      "sha256": "c2fe87c23abf87ef6437890b664ab18efe4553bd8f941a799868e187819e90cd",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "007",
+      "outfit_slug": "brown_leather_long_coat",
+      "outfit_label": "Brown leather long coat",
+      "pose": "005",
+      "target": "outfit_007_brown_leather_long_coat_pose_005.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. Rig proportions; head and body scales agree. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000641881f5a3349e1357482c8e.png",
+      "sha256": "39b7b1a3a5186250dc4ba7e016c88efcd1d5ddb855b1f8b6859bd7ce0163c3d9",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "008",
+      "outfit_slug": "olive_ragged_cloak",
+      "outfit_label": "Olive ragged cloak, sleeveless",
+      "pose": "001",
+      "target": "outfit_008_olive_ragged_cloak_pose_001.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000358081f58c2c54f038c3bec7.png",
+      "sha256": "3cb4b044ca2b4474f1138f577d9a6541d05f3d016dce798b0872033936fc5ae7",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "008",
+      "outfit_slug": "olive_ragged_cloak",
+      "outfit_label": "Olive ragged cloak, sleeveless",
+      "pose": "002",
+      "target": "outfit_008_olive_ragged_cloak_pose_002.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000e3c081f5a44db0b8713898a3.png",
+      "sha256": "4d39cd361bc13bda806c2abce057815ca34a747e55173bd8b6329dbaa56f162c",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "008",
+      "outfit_slug": "olive_ragged_cloak",
+      "outfit_label": "Olive ragged cloak, sleeveless",
+      "pose": "003",
+      "target": "outfit_008_olive_ragged_cloak_pose_003.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000aaec822f9f86022ba8162429.png",
+      "sha256": "06eb244c0f82eb27f986ae41e3c04920945bba9cb5fc93c73cd920b734c40cf1",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "008",
+      "outfit_slug": "olive_ragged_cloak",
+      "outfit_label": "Olive ragged cloak, sleeveless",
+      "pose": "004",
+      "target": "outfit_008_olive_ragged_cloak_pose_004.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000001c7481f9be8b448eb8a9432d.png",
+      "sha256": "cdc188ba4011ab4841e47d0d690e74651608b027275d2553b6cf0a9e64f07316",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "008",
+      "outfit_slug": "olive_ragged_cloak",
+      "outfit_label": "Olive ragged cloak, sleeveless",
+      "pose": "005",
+      "target": "outfit_008_olive_ragged_cloak_pose_005.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black. The latest sleeveless cloak design; rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000ef5481f5a0375d43b5e50eb9.png",
+      "sha256": "fbc5febb091dd9640da67cb3171b16fc2f5d2bc88a7a9d330ea23a6d53a2c358",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "009",
+      "outfit_slug": "navy_high_collar_coat",
+      "outfit_label": "Navy high-collar coat",
+      "pose": "001",
+      "target": "outfit_009_navy_high_collar_coat_pose_001.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000c72c81f594f792f4d0566d23.png",
+      "sha256": "6b7a7de283502324c7d1d6119f465e701526fcdd4792b4cc6eebc440610bf0e3",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "009",
+      "outfit_slug": "navy_high_collar_coat",
+      "outfit_label": "Navy high-collar coat",
+      "pose": "002",
+      "target": "outfit_009_navy_high_collar_coat_pose_002.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000fe2081f591abe4f3d19c9d14.png",
+      "sha256": "62215dc6dad1bfb57e62ca15c541036baf1996e860a3dd84baa7ccac0602a3a0",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "009",
+      "outfit_slug": "navy_high_collar_coat",
+      "outfit_label": "Navy high-collar coat",
+      "pose": "003",
+      "target": "outfit_009_navy_high_collar_coat_pose_003.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_00000000c0e081f597e3ff141302d818.png",
+      "sha256": "7af3d0705ef12936fcd1b25f773fc7425b4fdc4d36617c8791c31fede9118fc1",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "009",
+      "outfit_slug": "navy_high_collar_coat",
+      "outfit_label": "Navy high-collar coat",
+      "pose": "004",
+      "target": "outfit_009_navy_high_collar_coat_pose_004.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    },
+    {
+      "source": "images/trait_candidates/outfits_dressed/file_000000003a5c81f690fcae93456d24b0.png",
+      "sha256": "ce1534c8066efe02707883194595cec1a2c6e785d5cca64aedbcf10a0644b903",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "outfit": "009",
+      "outfit_slug": "navy_high_collar_coat",
+      "outfit_label": "Navy high-collar coat",
+      "pose": "005",
+      "target": "outfit_009_navy_high_collar_coat_pose_005.png",
+      "review": {
+        "decision": "approved",
+        "reviewed_on": "2026-09-25",
+        "note": "Keyed off black; its near-black trim contours kept as paint by the 3 x 3 opening. Rig proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+      }
+    }
+  ]
+}

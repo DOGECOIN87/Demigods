@@ -64,6 +64,7 @@ class ConfigValidationResult:
     available_traits: int = 0
     requires_rules: int = 0
     excludes_rules: int = 0
+    hides_rules: int = 0
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -320,12 +321,75 @@ def validate_compatibility(
         if trait < required:
             warnings.append(f"mutual requirement detected: {trait} <-> {required}")
 
-    allowed_top_level = {"version", "requires", "excludes", "notes"}
+    allowed_top_level = {"version", "requires", "excludes", "hides", "notes"}
     extras = sorted(set(compatibility) - allowed_top_level)
     if extras:
         warnings.append(f"unrecognized compatibility keys: {', '.join(extras)}")
 
     return errors, warnings, len(requires), len(excludes)
+
+
+def validate_hides(
+    compatibility: dict[str, Any],
+    inventory: dict[str, str],
+) -> tuple[list[str], list[str], int]:
+    """Check ``hides`` rules: a trait that keeps a layer out of the render.
+
+    A dressed-body outfit hides the base body it was painted over. The base is
+    still selected - it is what binds the pose - so a trait may hide the base
+    body only when a ``requires`` rule binds it to one; otherwise the renderer
+    would draw a dressed figure over an arbitrary pose that nothing drew.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+    rules = compatibility.get("hides", [])
+    if not isinstance(rules, list):
+        return ["hides must be an array"], warnings, 0
+
+    known_layers = set(validate_assets.PRODUCTION_CATEGORIES)
+    bound_to_base: set[str] = set()
+    for rule in compatibility.get("requires", []) or []:
+        if not isinstance(rule, dict):
+            continue
+        targets = rule.get("requires")
+        targets = [targets] if isinstance(targets, str) else list(targets or [])
+        if any(inventory.get(target) == "base_bodies" for target in targets):
+            bound_to_base.add(rule.get("trait"))
+
+    seen: set[tuple[str, str]] = set()
+    for index, rule in enumerate(rules):
+        label = f"hides[{index}]"
+        if not isinstance(rule, dict):
+            errors.append(f"{label} must be an object")
+            continue
+        extra_keys = sorted(set(rule) - {"trait", "hides", "reason"})
+        if extra_keys:
+            warnings.append(f"{label} has unrecognized keys: {', '.join(extra_keys)}")
+        if not isinstance(rule.get("reason"), str) or not rule["reason"].strip():
+            errors.append(f"{label} must give a reason")
+        trait = validate_trait_name(rule.get("trait"), f"{label}.trait", inventory, errors)
+        layers = rule.get("hides")
+        layers = [layers] if isinstance(layers, str) else layers
+        if not isinstance(layers, list) or not layers or not all(isinstance(v, str) for v in layers):
+            errors.append(f"{label}.hides must be a layer name or a non-empty array of layer names")
+            continue
+        for layer in layers:
+            if layer not in known_layers:
+                errors.append(f"{label}.hides names an unknown layer: {layer!r}")
+                continue
+            if layer == "backgrounds":
+                errors.append(f"{label} cannot hide the background; every token has one")
+            if trait is not None and inventory.get(trait) == layer:
+                errors.append(f"{label} cannot hide its own layer: {trait}")
+            if trait is not None and (trait, layer) in seen:
+                errors.append(f"duplicate hides relationship: {trait} hides {layer}")
+            seen.add((trait, layer))
+            if layer == "base_bodies" and trait is not None and trait not in bound_to_base:
+                errors.append(
+                    f"{label}: {trait} hides base_bodies but no requires rule binds it to a base "
+                    "body, so nothing fixes the pose it was painted in"
+                )
+    return errors, warnings, len(rules)
 
 
 def validate_configuration(
@@ -349,14 +413,18 @@ def validate_configuration(
     compatibility_errors, compatibility_warnings, requires_count, excludes_count = (
         validate_compatibility(compatibility, inventory)
     )
+    hides_errors, hides_warnings, hides_count = validate_hides(compatibility, inventory)
 
     result.errors.extend(collection_errors)
     result.errors.extend(compatibility_errors)
+    result.errors.extend(hides_errors)
     result.warnings.extend(collection_warnings)
     result.warnings.extend(compatibility_warnings)
+    result.warnings.extend(hides_warnings)
     result.available_traits = len(inventory)
     result.requires_rules = requires_count
     result.excludes_rules = excludes_count
+    result.hides_rules = hides_count
     result.passed = not result.errors
     return result
 
@@ -381,7 +449,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  - WARNING: {warning}")
     print(
         f"Available traits: {result.available_traits}; "
-        f"requires rules: {result.requires_rules}; excludes rules: {result.excludes_rules}."
+        f"requires rules: {result.requires_rules}; excludes rules: {result.excludes_rules}; "
+        f"hides rules: {result.hides_rules}."
     )
 
     if args.json_report:

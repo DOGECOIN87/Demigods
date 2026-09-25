@@ -49,6 +49,11 @@ from typing import Iterable
 
 from PIL import Image, ImageChops, ImageFilter
 
+try:
+    from scripts.hidden_layers import dressed_outfits
+except ImportError:  # Direct execution from scripts/.
+    from hidden_layers import dressed_outfits  # type: ignore[no-redef]
+
 ROOT = Path(__file__).resolve().parent.parent
 SEEDS = ((627, 560), (627, 780))
 TOLERANCE = 26      # generous: find enough garment to repaint
@@ -77,10 +82,12 @@ def base_outfit_pairs(compatibility: Path = COMPATIBILITY) -> dict[str, list[str
     it, so repainting the union never shows through a garment.
     """
     rules = json.loads(compatibility.read_text())
+    dressed = dressed_outfits(rules)
     pairs: dict[str, list[str]] = {}
     for rule in rules.get("requires", []):
         trait, required = rule.get("trait", ""), rule.get("requires", "")
-        if trait.startswith("outfit_") and required.startswith("base_"):
+        # A dressed body replaces the base in the render, so it hides no tank.
+        if trait.startswith("outfit_") and required.startswith("base_") and trait not in dressed:
             pairs.setdefault(required, []).append(trait)
     return {base: sorted(outfits) for base, outfits in sorted(pairs.items())}
 

@@ -135,6 +135,56 @@ class ValidateConfigTests(unittest.TestCase):
         )
         self.assertTrue(any("requires and excludes" in error for error in errors))
 
+    def hides_case(self, hides: list, requires: list | None = None) -> list[str]:
+        root = self.make_root()
+        inventory = self.inventory(
+            root,
+            [
+                ("outfits", "outfit_007_coat_pose_002.png"),
+                ("base_bodies", "base_pose_002_vertical_grip.png"),
+            ],
+        )
+        compatibility = {
+            "version": 1,
+            "requires": requires if requires is not None else [
+                {"trait": "outfit_007_coat_pose_002.png", "requires": "base_pose_002_vertical_grip.png"}
+            ],
+            "excludes": [],
+            "hides": hides,
+            "notes": [],
+        }
+        errors, warnings, _, _ = validate_config.validate_compatibility(compatibility, inventory)
+        self.assertFalse(any("unrecognized compatibility keys" in w for w in warnings), warnings)
+        hide_errors, _, _ = validate_config.validate_hides(compatibility, inventory)
+        return errors + hide_errors
+
+    def test_dressed_outfit_bound_to_its_base_may_hide_it(self) -> None:
+        errors = self.hides_case([{"trait": "outfit_007_coat_pose_002.png", "hides": "base_bodies",
+                                   "reason": "painted with the body intact"}])
+        self.assertEqual(errors, [])
+
+    def test_hiding_the_base_needs_a_pose_binding(self) -> None:
+        """Without one, a dressed figure would be drawn over whichever pose was drawn."""
+        errors = self.hides_case(
+            [{"trait": "outfit_007_coat_pose_002.png", "hides": "base_bodies", "reason": "r"}],
+            requires=[],
+        )
+        self.assertTrue(any("no requires rule binds it" in e for e in errors), errors)
+
+    def test_hides_rejects_unknown_own_and_background_layers(self) -> None:
+        errors = self.hides_case([
+            {"trait": "outfit_007_coat_pose_002.png", "hides": ["capes"], "reason": "r"},
+            {"trait": "outfit_007_coat_pose_002.png", "hides": "outfits", "reason": "r"},
+            {"trait": "outfit_007_coat_pose_002.png", "hides": "backgrounds", "reason": "r"},
+        ])
+        self.assertTrue(any("unknown layer" in e for e in errors), errors)
+        self.assertTrue(any("its own layer" in e for e in errors), errors)
+        self.assertTrue(any("cannot hide the background" in e for e in errors), errors)
+
+    def test_hides_needs_a_reason(self) -> None:
+        errors = self.hides_case([{"trait": "outfit_007_coat_pose_002.png", "hides": "base_bodies"}])
+        self.assertTrue(any("must give a reason" in e for e in errors), errors)
+
     def test_mutual_requirement_warns_but_passes(self) -> None:
         root = self.make_root()
         inventory = self.inventory(
