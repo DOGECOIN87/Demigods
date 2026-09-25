@@ -1,0 +1,111 @@
+{
+  "reference_commit": "d5c31dd39428732d193d9161624f4ce0beecf6c2",
+  "registered_production_assets_added": 0,
+  "candidates": [
+    {
+      "filename": "outfit_001_scholar_pose_001_candidate_v1.png",
+      "pose": 1,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "ba84fc568eda6ad5707bd01679dc7e7cabdca81328bf8f2748e0ac6d603ebabc",
+      "binary_pass": true,
+      "bbox": [
+        19,
+        21,
+        1210,
+        1206
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "significant_bbox": [
+        491,
+        474,
+        786,
+        1147
+      ],
+      "alpha_pixels_outside_rig_bounds": 1173,
+      "garment_pixels_above_y450": 0,
+      "opaque_pixels_below_baseline": 650,
+      "body_band_uncovered_pixels": 1040,
+      "feet_uncovered_pixels": 0,
+      "status": "QA-failed",
+      "postprocessing": [],
+      "generation_method": "built_in_image_generation"
+    },
+    {
+      "filename": "outfit_001_scholar_pose_001_candidate_v2.png",
+      "pose": 1,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "d2011b4cfc9cd7342c60d9c09671a856f0688aa58661e1813f9df09b6357c664",
+      "binary_pass": true,
+      "bbox": [
+        33,
+        21,
+        1210,
+        1182
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "significant_bbox": [
+        483,
+        470,
+        788,
+        1150
+      ],
+      "alpha_pixels_outside_rig_bounds": 1603,
+      "garment_pixels_above_y450": 0,
+      "opaque_pixels_below_baseline": 978,
+      "body_band_uncovered_pixels": 78,
+      "feet_uncovered_pixels": 0,
+      "status": "QA-failed",
+      "postprocessing": [],
+      "generation_method": "built_in_image_generation"
+    },
+    {
+      "filename": "outfit_001_scholar_pose_002_candidate_v1.png",
+      "pose": 2,
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "05e46d15e968cfd9e2824e6bc83b693bcd129cfb6281d230cd7f9704bdd4bffa",
+      "binary_pass": true,
+      "bbox": [
+        89,
+        21,
+        1192,
+        1206
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "significant_bbox": [
+        427,
+        279,
+        861,
+        1164
+      ],
+      "alpha_pixels_outside_rig_bounds": 5274,
+      "garment_pixels_above_y450": 41955,
+      "opaque_pixels_below_baseline": 4299,
+      "body_band_uncovered_pixels": 7345,
+      "feet_uncovered_pixels": 1754,
+      "status": "QA-failed",
+      "postprocessing": [],
+      "generation_method": "built_in_image_generation"
+    }
+  ]
+}
