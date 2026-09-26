@@ -185,6 +185,35 @@ class ValidateConfigTests(unittest.TestCase):
         errors = self.hides_case([{"trait": "outfit_007_coat_pose_002.png", "hides": "base_bodies"}])
         self.assertTrue(any("must give a reason" in e for e in errors), errors)
 
+    def in_hand_case(self, in_hand: object) -> tuple[list[str], list[str]]:
+        root = self.make_root()
+        inventory = self.inventory(
+            root,
+            [
+                ("hand_objects", "hand_object_001_staff.png"),
+                ("outfits", "outfit_007_coat_pose_002.png"),
+            ],
+        )
+        compatibility = {"version": 1, "requires": [], "excludes": [], "in_hand": in_hand, "notes": []}
+        _, warnings, _, _ = validate_config.validate_compatibility(compatibility, inventory)
+        self.assertFalse(any("unrecognized compatibility keys" in w for w in warnings), warnings)
+        errors, _, _ = validate_config.validate_in_hand(compatibility, inventory)
+        return errors, warnings
+
+    def test_hand_object_may_be_drawn_in_hand(self) -> None:
+        errors, _ = self.in_hand_case([{"trait": "hand_object_001_staff.png", "reason": "painted in hand"}])
+        self.assertEqual(errors, [])
+
+    def test_in_hand_rejects_other_layers_duplicates_and_missing_reasons(self) -> None:
+        errors, _ = self.in_hand_case([
+            {"trait": "outfit_007_coat_pose_002.png", "reason": "r"},
+            {"trait": "hand_object_001_staff.png", "reason": "r"},
+            {"trait": "hand_object_001_staff.png"},
+        ])
+        self.assertTrue(any("only a hand object" in e for e in errors), errors)
+        self.assertTrue(any("duplicate in_hand rule" in e for e in errors), errors)
+        self.assertTrue(any("must give a reason" in e for e in errors), errors)
+
     def test_mutual_requirement_warns_but_passes(self) -> None:
         root = self.make_root()
         inventory = self.inventory(

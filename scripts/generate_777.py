@@ -41,7 +41,9 @@ LAYER_ORDER = [
     "global_finish",
 ]
 # Rendering order is intentionally separate from metadata/signature order: the
-# base hand must occlude the held object at the grip.
+# base hand must occlude the held object at the grip. A hand object painted with
+# its own gripping hand (an ``in_hand`` rule) is drawn over the body instead; see
+# render_order().
 RENDER_LAYER_ORDER = [
     "backgrounds",
     "rear_auras",
@@ -417,16 +419,29 @@ def prepare_output(output: Path, overwrite: bool) -> tuple[Path, Path]:
     return images_dir, metadata_dir
 
 
+def render_order(in_hand: bool = False) -> list[str]:
+    """RENDER_LAYER_ORDER, with the hand object moved over the body when it carries
+    its own gripping hand: it then sits where the layer stack puts it, after the
+    head accessories and before the front aura."""
+    if not in_hand:
+        return list(RENDER_LAYER_ORDER)
+    order = [category for category in RENDER_LAYER_ORDER if category != "hand_objects"]
+    order.insert(order.index("front_auras"), "hand_objects")
+    return order
+
+
 def render(
     selection: dict[str, Path],
     output_path: Path,
     size: tuple[int, int],
     hidden: set[str] | frozenset[str] = frozenset(),
+    in_hand: bool = False,
 ) -> str:
     """Composite the selection. Categories in `hidden` stay in the metadata but are
-    not drawn: a dressed-body outfit hides the base body it was painted over."""
+    not drawn: a dressed-body outfit hides the base body it was painted over.
+    `in_hand` draws the hand object over the body (see render_order)."""
     canvas = Image.new("RGBA", size, (0, 0, 0, 0))
-    for category in RENDER_LAYER_ORDER:
+    for category in render_order(in_hand):
         path = selection.get(category)
         if path is None or category in hidden:
             continue
@@ -526,9 +541,11 @@ def generate_collection(
     for token in tokens:
         image_hash: str | None = None
         if not dry_run:
-            hidden = hidden_layers.hidden_categories(selected_names(token.selection), compatibility)
+            names = selected_names(token.selection)
+            hidden = hidden_layers.hidden_categories(names, compatibility)
+            in_hand = bool(names & hidden_layers.in_hand_objects(compatibility))
             image_hash = render(
-                token.selection, images_dir / f"{token.token_label}.png", size, hidden
+                token.selection, images_dir / f"{token.token_label}.png", size, hidden, in_hand
             )
             image_hashes.append(image_hash)
 
