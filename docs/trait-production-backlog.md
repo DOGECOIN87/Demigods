@@ -54,12 +54,12 @@ External co-created candidates may be generated in batches before Pose 001 is ap
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | QA-failed |
-| DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | registered |
-| DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | registered |
-| DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | registered |
-| DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | registered |
-| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | registered |
+| DG-015 | rear aura | Blue elliptical floor/halo ring; classify behind body unless stress test requires front split | `AURA`, lower row cell 1 | Locked pose family | `assets/rear_auras/aura_rear_001_blue_floor_ring.png` | `prompts/12_auras.md` | withdrawn |
+| DG-016 | rear aura | Soft violet circular radial glow | `AURA`, lower row cell 2 | DG-015 representative test | `assets/rear_auras/aura_rear_002_violet_radial_glow.png` | `prompts/12_auras.md` | withdrawn |
+| DG-017 | rear aura | Blue crystalline energy burst | `AURA`, lower row cell 3 | DG-015 | `assets/rear_auras/aura_rear_003_blue_crystalline_burst.png` | `prompts/12_auras.md` | withdrawn |
+| DG-018 | rear aura | Dark violet rising void flame | `AURA`, lower row cell 4 | DG-015 | `assets/rear_auras/aura_rear_004_violet_void_flame.png` | `prompts/12_auras.md` | withdrawn |
+| DG-019 | rear aura | Pale-lavender vertical lightning wisps | `AURA`, lower row cell 5 | DG-015 | `assets/rear_auras/aura_rear_005_lavender_lightning.png` | `prompts/12_auras.md` | withdrawn |
+| DG-020 | rear aura | Soft gold radiant glow | `AURA`, lower row cell 6 | DG-015 | `assets/rear_auras/aura_rear_006_gold_radiance.png` | `prompts/12_auras.md` | withdrawn |
 
 #### Floor-ring aura family — `RING` sheet (added 2026-07-27)
 
@@ -69,18 +69,18 @@ The neon variants are the *same geometry* in a different palette, so they are re
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
-| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
-| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | QA-failed |
-| DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | registered |
-| DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | registered |
-| DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | QA-failed |
-| DG-161 | rear aura | Blue rising flame above a luminous floor ring | co-created candidate `images/trait_candidates/grok_1784755724820.png`; no reference cell | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_018_blue_flame_ring.png` | `prompts/12_auras.md` | registered |
+| DG-147 | rear aura | Green neon double ring (procedural `--palette green`) | `RING`, cell 2 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_007_green_neon_ring.png` | `scripts/build_aura_floor_ring.py` | withdrawn |
+| DG-148 | rear aura | Gold neon double ring (procedural `--palette gold`) | `RING`, cell 3 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_008_gold_neon_ring.png` | `scripts/build_aura_floor_ring.py` | withdrawn |
+| DG-149 | rear aura | Pink neon double ring (procedural `--palette pink`) | `RING`, cell 4 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_009_pink_neon_ring.png` | `scripts/build_aura_floor_ring.py` | withdrawn |
+| DG-150 | rear aura | White-silver neon double ring (procedural `--palette white`) | `RING`, cell 5 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_010_white_neon_ring.png` | `scripts/build_aura_floor_ring.py` | withdrawn |
+| DG-151 | rear aura | Orange fire ring (generator) | `RING`, cell 6 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_011_fire_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-152 | rear aura | Blue lightning ring (generator) | `RING`, cell 7 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_012_lightning_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-153 | rear aura | Violet flame ring (generator) | `RING`, cell 8 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_013_violet_flame_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-154 | rear aura | Pale-blue ice crystal ring (generator) | `RING`, cell 9 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_014_ice_crystal_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-155 | rear aura | Black smoke void ring (generator) | `RING`, cell 10 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_015_smoke_void_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-156 | rear aura | Violet cosmic sparkle ring (generator) | `RING`, cell 11 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-157 | rear aura | Cyan water splash ring (generator) | `RING`, cell 12 | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_017_water_splash_ring.png` | `prompts/19_individual_trait_asset_co_creation.md` | withdrawn |
+| DG-161 | rear aura | Blue rising flame above a luminous floor ring | co-created candidate `images/trait_candidates/grok_1784755724820.png`; no reference cell | DG-015 seating and gate mode | `assets/rear_auras/aura_rear_018_blue_flame_ring.png` | `prompts/12_auras.md` | withdrawn |
 
 All eleven are ground-plane effects and are gated with `rig_gate_report.py --floor-aura`. The generator variants must match DG-015's seating exactly so the family stacks consistently: same ellipse, same foot-baseline placement, differing only in surface treatment.
 
@@ -145,16 +145,16 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-037 | outfit | Ivory-and-indigo celestial scholar, Pose 001 | Co-created pose-aware regeneration | Approved Pose 001 | `assets/outfits/outfit_001_celestial_scholar_pose_001.png` | `prompts/08_outfits.md` | registered |
-| DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | registered |
-| DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | registered |
-| DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | registered |
-| DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | registered |
+| DG-037 | outfit | Ivory-and-indigo celestial scholar, Pose 001 | Co-created pose-aware regeneration | Approved Pose 001 | `assets/outfits/outfit_001_celestial_scholar_pose_001.png` | `prompts/08_outfits.md` | withdrawn |
+| DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | withdrawn |
+| DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | withdrawn |
+| DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | withdrawn |
+| DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-037 | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-037 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-037 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | DG-037 | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | withdrawn |
-| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | registered |
+| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-162 | outfit | Black layered hooded robe, painted with the body intact, Pose 001 (neutral, both hands open) | `images/trait_candidates/outfits_dressed/file_0000000021d8822f8a5b79fae6210041.png` | Bound to `base_body_001_neutral_master.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-163 | outfit | Black layered hooded robe, painted with the body intact, Pose 002 (viewer-left vertical grip) | `images/trait_candidates/outfits_dressed/file_00000000b5a481f69c05430aa0d7409f.png` | Bound to `base_pose_002_viewer_left_vertical_grip.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_002.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-164 | outfit | Black layered hooded robe, painted with the body intact, Pose 003 (viewer-right vertical grip) | `images/trait_candidates/outfits_dressed/file_000000007eb0820cbbcc7d350702c9d7.png` | Bound to `base_pose_003_viewer_right_vertical_grip.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_003.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
@@ -288,40 +288,40 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-123 | head accessory | Gold pointed crown | `ACCESSORY`, upper group cell 1 | Approved head/hair composite | `assets/head_accessories/head_accessory_001_gold_pointed_crown.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-124 | head accessory | Large gold halo ring | `ACCESSORY`, upper group cell 2; compatibility example | DG-123 representative test | `assets/head_accessories/head_accessory_002_large_gold_halo.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-125 | head accessory | Green laurel wreath | `ACCESSORY`, upper group cell 3 | DG-123 | `assets/head_accessories/head_accessory_003_green_laurel.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-126 | head accessory | Balanced black curved horn set | `ACCESSORY`, upper group cells 4–5 as one pair | DG-123 | `assets/head_accessories/head_accessory_004_black_curved_horns.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-127 | head accessory | Silver winged circlet | `ACCESSORY`, upper group cell 6 | DG-123 | `assets/head_accessories/head_accessory_005_silver_winged_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-128 | head accessory | Silver ornate tiara | `ACCESSORY`, upper group cell 7 | DG-123 | `assets/head_accessories/head_accessory_006_silver_ornate_tiara.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-129 | head accessory | Silver forehead circlet with central drop | `ACCESSORY`, upper group cell 8 | DG-123 | `assets/head_accessories/head_accessory_007_silver_drop_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-130 | head accessory | Translucent white veil | `ACCESSORY`, upper group cell 9 | DG-123 | `assets/head_accessories/head_accessory_008_translucent_white_veil.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-131 | head accessory | Pale-blue spiked crown/tiara | `ACCESSORY`, upper group cell 10 | DG-123 | `assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-132 | head accessory | Gold low-profile circlet | `ACCESSORY`, upper group cell 11 | DG-123 | `assets/head_accessories/head_accessory_010_gold_low_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
+| DG-123 | head accessory | Gold pointed crown | `ACCESSORY`, upper group cell 1 | Approved head/hair composite | `assets/head_accessories/head_accessory_001_gold_pointed_crown.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-124 | head accessory | Large gold halo ring | `ACCESSORY`, upper group cell 2; compatibility example | DG-123 representative test | `assets/head_accessories/head_accessory_002_large_gold_halo.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-125 | head accessory | Green laurel wreath | `ACCESSORY`, upper group cell 3 | DG-123 | `assets/head_accessories/head_accessory_003_green_laurel.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-126 | head accessory | Balanced black curved horn set | `ACCESSORY`, upper group cells 4–5 as one pair | DG-123 | `assets/head_accessories/head_accessory_004_black_curved_horns.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-127 | head accessory | Silver winged circlet | `ACCESSORY`, upper group cell 6 | DG-123 | `assets/head_accessories/head_accessory_005_silver_winged_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-128 | head accessory | Silver ornate tiara | `ACCESSORY`, upper group cell 7 | DG-123 | `assets/head_accessories/head_accessory_006_silver_ornate_tiara.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-129 | head accessory | Silver forehead circlet with central drop | `ACCESSORY`, upper group cell 8 | DG-123 | `assets/head_accessories/head_accessory_007_silver_drop_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-130 | head accessory | Translucent white veil | `ACCESSORY`, upper group cell 9 | DG-123 | `assets/head_accessories/head_accessory_008_translucent_white_veil.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-131 | head accessory | Pale-blue spiked crown/tiara | `ACCESSORY`, upper group cell 10 | DG-123 | `assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-132 | head accessory | Gold low-profile circlet | `ACCESSORY`, upper group cell 11 | DG-123 | `assets/head_accessories/head_accessory_010_gold_low_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
 
 ### Hand objects
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-133 | hand object | Gnarled wood staff with blue flame/crystal | `HAND`, r1c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-134 | hand object | Purple crystal orb | `HAND`, r1c2 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-135 | hand object | Slender dark wand | `HAND`, r1c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-136 | hand object | Silver straight sword | `HAND`, r1c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-137 | hand object | Dark spellbook with gold star emblem | `HAND`, r1c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-138 | hand object | Warm-gold hanging lantern | `HAND`, r1c6 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-139 | hand object | Gold staff with blue gem | `HAND`, r2c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-140 | hand object | Blue crescent-moon staff | `HAND`, r2c2 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-141 | hand object | Violet short blade/dagger | `HAND`, r2c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-142 | hand object | Horned skull scepter | `HAND`, r2c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-143 | hand object | Round dark compass/watch talisman | `HAND`, r2c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-144 | hand object | Brown closed tome | `HAND`, r2c6 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-133 | hand object | Gnarled wood staff with blue flame/crystal | `HAND`, r1c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-134 | hand object | Purple crystal orb | `HAND`, r1c2 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-135 | hand object | Slender dark wand | `HAND`, r1c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-136 | hand object | Silver straight sword | `HAND`, r1c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-137 | hand object | Dark spellbook with gold star emblem | `HAND`, r1c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-138 | hand object | Warm-gold hanging lantern | `HAND`, r1c6 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-139 | hand object | Gold staff with blue gem | `HAND`, r2c1 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-140 | hand object | Blue crescent-moon staff | `HAND`, r2c2 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-141 | hand object | Violet short blade/dagger | `HAND`, r2c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-142 | hand object | Horned skull scepter | `HAND`, r2c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-143 | hand object | Round dark compass/watch talisman | `HAND`, r2c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png` | `prompts/10_hand_objects.md` | withdrawn |
+| DG-144 | hand object | Brown closed tome | `HAND`, r2c6 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png` | `prompts/10_hand_objects.md` | withdrawn |
 
 ### Front auras
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | procedural — `scripts/build_front_aura_flame.py` | registered |
-| DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | registered |
+| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | procedural — `scripts/build_front_aura_flame.py` | withdrawn |
+| DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | withdrawn |
 
 ## Global finish
 

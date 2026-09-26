@@ -18,6 +18,7 @@ repair stops just inside it.
 """
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -31,12 +32,25 @@ ROOT = Path(__file__).resolve().parent.parent
 BUDGET = 60
 
 
+def registered_outfits() -> set[str]:
+    manifest = json.loads((ROOT / "assets" / "asset_manifest.json").read_text())
+    return {Path(e["path"]).name for e in manifest["registered_production_assets"]
+            if e["category"] == "outfits"}
+
+
 class OutfitSleeveTests(unittest.TestCase):
     def test_no_sleeve_leaves_bare_arm_along_its_edge(self) -> None:
         from scripts.widen_sleeves import outfit_base_pairs, exposed_strip_pixels
+        from scripts.hidden_layers import dressed_outfits
 
         pairs = outfit_base_pairs()
-        self.assertTrue(pairs, "no outfit is bound to a base")
+        # A dressed body hides the base it was painted over, so no bare arm can show
+        # beside its sleeves. Every other outfit has to be bound to a base to be
+        # measured here, or it would pass unmeasured.
+        outfits = registered_outfits()
+        self.assertTrue(outfits, "no outfit is registered")
+        unmeasured = outfits - set(pairs) - dressed_outfits()
+        self.assertFalse(unmeasured, f"outfits neither bound to a base nor dressed: {sorted(unmeasured)}")
         for outfit_name, base_name in sorted(pairs.items()):
             with self.subTest(outfit=outfit_name):
                 garment = Image.open(ROOT / "assets" / "outfits" / outfit_name)
