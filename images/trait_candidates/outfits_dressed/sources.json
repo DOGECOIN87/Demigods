@@ -84,9 +84,11 @@
       "pose": "004",
       "target": "outfit_006_black_layered_hooded_robe_pose_004.png",
       "review": {
-        "decision": "approved",
+        "decision": "withdrawn",
         "reviewed_on": "2026-09-25",
-        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds."
+        "note": "RGBA render with its own matte, re-levelled to opaque. Drawn with a longer body than the rig; fitted in two zones so the head keeps the shared face traits' proportions. Face traits, hair and hand objects checked over the figure on light and dark grounds.",
+        "withdrawn_on": "2026-09-25",
+        "withdrawn_reason": "Removed by the owner on 2026-09-25 after a sample sheet: the outfit does not render properly in the collection (tokens 0004, 0005, 0010 and 0025 of that sheet)."
       }
     },
     {

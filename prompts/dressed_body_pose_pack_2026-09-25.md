@@ -1,6 +1,6 @@
-# Demigods - dressed-body prompts for the 30 missing outfit renders
+# Demigods - dressed-body prompts for the 31 missing outfit renders
 
-Prepared 2026-09-25. Companion to `prompts/manual_outfit_pose_pack_2026-09-25.md`, which asked for isolated outfit layers. The owner switched to renders with the body intact: the base pose and its outfit painted as one bald, faceless figure. Twenty arrived that day and are registered (`docs/qa/dressed_bodies_2026-09-25.md`); these prompts are for the thirty still missing.
+Prepared 2026-09-25. Companion to `prompts/manual_outfit_pose_pack_2026-09-25.md`, which asked for isolated outfit layers. The owner switched to renders with the body intact: the base pose and its outfit painted as one bald, faceless figure. Twenty arrived that day and are registered (`docs/qa/dressed_bodies_2026-09-25.md`); these prompts are for the thirty-one still missing.
 
 ## Where the wardrobe stands
 
@@ -10,16 +10,16 @@ Prepared 2026-09-25. Companion to `prompts/manual_outfit_pose_pack_2026-09-25.md
 | 002 Storm Guardian | **missing** | layer, to replace | **missing** | **missing** | **missing** |
 | 003 Verdant Alchemist | **missing** | **missing** | layer, to replace | **missing** | **missing** |
 | 004 Lunar Oracle | **missing** | **missing** | **missing** | layer, to replace | **missing** |
-| 005 Sun Temple | **missing** | **missing** | **missing** | **missing** | layer, to replace |
-| 006 Black layered hooded robe | dressed | dressed | dressed | dressed | dressed |
+| 005 Sun Temple | **missing** | **missing** | **missing** | **missing** | **missing** (layer withdrawn) |
+| 006 Black layered hooded robe | dressed | dressed | dressed | **missing** (withdrawn) | dressed |
 | 007 Brown leather long coat | dressed | dressed | dressed | dressed | dressed |
 | 008 Olive ragged cloak | dressed | dressed | dressed | dressed | dressed |
 | 009 Navy high-collar coat | dressed | dressed | dressed | dressed | dressed |
-| 010 Celestial Robe, white and gold | layer, to replace | **missing** | **missing** | **missing** | **missing** |
+| 010 Celestial Robe, white and gold | **missing** (layer withdrawn) | **missing** | **missing** | **missing** | **missing** |
 
 - **dressed** - registered dressed body, rendered with the base pose hidden (`hides` in `config/compatibility.json`).
 - **layer, to replace** - the original single-pose garment layer drawn over the bare base. It stays in the collection until its dressed render lands; it still shows the base's cream undergarment at the waist in places (`docs/handoff/outfit-refit-brief.md`).
-- **missing** - nothing in this pose yet.
+- **missing** - nothing in this pose yet. On 2026-09-25 the owner withdrew the sun temple and white-and-gold robe layers and the black robe's Pose 004 render, which did not render properly (`docs/qa/trait_reduction_2026-09-25.md`); a new render of any of them is welcome.
 
 The collection generates today without any of these: the registered traits allow about 1.5 trillion rule-valid combinations. Each render added here adds an outfit to a pose and evens out the wardrobe.
 
@@ -37,7 +37,7 @@ The collection generates today without any of these: the registered traits allow
 - **Background.** Transparent is best. Pure black works for light and mid-tone outfits; dark outfits must be transparent.
 - **Face.** No painted features at all. The shared face layers cover only the eyes, brows and mouth they draw.
 
-# The thirty prompts
+# The thirty-one prompts
 
 ### Outfit 001 Celestial Scholar - Pose 001 (neutral, both hands open)
 
@@ -937,4 +937,36 @@ Eyes, eyebrows, nose, mouth, hair, hats, jewellery at the neck, held objects, we
 
 OUTPUT
 Exactly one PNG named: outfit_010_celestial_robe_white_gold_pose_005.png
+```
+
+### Outfit 006 Black layered hooded robe - Pose 004 (viewer-left palm up)
+
+The first render of this pose drew the palm 16 px inside the base's, so every palm object hung off it; it was withdrawn. The palm is the point of this prompt.
+
+```text
+Create ONE full-body character render: the Demigods Black layered hooded robe outfit (family 006) worn by the collection's base figure in Pose 004 (viewer-left palm up), painted with the body intact.
+
+ATTACH THESE IMAGES IN THIS ORDER
+Image 1: base_pose_004_viewer_left_palm_up.png (repository: assets/base_bodies/base_pose_004_viewer_left_palm_up.png). The exact figure, pose, scale and placement. It governs every contour: head, ears, neck, shoulders, arms, hands, legs and feet.
+Image 2: outfit_006_black_layered_hooded_robe_pose_001.png (repository: assets/outfits/). The same robe, approved, in another pose: its design, fabric planes and finish exactly as the collection has them.
+Image 3: outfit_007_brown_leather_long_coat_pose_004.png (repository: assets/outfits/). An approved render in this same pose. Its open palm sits exactly where it must; do not copy its coat.
+
+FIGURE
+Paint Image 1's figure wearing the robe. Keep Image 1's head, ears, neck, arms, hands, legs, stance and proportions exactly: the same head size and position (top of the head near Y 140, head centred on X 627, about 353 px across the ears, chin near Y 461), the same arm and hand positions, and the soles on Image 1's baseline near Y 1140. Do not lengthen the legs or the body, and do not enlarge or shrink the figure. The head stays bald and faceless: smooth skin and ears only - no eyes, eyebrows, nose, mouth or hair.
+
+OUTFIT
+Deep black and charcoal layered long robe with a collapsed hood behind the open neckline, an overlapping inner tunic, restrained silver-grey seams and angular ornaments, a dark belt with metal buckle and hanging strap, long pointed split robe panels, full sleeves with broad dark cuffs, black trousers and complete black boots. Preserve the many distinct black fabric planes through controlled shading; keep the hood down and off the head.
+Where skin shows: hands and neck only. The sleeves cover the shoulders and arms to the wrists. Everything else is covered.
+
+POSE 004
+All left and right directions mean the viewer's left and right. The hand on the LEFT SIDE OF THE IMAGE is open and turned palm-up at the low side position; the hand on the RIGHT SIDE OF THE IMAGE is relaxed and open. Put the palm EXACTLY where Image 1's palm is, fingertips included - an orb, a book or a talisman is added later seated on it - and keep the space around it clear of the sleeve. Nothing held.
+
+CANVAS AND STYLE
+One 1254 x 1254 PNG with a TRANSPARENT background. This outfit is dark: do not substitute a black background. One figure, front-facing and orthographic, in the collection's anime-chibi fantasy game-art style: clean coherent outlines, refined cel and painterly shading, soft upper-left key light with lower-right form shadows and a subtle cool right rim light.
+
+AVOID
+Eyes, eyebrows, nose, mouth, hair, hats, jewellery at the neck, held objects, weapons, wings, auras, glows, ground shadows, floors, scenery, text, labels, borders, a second figure or view, a checkerboard painted into the image, a changed camera, a mirrored pose, a stretched or shortened body, a larger or smaller head, and anything cropped at the canvas edge.
+
+OUTPUT
+Exactly one PNG named: outfit_006_black_layered_hooded_robe_pose_004.png
 ```

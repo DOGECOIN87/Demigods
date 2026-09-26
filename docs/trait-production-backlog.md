@@ -149,16 +149,16 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 | DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | registered |
 | DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | registered |
 | DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | registered |
-| DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | registered |
+| DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-042 | outfit | Black layered hooded long robe | `OUTFIT`, row 2 cell 1 | DG-037 | `assets/outfits/outfit_006_black_layered_hooded_robe.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-043 | outfit | Brown leather long coat/robe | `OUTFIT`, row 2 cell 2 | DG-037 | `assets/outfits/outfit_007_brown_leather_long_coat.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-044 | outfit | Olive-green ragged cloak outfit | `OUTFIT`, row 2 cell 3 | DG-037 | `assets/outfits/outfit_008_olive_ragged_cloak.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-045 | outfit | Deep-navy high-collar long coat | `OUTFIT`, row 2 cell 4 | DG-037 | `assets/outfits/outfit_009_navy_high_collar_coat.png` | `prompts/08_outfits.md` | withdrawn |
-| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | registered |
+| DG-046 | outfit | Silver-white high-collar ceremonial robe | `OUTFIT`, row 2 cell 5; naming example in `docs/naming-and-export.md` | DG-037 | `assets/outfits/outfit_010_celestial_robe_white_gold.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-162 | outfit | Black layered hooded robe, painted with the body intact, Pose 001 (neutral, both hands open) | `images/trait_candidates/outfits_dressed/file_0000000021d8822f8a5b79fae6210041.png` | Bound to `base_body_001_neutral_master.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-163 | outfit | Black layered hooded robe, painted with the body intact, Pose 002 (viewer-left vertical grip) | `images/trait_candidates/outfits_dressed/file_00000000b5a481f69c05430aa0d7409f.png` | Bound to `base_pose_002_viewer_left_vertical_grip.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_002.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-164 | outfit | Black layered hooded robe, painted with the body intact, Pose 003 (viewer-right vertical grip) | `images/trait_candidates/outfits_dressed/file_000000007eb0820cbbcc7d350702c9d7.png` | Bound to `base_pose_003_viewer_right_vertical_grip.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_003.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
-| DG-165 | outfit | Black layered hooded robe, painted with the body intact, Pose 004 (viewer-left palm up) | `images/trait_candidates/outfits_dressed/file_0000000067a081fb8aaeb9a4c68c422b.png` | Bound to `base_pose_004_viewer_left_palm_up.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_004.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
+| DG-165 | outfit | Black layered hooded robe, painted with the body intact, Pose 004 (viewer-left palm up) | `images/trait_candidates/outfits_dressed/file_0000000067a081fb8aaeb9a4c68c422b.png` | Bound to `base_pose_004_viewer_left_palm_up.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_004.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | withdrawn |
 | DG-166 | outfit | Black layered hooded robe, painted with the body intact, Pose 005 (centered two-hand grip) | `images/trait_candidates/outfits_dressed/file_00000000b6e4820db716b6683ffb828f.png` | Bound to `base_pose_005_centered_two_hand_grip.png`, which it hides in the render | `assets/outfits/outfit_006_black_layered_hooded_robe_pose_005.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-167 | outfit | Brown leather long coat, painted with the body intact, Pose 001 (neutral, both hands open) | `images/trait_candidates/outfits_dressed/file_000000004108822f9b82e4880a3c4f2d.png` | Bound to `base_body_001_neutral_master.png`, which it hides in the render | `assets/outfits/outfit_007_brown_leather_long_coat_pose_001.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
 | DG-168 | outfit | Brown leather long coat, painted with the body intact, Pose 002 (viewer-left vertical grip) | `images/trait_candidates/outfits_dressed/file_00000000c09c822f9355f9df28d61895.png` | Bound to `base_pose_002_viewer_left_vertical_grip.png`, which it hides in the render | `assets/outfits/outfit_007_brown_leather_long_coat_pose_002.png` | `prompts/dressed_body_pose_pack_2026-09-25.md` | registered |
@@ -226,19 +226,19 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 |---|---|---|---|---|---|---|---|
 | DG-079 | eyebrows | Neutral brow pair, as painted | `FACE`, eyebrows r1c1 | Approved face anchors | `assets/eyebrows/eyebrows_001_neutral.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
 | DG-080 | eyebrows | Raised brow pair | `FACE`, eyebrows r1c2 | DG-079 representative test | `assets/eyebrows/eyebrows_002_raised.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-081 | eyebrows | Lowered brow pair | `FACE`, eyebrows r1c3 | DG-079 | `assets/eyebrows/eyebrows_003_lowered.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-081 | eyebrows | Lowered brow pair | `FACE`, eyebrows r1c3 | DG-079 | `assets/eyebrows/eyebrows_003_lowered.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
 | DG-082 | eyebrows | Angry brow pair, inner ends down | `FACE`, eyebrows r1c4 | DG-079 | `assets/eyebrows/eyebrows_004_angry.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-083 | eyebrows | Furious brow pair, driven down and in | `FACE`, eyebrows r2c1 | DG-079 | `assets/eyebrows/eyebrows_005_furious.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-083 | eyebrows | Furious brow pair, driven down and in | `FACE`, eyebrows r2c1 | DG-079 | `assets/eyebrows/eyebrows_005_furious.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
 | DG-084 | eyebrows | Worried brow pair, inner ends up | `FACE`, eyebrows r2c2 | DG-079 | `assets/eyebrows/eyebrows_006_worried.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-085 | eyebrows | Pleading brow pair, inner ends high | `FACE`, eyebrows r2c3 | DG-079 | `assets/eyebrows/eyebrows_007_pleading.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-086 | eyebrows | Arched brow pair | `FACE`, eyebrows r2c4 | DG-079 | `assets/eyebrows/eyebrows_008_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-085 | eyebrows | Pleading brow pair, inner ends high | `FACE`, eyebrows r2c3 | DG-079 | `assets/eyebrows/eyebrows_007_pleading.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-086 | eyebrows | Arched brow pair | `FACE`, eyebrows r2c4 | DG-079 | `assets/eyebrows/eyebrows_008_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
 | DG-087 | eyebrows | Flat brow pair | `FACE`, eyebrows r3c1 | DG-079 | `assets/eyebrows/eyebrows_009_flat.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-088 | eyebrows | Thin brow pair | `FACE`, eyebrows r3c2 | DG-079 | `assets/eyebrows/eyebrows_010_thin.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-089 | eyebrows | Thick brow pair | `FACE`, eyebrows r3c3 | DG-079 | `assets/eyebrows/eyebrows_011_thick.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-090 | eyebrows | Bold raised brow pair | `FACE`, eyebrows r3c4 | DG-079 | `assets/eyebrows/eyebrows_012_bold_raised.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-091 | eyebrows | Fine arched brow pair | `FACE`, eyebrows r4c1 | DG-079 | `assets/eyebrows/eyebrows_013_fine_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-092 | eyebrows | Wide-set brow pair | `FACE`, eyebrows r4c2 | DG-079 | `assets/eyebrows/eyebrows_014_wide_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
-| DG-093 | eyebrows | Close-set brow pair | `FACE`, eyebrows r4c3 | DG-079 | `assets/eyebrows/eyebrows_015_close_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
+| DG-088 | eyebrows | Thin brow pair | `FACE`, eyebrows r3c2 | DG-079 | `assets/eyebrows/eyebrows_010_thin.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-089 | eyebrows | Thick brow pair | `FACE`, eyebrows r3c3 | DG-079 | `assets/eyebrows/eyebrows_011_thick.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-090 | eyebrows | Bold raised brow pair | `FACE`, eyebrows r3c4 | DG-079 | `assets/eyebrows/eyebrows_012_bold_raised.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-091 | eyebrows | Fine arched brow pair | `FACE`, eyebrows r4c1 | DG-079 | `assets/eyebrows/eyebrows_013_fine_arched.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-092 | eyebrows | Wide-set brow pair | `FACE`, eyebrows r4c2 | DG-079 | `assets/eyebrows/eyebrows_014_wide_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
+| DG-093 | eyebrows | Close-set brow pair | `FACE`, eyebrows r4c3 | DG-079 | `assets/eyebrows/eyebrows_015_close_set.png` | `prompts/06_eyes_eyebrows_mouths.md` | withdrawn |
 | DG-094 | eyebrows | Quizzical brow pair, one raised | `FACE`, eyebrows r4c4 | DG-079 | `assets/eyebrows/eyebrows_016_quizzical.png` | `prompts/06_eyes_eyebrows_mouths.md` | registered |
 
 ### Mouths
@@ -288,16 +288,16 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-123 | head accessory | Gold pointed crown | `ACCESSORY`, upper group cell 1 | Approved head/hair composite | `assets/head_accessories/head_accessory_001_gold_pointed_crown.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-124 | head accessory | Large gold halo ring | `ACCESSORY`, upper group cell 2; compatibility example | DG-123 representative test | `assets/head_accessories/head_accessory_002_large_gold_halo.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-125 | head accessory | Green laurel wreath | `ACCESSORY`, upper group cell 3 | DG-123 | `assets/head_accessories/head_accessory_003_green_laurel.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-126 | head accessory | Balanced black curved horn set | `ACCESSORY`, upper group cells 4–5 as one pair | DG-123 | `assets/head_accessories/head_accessory_004_black_curved_horns.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-127 | head accessory | Silver winged circlet | `ACCESSORY`, upper group cell 6 | DG-123 | `assets/head_accessories/head_accessory_005_silver_winged_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-128 | head accessory | Silver ornate tiara | `ACCESSORY`, upper group cell 7 | DG-123 | `assets/head_accessories/head_accessory_006_silver_ornate_tiara.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-129 | head accessory | Silver forehead circlet with central drop | `ACCESSORY`, upper group cell 8 | DG-123 | `assets/head_accessories/head_accessory_007_silver_drop_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
-| DG-130 | head accessory | Translucent white veil | `ACCESSORY`, upper group cell 9 | DG-123 | `assets/head_accessories/head_accessory_008_translucent_white_veil.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-131 | head accessory | Pale-blue spiked crown/tiara | `ACCESSORY`, upper group cell 10 | DG-123 | `assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png` | `prompts/09_head_and_neck_accessories.md` | registered |
-| DG-132 | head accessory | Gold low-profile circlet | `ACCESSORY`, upper group cell 11 | DG-123 | `assets/head_accessories/head_accessory_010_gold_low_circlet.png` | `prompts/09_head_and_neck_accessories.md` | QA-failed |
+| DG-123 | head accessory | Gold pointed crown | `ACCESSORY`, upper group cell 1 | Approved head/hair composite | `assets/head_accessories/head_accessory_001_gold_pointed_crown.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-124 | head accessory | Large gold halo ring | `ACCESSORY`, upper group cell 2; compatibility example | DG-123 representative test | `assets/head_accessories/head_accessory_002_large_gold_halo.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-125 | head accessory | Green laurel wreath | `ACCESSORY`, upper group cell 3 | DG-123 | `assets/head_accessories/head_accessory_003_green_laurel.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-126 | head accessory | Balanced black curved horn set | `ACCESSORY`, upper group cells 4–5 as one pair | DG-123 | `assets/head_accessories/head_accessory_004_black_curved_horns.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-127 | head accessory | Silver winged circlet | `ACCESSORY`, upper group cell 6 | DG-123 | `assets/head_accessories/head_accessory_005_silver_winged_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-128 | head accessory | Silver ornate tiara | `ACCESSORY`, upper group cell 7 | DG-123 | `assets/head_accessories/head_accessory_006_silver_ornate_tiara.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-129 | head accessory | Silver forehead circlet with central drop | `ACCESSORY`, upper group cell 8 | DG-123 | `assets/head_accessories/head_accessory_007_silver_drop_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-130 | head accessory | Translucent white veil | `ACCESSORY`, upper group cell 9 | DG-123 | `assets/head_accessories/head_accessory_008_translucent_white_veil.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-131 | head accessory | Pale-blue spiked crown/tiara | `ACCESSORY`, upper group cell 10 | DG-123 | `assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
+| DG-132 | head accessory | Gold low-profile circlet | `ACCESSORY`, upper group cell 11 | DG-123 | `assets/head_accessories/head_accessory_010_gold_low_circlet.png` | `prompts/09_head_and_neck_accessories.md` | withdrawn |
 
 ### Hand objects
 
@@ -320,8 +320,8 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | procedural — `scripts/build_front_aura_flame.py` | registered |
-| DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | registered |
+| DG-145 | front aura | Orange rising foreground flame | `AURA`, lower row cell 7 | Rear-aura representative and composite tests | `assets/front_auras/aura_front_001_orange_rising_flame.png` | procedural — `scripts/build_front_aura_flame.py` | withdrawn |
+| DG-146 | front aura | Gold vertical foreground light pillars | `AURA`, lower row cell 8 | DG-145 representative test | `assets/front_auras/aura_front_002_gold_light_pillars.png` | `prompts/12_auras.md` | withdrawn |
 
 ## Global finish
 
@@ -331,9 +331,9 @@ A global finish is a full-canvas directional light grade restating the collectio
 
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
-| DG-158 | global finish | Neutral warm soft bloom from the upper-left key direction | `docs/global-finish-definition.md` | Locked lighting spec | `assets/global_finish/global_finish_001_soft_bloom.png` | procedural — `scripts/build_global_finish.py` | registered |
-| DG-159 | global finish | Warm gold light wash from the upper-left key direction | `docs/global-finish-definition.md` | DG-158 representative test | `assets/global_finish/global_finish_002_gilded_warm.png` | procedural — `scripts/build_global_finish.py` | registered |
-| DG-160 | global finish | Cool veil from the lower-right shadow side | `docs/global-finish-definition.md` | DG-147 | `assets/global_finish/global_finish_003_cool_veil.png` | procedural — `scripts/build_global_finish.py` | registered |
+| DG-158 | global finish | Neutral warm soft bloom from the upper-left key direction | `docs/global-finish-definition.md` | Locked lighting spec | `assets/global_finish/global_finish_001_soft_bloom.png` | procedural — `scripts/build_global_finish.py` | withdrawn |
+| DG-159 | global finish | Warm gold light wash from the upper-left key direction | `docs/global-finish-definition.md` | DG-158 representative test | `assets/global_finish/global_finish_002_gilded_warm.png` | procedural — `scripts/build_global_finish.py` | withdrawn |
+| DG-160 | global finish | Cool veil from the lower-right shadow side | `docs/global-finish-definition.md` | DG-147 | `assets/global_finish/global_finish_003_cool_veil.png` | procedural — `scripts/build_global_finish.py` | withdrawn |
 
 ## Execution rule
 

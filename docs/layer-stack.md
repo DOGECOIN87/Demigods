@@ -21,6 +21,8 @@ Render final tokens from back to front in this order:
 
 Any exception must be documented in the compatibility configuration rather than handled by permanently merging traits.
 
+Since 2026-09-25 four layers are empty by the owner's decision and render nothing: `07_neck_accessory`, `13_head_accessory`, `15_front_aura` and `16_global_finish` (`docs/qa/trait_reduction_2026-09-25.md`). They stay in the order so a category can return without renumbering.
+
 ## Hidden layers
 
 A trait may keep a layer out of the rendered image with a `hides` rule in `config/compatibility.json`. The hidden layer is still selected and still appears in the metadata; it is only not drawn. The one use today is the dressed-body outfit - an outfit painted with the body intact - which hides `05_base_body`: the base binds the pose and the hand objects, and the dressed figure is drawn in its place. A trait that hides the base body must also `require` one. See `docs/workflows/dressed_body_intake.md`.
