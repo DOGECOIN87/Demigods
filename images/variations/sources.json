@@ -1,0 +1,73 @@
+{
+  "description": "Variations planned in prompts/legendary_variation_pack_2026-09-25.md. Uploaded to the top of images/ on 2026-09-25 (variations: commit 348e104; void reference: commit e5aebec) and moved here unchanged. Variation IDs and titles are the ones encoded in each upload's file name (base64 after 'na1fn_'), and they match the pack.",
+  "received": "2026-09-25",
+  "variations": [
+    {
+      "id": "061",
+      "title": "Blossom",
+      "file": "nature/variation_061_blossom.webp",
+      "uploaded_as": "images/cmja-job_m_53e63dc9e758-img-1_1790381330000_na1fn_MDYxX0Jsb3Nzb20.webp",
+      "sha256": "d23dc296ee3cf772d50f1c780d54de37cad75c2dd8dc12d5ae0ef95c50b6ca53",
+      "format": "WEBP",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "062",
+      "title": "Autumn Grove",
+      "file": "nature/variation_062_autumn_grove.webp",
+      "uploaded_as": "images/cmja-job_m_53e63dc9e758-img-2_1790381329000_na1fn_MDYyX0F1dHVtbl9Hcm92ZQ.webp",
+      "sha256": "d0f19d25bbc477efc2e9727112401550cd3d1faee10e14f63412e6919b1304da",
+      "format": "WEBP",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "063",
+      "title": "Winter Grove",
+      "file": "nature/variation_063_winter_grove.webp",
+      "uploaded_as": "images/cmja-job_m_53e63dc9e758-img-3_1790381328000_na1fn_MDYzX1dpbnRlcl9Hcm92ZQ.webp",
+      "sha256": "70d94a9d7aff28a7e80fc02865b93fe102cd61480f06d5c2480996c9637c1165",
+      "format": "WEBP",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "064",
+      "title": "Lotus",
+      "file": "nature/variation_064_lotus.webp",
+      "uploaded_as": "images/cmja-job_m_53e63dc9e758-img-4_1790381326000_na1fn_MDY0X0xvdHVz.webp",
+      "sha256": "e15d2e81ff1d5da1ae4e46f4af1e7a58785677bd7dbd77e99661e64e706c6a63",
+      "format": "WEBP",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "references": [
+    {
+      "file": "references/IMG_20260925_183953_832.jpg",
+      "uploaded_as": "images/IMG_20260925_183953_832.jpg",
+      "sha256": "d6382528c152ccccc26f985ee42dbecad21914bf92000b718df98754d0d701c9",
+      "format": "JPEG",
+      "mode": "RGB",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "theme": "void",
+      "depicts": "assets/legendary/legendary_005_warden_of_the_violet_void.png (JPEG copy; mean absolute pixel difference 1.1/255 at 256 px)"
+    }
+  ]
+}
