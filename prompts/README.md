@@ -25,4 +25,12 @@ Use `00_locked_master_specification.md` at the beginning of each generation requ
 - `18_native_1254_background_004_candidate.md` — execute the exact next DG-010 crescent-star dreamscape candidate, QA, approval, registration, and main-branch workflow
 - `19_individual_trait_asset_co_creation.md` — reusable external-AI prompt and safe candidate-upload workflow for one isolated trait at a time
 
+## 1-of-1 illustrations
+
+These are complete full-bleed compositions, not modular layers.
+
+- `22_legendary_one_of_one.md`, `23_legendary_chatgpt.md`, `batch_legendary.md` — the seven registered legendaries
+- `24_one_of_one_completion_pack.md` — the 21 missing 1-of-1s (057–077), plus seven reserves; see `images/one_of_ones/README.md`
+- `legendary_variation_pack_2026-09-25.md` — 72 outfit-and-setting variations on six legendaries; see `images/variations/README.md` for what has been received
+
 Generate one asset per output. Never ask an image model to produce an entire final trait category as a single contact sheet.
