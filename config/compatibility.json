@@ -79,7 +79,7 @@
     {
       "trait": "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
+      "reason": "The gem staff shaft is anchored to the viewer-left vertical-grip pose."
     },
     {
       "trait": "hand_object_008_blue_crescent_staff_pose_002_left.png",
@@ -119,12 +119,12 @@
     {
       "trait": "hand_object_003_dark_wand_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
+      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
     },
     {
       "trait": "hand_object_004_silver_sword_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
+      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
     },
     {
       "trait": "hand_object_005_star_spellbook_pose_004_left.png",
@@ -363,18 +363,6 @@
     },
     {
       "trait": "hand_object_002_violet_orb_pose_004_left.png",
-      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
-    },
-    {
-      "trait": "hand_object_003_dark_wand_pose_002_left.png",
-      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
-    },
-    {
-      "trait": "hand_object_004_silver_sword_pose_002_left.png",
-      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
-    },
-    {
-      "trait": "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
     }
   ]

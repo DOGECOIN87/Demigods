@@ -16,9 +16,12 @@ The result replaces the registered asset of the same name, so every requires and
 excludes rule keeps applying. An ``in_hand`` rule in config/compatibility.json
 makes the renderer draw it over the body (scripts/generate_777.py).
 
-Of the seven renders received, the star spellbook (a cut-off wrist stump shows
-above the book) and the gold lantern (the hand is so large the lantern ends up
-tiny) were not registered; their sources are kept for reference.
+Of the seven renders received, only the arcane staff and the violet orb were
+registered. The owner rejected the dark wand, silver sword and gold staff with
+blue gem, whose painted hands were so large that fitting them shrank the item by
+about a third; the star spellbook shows a cut-off wrist stump above the book;
+and the gold lantern's hand is so large the lantern ends up tiny. Their sources
+are kept for reference.
 
     python scripts/register_in_hand_objects.py
 """
@@ -50,9 +53,6 @@ BASE_HANDS = {
 ITEMS = {
     "hand_object_001": ("001_arcane_staff_source.webp", 2, (494, 638), 85),
     "hand_object_002": ("002_violet_crystal_orb_source.webp", 4, (490, 718), 200),
-    "hand_object_003": ("003_dark_wand_source.webp", 2, (463, 757), 133),
-    "hand_object_004": ("004_silver_sword_source.webp", 2, (523, 801), 123),
-    "hand_object_007": ("007_gold_staff_with_blue_gem_source.webp", 2, (437, 665), 134),
 }
 
 
