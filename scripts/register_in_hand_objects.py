@@ -36,9 +36,9 @@ its old size), so they are recorded directly rather than derived from a width.
 2026-09-27 (docs/qa/hand_objects_in_hand_2026-09-27.md): two of the owner's six
 candidates, the dark wand and the star spellbook, were registered from
 images/trait_candidates/hand_objects/in_hand_2026-09-27/. The round-1 arcane staff and
-violet orb were fitted again from the same renders, because their painted hands left an
-edge of the body's own hand showing. Their offsets were found with the fit tool's cover
-command rather than by centring the painted hand.
+violet orb, and the round-2 gold staff with blue gem, were fitted again from the same
+renders, because their painted hands left an edge of the body's own hand showing. Their
+offsets were found with the fit tool's cover command rather than by centring the painted hand.
 
 To register a new batch, add an entry to BATCHES (its source folder, decision date, QA
 note and item table) and run the script again. Batches are applied in order, so a later
@@ -103,6 +103,10 @@ ROUND1_REFIT_0927 = {
     "hand_object_001": ("001_arcane_staff_source.webp", 2, (491.4, 634.9), 88, 0.93, (-11, 184)),
     "hand_object_002": ("002_violet_crystal_orb_source.webp", 4, (407.0, 715.8), 363, 0.49, (217, 384)),
 }
+# 2026-09-27: the round-2 gold staff fitted again, 7.5% larger, so its painted fist covers the body's.
+ROUND2_REFIT_0927 = {
+    "hand_object_007": ("007_gold_staff_with_blue_gem.png", 2, (906, 1140), 177, 0.43, (58, 276)),
+}
 QA_0927 = {"decided_on": "2026-09-27", "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
            "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"}
 
@@ -114,6 +118,7 @@ BATCHES = [
      "items": ROUND2_ITEMS},
     {"folder": CANDIDATES_0927, **QA_0927, "items": ITEMS_0927},
     {"folder": SOURCES, **QA_0927, "items": ROUND1_REFIT_0927},
+    {"folder": ROUND2, **QA_0927, "items": ROUND2_REFIT_0927},
 ]
 
 

@@ -1,6 +1,6 @@
 # Hand objects painted in hand - 2026-09-27
 
-Follows `docs/qa/hand_objects_in_hand_2026-09-26.md`. The six candidates in `incoming/hand_objects/with_hand_candidates_2026-09-26/` were fitted with `scripts/fit_in_hand_render.py` and checked against the acceptance list in `prompts/hand_objects_handover_2026-09-27.md`. The owner saw a before-and-after sheet of all six and approved the two recommended fits. They also asked for the registered arcane staff and violet orb to be fixed, because an edge of the body's own hand showed beside their painted hands.
+Follows `docs/qa/hand_objects_in_hand_2026-09-26.md`. The six candidates in `incoming/hand_objects/with_hand_candidates_2026-09-26/` were fitted with `scripts/fit_in_hand_render.py` and checked against the acceptance list in `prompts/hand_objects_handover_2026-09-27.md`. The owner saw a before-and-after sheet of all six and approved the two recommended fits. They also asked for the registered arcane staff and violet orb to be fixed, because an edge of the body's own hand showed beside their painted hands. In the same review they approved fixing the gold staff with blue gem (007), which showed a thinner sliver.
 
 Composite: `docs/qa/hand_objects_in_hand_2026-09-27.png`. Each row shows main before this change, the new layer on the bare body and on two dressed bodies, and the grip close up. Red marks body-hand pixels left showing.
 
@@ -17,14 +17,15 @@ Composite: `docs/qa/hand_objects_in_hand_2026-09-27.png`. Each row shows main be
 
 ## Re-fits of registered renders
 
-Both use the same round-1 render as before, now placed by `scripts/register_in_hand_objects.py` batch `ROUND1_REFIT_0927`. Round 1 centred each painted hand on a body-hand centre 8 to 10 px higher than the measured one (see `BASE_HANDS`), so the bottom of the body's own hand showed.
+Each keeps its registered render, now placed by `scripts/register_in_hand_objects.py`: batch `ROUND1_REFIT_0927` for the staff and orb, and `ROUND2_REFIT_0927` for the gold staff. Round 1 centred each painted hand on a body-hand centre 8 to 10 px higher than the measured one (see `BASE_HANDS`), so the bottom of the body's own hand showed.
 
 | Asset | Before | After | Body hand showing |
 |---|---|---|---|
 | 001 arcane staff | scale 0.8471, offset (30, 218) | scale 0.93, offset (-11, 184) | 346 px (255 core) -> 2 px (0 core) |
 | 002 violet orb | scale 0.49, offset (207, 378) | scale 0.49, offset (217, 384) | 396 px (266 core) -> 0 px |
+| 007 gold staff with blue gem | scale 0.4, offset (85, 312) | scale 0.43, offset (58, 276) | 104 px (25 core) -> 10 px (0 core) |
 
-The orb only moves (10 px right, 6 px down). At its old size the staff's painted fist cannot cover the body's fist wherever it is placed: the best position still showed 22 core px. So it is 9% larger, 1.06x its old height, and its foot now reaches the ankle rather than the shin.
+The orb only moves (10 px right, 6 px down). At its old size the staff's painted fist cannot cover the body's fist wherever it is placed: the best position still showed 22 core px. So it is 9% larger, 1.06x its old height, and its foot now reaches the ankle rather than the shin. The gold staff has the same problem (21 core px at best at its old scale). It is 7.5% larger, which makes it 1.19x its old height, a little over the 1.15 guide. Its painted hand is 1.10x the body's.
 
 The offsets were found with the new `cover` command of `scripts/fit_in_hand_render.py`. It tries every placement near a starting offset and lists those that leave the fewest body-hand pixels showing.
 
@@ -37,6 +38,7 @@ python scripts/fit_in_hand_render.py fit images/trait_candidates/hand_objects/in
 python scripts/fit_in_hand_render.py fit images/trait_candidates/hand_objects/in_hand_2026-09-27/005_star_spellbook.png 005 437.0 895.7 186 --scale 0.6 --offset 178 219
 python scripts/fit_in_hand_render.py fit images/trait_candidates/hand_objects/in_hand_2026-09-26/001_arcane_staff_source.webp 001 491.4 634.9 88 --scale 0.93 --offset -11 184
 python scripts/fit_in_hand_render.py fit images/trait_candidates/hand_objects/in_hand_2026-09-26/002_violet_crystal_orb_source.webp 002 407.0 715.8 363 --scale 0.49 --offset 217 384
+python scripts/fit_in_hand_render.py fit images/trait_candidates/hand_objects/in_hand_2026-09-26/round2/007_gold_staff_with_blue_gem.png 007 906 1140 177 --scale 0.43 --offset 58 276
 ```
 
 The two new sources are byte-identical copies of the candidates, renamed: `003_dark_wand.png` (SHA-256 `e7cf2041…`) and `005_star_spellbook.png` (`8d46b2eb…`), as listed in the candidates' `manifest.json`.

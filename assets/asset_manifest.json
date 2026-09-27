@@ -2744,7 +2744,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "8c5523739fa0c50a05b9b1e3a7641b32f3d11a9ef8de09895075063e4103dc25",
+      "sha256": "80f610d2194f675a05aac2ae0c671eadd545392abd95e603ff66eba03a836c90",
       "dimensions": [
         1254,
         1254
@@ -2752,7 +2752,7 @@
       "format": "PNG",
       "mode": "RGBA",
       "backlog_id": "DG-139",
-      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png",
       "provenance": {
         "origin": "generator_render_painted_in_hand",
         "trait": "Gold staff with blue gem",
@@ -2783,16 +2783,16 @@
         "transform": {
           "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
           "resample": "lanczos",
-          "scale": 0.4,
+          "scale": 0.43,
           "offset": [
-            85,
-            312
+            58,
+            276
           ],
           "output_bounds": [
-            266,
-            323,
-            543,
-            1031
+            253,
+            288,
+            551,
+            1049
           ],
           "cleanup": {
             "alpha_floor": 16,
@@ -2806,8 +2806,8 @@
           1254
         ]
       },
-      "approved_on": "2026-09-26",
-      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md"
     },
     {
       "id": "hand_object_008",

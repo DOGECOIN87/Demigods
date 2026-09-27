@@ -52,4 +52,4 @@ Rerenders of the silver sword, horned skull scepter and round talisman were fitt
 
 The owner then found painted wrists anatomically wrong in general and asked for renders without them. The prompt pack now stops the hand at the base of the palm. Trimming wrists off existing renders was tried and dropped at the owner's request. Six more candidates the owner generated are in `incoming/hand_objects/with_hand_candidates_2026-09-26/`. The next steps are in `prompts/hand_objects_handover_2026-09-27.md`.
 
-Those candidates were fitted on 2026-09-27: the dark wand and star spellbook were registered, and the arcane staff and violet orb were fitted again so their painted hands cover the body's. See `docs/qa/hand_objects_in_hand_2026-09-27.md`.
+Those candidates were fitted on 2026-09-27: the dark wand and star spellbook were registered, and the arcane staff, violet orb and gold staff with blue gem were fitted again so their painted hands cover the body's. See `docs/qa/hand_objects_in_hand_2026-09-27.md`.
