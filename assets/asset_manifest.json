@@ -534,414 +534,6 @@
       "qa_report": "docs/qa/cross_category_composites_2026-07-27.md"
     },
     {
-      "id": "aura_rear_006",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_006_gold_radiance.png",
-      "status": "production_ready",
-      "sha256": "3c3e78fa570aad87c84fa004a09c052fc7f6b930b162ab15a52c424bb719c558",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_radiance.py",
-        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
-        "reference_sha256": "2acac934db9a854dadc29ce9800a9f581dfa0812462fe27b642a2e9f7394fe52",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": []
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "aura_rear_010",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_010_white_neon_ring.png",
-      "status": "production_ready",
-      "sha256": "cb4b276c7e43d09218f625859fe01bdb2f31e7eb7d55fb547d9949c721065283",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/20_dg_015_rear_aura_001_candidate.md",
-      "qa_report": "docs/qa/rear_aura_family_2026-07-27.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_floor_ring.py",
-        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
-        "reference_sha256": "5a021402be6bd2ef13b3eac8bcf8ad9f94b9186a78cecf845a8c708eae1f17ee",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "white"
-      },
-      "approved_on": "2026-07-27"
-    },
-    {
-      "id": "aura_rear_002",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_002_violet_radial_glow.png",
-      "status": "production_ready",
-      "sha256": "aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/12_auras.md",
-      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
-      "provenance": {
-        "origin": "procedural_vector_render",
-        "generator_script": "scripts/build_aura_radiance.py",
-        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
-        "reference_sha256": "2acac934db9a854dadc29ce9800a9f581dfa0812462fe27b642a2e9f7394fe52",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [],
-        "palette": "violet",
-        "generator_args": "--palette violet --peak-alpha 235 --falloff 1.3"
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "aura_rear_004",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_004_violet_void_flame.png",
-      "status": "production_ready",
-      "sha256": "ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/12_auras.md",
-      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "generator_script": "scripts/extract_effect_layer.py",
-        "reference_path": "images/reference_sheets/back_accessories_and_aura_effects_catalog.webp",
-        "candidate_path": "images/trait_candidates/PoLVl.jpg",
-        "candidate_sha256": "593c3c23bb8bf62130b6397d736cbd4d008a23777d45322c79426cc334113255",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "subtractive_alpha_from_white_field_cut_232_gain_1.5_gamma_1.1",
-          "recenter_x",
-          "scale_to_target_height_980_center_y_660"
-        ]
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "aura_rear_016",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
-      "status": "production_ready",
-      "sha256": "eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/12_auras.md",
-      "qa_report": "docs/qa/rear_aura_batch_2026-07-28.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "generator_script": "scripts/extract_effect_layer.py",
-        "reference_path": "images/reference_sheets/floor_ring_aura_variants_sheet.png",
-        "candidate_path": "images/trait_candidates/grok_1784757226345.png",
-        "candidate_sha256": "6cc7286b3dddd6c818de3741ee2a200d65398cbe9351491019f4b608b815cdde",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "additive_alpha_from_black_field_gain_1.7_gamma_1.35",
-          "scale_to_target_height_968_center_y_645"
-        ]
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_001",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
-      "status": "production_ready",
-      "sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_001_baseline_clip_2026-07-28.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "design_reference": "images/trait_candidates/outfits_pose_aware/outfit_001_celestial_scholar_pose_001_candidate.png",
-        "required_pose": "base_body_001_neutral_master.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "clip_to_max_bounds_y1139",
-          "fit_boots_to_legs_2026-09-07"
-        ],
-        "postprocessing_script": "scripts/clip_trait_to_bounds.py",
-        "pre_boot_fit_sha256": "5df00232eaa9b6a495e9522149864f321e8eea8de9335cdb7bb334238c822958",
-        "post_boot_fit_sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 11 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers."
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_002",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
-      "status": "production_ready",
-      "sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_body_fit_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
-        "required_pose": "base_pose_002_viewer_left_vertical_grip.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.929_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "open_collar_crisp_rim_c502_r12_h32",
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_body_fit_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "collar_note": "Collar interior was painted opaque. Cut above the traced rim arc; full-layer despill (verified safe: every green run 1-5px, i.e. edge spill, no green in the design).",
-        "pre_boot_fit_sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
-        "post_boot_fit_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 845 to 189. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "body_fit_script": "scripts/fit_outfit_torso.py",
-        "pre_outfit_body_fit_2026-09-10_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
-        "post_outfit_body_fit_2026-09-10_sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
-        "body_fit_note": "garment closed over 273 rows; base body showing beside it 7745 px -> 449 px"
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_003",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
-      "status": "production_ready",
-      "sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_body_fit_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
-        "required_pose": "base_pose_003_viewer_right_vertical_grip.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.88_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "open_collar_crisp_rim_c520_r27_h30",
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_body_fit_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "collar_note": "A duller neck was painted into the garment. Cut above the shirt-collar opening; 3px-band despill only, because the potion bottles are legitimately green.",
-        "pre_boot_fit_sha256": "7745775e8a984ecb6ddd2743f0315f2848ad51cbcbdd7460f8970fc57085ebc0",
-        "post_boot_fit_sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 115 to 6. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "body_fit_script": "scripts/fit_outfit_torso.py",
-        "pre_outfit_body_fit_2026-09-10_sha256": "fd4067c7400ad7b8bfee2e12f2cc649c411290e676fc32b0dc8544fbce5308b9",
-        "post_outfit_body_fit_2026-09-10_sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
-        "body_fit_note": "garment closed over 166 rows; base body showing beside it 2236 px -> 1190 px"
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_004",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
-      "status": "production_ready",
-      "sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
-        "required_pose": "base_pose_004_viewer_left_palm_up.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.761_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_neckline_inner_garment_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "pre_boot_fit_sha256": "a46925608b82140d355733158987cd439a337e82fd73ee4b48138e93ea26170a",
-        "post_boot_fit_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 1315 to 5. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "b9aeabdd923e21f520c5e2928bf1016e052991b30e4a93b550d6ff90e703affa",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
-        "neckline_note": "920 px of inner garment painted into the opening: muted violet-grey underlayer inside the wrap."
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "outfit_005",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
-      "status": "production_ready",
-      "sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_necklines_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
-        "required_pose": "base_pose_005_centered_two_hand_grip.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.756_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "fit_boots_to_legs_2026-09-07",
-          "pose_005_proportion_refit_2026-09-09",
-          "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/clean_chroma_key.py",
-        "pose_bundled_overlay": "exact Pose 005 forearms and joined hands rendered above continuous clothing",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "pre_boot_fit_sha256": "b91b0414fdc5ad87a2ce7326d48f36600813da352a6374d91f75536cf53dcd96",
-        "post_boot_fit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 2389 to 0. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "pose_005_refit_script": "scripts/refit_pose_005_proportions.py",
-        "pre_pose_005_refit_sha256": "e45e93ed304ac4a7263c042e6f315308d5aad5df786e85264e3dffcbffe475a8",
-        "post_pose_005_refit_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
-        "pre_pose_005_refit_path": "incoming/pose_005_refit_2026-09-09/originals/outfit_005_sun_temple_pose_005.png",
-        "pose_005_refit_note": "Four of the five base bodies place the eye line at Y 368.5-371.8, the chin at Y 475-477 and the shoulder junction at Y 495-497. Pose 005 sat at Y 350.8, 452 and 472 - a smaller head on a longer body, off the collection's proportions by 20-24 px. The silhouette rig gate could not see it: canvas, top of head, foot baseline, centre X and maximum bounds are all measured at the outline's extremes and pose 005 met every one. It blocked the facial system, because eyes, eyebrows and mouths are one shared layer placed by rig anchor, and no single seat fits both pose 005 and the other four. Corrected by a monotone piecewise-linear remap of the Y axis through the measured landmarks (141 -> 141, 350.8 -> 370.3, 452 -> 476.5, 472 -> 496.3, 1139 -> 1139), holding both locked rows fixed and leaving X untouched: the head stretches 9.3% vertically and the body below the shoulder compresses 3.6%. Pose 005's head was already the collection's width, so only its height needed to move. outfit_005 is drawn to this base and bound to it by a compatibility rule, so it takes the identical map and their fit is preserved exactly. Resampling is linear on premultiplied alpha along Y only. The pre-refit bytes are kept at incoming/pose_005_refit_2026-09-09/originals/ for local verification; that tree is ignored by incoming/.gitignore like every other candidate drop, so the durable record of what was replaced is pre_pose_005_refit_sha256, which is the hash this manifest carried in the preceding commit.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "ecba6a93c01e3b5c8c8cc5485b5d11a3bceb31a71a004253f32dccfb33c95c0a",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
-        "chroma_despeckle_note": "23 px of surviving chroma key removed. The asset carried 3 saturated key-green pixels, 0.002% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "16b2abe01ad0ed1349f0c122c015c5efa38278548824272de2e904338fa899e3",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
-        "neckline_note": "807 px of inner garment painted into the opening: warm cream underlayer inside the tunic's round neck."
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
-      "id": "aura_rear_018",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_018_blue_flame_ring.png",
-      "status": "production_ready",
-      "sha256": "37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-161",
-      "qa_composite": "docs/qa/composites/aura_rear_018_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "generator_script": "scripts/extract_effect_layer.py",
-        "candidate_path": "images/trait_candidates/grok_1784755724820.png",
-        "candidate_sha256": "9b8044ea7e6b6b7f78d7cf2cfe8554b327f7cc3f2362169015be66aaffb0ee9f",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "blue rising flame above a luminous floor ring",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "crop_to_alpha_content_rect_206_0_1048_1254",
-          "extract_effect_layer_field_white_cut_232",
-          "target_height_950_center_y_660"
-        ],
-        "note": "Source carries a baked transparency checkerboard inside a letterboxed frame; the content crop precedes extraction so the black bars are not read as opaque form.",
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-07-29",
-      "qa_report": "docs/qa/aura_rear_018_blue_flame_ring_2026-07-28.md",
-      "prompt": "prompts/12_auras.md"
-    },
-    {
       "id": "global_finish_001",
       "category": "global_finish",
       "path": "assets/global_finish/global_finish_001_soft_bloom.png",
@@ -2063,122 +1655,6 @@
       "qa_report": "Approved in full-context red-pair review on 2026-08-15; matching front-to-rear compatibility rule added."
     },
     {
-      "id": "outfit_010",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
-      "status": "production_ready",
-      "sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-046",
-      "qa_composite": "docs/qa/composites/outfit_010_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver-white high-collar ceremonial robe",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "fit_boots_to_legs_2026-09-07",
-          "chroma_residue_despeckle_2026-09-10",
-          "outfit_neckline_inner_garment_2026-09-10",
-          "sleeve_widening_2026-09-10"
-        ],
-        "pre_boot_fit_sha256": "87c0b44acbf0e5d1893b033392cf17c3a83e0f8f96b523d26747df7dd5091182",
-        "post_boot_fit_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 5469 to 12. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "09f6b33186fbb6dd68a8cffc8bfafcc1469d5e19cc53ebdcb12a59cb458a2813",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
-        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.001% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched.",
-        "neckline_script": "scripts/fix_outfit_necklines.py",
-        "pre_outfit_neckline_inner_garment_2026-09-10_sha256": "a1f0eccdefdf55f27492fdfe43d18e2ad7ddb115e3e2c54d81ab1ddf5797b474",
-        "post_outfit_neckline_inner_garment_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
-        "neckline_note": "1079 px of painted collar interior cleared: stand collar; the slate interior capped the neck. 1226 px of inner garment painted into the opening: pale shirt inside the stand collar.",
-        "sleeve_script": "scripts/widen_sleeves.py",
-        "pre_sleeve_widening_2026-09-10_sha256": "633bf4699580d7a0cdd0539d16c21e51ff4890551699e630be79a446e8591e9b",
-        "post_sleeve_widening_2026-09-10_sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
-        "sleeve_note": "sleeve edge warped outward over 177 rows; bare arm along the sleeve 4482 px -> 0 px"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/sleeve_widening_2026-09-10.md"
-    },
-    {
-      "id": "aura_rear_003",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
-      "status": "production_ready",
-      "sha256": "396de4fb8f1291208be80f4f3adf9ce5d71f31db7e8f693dffd116d0582a7886",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-017",
-      "qa_composite": "docs/qa/composites/aura_rear_003_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Blue crystalline energy burst",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "2c93274f0b094de13fd0f50a5a4d96ca11199acb0f6114ba43acb25cb9447037",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "396de4fb8f1291208be80f4f3adf9ce5d71f31db7e8f693dffd116d0582a7886",
-        "chroma_despeckle_note": "2594 px of surviving chroma key removed. The asset carried 965 saturated key-green pixels, 0.763% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
-    },
-    {
-      "id": "aura_rear_005",
-      "category": "rear_auras",
-      "path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
-      "status": "production_ready",
-      "sha256": "d367b00e26026131034b4ca886fbb8ba2fcb8cc2c64200e52f90e22184294f51",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-019",
-      "qa_composite": "docs/qa/composites/aura_rear_005_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Pale-lavender vertical lightning wisps",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "f39dc72fd6d1a227841a83d5bcd839807921ebf074a8ab52bba1761efbc496f2",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "d367b00e26026131034b4ca886fbb8ba2fcb8cc2c64200e52f90e22184294f51",
-        "chroma_despeckle_note": "48687 px of surviving chroma key removed. The asset carried 26143 saturated key-green pixels, 20.503% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved after full-context review: body effects retain face clarity; corrected low-profile floor rings match established seating geometry."
-    },
-    {
       "id": "back_accessory_001",
       "category": "back_accessories",
       "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
@@ -2668,1128 +2144,6 @@
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md"
-    },
-    {
-      "id": "hand_object_006",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "9b120a0f741e59e243a8e99da9f03178bc5a4992ed17590dc6e13badb94aabd5",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-138",
-      "qa_composite": "docs/qa/composites/hand_object_006_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Warm-gold hanging lantern",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "pre_hand_recalibration_sha256": "2b1183cc5aabae535b5c32681c9a96ab4578aab47a8b3e2e7f4b5eac73104e34",
-        "post_hand_recalibration_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 2,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "7c96e7c0d0777bca998236bc3d32008a3e51e00eb841b42259cbd5f7943d8844",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "699f6130c4f10148a02b53c704e0ebb349bc7df6d1148e1ff9a82e6e5f1ea242",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "9b120a0f741e59e243a8e99da9f03178bc5a4992ed17590dc6e13badb94aabd5",
-        "chroma_despeckle_note": "36 px of surviving chroma key removed. The asset carried 5 saturated key-green pixels, 0.014% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_007",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "1297600b2ae7a5eff734dddda48768247d3fa79180b31e153aefffc44ca83618",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-139",
-      "qa_composite": "docs/qa/composites/hand_object_007_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold staff with blue gem",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "pre_hand_recalibration_sha256": "ae2a466f122c66a53d4375a5bfb7020124491c350d716f1c65fe1c17cce73415",
-        "post_hand_recalibration_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "78d84a040f7127eb96c4277d887c018a455865b3229657be26a7db8072effc73",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "08000ffbfe92df356c48ba44ebb0547bec5df6a747377d659a39b73df0ccb547",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "1297600b2ae7a5eff734dddda48768247d3fa79180b31e153aefffc44ca83618",
-        "chroma_despeckle_note": "105 px of surviving chroma key removed. The asset carried 17 saturated key-green pixels, 0.069% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_008",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "2c660d88954cd6c0eb912e2a47d0af32e500636fd5dcf1f28f91814ed56ca2df",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-140",
-      "qa_composite": "docs/qa/composites/hand_object_008_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Blue crescent-moon staff",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15",
-          "chroma_residue_despeckle_2026-09-10"
-        ],
-        "pre_hand_recalibration_sha256": "2e7348f75eec7318cb23e4299d1b4d984ad9a7bbc4cd7a855b44a6528815a30f",
-        "post_hand_recalibration_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "1483ce3db993fe5e45a03c4dea5a8313b7df90abd6d6880d36bd3f55ea6f79f1",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py",
-        "chroma_despeckle_script": "scripts/despeckle_chroma_residue.py",
-        "pre_chroma_residue_despeckle_2026-09-10_sha256": "91ccb017ac6e9f7596ee8f588e132a4ec5278ce8abda6f670678a9d80e8dbe73",
-        "post_chroma_residue_despeckle_2026-09-10_sha256": "2c660d88954cd6c0eb912e2a47d0af32e500636fd5dcf1f28f91814ed56ca2df",
-        "chroma_despeckle_note": "14 px of surviving chroma key removed. The asset carried 1 saturated key-green pixels, 0.003% of its visible area, in a palette that has no green in it; they were opaque specks inside the art rather than an edge fringe, so the earlier chroma passes did not reach them. Each speck's colour is diffused in from the surrounding art with the known pixels held fixed. Alpha is untouched."
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_009",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "0de74de3109f6d81b3763d097448eebb04ec2e2522216578ac5c780f1908b338",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-141",
-      "qa_composite": "docs/qa/composites/hand_object_009_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Violet short blade/dagger",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
-        "post_hand_recalibration_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": -143,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_010",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "89f7fd1d06b238a396a32273ca6dd8f5496ac83e14c735cc04e37333209d678a",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-142",
-      "qa_composite": "docs/qa/composites/hand_object_010_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Horned skull scepter",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
-        "post_hand_recalibration_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_011",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
-      "status": "production_ready",
-      "sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-143",
-      "qa_composite": "docs/qa/composites/hand_object_011_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Round dark compass/watch talisman",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
-        "post_hand_recalibration_sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 120,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_012",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
-      "status": "production_ready",
-      "sha256": "232ea6dae15c9b49ff4cf07b36c6032dd7b6b95029e6642b8b77e86020621ca7",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-144",
-      "qa_composite": "docs/qa/composites/hand_object_012_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Brown closed tome",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "c13b25dffc943388caf397774c4b2a3e58f718a9046402a7607780267bcf321c",
-        "post_hand_recalibration_sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
-        "hand_recalibration_dx": 35,
-        "hand_recalibration_dy": 0,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "1281c2aa8778fd428f461cf236d1d30336008f7a0ca6956871554e647601a430",
-        "pose_aware_revision": "open_horizontal_spellbook_v2_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "aura_front_002",
-      "category": "front_auras",
-      "path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
-      "status": "production_ready",
-      "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-146",
-      "qa_composite": "docs/qa/composites/aura_front_002_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold vertical foreground light pillars",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "Approved production export for DG-145–DG-146."
-    },
-    {
-      "id": "head_accessory_001",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_001_gold_pointed_crown.png",
-      "status": "production_ready",
-      "sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-123",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gold pointed crown",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          432,
-          129,
-          821,
-          318
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_001_gold_pointed_crown_regen1.png",
-        "source_sha256": "b8d06f1e872d708c42c923cddaf470e370bd004b1fc8460ed8b98579a95b0723",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            203,
-            401,
-            1713,
-            1445
-          ],
-          "crop_dimensions": [
-            1511,
-            1045
-          ],
-          "scale": 0.25810721,
-          "vertical_scale": 0.18181818,
-          "anisotropic": true,
-          "target_dimensions": [
-            390,
-            190
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              432,
-              129,
-              821,
-              318
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "circlet_brow_clearance_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "crown seated on the skull dome, band clear of the eyes",
-          "target_width": 390,
-          "top_y": 129,
-          "target_height": 190,
-          "front_arc_only": false
-        },
-        "pre_brow_clearance_sha256": "d2e89ae22edafc36c270d67b2c535f7eead9e04b94a941d68d250288131176ed",
-        "post_brow_clearance_sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_001_over_base.png"
-    },
-    {
-      "id": "head_accessory_002",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_002_large_gold_halo.png",
-      "status": "production_ready",
-      "sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-124",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Large gold halo ring",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          427,
-          129,
-          826,
-          243
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_002_large_gold_halo_regen2.png",
-        "source_sha256": "803add35bb7c6e302c51a0a0ff54c75948be605c077d705d769904536343e13e",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            384,
-            372,
-            1531,
-            1533
-          ],
-          "crop_dimensions": [
-            1148,
-            1162
-          ],
-          "scale": 0.34843206,
-          "vertical_scale": 0.0989673,
-          "anisotropic": true,
-          "target_dimensions": [
-            400,
-            115
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              427,
-              129,
-              826,
-              243
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "foreshortened ring hovering above the crown",
-          "target_width": 400,
-          "top_y": 129,
-          "target_height": 115
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_002_over_base.png"
-    },
-    {
-      "id": "head_accessory_003",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_003_green_laurel.png",
-      "status": "production_ready",
-      "sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-125",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Green laurel wreath",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          507,
-          129,
-          746,
-          332
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_003_green_laurel_regen1.png",
-        "source_sha256": "f65ad144cb2d70b52cadd508eed146ddcad569e535c38a924e71ecb0bc34de6f",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            239,
-            339,
-            1677,
-            1562
-          ],
-          "crop_dimensions": [
-            1439,
-            1224
-          ],
-          "scale": 0.16678249,
-          "vertical_scale": 0.16678249,
-          "anisotropic": false,
-          "target_dimensions": [
-            240,
-            204
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              507,
-              129,
-              746,
-              332
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "crossed stems at the hairline, branches arcing over the crown",
-          "target_width": 240,
-          "top_y": 129,
-          "target_height": null,
-          "front_arc_only": false
-        },
-        "pre_seat_revision_sha256": "7a86aad31e1921977a5c4c73598dd7a4a3e6bff4cabcfbbbb41b16194f3d9dde",
-        "post_seat_revision_sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_003_over_base.png"
-    },
-    {
-      "id": "head_accessory_004",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_004_black_curved_horns.png",
-      "status": "production_ready",
-      "sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-126",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Balanced black curved horn set",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          527,
-          129,
-          726,
-          308
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_004_black_curved_horns_regen1.png",
-        "source_sha256": "f36e02765398e888814cfb73dbd656f637b6b9d7b030f28a7e269173d7b120b3",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 64
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            314,
-            380,
-            1600,
-            1540
-          ],
-          "crop_dimensions": [
-            1287,
-            1161
-          ],
-          "scale": 0.15540016,
-          "vertical_scale": 0.15540016,
-          "anisotropic": false,
-          "target_dimensions": [
-            200,
-            180
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              527,
-              129,
-              726,
-              308
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "horn bases on the skull dome at the brow line, fully clear of the eyes",
-          "target_width": 200,
-          "top_y": 129,
-          "target_height": null
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_004_over_base.png"
-    },
-    {
-      "id": "head_accessory_008",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
-      "status": "production_ready",
-      "sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-130",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Translucent white veil",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          397,
-          180,
-          856,
-          545
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_008_translucent_white_veil_source3.png",
-        "source_sha256": "3a00f90deac0b4842ec6b7737291e7dd244b0ce886bd3490594d8d0de0569b22",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            348,
-            435,
-            1570,
-            1408
-          ],
-          "crop_dimensions": [
-            1223,
-            974
-          ],
-          "scale": 0.37612428,
-          "vertical_scale": 0.37612428,
-          "anisotropic": false,
-          "target_dimensions": [
-            460,
-            366
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 180,
-            "bounds": [
-              397,
-              180,
-              856,
-              545
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07",
-          "head_seat_revision_b_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "arch resting on the crown with the drapes framing the face",
-          "target_width": 460,
-          "top_y": 180,
-          "target_height": null,
-          "front_arc_only": false
-        },
-        "pre_seat_revision_b_sha256": "6fc9c84350d89f04c5f740097d31f096c3d9f5da047e0bab71a1aaff2ebe4f1f",
-        "post_seat_revision_b_sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_008_over_base.png"
-    },
-    {
-      "id": "head_accessory_009",
-      "category": "head_accessories",
-      "path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
-      "status": "production_ready",
-      "sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-131",
-      "provenance": {
-        "origin": "generator_source_transform",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Pale-blue spiked crown/tiara",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          432,
-          129,
-          821,
-          285
-        ],
-        "source_path": "images/trait_candidates/head_accessories/head_accessory_009_pale_blue_spiked_tiara_source3.png",
-        "source_sha256": "2866dcb1e8003a1010ff7aa17de8928acdaa0b3c1782c66db041692c572e268e",
-        "source_dimensions": [
-          1920,
-          1920
-        ],
-        "alpha_cleanup": {
-          "method": "clear_negligible_alpha_haze",
-          "threshold": 32
-        },
-        "transform": {
-          "method": "crop_transparent_margin_then_premultiplied_lanczos_reduction",
-          "source_visible_bounds": [
-            190,
-            602,
-            1722,
-            1220
-          ],
-          "crop_dimensions": [
-            1533,
-            619
-          ],
-          "scale": 0.25440313,
-          "vertical_scale": 0.25440313,
-          "anisotropic": false,
-          "target_dimensions": [
-            390,
-            157
-          ],
-          "placement": {
-            "center_x": 627,
-            "top_y": 129,
-            "bounds": [
-              432,
-              129,
-              821,
-              285
-            ]
-          }
-        },
-        "normalization_script": "scripts/normalize_generator_source.py",
-        "postprocessing": [
-          "reduction_only_head_reseat_2026-09-07"
-        ],
-        "alignment": {
-          "reason": "re-seated from the retired uniform 520 px / top_y 129 placement",
-          "seat": "band on the skull dome, points well clear of the brow",
-          "target_width": 390,
-          "top_y": 129,
-          "target_height": null
-        }
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/head_accessory_009_over_base.png"
-    },
-    {
-      "id": "hand_object_001",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "e99b2ccbfd0108d83b1774499b05cb0bdd657f9736224ab1a56ce02c3daf8fed",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-133",
-      "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Gnarled wood staff with blue flame/crystal",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          278,
-          261,
-          523,
-          1101
-        ],
-        "source_path": "incoming/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
-        "source_sha256": "dfde3ecaf3a24af456123511396134ee99e99f68bb224ba85e2392edff93b175",
-        "source_bounds": [
-          324,
-          250,
-          483,
-          1108
-        ],
-        "pose": 2,
-        "contact_point": [
-          438,
-          772
-        ],
-        "contact_feature": "shaft centre through the closed grip",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": 0,
-          "lean_degrees": 12.0,
-          "resample": "bicubic"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_001_over_base.png"
-    },
-    {
-      "id": "hand_object_002",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
-      "status": "production_ready",
-      "sha256": "361790bc1c07434cf86e620b7fad66c151df96bc36f59cd2cbdc7c0b53f4a163",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-134",
-      "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Purple crystal orb",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          348,
-          518,
-          527,
-          737
-        ],
-        "source_path": "incoming/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
-        "source_sha256": "203d7cada07015dda3133229245af1675ce4f76c41ec00c461d1644001f08b41",
-        "source_bounds": [
-          314,
-          548,
-          493,
-          767
-        ],
-        "pose": 4,
-        "contact_point": [
-          438,
-          748
-        ],
-        "contact_feature": "cradle base seated on the open palm, fingers visible below",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": -30,
-          "lean_degrees": 0.0,
-          "resample": "none"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_002_over_base.png"
-    },
-    {
-      "id": "hand_object_003",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "f091361a5526398d1090ab3a236ffae8726c138c73343535337710505ec67f51",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-135",
-      "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Slender dark wand",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          316,
-          261,
-          506,
-          1049
-        ],
-        "source_path": "incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
-        "source_sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398",
-        "source_bounds": [
-          369,
-          250,
-          438,
-          1055
-        ],
-        "pose": 2,
-        "contact_point": [
-          438,
-          772
-        ],
-        "contact_feature": "shaft centre through the closed grip",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": 0,
-          "lean_degrees": 12.0,
-          "resample": "bicubic"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_003_over_base.png"
-    },
-    {
-      "id": "hand_object_004",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "7ac50d2acc8d2d7f36c7467519307cb33744971517a6e2d1f8e967934e289176",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-136",
-      "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Silver straight sword",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          300,
-          142,
-          490,
-          921
-        ],
-        "source_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
-        "source_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
-        "source_bounds": [
-          344,
-          129,
-          463,
-          923
-        ],
-        "pose": 2,
-        "contact_point": [
-          438,
-          772
-        ],
-        "contact_feature": "wrapped grip through the closed fist",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": 0,
-          "lean_degrees": 12.0,
-          "resample": "bicubic"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_004_over_base.png"
-    },
-    {
-      "id": "hand_object_005",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
-      "status": "production_ready",
-      "sha256": "8ea98111062c79f73c61c7ac0337977bf9880bacaaaf1a06aebf8f062b7d97e4",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-137",
-      "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Dark spellbook with gold star emblem",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          323,
-          587,
-          552,
-          747
-        ],
-        "source_path": "incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
-        "source_sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8",
-        "source_bounds": [
-          289,
-          612,
-          518,
-          772
-        ],
-        "pose": 4,
-        "contact_point": [
-          438,
-          748
-        ],
-        "contact_feature": "lower cover resting across the palm, fingers visible below",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": -25,
-          "lean_degrees": 0.0,
-          "resample": "none"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
-      },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_005_over_base.png"
     },
     {
       "id": "eyes_001",
@@ -5892,49 +4246,6 @@
       "qa_report": "docs/qa/face_traits_2026-09-09/README.md"
     },
     {
-      "id": "aura_front_001",
-      "category": "front_auras",
-      "path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
-      "status": "production_ready",
-      "sha256": "9e9fddc388182a585cf59ba6888d8e97b5842948582ce920d39cc37e1affdf89",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-145",
-      "provenance": {
-        "origin": "procedural_effect_render",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Orange rising foreground flame",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "build_script": "scripts/build_front_aura_flame.py",
-        "output_bounds": [
-          250,
-          637,
-          1013,
-          1138
-        ],
-        "replaces": "the flat-shaded aura_front_001 placeholder deregistered on 2026-09-09",
-        "method": "Four octaves of fractal value noise, advected upward and used both to modulate six tongue envelopes and to carve them into separate licks by a threshold that rises with height. Intensity is compressed rather than clipped, so no lick's core lands on a single flat value, and colour is compressed on a longer scale than opacity so the body reads orange and only the hottest cores reach pale gold. Nothing is drawn above Y 582, below the shoulder line, so the flame never crosses the face.",
-        "flatness_measurements": {
-          "note": "Calibrated against the two front auras the collection already had. The accepted aura_front_002 measures 83 alpha levels, a 0.067 top-value share and a 0.219 flat-neighbourhood share; the rejected placeholder measures 28, 0.334 and 0.883.",
-          "opaque_pixels": 0,
-          "alpha_levels": 143,
-          "top_value_share": 0.0078,
-          "flat_neighbourhood_share": 0.085,
-          "peak_alpha": 151,
-          "visible_pixels": 152340
-        }
-      },
-      "approved_on": "2026-09-09",
-      "qa_report": "docs/qa/front_aura_001_rebuilt_2026-09-09.md"
-    },
-    {
       "id": "outfit_006_pose_001",
       "category": "outfits",
       "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png",
@@ -7488,7 +5799,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead; the wings read as filigree at token size. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "head_accessory_006",
@@ -7500,7 +5812,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead, the most ornate of four alike. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "head_accessory_007",
@@ -7512,7 +5825,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: silver band across the forehead with a drop. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "head_accessory_010",
@@ -7524,7 +5838,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: gold band across the forehead. Ten head accessories on 770 tokens is about 42 tokens each, and five of the ten were the same band silhouette, distinguished only by filigree that is invisible at token size. Six shapes are kept, each of which reads differently in outline, at about 71 tokens each. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as part of a set whose silhouettes differ. A replacement should read as a distinct shape at 418 px, not as another forehead band.",
-      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md"
+      "qa_report": "docs/qa/head_accessory_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_001",
@@ -7536,7 +5851,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: blue floor ring; the same ellipse as ten others. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_007",
@@ -7548,7 +5864,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: green floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_008",
@@ -7560,7 +5877,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: gold floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_009",
@@ -7572,7 +5890,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: pink floor ring, recoloured. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_011",
@@ -7584,7 +5903,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: orange floor ring; flame texture on the same ellipse, and the raised flame ring keeps that idea. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_012",
@@ -7596,7 +5916,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: blue floor ring with an arc texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_013",
@@ -7608,7 +5929,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: violet floor ring with a flame texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_014",
@@ -7620,7 +5942,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: pale blue floor ring with a crystal texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_015",
@@ -7632,7 +5955,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: violet floor ring with a smoke texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "aura_rear_017",
@@ -7644,7 +5968,8 @@
       "withdrawn_on": "2026-09-10",
       "reason": "Retired to thin the category: cyan floor ring with a splash texture. A hard-edged shape is read by its outline at token size, so a recolour of it is not a second trait. Nothing is wrong with this asset; there were too many like it.",
       "requirement": "Bring this back only as a shape that is not already in the set. A colour variant of a ring or a wing already registered will be rejected again.",
-      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md"
+      "qa_report": "docs/qa/effect_trait_count_2026-09-10.md",
+      "owner_decision": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned."
     },
     {
       "id": "back_accessory_007",
@@ -7705,12 +6030,390 @@
       "reason": "Superseded by the owner's dressed-body renders of the same family, assets/outfits/outfit_009_navy_high_collar_coat_pose_001.png to _pose_005.png. This layer was fitted to the neutral pose only, so the family appeared in one pose of five, and it was drawn narrower than the base it covered; the dressed renders are painted with the body, in every pose. Nothing replaces it in pose 001 but its own dressed render.",
       "requirement": "Do not bring back alongside the dressed family: two versions of one outfit in the same pose would be a duplicate trait.",
       "qa_report": "docs/qa/dressed_bodies_2026-09-25.md"
+    },
+    {
+      "id": "aura_front_001",
+      "backlog_id": "DG-145",
+      "intended_path": "assets/front_auras/aura_front_001_orange_rising_flame.png",
+      "status": "withdrawn",
+      "sha256": "9e9fddc388182a585cf59ba6888d8e97b5842948582ce920d39cc37e1affdf89",
+      "retained_at": "incoming/owner_removed_2026-09-26/front_auras/aura_front_001_orange_rising_flame.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_front_002",
+      "backlog_id": "DG-146",
+      "intended_path": "assets/front_auras/aura_front_002_gold_light_pillars.png",
+      "status": "withdrawn",
+      "sha256": "122f3b0be3b8dcfcf2aafac67d280bbc1929b72c0d8563d22d168e58b57a7f7d",
+      "retained_at": "incoming/owner_removed_2026-09-26/front_auras/aura_front_002_gold_light_pillars.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_001",
+      "backlog_id": "DG-133",
+      "intended_path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "e99b2ccbfd0108d83b1774499b05cb0bdd657f9736224ab1a56ce02c3daf8fed",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_002",
+      "backlog_id": "DG-134",
+      "intended_path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+      "status": "withdrawn",
+      "sha256": "361790bc1c07434cf86e620b7fad66c151df96bc36f59cd2cbdc7c0b53f4a163",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_003",
+      "backlog_id": "DG-135",
+      "intended_path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "f091361a5526398d1090ab3a236ffae8726c138c73343535337710505ec67f51",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_004",
+      "backlog_id": "DG-136",
+      "intended_path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "7ac50d2acc8d2d7f36c7467519307cb33744971517a6e2d1f8e967934e289176",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_005",
+      "backlog_id": "DG-137",
+      "intended_path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+      "status": "withdrawn",
+      "sha256": "8ea98111062c79f73c61c7ac0337977bf9880bacaaaf1a06aebf8f062b7d97e4",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_006",
+      "backlog_id": "DG-138",
+      "intended_path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "9b120a0f741e59e243a8e99da9f03178bc5a4992ed17590dc6e13badb94aabd5",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_007",
+      "backlog_id": "DG-139",
+      "intended_path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "1297600b2ae7a5eff734dddda48768247d3fa79180b31e153aefffc44ca83618",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_008",
+      "backlog_id": "DG-140",
+      "intended_path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "2c660d88954cd6c0eb912e2a47d0af32e500636fd5dcf1f28f91814ed56ca2df",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_009",
+      "backlog_id": "DG-141",
+      "intended_path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "0de74de3109f6d81b3763d097448eebb04ec2e2522216578ac5c780f1908b338",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_010",
+      "backlog_id": "DG-142",
+      "intended_path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "89f7fd1d06b238a396a32273ca6dd8f5496ac83e14c735cc04e37333209d678a",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_011",
+      "backlog_id": "DG-143",
+      "intended_path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+      "status": "withdrawn",
+      "sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "hand_object_012",
+      "backlog_id": "DG-144",
+      "intended_path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+      "status": "withdrawn",
+      "sha256": "232ea6dae15c9b49ff4cf07b36c6032dd7b6b95029e6642b8b77e86020621ca7",
+      "retained_at": "incoming/owner_removed_2026-09-26/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_001",
+      "backlog_id": "DG-123",
+      "intended_path": "assets/head_accessories/head_accessory_001_gold_pointed_crown.png",
+      "status": "withdrawn",
+      "sha256": "5bf54aa53549246de0418d2d45bfa7129e72c7e6a447089acc412dc8c214497b",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_001_gold_pointed_crown.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_002",
+      "backlog_id": "DG-124",
+      "intended_path": "assets/head_accessories/head_accessory_002_large_gold_halo.png",
+      "status": "withdrawn",
+      "sha256": "2b0bf17ff9bbc7f90c67d54a35f3d0e7973776b13bfbd8b63cde91df51747d0e",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_002_large_gold_halo.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_003",
+      "backlog_id": "DG-125",
+      "intended_path": "assets/head_accessories/head_accessory_003_green_laurel.png",
+      "status": "withdrawn",
+      "sha256": "1a45d6fc57cfd77103e1c404ba43dc561d44ad237311009d8ce64871368e08ae",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_003_green_laurel.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_004",
+      "backlog_id": "DG-126",
+      "intended_path": "assets/head_accessories/head_accessory_004_black_curved_horns.png",
+      "status": "withdrawn",
+      "sha256": "953de97f3e2c6651ee1c25be73f62b7221471a93da85c9ecac799a36d4503d7a",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_004_black_curved_horns.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_008",
+      "backlog_id": "DG-130",
+      "intended_path": "assets/head_accessories/head_accessory_008_translucent_white_veil.png",
+      "status": "withdrawn",
+      "sha256": "4200b329646724913f45bbc0d31571a9abc2523339b060419168249bbd714445",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_008_translucent_white_veil.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "head_accessory_009",
+      "backlog_id": "DG-131",
+      "intended_path": "assets/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+      "status": "withdrawn",
+      "sha256": "b7e7bfbf30203443fa4b83d7e84f57d3cbb42689966cbd9dc6b04606b2b7de81",
+      "retained_at": "incoming/owner_removed_2026-09-26/head_accessories/head_accessory_009_pale_blue_spiked_tiara.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "outfit_001",
+      "backlog_id": "DG-037",
+      "intended_path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
+      "status": "withdrawn",
+      "sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_001_celestial_scholar_pose_001.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "outfit_002",
+      "backlog_id": "DG-038",
+      "intended_path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
+      "status": "withdrawn",
+      "sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_002_storm_guardian_pose_002.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "outfit_003",
+      "backlog_id": "DG-039",
+      "intended_path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
+      "status": "withdrawn",
+      "sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_003_verdant_alchemist_pose_003.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "outfit_004",
+      "backlog_id": "DG-040",
+      "intended_path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
+      "status": "withdrawn",
+      "sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_004_lunar_oracle_pose_004.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "outfit_005",
+      "backlog_id": "DG-041",
+      "intended_path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+      "status": "withdrawn",
+      "sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_005_sun_temple_pose_005.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "outfit_010",
+      "backlog_id": "DG-046",
+      "intended_path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+      "status": "withdrawn",
+      "sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
+      "retained_at": "incoming/owner_removed_2026-09-26/outfits/outfit_010_celestial_robe_white_gold.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed every outfit that does not exist in all five poses on 2026-09-26. This one was drawn for a single pose, so it could only ever appear in that pose.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md",
+      "requirement": "Return only as a dressed-body family rendered in all five poses, like outfits 006-009."
+    },
+    {
+      "id": "aura_rear_002",
+      "backlog_id": "DG-016",
+      "intended_path": "assets/rear_auras/aura_rear_002_violet_radial_glow.png",
+      "status": "withdrawn",
+      "sha256": "aff02f44046cf61f590e9ce9f66541d32dc94fab4d0576a397af64f5bc556d27",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_002_violet_radial_glow.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_003",
+      "backlog_id": "DG-017",
+      "intended_path": "assets/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+      "status": "withdrawn",
+      "sha256": "396de4fb8f1291208be80f4f3adf9ce5d71f31db7e8f693dffd116d0582a7886",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_003_blue_crystalline_burst.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_004",
+      "backlog_id": "DG-018",
+      "intended_path": "assets/rear_auras/aura_rear_004_violet_void_flame.png",
+      "status": "withdrawn",
+      "sha256": "ef52ef52f0c499f5a4a6df01c9ed22abc7e427b8c0d3947766a2167190bb431f",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_004_violet_void_flame.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_005",
+      "backlog_id": "DG-019",
+      "intended_path": "assets/rear_auras/aura_rear_005_lavender_lightning.png",
+      "status": "withdrawn",
+      "sha256": "d367b00e26026131034b4ca886fbb8ba2fcb8cc2c64200e52f90e22184294f51",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_005_lavender_lightning.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_006",
+      "backlog_id": "DG-020",
+      "intended_path": "assets/rear_auras/aura_rear_006_gold_radiance.png",
+      "status": "withdrawn",
+      "sha256": "3c3e78fa570aad87c84fa004a09c052fc7f6b930b162ab15a52c424bb719c558",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_006_gold_radiance.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_010",
+      "backlog_id": "DG-150",
+      "intended_path": "assets/rear_auras/aura_rear_010_white_neon_ring.png",
+      "status": "withdrawn",
+      "sha256": "cb4b276c7e43d09218f625859fe01bdb2f31e7eb7d55fb547d9949c721065283",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_010_white_neon_ring.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_016",
+      "backlog_id": "DG-156",
+      "intended_path": "assets/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+      "status": "withdrawn",
+      "sha256": "eab2981e2ca86c0af085f2294953b80416a98e3dda565fdb36b00f48ef4ec029",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_016_cosmic_sparkle_ring.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
+    },
+    {
+      "id": "aura_rear_018",
+      "backlog_id": "DG-161",
+      "intended_path": "assets/rear_auras/aura_rear_018_blue_flame_ring.png",
+      "status": "withdrawn",
+      "sha256": "37bb0caa55e3b4bfd0b64725ba1d61f4f8018ba2ba3b66c2a68801193e107afb",
+      "retained_at": "incoming/owner_removed_2026-09-26/rear_auras/aura_rear_018_blue_flame_ring.png",
+      "withdrawn_on": "2026-09-26",
+      "reason": "The owner removed this category from the collection on 2026-09-26. It stays in the layer order so a redesigned set could return, but none is planned.",
+      "qa_report": "docs/qa/owner_trait_removal_2026-09-26.md"
     }
   ],
   "queued_base_poses": [],
   "pending_categories": [
-    "head_accessories",
-    "rear_auras",
     "back_accessories"
   ],
   "legendary_one_of_ones": [

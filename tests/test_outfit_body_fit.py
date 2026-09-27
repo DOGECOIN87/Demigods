@@ -14,6 +14,7 @@ behind a budget that would pass anything.
 """
 from __future__ import annotations
 
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -33,9 +34,18 @@ class OutfitBodyFitTests(unittest.TestCase):
         from widen_sleeves import outfit_base_pairs
 
         pairs = outfit_base_pairs()
+        manifest = json.loads((ROOT / "assets" / "asset_manifest.json").read_text())
+        registered = {Path(e["path"]).name for e in manifest["registered_production_assets"]}
+        withdrawn = {Path(b["intended_path"]).name for b in manifest.get("blocked_assets", [])
+                     if b.get("status") == "withdrawn"}
         self.assertTrue(FITTED, "no outfit is listed as fitted")
         for name in sorted(FITTED):
             with self.subTest(outfit=name):
+                # Both fitted outfits were single-pose layers, withdrawn by the owner
+                # on 2026-09-26; one that returns has to meet this gate again.
+                if name not in registered:
+                    self.assertIn(name, withdrawn, f"{name} is neither registered nor recorded as withdrawn")
+                    continue
                 self.assertIn(name, pairs, f"{name} is not bound to a base body")
                 garment = Image.open(ROOT / "assets" / "outfits" / name)
                 body = Image.open(ROOT / "assets" / "base_bodies" / pairs[name])

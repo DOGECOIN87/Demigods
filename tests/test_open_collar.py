@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -94,7 +95,13 @@ class OpenCollarTests(unittest.TestCase):
 
 
 class RegisteredOutfitNeckTests(unittest.TestCase):
-    """Regression guard: the two repaired collars must stay open."""
+    """Regression guard: the two repaired collars must stay open while registered.
+
+    Both outfits were drawn for a single pose and were withdrawn by the owner on
+    2026-09-26 (`docs/qa/owner_trait_removal_2026-09-26.md`). A case that is not
+    registered has to be on the record as withdrawn, so neither can come back
+    without meeting the guard again.
+    """
 
     CASES = [
         ("outfit_002_storm_guardian_pose_002.png",
@@ -104,8 +111,16 @@ class RegisteredOutfitNeckTests(unittest.TestCase):
     ]
 
     def test_repaired_collars_show_the_neck(self) -> None:
+        manifest = json.loads((ROOT / "assets" / "asset_manifest.json").read_text())
+        registered = {Path(e["path"]).name for e in manifest["registered_production_assets"]}
+        withdrawn = {Path(b["intended_path"]).name for b in manifest.get("blocked_assets", [])
+                     if b.get("status") == "withdrawn"}
         for outfit_name, base_name, floor in self.CASES:
             with self.subTest(outfit=outfit_name):
+                if outfit_name not in registered:
+                    self.assertIn(outfit_name, withdrawn,
+                                  f"{outfit_name} is neither registered nor recorded as withdrawn")
+                    continue
                 outfit = Image.open(ROOT / "assets" / "outfits" / outfit_name).convert("RGBA")
                 base = Image.open(ROOT / "assets" / "base_bodies" / base_name).convert("RGBA")
                 self.assertGreater(oc.neck_visibility(outfit, base), floor)
