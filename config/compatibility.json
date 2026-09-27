@@ -87,11 +87,6 @@
       "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
     },
     {
-      "trait": "hand_object_009_violet_blade_pose_002_left.png",
-      "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "The blade grip and vertical silhouette are anchored to the viewer-left vertical-grip pose."
-    },
-    {
       "trait": "hand_object_010_horned_skull_scepter_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
       "reason": "The scepter grip and shaft are anchored to the viewer-left vertical-grip pose."
@@ -242,7 +237,6 @@
         "hand_object_006_gold_lantern_pose_002_left.png",
         "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
         "hand_object_008_blue_crescent_staff_pose_002_left.png",
-        "hand_object_009_violet_blade_pose_002_left.png",
         "hand_object_010_horned_skull_scepter_pose_002_left.png"
       ],
       "reason": "This render draws the gripping fist 20 px inside the base's. Every vertical-grip object is seated at the base fist, measured at (438, 772), so on this figure each one hung beside the hand instead of in it. The pose still appears, empty-handed."

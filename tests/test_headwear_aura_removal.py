@@ -38,7 +38,8 @@ class HeadwearAuraRemovalTests(unittest.TestCase):
 
     def test_the_removal_is_recorded(self) -> None:
         withdrawn = [b for b in self.manifest.get("blocked_assets", [])
-                     if b.get("withdrawn_on") == "2026-09-27"]
+                     if b.get("withdrawn_on") == "2026-09-27"
+                     and b.get("intended_path", "").split("/")[1] in REMOVED_CATEGORIES]
         self.assertEqual(len(withdrawn), REMOVED_COUNT,
                          f"the {REMOVED_COUNT} removed assets must stay on the record with their hashes")
         for entry in withdrawn:

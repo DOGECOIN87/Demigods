@@ -2628,44 +2628,6 @@
       "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md"
     },
     {
-      "id": "hand_object_009",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
-      "status": "production_ready",
-      "sha256": "0de74de3109f6d81b3763d097448eebb04ec2e2522216578ac5c780f1908b338",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-141",
-      "qa_composite": "docs/qa/composites/hand_object_009_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Violet short blade/dagger",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "70d963f31f95daf6c2352bdfd94c5fab109f4bc5260a2c90d1fe572667cc12dc",
-        "post_hand_recalibration_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": -143,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "a32d950d29ebb65f82605ad15b6bf3e4ad2d12796eaead8f17ee0255175531ee",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
       "id": "hand_object_010",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
@@ -7208,6 +7170,17 @@
       "withdrawn_on": "2026-09-27",
       "reason": "The owner removed this category from the collection on 2026-09-27. It stays in the layer order so a redesigned set could return, but none is planned.",
       "qa_report": "docs/qa/headwear_aura_removal_2026-09-27.md"
+    },
+    {
+      "id": "hand_object_009",
+      "backlog_id": "DG-141",
+      "intended_path": "assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+      "status": "withdrawn",
+      "sha256": "0de74de3109f6d81b3763d097448eebb04ec2e2522216578ac5c780f1908b338",
+      "retained_at": "incoming/owner_removed_2026-09-27/hand_objects/hand_object_009_violet_blade_pose_002_left.png",
+      "withdrawn_on": "2026-09-27",
+      "reason": "The owner removed the violet blade from the collection on 2026-09-27. It still had its old art, drawn behind the body's fist, and no render with the hand painted holding it had passed review.",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md"
     }
   ],
   "queued_base_poses": [],

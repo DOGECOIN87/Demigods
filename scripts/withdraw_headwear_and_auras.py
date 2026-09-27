@@ -64,6 +64,27 @@ def set_status(backlog: str, backlog_id: str, status: str) -> str:
     return updated
 
 
+def drop_rules_naming(compatibility: dict, removed_files: set[str]) -> None:
+    """Remove every compatibility rule for a removed trait, and removed traits from exclude lists."""
+    compatibility["requires"] = [
+        r for r in compatibility["requires"]
+        if r.get("trait") not in removed_files and r.get("requires") not in removed_files
+    ]
+    kept_excludes = []
+    for rule in compatibility.get("excludes", []):
+        if rule.get("trait") in removed_files:
+            continue
+        excluded = rule.get("excludes", [])
+        excluded = [excluded] if isinstance(excluded, str) else list(excluded)
+        remaining = [name for name in excluded if name not in removed_files]
+        if remaining:
+            kept_excludes.append({**rule, "excludes": remaining})
+    compatibility["excludes"] = kept_excludes
+    for kind in ("hides", "in_hand"):
+        if kind in compatibility:
+            compatibility[kind] = [r for r in compatibility[kind] if r.get("trait") not in removed_files]
+
+
 def backlog_rows(backlog: str) -> dict[str, str]:
     """Map each backlog row's intended production path to its ID."""
     rows: dict[str, str] = {}
@@ -132,21 +153,7 @@ def main() -> int:
     for backlog_id in closing:
         backlog = set_status(backlog, backlog_id, "withdrawn")
 
-    compatibility["requires"] = [
-        r for r in compatibility["requires"]
-        if r.get("trait") not in removed_files and r.get("requires") not in removed_files
-    ]
-    kept_excludes = []
-    for rule in compatibility.get("excludes", []):
-        if rule.get("trait") in removed_files:
-            continue
-        excluded = rule.get("excludes", [])
-        excluded = [excluded] if isinstance(excluded, str) else list(excluded)
-        remaining = [name for name in excluded if name not in removed_files]
-        if remaining:
-            kept_excludes.append({**rule, "excludes": remaining})
-    compatibility["excludes"] = kept_excludes
-    compatibility["hides"] = [r for r in compatibility.get("hides", []) if r.get("trait") not in removed_files]
+    drop_rules_naming(compatibility, removed_files)
 
     optional = collection.get("optional_categories") or {}
     collection["optional_categories"] = {c: p for c, p in optional.items() if c not in REMOVED_CATEGORIES}
