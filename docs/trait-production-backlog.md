@@ -146,7 +146,7 @@ The sheet is 128 × 96, so each cell is roughly 15 × 25 px — enough to establ
 | ID | Category | Visual description | Source reference | Dependency | Intended production path | Prompt | Status |
 |---|---|---|---|---|---|---|---|
 | DG-037 | outfit | Ivory-and-indigo celestial scholar, Pose 001 | Co-created pose-aware regeneration | Approved Pose 001 | `assets/outfits/outfit_001_celestial_scholar_pose_001.png` | `prompts/08_outfits.md` | registered |
-| DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | registered |
+| DG-038 | outfit | Charcoal-and-bronze storm guardian, Pose 002 | Co-created pose-aware regeneration | Approved Pose 002 | `assets/outfits/outfit_002_storm_guardian_pose_002.png` | `prompts/08_outfits.md` | withdrawn |
 | DG-039 | outfit | Olive-and-russet verdant alchemist, Pose 003 | Co-created pose-aware regeneration | Approved Pose 003 | `assets/outfits/outfit_003_verdant_alchemist_pose_003.png` | `prompts/08_outfits.md` | registered |
 | DG-040 | outfit | Deep-plum lunar oracle, Pose 004 | Co-created pose-aware regeneration | Approved Pose 004 | `assets/outfits/outfit_004_lunar_oracle_pose_004.png` | `prompts/08_outfits.md` | registered |
 | DG-041 | outfit | White-and-terracotta sun-temple ceremonial, Pose 005 | Co-created pose-aware regeneration | Approved Pose 005 | `assets/outfits/outfit_005_sun_temple_pose_005.png` | `prompts/08_outfits.md` | registered |
@@ -313,7 +313,7 @@ The 24 eye pairs below are distinct visible cells in the dedicated facial-trait 
 | DG-140 | hand object | Blue crescent-moon staff | `HAND`, r2c2 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
 | DG-141 | hand object | Violet short blade/dagger | `HAND`, r2c3 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_009_violet_blade_pose_002_left.png` | `prompts/10_hand_objects.md` | withdrawn |
 | DG-142 | hand object | Horned skull scepter | `HAND`, r2c4 | DG-003 viewer-left vertical grip | `assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png` | `prompts/10_hand_objects.md` | registered |
-| DG-143 | hand object | Round dark compass/watch talisman | `HAND`, r2c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
+| DG-143 | hand object | Round dark compass/watch talisman | `HAND`, r2c5 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png` | `prompts/10_hand_objects.md` | withdrawn |
 | DG-144 | hand object | Brown closed tome | `HAND`, r2c6 | DG-005 viewer-left palm-up | `assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png` | `prompts/10_hand_objects.md` | registered |
 
 ### Front auras

@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Withdraw single hand objects the owner removed from the collection.
+"""Withdraw single traits the owner removed from the collection.
 
-2026-09-27: the violet blade (hand_object_009). It still had its old art, drawn
-behind the body's fist, and no render with the hand painted holding it had
-passed; the owner removed it rather than wait for one. The rest of the
-category stays.
+2026-09-27, after reviewing 25-token samples, the owner removed:
+- the violet blade (hand_object_009) and the round talisman (hand_object_011),
+  the old art still drawn behind the body, with no render painted in the hand
+  that had passed review;
+- the storm guardian outfit (outfit_002), a garment drawn for pose 002 only.
+The rest of each category stays.
 
 As for the headwear and auras (scripts/withdraw_headwear_and_auras.py), each file
-moves to incoming/owner_removed_2026-09-27/hand_objects/, which git ignores (history
+moves to incoming/owner_removed_2026-09-27/<category>/, which git ignores (history
 keeps the bytes at the recorded hash). Its manifest entry becomes a withdrawn
 record, its backlog row closes as withdrawn, and the compatibility rules naming it
 go. To remove another, add its asset id and the reason to WITHDRAWN.
 
-    python scripts/withdraw_hand_objects.py
+    python scripts/withdraw_traits.py
 """
 from __future__ import annotations
 
@@ -31,12 +33,24 @@ except ImportError:  # Direct execution from scripts/.
         backlog_rows, drop_rules_naming, set_status, sha256_file,
     )
 
-QA_REPORT = "docs/qa/hand_objects_in_hand_2026-09-27.md"
+QA_REPORTS = {
+    "hand_objects": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+    "outfits": "docs/qa/headwear_aura_removal_2026-09-27.md",
+}
 WITHDRAWN = {
     "hand_object_009": (
         "The owner removed the violet blade from the collection on 2026-09-27. It still had "
         "its old art, drawn behind the body's fist, and no render with the hand painted "
         "holding it had passed review."
+    ),
+    "hand_object_011": (
+        "The owner removed the round talisman from the collection on 2026-09-27. It still had "
+        "its old art, hanging below the open palm behind the body, and no render with the hand "
+        "painted holding it had passed review."
+    ),
+    "outfit_002": (
+        "The owner removed the storm guardian outfit from the collection on 2026-09-27, after "
+        "reviewing a 25-token sample. It was one garment layer, drawn for pose 002 only."
     ),
 }
 
@@ -55,15 +69,13 @@ def main() -> int:
     rows = backlog_rows(backlog)
     records = []
     for entry in sorted(removing, key=lambda e: e["path"]):
-        if entry["category"] != "hand_objects":
-            raise SystemExit(f"{entry['id']} is not a hand object")
         path = ROOT / entry["path"]
         if not path.exists():
             raise SystemExit(f"missing registered asset: {entry['path']}")
         digest = sha256_file(path)
         if digest != entry["sha256"]:
             raise SystemExit(f"{entry['id']}: file does not match the manifest hash")
-        destination = RETIRED / "hand_objects" / path.name
+        destination = RETIRED / entry["category"] / path.name
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(path), destination)
         records.append({
@@ -75,7 +87,7 @@ def main() -> int:
             "retained_at": destination.relative_to(ROOT).as_posix(),
             "withdrawn_on": DECIDED_ON,
             "reason": WITHDRAWN[entry["id"]],
-            "qa_report": QA_REPORT,
+            "qa_report": QA_REPORTS[entry["category"]],
         })
         backlog = set_status(backlog, rows[entry["path"]], "withdrawn")
 
@@ -86,7 +98,7 @@ def main() -> int:
     MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     BACKLOG.write_text(backlog, encoding="utf-8")
     COMPATIBILITY.write_text(json.dumps(compatibility, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"withdrew {', '.join(r['id'] for r in records)} to {RETIRED.relative_to(ROOT).as_posix()}/hand_objects; "
+    print(f"withdrew {', '.join(r['id'] for r in records)} to {RETIRED.relative_to(ROOT).as_posix()}; "
           f"{len(manifest['registered_production_assets'])} assets remain")
     return 0
 

@@ -570,51 +570,6 @@
       "approved_on": "2026-07-28"
     },
     {
-      "id": "outfit_002",
-      "category": "outfits",
-      "path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
-      "status": "production_ready",
-      "sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "prompt": "prompts/08_outfits.md",
-      "qa_report": "docs/qa/outfit_body_fit_2026-09-10.md",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
-        "required_pose": "base_pose_002_viewer_left_vertical_grip.png",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "postprocessing": [
-          "chroma_key_to_alpha",
-          "alpha_edge_contract_1",
-          "rig_refit_scale_0.929_top_y_475",
-          "alpha_edge_contract_1_post_refit",
-          "chroma_despill_edge_band_3",
-          "open_collar_crisp_rim_c502_r12_h32",
-          "fit_boots_to_legs_2026-09-07",
-          "outfit_body_fit_2026-09-10"
-        ],
-        "postprocessing_script": "scripts/open_collar.py; scripts/clean_chroma_key.py",
-        "chroma_note": "The original alpha_edge_contract_1 ran before rig_refit; the refit's resample re-blended surviving key spill into a new soft edge, which is why the fringe returned. outfit_001 has no refit step and stayed clean. The contract must run after any resample.",
-        "collar_note": "Collar interior was painted opaque. Cut above the traced rim arc; full-layer despill (verified safe: every green run 1-5px, i.e. edge spill, no green in the design).",
-        "pre_boot_fit_sha256": "f2ba832056195e7f2ab6237b2964fedce41e439efe922468a3781a748129c263",
-        "post_boot_fit_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
-        "boot_fit_note": "The base bodies have bare legs; this outfit's footwear was narrower than the leg it covers, so a strip of skin showed along each boot's outer edge. Exposed leg pixels below Y1000 fall from 845 to 189. Each exposed strip is closed by resampling the garment run beside it across the strip - never wider than 28 px, never outside the base silhouette, never a row already covered. scripts/fit_boots_to_legs.py. The clean fix is footwear drawn to the leg it covers.",
-        "body_fit_script": "scripts/fit_outfit_torso.py",
-        "pre_outfit_body_fit_2026-09-10_sha256": "b7eb108c2f09f41bbd45522b5f2ec0d5eeda44e1f58accddd1fd7634b1452f75",
-        "post_outfit_body_fit_2026-09-10_sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
-        "body_fit_note": "garment closed over 273 rows; base body showing beside it 7745 px -> 449 px"
-      },
-      "approved_on": "2026-07-28"
-    },
-    {
       "id": "outfit_003",
       "category": "outfits",
       "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
@@ -2661,41 +2616,6 @@
         "pre_pose_aware_revision_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
         "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
         "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
-      },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
-    },
-    {
-      "id": "hand_object_011",
-      "category": "hand_objects",
-      "path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
-      "status": "production_ready",
-      "sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "format": "PNG",
-      "mode": "RGBA",
-      "backlog_id": "DG-143",
-      "qa_composite": "docs/qa/composites/hand_object_011_over_base.png",
-      "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
-        "trait": "Round dark compass/watch talisman",
-        "native_dimensions": [
-          1254,
-          1254
-        ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "1ea1af6fdd11a2972ff4aa9f8e52b9ab3344e76f1df1481f75357e34a84c4a77",
-        "post_hand_recalibration_sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 120,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py"
       },
       "approved_on": "2026-08-15",
       "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
@@ -7181,6 +7101,28 @@
       "withdrawn_on": "2026-09-27",
       "reason": "The owner removed the violet blade from the collection on 2026-09-27. It still had its old art, drawn behind the body's fist, and no render with the hand painted holding it had passed review.",
       "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md"
+    },
+    {
+      "id": "hand_object_011",
+      "backlog_id": "DG-143",
+      "intended_path": "assets/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+      "status": "withdrawn",
+      "sha256": "07d1a8e3ef0da23b88efd955b68bc8f115d3581e90394317e550d2e784486846",
+      "retained_at": "incoming/owner_removed_2026-09-27/hand_objects/hand_object_011_round_talisman_pose_004_left.png",
+      "withdrawn_on": "2026-09-27",
+      "reason": "The owner removed the round talisman from the collection on 2026-09-27. It still had its old art, hanging below the open palm behind the body, and no render with the hand painted holding it had passed review.",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md"
+    },
+    {
+      "id": "outfit_002",
+      "backlog_id": "DG-038",
+      "intended_path": "assets/outfits/outfit_002_storm_guardian_pose_002.png",
+      "status": "withdrawn",
+      "sha256": "24e99ef360fe13d2f78cbefebe5db723673372e40fe5adb0bdc9cc23f97dccd5",
+      "retained_at": "incoming/owner_removed_2026-09-27/outfits/outfit_002_storm_guardian_pose_002.png",
+      "withdrawn_on": "2026-09-27",
+      "reason": "The owner removed the storm guardian outfit from the collection on 2026-09-27, after reviewing a 25-token sample. It was one garment layer, drawn for pose 002 only.",
+      "qa_report": "docs/qa/headwear_aura_removal_2026-09-27.md"
     }
   ],
   "queued_base_poses": [],

@@ -17,7 +17,7 @@ Rules the owner has set:
 3. No wrist. The hand stops at the base of the palm with a soft, unlined edge, and the body supplies the wrist and forearm. Painted wrists never lined up with the body's arm (sideways stumps, outlines across the wrist, hands turned the wrong way). Do not trim a painted wrist off afterwards. If a render has one, generate it again.
 4. Show the owner samples before changing assets, and merge only when the owner explicitly says so.
 
-Your job: generate or collect renders for the items still on their old art (004, 010, 011) and a new gold lantern (006) without a painted wrist. The six candidates in incoming/hand_objects/with_hand_candidates_2026-09-26/ were fitted on 2026-09-27; see the table in the handover file. Fit each render with scripts/fit_in_hand_render.py (its cover command finds a placement that hides the body's own hand), check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
+Your job: generate or collect renders for the items still on their old art (004, 010) and a new gold lantern (006) without a painted wrist. The six candidates in incoming/hand_objects/with_hand_candidates_2026-09-26/ were fitted on 2026-09-27; see the table in the handover file. Fit each render with scripts/fit_in_hand_render.py (its cover command finds a placement that hides the body's own hand), check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
 ```
 
 ## Where things stand (2026-09-27)
@@ -34,9 +34,9 @@ The candidates README in `incoming/hand_objects/with_hand_candidates_2026-09-26/
 | 006 gold lantern | 002 fist | painted-in-hand render, registered (round 2) | Its flat, outlined wrist cut is the kind of join the owner dislikes. The 2026-09-26 candidate still has a wrist stub, so regenerate it without a wrist rather than trimming it. |
 | 007 gold staff with blue gem | 002 fist | round-2 render, fitted again on 2026-09-27 (7.5% larger) so the painted fist covers the body's | Done unless the owner asks again |
 | 008 blue crescent staff | 002 fist | registered (round 2) | Done unless the owner asks again |
-| 009 violet blade | 002 fist | withdrawn by the owner on 2026-09-27 (`scripts/withdraw_hand_objects.py`) | None. Round 2 was marginal (chunky fist, blade a quarter short), and the owner removed the item rather than wait for a rerender. |
+| 009 violet blade | 002 fist | withdrawn by the owner on 2026-09-27 (`scripts/withdraw_traits.py`) | None. Round 2 was marginal (chunky fist, blade a quarter short), and the owner removed the item rather than wait for a rerender. |
 | 010 horned skull scepter | 002 fist | old art | New render. Round 3 was the right size, but a corner of the body's own fist showed above the painted hand. The fist should be taller than it is wide, with the wrist running up toward the forearm. |
-| 011 round talisman | 004 palm | old art | New render. Round 3 drew a closed fist as wide as the charm. The next one needs an open palm-up hand with the ring across it, a disc about 160 px across (wider than the hand), and no blue rim light. |
+| 011 round talisman | 004 palm | withdrawn by the owner on 2026-09-27 (`scripts/withdraw_traits.py`) | None. Round 3 drew a closed fist as wide as the charm, and the owner removed the item rather than wait for a rerender. |
 | 012 brown tome | 004 palm | registered (round 2) | Done unless the owner asks again |
 
 A registered item is drawn over the body because `config/compatibility.json` lists it under `in_hand`. Items without that rule are still drawn behind the body, where the body's fist covers their grip.
@@ -92,7 +92,7 @@ The tool treats renders the same way registration does. Alpha below 16 is droppe
 
 ## Checks before asking the owner
 
-Composite each fit over the bare body and the outfits it can appear with. The review sheet shows two outfits; check the rest by hand. For pose 002 those are outfits 007, 009, 002 and 008 (outfit 006 excludes every pose-002 item). For pose 004 they are outfits 007, 009, 004, 008 and 006. Outfits 007, 008, 009 and 006 are dressed bodies that hide the base body; outfits 002 and 004 are drawn over it.
+Composite each fit over the bare body and the outfits it can appear with. The review sheet shows two outfits; check the rest by hand. For pose 002 those are outfits 007, 009 and 008 (outfit 006 excludes every pose-002 item, and the storm guardian, outfit 002, was withdrawn on 2026-09-27). For pose 004 they are outfits 007, 009, 004, 008 and 006. Outfits 007, 008, 009 and 006 are dressed bodies that hide the base body; outfit 004 is drawn over it.
 
 Reject the render, and ask for a new one, if any of these show:
 

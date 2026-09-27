@@ -46,3 +46,23 @@ The global finish category (soft bloom, gilded warm, cool veil) is a whole-image
   - the headwear face-clearance checks in `tests/test_face_occlusion.py`
   - the front-aura flat-shading check in `tests/test_face_traits.py`
 - **`scripts/despeckle_chroma_residue.py`** no longer exempts the green laurel, since the laurel is gone. `test_chroma_residue` rejects an exemption for an asset that is not present.
+
+## Single traits removed the same day
+
+After reviewing more 25-token samples, the owner removed three single traits:
+- the storm guardian outfit (`outfit_002`), a garment drawn for pose 002 only;
+- the violet blade (`hand_object_009`) and the round talisman (`hand_object_011`), which still had their old art, drawn behind the body.
+
+`scripts/withdraw_traits.py` recorded them the same way:
+- the files are in `incoming/owner_removed_2026-09-27/`
+- each has a withdrawn record with its hash
+- backlog rows DG-038, DG-141 and DG-143 closed
+- the compatibility rules naming them went
+
+`tests/test_trait_withdrawals.py` keeps them out.
+
+The collar and body-fit regression cases for outfit 002, in `tests/test_open_collar.py` and `tests/test_outfit_body_fit.py`, now require an outfit that is not registered to be recorded as withdrawn. One that returns meets the gate again. `scripts/fit_in_hand_render.py` no longer lists outfit 002 among the pose-002 review outfits.
+
+After these removals:
+- The library is 134 assets: ten hand objects, and 25 outfits (the other five single-pose garments and the four dressed families).
+- Preflight passes with 10,300,450,406 rule-valid combinations.

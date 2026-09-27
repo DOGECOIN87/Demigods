@@ -49,15 +49,15 @@ Each fit was composited over the bare body and every outfit it can appear with: 
 
 ## Withdrawn by the owner
 
-After the 25-token sample, the owner removed the violet blade (009). It still had its old art, drawn behind the body's fist, and no render with the hand painted holding it had passed review. `scripts/withdraw_hand_objects.py` made the change, recorded like the headwear and auras (`docs/qa/headwear_aura_removal_2026-09-27.md`):
-- the file moved to the git-ignored `incoming/owner_removed_2026-09-27/hand_objects/`
-- the manifest entry became a withdrawn record with its hash
-- backlog row DG-141 closed as withdrawn
-- its pose rule, and its place in outfit 006's pose-002 exclude list, went
+After reviewing 25-token samples, the owner removed the violet blade (009) and the round talisman (011). Both still had their old art, drawn behind the body, and no render with the hand painted holding them had passed review. `scripts/withdraw_traits.py` made the change, recorded like the headwear and auras (`docs/qa/headwear_aura_removal_2026-09-27.md`):
+- the files moved to the git-ignored `incoming/owner_removed_2026-09-27/hand_objects/`
+- the manifest entries became withdrawn records with their hashes
+- backlog rows DG-141 and DG-143 closed as withdrawn
+- their pose rules went, as did the violet blade's place in outfit 006's pose-002 exclude list
 
-Eleven hand objects remain.
+Ten hand objects remain.
 
 ## Still open
 
 - 004 silver sword and 006 gold lantern need new renders (above).
-- 010 horned skull scepter and 011 round talisman still have no usable render and keep their old art, drawn behind the body.
+- 010 horned skull scepter still has no usable render and keeps its old art, drawn behind the body.

@@ -65,7 +65,7 @@ BASE = {
         # the hand below the wrist line
         "hand_poly": [(370, 736), (440, 730), (492, 746), (492, 835), (370, 835)],
         "outfits": ["outfit_007_brown_leather_long_coat_pose_002.png", "outfit_009_navy_high_collar_coat_pose_002.png",
-                    "outfit_002_storm_guardian_pose_002.png", "outfit_008_olive_ragged_cloak_pose_002.png"]},
+                    "outfit_008_olive_ragged_cloak_pose_002.png"]},
     4: {"path": ROOT / "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
         "hand_poly": [(360, 715), (445, 708), (492, 728), (492, 800), (360, 800)],
         "outfits": ["outfit_007_brown_leather_long_coat_pose_004.png", "outfit_009_navy_high_collar_coat_pose_004.png",

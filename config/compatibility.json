@@ -7,11 +7,6 @@
       "reason": "Outfit armholes and relaxed hand clearance are fitted to Pose 001."
     },
     {
-      "trait": "outfit_002_storm_guardian_pose_002.png",
-      "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Armor and sleeve clearance are fitted to the viewer-left grip pose."
-    },
-    {
       "trait": "outfit_003_verdant_alchemist_pose_003.png",
       "requires": "base_pose_003_viewer_right_vertical_grip.png",
       "reason": "Rolled sleeves are fitted to the viewer-right grip pose."
@@ -90,11 +85,6 @@
       "trait": "hand_object_010_horned_skull_scepter_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
       "reason": "The scepter grip and shaft are anchored to the viewer-left vertical-grip pose."
-    },
-    {
-      "trait": "hand_object_011_round_talisman_pose_004_left.png",
-      "requires": "base_pose_004_viewer_left_palm_up.png",
-      "reason": "The talisman contact is anchored to the viewer-left palm-up pose."
     },
     {
       "trait": "hand_object_012_brown_tome_pose_004_left.png",
