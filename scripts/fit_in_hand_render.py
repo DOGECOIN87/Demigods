@@ -22,11 +22,18 @@ Usage:
   python scripts/fit_in_hand_render.py measure SOURCE POSE X0 Y0 X1 Y1
       skin extent, width and centre of the painted hand inside that SOURCE box, plus the body hand's.
       Keep the box tight round the hand: cream pages and parchment count as skin.
-  python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--tag T] [--out DIR]
+  python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--offset OX OY] [--tag T] [--out DIR]
       without --scale, the painted hand (WIDTH source px wide) is reduced to the body hand's width;
       with --scale, that reduction is used instead (e.g. to keep the item at its old size).
+      Without --offset, the painted hand's centre lands on the body hand's centre; with it, the
+      reduced render is pasted at OX, OY instead (an offset found with cover, or a registered one).
       Writes layerT.png, reviewT.png and metricsT.json. The review compares the fit with the
       item's old art (commit 788454a, before the in-hand versions), drawn as it rendered then.
+  python scripts/fit_in_hand_render.py cover SOURCE ITEM CX CY WIDTH --scale S [S ...] [--radius R] [--near OX OY]
+      for each scale, tries every offset within R px (default 20) of the centred one, or of OX, OY
+      (e.g. a registered fit's offset, to move it as little as possible), and prints those that
+      leave the fewest body-hand pixels showing, nearest first. Centring the painted hand does not
+      always cover the body's hand, whose outline is a different shape.
 
 ITEM is the hand object number (001 to 012); its pose comes from its registered asset name.
 """
@@ -91,6 +98,39 @@ def poly_mask(poly, size=CANVAS) -> np.ndarray:
     m = Image.new("L", size, 0)
     ImageDraw.Draw(m).polygon(poly, fill=255)
     return np.asarray(m) > 0
+
+
+def body_hand_masks(pose: int, base: Image.Image) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """The hand polygon, the body's hand inside it, and that hand's core (2 px in from its outline)."""
+    pm = poly_mask(BASE[pose]["hand_poly"])
+    hand = pm & (np.asarray(base)[..., 3] > 128)
+    return pm, hand, ndimage.binary_erosion(hand, iterations=2)
+
+
+def place(render: Image.Image, scale: float, offset: tuple[int, int]) -> Image.Image:
+    """The render reduced by SCALE and pasted at OFFSET, alpha of 250 or more set to 255, as registration does."""
+    size = (round(render.width * scale), round(render.height * scale))
+    reduced = render.resize(size, Image.Resampling.LANCZOS)
+    layer = Image.new("RGBA", CANVAS, (0, 0, 0, 0))
+    layer.paste(reduced, offset, reduced)
+    pixels = np.asarray(layer).copy()
+    pixels[..., 3][pixels[..., 3] >= OPAQUE_FROM] = 255
+    return Image.fromarray(pixels, "RGBA")
+
+
+def uncovered_counts(covered: np.ndarray, hand: np.ndarray, core: np.ndarray, radius: int) -> list[tuple[int, int, int, int]]:
+    """(core pixels showing, pixels showing, dx, dy) of the body's hand for the layer's coverage moved by
+    every dx, dy within RADIUS; a moved layer covers pixel (y, x) where COVERED is true at (y - dy, x - dx)."""
+    ys, xs = np.nonzero(hand)
+    y0, y1, x0, x1 = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+    padded = np.pad(covered, radius)
+    h, c = hand[y0:y1, x0:x1], core[y0:y1, x0:x1]
+    counts = []
+    for dy in range(-radius, radius + 1):
+        for dx in range(-radius, radius + 1):
+            moved = padded[radius + y0 - dy:radius + y1 - dy, radius + x0 - dx:radius + x1 - dx]
+            counts.append((int((c & ~moved).sum()), int((h & ~moved).sum()), dx, dy))
+    return counts
 
 
 def base_hand(pose: int) -> dict:
@@ -179,7 +219,16 @@ def cmd_measure(source: Path, pose: int, box: tuple[int, int, int, int]) -> None
                       "base_hand": {k: b[k] for k in ("bbox", "width", "height", "centroid")}}, indent=1))
 
 
-def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: float | None, tag: str, out: Path) -> None:
+def check_scale(scale: float) -> None:
+    if scale <= 0:
+        raise SystemExit(f"scale {scale}: must be above 0")
+    if scale > 1:
+        raise SystemExit(f"scale {scale:.4f}: renders are only ever reduced, never enlarged; a render drawn "
+                         "smaller than the body needs a new render")
+
+
+def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: float | None,
+            offset: tuple[int, int] | None, tag: str, out: Path) -> None:
     pose = pose_of(item)
     b = base_hand(pose)
     base = b["image"]
@@ -188,29 +237,19 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
     source_touches_edge = bool(sb and (sb[0] == 0 or sb[1] == 0 or sb[2] == render.width or sb[3] == render.height))
     if scale is None:
         scale = b["width"] / width
-    if scale <= 0:
-        raise SystemExit(f"scale {scale}: must be above 0")
-    if scale > 1:
-        raise SystemExit(f"scale {scale:.4f}: renders are only ever reduced, never enlarged; a render drawn "
-                         "smaller than the body needs a new render")
-    size = (round(render.width * scale), round(render.height * scale))
-    reduced = render.resize(size, Image.Resampling.LANCZOS)
-    ox, oy = round(b["centroid"][0] - cx * scale), round(b["centroid"][1] - cy * scale)
-    layer = Image.new("RGBA", CANVAS, (0, 0, 0, 0))
-    layer.paste(reduced, (ox, oy), reduced)
-    pixels = np.asarray(layer).copy()
-    pixels[..., 3][pixels[..., 3] >= OPAQUE_FROM] = 255
-    layer = Image.fromarray(pixels, "RGBA")
-    la = pixels[..., 3]
+    check_scale(scale)
+    if offset is None:
+        offset = (round(b["centroid"][0] - cx * scale), round(b["centroid"][1] - cy * scale))
+    ox, oy = offset
+    layer = place(render, scale, offset)
+    la = np.asarray(layer)[..., 3]
     lb = layer.getchannel("A").getbbox()
     if lb is None:
         raise SystemExit("the fitted layer is empty: the offset puts the render off the canvas")
     touches_edge = lb[0] == 0 or lb[1] == 0 or lb[2] == CANVAS[0] or lb[3] == CANVAS[1]
 
     # body-hand pixels (below the wrist line) the layer leaves showing: they read as a second hand
-    pm = poly_mask(BASE[pose]["hand_poly"])
-    hand = pm & (np.asarray(base)[..., 3] > 128)
-    core = ndimage.binary_erosion(hand, iterations=2)
+    pm, hand, core = body_hand_masks(pose, base)
     uncovered = hand & (la < 128)
     uncovered_core = core & (la < 128)
 
@@ -267,6 +306,27 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
     print(json.dumps(metrics, indent=1))
 
 
+def cmd_cover(source: Path, item: str, cx: float, cy: float, width: float, scales: list[float], radius: int,
+              near: tuple[int, int] | None) -> None:
+    pose = pose_of(item)
+    b = base_hand(pose)
+    _, hand, core = body_hand_masks(pose, b["image"])
+    render = clean_render(source)
+    for scale in scales:
+        check_scale(scale)
+        centred = (round(b["centroid"][0] - cx * scale), round(b["centroid"][1] - cy * scale))
+        ox, oy = near or centred
+        covered = np.asarray(place(render, scale, (ox, oy)))[..., 3] >= 128
+        counts = uncovered_counts(covered, hand, core, radius)
+        least = min(c[0] for c in counts)
+        best = sorted((c for c in counts if c[0] == least), key=lambda c: (c[1], c[2] ** 2 + c[3] ** 2))
+        print(f"scale {scale}: painted hand {width * scale / b['width']:.3f} x the body's width, "
+              f"centred offset {centred}, searched round ({ox}, {oy}), body hand {int(hand.sum())} px")
+        for core_showing, showing, dx, dy in best[:5]:
+            print(f"  offset ({ox + dx}, {oy + dy}), moved ({dx:+d}, {dy:+d}): "
+                  f"core {core_showing} px showing, {showing} px in all")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -277,12 +337,19 @@ def main() -> int:
     p.add_argument("box", type=int, nargs=4)
     p = sub.add_parser("fit"); p.add_argument("source", type=Path); p.add_argument("item")
     p.add_argument("cx", type=float); p.add_argument("cy", type=float); p.add_argument("width", type=float)
-    p.add_argument("--scale", type=float); p.add_argument("--tag", default=""); p.add_argument("--out", type=Path)
+    p.add_argument("--scale", type=float); p.add_argument("--offset", type=int, nargs=2)
+    p.add_argument("--tag", default=""); p.add_argument("--out", type=Path)
+    p = sub.add_parser("cover"); p.add_argument("source", type=Path); p.add_argument("item")
+    p.add_argument("cx", type=float); p.add_argument("cy", type=float); p.add_argument("width", type=float)
+    p.add_argument("--scale", type=float, nargs="+", required=True); p.add_argument("--radius", type=int, default=20)
+    p.add_argument("--near", type=int, nargs=2)
     args = parser.parse_args()
     if getattr(args, "box", None) and (args.box[2] <= args.box[0] or args.box[3] <= args.box[1]):
         parser.error("the box is X0 Y0 X1 Y1 with X1 > X0 and Y1 > Y0")
-    if args.command == "fit" and args.width <= 0:
+    if args.command in ("fit", "cover") and args.width <= 0:
         parser.error("WIDTH is the painted hand's width in source px and must be above 0")
+    if args.command == "cover" and args.radius < 0:
+        parser.error("RADIUS is in px and must not be negative")
     default_out = Path("/tmp/in_hand_fits") / (getattr(args, "item", None) or args.source.stem)
     out = getattr(args, "out", None) or default_out
     if args.command == "overview":
@@ -291,8 +358,12 @@ def main() -> int:
         cmd_zoom(args.source, tuple(args.box), out)
     elif args.command == "measure":
         cmd_measure(args.source, args.pose, tuple(args.box))
+    elif args.command == "cover":
+        cmd_cover(args.source, args.item, args.cx, args.cy, args.width, args.scale, args.radius,
+                  tuple(args.near) if args.near else None)
     else:
-        cmd_fit(args.source, args.item, args.cx, args.cy, args.width, args.scale, args.tag, out)
+        offset = tuple(args.offset) if args.offset else None
+        cmd_fit(args.source, args.item, args.cx, args.cy, args.width, args.scale, offset, args.tag, out)
     return 0
 
 

@@ -119,7 +119,7 @@
     {
       "trait": "hand_object_003_dark_wand_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
+      "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
     },
     {
       "trait": "hand_object_004_silver_sword_pose_002_left.png",
@@ -129,7 +129,7 @@
     {
       "trait": "hand_object_005_star_spellbook_pose_004_left.png",
       "requires": "base_pose_004_viewer_left_palm_up.png",
-      "reason": "Fitted to the viewer-left open palm at the measured contact (438, 748)."
+      "reason": "Painted holding the item in the pose 004 hand; the painted hand is fitted over the base's open palm."
     },
     {
       "trait": "outfit_006_black_layered_hooded_robe_pose_001.png",
@@ -379,6 +379,14 @@
     },
     {
       "trait": "hand_object_012_brown_tome_pose_004_left.png",
+      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
+    },
+    {
+      "trait": "hand_object_003_dark_wand_pose_002_left.png",
+      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
+    },
+    {
+      "trait": "hand_object_005_star_spellbook_pose_004_left.png",
       "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
     }
   ]

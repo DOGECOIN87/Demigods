@@ -3614,7 +3614,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "9e8ed42ef776cb83556b7b10b96e175f69b58b5043c1053f9d75b66e8f93b70d",
+      "sha256": "cf7a82944942001a60f1b89965d6a7962b0ae4b592b5330d42e4723b5e3eeead",
       "dimensions": [
         1254,
         1254
@@ -3637,10 +3637,10 @@
         "contact_feature": "painted hand over the base's closed fist",
         "painted_hand": {
           "centre": [
-            494,
-            638
+            491.4,
+            634.9
           ],
-          "width": 85
+          "width": 88
         },
         "base_hand": {
           "centre": [
@@ -3650,19 +3650,24 @@
           "width": 72
         },
         "transform": {
-          "method": "reduce_to_base_hand_width_then_translate_hand_centre",
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
           "resample": "lanczos",
-          "scale": 0.8471,
+          "scale": 0.93,
           "offset": [
-            30,
-            218
+            -11,
+            184
           ],
           "output_bounds": [
-            242,
-            246,
-            576,
-            1056
-          ]
+            222,
+            218,
+            588,
+            1104
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
         },
         "intake_script": "scripts/register_in_hand_objects.py",
         "native_dimensions": [
@@ -3670,16 +3675,16 @@
           1254
         ]
       },
-      "approved_on": "2026-09-26",
-      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md",
-      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"
     },
     {
       "id": "hand_object_002",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
       "status": "production_ready",
-      "sha256": "14c1f83b1c0e819dfc0bc1ac777e8362d36f95adcc9dea796f639a4c3f61c7e0",
+      "sha256": "385dd9b555418c2daa175260d2e9105c757a42de17abc42dccf8f4d1b61465a5",
       "dimensions": [
         1254,
         1254
@@ -3702,10 +3707,10 @@
         "contact_feature": "painted hand over the base's open palm",
         "painted_hand": {
           "centre": [
-            490,
-            718
+            407.0,
+            715.8
           ],
-          "width": 200
+          "width": 363
         },
         "base_hand": {
           "centre": [
@@ -3715,19 +3720,24 @@
           "width": 98
         },
         "transform": {
-          "method": "reduce_to_base_hand_width_then_translate_hand_centre",
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
           "resample": "lanczos",
           "scale": 0.49,
           "offset": [
-            207,
-            378
+            217,
+            384
           ],
           "output_bounds": [
-            315,
-            589,
-            495,
-            772
-          ]
+            325,
+            595,
+            505,
+            778
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
         },
         "intake_script": "scripts/register_in_hand_objects.py",
         "native_dimensions": [
@@ -3735,16 +3745,16 @@
           1254
         ]
       },
-      "approved_on": "2026-09-26",
-      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md",
-      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"
     },
     {
       "id": "hand_object_003",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "f091361a5526398d1090ab3a236ffae8726c138c73343535337710505ec67f51",
+      "sha256": "c3feb3b35c3df5a61e5a123d77a91a64c0d26681aca81d44cbabff0ae37cddb8",
       "dimensions": [
         1254,
         1254
@@ -3753,50 +3763,61 @@
       "mode": "RGBA",
       "backlog_id": "DG-135",
       "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "origin": "generator_render_painted_in_hand",
         "trait": "Slender dark wand",
-        "native_dimensions": [
+        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-26.md",
+        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27/003_dark_wand.png",
+        "source_sha256": "e7cf204102817eb5956fe624cf63228b20e5878c8844c25740bc1698ef6f887b",
+        "source_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          316,
-          261,
-          506,
-          1049
-        ],
-        "source_path": "incoming/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
-        "source_sha256": "03afc3d0474cae136135447cb4f3c92b296d7e5ef99656b90b024a0720ab8398",
-        "source_bounds": [
-          369,
-          250,
-          438,
-          1055
-        ],
         "pose": 2,
-        "contact_point": [
-          438,
-          772
-        ],
-        "contact_feature": "shaft centre through the closed grip",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": 0,
-          "lean_degrees": 12.0,
-          "resample": "bicubic"
+        "contact_feature": "painted hand over the base's closed fist",
+        "painted_hand": {
+          "centre": [
+            465.5,
+            757.2
+          ],
+          "width": 87
         },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+        "base_hand": {
+          "centre": [
+            448,
+            758
+          ],
+          "width": 72
+        },
+        "transform": {
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
+          "resample": "lanczos",
+          "scale": 0.95,
+          "offset": [
+            4,
+            49
+          ],
+          "output_bounds": [
+            409,
+            332,
+            497,
+            1115
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
+        },
+        "intake_script": "scripts/register_in_hand_objects.py",
+        "native_dimensions": [
+          1254,
+          1254
+        ]
       },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_003_over_base.png"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"
     },
     {
       "id": "hand_object_004",
@@ -3862,7 +3883,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
       "status": "production_ready",
-      "sha256": "8ea98111062c79f73c61c7ac0337977bf9880bacaaaf1a06aebf8f062b7d97e4",
+      "sha256": "e080f17bfe0c16e588398ac6771964451873da65e42996909d15494c3a28848a",
       "dimensions": [
         1254,
         1254
@@ -3871,50 +3892,61 @@
       "mode": "RGBA",
       "backlog_id": "DG-137",
       "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "origin": "generator_render_painted_in_hand",
         "trait": "Dark spellbook with gold star emblem",
-        "native_dimensions": [
+        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-26.md",
+        "reference_path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27/005_star_spellbook.png",
+        "source_sha256": "8d46b2ebded57b5a2c48488b4f424dc17fd5ae6bbeff815d226e1eb7b65f9e2d",
+        "source_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          323,
-          587,
-          552,
-          747
-        ],
-        "source_path": "incoming/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
-        "source_sha256": "ed0fd218a95c88456e295a00a88439587307e9c9da21ee9da82623897dfd23a8",
-        "source_bounds": [
-          289,
-          612,
-          518,
-          772
-        ],
         "pose": 4,
-        "contact_point": [
-          438,
-          748
-        ],
-        "contact_feature": "lower cover resting across the palm, fingers visible below",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": -25,
-          "lean_degrees": 0.0,
-          "resample": "none"
+        "contact_feature": "painted hand over the base's open palm",
+        "painted_hand": {
+          "centre": [
+            437.0,
+            895.7
+          ],
+          "width": 186
         },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+        "base_hand": {
+          "centre": [
+            447,
+            730
+          ],
+          "width": 98
+        },
+        "transform": {
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
+          "resample": "lanczos",
+          "scale": 0.6,
+          "offset": [
+            178,
+            219
+          ],
+          "output_bounds": [
+            350,
+            624,
+            556,
+            780
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
+        },
+        "intake_script": "scripts/register_in_hand_objects.py",
+        "native_dimensions": [
+          1254,
+          1254
+        ]
       },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_005_over_base.png"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"
     },
     {
       "id": "eyes_001",

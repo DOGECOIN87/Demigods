@@ -9,7 +9,7 @@ You are continuing the Demigods held-item work in the DOGECOIN87/Demigods reposi
 
 Goal: every hand object (hand_object_001 to 012) is one transparent 1254 x 1254 layer showing the item together with the hand that holds it, painted as one piece, so tokens need no separate hand overlay. The layer is drawn OVER the body, so the painted hand covers the body's own hand.
 
-Read first: prompts/hand_objects_handover_2026-09-27.md (this file), then prompts/hand_objects_in_hand_pack_2026-09-26.md (the generator prompts) and docs/qa/hand_objects_in_hand_2026-09-26.md (what was accepted and rejected, and why).
+Read first: prompts/hand_objects_handover_2026-09-27.md (this file), then prompts/hand_objects_in_hand_pack_2026-09-26.md (the generator prompts), and docs/qa/hand_objects_in_hand_2026-09-26.md and docs/qa/hand_objects_in_hand_2026-09-27.md (what was accepted and rejected, and why).
 
 Rules the owner has set:
 1. The hand is painted holding the item. Pasting the body's fist over an item was rejected.
@@ -17,21 +17,21 @@ Rules the owner has set:
 3. No wrist. The hand stops at the base of the palm with a soft, unlined edge, and the body supplies the wrist and forearm. Painted wrists never lined up with the body's arm (sideways stumps, outlines across the wrist, hands turned the wrong way). Do not trim a painted wrist off afterwards. If a render has one, generate it again.
 4. Show the owner samples before changing assets, and merge only when the owner explicitly says so.
 
-Your job: generate or collect renders for the items still on their old art (003, 004, 005, 009, 010, 011) and fit the six candidates already in incoming/hand_objects/with_hand_candidates_2026-09-26/. That folder's README says to trim wrist stubs; that is superseded by rule 3, so the gold lantern candidate (006) needs a new render instead. Fit each render with scripts/fit_in_hand_render.py, check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
+Your job: generate or collect renders for the items still on their old art (004, 009, 010, 011) and a new gold lantern (006) without a painted wrist. The six candidates in incoming/hand_objects/with_hand_candidates_2026-09-26/ were fitted on 2026-09-27; see the table in the handover file. Fit each render with scripts/fit_in_hand_render.py (its cover command finds a placement that hides the body's own hand), check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
 ```
 
 ## Where things stand (2026-09-27)
 
-The candidates README in `incoming/hand_objects/with_hand_candidates_2026-09-26/` asks for wrist stubs to be trimmed. That step was dropped at the owner's request on 2026-09-27: a render with a painted wrist is generated again. Of the six candidates, only the lantern (006) has one.
+The candidates README in `incoming/hand_objects/with_hand_candidates_2026-09-26/` asks for wrist stubs to be trimmed. That step was dropped at the owner's request on 2026-09-27: a render with a painted wrist is generated again. Of the six candidates, only the lantern (006) has one. All six were fitted on 2026-09-27 (`docs/qa/hand_objects_in_hand_2026-09-27.md`): the dark wand and star spellbook were registered, and the registered arcane staff and violet orb were fitted again so their painted hands cover the body's.
 
 | Item | Pose | Now on main | Next step |
 |---|---|---|---|
-| 001 arcane staff | 002 fist | painted-in-hand render, registered (round 1) | Optional: compare with the new candidate in `incoming/` |
-| 002 violet crystal orb | 004 palm | painted-in-hand render, registered (round 1) | Optional: compare with the new candidate in `incoming/` |
-| 003 dark wand | 002 fist | old art, drawn behind the body's fist | Fit the new candidate. Every earlier render had a sideways wrist or a hand that was too big. |
-| 004 silver sword | 002 fist | old art | Fit the new candidate. The round-3 render had the right size, but its wrist pointed sideways and a stump stuck out past the arm. |
-| 005 star spellbook | 004 palm | old art | Fit the new candidate. Earlier hands were as wide as the book. |
-| 006 gold lantern | 002 fist | painted-in-hand render, registered (round 2) | Its flat, outlined wrist cut is the kind of join the owner dislikes. The new candidate still has a wrist stub, so regenerate it without a wrist rather than trimming it. |
+| 001 arcane staff | 002 fist | round-1 render, fitted again on 2026-09-27 so the painted fist covers the body's | Done unless the owner asks again. The 2026-09-26 candidate was not used (a different staff, too tall). |
+| 002 violet crystal orb | 004 palm | round-1 render, moved on 2026-09-27 so the painted hand covers the body's fingertips | Done unless the owner asks again. The 2026-09-26 candidate was not used (the orb is half size). |
+| 003 dark wand | 002 fist | painted-in-hand render, registered 2026-09-27 | Done unless the owner asks again |
+| 004 silver sword | 002 fist | old art | New render. The 2026-09-26 candidate drew the sword about a quarter longer than the old art, with the hand low on the grip, so the blade tip leaves the canvas once the fist covers the body's. Before that, round 3 had the right size but a sideways wrist. |
+| 005 star spellbook | 004 palm | painted-in-hand render, registered 2026-09-27 (an open book) | Done unless the owner asks again |
+| 006 gold lantern | 002 fist | painted-in-hand render, registered (round 2) | Its flat, outlined wrist cut is the kind of join the owner dislikes. The 2026-09-26 candidate still has a wrist stub, so regenerate it without a wrist rather than trimming it. |
 | 007 gold staff with blue gem | 002 fist | registered (round 2) | Done unless the owner asks again |
 | 008 blue crescent staff | 002 fist | registered (round 2) | Done unless the owner asks again |
 | 009 violet blade | 002 fist | old art | New render. Round 2 was marginal (chunky fist, blade a quarter short), and the owner chose to wait for a rerender. |
@@ -75,11 +75,13 @@ Keep every raw render unedited. Commit the sources you register under `images/tr
 
 ## Fitting
 
-`scripts/fit_in_hand_render.py` is the tool the round-2 items (006, 007, 008 and 012) were fitted with, and it reproduces them pixel for pixel. The round-1 items (001, 002) came from an older width-matching fit inside `scripts/register_in_hand_objects.py`. The tool never writes into the repository: `fit` writes to `/tmp/in_hand_fits/ITEM`, and `overview` and `zoom` to `/tmp/in_hand_fits/<source name>`, unless `--out` is given.
+`scripts/fit_in_hand_render.py` is the tool every registered in-hand item was fitted with, and it reproduces them pixel for pixel: the round-2 items (006, 007, 008 and 012) from their centre and scale, and the 2026-09-27 fits (001, 002, 003 and 005) with `--offset` (commands in `docs/qa/hand_objects_in_hand_2026-09-27.md`). The round-1 items (001, 002) first came from an older width-matching fit inside `scripts/register_in_hand_objects.py`. The tool never writes into the repository: `fit` writes to `/tmp/in_hand_fits/ITEM`, and `overview` and `zoom` to `/tmp/in_hand_fits/<source name>`, unless `--out` is given.
 
 1. Find the painted hand. Run `python scripts/fit_in_hand_render.py overview SOURCE`, then `zoom SOURCE x0 y0 x1 y1` on the hand.
 2. Measure it with `python scripts/fit_in_hand_render.py measure SOURCE POSE x0 y0 x1 y1` on a box round the painted hand. Keep the box tight: cream pages and parchment count as skin. The painted hand's skin centre and width are CX, CY and WIDTH, in source px. The same command prints the body hand's numbers: for pose 002, centre (447.2, 768.1) and width 69; for pose 004, centre (446.2, 738.5) and width 90.
 3. Fit it with `python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--tag T]`. Without `--scale`, the hand is matched to the body's hand width. Try a few scales and compare the review sheets and metrics. Scale is 1 or below, because renders are only ever reduced. Scale 1 is placement only, for a render already drawn at the body's size. A render drawn smaller than the body needs a new render; it cannot be enlarged.
+
+   If `body_hand_core_pixels_showing` is above 0, run `python scripts/fit_in_hand_render.py cover SOURCE ITEM CX CY WIDTH --scale S [S ...]`. It lists the placements near the centred one that leave the fewest body-hand pixels showing; fit the best with `fit ... --scale S --offset OX OY`. For an item already registered, pass `--near` with its current offset to move it as little as possible. Centring alone often leaves an edge of the body's hand showing, because the painted hand's outline is a different shape. If no placement covers it, the scale has to rise a little (the painted hand is too small), within the size limits below.
 4. The metrics that decide a fit:
    - `painted_hand_vs_body_hand_width` at most about 1.2.
    - `item_height_vs_old` roughly 0.9 to 1.15. It compares the whole layer with the item's old art (commit 788454a). For palm items the painted hand hangs below the item and is counted too, so there judge the item itself on the review sheet, whose first tile is the old art.
@@ -131,3 +133,5 @@ python scripts/report_production_status.py --manifest assets/asset_manifest.json
 - Painted wrists: they pointed sideways, stuck out as stumps, or drew an outline across the forearm. Trimming them off afterwards was tried and dropped at the owner's request.
 - A closed fist for palm-up items (011): the body's pose is an open palm.
 - Rim light on the hand: it shows as a glowing outline against the body.
+- Centring the painted hand and stopping there. Round 1 left the body's knuckles showing beside the arcane staff, and the body's fingertips under the orb, until both were fitted again on 2026-09-27. Check `body_hand_core_pixels_showing` and use `cover`.
+- A sword drawn longer than its old art, with the hand low on the grip (004, 2026-09-26 candidate): once the fist covers the body's, the blade runs off the top of the canvas.
