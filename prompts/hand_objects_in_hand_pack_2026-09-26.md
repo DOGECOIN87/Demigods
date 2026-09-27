@@ -25,7 +25,7 @@ Create ONE isolated trait layer: the Demigods arcane staff held in the collectio
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_001_arcane_staff_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_001_arcane_staff_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -53,7 +53,7 @@ Create ONE isolated trait layer: the Demigods dark wand held in the collection f
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_003_dark_wand_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_003_dark_wand_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -81,7 +81,7 @@ Create ONE isolated trait layer: the Demigods silver sword held in the collectio
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_004_silver_sword_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_004_silver_sword_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -109,7 +109,7 @@ Create ONE isolated trait layer: the Demigods gold lantern held in the collectio
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_006_gold_lantern_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_006_gold_lantern_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -137,7 +137,7 @@ Create ONE isolated trait layer: the Demigods gold staff with blue gem held in t
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_007_gold_blue_gem_staff_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_007_gold_blue_gem_staff_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -165,7 +165,7 @@ Create ONE isolated trait layer: the Demigods blue crescent staff held in the co
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_008_blue_crescent_staff_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_008_blue_crescent_staff_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -193,7 +193,7 @@ Create ONE isolated trait layer: the Demigods violet blade held in the collectio
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_009_violet_blade_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_009_violet_blade_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -221,7 +221,7 @@ Create ONE isolated trait layer: the Demigods horned skull scepter held in the c
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_002_viewer_left_vertical_grip.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_010_horned_skull_scepter_pose_002_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_010_horned_skull_scepter_pose_002_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -251,7 +251,7 @@ Create ONE isolated trait layer: the Demigods violet crystal orb held in the col
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_004_viewer_left_palm_up.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_002_violet_orb_pose_004_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_002_violet_orb_pose_004_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -279,7 +279,7 @@ Create ONE isolated trait layer: the Demigods star spellbook held in the collect
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_004_viewer_left_palm_up.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_005_star_spellbook_pose_004_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_005_star_spellbook_pose_004_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -307,7 +307,7 @@ Create ONE isolated trait layer: the Demigods round talisman held in the collect
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_004_viewer_left_palm_up.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_011_round_talisman_pose_004_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_011_round_talisman_pose_004_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.
@@ -335,7 +335,7 @@ Create ONE isolated trait layer: the Demigods brown tome held in the collection 
 
 ATTACH THESE IMAGES IN THIS ORDER
 Image 1: base_pose_004_viewer_left_palm_up.png (repository: assets/base_bodies/). The exact figure, scale and placement. Use it only as an invisible alignment guide: its viewer-left hand sets the hand's position, size and skin.
-Image 2: hand_object_012_brown_tome_pose_004_left.png (repository: assets/hand_objects/). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
+Image 2: hand_object_012_brown_tome_pose_004_left.png (repository: assets/hand_objects/, as it was at commit 788454a, before the in-hand versions replaced it). The object design: shape, colours, materials, ornaments and length. Its relation to the hand is wrong and must not be copied.
 
 OUTPUT
 One 1254 x 1254 transparent PNG. Only two things are painted: the viewer-left hand, from the fingertips back to the base of the palm (no wrist), and the object it holds. No arm, body, head, clothing, background or shadow.

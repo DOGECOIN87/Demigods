@@ -45,3 +45,9 @@ Only the round-2 sources that were registered are kept, under `images/trait_cand
 Hand objects 003, 004, 005, 009, 010 and 011 keep their earlier art and are still drawn behind the body, where the base fist covers their grip.
 
 Review sheet: `docs/qa/hand_objects_in_hand_2026-09-26.png` shows every registered object on the bare pose and on two dressed bodies of the same pose, with the grip enlarged underneath.
+
+## Round 3 and after
+
+Rerenders of the silver sword, horned skull scepter and round talisman were fitted and not registered. The sword's painted wrist pointed sideways, leaving a stump beside the arm. The scepter, fitted at the item's old size, left a corner of the body's own fist showing above the painted hand. The talisman was painted in a closed fist as wide as the charm. Their sources are not kept.
+
+The owner then found painted wrists anatomically wrong in general and asked for renders without them. The prompt pack now stops the hand at the base of the palm. Trimming wrists off existing renders was tried and dropped at the owner's request. Six more candidates the owner generated are in `incoming/hand_objects/with_hand_candidates_2026-09-26/`, not yet fitted. The next steps are in `prompts/hand_objects_handover_2026-09-27.md`.
