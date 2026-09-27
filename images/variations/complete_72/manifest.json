@@ -1,0 +1,510 @@
+{
+  "count": 72,
+  "type": "complete_character_and_background_artwork",
+  "images": [
+    {
+      "file": "Demigods_001_Dawnforge.png",
+      "sha256": "56c53401e75219bc4803676cffdb13b0b59a89fcb2401882e635ff31d6f7231d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_002_Storm_Knight.png",
+      "sha256": "37dc96fa728516bda6cfa702975f6a01e06781844762f3f9e81cd637c4263f93",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_003_Coral_Oracle.png",
+      "sha256": "47a92c83a63651fcb6fe0c5b2705c15d9fa16a955c68c1a53c7e80eae13cea00",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_004_Clockwork_Artisan.png",
+      "sha256": "c2de163dfdc70078ab4b891983ed60d1c1ad3db07249d648ed4703c2e19cd4a0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_005_Obsidian_Sentinel.png",
+      "sha256": "9d99d2c2cc04d7c5091610c44e01812667247c477e0fb72f2eb900f92551f586",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_006_Aurora_Skater.png",
+      "sha256": "61be00df8b8c49800c74a1c13235426438c3a9f3fac0e2be29100035a7c183ce",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_007_Lotus_Monk.png",
+      "sha256": "a5a389b004fc1f22c4219fedfaf437cd09e3883f4faacee469efca4002b73ebc",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_008_Comet_Courier.png",
+      "sha256": "d3a6681689b03f59b5e94522b7f13ce6afe0ace3cf2fae124884889b8597bcb9",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_009_Desert_Hourglass.png",
+      "sha256": "24f52968ffe7b345578ab9ccbf4bcef87b3d5dabda119ffca7052ad2f089b49f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_010_Thunder_Drummer.png",
+      "sha256": "50a2f432e072abf15489022da369f3f131a223d9baece93659b9678a2e931ee0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_011_Swan_Guardian.png",
+      "sha256": "e765d17b4c2a5822b6355c439b697950c95c3290974207a38de235230bf919e7",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_012_Crystal_Geomancer.png",
+      "sha256": "56c24c0e431d942deb31684564344fdc255fecf3034b0116a6b8a9cb564fff8a",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_013_Crescent_Huntress.png",
+      "sha256": "a2d5cc70eb1ed6445f146da0974cead8e36147880c50bafadedce133b4f4d585",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_014_Lantern_Keeper.png",
+      "sha256": "43db46fce36cd86a3a05c4905608865b224cffe8c1a3c7626be9a58e1a23e0a7",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_015_Tide_Captain.png",
+      "sha256": "a1296ba442573b54a269732da0fd4f3c1642e6c0fa24a5fb2601b62b2e32f9d9",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_016_Moth_Diviner.png",
+      "sha256": "ce216d6fddf91c5234a653dd4d84e4de990d23d37f8b2aa75a4ddad9620d4485",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_017_Snowbell_Warden.png",
+      "sha256": "a8a645ef5e7393284852e1a6760bc35004d51dd52f7097705fff671f60b96a4c",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_018_Eclipse_Duelist.png",
+      "sha256": "67dcff8f8fb6faee82d7cc4b543c75415ea74dcb261472b4ed23deda4e9797a5",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_019_Dream_Weaver.png",
+      "sha256": "af3b4dbc8e4d542c266986d7e133c47227884bc6c1a5f401036588d7be904c31",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_020_Pearl_Diver.png",
+      "sha256": "00b73b8cb63cf350f2d8e55597ccefceac4fe2f25421e4d4ac3d4eb31d62f0b6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_021_Moon_Rabbit_Herald.png",
+      "sha256": "6d4c02a9952d3efc8cde89a37701cf9220adfa986c2dc8a932b908fd363d80b6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_022_Ink_Moon_Poet.png",
+      "sha256": "c7ca473ee84beb3366562bdd7df0e37204f670965333b22d3a853d58f65b61e0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_023_Glass_Nightingale.png",
+      "sha256": "6c5c8041a5fe7be02898b457639d5555e524847cd81c737c47ae6ad0f2072f53",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_024_Star_Shepherd.png",
+      "sha256": "b564b1a9b2310670ad46992db04d250b3be7fe43111074f986a99fcfde127b4b",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_025_Ruby_Regent.png",
+      "sha256": "0a65b1abcb6dce429195db9535b386a5ec6a35fbc6e5bd1532890e5915fe565e",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_026_Jade_Empress.png",
+      "sha256": "f3ab397e4ec87f30d1b5fcbb936c9ab14860921de6ef9e5884723fa03334a91c",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_027_Frost_Marshal.png",
+      "sha256": "2bd5082857c75d35aa1025d0651f95bbf820e3d930b28cfcd972b11fadb309a9",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_028_Rose_Diplomat.png",
+      "sha256": "1bd9d11f672634df3fe857e3fa3af42922e7ca3c3961ca245e2c6a38961a870e",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_029_Dragon_Standardbearer.png",
+      "sha256": "3e0eddf968be6674e77161f7aa402614231820d213af21bf4b3982bb4d17b557",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_030_Lion_Champion.png",
+      "sha256": "04a7ea018f7d8b8860a8db4a23d43d8d6f26dfe600a3bc72c41afd2184b5f960",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_031_Peacock_Sovereign.png",
+      "sha256": "034ec7c1714317f7bacf66d5cddbf467b2005b5919cae2a72fe5ec4787831327",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_032_Sapphire_Admiral.png",
+      "sha256": "c13b883f115e286bc9bb9acf22638d8f6eddecf43f6830c68901412fa0bd58e0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_033_Ivory_Judge.png",
+      "sha256": "d2d7376b074d4636869dbfdc067562d9d06817b7ed4e54f3fee6e0ee55b9f15f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_034_Amber_Falconer.png",
+      "sha256": "2ff33e684a4fbc2eb1a34471cf61c112bf78590b6d5e1a0ee04d5626641b04bc",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_035_Violet_Jester.png",
+      "sha256": "02f4216bcfdf3c128b1083d082c6e4b162052e37b3b7cd364d9ba208b047d7d3",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_036_Diamond_Paladin.png",
+      "sha256": "b17d34b563867825e2ddc22839c5d0552f070ef2579f76fbc70cd48e006c1405",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_037_Astral_Cartographer.png",
+      "sha256": "2c02cf325a080853fed526cfaf7eff76860f7b24127c4c2b508aab20493c0545",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_038_Potion_Alchemist.png",
+      "sha256": "5a6f57b96c2f6acc2a4743a7f4ebfc05149e88cf463b68a4af1479e6ec6f2fae",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_039_Rune_Blacksmith.png",
+      "sha256": "5d037ca2f0d8f39eb8cb6699916fa1896fa9be52512920b7ace0132ef312e9af",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_040_Paper_Summoner.png",
+      "sha256": "832073ad879f0dd95d44128adab2be1493005ae2143e5b2607ade80ab694901d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_041_Sand_Archaeologist.png",
+      "sha256": "d9fb0db589958e5a7c0f6d352c0ac9409bc1acf566c95b3e53b035668b859266",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_042_Prism_Magician.png",
+      "sha256": "20d0c641688c320c6b34d15cf8a5c06600b237d6c2af94ab140a8ba15da8f855",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_043_Thunder_Engineer.png",
+      "sha256": "01df165a409c0fa57eacb54e60031d4a26c30c9a52031702a6612abd2d91ad30",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_044_Mirror_Seer.png",
+      "sha256": "c025aad07ff22046fe7c073ab8e7cd57effb16cd4311df12cc781258501e8a79",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_045_Memory_Librarian.png",
+      "sha256": "57236b76469582d78da7949e5894fe390970df9a6b8d485ba79ddfaa6804de73",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_046_Music_Enchanter.png",
+      "sha256": "29d0cf610ccd3bd6422895b3bb67fa700c27bd5305801747e7ca91038c850f34",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_047_Gravity_Scholar.png",
+      "sha256": "3fdf0a1b45163409aa77effbc04d02d33797df32ac1fd9a2575243c5fea8afc6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_048_Auric_Mathematician.png",
+      "sha256": "6a98a0eb7b877608f1ae1079bf83fe54989359fe4885f575555ec3a118ae1a71",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_049_Void_Gatekeeper.png",
+      "sha256": "3336d75f7196bb7c04bcfdc97268b130aa32f5d2783ab9f4876a6cc9944175e6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_050_Raven_Oracle.png",
+      "sha256": "786aed2d9e63f543e88343084f3d15967a912b12e2f4fda119b1d72e3558e609",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_051_Ash_Pilgrim.png",
+      "sha256": "ad6ec0b4e6cab7be2247518b8ee431b71ec9e69e8a82cc99c3b5a9c7b62f99a0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_052_Spectral_Ferryman.png",
+      "sha256": "6172d897bde8b5146607119909ca163c4f2ff2081a9ee8490cd25ded8e08443f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_053_Black_Opal_Knight.png",
+      "sha256": "722367a9222802d9250883faab66b9a86ff1cd149d670cc387f39a8379a63e17",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_054_Rift_Acrobat.png",
+      "sha256": "7d595d05fe4e4405bb701036bc928bc61897cfea9aa11858788ee13dc8a0a21c",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_055_Eclipse_Reaper.png",
+      "sha256": "846bdc12e3870d6589928277f1292053029e7153a3f9ee76bfd6f22bcc8103f5",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_056_Shadow_Locksmith.png",
+      "sha256": "533f1563be05f3e59bccbb087ac78601a75cb94f0422c5d2845b38d86af9a09f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_057_Nebula_Navigator.png",
+      "sha256": "7e19517394aadd23e46c117675001efef064289739c35e25245db17fccacde13",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_058_Dream_Sentinel.png",
+      "sha256": "282891223b9037937a717a49af66b3e77467ce30294a24114126d5cf0c2b2969",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_059_Oblivion_Scribe.png",
+      "sha256": "aae104b22f274465dbe7efbf1f568bb366eeb4430b7bddd559a6d672f52e77bf",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_060_Cosmic_Chessmaster.png",
+      "sha256": "08f174c6c5c96b8cf33929695659d5ca1f88ae720f83e6748f925ac9a821ee22",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_061_Oak_Druid.png",
+      "sha256": "16b29a058b5d478e70b864fb22cfbf17531cf72a174654f52dcac81c09c0a40a",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_062_Cherry_Blossom_Guardian.png",
+      "sha256": "3686170fe04597fe4ae965332379c97be86b1f96163cb2ef06e581746a4de4c8",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_063_Mushroom_Herbalist.png",
+      "sha256": "790458949c0d8ab735b517fc43832ed4a3c09bf44c50d8aa1d11b1d84948b379",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_064_Bamboo_Ranger.png",
+      "sha256": "0792bcd8dddec8b1ea8d04d0f25cab511800fc9f9f492b13ad98d98e4dd951e0",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_065_Cactus_Wanderer.png",
+      "sha256": "80c83d2050f1fcf7b5f90bf83b60a9a3ca4aedd47cfdbaa755ab3da5e9596fdf",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_066_Orchid_Duelist.png",
+      "sha256": "5ae498b54abc65cd63275ba73aff891c43f5657f2ac75368856585afb78540dd",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_067_Bee_Alchemist.png",
+      "sha256": "aed28a548f555d9c11f135083b88eef223c628f19440db43833658985378d1df",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_068_Fern_Warden.png",
+      "sha256": "b4d0ce4e4a0445974cb7ef237a7d49e6f1ff1920373e31060bd98f661d696752",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_069_Maple_Archer.png",
+      "sha256": "efa8a00950dae0b48044c0c7f5da2061061b3433cea53977649fe8228e58ebda",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_070_Willow_Healer.png",
+      "sha256": "313909982629d24240bd7667b600639eb6fe4a854415181fb8f4a88bfcdfd5c6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_071_Iceflower_Botanist.png",
+      "sha256": "ad7e64973b5db5ce6dba9cdd5d2ac48f0e2486b0166f896be8776425edf06d77",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    {
+      "file": "Demigods_072_Worldtree_Keeper.png",
+      "sha256": "e8bfd3b7920d34003d002dd2f86948041e9833204e5c2cde44d34a26874bdcda",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    }
+  ]
+}
