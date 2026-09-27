@@ -1,0 +1,103 @@
+{
+  "status": "candidates_require_alignment",
+  "production_ready": false,
+  "repository_base_commit": "d06c7952bd383035b9e5dbc31f4830c85ea974bf",
+  "requirements": [
+    "Object and gripping/supporting hand in one transparent layer.",
+    "No wrist, forearm, sleeve or cuff.",
+    "Match corresponding base arm location, scale, skin tone and lighting.",
+    "Prevent duplicate fingers by verifying coverage or masking of the original base hand."
+  ],
+  "assets": [
+    {
+      "file": "hand_object_001_arcane_staff_pose_002_left_with_hand_candidate.png",
+      "sha256": "87c14fc58c7f902415446690315795bce6ec869022f3a8ffb2588ac395e47b17",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-c036f211-9a8c-452c-9c54-4ad9fb51244d.png",
+      "base_reference": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+      "known_issue": "Grip shifted left in a second generation attempt; final overlay fit is not verified."
+    },
+    {
+      "file": "hand_object_002_violet_orb_pose_004_left_with_hand_candidate.png",
+      "sha256": "7de18e84ddeef53f44b6ecf6daa7efd10492c5e6c8380e617f3a605a421be20f",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-cf52e744-ad38-4c3e-b5d9-c75bc309a2a5.png",
+      "base_reference": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+      "known_issue": "Second attempt reduced the oversized hand; palm alignment and base-hand coverage remain unverified."
+    },
+    {
+      "file": "hand_object_003_dark_wand_pose_002_left_with_hand_candidate.png",
+      "sha256": "e7cf204102817eb5956fe624cf63228b20e5878c8844c25740bc1698ef6f887b",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-7c482ba8-fa3c-46c1-b179-f5c09665c02c.png",
+      "base_reference": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+      "known_issue": "Grip position/scale requires fitting; wand rendered longer than intended."
+    },
+    {
+      "file": "hand_object_004_silver_sword_pose_002_left_with_hand_candidate.png",
+      "sha256": "318cca761c6e6ce77e5978c981721740499c31b2d31e9a7c804c3b037efe3931",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-d44ffc27-49fa-4363-84b8-c8f522341d38.png",
+      "base_reference": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+      "known_issue": "Grip rendered substantially below the target base hand; requires repositioning and fit review."
+    },
+    {
+      "file": "hand_object_005_star_spellbook_pose_004_left_with_hand_candidate.png",
+      "sha256": "8d46b2ebded57b5a2c48488b4f424dc17fd5ae6bbeff815d226e1eb7b65f9e2d",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-172c9f7d-9efd-43f0-8de7-a8e72ee02cc5.png",
+      "base_reference": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+      "known_issue": "Hand and book rendered too large and below the target palm; requires fitting."
+    },
+    {
+      "file": "hand_object_006_gold_lantern_pose_002_left_with_hand_candidate.png",
+      "sha256": "1037d776bab02bf16028fc620b329626c062ea31ecac2b223af129a4d607f1e2",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "production_ready": false,
+      "generation_source_filename": "exec-a1a3ffd9-0b72-456c-8ab7-1496188330b1.png",
+      "base_reference": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+      "known_issue": "Hand rendered at the wrong position and retains a wrist stub; trim the stub and fit to the base arm."
+    }
+  ]
+}
