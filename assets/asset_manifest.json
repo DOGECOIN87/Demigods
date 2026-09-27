@@ -2517,7 +2517,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "5a04dee431bcb68753a2e3a6c10689092135d8f639227de688895af80819a09a",
+      "sha256": "d84751b2a7922daceef57d0546a27ec33a1177a616f4dee2b8e0326e5a083dde",
       "dimensions": [
         1254,
         1254
@@ -2525,13 +2525,13 @@
       "format": "PNG",
       "mode": "RGBA",
       "backlog_id": "DG-140",
-      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27-passing.png",
       "provenance": {
         "origin": "generator_render_painted_in_hand",
         "trait": "Blue crescent-moon staff",
-        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-26.md",
+        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
         "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
-        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-26/round2/008_blue_crescent_staff.png",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27-pass/008_blue_crescent_staff.png",
         "source_sha256": "2ebcb74329f435db95e4e10ed0dc072686cbaa192dcd61edfb0ae962257c196c",
         "source_dimensions": [
           1920,
@@ -2556,16 +2556,16 @@
         "transform": {
           "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
           "resample": "lanczos",
-          "scale": 0.435,
+          "scale": 0.46,
           "offset": [
-            53,
-            328
+            31,
+            303
           ],
           "output_bounds": [
-            274,
-            337,
-            564,
-            1138
+            265,
+            312,
+            572,
+            1160
           ],
           "cleanup": {
             "alpha_floor": 16,
@@ -2579,15 +2579,15 @@
           1254
         ]
       },
-      "approved_on": "2026-09-26",
-      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27-passing.md"
     },
     {
       "id": "hand_object_010",
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "89f7fd1d06b238a396a32273ca6dd8f5496ac83e14c735cc04e37333209d678a",
+      "sha256": "06464f2e7b77ddc56e02b8c5658af8102eecbab02126ca8e697cbc286082ef5d",
       "dimensions": [
         1254,
         1254
@@ -2595,30 +2595,83 @@
       "format": "PNG",
       "mode": "RGBA",
       "backlog_id": "DG-142",
-      "qa_composite": "docs/qa/composites/hand_object_010_over_base.png",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27-passing.png",
       "provenance": {
-        "origin": "native_image_generation",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "origin": "generator_render_painted_in_hand",
         "trait": "Horned skull scepter",
+        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
+        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27-pass/010_horned_skull_scepter.png",
+        "source_sha256": "ce15cf694a959a851cd08693a1d7ae010be4bf3bc37666a47b13d16730af3040",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "pose": 2,
+        "contact_feature": "painted hand over the base's closed fist",
+        "painted_hand": {
+          "centre": [
+            623.6,
+            863.6
+          ],
+          "width": 98
+        },
+        "base_hand": {
+          "centre": [
+            448,
+            758
+          ],
+          "width": 72
+        },
+        "transform": {
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
+          "resample": "lanczos",
+          "scale": 0.76,
+          "offset": [
+            -34,
+            116
+          ],
+          "output_bounds": [
+            340,
+            317,
+            549,
+            1012
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
+        },
+        "intake_script": "scripts/register_in_hand_objects.py",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/bulk_intake.py",
-        "postprocessing": [
-          "native_integer_translation_to_measured_hand_landmark_2026-08-15"
-        ],
-        "pre_hand_recalibration_sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
-        "post_hand_recalibration_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
-        "hand_recalibration_dx": 34,
-        "hand_recalibration_dy": 122,
-        "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
-        "pre_pose_aware_revision_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
-        "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
-        "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
+        "superseded_provenance": {
+          "origin": "native_image_generation",
+          "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+          "trait": "Horned skull scepter",
+          "native_dimensions": [
+            1254,
+            1254
+          ],
+          "intake_script": "scripts/bulk_intake.py",
+          "postprocessing": [
+            "native_integer_translation_to_measured_hand_landmark_2026-08-15"
+          ],
+          "pre_hand_recalibration_sha256": "0794c20018b8dc3e85b5bb7d51f7b8a95efc48b72b6a89c4c8ecd761bf350483",
+          "post_hand_recalibration_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
+          "hand_recalibration_dx": 34,
+          "hand_recalibration_dy": 122,
+          "hand_recalibration_script": "scripts/recalibrate_hand_objects.py",
+          "pre_pose_aware_revision_sha256": "cee4d03f3c7c7488fabba25d3ca622fcbbafe892c758356d56478d3c84936325",
+          "pose_aware_revision": "12_degree_outward_hold_and_silhouette_correction_2026-08-15",
+          "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
+        }
       },
-      "approved_on": "2026-08-15",
-      "qa_report": "docs/qa/hand_object_recalibration_findings_2026-08-15.md"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27-passing.md"
     },
     {
       "id": "hand_object_012",
@@ -2905,7 +2958,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "7ac50d2acc8d2d7f36c7467519307cb33744971517a6e2d1f8e967934e289176",
+      "sha256": "db2992c5f8fe3639128b03b5eebf366c4d55ea70c082c27e710650845c8c2da8",
       "dimensions": [
         1254,
         1254
@@ -2914,50 +2967,103 @@
       "mode": "RGBA",
       "backlog_id": "DG-136",
       "provenance": {
-        "origin": "hand_object_contact_realignment",
-        "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+        "origin": "generator_render_painted_in_hand",
         "trait": "Silver straight sword",
+        "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
+        "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27-pass/004_silver_sword.png",
+        "source_sha256": "823188e8a161b2fe869c7f79ffc7a0301a3a4e319d48334a24833305f0d95f05",
+        "source_dimensions": [
+          1254,
+          1254
+        ],
+        "pose": 2,
+        "contact_feature": "painted hand over the base's closed fist",
+        "painted_hand": {
+          "centre": [
+            629.3,
+            958.2
+          ],
+          "width": 100
+        },
+        "base_hand": {
+          "centre": [
+            448,
+            758
+          ],
+          "width": 72
+        },
+        "transform": {
+          "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
+          "resample": "lanczos",
+          "scale": 0.79,
+          "offset": [
+            -53,
+            12
+          ],
+          "output_bounds": [
+            251,
+            122,
+            501,
+            882
+          ],
+          "cleanup": {
+            "alpha_floor": 16,
+            "speck_fraction": 0.002,
+            "opaque_from": 250
+          }
+        },
+        "intake_script": "scripts/register_in_hand_objects.py",
         "native_dimensions": [
           1254,
           1254
         ],
-        "intake_script": "scripts/align_pending_candidates.py",
-        "alignment_pass": "aligned_candidates_2026-09-07",
-        "output_bounds": [
-          300,
-          142,
-          490,
-          921
-        ],
-        "source_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
-        "source_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
-        "source_bounds": [
-          344,
-          129,
-          463,
-          923
-        ],
-        "pose": 2,
-        "contact_point": [
-          438,
-          772
-        ],
-        "contact_feature": "wrapped grip through the closed fist",
-        "transform": {
-          "method": "integer_translation_then_lean_about_contact_point",
-          "dx": 34,
-          "dy": 0,
-          "lean_degrees": 12.0,
-          "resample": "bicubic"
-        },
-        "postprocessing": [
-          "hand_object_contact_realignment_2026-09-07"
-        ],
-        "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+        "superseded_provenance": {
+          "origin": "hand_object_contact_realignment",
+          "reference_path": "assets/base_bodies/base_body_001_neutral_master.png",
+          "trait": "Silver straight sword",
+          "native_dimensions": [
+            1254,
+            1254
+          ],
+          "intake_script": "scripts/align_pending_candidates.py",
+          "alignment_pass": "aligned_candidates_2026-09-07",
+          "output_bounds": [
+            300,
+            142,
+            490,
+            921
+          ],
+          "source_path": "incoming/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+          "source_sha256": "ccb8a79cca79f93a3622028ab73ea06f060a71cb22b7476b5e608efd7924406d",
+          "source_bounds": [
+            344,
+            129,
+            463,
+            923
+          ],
+          "pose": 2,
+          "contact_point": [
+            438,
+            772
+          ],
+          "contact_feature": "wrapped grip through the closed fist",
+          "transform": {
+            "method": "integer_translation_then_lean_about_contact_point",
+            "dx": 34,
+            "dy": 0,
+            "lean_degrees": 12.0,
+            "resample": "bicubic"
+          },
+          "postprocessing": [
+            "hand_object_contact_realignment_2026-09-07"
+          ],
+          "realignment_reason": "retired shared hand anchor X 404 replaced by the measured grip contact"
+        }
       },
-      "approved_on": "2026-09-07",
-      "qa_report": "docs/qa/aligned_candidates_2026-09-07/README.md",
-      "qa_composite": "docs/qa/composites/hand_object_004_over_base.png"
+      "approved_on": "2026-09-27",
+      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27-passing.md",
+      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27-passing.png"
     },
     {
       "id": "hand_object_005",

@@ -109,6 +109,17 @@ ROUND2_REFIT_0927 = {
 }
 QA_0927 = {"decided_on": "2026-09-27", "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
            "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"}
+QA_PASS_0927 = {
+    "decided_on": "2026-09-27",
+    "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27-passing.md",
+    "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27-passing.png",
+    "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
+    "items": {
+        "hand_object_004": ("004_silver_sword.png", 2, (629.3, 958.2), 100, 0.79, (-53, 12)),
+        "hand_object_008": ("008_blue_crescent_staff.png", 2, (906, 1012), 165, 0.46, (31, 303)),
+        "hand_object_010": ("010_horned_skull_scepter.png", 2, (623.6, 863.6), 98, 0.76, (-34, 116)),
+    },
+}
 
 # Batches fitted with scripts/fit_in_hand_render.py, applied in order after round 1.
 BATCHES = [
@@ -119,6 +130,7 @@ BATCHES = [
     {"folder": CANDIDATES_0927, **QA_0927, "items": ITEMS_0927},
     {"folder": SOURCES, **QA_0927, "items": ROUND1_REFIT_0927},
     {"folder": ROUND2, **QA_0927, "items": ROUND2_REFIT_0927},
+    {"folder": ROOT / "images" / "trait_candidates" / "hand_objects" / "in_hand_2026-09-27-pass", **QA_PASS_0927},
 ]
 
 
@@ -216,13 +228,22 @@ def main() -> int:
         entry["approved_on"] = batch["decided_on"]
         entry["qa_report"] = batch["qa_report"]
         entry["qa_composite"] = batch["qa_composite"]
-        entry["provenance"] = {
+        previous_provenance = entry.get("provenance", {})
+        prior_source_hash = previous_provenance.get("source_sha256")
+        current_source_hash = sha256(source)
+        if "superseded_provenance" in previous_provenance:
+            inherited_provenance = previous_provenance["superseded_provenance"]
+        elif prior_source_hash != current_source_hash:
+            inherited_provenance = previous_provenance
+        else:
+            inherited_provenance = None
+        provenance = {
             "origin": "generator_render_painted_in_hand",
             "trait": entry["provenance"].get("trait"),
-            "prompt": PROMPTS,
+            "prompt": batch.get("prompt", PROMPTS),
             "reference_path": base["path"],
             "source_path": source.relative_to(ROOT).as_posix(),
-            "source_sha256": sha256(source),
+            "source_sha256": current_source_hash,
             "source_dimensions": source_size,
             "pose": pose,
             "contact_feature": f"painted hand over the base's {base['feature']}",
@@ -232,6 +253,9 @@ def main() -> int:
             "intake_script": "scripts/register_in_hand_objects.py",
             "native_dimensions": list(CANVAS),
         }
+        if inherited_provenance:
+            provenance["superseded_provenance"] = inherited_provenance
+        entry["provenance"] = provenance
         name = Path(entry["path"]).name
         rule = requires[name]
         rule["reason"] = (
