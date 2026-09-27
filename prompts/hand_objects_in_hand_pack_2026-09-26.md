@@ -13,7 +13,7 @@ Prepared 2026-09-26. The owner wants every handheld item drawn with the hand act
 - **The object really passes through the hand.** Staffs, blades and scepters enter the top of the fist and leave the bottom in one straight line, with the fingers wrapped over them. The palm items rest in or hang from the hand with the fingers touching them.
 - **The hand stays the body's size.** Renders that drew the hand large had to be shrunk to fit the body, which shrank the item too; the owner rejected those (003, 004, 007). Each prompt gives the hand's and the object's size in pixels.
 - **The hand is the base pose's hand, in place.** The layer shares the body's canvas, so the painted hand has to land on the base's own hand at the same size, or it shows as a second hand.
-- **No wrist.** Paint the hand only up to the base of the palm, with a soft edge that has no outline; the body layer supplies the wrist and forearm. Painted wrists never lined up with the body's arm (sideways stumps, outlines drawn across the wrist, the hand turned the wrong way), so the owner asked for renders without them. Any painted wrist that still appears is trimmed off at intake and the edge is blended into the body's arm.
+- **No wrist.** Paint the hand only up to the base of the palm, with a soft edge that has no outline; the body layer supplies the wrist and forearm. Painted wrists never lined up with the body's arm (sideways stumps, outlines drawn across the wrist, the hand turned the wrong way), so the owner asked for renders without them. A render that still shows a painted wrist is rejected and generated again; wrists are not trimmed off.
 - **Transparent background.** Nothing else on the canvas.
 
 # Fist grip - Pose 002 (8 items)

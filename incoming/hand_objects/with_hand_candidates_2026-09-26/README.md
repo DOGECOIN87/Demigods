@@ -13,6 +13,8 @@ Six generated replacement candidates, uploaded at the owner’s request. Each PN
 
 ## Required before registration
 
+> **Update 2026-09-27:** the owner dropped the wrist-removal step. A candidate with a painted wrist (here, the gold lantern) is generated again without one instead of being trimmed. See `prompts/hand_objects_handover_2026-09-27.md`.
+
 Fit each hand to its specified base pose. Remove any wrist extension, especially the lantern’s wrist stub. Match the palm-to-arm attachment and cover or mask the base hand so there are no extra fingers. Inspect a composite over the corresponding base and dressed-body poses. Transparency and dimensions alone do not establish overlay compatibility.
 
 ## Candidates and known issues

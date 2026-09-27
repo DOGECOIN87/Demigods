@@ -33,6 +33,11 @@ scale and offset were chosen by comparing candidate fits on the bare and dressed
 bodies (the hand has to cover the body's own hand, the item has to stay close to
 its old size), so they are recorded directly rather than derived from a width.
 
+To register a new batch, add an entry to BATCHES (its source folder, decision date, QA
+note and item table) and run the script again. Batches are applied in order, so a later
+batch's render for the same item replaces an earlier one. Every source listed here is
+re-read on each run, so each must stay committed.
+
     python scripts/register_in_hand_objects.py
 """
 from __future__ import annotations
@@ -72,12 +77,21 @@ ITEMS = {
 }
 
 # Round 2. asset id -> (source render, pose, painted-hand centre and width in the source, scale, offset)
+# The scale may be 1 (placement only) for a render already drawn at the body's size, never above.
 ROUND2_ITEMS = {
     "hand_object_006": ("006_gold_lantern.png", 2, (945.8, 351.3), 312, 0.251, (210, 680)),
     "hand_object_007": ("007_gold_staff_with_blue_gem.png", 2, (906, 1140), 177, 0.4, (85, 312)),
     "hand_object_008": ("008_blue_crescent_staff.png", 2, (906, 1012), 165, 0.435, (53, 328)),
     "hand_object_012": ("012_brown_tome.png", 4, (1118.5, 1019.9), 587, 0.186, (238, 549)),
 }
+
+# Batches fitted with scripts/fit_in_hand_render.py, applied in order after round 1.
+BATCHES = [
+    {"folder": ROUND2, "decided_on": DECIDED_ON,
+     "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md",
+     "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png",
+     "items": ROUND2_ITEMS},
+]
 
 
 def sha256(path: Path) -> str:
@@ -121,8 +135,8 @@ def clean_render(source: Path) -> Image.Image:
 
 
 def fit_round2(source: Path, scale: float, offset: tuple[int, int]) -> tuple[Image.Image, dict]:
-    if not 0 < scale < 1:
-        raise ValueError(f"{source.name}: scale {scale:.3f} is not a reduction")
+    if not 0 < scale <= 1:
+        raise ValueError(f"{source.name}: scale {scale:.3f} would enlarge the render")
     render = clean_render(source)
     size = (round(render.width * scale), round(render.height * scale))
     reduced = render.resize(size, Image.Resampling.LANCZOS)
@@ -150,11 +164,14 @@ def main() -> int:
     in_hand = compatibility.setdefault("in_hand", [])
     in_hand_traits = {rule["trait"] for rule in in_hand}
 
-    jobs = [(asset_id, SOURCES / name, pose, centre, width, None, None)
+    round1 = {"decided_on": DECIDED_ON, "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md",
+              "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png"}
+    jobs = [(asset_id, SOURCES / name, pose, centre, width, None, None, round1)
             for asset_id, (name, pose, centre, width) in ITEMS.items()]
-    jobs += [(asset_id, ROUND2 / name, pose, centre, width, scale, offset)
-             for asset_id, (name, pose, centre, width, scale, offset) in ROUND2_ITEMS.items()]
-    for asset_id, source, pose, centre, width, scale, offset in jobs:
+    for batch in BATCHES:
+        jobs += [(asset_id, batch["folder"] / name, pose, centre, width, scale, offset, batch)
+                 for asset_id, (name, pose, centre, width, scale, offset) in batch["items"].items()]
+    for asset_id, source, pose, centre, width, scale, offset, batch in jobs:
         entry = entries[asset_id]
         asset = ROOT / entry["path"]
         if scale is None:
@@ -168,9 +185,9 @@ def main() -> int:
         with Image.open(source) as opened:
             source_size = list(opened.size)
         entry["sha256"] = sha256(asset)
-        entry["approved_on"] = DECIDED_ON
-        entry["qa_report"] = "docs/qa/hand_objects_in_hand_2026-09-26.md"
-        entry["qa_composite"] = "docs/qa/hand_objects_in_hand_2026-09-26.png"
+        entry["approved_on"] = batch["decided_on"]
+        entry["qa_report"] = batch["qa_report"]
+        entry["qa_composite"] = batch["qa_composite"]
         entry["provenance"] = {
             "origin": "generator_render_painted_in_hand",
             "trait": entry["provenance"].get("trait"),

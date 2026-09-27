@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """Fit a render of a hand holding an item onto the body, and make a review sheet.
 
-This is the tool the painted-in-hand hand objects were fitted with (see
-prompts/hand_objects_handover_2026-09-27.md). It never writes into the
-repository: layers, review sheets and metrics go to --out (default
-/tmp/in_hand_fits/ITEM). Once a fit is chosen, record its scale and offset in
-scripts/register_in_hand_objects.py and run that script to register it.
+The round-2 painted-in-hand objects (006, 007, 008 and 012) were fitted this way;
+see prompts/hand_objects_handover_2026-09-27.md. It never writes into the
+repository: output goes to --out, by default /tmp/in_hand_fits/ITEM for fit and
+/tmp/in_hand_fits/<source name> for overview and zoom. Once a fit is chosen, add
+its scale and offset to a batch in scripts/register_in_hand_objects.py and run
+that script to register it.
 
 The render is cleaned the same way registration cleans it (alpha below 16 is
-dropped, specks under 0.2% of the largest piece are removed), then reduced by
-SCALE and pasted so the painted hand's centre (CX, CY, in source px) lands on
-the centre of the body's own hand.
+dropped, specks under 0.2% of the largest piece are removed), reduced by SCALE
+and pasted so the painted hand's centre (CX, CY, in source px) lands on the
+centre of the body's own hand; then alpha of 250 or more is set to 255, as
+registration does, so the layer matches what registration will write.
 
 Usage:
   python scripts/fit_in_hand_render.py overview SOURCE [--out DIR]
@@ -18,11 +20,13 @@ Usage:
   python scripts/fit_in_hand_render.py zoom SOURCE X0 Y0 X1 Y1 [--out DIR]
       source crop with a 25 px grid, labels in SOURCE px
   python scripts/fit_in_hand_render.py measure SOURCE POSE X0 Y0 X1 Y1
-      skin extent, width and centre of the painted hand inside that SOURCE box, plus the body hand's
+      skin extent, width and centre of the painted hand inside that SOURCE box, plus the body hand's.
+      Keep the box tight round the hand: cream pages and parchment count as skin.
   python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--tag T] [--out DIR]
       without --scale, the painted hand (WIDTH source px wide) is reduced to the body hand's width;
       with --scale, that reduction is used instead (e.g. to keep the item at its old size).
-      Writes layerT.png, reviewT.png and metricsT.json.
+      Writes layerT.png, reviewT.png and metricsT.json. The review compares the fit with the
+      item's old art (commit 788454a, before the in-hand versions), drawn as it rendered then.
 
 ITEM is the hand object number (001 to 012); its pose comes from its registered asset name.
 """
@@ -39,10 +43,16 @@ import numpy as np
 from PIL import Image, ImageDraw
 from scipy import ndimage
 
-from register_in_hand_objects import CANVAS, clean_render
+try:
+    from scripts import hidden_layers
+    from scripts.register_in_hand_objects import CANVAS, OPAQUE_FROM, clean_render
+except ImportError:  # Direct execution from scripts/.
+    import hidden_layers  # type: ignore[no-redef]
+    from register_in_hand_objects import CANVAS, OPAQUE_FROM, clean_render  # type: ignore[no-redef]
 
 ROOT = Path(__file__).resolve().parent.parent
-COMPATIBILITY = ROOT / "config" / "compatibility.json"
+# the last commit before the in-hand versions replaced the hand objects: the old art, and its size
+OLD_ART_COMMIT = "788454a"
 BASE = {
     2: {"path": ROOT / "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
         # the hand below the wrist line
@@ -100,22 +110,18 @@ def pose_of(item: str) -> int:
     return int(name.split("_pose_")[1][:3])
 
 
-def committed_asset(item: str) -> Image.Image:
-    """The item as committed at HEAD: the size reference the fit is compared with."""
+def old_art(item: str) -> Image.Image:
+    """The item's art before the in-hand work: the size the fit should keep."""
     rel = registered_asset(item).relative_to(ROOT).as_posix()
-    data = subprocess.run(["git", "-C", str(ROOT), "show", f"HEAD:{rel}"], capture_output=True, check=True).stdout
+    data = subprocess.run(["git", "-C", str(ROOT), "show", f"{OLD_ART_COMMIT}:{rel}"],
+                          capture_output=True, check=True).stdout
     return Image.open(io.BytesIO(data)).convert("RGBA")
-
-
-def dressed_outfits() -> set[str]:
-    rules = json.loads(COMPATIBILITY.read_text(encoding="utf-8"))
-    return {r["trait"] for r in rules.get("hides", []) if "base_bodies" in json.dumps(r.get("hides"))}
 
 
 def body_under(pose: int, outfit: str | None, base: Image.Image) -> Image.Image:
     """The body as the renderer draws it: a dressed outfit hides the base body, any other goes over it."""
     canvas = Image.new("RGBA", CANVAS, BG)
-    if outfit is None or outfit not in dressed_outfits():
+    if outfit is None or outfit not in hidden_layers.dressed_outfits():
         canvas.alpha_composite(base)
     if outfit is not None:
         canvas.alpha_composite(Image.open(ROOT / "assets/outfits" / outfit).convert("RGBA"))
@@ -178,16 +184,24 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
     b = base_hand(pose)
     base = b["image"]
     render = clean_render(source)
+    sb = render.getchannel("A").getbbox()
+    source_touches_edge = bool(sb and (sb[0] == 0 or sb[1] == 0 or sb[2] == render.width or sb[3] == render.height))
     if scale is None:
         scale = b["width"] / width
-    if not 0 < scale <= 1:
-        raise SystemExit(f"scale {scale:.3f}: renders are only ever reduced, never enlarged")
+    if scale <= 0:
+        raise SystemExit(f"scale {scale}: must be above 0")
+    if scale > 1:
+        raise SystemExit(f"scale {scale:.4f}: renders are only ever reduced, never enlarged; a render drawn "
+                         "smaller than the body needs a new render")
     size = (round(render.width * scale), round(render.height * scale))
     reduced = render.resize(size, Image.Resampling.LANCZOS)
     ox, oy = round(b["centroid"][0] - cx * scale), round(b["centroid"][1] - cy * scale)
     layer = Image.new("RGBA", CANVAS, (0, 0, 0, 0))
     layer.paste(reduced, (ox, oy), reduced)
-    la = np.asarray(layer)[..., 3]
+    pixels = np.asarray(layer).copy()
+    pixels[..., 3][pixels[..., 3] >= OPAQUE_FROM] = 255
+    layer = Image.fromarray(pixels, "RGBA")
+    la = pixels[..., 3]
     lb = layer.getchannel("A").getbbox()
     if lb is None:
         raise SystemExit("the fitted layer is empty: the offset puts the render off the canvas")
@@ -200,7 +214,7 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
     uncovered = hand & (la < 128)
     uncovered_core = core & (la < 128)
 
-    old = committed_asset(item)
+    old = old_art(item)
     ob = old.getchannel("A").getbbox()
 
     out.mkdir(parents=True, exist_ok=True)
@@ -209,7 +223,7 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
     old_view = Image.new("RGBA", CANVAS, BG)
     old_view.alpha_composite(old)
     old_view.alpha_composite(base)
-    tiles = [("committed asset on bare body", old_view)]
+    tiles = [("old art on bare body", old_view)]
     for label, outfit in [("new on bare body", None)] + [(f"new on {o[7:30]}", o) for o in BASE[pose]["outfits"][:2]]:
         view = body_under(pose, outfit, base)
         view.alpha_composite(layer)
@@ -240,8 +254,10 @@ def cmd_fit(source: Path, item: str, cx: float, cy: float, width: float, scale: 
         "painted_hand_source": {"centre": [cx, cy], "width": width},
         "base_hand": {"centroid": b["centroid"], "width": b["width"], "bbox": b["bbox"]},
         "output_bounds": [lb[0], lb[1], lb[2] - 1, lb[3] - 1], "touches_canvas_edge": touches_edge,
-        "item_height_vs_committed": round((lb[3] - lb[1]) / (ob[3] - ob[1]), 3),
-        "item_width_vs_committed": round((lb[2] - lb[0]) / (ob[2] - ob[0]), 3),
+        "source_touches_edge": source_touches_edge,
+        # whole layer (item and painted hand) against the old art (item only)
+        "item_height_vs_old": round((lb[3] - lb[1]) / (ob[3] - ob[1]), 3),
+        "item_width_vs_old": round((lb[2] - lb[0]) / (ob[2] - ob[0]), 3),
         "painted_hand_vs_body_hand_width": round(width * scale / b["width"], 3),
         "body_hand_pixels": int(hand.sum()), "body_hand_pixels_showing": int(uncovered.sum()),
         "body_hand_core_pixels_showing": int(uncovered_core.sum()),
@@ -263,6 +279,10 @@ def main() -> int:
     p.add_argument("cx", type=float); p.add_argument("cy", type=float); p.add_argument("width", type=float)
     p.add_argument("--scale", type=float); p.add_argument("--tag", default=""); p.add_argument("--out", type=Path)
     args = parser.parse_args()
+    if getattr(args, "box", None) and (args.box[2] <= args.box[0] or args.box[3] <= args.box[1]):
+        parser.error("the box is X0 Y0 X1 Y1 with X1 > X0 and Y1 > Y0")
+    if args.command == "fit" and args.width <= 0:
+        parser.error("WIDTH is the painted hand's width in source px and must be above 0")
     default_out = Path("/tmp/in_hand_fits") / (getattr(args, "item", None) or args.source.stem)
     out = getattr(args, "out", None) or default_out
     if args.command == "overview":

@@ -13,14 +13,16 @@ Read first: prompts/hand_objects_handover_2026-09-27.md (this file), then prompt
 
 Rules the owner has set:
 1. The hand is painted holding the item. Pasting the body's fist over an item was rejected.
-2. The hand is the body's size: about 70 px wide for the pose 002 fist and 98 px for the pose 004 open palm, on the 1254 canvas. The item keeps its old size. Renders with big hands were rejected, because shrinking them to fit also shrank the item.
+2. The hand is the body's size: the body's own hand measures 69 px wide for the pose 002 fist and 90 px for the pose 004 open palm, on the 1254 canvas (the prompts ask for about 72 and 98 px, so the painted hand covers it). The item keeps its old size. Renders with big hands were rejected, because shrinking them to fit also shrank the item.
 3. No wrist. The hand stops at the base of the palm with a soft, unlined edge, and the body supplies the wrist and forearm. Painted wrists never lined up with the body's arm (sideways stumps, outlines across the wrist, hands turned the wrong way). Do not trim a painted wrist off afterwards. If a render has one, generate it again.
 4. Show the owner samples before changing assets, and merge only when the owner explicitly says so.
 
-Your job: generate or collect renders for the items still on their old art (003, 004, 005, 009, 010, 011) and fit the six candidates already in incoming/hand_objects/with_hand_candidates_2026-09-26/. Fit each render with scripts/fit_in_hand_render.py, check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
+Your job: generate or collect renders for the items still on their old art (003, 004, 005, 009, 010, 011) and fit the six candidates already in incoming/hand_objects/with_hand_candidates_2026-09-26/. That folder's README says to trim wrist stubs; that is superseded by rule 3, so the gold lantern candidate (006) needs a new render instead. Fit each render with scripts/fit_in_hand_render.py, check it against the acceptance list in the handover file, show the owner a before-and-after sheet, and register the approved ones with scripts/register_in_hand_objects.py. Then run the repository checks and open a pull request.
 ```
 
 ## Where things stand (2026-09-27)
+
+The candidates README in `incoming/hand_objects/with_hand_candidates_2026-09-26/` asks for wrist stubs to be trimmed. That step was dropped at the owner's request on 2026-09-27: a render with a painted wrist is generated again. Of the six candidates, only the lantern (006) has one.
 
 | Item | Pose | Now on main | Next step |
 |---|---|---|---|
@@ -53,7 +55,7 @@ The project's shared files hold the same prompts and images packed one folder pe
 What a usable render looks like:
 
 - **Canvas:** a 1254 x 1254 transparent PNG containing only the hand and the item. No arm, sleeve, body, background or shadow.
-- **Hand size and place:** the hand sits where the body's hand is, at the same size. For the fist (pose 002), that means centred near (438, 772) and about 70 px wide. For the open palm (pose 004), the palm is centred near (438, 748) and about 98 px wide. The body's wrist line runs roughly from (443, 722) to (487, 740) in pose 002, and from (452, 700) to (497, 718) in pose 004.
+- **Hand size and place:** the hand sits where the body's hand is, at the same size or a touch larger so it covers it. The prompts put the fist (pose 002) at the grip point (438, 772), about 72 px wide, and the open palm (pose 004) at (438, 748), about 98 px wide. The body's own hand skin measures 69 px wide, centred (447, 768), for the fist, and 90 px wide, centred (446, 739), for the palm. The body's wrist line runs roughly from (443, 722) to (487, 740) in pose 002, and from (452, 700) to (497, 718) in pose 004.
 - **No wrist:** the hand stops at the base of the palm. Its edge there has no outline, no rim light and no cap. The back of the hand turns toward the elbow as in the base pose and never points sideways.
 - **Item at its old size:** the size of each item before the in-hand work, in canvas px:
 
@@ -69,22 +71,22 @@ What a usable render looks like:
 - **Grip:** shafts and blades enter the top of the fist and leave the bottom in one straight line, with the fingers wrapped over them. Palm items rest on or hang from an open, palm-up hand, never from a closed fist.
 - **Light:** the hand gets no rim light, so no blue or white glow runs round its outline.
 
-Keep every raw render unedited. Commit the sources you use under `images/trait_candidates/hand_objects/<batch folder>/`, or under `incoming/hand_objects/<batch folder>/` with a README and a checksum manifest, like the 2026-09-26 candidates.
+Keep every raw render unedited. Commit the sources you register under `images/trait_candidates/hand_objects/<batch folder>/`. The registration script re-reads every source on each run, so they must stay committed. (`incoming/` ignores image files; the 2026-09-26 candidates there were force-added with `git add -f`.)
 
 ## Fitting
 
-`scripts/fit_in_hand_render.py` is the tool every registered in-hand item was fitted with. It writes only to `/tmp/in_hand_fits/ITEM` (or `--out`), never into the repository.
+`scripts/fit_in_hand_render.py` is the tool the round-2 items (006, 007, 008 and 012) were fitted with, and it reproduces them pixel for pixel. The round-1 items (001, 002) came from an older width-matching fit inside `scripts/register_in_hand_objects.py`. The tool never writes into the repository: `fit` writes to `/tmp/in_hand_fits/ITEM`, and `overview` and `zoom` to `/tmp/in_hand_fits/<source name>`, unless `--out` is given.
 
 1. Find the painted hand. Run `python scripts/fit_in_hand_render.py overview SOURCE`, then `zoom SOURCE x0 y0 x1 y1` on the hand.
-2. Measure it with `python scripts/fit_in_hand_render.py measure SOURCE POSE x0 y0 x1 y1` on a box round the painted hand. The painted hand's skin centre and width are CX, CY and WIDTH, in source px. The same command prints the body hand's numbers: for pose 002, centre (447.2, 768.1) and width 69.
-3. Fit it with `python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--tag T]`. Without `--scale`, the hand is matched to the body's hand width. Try a few scales and compare the review sheets and metrics. Scale is always 1 or below, because renders are only ever reduced. A render drawn smaller than the body needs a new render; it cannot be enlarged.
+2. Measure it with `python scripts/fit_in_hand_render.py measure SOURCE POSE x0 y0 x1 y1` on a box round the painted hand. Keep the box tight: cream pages and parchment count as skin. The painted hand's skin centre and width are CX, CY and WIDTH, in source px. The same command prints the body hand's numbers: for pose 002, centre (447.2, 768.1) and width 69; for pose 004, centre (446.2, 738.5) and width 90.
+3. Fit it with `python scripts/fit_in_hand_render.py fit SOURCE ITEM CX CY WIDTH [--scale S] [--tag T]`. Without `--scale`, the hand is matched to the body's hand width. Try a few scales and compare the review sheets and metrics. Scale is 1 or below, because renders are only ever reduced. Scale 1 is placement only, for a render already drawn at the body's size. A render drawn smaller than the body needs a new render; it cannot be enlarged.
 4. The metrics that decide a fit:
    - `painted_hand_vs_body_hand_width` at most about 1.2.
-   - `item_height_vs_committed` roughly 0.9 to 1.15, measured against the old art for items not yet registered.
+   - `item_height_vs_old` roughly 0.9 to 1.15. It compares the whole layer with the item's old art (commit 788454a). For palm items the painted hand hangs below the item and is counted too, so there judge the item itself on the review sheet, whose first tile is the old art.
    - `body_hand_core_pixels_showing` near 0. Anything that shows of the body's own fingers reads as a second hand.
-   - `touches_canvas_edge` false.
+   - `touches_canvas_edge` and `source_touches_edge` false. The second catches a render whose item was already cut off at its own edge.
 
-The tool cleans renders the same way registration does: alpha below 16 is dropped, and specks smaller than 0.2% of the largest piece are removed.
+The tool treats renders the same way registration does. Alpha below 16 is dropped and specks smaller than 0.2% of the largest piece are removed before fitting. After fitting, alpha of 250 or more is set to 255. So the layer it writes is exactly what registration will write.
 
 ## Checks before asking the owner
 
@@ -105,11 +107,15 @@ Then send the owner one before-and-after sheet (old art next to the new fit, bar
 
 `scripts/register_in_hand_objects.py` writes a fit over the registered asset of the same name and updates everything that depends on it. It stores the new SHA-256 and provenance in `assets/asset_manifest.json`, sets the item's `requires` reason, and adds an `in_hand` rule in `config/compatibility.json`. It can be run again safely.
 
-To add a render, add a table for the new batch next to `ROUND2_ITEMS`, with the same fields: source file, pose, painted-hand centre and width in source px, and the chosen scale and offset (the fit tool prints the offset). Point it at the batch's source folder, then run `python scripts/register_in_hand_objects.py`. Add the batch and its verdicts to `docs/qa/hand_objects_in_hand_2026-09-26.md`, or to a new QA note linked from it.
+To add renders, add an entry to `BATCHES` in that script. Each entry has the batch's source folder, the decision date, its QA note and composite, and an item table with the same fields as `ROUND2_ITEMS`: source file, pose, painted-hand centre and width in source px, and the chosen scale and offset (the fit tool prints the offset). Batches apply in order, so a later batch's render of an item replaces an earlier one. Then run `python scripts/register_in_hand_objects.py`. Record the batch and its verdicts in its QA note, and link that note from `docs/qa/hand_objects_in_hand_2026-09-26.md`.
 
 Run the same checks CI runs (`.github/workflows/production_validation.yml`) before opening the pull request:
 
 ```text
+python -m json.tool assets/asset_manifest.json > /dev/null
+python -m json.tool config/collection.json > /dev/null
+python -m json.tool config/compatibility.json > /dev/null
+python -m json.tool metadata/schema.json > /dev/null
 python -m compileall -q scripts tests
 python -m unittest discover -s tests
 python scripts/validate_config.py --collection config/collection.json --compatibility config/compatibility.json --assets assets
