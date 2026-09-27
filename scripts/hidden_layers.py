@@ -46,6 +46,20 @@ def hidden_categories(selected_names: Iterable[str], rules: dict[str, Any]) -> s
     return hidden
 
 
+def in_hand_objects(rules: dict[str, Any]) -> set[str]:
+    """Hand objects painted together with the hand that holds them.
+
+    An ``in_hand`` rule marks one. It carries its own gripping hand, so it is
+    drawn over the body at its layer-stack position; an object without one is
+    drawn behind the body so the base's fist covers its grip.
+    """
+    return {
+        rule["trait"]
+        for rule in rules.get("in_hand", []) or []
+        if isinstance(rule, dict) and isinstance(rule.get("trait"), str)
+    }
+
+
 def dressed_outfits(rules: dict[str, Any] | None = None) -> set[str]:
     """Traits painted with the body intact: they hide the base body."""
     rules = load_rules() if rules is None else rules

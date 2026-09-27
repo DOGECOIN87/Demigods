@@ -321,7 +321,7 @@ def validate_compatibility(
         if trait < required:
             warnings.append(f"mutual requirement detected: {trait} <-> {required}")
 
-    allowed_top_level = {"version", "requires", "excludes", "hides", "notes"}
+    allowed_top_level = {"version", "requires", "excludes", "hides", "in_hand", "notes"}
     extras = sorted(set(compatibility) - allowed_top_level)
     if extras:
         warnings.append(f"unrecognized compatibility keys: {', '.join(extras)}")
@@ -392,6 +392,42 @@ def validate_hides(
     return errors, warnings, len(rules)
 
 
+def validate_in_hand(
+    compatibility: dict[str, Any],
+    inventory: dict[str, str],
+) -> tuple[list[str], list[str], int]:
+    """Check ``in_hand`` rules: hand objects painted with the hand that holds them.
+
+    Such an object is drawn over the body rather than behind it, so the rule may
+    only name a hand object, once, and must say why.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+    rules = compatibility.get("in_hand", [])
+    if not isinstance(rules, list):
+        return ["in_hand must be an array"], warnings, 0
+    seen: set[str] = set()
+    for index, rule in enumerate(rules):
+        label = f"in_hand[{index}]"
+        if not isinstance(rule, dict):
+            errors.append(f"{label} must be an object")
+            continue
+        extra_keys = sorted(set(rule) - {"trait", "reason"})
+        if extra_keys:
+            warnings.append(f"{label} has unrecognized keys: {', '.join(extra_keys)}")
+        if not isinstance(rule.get("reason"), str) or not rule["reason"].strip():
+            errors.append(f"{label} must give a reason")
+        trait = validate_trait_name(rule.get("trait"), f"{label}.trait", inventory, errors)
+        if trait is None:
+            continue
+        if inventory.get(trait) != "hand_objects":
+            errors.append(f"{label}: only a hand object can be drawn in hand: {trait}")
+        if trait in seen:
+            errors.append(f"duplicate in_hand rule: {trait}")
+        seen.add(trait)
+    return errors, warnings, len(rules)
+
+
 def validate_configuration(
     collection_path: Path,
     compatibility_path: Path,
@@ -414,13 +450,16 @@ def validate_configuration(
         validate_compatibility(compatibility, inventory)
     )
     hides_errors, hides_warnings, hides_count = validate_hides(compatibility, inventory)
+    in_hand_errors, in_hand_warnings, _ = validate_in_hand(compatibility, inventory)
 
     result.errors.extend(collection_errors)
     result.errors.extend(compatibility_errors)
     result.errors.extend(hides_errors)
+    result.errors.extend(in_hand_errors)
     result.warnings.extend(collection_warnings)
     result.warnings.extend(compatibility_warnings)
     result.warnings.extend(hides_warnings)
+    result.warnings.extend(in_hand_warnings)
     result.available_traits = len(inventory)
     result.requires_rules = requires_count
     result.excludes_rules = excludes_count

@@ -158,6 +158,37 @@ class Generate777Tests(unittest.TestCase):
         metadata = json.loads((output / "metadata" / "0001.json").read_text())
         self.assertIn("base_bodies", [a["trait_type"] for a in metadata["attributes"]])
 
+    def in_hand_render(self, in_hand: list) -> tuple[int, int, int, int]:
+        """Render one token of a base and a hand object that overlap at (8, 8)."""
+        root = self.make_root()
+        assets = root / "assets"
+        self.save_background(assets / "backgrounds" / "background_001_one.png", 10)
+        self.save_trait(assets / "base_bodies" / "base_body_001_one.png", 30)
+        self.save_trait(assets / "hand_objects" / "hand_object_001_staff.png", 70)
+        rules = {"requires": [], "excludes": [], "in_hand": in_hand}
+        output = root / "output"
+        generate_777.generate_collection(
+            assets_root=assets, output=output, collection=self.collection(), compatibility=rules,
+            seed="fixed-seed", supply=1, max_attempts=100, dry_run=False, overwrite=False,
+        )
+        with Image.open(output / "images" / "0001.png") as image:
+            return image.convert("RGBA").getpixel((8, 8))
+
+    def test_a_hand_object_is_drawn_behind_the_body_by_default(self) -> None:
+        """The base's own fist covers the object's grip."""
+        self.assertEqual(self.in_hand_render([]), (30, 0, 0, 255))
+
+    def test_an_in_hand_object_is_drawn_over_the_body(self) -> None:
+        """An object painted with its gripping hand shows that hand over the base's."""
+        rule = {"trait": "hand_object_001_staff.png", "reason": "painted in hand"}
+        self.assertEqual(self.in_hand_render([rule]), (70, 0, 0, 255))
+
+    def test_in_hand_order_puts_the_object_before_the_front_aura(self) -> None:
+        order = generate_777.render_order(in_hand=True)
+        self.assertLess(order.index("head_accessories"), order.index("hand_objects"))
+        self.assertEqual(order.index("hand_objects") + 1, order.index("front_auras"))
+        self.assertEqual(sorted(order), sorted(generate_777.RENDER_LAYER_ORDER))
+
     def test_optional_category_is_sometimes_absent(self) -> None:
         root = self.make_root()
         assets = self.build_assets(root)

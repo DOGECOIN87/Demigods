@@ -26,3 +26,5 @@ Any exception must be documented in the compatibility configuration rather than 
 A trait may keep a layer out of the rendered image with a `hides` rule in `config/compatibility.json`. The hidden layer is still selected and still appears in the metadata; it is only not drawn. The one use today is the dressed-body outfit - an outfit painted with the body intact - which hides `05_base_body`: the base binds the pose and the hand objects, and the dressed figure is drawn in its place. A trait that hides the base body must also `require` one. See `docs/workflows/dressed_body_intake.md`.
 
 Hand objects are composited before the body in the render, so the hand occludes the object's grip; that order is unchanged for dressed bodies.
+
+A hand object painted together with the hand that holds it carries an `in_hand` rule in `config/compatibility.json`. It is drawn at its layer-stack position instead, after the head accessories and before the front aura, so its painted hand covers the base's (or the dressed body's) own hand. See `docs/qa/hand_objects_in_hand_2026-09-26.md`.
