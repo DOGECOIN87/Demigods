@@ -7,11 +7,6 @@
       "reason": "Outfit armholes and relaxed hand clearance are fitted to Pose 001."
     },
     {
-      "trait": "outfit_002_storm_guardian_pose_002.png",
-      "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Armor and sleeve clearance are fitted to the viewer-left grip pose."
-    },
-    {
       "trait": "outfit_003_verdant_alchemist_pose_003.png",
       "requires": "base_pose_003_viewer_right_vertical_grip.png",
       "reason": "Rolled sleeves are fitted to the viewer-right grip pose."
@@ -87,19 +82,9 @@
       "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
     },
     {
-      "trait": "hand_object_009_violet_blade_pose_002_left.png",
-      "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "The blade grip and vertical silhouette are anchored to the viewer-left vertical-grip pose."
-    },
-    {
       "trait": "hand_object_010_horned_skull_scepter_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
       "reason": "The scepter grip and shaft are anchored to the viewer-left vertical-grip pose."
-    },
-    {
-      "trait": "hand_object_011_round_talisman_pose_004_left.png",
-      "requires": "base_pose_004_viewer_left_palm_up.png",
-      "reason": "The talisman contact is anchored to the viewer-left palm-up pose."
     },
     {
       "trait": "hand_object_012_brown_tome_pose_004_left.png",
@@ -119,7 +104,7 @@
     {
       "trait": "hand_object_003_dark_wand_pose_002_left.png",
       "requires": "base_pose_002_viewer_left_vertical_grip.png",
-      "reason": "Fitted to the viewer-left closed grip at the measured contact (438, 772), with the 12 degree outward lean the registered pose-002 objects carry."
+      "reason": "Painted holding the item in the pose 002 hand; the painted hand is fitted over the base's closed fist."
     },
     {
       "trait": "hand_object_004_silver_sword_pose_002_left.png",
@@ -129,7 +114,7 @@
     {
       "trait": "hand_object_005_star_spellbook_pose_004_left.png",
       "requires": "base_pose_004_viewer_left_palm_up.png",
-      "reason": "Fitted to the viewer-left open palm at the measured contact (438, 748)."
+      "reason": "Painted holding the item in the pose 004 hand; the painted hand is fitted over the base's open palm."
     },
     {
       "trait": "outfit_006_black_layered_hooded_robe_pose_001.png",
@@ -242,7 +227,6 @@
         "hand_object_006_gold_lantern_pose_002_left.png",
         "hand_object_007_gold_blue_gem_staff_pose_002_left.png",
         "hand_object_008_blue_crescent_staff_pose_002_left.png",
-        "hand_object_009_violet_blade_pose_002_left.png",
         "hand_object_010_horned_skull_scepter_pose_002_left.png"
       ],
       "reason": "This render draws the gripping fist 20 px inside the base's. Every vertical-grip object is seated at the base fist, measured at (438, 772), so on this figure each one hung beside the hand instead of in it. The pose still appears, empty-handed."
@@ -379,6 +363,14 @@
     },
     {
       "trait": "hand_object_012_brown_tome_pose_004_left.png",
+      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
+    },
+    {
+      "trait": "hand_object_003_dark_wand_pose_002_left.png",
+      "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
+    },
+    {
+      "trait": "hand_object_005_star_spellbook_pose_004_left.png",
       "reason": "Painted with the hand that holds it; drawn over the body so that hand shows."
     }
   ]

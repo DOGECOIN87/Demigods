@@ -33,6 +33,13 @@ scale and offset were chosen by comparing candidate fits on the bare and dressed
 bodies (the hand has to cover the body's own hand, the item has to stay close to
 its old size), so they are recorded directly rather than derived from a width.
 
+2026-09-27 (docs/qa/hand_objects_in_hand_2026-09-27.md): two of the owner's six
+candidates, the dark wand and the star spellbook, were registered from
+images/trait_candidates/hand_objects/in_hand_2026-09-27/. The round-1 arcane staff and
+violet orb, and the round-2 gold staff with blue gem, were fitted again from the same
+renders, because their painted hands left an edge of the body's own hand showing. Their
+offsets were found with the fit tool's cover command rather than by centring the painted hand.
+
 To register a new batch, add an entry to BATCHES (its source folder, decision date, QA
 note and item table) and run the script again. Batches are applied in order, so a later
 batch's render for the same item replaces an earlier one. Every source listed here is
@@ -55,6 +62,7 @@ MANIFEST = ROOT / "assets" / "asset_manifest.json"
 COMPATIBILITY = ROOT / "config" / "compatibility.json"
 SOURCES = ROOT / "images" / "trait_candidates" / "hand_objects" / "in_hand_2026-09-26"
 ROUND2 = SOURCES / "round2"
+CANDIDATES_0927 = ROOT / "images" / "trait_candidates" / "hand_objects" / "in_hand_2026-09-27"
 ALPHA_FLOOR = 16
 SPECK_FRACTION = 0.002
 OPAQUE_FROM = 250
@@ -85,12 +93,32 @@ ROUND2_ITEMS = {
     "hand_object_012": ("012_brown_tome.png", 4, (1118.5, 1019.9), 587, 0.186, (238, 549)),
 }
 
+# 2026-09-27, same fields as ROUND2_ITEMS. Two of the owner's 2026-09-26 candidates.
+ITEMS_0927 = {
+    "hand_object_003": ("003_dark_wand.png", 2, (465.5, 757.2), 87, 0.95, (4, 49)),
+    "hand_object_005": ("005_star_spellbook.png", 4, (437.0, 895.7), 186, 0.6, (178, 219)),
+}
+# 2026-09-27: the round-1 renders fitted again so the painted hand covers the body's own hand.
+ROUND1_REFIT_0927 = {
+    "hand_object_001": ("001_arcane_staff_source.webp", 2, (491.4, 634.9), 88, 0.93, (-11, 184)),
+    "hand_object_002": ("002_violet_crystal_orb_source.webp", 4, (407.0, 715.8), 363, 0.49, (217, 384)),
+}
+# 2026-09-27: the round-2 gold staff fitted again, 7.5% larger, so its painted fist covers the body's.
+ROUND2_REFIT_0927 = {
+    "hand_object_007": ("007_gold_staff_with_blue_gem.png", 2, (906, 1140), 177, 0.43, (58, 276)),
+}
+QA_0927 = {"decided_on": "2026-09-27", "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27.md",
+           "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27.png"}
+
 # Batches fitted with scripts/fit_in_hand_render.py, applied in order after round 1.
 BATCHES = [
     {"folder": ROUND2, "decided_on": DECIDED_ON,
      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-26.md",
      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-26.png",
      "items": ROUND2_ITEMS},
+    {"folder": CANDIDATES_0927, **QA_0927, "items": ITEMS_0927},
+    {"folder": SOURCES, **QA_0927, "items": ROUND1_REFIT_0927},
+    {"folder": ROUND2, **QA_0927, "items": ROUND2_REFIT_0927},
 ]
 
 
