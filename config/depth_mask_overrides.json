@@ -1,0 +1,14 @@
+{
+  "Demigods_047_Gravity_Scholar.png": [
+    {"box": [320, 290, 415, 380], "feather": 8},
+    {"box": [378, 388, 468, 475], "feather": 8},
+    {"box": [280, 448, 370, 535], "feather": 8}
+  ],
+  "Demigods_054_Rift_Acrobat.png": [
+    {"box": [155, 190, 450, 545], "feather": 12},
+    {"box": [800, 305, 1130, 705], "feather": 12}
+  ],
+  "Demigods_072_Worldtree_Keeper.png": [
+    {"box": [790, 270, 1095, 680], "feather": 12}
+  ]
+}
