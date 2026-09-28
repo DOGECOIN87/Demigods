@@ -39,6 +39,6 @@ python scripts/apply_depth_treatment.py \
   --expected-count 72 --blur-radius 7
 ```
 
-The refinement promotes faint foreground detail near the confident subject and filters large frame-edge background fragments. It errs toward keeping more nearby pixels sharp. Inspect every full-size output and mask before approving the collection; isolated effects far from the body may still need hand correction. The original masks and source art remain intact.
+The refinement promotes faint foreground detail near the confident subject and filters large frame-edge background fragments. Explicit held-effect ellipses in `config/depth_mask_overrides.json` protect the floating spheres in 047, portals in 054, and miniature tree in 072. Their soft edges preserve the sharp effects without a hard boundary in the surrounding scene. Inspect every full-size output and mask before approving the collection; further isolated effects may still need hand correction. The original masks and source art remain intact.
 
 After processing, the script also writes `contact_sheet.png` in the output folder. It is a labeled grid of the treated images for quick review. Set `--sheet-columns` and `--sheet-thumb` to change its layout; inspect individual PNGs at full size for mask edges.
