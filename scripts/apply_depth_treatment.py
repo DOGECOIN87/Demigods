@@ -35,6 +35,10 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument('--saturation', type=float, default=0.84)
     p.add_argument('--brightness', type=float, default=0.99)
     p.add_argument('--contrast', type=float, default=0.98)
+    p.add_argument('--vignette', type=float, default=0.14,
+                   help='Background-only corner darkening, from 0 to 1')
+    p.add_argument('--vignette-power', type=float, default=2.4,
+                   help='Higher values keep the darkening nearer the corners')
     p.add_argument('--feather-radius', type=float, default=1.5,
                    help='Blur the mask edge in pixels; use 0 for strict protection')
     p.add_argument('--sheet-columns', type=int, default=8, help='Review sheet columns')
@@ -66,8 +70,9 @@ def main(argv: list[str] | None = None) -> int:
     a = parser().parse_args(argv)
     if a.input_dir.resolve() == a.output_dir.resolve() or a.output_dir.resolve() == a.mask_dir.resolve():
         raise SystemExit('Output directory must differ from the source and mask directories')
-    if min(a.blur_radius, a.feather_radius, a.saturation, a.brightness, a.contrast) < 0:
-        raise SystemExit('Treatment parameters must be nonnegative')
+    if min(a.blur_radius, a.feather_radius, a.saturation, a.brightness, a.contrast,
+           a.vignette, a.vignette_power) < 0 or a.vignette > 1:
+        raise SystemExit('Treatment parameters must be nonnegative; vignette must be at most 1')
     if a.sheet_columns < 1 or a.sheet_thumb < 32:
         raise SystemExit('Sheet columns must be positive and thumbnails at least 32 px')
     if a.expected_count < 0 or a.limit < 0:
@@ -114,7 +119,13 @@ def main(argv: list[str] | None = None) -> int:
             background = ImageEnhance.Color(background).enhance(a.saturation)
             background = ImageEnhance.Brightness(background).enhance(a.brightness)
             background = ImageEnhance.Contrast(background).enhance(a.contrast)
-            background = background.filter(ImageFilter.GaussianBlur(a.blur_radius)).convert('RGBA')
+            background = background.filter(ImageFilter.GaussianBlur(a.blur_radius))
+            if a.vignette:
+                radial = Image.radial_gradient('L').resize(original.size, Image.Resampling.BICUBIC)
+                falloff = radial.point(lambda value: round(255 * (value / 255) ** a.vignette_power))
+                dark = ImageEnhance.Brightness(background).enhance(1 - a.vignette)
+                background = Image.composite(dark, background, falloff)
+            background = background.convert('RGBA')
             result = Image.composite(original, background, mask)
             result.putalpha(original.getchannel('A'))
             destination = a.output_dir / src.name
@@ -127,7 +138,8 @@ def main(argv: list[str] | None = None) -> int:
     manifest = {'input_dir': str(a.input_dir), 'mask_dir': str(a.mask_dir),
                 'output_dir': str(a.output_dir), 'processed_count': len(entries),
                 'parameters': {k: getattr(a, k) for k in
-                               ('blur_radius', 'saturation', 'brightness', 'contrast', 'feather_radius')},
+                               ('blur_radius', 'saturation', 'brightness', 'contrast', 'feather_radius',
+                                'vignette', 'vignette_power')},
                 'files': entries}
     manifest_path.write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     make_contact_sheet([a.output_dir / p.name for p in images], sheet_path, a.sheet_columns, a.sheet_thumb)
