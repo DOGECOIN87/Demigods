@@ -28,4 +28,17 @@ Defaults: 10 px Gaussian background blur, saturation 0.84, brightness 0.99, cont
 
 A fully white mask protects every pixel; a fully black mask treats the entire image. Neither is an adequate subject mask for a flattened character illustration.
 
+If a held object, robe, cape or sleeve is blurred, the segmentation mask is too weak in that region. Generate separate conservative review masks, then render a new review set:
+
+```bash
+python scripts/refine_subject_masks.py --expected-count 72
+python scripts/apply_depth_treatment.py \
+  --input-dir images/variations/complete_72 \
+  --mask-dir images/variations/subject_masks_refined_review \
+  --output-dir images/variations/depth_treated_refined_review \
+  --expected-count 72 --blur-radius 7
+```
+
+The refinement promotes faint foreground detail near the confident subject and filters large frame-edge background fragments. It errs toward keeping more nearby pixels sharp. Inspect every full-size output and mask before approving the collection; isolated effects far from the body may still need hand correction. The original masks and source art remain intact.
+
 After processing, the script also writes `contact_sheet.png` in the output folder. It is a labeled grid of the treated images for quick review. Set `--sheet-columns` and `--sheet-thumb` to change its layout; inspect individual PNGs at full size for mask edges.
