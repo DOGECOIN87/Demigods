@@ -53,15 +53,26 @@ def refine(mask: np.ndarray) -> np.ndarray:
     return merged * 255
 
 
-def add_held_effects(mask: Image.Image, ellipses: list[dict]) -> Image.Image:
-    for item in ellipses:
-        box = item['box']
-        if len(box) != 4 or not (0 <= box[0] < box[2] <= mask.width and
-                                     0 <= box[1] < box[3] <= mask.height):
-            raise ValueError(f'Invalid held-effect ellipse: {box}')
+def add_held_effects(mask: Image.Image, shapes: list[dict]) -> Image.Image:
+    """Protect disconnected foreground objects using local, feathered shapes."""
+    for item in shapes:
         overlay = Image.new('L', mask.size, 0)
-        ImageDraw.Draw(overlay).ellipse(box, fill=255)
-        overlay = overlay.filter(ImageFilter.GaussianBlur(item.get('feather', 12)))
+        draw = ImageDraw.Draw(overlay)
+        if 'box' in item:
+            box = item['box']
+            if len(box) != 4 or not (0 <= box[0] < box[2] <= mask.width and
+                                         0 <= box[1] < box[3] <= mask.height):
+                raise ValueError(f'Invalid held-effect ellipse: {box}')
+            draw.ellipse(box, fill=255)
+        elif 'polygon' in item:
+            points = item['polygon']
+            if len(points) < 3 or any(len(p) != 2 or not (0 <= p[0] < mask.width and
+                                                       0 <= p[1] < mask.height) for p in points):
+                raise ValueError(f'Invalid foreground polygon: {points}')
+            draw.polygon([tuple(p) for p in points], fill=255)
+        else:
+            raise ValueError(f'Unknown foreground shape: {item}')
+        overlay = overlay.filter(ImageFilter.GaussianBlur(item.get('feather', 4)))
         mask = ImageChops.lighter(mask, overlay)
     return mask
 
