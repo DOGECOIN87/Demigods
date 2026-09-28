@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+from io import BytesIO
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageOps
@@ -97,6 +98,8 @@ def main(argv: list[str] | None = None) -> int:
         if not mask_path.is_file():
             raise SystemExit(f'Missing subject mask: {mask_path}')
         with Image.open(src) as im, Image.open(mask_path) as mask:
+            im.load()
+            mask.load()
             if im.size != mask.size:
                 raise SystemExit(f'Mask size mismatch for {src.name}: {mask.size} vs {im.size}')
             if mask.mode not in ('L', '1'):
@@ -129,7 +132,17 @@ def main(argv: list[str] | None = None) -> int:
             result = Image.composite(original, background, mask)
             result.putalpha(original.getchannel('A'))
             destination = a.output_dir / src.name
-            result.save(destination, format='PNG', optimize=True, icc_profile=im.info.get('icc_profile'))
+            payload = BytesIO()
+            result.save(payload, format='PNG', icc_profile=im.info.get('icc_profile'))
+            # Verify full decoding before publishing; write atomically so a partial
+            # PNG cannot be mistaken for a completed output.
+            with Image.open(BytesIO(payload.getvalue())) as check:
+                check.load()
+            temporary = destination.with_suffix('.png.tmp')
+            temporary.write_bytes(payload.getvalue())
+            with Image.open(temporary) as check:
+                check.load()
+            temporary.replace(destination)
         entries.append({'source': str(src), 'source_sha256': digest(src),
                         'mask': str(mask_path), 'mask_sha256': digest(mask_path),
                         'output': str(destination), 'output_sha256': digest(destination),
