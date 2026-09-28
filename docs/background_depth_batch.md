@@ -27,3 +27,5 @@ python scripts/apply_depth_treatment.py \
 Defaults: 10 px Gaussian background blur, saturation 0.84, brightness 0.99, contrast 0.98, and a 1.5 px outward mask feather. These are adjustable with `--blur-radius`, `--saturation`, `--brightness`, `--contrast`, and `--feather-radius`. Use `--overwrite` to regenerate an existing output set after review. The source images are never overwritten. Output files retain source names and dimensions; a manifest records parameters and SHA-256 digests. Review at full size before use in the collection.
 
 A fully white mask protects every pixel; a fully black mask treats the entire image. Neither is an adequate subject mask for a flattened character illustration.
+
+After processing, the script also writes `contact_sheet.png` in the output folder. It is a labeled grid of the treated images for quick review. Set `--sheet-columns` and `--sheet-thumb` to change its layout; inspect individual PNGs at full size for mask edges.
