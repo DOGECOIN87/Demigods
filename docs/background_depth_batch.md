@@ -24,7 +24,7 @@ python scripts/apply_depth_treatment.py \
   --expected-count 72
 ```
 
-Defaults: 10 px Gaussian background blur, saturation 0.84, brightness 0.99, contrast 0.98, and a 1.5 px outward mask feather. These are adjustable with `--blur-radius`, `--saturation`, `--brightness`, `--contrast`, and `--feather-radius`. Use `--overwrite` to regenerate an existing output set after review. The source images are never overwritten. Output files retain source names and dimensions; a manifest records parameters and SHA-256 digests. Review at full size before use in the collection.
+Defaults: 10 px Gaussian background blur, saturation 0.84, brightness 0.99, contrast 0.98, a 1.5 px outward mask feather, and a subtle 0.14 background-only vignette with power 2.4. These are adjustable with `--blur-radius`, `--saturation`, `--brightness`, `--contrast`, `--feather-radius`, `--vignette`, and `--vignette-power`. Use `--overwrite` to regenerate an existing output set after review. The source images are never overwritten. Output files retain source names and dimensions; a manifest records parameters and SHA-256 digests. Review at full size before use in the collection.
 
 A fully white mask protects every pixel; a fully black mask treats the entire image. Neither is an adequate subject mask for a flattened character illustration.
 
