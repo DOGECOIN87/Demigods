@@ -8,12 +8,13 @@ This produces separate review masks; it never changes the committed originals.
 from __future__ import annotations
 
 import argparse
+import json
 from io import BytesIO
 from pathlib import Path
 
 import cv2
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 
 def refine(mask: np.ndarray) -> np.ndarray:
@@ -52,11 +53,25 @@ def refine(mask: np.ndarray) -> np.ndarray:
     return merged * 255
 
 
+def add_held_effects(mask: Image.Image, ellipses: list[dict]) -> Image.Image:
+    for item in ellipses:
+        box = item['box']
+        if len(box) != 4 or not (0 <= box[0] < box[2] <= mask.width and
+                                     0 <= box[1] < box[3] <= mask.height):
+            raise ValueError(f'Invalid held-effect ellipse: {box}')
+        overlay = Image.new('L', mask.size, 0)
+        ImageDraw.Draw(overlay).ellipse(box, fill=255)
+        overlay = overlay.filter(ImageFilter.GaussianBlur(item.get('feather', 12)))
+        mask = ImageChops.lighter(mask, overlay)
+    return mask
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input-dir', type=Path, default=Path('images/variations/subject_masks'))
     parser.add_argument('--output-dir', type=Path, default=Path('images/variations/subject_masks_refined_review'))
     parser.add_argument('--expected-count', type=int, default=72)
+    parser.add_argument('--overrides', type=Path, default=Path('config/depth_mask_overrides.json'))
     parser.add_argument('--overwrite', action='store_true')
     args = parser.parse_args()
     if args.input_dir.resolve() == args.output_dir.resolve():
@@ -64,6 +79,10 @@ def main() -> None:
     paths = sorted(args.input_dir.glob('*.png'))
     if len(paths) != args.expected_count:
         parser.error(f'Expected {args.expected_count} masks; found {len(paths)}')
+    overrides = json.loads(args.overrides.read_text(encoding='utf-8'))
+    unknown = set(overrides) - {path.name for path in paths}
+    if unknown:
+        parser.error(f'Overrides have no input mask: {sorted(unknown)}')
     args.output_dir.mkdir(parents=True, exist_ok=True)
     for number, src in enumerate(paths, 1):
         dest = args.output_dir / src.name
@@ -73,6 +92,7 @@ def main() -> None:
             if image.mode != 'L':
                 parser.error(f'Mask must be grayscale: {src}')
             result = Image.fromarray(refine(np.array(image)), mode='L')
+            result = add_held_effects(result, overrides.get(src.name, []))
         payload = BytesIO()
         result.save(payload, format='PNG')
         with Image.open(BytesIO(payload.getvalue())) as check:
