@@ -1,0 +1,28 @@
+{
+  "supply": 700,
+  "dry_run": true,
+  "seed": "demigods-review-2026-10-01",
+  "attempts": 55627,
+  "unique_signatures": 700,
+  "category_counts": {
+    "backgrounds": 8,
+    "rear_auras": 0,
+    "back_accessories": 7,
+    "hair_back": 8,
+    "base_bodies": 5,
+    "outfits": 25,
+    "neck_accessories": 0,
+    "eyes": 24,
+    "eyebrows": 16,
+    "mouths": 12,
+    "expression_marks": 8,
+    "hair_front": 8,
+    "head_accessories": 0,
+    "hand_objects": 10,
+    "front_auras": 0,
+    "global_finish": 3
+  },
+  "trait_provenance_hash": "cc87c650bb3f2c80557c51ad6bc7ce551b5c8d4c46e0205c6e023ae7eecae772",
+  "config_sha256": "d49eac5af1a7ac4cae5cc332ceb1f6ccaac4a4a4135dd338de5bab4f83cd4089",
+  "compatibility_sha256": "699f649482260b4abe611f5a00438ecff86ddb1d2160b63eaf107ab57f11dcab"
+}

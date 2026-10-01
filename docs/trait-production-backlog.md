@@ -119,7 +119,7 @@ Ground-plane effects (DG-015) are gated with `rig_gate_report.py --floor-aura`; 
 | DG-024 | back accessory | Deep navy formal cape | `AURA`, upper row cell 4 | DG-021 | `assets/back_accessories/back_accessory_004_navy_formal_cape.png` | `prompts/11_back_accessories.md` | registered |
 | DG-025 | back accessory | Black-purple ragged cloak | `AURA`, upper row cell 5 | DG-021 | `assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png` | `prompts/11_back_accessories.md` | registered |
 | DG-026 | back accessory | Pale-blue crystalline wing/mantle pair | `AURA`, upper row cell 6 | DG-021 | `assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png` | `prompts/11_back_accessories.md` | registered |
-| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | QA-failed |
+| DG-027 | back accessory | Luminous gold feathered wing pair | `AURA`, upper row cell 7 | DG-021 | `assets/back_accessories/back_accessory_007_gold_luminous_wings.png` | `prompts/11_back_accessories.md` | withdrawn |
 | DG-028 | back accessory | Olive-silver mechanical/spiked wing pair | `AURA`, upper row cell 8 | DG-021 | `assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png` | `prompts/11_back_accessories.md` | registered |
 
 ### Hair back

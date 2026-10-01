@@ -1,0 +1,11 @@
+{
+  "collection_path": "config/collection.json",
+  "compatibility_path": "config/compatibility.json",
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "available_traits": 134,
+  "requires_rules": 43,
+  "excludes_rules": 1,
+  "hides_rules": 20
+}

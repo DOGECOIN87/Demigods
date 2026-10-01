@@ -1,0 +1,2834 @@
+{
+  "manifest": "assets/asset_manifest.json",
+  "passed": true,
+  "checked": 134,
+  "errors": [],
+  "warnings": [
+    "background_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "background_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "base_body_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "base_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "base_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "base_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "base_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "global_finish_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+    "global_finish_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "global_finish_002: asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+    "global_finish_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "global_finish_003: asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+    "global_finish_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_back_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hair_front_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_010: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "back_accessory_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_010: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_012: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "hand_object_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_009: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_010: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_011: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_012: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_013: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_014: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_015: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_016: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_017: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_018: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_019: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_020: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_021: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_022: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_023: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyes_024: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_009: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_010: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_011: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_012: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_013: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_014: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_015: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "eyebrows_016: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_009: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_010: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_011: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "mouth_012: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_001: asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+    "expression_mark_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_003: asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+    "expression_mark_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_006: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_007: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "expression_mark_008: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_006_pose_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_006_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_006_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_006_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_006_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_007_pose_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_007_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_007_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_007_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_007_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_008_pose_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_008_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_008_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_008_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_008_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_009_pose_001: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_009_pose_002: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_009_pose_003: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_009_pose_004: asset QA: no embedded ICC profile; confirm sRGB interpretation",
+    "outfit_009_pose_005: asset QA: no embedded ICC profile; confirm sRGB interpretation"
+  ],
+  "assets": [
+    {
+      "id": "background_001",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_001_celestial_throne_hall.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "94b0f349469db4111645e1f9ce7c23bf2286ae3bfbc41ad9f3e4d75126eca851",
+      "actual_sha256": "94b0f349469db4111645e1f9ce7c23bf2286ae3bfbc41ad9f3e4d75126eca851",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_002",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_002_violet_gothic_sanctum.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "6726bb40b6fe4ee1ac84a8774638a20af52f16635fe75215e64e5f93ce6269d0",
+      "actual_sha256": "6726bb40b6fe4ee1ac84a8774638a20af52f16635fe75215e64e5f93ce6269d0",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_003",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_003_arcane_library.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c06e78c708b5f92ea4f47ba5083e1fbcb5171d4f53a8fddbeeedb569fc79e93a",
+      "actual_sha256": "c06e78c708b5f92ea4f47ba5083e1fbcb5171d4f53a8fddbeeedb569fc79e93a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_004",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_004_crescent_star_dreamscape.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "68c1a41a42195196f35b4f666ba1ecd9bb19d236a7dd46f8f874c9b02bb2f91d",
+      "actual_sha256": "68c1a41a42195196f35b4f666ba1ecd9bb19d236a7dd46f8f874c9b02bb2f91d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_005",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_005_solar_sky_temple.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "8fbb403571186633f3ef7431abe801e02ec3db361a8eac9c7ab1ac5e2035c3f0",
+      "actual_sha256": "8fbb403571186633f3ef7431abe801e02ec3db361a8eac9c7ab1ac5e2035c3f0",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_006",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_006_moonlit_marble_balcony.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e2f3e08e557b8b5ee4f6c5a268a6aa068036dc18bfbcc57cd471911bfffc8678",
+      "actual_sha256": "e2f3e08e557b8b5ee4f6c5a268a6aa068036dc18bfbcc57cd471911bfffc8678",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_007",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_007_golden_celestial_gateway.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c7d2fe340c809bfe6669732245ebec4a721296220c01e8f27c08b43dc35a9498",
+      "actual_sha256": "c7d2fe340c809bfe6669732245ebec4a721296220c01e8f27c08b43dc35a9498",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "background_008",
+      "category": "backgrounds",
+      "path": "assets/backgrounds/background_008_violet_void_portal.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "b43b22641f4eecc087ac550cd4d8d097e8905a538ddd68643e6e424dd002fb99",
+      "actual_sha256": "b43b22641f4eecc087ac550cd4d8d097e8905a538ddd68643e6e424dd002fb99",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "base_body_001",
+      "category": "base_bodies",
+      "path": "assets/base_bodies/base_body_001_neutral_master.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "6561c3186027398b830b40a40e5412fd715df44d2c22d1724733da07f26996ef",
+      "actual_sha256": "6561c3186027398b830b40a40e5412fd715df44d2c22d1724733da07f26996ef",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "base_pose_002",
+      "category": "base_bodies",
+      "path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "5c8bd6bd187a1c5efc91e15433f558461ec8f3412e561497a4df6fed35679693",
+      "actual_sha256": "5c8bd6bd187a1c5efc91e15433f558461ec8f3412e561497a4df6fed35679693",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "base_pose_003",
+      "category": "base_bodies",
+      "path": "assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "bac3ae2db654e6cbf8185e56f714f72608d95c72652c4a270e4fdfb6d1bbeef8",
+      "actual_sha256": "bac3ae2db654e6cbf8185e56f714f72608d95c72652c4a270e4fdfb6d1bbeef8",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "base_pose_004",
+      "category": "base_bodies",
+      "path": "assets/base_bodies/base_pose_004_viewer_left_palm_up.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "32ea9264d47e7f47cd47f7effee5493deb518e573561f9a3dbdb4dcdd1b57365",
+      "actual_sha256": "32ea9264d47e7f47cd47f7effee5493deb518e573561f9a3dbdb4dcdd1b57365",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "base_pose_005",
+      "category": "base_bodies",
+      "path": "assets/base_bodies/base_pose_005_centered_two_hand_grip.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
+      "actual_sha256": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_003",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_003_silver_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7",
+      "actual_sha256": "4ad45a0a791e3b71a548c94896d9454825abd9c1c2cb62292102e66865f76ce7",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_001_celestial_scholar_pose_001.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
+      "actual_sha256": "ff9f6e5834f6f8529b49e1034f02f7420abe5def4ccb94f053789869522ca561",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_003_verdant_alchemist_pose_003.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
+      "actual_sha256": "50428d127f5c1787102f505338a222cfb9aca93904768197ca1fc253b449ddde",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_004_lunar_oracle_pose_004.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
+      "actual_sha256": "1ece53b6a8e4f337d7b16985e079ad01a5795da7b00f9dcc3d37de3cd69ffd2c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_005_sun_temple_pose_005.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
+      "actual_sha256": "f4630f36a005a9d74c257e0af72ed70da877710c676eea2c1e68f4e5354408d3",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "global_finish_001",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_001_soft_bloom.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
+      "actual_sha256": "70734d249923b7f4fc983ab6faff49d4a7f35b946c6b62a4c26fbeb132f401a2",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "global_finish_002",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_002_gilded_warm.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
+      "actual_sha256": "8153d37e08945e21685a3eca81e23b81e5d27fb949339c121f045cf3e52b3923",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "global_finish_003",
+      "category": "global_finish",
+      "path": "assets/global_finish/global_finish_003_cool_veil.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
+      "actual_sha256": "16644ff27b1d773e13a4f2bd7079763d1ae6945c13c07fb14d4d04aee5b85e63",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_003",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_003_silver_straight_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d12a277430840a10b396d947d6c089359e740b5775452faf6c7a035f88448170",
+      "actual_sha256": "d12a277430840a10b396d947d6c089359e740b5775452faf6c7a035f88448170",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_001",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_001_gold_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "0fa3a442d50e03e1e400dc333f95c9b1a745d905d7372a18e1d8bd55e015cd16",
+      "actual_sha256": "0fa3a442d50e03e1e400dc333f95c9b1a745d905d7372a18e1d8bd55e015cd16",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_001",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_001_gold_parted_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "8b636e0484876bd2ea966e2a176e48c7ffd0d154eb089f70b02f313e221d7481",
+      "actual_sha256": "8b636e0484876bd2ea966e2a176e48c7ffd0d154eb089f70b02f313e221d7481",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_002",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_002_black_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "8b688d75915dee64b1c0437d0c99ca0d0b43cd837088f4e73bab11c82a37e842",
+      "actual_sha256": "8b688d75915dee64b1c0437d0c99ca0d0b43cd837088f4e73bab11c82a37e842",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_002",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_002_black_side_swept.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b",
+      "actual_sha256": "f8381082db65a0e20027da216b41e679df6e5e5236d3a8b454c144814d25911b",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_004",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_004_violet_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c50292e51d462b59ef605b295af31ab1053283d8e8f47e1b2b63460faa1acbfe",
+      "actual_sha256": "c50292e51d462b59ef605b295af31ab1053283d8e8f47e1b2b63460faa1acbfe",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_004",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_004_violet_parted_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "628f1945cb467d8bd564ac13e8b0f2e8873b4d13e362478e0759a3d70c89609c",
+      "actual_sha256": "628f1945cb467d8bd564ac13e8b0f2e8873b4d13e362478e0759a3d70c89609c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_005",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_005_blue_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "58f556c5b12183909bd8e65c6a1912ee9ae48e17268748afac0b1bf72eadc7b6",
+      "actual_sha256": "58f556c5b12183909bd8e65c6a1912ee9ae48e17268748afac0b1bf72eadc7b6",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_005",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_005_blue_pointed_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c3ce49a768c5ea8b1a0e0e225f61b113422724139968d924bcbeba9eeb7bd68c",
+      "actual_sha256": "c3ce49a768c5ea8b1a0e0e225f61b113422724139968d924bcbeba9eeb7bd68c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_006",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_006_pink_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e01f17599ee48295d60c5499c94f3dc1b5153a710974c32aa9c67bd7265fb436",
+      "actual_sha256": "e01f17599ee48295d60c5499c94f3dc1b5153a710974c32aa9c67bd7265fb436",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_006",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_006_pink_soft_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "922dc45e3e120195f4cbd5222c7c1d263b364a39308a7014618cbd2cab16b6f5",
+      "actual_sha256": "922dc45e3e120195f4cbd5222c7c1d263b364a39308a7014618cbd2cab16b6f5",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_007",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_007_teal_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "a7b2256d6de15d3cbcfdcce1e26450bab78f16a39726e234799c83997d93e529",
+      "actual_sha256": "a7b2256d6de15d3cbcfdcce1e26450bab78f16a39726e234799c83997d93e529",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_007",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_007_teal_open_center.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "fa8d1d8f5cc83e9744089752cd00dc746af9e84ba791cd8f4d8b14208f3eda5b",
+      "actual_sha256": "fa8d1d8f5cc83e9744089752cd00dc746af9e84ba791cd8f4d8b14208f3eda5b",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_back_008",
+      "category": "hair_back",
+      "path": "assets/hair_back/hair_back_008_red_long_wavy.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ce098b47fc66d0a269eaf3c4b29083bf7711455a09491e51f8aa97204bce1758",
+      "actual_sha256": "ce098b47fc66d0a269eaf3c4b29083bf7711455a09491e51f8aa97204bce1758",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hair_front_008",
+      "category": "hair_front",
+      "path": "assets/hair_front/hair_front_008_red_short_bangs.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e71b16f32be9adfd64698ed07b776c51cdf5cf3890a57834d24f94d33c5e4aab",
+      "actual_sha256": "e71b16f32be9adfd64698ed07b776c51cdf5cf3890a57834d24f94d33c5e4aab",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_010",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_010_celestial_robe_white_gold.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
+      "actual_sha256": "6b36d0d82a4fc582be33e7ce34427047eab66ae5a0cc675609c9c3080f69d816",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_001",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_001_silver_feathered_wings.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "5718f04f1a05cfc53fa9ec39c2101ca273ca6a59a185c44b18a38f6b2192a2dd",
+      "actual_sha256": "5718f04f1a05cfc53fa9ec39c2101ca273ca6a59a185c44b18a38f6b2192a2dd",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_002",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_002_black_violet_bat_wings.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "37350f99bd4fa18d9e3341e443c31ca7f0333f0dda504a072b2c7b64ff96a91b",
+      "actual_sha256": "37350f99bd4fa18d9e3341e443c31ca7f0333f0dda504a072b2c7b64ff96a91b",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_003",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_003_cyan_fairy_wings.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "454554e0dbb99b84710875706454ff2d5571cbb53ac048f2a70b8348229e4132",
+      "actual_sha256": "454554e0dbb99b84710875706454ff2d5571cbb53ac048f2a70b8348229e4132",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_004",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_004_navy_formal_cape.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990",
+      "actual_sha256": "803c012b776ae635f63fae0c7a0ea0b3a15052b983132b035cec54c1589f0990",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_005",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_005_black_violet_ragged_cloak.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "3821d5acd1b8ffe44bdd37549b958b4ddee5779beea266a0f46cf6b5a875b796",
+      "actual_sha256": "3821d5acd1b8ffe44bdd37549b958b4ddee5779beea266a0f46cf6b5a875b796",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_006",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_006_pale_blue_crystal_wings.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115",
+      "actual_sha256": "53719a9db5ab302c142be3c7bc74f75e49c40cb90eb8ea90ce9d7a521f809115",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "back_accessory_008",
+      "category": "back_accessories",
+      "path": "assets/back_accessories/back_accessory_008_olive_silver_spiked_wings.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da",
+      "actual_sha256": "b3aa15a50aa038f1f2625ae4ed2669cf04be9fc5f9d673a8b9b18b5db50a94da",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_006",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_006_gold_lantern_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "dde0ede2e277f2a732bf624a941d835ad2d1e22508c57490f4c7c6562a5d3b24",
+      "actual_sha256": "dde0ede2e277f2a732bf624a941d835ad2d1e22508c57490f4c7c6562a5d3b24",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_007",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_007_gold_blue_gem_staff_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "80f610d2194f675a05aac2ae0c671eadd545392abd95e603ff66eba03a836c90",
+      "actual_sha256": "80f610d2194f675a05aac2ae0c671eadd545392abd95e603ff66eba03a836c90",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_008",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_008_blue_crescent_staff_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d84751b2a7922daceef57d0546a27ec33a1177a616f4dee2b8e0326e5a083dde",
+      "actual_sha256": "d84751b2a7922daceef57d0546a27ec33a1177a616f4dee2b8e0326e5a083dde",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_010",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "06464f2e7b77ddc56e02b8c5658af8102eecbab02126ca8e697cbc286082ef5d",
+      "actual_sha256": "06464f2e7b77ddc56e02b8c5658af8102eecbab02126ca8e697cbc286082ef5d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_012",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_012_brown_tome_pose_004_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4fe84dc79760e749526fcfac8287026aa47beffed981445a86cea08c5b8d0d2c",
+      "actual_sha256": "4fe84dc79760e749526fcfac8287026aa47beffed981445a86cea08c5b8d0d2c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_001",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_001_arcane_staff_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "cf7a82944942001a60f1b89965d6a7962b0ae4b592b5330d42e4723b5e3eeead",
+      "actual_sha256": "cf7a82944942001a60f1b89965d6a7962b0ae4b592b5330d42e4723b5e3eeead",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_002",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_002_violet_orb_pose_004_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "385dd9b555418c2daa175260d2e9105c757a42de17abc42dccf8f4d1b61465a5",
+      "actual_sha256": "385dd9b555418c2daa175260d2e9105c757a42de17abc42dccf8f4d1b61465a5",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_003",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_003_dark_wand_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c3feb3b35c3df5a61e5a123d77a91a64c0d26681aca81d44cbabff0ae37cddb8",
+      "actual_sha256": "c3feb3b35c3df5a61e5a123d77a91a64c0d26681aca81d44cbabff0ae37cddb8",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_004",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_004_silver_sword_pose_002_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "db2992c5f8fe3639128b03b5eebf366c4d55ea70c082c27e710650845c8c2da8",
+      "actual_sha256": "db2992c5f8fe3639128b03b5eebf366c4d55ea70c082c27e710650845c8c2da8",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "hand_object_005",
+      "category": "hand_objects",
+      "path": "assets/hand_objects/hand_object_005_star_spellbook_pose_004_left.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e080f17bfe0c16e588398ac6771964451873da65e42996909d15494c3a28848a",
+      "actual_sha256": "e080f17bfe0c16e588398ac6771964451873da65e42996909d15494c3a28848a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_001",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_001_dark_neutral.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "fa53972286fe89fabb099defa6bde15a6517c98940f45e54107934f201d26d62",
+      "actual_sha256": "fa53972286fe89fabb099defa6bde15a6517c98940f45e54107934f201d26d62",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_002",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_002_dark_umber.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "43990cd13e35f34fa36baabd8be0d917442d428255f0906d30bd5dd5aac9ee0d",
+      "actual_sha256": "43990cd13e35f34fa36baabd8be0d917442d428255f0906d30bd5dd5aac9ee0d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_003",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_003_dark_slate.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c3a09c9c18a4bd49b04ad63abd2bd7b821ca5b5a25d8f237cd21103a126344ad",
+      "actual_sha256": "c3a09c9c18a4bd49b04ad63abd2bd7b821ca5b5a25d8f237cd21103a126344ad",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_004",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_004_deep_olive.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d067e476fa20a6d716e9a67b00de6e0c96ee8d7ce5a07d6e7e21db0b5a10db2d",
+      "actual_sha256": "d067e476fa20a6d716e9a67b00de6e0c96ee8d7ce5a07d6e7e21db0b5a10db2d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_005",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_005_deep_blue.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f242e33fbddfeeb0e2b84fff6c6b0f6458d98282c85c5d545d4a16255b1ae8c3",
+      "actual_sha256": "f242e33fbddfeeb0e2b84fff6c6b0f6458d98282c85c5d545d4a16255b1ae8c3",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_006",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_006_violet.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "08c79d1db40da142c1bcbf7d77e5da29882dd1a804afc2eca4cc9a191100feed",
+      "actual_sha256": "08c79d1db40da142c1bcbf7d77e5da29882dd1a804afc2eca4cc9a191100feed",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_007",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_007_near_black.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "68c3e15a962477c15e7390573d1e5c26ffd9193c9f874b3db4cbe2019a71a849",
+      "actual_sha256": "68c3e15a962477c15e7390573d1e5c26ffd9193c9f874b3db4cbe2019a71a849",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_008",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_008_dark_brown.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "cab1c0d0c42c0ee2521ea139d083493951db031b2d4aa78ea458408ea4f1fdfb",
+      "actual_sha256": "cab1c0d0c42c0ee2521ea139d083493951db031b2d4aa78ea458408ea4f1fdfb",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_009",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_009_gold.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f4e96bff9626eefea0909a8a97d4a9a04607068d1a1e51ee94355018e9d09288",
+      "actual_sha256": "f4e96bff9626eefea0909a8a97d4a9a04607068d1a1e51ee94355018e9d09288",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_010",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_010_yellow_green.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "25d770c3b7adda9c664885df3f2e85998f9f4f820c90c3676b6ce7dc4be20107",
+      "actual_sha256": "25d770c3b7adda9c664885df3f2e85998f9f4f820c90c3676b6ce7dc4be20107",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_011",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_011_cyan.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "9bce1f6328de56cabf14de926203cae4e06c0967eeea90df1a035793c39ecd44",
+      "actual_sha256": "9bce1f6328de56cabf14de926203cae4e06c0967eeea90df1a035793c39ecd44",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_012",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_012_emerald.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "2ad30eec61061d6691d6633b381901c14f77183d765890d6fbaa78925e832652",
+      "actual_sha256": "2ad30eec61061d6691d6633b381901c14f77183d765890d6fbaa78925e832652",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_013",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_013_crimson.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "0e730506113b502914f152f8d21b4c8e3b938c58fc2c860fb2676c7ec87ac581",
+      "actual_sha256": "0e730506113b502914f152f8d21b4c8e3b938c58fc2c860fb2676c7ec87ac581",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_014",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_014_magenta.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d25f18e196afcc449afc619d357a5c8409a6ec82ffebbc158dc79a5e1df27f25",
+      "actual_sha256": "d25f18e196afcc449afc619d357a5c8409a6ec82ffebbc158dc79a5e1df27f25",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_015",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_015_charcoal.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "dce9b52b179b67939740eda0ca2da3db013bbf1a24a047d611cab3044cc2e3d8",
+      "actual_sha256": "dce9b52b179b67939740eda0ca2da3db013bbf1a24a047d611cab3044cc2e3d8",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_016",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_016_black.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "761f6b1a06522fa8a17a3bc996edd59d42b62b01ed627814636884c5dcbf2c29",
+      "actual_sha256": "761f6b1a06522fa8a17a3bc996edd59d42b62b01ed627814636884c5dcbf2c29",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_017",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_017_warm_neutral.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ccaa1557d221a593ccde9a686e64f0630083412ca2b2c80777c1ed0268ae503a",
+      "actual_sha256": "ccaa1557d221a593ccde9a686e64f0630083412ca2b2c80777c1ed0268ae503a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_018",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_018_gray.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "3be01ec1234a281d13d06bb7adc08d3561521ed9a4d55d6455186bbbd46e89ab",
+      "actual_sha256": "3be01ec1234a281d13d06bb7adc08d3561521ed9a4d55d6455186bbbd46e89ab",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_019",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_019_rose.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "a812bc6fee392d550c91e3e7a60e4021c340118674eca8da3cb6e2473c772223",
+      "actual_sha256": "a812bc6fee392d550c91e3e7a60e4021c340118674eca8da3cb6e2473c772223",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_020",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_020_pink.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "47c88d3150fda08964d97eba52520a58da1805319e2dc8f657cc3b09bff6139f",
+      "actual_sha256": "47c88d3150fda08964d97eba52520a58da1805319e2dc8f657cc3b09bff6139f",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_021",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_021_amber.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "57e3cf6a15aaf0d238d99992c9e1d46bab9fa9c313d258315c63d64105191479",
+      "actual_sha256": "57e3cf6a15aaf0d238d99992c9e1d46bab9fa9c313d258315c63d64105191479",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_022",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_022_orange_gold.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "29231582217790f3abe55305858b7296d6c2afe92fe9479ee2e4388fd1b8d14f",
+      "actual_sha256": "29231582217790f3abe55305858b7296d6c2afe92fe9479ee2e4388fd1b8d14f",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_023",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_023_cool_charcoal.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "2aed0eaad02860cb8cf73dd2c15ced29a0ceeb070ca15ec60534538015883269",
+      "actual_sha256": "2aed0eaad02860cb8cf73dd2c15ced29a0ceeb070ca15ec60534538015883269",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyes_024",
+      "category": "eyes",
+      "path": "assets/eyes/eyes_024_blue_black.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "54e717c9fe5b1dd827a476d148d371ff3233f316378ba9f4f8ce2be31fd2bc93",
+      "actual_sha256": "54e717c9fe5b1dd827a476d148d371ff3233f316378ba9f4f8ce2be31fd2bc93",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_001",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_001_neutral.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "bcf343c657d8e50db8119b3d93046a1924cfb84f8b8c921d08a2e72728cd899a",
+      "actual_sha256": "bcf343c657d8e50db8119b3d93046a1924cfb84f8b8c921d08a2e72728cd899a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_002",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_002_raised.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f8919f50f88d1912f1a3c12b54e8eb30696954d81113eea06c98084938adab85",
+      "actual_sha256": "f8919f50f88d1912f1a3c12b54e8eb30696954d81113eea06c98084938adab85",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_003",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_003_lowered.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "a8b2a10a5b1e55c405d53b710d255b04c95e7db74973c08cd9fef10712e21161",
+      "actual_sha256": "a8b2a10a5b1e55c405d53b710d255b04c95e7db74973c08cd9fef10712e21161",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_004",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_004_angry.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "5e06b523589878f883fca062a87b60a9d7f0aa3886f8583560f93293a132014a",
+      "actual_sha256": "5e06b523589878f883fca062a87b60a9d7f0aa3886f8583560f93293a132014a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_005",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_005_furious.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "14919e62f6c61b245dba15f6837ec909b994a30c7e30edcd1ffff97836799b66",
+      "actual_sha256": "14919e62f6c61b245dba15f6837ec909b994a30c7e30edcd1ffff97836799b66",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_006",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_006_worried.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "a9c370d91d599a78af494ca1b6d8bf5d9ab93a9def45713276cb5241aa250fb2",
+      "actual_sha256": "a9c370d91d599a78af494ca1b6d8bf5d9ab93a9def45713276cb5241aa250fb2",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_007",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_007_pleading.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "1afccb15a2762daccc993f21727c568a5930b8317132c12a1bcfca89b3d208f5",
+      "actual_sha256": "1afccb15a2762daccc993f21727c568a5930b8317132c12a1bcfca89b3d208f5",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_008",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_008_arched.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "fc0d3cf72be1fb409d89444a73cfd3f906fd4d4ab078f2ef6d9adfbcb3e625b2",
+      "actual_sha256": "fc0d3cf72be1fb409d89444a73cfd3f906fd4d4ab078f2ef6d9adfbcb3e625b2",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_009",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_009_flat.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4a5c8ebe050fb4b5286507898b345e9f05ca0ec1ee36e0d18a55c28be8af9a1f",
+      "actual_sha256": "4a5c8ebe050fb4b5286507898b345e9f05ca0ec1ee36e0d18a55c28be8af9a1f",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_010",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_010_thin.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "3cc385c31c612b97e060b61271a0cfdad1f1ed2b611d9774c6fb34a6aaf12945",
+      "actual_sha256": "3cc385c31c612b97e060b61271a0cfdad1f1ed2b611d9774c6fb34a6aaf12945",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_011",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_011_thick.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "39018ac1109edace21325571fe9d4489c0fdf6617a3953fc1b8608ce6d90a8c0",
+      "actual_sha256": "39018ac1109edace21325571fe9d4489c0fdf6617a3953fc1b8608ce6d90a8c0",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_012",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_012_bold_raised.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "c3452e3904d28847a9cbba203e0564081805ccafe785d19e0a640d6e210b4a18",
+      "actual_sha256": "c3452e3904d28847a9cbba203e0564081805ccafe785d19e0a640d6e210b4a18",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_013",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_013_fine_arched.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "7913fd25b87f0e79b104cfa25397d977eb143886d433c5e61dbad22a313d47cb",
+      "actual_sha256": "7913fd25b87f0e79b104cfa25397d977eb143886d433c5e61dbad22a313d47cb",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_014",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_014_wide_set.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ea0d89cebe315362bd803d6ee5f828216737cc553a1fd55e1bdebe216d674a6b",
+      "actual_sha256": "ea0d89cebe315362bd803d6ee5f828216737cc553a1fd55e1bdebe216d674a6b",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_015",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_015_close_set.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f2740b068b7d8c66617de5a223009e022f32f75220261347cf65b0e94fda7f96",
+      "actual_sha256": "f2740b068b7d8c66617de5a223009e022f32f75220261347cf65b0e94fda7f96",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "eyebrows_016",
+      "category": "eyebrows",
+      "path": "assets/eyebrows/eyebrows_016_quizzical.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ed9730494bf4652d9c91182821fba50b4abddf9db42e3d0eb9920a25144d09df",
+      "actual_sha256": "ed9730494bf4652d9c91182821fba50b4abddf9db42e3d0eb9920a25144d09df",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_001",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_001_closed_neutral.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e33dd426e00548fa0e7079acd718e25d7446d842cbfedde762b69d2d37d237f9",
+      "actual_sha256": "e33dd426e00548fa0e7079acd718e25d7446d842cbfedde762b69d2d37d237f9",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_002",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_002_small_open_smile.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e8a422ef8cb42bc1349bfdba71f5f6652d314b03c252b801251f3aa4cf30a23b",
+      "actual_sha256": "e8a422ef8cb42bc1349bfdba71f5f6652d314b03c252b801251f3aa4cf30a23b",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_003",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_003_small_dark_open.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "3c1e7220733a1651d4de3804921e02e49a2ad858c67367e49828f127fc36c2dc",
+      "actual_sha256": "3c1e7220733a1651d4de3804921e02e49a2ad858c67367e49828f127fc36c2dc",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_004",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_004_wide_open_smile.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "7fc98ed9f5089f9a5414f845fe3c73609cd45abe883dedabd8f95efdb53857a7",
+      "actual_sha256": "7fc98ed9f5089f9a5414f845fe3c73609cd45abe883dedabd8f95efdb53857a7",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_005",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_005_short_line.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "7de40d95126d878f5ef55157e678c56fd99798b3438017ba888a5c0dfda9b83a",
+      "actual_sha256": "7de40d95126d878f5ef55157e678c56fd99798b3438017ba888a5c0dfda9b83a",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_006",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_006_soft_curve.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4203073f04fce53fc07b568b69920ab4dc49e6e16f21dc302aa52604ee31d2b0",
+      "actual_sha256": "4203073f04fce53fc07b568b69920ab4dc49e6e16f21dc302aa52604ee31d2b0",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_007",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_007_flat_line.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "7cf55d27c4f4f6c787b8f3e100d15314dc3d16a24354e946df4d80f95633f742",
+      "actual_sha256": "7cf55d27c4f4f6c787b8f3e100d15314dc3d16a24354e946df4d80f95633f742",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_008",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_008_small_downturned.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "cbf6890a5d5ee3b9824691ef0341c51c151c7ccf1281880db2732a4c11845b55",
+      "actual_sha256": "cbf6890a5d5ee3b9824691ef0341c51c151c7ccf1281880db2732a4c11845b55",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_009",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_009_tiny_neutral.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "42d7a557f21a3c94067598d53db9587222a17b824d68cf8dc15b291c6964ee5c",
+      "actual_sha256": "42d7a557f21a3c94067598d53db9587222a17b824d68cf8dc15b291c6964ee5c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_010",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_010_tiny_curve.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "5aeb9c13415e56ea2ee5db90b1c6cd52b42b34dd6a3e823544cd5538bc37de16",
+      "actual_sha256": "5aeb9c13415e56ea2ee5db90b1c6cd52b42b34dd6a3e823544cd5538bc37de16",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_011",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_011_pink_open_pout.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e626e2ea8ba463c21b32bdf09b3295c82957fab0b4ec114e8df6180e0ca9ed1c",
+      "actual_sha256": "e626e2ea8ba463c21b32bdf09b3295c82957fab0b4ec114e8df6180e0ca9ed1c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "mouth_012",
+      "category": "mouths",
+      "path": "assets/mouths/mouth_012_tiny_round.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f7aaf75f12ab35f8c7e8584cfde06cffc01807f6ca3fd12427dae2c96e2e18ff",
+      "actual_sha256": "f7aaf75f12ab35f8c7e8584cfde06cffc01807f6ca3fd12427dae2c96e2e18ff",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_001",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_001_pink_blush_strokes.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e92ae3b0fb6f1c2d138403ac417b3d07cca81424edb36f91aae55df0f2831c0c",
+      "actual_sha256": "e92ae3b0fb6f1c2d138403ac417b3d07cca81424edb36f91aae55df0f2831c0c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_002",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_002_yellow_stress_marks.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "6eb9616aeaa4f1562288caf1d2074d19c1062338c29e46a64e3972f5333faba4",
+      "actual_sha256": "6eb9616aeaa4f1562288caf1d2074d19c1062338c29e46a64e3972f5333faba4",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_003",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_003_dark_gloom_lines.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no fully opaque pixels detected; inspect unintended global transparency",
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "0221977d7eff38186e53508b120f8c4595bb8e80cf84f4d052084ea4cf78d2fc",
+      "actual_sha256": "0221977d7eff38186e53508b120f8c4595bb8e80cf84f4d052084ea4cf78d2fc",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_004",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_004_gold_sparkle.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d481d7ea94ce5aff744750030bd7566878c7b2b7b3323ed00f2b92b3a121e7ed",
+      "actual_sha256": "d481d7ea94ce5aff744750030bd7566878c7b2b7b3323ed00f2b92b3a121e7ed",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_005",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_005_cyan_sweat_drop.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "6fe893091759bb3219670fc73b04ece4cc6336c7edb2086f8ca76dbc41d28979",
+      "actual_sha256": "6fe893091759bb3219670fc73b04ece4cc6336c7edb2086f8ca76dbc41d28979",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_006",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_006_pink_anger_cross.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "b8790ec7c19022b6f8756dbc9010f8253326aa7d4e5a0f82c743fa5a1a766446",
+      "actual_sha256": "b8790ec7c19022b6f8756dbc9010f8253326aa7d4e5a0f82c743fa5a1a766446",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_007",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_007_yellow_green_emphasis.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "16e3a75480c9a8d5c8530791a0c01fc050ca842b4745935c02de7a0785ca4334",
+      "actual_sha256": "16e3a75480c9a8d5c8530791a0c01fc050ca842b4745935c02de7a0785ca4334",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "expression_mark_008",
+      "category": "expression_marks",
+      "path": "assets/expression_marks/expression_mark_008_pink_curved_mark.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4587b6ec778ac37d5bc33cd27951005b41a5e563092392e5bf0935b8d1a68bf5",
+      "actual_sha256": "4587b6ec778ac37d5bc33cd27951005b41a5e563092392e5bf0935b8d1a68bf5",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_006_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_001.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ba17296f778fc2190b12717bfd8c448964754b9802b1078c07ea02fb8edf646d",
+      "actual_sha256": "ba17296f778fc2190b12717bfd8c448964754b9802b1078c07ea02fb8edf646d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_006_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_002.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "17c4b453e79a051aee237ee94a86ad2605660458fa07df25b6cce77d6e2228bc",
+      "actual_sha256": "17c4b453e79a051aee237ee94a86ad2605660458fa07df25b6cce77d6e2228bc",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_006_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_003.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "0fd5821f5c126a4b190fd642d03f42f9daadad3d48be0816cc65c7f498e325fb",
+      "actual_sha256": "0fd5821f5c126a4b190fd642d03f42f9daadad3d48be0816cc65c7f498e325fb",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_006_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_004.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "4bf79f1b9e4c944468b245600a30dbb028073280c032c7a0868471e88cee500c",
+      "actual_sha256": "4bf79f1b9e4c944468b245600a30dbb028073280c032c7a0868471e88cee500c",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_006_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_006_black_layered_hooded_robe_pose_005.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "3da65c07b7c81fd3e008f51f005fa502a708bfdac73515f45938f130f7ec2e26",
+      "actual_sha256": "3da65c07b7c81fd3e008f51f005fa502a708bfdac73515f45938f130f7ec2e26",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_007_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_001.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "45cdcc8283735cdb527282150790e89f40848b5bcdf125bfb56c191397a9b194",
+      "actual_sha256": "45cdcc8283735cdb527282150790e89f40848b5bcdf125bfb56c191397a9b194",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_007_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_002.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "866496bb685f96ffe673963d7f200d286fc6d335c19ce8aa050641b49192f8cc",
+      "actual_sha256": "866496bb685f96ffe673963d7f200d286fc6d335c19ce8aa050641b49192f8cc",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_007_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_003.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "d3a7eabf4be74ab7a5a0ee79fcca6500b37e879d8974e6b13c0cee889b5ed637",
+      "actual_sha256": "d3a7eabf4be74ab7a5a0ee79fcca6500b37e879d8974e6b13c0cee889b5ed637",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_007_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_004.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "9e60da1a8362fc87ab3e4e3a45b142b257e2939dd77bd164f323ee1a8ee9db4f",
+      "actual_sha256": "9e60da1a8362fc87ab3e4e3a45b142b257e2939dd77bd164f323ee1a8ee9db4f",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_007_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_007_brown_leather_long_coat_pose_005.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "bfd6235d84b41fde2478e5ef8aa00157073ea99c730ff637da1f3868ab43baa1",
+      "actual_sha256": "bfd6235d84b41fde2478e5ef8aa00157073ea99c730ff637da1f3868ab43baa1",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_008_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_001.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "2f4015865e00dfd4db10d4ac2a07a5e651bb5a37a530096752bacea9bc879165",
+      "actual_sha256": "2f4015865e00dfd4db10d4ac2a07a5e651bb5a37a530096752bacea9bc879165",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_008_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_002.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "fd89f5a7a1a68c76509cabe45d698b950d42e735ff941e6fb2609032a8f1ca60",
+      "actual_sha256": "fd89f5a7a1a68c76509cabe45d698b950d42e735ff941e6fb2609032a8f1ca60",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_008_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_003.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "35e580543be5177676aaa4e10412d3a51899d67759231c0e37800fd6759c56dc",
+      "actual_sha256": "35e580543be5177676aaa4e10412d3a51899d67759231c0e37800fd6759c56dc",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_008_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_004.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "f70287415d511145d523f96279556a6d6668af53a5bcf4ed16ca479326056356",
+      "actual_sha256": "f70287415d511145d523f96279556a6d6668af53a5bcf4ed16ca479326056356",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_008_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_008_olive_ragged_cloak_pose_005.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "7918cd826e745248488e646725b306ae14596f7cfbbf06ddc70bcf64a7fad6b4",
+      "actual_sha256": "7918cd826e745248488e646725b306ae14596f7cfbbf06ddc70bcf64a7fad6b4",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_009_pose_001",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_001.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "e14cef0484181b615eb9c9f3706068e6afc6985579d80436f41ef54fc822ea68",
+      "actual_sha256": "e14cef0484181b615eb9c9f3706068e6afc6985579d80436f41ef54fc822ea68",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_009_pose_002",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_002.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "68784c38c6673a928fd9db9ac6ab82dadf5f36bb1bcf673357d246c3649c9808",
+      "actual_sha256": "68784c38c6673a928fd9db9ac6ab82dadf5f36bb1bcf673357d246c3649c9808",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_009_pose_003",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_003.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "ffad2940e36f11d2affdfcd9b7c02fbc2c96fb8899f104ef990e3274b656e40d",
+      "actual_sha256": "ffad2940e36f11d2affdfcd9b7c02fbc2c96fb8899f104ef990e3274b656e40d",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_009_pose_004",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_004.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "2b58ab0600773e8abd4a10691f29b9af41743f0728cee3b88cdd6b58ec417bb6",
+      "actual_sha256": "2b58ab0600773e8abd4a10691f29b9af41743f0728cee3b88cdd6b58ec417bb6",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "outfit_009_pose_005",
+      "category": "outfits",
+      "path": "assets/outfits/outfit_009_navy_high_collar_coat_pose_005.png",
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "asset QA: no embedded ICC profile; confirm sRGB interpretation"
+      ],
+      "declared_sha256": "70d80b6fa109cb03d752709e33e1eb9bcc009999a7ebefcefc2c63e017d93084",
+      "actual_sha256": "70d80b6fa109cb03d752709e33e1eb9bcc009999a7ebefcefc2c63e017d93084",
+      "declared_dimensions": [
+        1254,
+        1254
+      ],
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

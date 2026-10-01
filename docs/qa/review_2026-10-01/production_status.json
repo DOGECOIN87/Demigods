@@ -1,0 +1,129 @@
+{
+  "total_registered": 134,
+  "backlog_total": 134,
+  "withdrawn_total": 46,
+  "categories": [
+    {
+      "category": "backgrounds",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "rear_auras",
+      "registered": 0,
+      "backlog_total": 0,
+      "remaining": 0,
+      "state": "withdrawn"
+    },
+    {
+      "category": "back_accessories",
+      "registered": 7,
+      "backlog_total": 7,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "hair_back",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "base_bodies",
+      "registered": 5,
+      "backlog_total": 5,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "outfits",
+      "registered": 25,
+      "backlog_total": 25,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "neck_accessories",
+      "registered": 0,
+      "backlog_total": 0,
+      "remaining": 0,
+      "state": "withdrawn"
+    },
+    {
+      "category": "eyes",
+      "registered": 24,
+      "backlog_total": 24,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "eyebrows",
+      "registered": 16,
+      "backlog_total": 16,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "mouths",
+      "registered": 12,
+      "backlog_total": 12,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "expression_marks",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "hair_front",
+      "registered": 8,
+      "backlog_total": 8,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "head_accessories",
+      "registered": 0,
+      "backlog_total": 0,
+      "remaining": 0,
+      "state": "withdrawn"
+    },
+    {
+      "category": "hand_objects",
+      "registered": 10,
+      "backlog_total": 10,
+      "remaining": 0,
+      "state": "complete"
+    },
+    {
+      "category": "front_auras",
+      "registered": 0,
+      "backlog_total": 0,
+      "remaining": 0,
+      "state": "withdrawn"
+    },
+    {
+      "category": "global_finish",
+      "registered": 3,
+      "backlog_total": 3,
+      "remaining": 0,
+      "state": "complete"
+    }
+  ],
+  "status_counts": {
+    "pending": 0,
+    "candidate": 0,
+    "QA-failed": 0,
+    "approved": 0,
+    "registered": 135,
+    "withdrawn": 46
+  },
+  "pending_categories": [],
+  "errors": []
+}

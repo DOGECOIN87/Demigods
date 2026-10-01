@@ -1,0 +1,381 @@
+test_blur_reduces_local_contrast (test_apply_background_depth.BackgroundDepthTests.test_blur_reduces_local_contrast) ... ok
+test_corners_are_darkened_and_the_centre_is_not (test_apply_background_depth.BackgroundDepthTests.test_corners_are_darkened_and_the_centre_is_not)
+Vignette only: blur is isolated out so a single sample stays meaningful. ... /workspace/scratch/ef785eac4371/Demigods/tests/test_apply_background_depth.py:50: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  data = list(region.getdata())
+ok
+test_output_keeps_canvas_mode_and_full_opacity (test_apply_background_depth.BackgroundDepthTests.test_output_keeps_canvas_mode_and_full_opacity) ... ok
+test_refuses_to_write_into_assets (test_apply_background_depth.BackgroundDepthTests.test_refuses_to_write_into_assets)
+Registered backgrounds are pinned by SHA-256; treated files are candidates. ... ok
+test_treatment_is_deterministic (test_apply_background_depth.BackgroundDepthTests.test_treatment_is_deterministic)
+Re-running must reproduce identical bytes, or provenance is meaningless. ... ok
+test_wrong_canvas_is_rejected (test_apply_background_depth.BackgroundDepthTests.test_wrong_canvas_is_rejected) ... ok
+test_every_base_body_shares_the_face_rig (test_base_face_anchors.BaseFaceAnchorTests.test_every_base_body_shares_the_face_rig) ... ok
+test_fully_opaque_layer_has_no_genuine_alpha (test_bulk_intake.BinaryQATests.test_fully_opaque_layer_has_no_genuine_alpha) ... ok
+test_fully_transparent_layer_has_no_visible_pixels (test_bulk_intake.BinaryQATests.test_fully_transparent_layer_has_no_visible_pixels) ... ok
+test_native_rgba_layer_passes (test_bulk_intake.BinaryQATests.test_native_rgba_layer_passes) ... ok
+test_truncated_file_is_reported_not_raised (test_bulk_intake.BinaryQATests.test_truncated_file_is_reported_not_raised) ... ok
+test_wrong_dimensions_fail (test_bulk_intake.BinaryQATests.test_wrong_dimensions_fail) ... ok
+test_hair_back_is_hidden_behind_the_body (test_bulk_intake.CompositeLayerOrderTests.test_hair_back_is_hidden_behind_the_body) ... ok
+test_outfit_covers_the_body (test_bulk_intake.CompositeLayerOrderTests.test_outfit_covers_the_body) ... ok
+test_backlog_rows_confirm_the_colour_alignment_the_rule_assumes (test_bulk_intake.HairPairingRuleTests.test_backlog_rows_confirm_the_colour_alignment_the_rule_assumes)
+hair_front_00N binds to hair_back_00N only if index N means one colour. ... ok
+test_front_layer_binds_to_the_matching_rear_layer (test_bulk_intake.HairPairingRuleTests.test_front_layer_binds_to_the_matching_rear_layer) ... ok
+test_indices_are_not_cross_matched (test_bulk_intake.HairPairingRuleTests.test_indices_are_not_cross_matched) ... ok
+test_no_rule_when_the_counterpart_is_not_registered (test_bulk_intake.HairPairingRuleTests.test_no_rule_when_the_counterpart_is_not_registered) ... ok
+test_non_hair_assets_get_no_rule (test_bulk_intake.HairPairingRuleTests.test_non_hair_assets_get_no_rule) ... ok
+test_asset_id_strips_the_descriptive_tail (test_bulk_intake.HelperTests.test_asset_id_strips_the_descriptive_tail) ... ok
+test_manifest_category_comes_from_the_path (test_bulk_intake.HelperTests.test_manifest_category_comes_from_the_path) ... ok
+test_width_ceiling_is_read_from_the_shared_gate_table (test_bulk_intake.HelperTests.test_width_ceiling_is_read_from_the_shared_gate_table)
+Hair hugs the head; wings and capes legitimately exceed body width. ... ok
+test_category_with_no_rows_is_not_cleared (test_bulk_intake.PendingCategoryTests.test_category_with_no_rows_is_not_cleared)
+An empty category is unstarted, not finished. ... ok
+test_fully_registered_category_is_cleared (test_bulk_intake.PendingCategoryTests.test_fully_registered_category_is_cleared) ... ok
+test_live_manifest_agrees_with_the_live_backlog (test_bulk_intake.PendingCategoryTests.test_live_manifest_agrees_with_the_live_backlog)
+Regression guard: registering global_finish left this list stale. ... ok
+test_missing_key_is_tolerated (test_bulk_intake.PendingCategoryTests.test_missing_key_is_tolerated) ... ok
+test_partially_registered_category_stays_pending (test_bulk_intake.PendingCategoryTests.test_partially_registered_category_stays_pending) ... ok
+test_withdrawn_rows_count_as_resolved (test_bulk_intake.PendingCategoryTests.test_withdrawn_rows_count_as_resolved)
+Rows closed by recorded decision do not hold a category open. ... ok
+test_body_centred_glows_gate_as_traits (test_bulk_intake.PromptResolutionTests.test_body_centred_glows_gate_as_traits) ... ok
+test_every_backlog_category_has_a_layer_mapping (test_bulk_intake.PromptResolutionTests.test_every_backlog_category_has_a_layer_mapping)
+A category with no template would silently drop out of every batch. ... ok
+test_every_emitted_gate_command_is_runnable (test_bulk_intake.PromptResolutionTests.test_every_emitted_gate_command_is_runnable)
+GATES holds prose for layer 02; a per-asset prompt must print flags. ... ok
+test_ground_plane_rings_gate_as_floor_auras (test_bulk_intake.PromptResolutionTests.test_ground_plane_rings_gate_as_floor_auras)
+A ring is seated on the baseline, so --trait would fail it by design. ... ok
+test_hair_first_batch_covers_the_three_visible_gaps (test_bulk_intake.PromptResolutionTests.test_hair_first_batch_covers_the_three_visible_gaps) ... ok
+test_hair_prompts_forbid_the_recolour_shortcut (test_bulk_intake.PromptResolutionTests.test_hair_prompts_forbid_the_recolour_shortcut)
+The eight HAIR cells are distinct cuts, not one design in eight colours. ... ok
+test_prompt_names_the_canonical_output_file (test_bulk_intake.PromptResolutionTests.test_prompt_names_the_canonical_output_file) ... ok
+test_resolved_prompt_carries_its_own_reference_cell (test_bulk_intake.PromptResolutionTests.test_resolved_prompt_carries_its_own_reference_cell) ... ok
+test_resolved_prompt_has_no_placeholders_left (test_bulk_intake.PromptResolutionTests.test_resolved_prompt_has_no_placeholders_left) ... ok
+test_source_keys_resolve_to_repository_paths (test_bulk_intake.PromptResolutionTests.test_source_keys_resolve_to_repository_paths) ... ok
+test_failed_registration_copies_nothing (test_bulk_intake.RegistrationAtomicityTests.test_failed_registration_copies_nothing) ... error: could not flip backlog status for DG-999 (matched 0 rows); nothing written
+ok
+test_already_registered_does_not_flip (test_bulk_intake.RegistrationStatusTests.test_already_registered_does_not_flip)
+Guards against a re-run silently double-registering an asset. ... ok
+test_approved_flips (test_bulk_intake.RegistrationStatusTests.test_approved_flips) ... ok
+test_candidate_flips (test_bulk_intake.RegistrationStatusTests.test_candidate_flips)
+Art in hand awaiting review is exactly what gets registered. ... ok
+test_pending_flips (test_bulk_intake.RegistrationStatusTests.test_pending_flips) ... ok
+test_qa_failed_does_not_flip (test_bulk_intake.RegistrationStatusTests.test_qa_failed_does_not_flip) ... ok
+test_no_registered_asset_carries_key_green (test_chroma_residue.ChromaResidueTests.test_no_registered_asset_carries_key_green) ... ok
+test_the_green_exemptions_are_still_registered_and_still_green (test_chroma_residue.ChromaResidueTests.test_the_green_exemptions_are_still_registered_and_still_green)
+An exemption that no longer names a real green asset is a hole in the gate. ... ok
+test_clean_layer_is_left_alone (test_clean_chroma_key.DespillSafetyTests.test_clean_layer_is_left_alone) ... ok
+test_contract_erodes_the_alpha_edge (test_clean_chroma_key.DespillSafetyTests.test_contract_erodes_the_alpha_edge) ... ok
+test_edge_spill_is_removed (test_clean_chroma_key.DespillSafetyTests.test_edge_spill_is_removed) ... ok
+test_interior_green_artwork_is_preserved (test_clean_chroma_key.DespillSafetyTests.test_interior_green_artwork_is_preserved) ... ok
+test_report_fields_are_populated (test_clean_chroma_key.DespillSafetyTests.test_report_fields_are_populated) ... ok
+test_counts_only_contaminated_opaque_pixels (test_clean_chroma_key.GreenCountTests.test_counts_only_contaminated_opaque_pixels) ... ok
+test_green_at_or_below_neighbours_is_not_contamination (test_clean_chroma_key.GreenCountTests.test_green_at_or_below_neighbours_is_not_contamination) ... ok
+test_registered_outfits_carry_no_meaningful_green_spill (test_clean_chroma_key.RegisteredOutfitTests.test_registered_outfits_carry_no_meaningful_green_spill)
+Regression guard for the defect this script was written to fix. ... ok
+test_clip_removing_too_much_of_the_layer_is_refused (test_clip_trait_to_bounds.ClipTests.test_clip_removing_too_much_of_the_layer_is_refused)
+A shallow but very wide clip can still be removing real artwork. ... ok
+test_clip_reports_what_it_removed (test_clip_trait_to_bounds.ClipTests.test_clip_reports_what_it_removed) ... ok
+test_clipped_pixels_are_fully_transparent (test_clip_trait_to_bounds.ClipTests.test_clipped_pixels_are_fully_transparent) ... ok
+test_colour_channels_are_untouched (test_clip_trait_to_bounds.ClipTests.test_colour_channels_are_untouched)
+A clip edits alpha only; the approved design must not change. ... ok
+test_deep_overhang_is_refused (test_clip_trait_to_bounds.ClipTests.test_deep_overhang_is_refused)
+A deep overhang means a misplaced layer, which a clip would amputate. ... ok
+test_fully_transparent_layer_is_rejected (test_clip_trait_to_bounds.ClipTests.test_fully_transparent_layer_is_rejected) ... ok
+test_horizontal_overhang_is_clipped_too (test_clip_trait_to_bounds.ClipTests.test_horizontal_overhang_is_clipped_too) ... ok
+test_layer_already_within_bounds_is_refused (test_clip_trait_to_bounds.ClipTests.test_layer_already_within_bounds_is_refused)
+Clipping a compliant layer would be a silent no-op edit. ... ok
+test_small_bottom_overhang_is_clipped_to_the_baseline (test_clip_trait_to_bounds.ClipTests.test_small_bottom_overhang_is_clipped_to_the_baseline)
+The outfit_001 case: boot soles tapering five pixels past the floor. ... ok
+test_wrong_canvas_is_rejected (test_clip_trait_to_bounds.ClipTests.test_wrong_canvas_is_rejected) ... ok
+test_every_registered_outfit_is_within_the_locked_bounds (test_clip_trait_to_bounds.RegisteredOutfitTests.test_every_registered_outfit_is_within_the_locked_bounds)
+Regression guard for the defect this script was written to fix. ... ok
+test_crown_soles_and_head_centre_are_on_the_rig (test_dressed_bodies.DressedBodyTests.test_crown_soles_and_head_centre_are_on_the_rig) ... ok
+test_each_is_bound_to_exactly_one_base_pose (test_dressed_bodies.DressedBodyTests.test_each_is_bound_to_exactly_one_base_pose) ... ok
+test_each_traces_to_its_immutable_render (test_dressed_bodies.DressedBodyTests.test_each_traces_to_its_immutable_render) ... ok
+test_the_collection_has_dressed_bodies (test_dressed_bodies.DressedBodyTests.test_the_collection_has_dressed_bodies) ... ok
+test_the_shared_face_lands_on_face_skin (test_dressed_bodies.DressedBodyTests.test_the_shared_face_lands_on_face_skin) ... ok
+test_lowest_ink_stays_where_it_was_approved (test_face_occlusion.HeadAccessoryFaceClearanceTests.test_lowest_ink_stays_where_it_was_approved)
+Catch a reseat before it reaches the eyes. ... skipped 'head_accessories not registered yet'
+test_no_head_accessory_covers_the_eyes (test_face_occlusion.HeadAccessoryFaceClearanceTests.test_no_head_accessory_covers_the_eyes) ... skipped 'head_accessories not registered yet'
+test_no_two_eye_pairs_are_visually_identical (test_face_traits.EyePaletteTests.test_no_two_eye_pairs_are_visually_identical)
+The backlog repeats three colour adjectives across its rows. ... ok
+test_registered_eyes_differ_inside_the_iris (test_face_traits.EyePaletteTests.test_registered_eyes_differ_inside_the_iris)
+The palette table is the intent; this measures the shipped pixels. ... ok
+test_expression_marks_carry_no_skin_patch (test_face_traits.FaceTraitClearanceTests.test_expression_marks_carry_no_skin_patch)
+Marks are additive. A patch on one would erase whatever it sat over. ... ok
+test_mouths_and_marks_stay_clear_of_the_eyes (test_face_traits.FaceTraitClearanceTests.test_mouths_and_marks_stay_clear_of_the_eyes) ... ok
+test_every_face_trait_covers_the_baked_feature (test_face_traits.FaceTraitCoverageTests.test_every_face_trait_covers_the_baked_feature) ... ok
+test_no_front_aura_is_flat_shaded (test_face_traits.FrontAuraFlatnessTests.test_no_front_aura_is_flat_shaded) ... skipped 'front_auras not registered'
+test_reduces_pastes_and_makes_near_opaque_alpha_opaque (test_fit_in_hand_render.PlaceTests.test_reduces_pastes_and_makes_near_opaque_alpha_opaque) ... ok
+test_a_move_off_the_canvas_uncovers_the_edge (test_fit_in_hand_render.UncoveredCountsTests.test_a_move_off_the_canvas_uncovers_the_edge) ... ok
+test_finds_the_move_that_covers_the_hand (test_fit_in_hand_render.UncoveredCountsTests.test_finds_the_move_that_covers_the_hand) ... ok
+test_a_dressed_outfit_keeps_its_base_out_of_the_render (test_generate_777.Generate777Tests.test_a_dressed_outfit_keeps_its_base_out_of_the_render)
+The base stays in the metadata as the pose but is not drawn under the figure. ... ok
+test_a_hand_object_is_drawn_behind_the_body_by_default (test_generate_777.Generate777Tests.test_a_hand_object_is_drawn_behind_the_body_by_default)
+The base's own fist covers the object's grip. ... ok
+test_an_in_hand_object_is_drawn_over_the_body (test_generate_777.Generate777Tests.test_an_in_hand_object_is_drawn_over_the_body)
+An object painted with its gripping hand shows that hand over the base's. ... ok
+test_capacity_failure_is_early_and_explicit (test_generate_777.Generate777Tests.test_capacity_failure_is_early_and_explicit) ... ok
+test_dry_run_generates_exact_unique_supply (test_generate_777.Generate777Tests.test_dry_run_generates_exact_unique_supply) ... ok
+test_in_hand_order_puts_the_object_before_the_front_aura (test_generate_777.Generate777Tests.test_in_hand_order_puts_the_object_before_the_front_aura) ... ok
+test_nonempty_output_requires_overwrite (test_generate_777.Generate777Tests.test_nonempty_output_requires_overwrite) ... ok
+test_optional_category_is_sometimes_absent (test_generate_777.Generate777Tests.test_optional_category_is_sometimes_absent) ... ok
+test_rendered_run_records_image_hashes (test_generate_777.Generate777Tests.test_rendered_run_records_image_hashes) ... ok
+test_required_category_cannot_be_optional (test_generate_777.Generate777Tests.test_required_category_cannot_be_optional) ... ok
+test_same_seed_is_deterministic (test_generate_777.Generate777Tests.test_same_seed_is_deterministic) ... ok
+test_colour_channels_never_darken_toward_gray (test_global_finish.GlobalFinishBuilderTests.test_colour_channels_never_darken_toward_gray)
+Matte contamination is the failure mode the aura builders exist to avoid. ... /workspace/scratch/ef785eac4371/Demigods/tests/test_global_finish.py:39: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colours = {px[:3] for px in image.getdata()}
+ok
+test_every_variant_stays_under_the_alpha_ceiling (test_global_finish.GlobalFinishBuilderTests.test_every_variant_stays_under_the_alpha_ceiling)
+A finish that can reach opacity would hide the art it grades. ... ok
+test_gradient_is_directional (test_global_finish.GlobalFinishBuilderTests.test_gradient_is_directional)
+Peak alpha sits on the key-light side, falling off toward the opposite corner. ... ok
+test_render_is_full_canvas_rgba (test_global_finish.GlobalFinishBuilderTests.test_render_is_full_canvas_rgba) ... ok
+test_variants_are_visually_distinct (test_global_finish.GlobalFinishBuilderTests.test_variants_are_visually_distinct)
+Three recolours of one identical ramp would not be three assets. ... ok
+test_exemption_does_not_leak_into_trait_mode (test_global_finish.GlobalFinishGateTests.test_exemption_does_not_leak_into_trait_mode)
+A full-canvas grade must still fail an ordinary partial-layer gate. ... ok
+test_finish_over_the_ceiling_fails (test_global_finish.GlobalFinishGateTests.test_finish_over_the_ceiling_fails) ... ok
+test_fully_opaque_finish_fails (test_global_finish.GlobalFinishGateTests.test_fully_opaque_finish_fails) ... ok
+test_valid_finish_passes_global_finish_mode (test_global_finish.GlobalFinishGateTests.test_valid_finish_passes_global_finish_mode) ... ok
+test_wrong_canvas_fails_even_within_the_ceiling (test_global_finish.GlobalFinishGateTests.test_wrong_canvas_fails_even_within_the_ceiling) ... ok
+test_removed_categories_stay_empty (test_headwear_aura_removal.HeadwearAuraRemovalTests.test_removed_categories_stay_empty) ... ok
+test_the_removal_is_recorded (test_headwear_aura_removal.HeadwearAuraRemovalTests.test_the_removal_is_recorded) ... ok
+test_exposure_stays_within_recorded_bounds (test_hide_undergarment.RegisteredBaseTests.test_exposure_stays_within_recorded_bounds)
+Every outfit bound to a base, not a hardcoded five. ... ok
+test_verification_is_stricter_than_the_repaint_mask (test_hide_undergarment.RegisteredBaseTests.test_verification_is_stricter_than_the_repaint_mask)
+Verifying at the mask's own tolerance re-flags correct output. ... ok
+test_alpha_is_never_modified (test_hide_undergarment.RepaintTests.test_alpha_is_never_modified) ... /workspace/scratch/ef785eac4371/Demigods/tests/test_hide_undergarment.py:73: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  list(base.getchannel("A").getdata()),
+/workspace/scratch/ef785eac4371/Demigods/tests/test_hide_undergarment.py:74: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  list(result.getchannel("A").getdata()),
+ok
+test_covered_undergarment_is_left_alone (test_hide_undergarment.RepaintTests.test_covered_undergarment_is_left_alone)
+The fix is deliberately limited to what can actually be seen. ... ok
+test_exposed_undergarment_is_eliminated (test_hide_undergarment.RepaintTests.test_exposed_undergarment_is_eliminated) ... ok
+test_repaint_uses_skin_colour_not_garment_colour (test_hide_undergarment.RepaintTests.test_repaint_uses_skin_colour_not_garment_colour)
+Values must come from real skin, so nothing is invented. ... ok
+test_mask_finds_the_garment_and_not_the_skin (test_hide_undergarment.UndergarmentMaskTests.test_mask_finds_the_garment_and_not_the_skin) ... ok
+test_tolerance_bounds_the_grow (test_hide_undergarment.UndergarmentMaskTests.test_tolerance_bounds_the_grow) ... ok
+test_decentered_silhouette_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_decentered_silhouette_fails) ... ok
+test_exact_locked_geometry_passes (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_exact_locked_geometry_passes) ... ok
+test_pixels_outside_maximum_bounds_fail (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_pixels_outside_maximum_bounds_fail) ... ok
+test_wrong_foot_baseline_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_wrong_foot_baseline_fails) ... ok
+test_wrong_head_top_fails (test_intake_approved_base.ApprovedBaseIntakeGeometryTests.test_wrong_head_top_fails) ... ok
+test_a_long_body_does_not_shrink_the_head (test_normalize_dressed_body.FitTests.test_a_long_body_does_not_shrink_the_head)
+One uniform reduction to land these soles would take the head to 92%. ... ok
+test_an_rgba_matte_is_relevelled (test_normalize_dressed_body.FitTests.test_an_rgba_matte_is_relevelled) ... ok
+test_crown_and_soles_land_on_the_rig (test_normalize_dressed_body.FitTests.test_crown_and_soles_land_on_the_rig) ... ok
+test_enlargement_is_refused (test_normalize_dressed_body.FitTests.test_enlargement_is_refused) ... ok
+test_contour_lines_stay_paint_and_real_gaps_open (test_normalize_dressed_body.KeyFromBlackTests.test_contour_lines_stay_paint_and_real_gaps_open) ... ok
+test_edge_blend_takes_partial_alpha_and_the_art_colour (test_normalize_dressed_body.KeyFromBlackTests.test_edge_blend_takes_partial_alpha_and_the_art_colour)
+A dim blend against black is part coverage; its colour is the art's, not the key's. ... ok
+test_interior_becomes_opaque_and_halo_clears (test_normalize_dressed_body.RelevelTests.test_interior_becomes_opaque_and_halo_clears) ... ok
+test_edge_touching_source_is_rejected (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_edge_touching_source_is_rejected) ... ok
+test_intake_rejects_tampered_transform_provenance (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_intake_rejects_tampered_transform_provenance) ... ok
+test_low_opacity_matte_source_normalizes_to_locked_canvas (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_low_opacity_matte_source_normalizes_to_locked_canvas) ... ok
+test_opaque_source_is_rejected_before_any_transform (test_normalize_generator_source.GeneratorSourceNormalizationTests.test_opaque_source_is_rejected_before_any_transform) ... ok
+test_bottom_edge_is_crisp_not_faded (test_open_collar.OpenCollarTests.test_bottom_edge_is_crisp_not_faded)
+A crossfade reads as a smear, not as fabric. ... ok
+test_collar_rim_outside_the_neck_is_untouched (test_open_collar.OpenCollarTests.test_collar_rim_outside_the_neck_is_untouched) ... ok
+test_garment_closes_below_the_rim (test_open_collar.OpenCollarTests.test_garment_closes_below_the_rim) ... ok
+test_horizontal_edges_inherit_the_base_anti_aliasing (test_open_collar.OpenCollarTests.test_horizontal_edges_inherit_the_base_anti_aliasing) ... ok
+test_neck_becomes_visible (test_open_collar.OpenCollarTests.test_neck_becomes_visible) ... ok
+test_nothing_above_the_span_is_touched (test_open_collar.OpenCollarTests.test_nothing_above_the_span_is_touched) ... ok
+test_rim_arc_is_lower_at_the_centre (test_open_collar.OpenCollarTests.test_rim_arc_is_lower_at_the_centre)
+The opening follows the collar's own rim, which dips at the middle. ... ok
+test_repaired_collars_show_the_neck (test_open_collar.RegisteredOutfitNeckTests.test_repaired_collars_show_the_neck) ... ok
+test_fitted_outfits_cover_the_base_body (test_outfit_body_fit.OutfitBodyFitTests.test_fitted_outfits_cover_the_base_body) ... ok
+test_no_collar_caps_the_neck (test_outfit_necklines.OutfitNecklineTests.test_no_collar_caps_the_neck)
+A stand collar has to be open at the top, or the head sits on a plug. ... ok
+test_no_outfit_shows_the_undergarment_through_its_opening (test_outfit_necklines.OutfitNecklineTests.test_no_outfit_shows_the_undergarment_through_its_opening) ... ok
+test_no_sleeve_leaves_bare_arm_along_its_edge (test_outfit_sleeves.OutfitSleeveTests.test_no_sleeve_leaves_bare_arm_along_its_edge) ... ok
+test_ellipse_boundary_stays_fully_protected_with_exterior_feather (test_refine_subject_masks.ForegroundProtectionTests.test_ellipse_boundary_stays_fully_protected_with_exterior_feather) ... ok
+test_thin_bow_string_polygon_is_not_weakened (test_refine_subject_masks.ForegroundProtectionTests.test_thin_bow_string_polygon_is_not_weakened) ... ok
+test_crown_offset_sign_marks_a_bald_gap (test_refit_trait_layer.GateProportionTests.test_crown_offset_sign_marks_a_bald_gap) ... ok
+test_in_proportion_layer_passes (test_refit_trait_layer.GateProportionTests.test_in_proportion_layer_passes) ... ok
+test_over_wide_layer_fails_when_a_threshold_is_set (test_refit_trait_layer.GateProportionTests.test_over_wide_layer_fails_when_a_threshold_is_set) ... ok
+test_threshold_is_opt_in_so_wings_are_not_false_failed (test_refit_trait_layer.GateProportionTests.test_threshold_is_opt_in_so_wings_are_not_false_failed)
+Back accessories legitimately exceed body width; default is report-only. ... ok
+test_canvas_is_preserved (test_refit_trait_layer.RefitTraitLayerTests.test_canvas_is_preserved)
+A refit must never change the native canvas. ... ok
+test_fully_transparent_layer_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_fully_transparent_layer_is_rejected) ... ok
+test_non_positive_scale_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_non_positive_scale_is_rejected) ... ok
+test_registered_hair_back_meets_its_proportion_target (test_refit_trait_layer.RefitTraitLayerTests.test_registered_hair_back_meets_its_proportion_target)
+Regression: the registered layer must stay near 1.2x, not 1.46x. ... ok
+test_result_is_centred_on_the_locked_axis (test_refit_trait_layer.RefitTraitLayerTests.test_result_is_centred_on_the_locked_axis) ... ok
+test_scaling_reduces_width_by_the_requested_factor (test_refit_trait_layer.RefitTraitLayerTests.test_scaling_reduces_width_by_the_requested_factor) ... ok
+test_top_is_seated_at_the_requested_y (test_refit_trait_layer.RefitTraitLayerTests.test_top_is_seated_at_the_requested_y) ... ok
+test_wrong_canvas_is_rejected (test_refit_trait_layer.RefitTraitLayerTests.test_wrong_canvas_is_rejected) ... ok
+test_backlog_registered_without_manifest_entry_fails (test_report_production_status.ProductionStatusTests.test_backlog_registered_without_manifest_entry_fails) ... ok
+test_category_without_backlog_rows_is_source_gated (test_report_production_status.ProductionStatusTests.test_category_without_backlog_rows_is_source_gated) ... ok
+test_malformed_row_fails_closed_instead_of_being_skipped (test_report_production_status.ProductionStatusTests.test_malformed_row_fails_closed_instead_of_being_skipped)
+A DG row with the wrong column count was once silently ignored. ... ok
+test_manifest_entry_without_backlog_row_fails (test_report_production_status.ProductionStatusTests.test_manifest_entry_without_backlog_row_fails) ... ok
+test_non_backlog_table_without_dg_ids_is_ignored_quietly (test_report_production_status.ProductionStatusTests.test_non_backlog_table_without_dg_ids_is_ignored_quietly)
+Documentation tables are fine as long as column 0 is not a DG id. ... ok
+test_registered_and_pending_counts_are_derived_from_manifest (test_report_production_status.ProductionStatusTests.test_registered_and_pending_counts_are_derived_from_manifest) ... ok
+test_replace_block_requires_markers (test_report_production_status.ProductionStatusTests.test_replace_block_requires_markers) ... ok
+test_repository_status_document_is_current (test_report_production_status.ProductionStatusTests.test_repository_status_document_is_current)
+The committed ledger must match what the manifest and backlog imply. ... ok
+test_shared_production_path_counts_once (test_report_production_status.ProductionStatusTests.test_shared_production_path_counts_once)
+DG-001 and DG-002 both resolve to the neutral master in the real backlog. ... ok
+test_stale_pending_category_fails (test_report_production_status.ProductionStatusTests.test_stale_pending_category_fails) ... ok
+test_unknown_backlog_status_is_rejected (test_report_production_status.ProductionStatusTests.test_unknown_backlog_status_is_rejected) ... ok
+test_withdrawn_asset_may_not_stay_registered (test_report_production_status.ProductionStatusTests.test_withdrawn_asset_may_not_stay_registered) ... ok
+test_withdrawn_row_does_not_count_against_a_live_category (test_report_production_status.ProductionStatusTests.test_withdrawn_row_does_not_count_against_a_live_category)
+A superseded asset leaves its category complete once the rest is registered. ... ok
+test_withdrawn_rows_close_a_category_without_registration (test_report_production_status.ProductionStatusTests.test_withdrawn_rows_close_a_category_without_registration)
+A category the owner dropped is out of scope, not unfinished work. ... ok
+test_every_partial_alpha_pixel_stays_bright (test_rig_gate_report.FloorRingBuilderTests.test_every_partial_alpha_pixel_stays_bright)
+The matte failure of attempt 001: fringe luminance tracking alpha. ... /workspace/scratch/ef785eac4371/Demigods/tests/test_rig_gate_report.py:121: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  for r, g, b, a in image.getdata():
+ok
+test_ring_is_seated_so_the_near_arc_passes_below_the_foot_baseline (test_rig_gate_report.FloorRingBuilderTests.test_ring_is_seated_so_the_near_arc_passes_below_the_foot_baseline) ... ok
+test_floor_aura_allows_the_near_arc_below_the_foot_baseline (test_rig_gate_report.RigGateModeTests.test_floor_aura_allows_the_near_arc_below_the_foot_baseline) ... ok
+test_floor_aura_just_clear_of_the_canvas_edge_passes (test_rig_gate_report.RigGateModeTests.test_floor_aura_just_clear_of_the_canvas_edge_passes) ... ok
+test_floor_aura_requires_genuine_transparency (test_rig_gate_report.RigGateModeTests.test_floor_aura_requires_genuine_transparency) ... ok
+test_floor_aura_still_enforces_horizontal_bounds (test_rig_gate_report.RigGateModeTests.test_floor_aura_still_enforces_horizontal_bounds) ... ok
+test_floor_aura_still_enforces_the_top_bound (test_rig_gate_report.RigGateModeTests.test_floor_aura_still_enforces_the_top_bound) ... ok
+test_floor_aura_touching_the_canvas_edge_is_clipped_and_fails (test_rig_gate_report.RigGateModeTests.test_floor_aura_touching_the_canvas_edge_is_clipped_and_fails)
+Reaching the final row means the glow is cut off, not merely low. ... ok
+test_registered_floor_ring_candidate_passes_floor_aura_mode (test_rig_gate_report.RigGateModeTests.test_registered_floor_ring_candidate_passes_floor_aura_mode) ... skipped 'DG-015 candidate not present'
+test_trait_mode_still_rejects_pixels_below_the_foot_baseline (test_rig_gate_report.RigGateModeTests.test_trait_mode_still_rejects_pixels_below_the_foot_baseline)
+The floor-aura exemption must not leak into ordinary partial layers. ... ok
+test_empty_library_is_zero (test_saturation.EstimateValidSpaceTests.test_empty_library_is_zero) ... ok
+test_estimate_is_deterministic (test_saturation.EstimateValidSpaceTests.test_estimate_is_deterministic) ... ok
+test_excludes_reduce_the_space (test_saturation.EstimateValidSpaceTests.test_excludes_reduce_the_space) ... ok
+test_no_rules_leaves_the_ceiling_intact (test_saturation.EstimateValidSpaceTests.test_no_rules_leaves_the_ceiling_intact) ... ok
+test_optional_category_absence_is_counted (test_saturation.EstimateValidSpaceTests.test_optional_category_absence_is_counted) ... ok
+test_pose_locked_outfits_collapse_the_space (test_saturation.EstimateValidSpaceTests.test_pose_locked_outfits_collapse_the_space) ... ok
+test_allocation_stays_sequential_and_unique (test_saturation.ReservedTokenIdTests.test_allocation_stays_sequential_and_unique) ... ok
+test_config_reserves_exactly_the_legendary_count (test_saturation.ReservedTokenIdTests.test_config_reserves_exactly_the_legendary_count) ... ok
+test_no_reservations_is_plain_counting (test_saturation.ReservedTokenIdTests.test_no_reservations_is_plain_counting) ... ok
+test_production_split_totals_the_collection (test_saturation.ReservedTokenIdTests.test_production_split_totals_the_collection) ... ok
+test_reserved_ids_are_skipped (test_saturation.ReservedTokenIdTests.test_reserved_ids_are_skipped) ... ok
+test_reserved_ids_reject_bad_input (test_saturation.ReservedTokenIdTests.test_reserved_ids_reject_bad_input) ... ok
+test_healthy_saturation_carries_no_warning (test_saturation.SaturationReportTests.test_healthy_saturation_carries_no_warning) ... ok
+test_reports_both_the_ceiling_and_the_valid_space (test_saturation.SaturationReportTests.test_reports_both_the_ceiling_and_the_valid_space) ... ok
+test_warns_at_moderate_saturation (test_saturation.SaturationReportTests.test_warns_at_moderate_saturation) ... ok
+test_warns_when_the_supply_nearly_exhausts_the_space (test_saturation.SaturationReportTests.test_warns_when_the_supply_nearly_exhausts_the_space) ... ok
+test_zero_valid_space_does_not_divide_by_zero (test_saturation.SaturationReportTests.test_zero_valid_space_does_not_divide_by_zero) ... ok
+test_capes_hang_from_the_shoulders_to_above_the_baseline (test_trait_seating.BackAccessorySeatingTests.test_capes_hang_from_the_shoulders_to_above_the_baseline) ... ok
+test_every_wing_pair_clears_the_body (test_trait_seating.BackAccessorySeatingTests.test_every_wing_pair_clears_the_body)
+Wings must extend past the silhouette on both sides. ... ok
+test_no_neck_accessory_is_registered_without_being_redrawn (test_trait_seating.NeckAccessoryWithdrawalTests.test_no_neck_accessory_is_registered_without_being_redrawn) ... ok
+test_the_withdrawal_is_recorded (test_trait_seating.NeckAccessoryWithdrawalTests.test_the_withdrawal_is_recorded)
+The record travels with the repository; the retired bytes do not. ... ok
+test_no_outfit_leaves_the_leg_bare (test_trait_seating.OutfitFootwearTests.test_no_outfit_leaves_the_leg_bare) ... ok
+test_the_withdrawal_is_recorded (test_trait_withdrawals.TraitWithdrawalTests.test_the_withdrawal_is_recorded) ... ok
+test_withdrawn_traits_stay_out (test_trait_withdrawals.TraitWithdrawalTests.test_withdrawn_traits_stay_out) ... ok
+test_asymmetric_grip_pose_may_shift_silhouette_center (test_validate_assets.ValidateAssetsTests.test_asymmetric_grip_pose_may_shift_silhouette_center) ... ok
+test_aura_may_touch_canvas_edges (test_validate_assets.ValidateAssetsTests.test_aura_may_touch_canvas_edges) ... ok
+test_background_must_not_contain_transparency (test_validate_assets.ValidateAssetsTests.test_background_must_not_contain_transparency) ... ok
+test_base_pose_locked_geometry_is_enforced (test_validate_assets.ValidateAssetsTests.test_base_pose_locked_geometry_is_enforced) ... ok
+test_corrupted_png_fails_complete_decode (test_validate_assets.ValidateAssetsTests.test_corrupted_png_fails_complete_decode) ... ok
+test_folder_category_must_match_filename (test_validate_assets.ValidateAssetsTests.test_folder_category_must_match_filename) ... ok
+test_manifest_accepts_blocked_reference (test_validate_assets.ValidateAssetsTests.test_manifest_accepts_blocked_reference) ... ok
+test_manifest_requires_all_eight_background_candidates (test_validate_assets.ValidateAssetsTests.test_manifest_requires_all_eight_background_candidates) ... ok
+test_manifest_verifies_background_candidate_provenance (test_validate_assets.ValidateAssetsTests.test_manifest_verifies_background_candidate_provenance) ... ok
+test_non_effect_trait_may_not_touch_edge (test_validate_assets.ValidateAssetsTests.test_non_effect_trait_may_not_touch_edge) ... ok
+test_three_digit_sequence_required (test_validate_assets.ValidateAssetsTests.test_three_digit_sequence_required) ... ok
+test_valid_transparent_pose_passes (test_validate_assets.ValidateAssetsTests.test_valid_transparent_pose_passes) ... ok
+test_changed_locked_anchor_fails (test_validate_config.ValidateConfigTests.test_changed_locked_anchor_fails) ... ok
+test_dressed_outfit_bound_to_its_base_may_hide_it (test_validate_config.ValidateConfigTests.test_dressed_outfit_bound_to_its_base_may_hide_it) ... ok
+test_hand_object_may_be_drawn_in_hand (test_validate_config.ValidateConfigTests.test_hand_object_may_be_drawn_in_hand) ... ok
+test_hides_needs_a_reason (test_validate_config.ValidateConfigTests.test_hides_needs_a_reason) ... ok
+test_hides_rejects_unknown_own_and_background_layers (test_validate_config.ValidateConfigTests.test_hides_rejects_unknown_own_and_background_layers) ... ok
+test_hiding_the_base_needs_a_pose_binding (test_validate_config.ValidateConfigTests.test_hiding_the_base_needs_a_pose_binding)
+Without one, a dressed figure would be drawn over whichever pose was drawn. ... ok
+test_in_hand_rejects_other_layers_duplicates_and_missing_reasons (test_validate_config.ValidateConfigTests.test_in_hand_rejects_other_layers_duplicates_and_missing_reasons) ... ok
+test_locked_collection_and_empty_rules_pass (test_validate_config.ValidateConfigTests.test_locked_collection_and_empty_rules_pass) ... ok
+test_missing_trait_reference_fails (test_validate_config.ValidateConfigTests.test_missing_trait_reference_fails) ... ok
+test_mutual_requirement_warns_but_passes (test_validate_config.ValidateConfigTests.test_mutual_requirement_warns_but_passes) ... ok
+test_requires_and_excludes_contradiction_fails (test_validate_config.ValidateConfigTests.test_requires_and_excludes_contradiction_fails) ... ok
+test_reserved_ids_outside_the_collection_are_rejected (test_validate_config.ValidateConfigTests.test_reserved_ids_outside_the_collection_are_rejected) ... ok
+test_same_category_requirement_is_impossible (test_validate_config.ValidateConfigTests.test_same_category_requirement_is_impossible) ... ok
+test_supply_and_reserved_ids_must_total_the_collection (test_validate_config.ValidateConfigTests.test_supply_and_reserved_ids_must_total_the_collection) ... ok
+test_any_transparency_fails (test_validate_legendary.CheckTests.test_any_transparency_fails)
+A transparent pixel means a background was keyed, not painted. ... ok
+test_digest_is_stable_and_content_derived (test_validate_legendary.CheckTests.test_digest_is_stable_and_content_derived) ... ok
+test_truncated_file_is_reported_not_raised (test_validate_legendary.CheckTests.test_truncated_file_is_reported_not_raised) ... ok
+test_valid_piece_passes (test_validate_legendary.CheckTests.test_valid_piece_passes) ... ok
+test_wrong_canvas_fails (test_validate_legendary.CheckTests.test_wrong_canvas_fails) ... ok
+test_artwork_is_unique (test_validate_legendary.RegisteredLegendaryTests.test_artwork_is_unique)
+'1 of 1' is the premise; a duplicate would destroy it silently. ... ok
+test_every_piece_passes_its_checks (test_validate_legendary.RegisteredLegendaryTests.test_every_piece_passes_its_checks) ... ok
+test_generator_cannot_see_the_legendary_folder (test_validate_legendary.RegisteredLegendaryTests.test_generator_cannot_see_the_legendary_folder)
+assets/legendary/ must never be discovered as a trait category. ... ok
+test_legendaries_stay_out_of_the_trait_ledger (test_validate_legendary.RegisteredLegendaryTests.test_legendaries_stay_out_of_the_trait_ledger)
+Mixing them in would corrupt the category counts in the status report. ... ok
+test_no_finish_or_depth_pass_was_applied (test_validate_legendary.RegisteredLegendaryTests.test_no_finish_or_depth_pass_was_applied) ... ok
+test_seven_pieces_are_registered (test_validate_legendary.RegisteredLegendaryTests.test_seven_pieces_are_registered) ... ok
+test_dimension_mismatch_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_dimension_mismatch_fails) ... ok
+test_empty_registry_passes_during_preproduction (test_validate_manifest_consistency.ManifestConsistencyTests.test_empty_registry_passes_during_preproduction) ... ok
+test_missing_registered_asset_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_missing_registered_asset_fails) ... ok
+test_nonproduction_ready_status_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_nonproduction_ready_status_fails) ... ok
+test_sha256_mismatch_fails (test_validate_manifest_consistency.ManifestConsistencyTests.test_sha256_mismatch_fails) ... ok
+test_valid_registered_asset_passes (test_validate_manifest_consistency.ManifestConsistencyTests.test_valid_registered_asset_passes) ... ok
+test_attribute_layer_order_tampering_fails (test_validate_output.ValidateOutputTests.test_attribute_layer_order_tampering_fails) ... ok
+test_dry_run_requires_explicit_allowance (test_validate_output.ValidateOutputTests.test_dry_run_requires_explicit_allowance) ... ok
+test_duplicate_trait_signature_fails (test_validate_output.ValidateOutputTests.test_duplicate_trait_signature_fails) ... ok
+test_missing_metadata_file_fails (test_validate_output.ValidateOutputTests.test_missing_metadata_file_fails) ... ok
+test_tampered_image_hash_fails (test_validate_output.ValidateOutputTests.test_tampered_image_hash_fails) ... ok
+test_valid_rendered_output_passes (test_validate_output.ValidateOutputTests.test_valid_rendered_output_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 251 tests in 41.627s
+
+OK (skipped=4)
+refusing to write into assets/: treated files are candidates, not registered assets
+Rendered 0001/1
+Rendered 0001/1
+Rendered 0001/1
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Prepared 0001/8
+Prepared 0002/8
+Prepared 0003/8
+Prepared 0004/8
+Prepared 0005/8
+Prepared 0006/8
+Prepared 0007/8
+Prepared 0008/8
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Prepared 0001/4
+Prepared 0002/4
+Prepared 0003/4
+Prepared 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4
+Rendered 0001/4
+Rendered 0002/4
+Rendered 0003/4
+Rendered 0004/4

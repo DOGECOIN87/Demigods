@@ -42,3 +42,17 @@ python scripts/apply_depth_treatment.py \
 The refinement promotes faint foreground detail near the confident subject and filters large frame-edge background fragments. Local feathered ellipses and polygons in `config/depth_mask_overrides.json` protect disconnected foreground objects, including held staffs and weapons in 017, 025, 044, 049, 051, 056, 061, 065 and 069; the floating crystal in 012, bird in 023, flask in 038, page in 059; the foreground gate in 010 and table in 057; and the earlier corrections to 024, 029, 034, 040, 045, 047, 054, 055, 060 and 072. Their edges blend with the surrounding scene. Inspect every full-size output and mask before approving the collection; other isolated effects may still need hand correction. The original masks and source art remain intact.
 
 After processing, the script also writes `contact_sheet.png` in the output folder. It is a labeled grid of the treated images for quick review. Set `--sheet-columns` and `--sheet-thumb` to change its layout; inspect individual PNGs at full size for mask edges.
+
+## 2026-10-01 review checkpoint
+
+The protection shape's interior now stays fully white; feathering extends only
+outside it. Additional overrides protect the scales in 033, hammer in 039,
+tablet in 041, wand/prisms in 042, oar in 052, staff in 053, katana in 062 and
+honey crystal in 067. There are 33 images with local overrides in total.
+
+The saved corrected masks are in `images/variations/subject_masks_refined_review/`
+and rebuilt outputs in `images/variations/depth_treated_review_2026-10-01/`.
+Use `python scripts/build_collection_review.py` to recreate the evidence sheets,
+including the original marked 50-image order. See
+[the full review](qa/review_2026-10-01/README.md) for source counts, pixel-preservation
+checks, all active trait categories and remaining outfit work.
