@@ -7,6 +7,10 @@ subsequent mask and ledger corrections recorded in this checkpoint.
 assets were reviewed, but the remaining garment fit defects mean this is not a
 final visual approval of the collection.**
 
+**Later update:** the scepter 010 eye overlap identified below was corrected
+with a [compact in-hand replacement](../hand_object_010_compact_2026-10-01.md).
+The measurements below describe the earlier snapshot.
+
 ## Corrected images
 
 - [Corrected 50-image sheet](random_50_corrected.png) — the same 5-column,

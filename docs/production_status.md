@@ -12,10 +12,11 @@ The base-body pose family and all eight backgrounds are registered, and the firs
 
 **Current visual review, 2026-10-01:** all 134 registered files and generator
 checks pass, but five garment-only families still need dressed-body replacements
-across all five poses, the horned scepter needs eye-clearance review and silver
-rear hair needs alpha-edge cleanup. The 72 current variation images have been
+across all five poses, and silver rear hair needs alpha-edge cleanup. The 72 current variation images have been
 rebuilt with stronger foreground masks and exterior-only feathering. See
 [the current review, corrected sheets and full-size exports](qa/review_2026-10-01/README.md).
+The horned scepter's eye overlap was corrected later on 2026-10-01; see
+[its replacement composite and QA](qa/hand_object_010_compact_2026-10-01.md).
 The variations folder's 77 source files comprise 72 current PNGs, four historical
 1024 WebPs and one JPEG reference; they are not 77 current collectible exports.
 

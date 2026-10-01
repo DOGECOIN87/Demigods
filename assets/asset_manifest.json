@@ -2587,7 +2587,7 @@
       "category": "hand_objects",
       "path": "assets/hand_objects/hand_object_010_horned_skull_scepter_pose_002_left.png",
       "status": "production_ready",
-      "sha256": "06464f2e7b77ddc56e02b8c5658af8102eecbab02126ca8e697cbc286082ef5d",
+      "sha256": "fd818584e74616d90a16e297a9190d26f0138daaeb129b6537f70a164fc49b15",
       "dimensions": [
         1254,
         1254
@@ -2595,14 +2595,14 @@
       "format": "PNG",
       "mode": "RGBA",
       "backlog_id": "DG-142",
-      "qa_composite": "docs/qa/hand_objects_in_hand_2026-09-27-passing.png",
+      "qa_composite": "docs/qa/compact_scepter_2026-10-01.png",
       "provenance": {
         "origin": "generator_render_painted_in_hand",
         "trait": "Horned skull scepter",
         "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
         "reference_path": "assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png",
-        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-09-27-pass/010_horned_skull_scepter.png",
-        "source_sha256": "ce15cf694a959a851cd08693a1d7ae010be4bf3bc37666a47b13d16730af3040",
+        "source_path": "images/trait_candidates/hand_objects/in_hand_2026-10-01-scepter/010_compact_skull_source.png",
+        "source_sha256": "de95cc9745b8baf783002a0270adfe40d16bd62274f9c88e3cb68f8c884c59f1",
         "source_dimensions": [
           1254,
           1254
@@ -2611,10 +2611,10 @@
         "contact_feature": "painted hand over the base's closed fist",
         "painted_hand": {
           "centre": [
-            623.6,
-            863.6
+            440.9,
+            773.2
           ],
-          "width": 98
+          "width": 75
         },
         "base_hand": {
           "centre": [
@@ -2626,16 +2626,16 @@
         "transform": {
           "method": "clean_speckle_then_reduce_and_place_by_reviewed_fit",
           "resample": "lanczos",
-          "scale": 0.76,
+          "scale": 1.0,
           "offset": [
-            -34,
-            116
+            0,
+            0
           ],
           "output_bounds": [
-            340,
-            317,
-            549,
-            1012
+            369,
+            375,
+            530,
+            1015
           ],
           "cleanup": {
             "alpha_floor": 16,
@@ -2670,8 +2670,8 @@
           "pose_aware_revision_script": "scripts/build_pose_aware_hand_object_candidates.py"
         }
       },
-      "approved_on": "2026-09-27",
-      "qa_report": "docs/qa/hand_objects_in_hand_2026-09-27-passing.md"
+      "approved_on": "2026-10-01",
+      "qa_report": "docs/qa/hand_object_010_compact_2026-10-01.md"
     },
     {
       "id": "hand_object_012",

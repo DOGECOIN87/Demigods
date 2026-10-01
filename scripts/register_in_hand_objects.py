@@ -120,6 +120,16 @@ QA_PASS_0927 = {
         "hand_object_010": ("010_horned_skull_scepter.png", 2, (623.6, 863.6), 98, 0.76, (-34, 116)),
     },
 }
+QA_COMPACT_1001 = {
+    "decided_on": "2026-10-01",
+    "qa_report": "docs/qa/hand_object_010_compact_2026-10-01.md",
+    "qa_composite": "docs/qa/compact_scepter_2026-10-01.png",
+    "prompt": "prompts/hand_objects_in_hand_pack_2026-09-27.md",
+    "items": {
+        # Native 1254 render already aligned to the registered pose-002 fist.
+        "hand_object_010": ("010_compact_skull_source.png", 2, (440.9, 773.2), 75, 1.0, (0, 0)),
+    },
+}
 
 # Batches fitted with scripts/fit_in_hand_render.py, applied in order after round 1.
 BATCHES = [
@@ -131,6 +141,7 @@ BATCHES = [
     {"folder": SOURCES, **QA_0927, "items": ROUND1_REFIT_0927},
     {"folder": ROUND2, **QA_0927, "items": ROUND2_REFIT_0927},
     {"folder": ROOT / "images" / "trait_candidates" / "hand_objects" / "in_hand_2026-09-27-pass", **QA_PASS_0927},
+    {"folder": ROOT / "images" / "trait_candidates" / "hand_objects" / "in_hand_2026-10-01-scepter", **QA_COMPACT_1001},
 ]
 
 
