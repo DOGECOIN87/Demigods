@@ -199,3 +199,24 @@ The baseline for the close-up comparisons is the prior mask code and override
 configuration at `ae947c5`, reconstructed with the same treatment parameters.
 The scripts write review candidates and evidence; they do not promote artwork
 or assign collection token IDs.
+
+## Generative test sheet
+
+[View the 50-sample sheet](generative_test_50.png). It composites the registered
+modular assets through the production renderer at commit `bfb91de`, using seed
+`demigods-test-sheet-2026-10-01`. All 50 trait signatures are unique; the sample
+covers all five base poses, 22 of 25 outfit variants, and all eight backgrounds.
+These are test IDs, not assigned collection tokens or the separate legendary art.
+
+```bash
+python scripts/generate_777.py --supply 50 \
+  --seed demigods-test-sheet-2026-10-01 \
+  --allow-nonstandard-supply --output /tmp/demigods-test-50
+python scripts/build_generated_test_sheet.py /tmp/demigods-test-50 \
+  --out docs/qa/review_2026-10-01/generative_test_50.png
+```
+
+The test manifest reports trait provenance
+`59ff71940adeea2dc64e4b2941e00c8a49c07b82731423d284f64cc943c62831`
+and image provenance
+`ad5bc6027c9b4ff81f225835590b32074aae982c34ca4cc91a36bc7529cf86d6`.
