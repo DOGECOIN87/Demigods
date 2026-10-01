@@ -72,8 +72,11 @@ def add_held_effects(mask: Image.Image, shapes: list[dict]) -> Image.Image:
             draw.polygon([tuple(p) for p in points], fill=255)
         else:
             raise ValueError(f'Unknown foreground shape: {item}')
-        overlay = overlay.filter(ImageFilter.GaussianBlur(item.get('feather', 4)))
-        mask = ImageChops.lighter(mask, overlay)
+        # Feather outside the protection shape. Blurring the shape alone weakens
+        # its interior, so a prop near its boundary is still partly treated.
+        feathered = overlay.filter(ImageFilter.GaussianBlur(item.get('feather', 4)))
+        protected = ImageChops.lighter(overlay, feathered)
+        mask = ImageChops.lighter(mask, protected)
     return mask
 
 
