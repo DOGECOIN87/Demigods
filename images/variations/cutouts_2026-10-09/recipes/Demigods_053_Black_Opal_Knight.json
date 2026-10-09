@@ -1,0 +1,30 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired knight with undercut and earring",
+   "black opal mace held in the right hand: spiked head with two large opal cabochons and black-and-gold spikes (60-320, 130-380), gold-banded shaft, and the spiked butt down to (~470, 1090)",
+   "black-and-gold scale plate armour with opal-studded spiked pauldrons, opal gems and crystal drops",
+   "black-and-opal tattered cape on both sides",
+   "armoured boots",
+   "FOREGROUND: depth-blurred opal crystal shard at the bottom-left edge, lower than the boots (35-92, 1195-1254)",
+   "FOREGROUND: depth-blurred opal crystal shard at the bottom edge right of centre, lower than the boots (1050-1112, 1200-1254)"
+  ],
+  "remove": [
+   "opal cavern walls, crystal pillars, hanging crystals and opal waterfalls",
+   "black stone blocks and ledges, including the blurred blocks across the bottom of the frame (terrain)",
+   "opal crystal clusters standing on the blocks at the bottom-left (40-210, 1040-1160) and bottom-right (1140-1254, 1075-1160): they sit above the boot-sole line, at or behind the character",
+   "light glint at (270-300, 1210-1240)",
+   "reflective cave floor and water"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the cape and floor); mace head spikes, shaft and butt spike checked at zoom",
+   "the two blurred crystal shards at the bottom edge traced by hand with a wide feather"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {"op": "keep", "feather": 3.0, "polys": [
+   [[35,1254],[40,1226],[52,1202],[65,1195],[78,1210],[88,1235],[92,1254]],
+   [[1050,1254],[1060,1228],[1075,1206],[1088,1200],[1100,1215],[1110,1240],[1112,1254]]]}
+ ]
+}
