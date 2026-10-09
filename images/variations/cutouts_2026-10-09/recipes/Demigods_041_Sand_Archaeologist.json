@@ -1,0 +1,171 @@
+{
+ "notes": {
+  "keep": [
+   "tousled brown-haired sand archaeologist with goggles strap",
+   "gold-and-turquoise winged-scarab relic tablet held up in the right hand",
+   "rolled parchment map tucked under the left arm, with satchel, compass medallion, brass canisters and tools hanging from the belts",
+   "green fringed scarf, cream tattered duster coat, brown leather vest and belts, gauntlets, knee guards",
+   "brown laced boots",
+   "FOREGROUND: depth-blurred unrolled parchment map lying in front at the bottom-left (40-315, 1072-1254)",
+   "FOREGROUND: depth-blurred painted urn overlapping the bottom-right edge (1132-1254, 950-1254)"
+  ],
+  "remove": [
+   "desert temple ruins, carved pillars, statues and sky",
+   "scaffolding, canopy cloth, lanterns",
+   "treasure chests, rolled scrolls, crates and urns behind the feet line",
+   "blurred dark rubble at the bottom-left edge and blurred stone blocks at the bottom-right (terrain)",
+   "sand, rocks and dust on the ground"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet made the relic tablet translucent)",
+   "removed sand rocks BiRefNet fused to the coat: below the dark lining edge left of the coat point (846-961, 957-1052) and under the curled right coat tip (1046-1105, 886-940)",
+   "foreground map and urn traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      952,
+      957
+     ],
+     [
+      961,
+      966
+     ],
+     [
+      961,
+      1052
+     ],
+     [
+      850,
+      1052
+     ],
+     [
+      846,
+      1042
+     ],
+     [
+      900,
+      1000
+     ]
+    ],
+    [
+     [
+      1046,
+      890
+     ],
+     [
+      1105,
+      884
+     ],
+     [
+      1105,
+      945
+     ],
+     [
+      1040,
+      945
+     ],
+     [
+      1040,
+      905
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      45,
+      1072
+     ],
+     [
+      110,
+      1088
+     ],
+     [
+      170,
+      1103
+     ],
+     [
+      220,
+      1118
+     ],
+     [
+      255,
+      1148
+     ],
+     [
+      280,
+      1183
+     ],
+     [
+      300,
+      1215
+     ],
+     [
+      315,
+      1254
+     ],
+     [
+      118,
+      1254
+     ],
+     [
+      88,
+      1200
+     ],
+     [
+      60,
+      1150
+     ],
+     [
+      40,
+      1108
+     ]
+    ],
+    [
+     [
+      1140,
+      1254
+     ],
+     [
+      1135,
+      1150
+     ],
+     [
+      1132,
+      1060
+     ],
+     [
+      1140,
+      990
+     ],
+     [
+      1160,
+      965
+     ],
+     [
+      1200,
+      955
+     ],
+     [
+      1254,
+      950
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
