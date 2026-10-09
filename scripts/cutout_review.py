@@ -5,9 +5,12 @@ The workflow is deliberately per image (see docs/qa/background_removal_2026-10-0
 
 1. ``predict NAME`` runs two segmentation models (isnet-anime and BiRefNet-general)
    on a single source and caches both raw mattes.
-2. The image is reviewed by eye and a recipe for that image is written into
-   ``recipes.json``: which matte to start from plus hand-placed corrections
-   (regions forced to keep, regions forced to remove, small-island cleanup).
+2. The image is reviewed by eye and a recipe for that image is written to
+   ``recipes/NAME.json``: notes on what is kept and removed, which matte to start
+   from, and hand-placed corrections (regions forced to keep or remove, edge
+   snapping, colour keys, small-island cleanup).
+   ``grid NAME --crop X0 Y0 X1 Y1`` draws a coordinate grid over any region of the
+   source, a raw matte or the current result, for placing those corrections.
 3. ``render NAME`` applies that image's recipe, writes the transparent PNG and a
    review sheet (cutout over magenta and over dark grey) so the edges, held items
    and foreground items can be checked before moving to the next image.
@@ -21,6 +24,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 
 import cv2
@@ -30,7 +34,7 @@ from scipy import ndimage
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "images/variations/cutouts_2026-10-09"
-RECIPES = OUT_DIR / "recipes.json"
+RECIPE_DIR = OUT_DIR / "recipes"
 MODEL_SPECS = {
     "isnet": ("isnet-anime.onnx", (0.485, 0.456, 0.406), (1.0, 1.0, 1.0), False),
     "birefnet": ("birefnet-general.onnx", (0.485, 0.456, 0.406), (0.229, 0.224, 0.225), True),
@@ -61,7 +65,7 @@ def predict_matte(model_dir: Path, key: str, image: Image.Image) -> np.ndarray:
 
 
 def source_path(name: str) -> Path:
-    recipe = load_recipes().get(name, {})
+    recipe = load_recipe(name)
     if "source" in recipe:
         return ROOT / recipe["source"]
     return ROOT / "images/variations/complete_72" / f"{name}.png"
@@ -73,8 +77,9 @@ def cache_dir(args) -> Path:
     return path
 
 
-def load_recipes() -> dict:
-    return json.loads(RECIPES.read_text()) if RECIPES.exists() else {}
+def load_recipe(name: str) -> dict:
+    path = RECIPE_DIR / f"{name}.json"
+    return json.loads(path.read_text()) if path.exists() else {}
 
 
 def poly_mask(shape, polys) -> np.ndarray:
@@ -120,6 +125,12 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             d0, d1 = op["ramp"]
             factor = np.clip((lum - d0) / (d1 - d0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.8))
+            alpha[region] = alpha[region] * factor[region]
+        elif kind == "drop_warm":  # inside region, fade out pixels warmer (red minus blue) than the cool item
+            warm = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
+            w0, w1 = op["ramp"]
+            factor = np.clip((w1 - warm) / (w1 - w0), 0, 1)
+            factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.7))
             alpha[region] = alpha[region] * factor[region]
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
@@ -240,7 +251,24 @@ def cmd_predict(args) -> None:
 
 
 def cmd_render(args) -> None:
-    recipe = load_recipes()[args.name]
+    recipe = load_recipe(args.name)
+    if not recipe:
+        raise SystemExit(f"no recipe at {RECIPE_DIR / (args.name + '.json')}")
+    rgb, alpha = compute(args, recipe)
+    review = cache_dir(args) / f"{args.name}.review.png"
+    review_sheet(rgb, alpha, review, args.crop)
+    if not args.preview:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        out = OUT_DIR / f"{args.name}.png"
+        rgba = np.dstack([decontaminate(rgb, alpha), alpha])
+        tmp = out.with_suffix(".tmp.png")
+        Image.fromarray(rgba, "RGBA").save(tmp, optimize=True)
+        tmp.replace(out)
+        print(f"wrote {out.relative_to(ROOT)} sha256={hashlib.sha256(out.read_bytes()).hexdigest()[:12]}")
+    print(f"review sheet {review}")
+
+
+def compute(args, recipe: dict):
     src = source_path(args.name)
     with Image.open(src) as im:
         rgb = np.asarray(im.convert("RGB"))
@@ -254,18 +282,42 @@ def cmd_render(args) -> None:
                 crop = Image.fromarray(rgb[y0:y1, x0:x1])
                 Image.fromarray(predict_matte(Path(args.models), key, crop)).save(dest)
             mattes[f"sub:{key}:{x0},{y0},{x1},{y1}"] = np.asarray(Image.open(dest).convert("L"))
-    alpha = apply_recipe(rgb, mattes, recipe)
-    review = cache_dir(args) / f"{args.name}.review.png"
-    review_sheet(rgb, alpha, review, args.crop)
-    if not args.preview:
-        OUT_DIR.mkdir(parents=True, exist_ok=True)
-        out = OUT_DIR / f"{args.name}.png"
-        rgba = np.dstack([decontaminate(rgb, alpha), alpha])
-        tmp = out.with_suffix(".tmp.png")
-        Image.fromarray(rgba, "RGBA").save(tmp, optimize=True)
-        tmp.replace(out)
-        print(f"wrote {out.relative_to(ROOT)} sha256={hashlib.sha256(out.read_bytes()).hexdigest()[:12]}")
-    print(f"review sheet {review}")
+    return rgb, apply_recipe(rgb, mattes, recipe)
+
+
+def cmd_grid(args) -> None:
+    """Zoomed crop with a labelled pixel grid, for placing recipe coordinates."""
+    src = source_path(args.name)
+    with Image.open(src) as im:
+        rgb = np.asarray(im.convert("RGB"))
+    if args.matte != "none":
+        if args.matte == "result":
+            _, a = compute(args, load_recipe(args.name))
+        else:
+            a = np.asarray(Image.open(cache_dir(args) / f"{args.name}.{args.matte}.png").convert("L"))
+        a = a.astype(np.float32)[..., None] / 255
+        rgb = (rgb * a + np.array([255, 0, 255]) * (1 - a)).astype(np.uint8)
+    x0, y0, x1, y1 = args.crop
+    crop = Image.fromarray(rgb[y0:y1, x0:x1])
+    s = args.scale or max(1, min(5, 900 // max(crop.width, crop.height)))
+    crop = crop.resize((crop.width * s, crop.height * s), Image.NEAREST)
+    pad, step = 34, args.step
+    sheet = Image.new("RGB", (crop.width + pad, crop.height + pad), "white")
+    sheet.paste(crop, (pad, pad))
+    draw = ImageDraw.Draw(sheet)
+    for gx in range((x0 // step + 1) * step, x1, step):
+        X = pad + (gx - x0) * s
+        draw.line([(X, pad), (X, pad + crop.height)], fill=(0, 255, 0) if gx % (step * 5) == 0 else (255, 255, 0))
+        if gx % (step * 2) == 0:
+            draw.text((X - 10, 2 if (gx // (step * 2)) % 2 else 16), str(gx), fill="black")
+    for gy in range((y0 // step + 1) * step, y1, step):
+        Y = pad + (gy - y0) * s
+        draw.line([(pad, Y), (pad + crop.width, Y)], fill=(0, 255, 0) if gy % (step * 5) == 0 else (255, 255, 0))
+        if gy % (step * 2) == 0:
+            draw.text((0, Y - 5), str(gy), fill="black")
+    dest = cache_dir(args) / f"{args.name}.grid.png"
+    sheet.save(dest)
+    print(dest)
 
 
 def cmd_compare(args) -> None:
@@ -291,15 +343,19 @@ def cmd_compare(args) -> None:
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--models", default="models")
-    p.add_argument("--cache", default="cutout_cache")
+    p.add_argument("--models", default=os.environ.get("CUTOUT_MODELS", "models"))
+    p.add_argument("--cache", default=os.environ.get("CUTOUT_CACHE", "cutout_cache"))
     sub = p.add_subparsers(dest="cmd", required=True)
-    for name, fn in (("predict", cmd_predict), ("compare", cmd_compare), ("render", cmd_render)):
+    for name, fn in (("predict", cmd_predict), ("compare", cmd_compare), ("render", cmd_render), ("grid", cmd_grid)):
         s = sub.add_parser(name)
         s.add_argument("name")
-        s.add_argument("--crop", type=int, nargs=4)
+        s.add_argument("--crop", type=int, nargs=4, required=name == "grid")
         if name == "render":
             s.add_argument("--preview", action="store_true", help="write only the review sheet")
+        if name == "grid":
+            s.add_argument("--step", type=int, default=20)
+            s.add_argument("--scale", type=int)
+            s.add_argument("--matte", choices=("none", "birefnet", "isnet", "result"), default="none")
         s.set_defaults(fn=fn)
     args = p.parse_args()
     args.fn(args)

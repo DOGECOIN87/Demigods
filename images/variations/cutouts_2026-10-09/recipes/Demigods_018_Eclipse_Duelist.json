@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "silver-and-black haired duelist with gold star hair pin and earring",
+   "two long swords, one in each hand, full blades to the tips (left tip ~190,1145; right tip ~1060,1150)",
+   "black-and-white coat with gold pauldron, belts and chains, torn black-and-crimson cape",
+   "black and white trousers, black thigh-high boots with gold crests"
+  ],
+  "remove": [
+   "black eclipse sun and its corona, storm clouds",
+   "ruined colosseum arches, columns and statues",
+   "torn banners with sun emblems and their poles",
+   "swords stuck in the ground, gravestones and rubble",
+   "blurred rocks and embers in the bottom corners and drifting red petals (terrain and air, not props)",
+   "reflective checkered floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged; both blade tips, cape tatters and chains checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

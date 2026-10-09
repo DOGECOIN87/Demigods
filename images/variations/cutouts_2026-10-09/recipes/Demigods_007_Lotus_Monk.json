@@ -1,0 +1,157 @@
+{
+ "notes": {
+  "keep": [
+   "bald monk with dark topknot, gold crown band and long gold hair ribbons",
+   "twisted lotus staff with glowing lotus head, gold tassels and hanging ornaments",
+   "gold robe, maroon trousers, sash, medallion, prayer beads",
+   "boots",
+   "FOREGROUND: depth-blurred lily pad in the bottom-left corner (0-100, 1170-1254)",
+   "FOREGROUND: lotus petals lying in front of the feet (418-488, 1210-1254 and 951-1020, 1176-1213)"
+  ],
+  "remove": [
+   "blossoming trees, cliffs, waterfalls, pagodas and bridge",
+   "stone lanterns, carved lotus stone and rocks",
+   "lotus pond, lotus flowers and lily pads behind the feet line",
+   "petals falling in the air and petals at or behind the feet line",
+   "blurred rock in the bottom-left/bottom-right corners (terrain)",
+   "stone floor and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed pink glow around the lotus staff head)",
+   "foreground lily pad and floor petals traced by hand"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      0,
+      1170
+     ],
+     [
+      20,
+      1174
+     ],
+     [
+      40,
+      1179
+     ],
+     [
+      55,
+      1190
+     ],
+     [
+      70,
+      1203
+     ],
+     [
+      83,
+      1218
+     ],
+     [
+      93,
+      1236
+     ],
+     [
+      100,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 0.8,
+   "polys": [
+    [
+     [
+      487,
+      1210
+     ],
+     [
+      486,
+      1222
+     ],
+     [
+      480,
+      1236
+     ],
+     [
+      470,
+      1248
+     ],
+     [
+      458,
+      1254
+     ],
+     [
+      420,
+      1254
+     ],
+     [
+      418,
+      1249
+     ],
+     [
+      430,
+      1240
+     ],
+     [
+      450,
+      1230
+     ],
+     [
+      468,
+      1220
+     ]
+    ],
+    [
+     [
+      951,
+      1176
+     ],
+     [
+      965,
+      1181
+     ],
+     [
+      985,
+      1180
+     ],
+     [
+      1003,
+      1187
+     ],
+     [
+      1020,
+      1200
+     ],
+     [
+      1005,
+      1209
+     ],
+     [
+      980,
+      1213
+     ],
+     [
+      960,
+      1206
+     ],
+     [
+      951,
+      1192
+     ]
+    ]
+   ]
+  }
+ ]
+}

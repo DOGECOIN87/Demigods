@@ -1,0 +1,272 @@
+{
+ "notes": {
+  "keep": [
+   "mint-haired coral oracle",
+   "coral-and-shell hair ornaments with pearls",
+   "coral staff with pearl orb, hanging pearls and crystal pendants",
+   "shell-sleeve dress with layered coral skirt, dangling pearl and crystal drops",
+   "boots",
+   "FOREGROUND: depth-blurred pink coral, scallop shell and pearls in the bottom-right corner",
+   "FOREGROUND: depth-blurred blue coral, shell and pearl in the bottom-left corner"
+  ],
+  "remove": [
+   "jellyfish, fish and bubbles",
+   "crystal-inlaid pillars and pillar bases",
+   "underwater palace, arches, balustrade and stairs",
+   "sharp pink coral cluster, shells and pearls on the floor at the left edge (behind the character's plane)",
+   "small floating crystal by the stairs (~1004,995)",
+   "glass water floor and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the staff top)",
+   "restored the glass crystal drop under the right skirt edge (894-913, 1102-1135) by traced outline",
+   "foreground props: pink coral branches keyed by red-minus-blue inside a traced region; shell/pearl/teal-coral base and the bottom-left blue coral and shell traced with feathered edges to match their depth blur; the pink sphere on the pillar ledge behind the coral stays removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "polys": [
+    [
+     [
+      901,
+      1102
+     ],
+     [
+      908,
+      1108
+     ],
+     [
+      913,
+      1118
+     ],
+     [
+      911,
+      1129
+     ],
+     [
+      904,
+      1135
+     ],
+     [
+      897,
+      1131
+     ],
+     [
+      894,
+      1120
+     ],
+     [
+      896,
+      1110
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "key_rb",
+   "ramp": [
+    12,
+    45
+   ],
+   "feather": 1.2,
+   "polys": [
+    [
+     [
+      1040,
+      1150
+     ],
+     [
+      1040,
+      1105
+     ],
+     [
+      1070,
+      1090
+     ],
+     [
+      1100,
+      1062
+     ],
+     [
+      1110,
+      1045
+     ],
+     [
+      1150,
+      1040
+     ],
+     [
+      1185,
+      1020
+     ],
+     [
+      1195,
+      960
+     ],
+     [
+      1215,
+      935
+     ],
+     [
+      1232,
+      914
+     ],
+     [
+      1254,
+      906
+     ],
+     [
+      1254,
+      1254
+     ],
+     [
+      1040,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      978,
+      1254
+     ],
+     [
+      983,
+      1205
+     ],
+     [
+      995,
+      1182
+     ],
+     [
+      1015,
+      1168
+     ],
+     [
+      1045,
+      1158
+     ],
+     [
+      1080,
+      1160
+     ],
+     [
+      1110,
+      1150
+     ],
+     [
+      1150,
+      1150
+     ],
+     [
+      1190,
+      1140
+     ],
+     [
+      1220,
+      1120
+     ],
+     [
+      1254,
+      1110
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      0,
+      1188
+     ],
+     [
+      15,
+      1173
+     ],
+     [
+      30,
+      1165
+     ],
+     [
+      45,
+      1156
+     ],
+     [
+      58,
+      1156
+     ],
+     [
+      66,
+      1170
+     ],
+     [
+      75,
+      1195
+     ],
+     [
+      95,
+      1203
+     ],
+     [
+      120,
+      1190
+     ],
+     [
+      140,
+      1185
+     ],
+     [
+      165,
+      1185
+     ],
+     [
+      185,
+      1192
+     ],
+     [
+      200,
+      1205
+     ],
+     [
+      210,
+      1225
+     ],
+     [
+      228,
+      1237
+     ],
+     [
+      248,
+      1241
+     ],
+     [
+      260,
+      1250
+     ],
+     [
+      260,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}

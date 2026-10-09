@@ -1,0 +1,276 @@
+{
+ "notes": {
+  "keep": [
+   "blonde swan knight with long ponytail and crystal tiara",
+   "feathered silver pauldrons, white plate armour with blue crystals",
+   "long silver rapier held in the right hand, tip at ~237,1180",
+   "blue-white layered skirt with crystal tassels",
+   "white armoured boots",
+   "FOREGROUND: two white swan feathers lying on the floor in the bottom-left corner (0-193, 1120-1231)",
+   "FOREGROUND: white swan feather lying on the floor bottom-right (1057-1212, 1125-1193)"
+  ],
+  "remove": [
+   "marble gate pillars with swan statues, wrought-iron gates and banners",
+   "lamp posts with hanging crystals",
+   "flower urns and white flower bushes",
+   "lake, swimming swans, castles, bridge, mountains and mist",
+   "floating feathers in the air and the feather behind the sword tip (300-370, 1100-1145)",
+   "reflective tiled floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet ghosted a swan and haze in)",
+   "floor feathers traced by hand (white on a white floor, so no model separates them)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.9,
+   "polys": [
+    [
+     [
+      0,
+      1120
+     ],
+     [
+      10,
+      1122
+     ],
+     [
+      14,
+      1140
+     ],
+     [
+      18,
+      1158
+     ],
+     [
+      28,
+      1170
+     ],
+     [
+      42,
+      1180
+     ],
+     [
+      55,
+      1187
+     ],
+     [
+      66,
+      1195
+     ],
+     [
+      80,
+      1202
+     ],
+     [
+      95,
+      1211
+     ],
+     [
+      105,
+      1220
+     ],
+     [
+      110,
+      1228
+     ],
+     [
+      100,
+      1231
+     ],
+     [
+      70,
+      1231
+     ],
+     [
+      40,
+      1229
+     ],
+     [
+      15,
+      1226
+     ],
+     [
+      0,
+      1224
+     ]
+    ],
+    [
+     [
+      192,
+      1142
+     ],
+     [
+      193,
+      1160
+     ],
+     [
+      185,
+      1180
+     ],
+     [
+      170,
+      1192
+     ],
+     [
+      150,
+      1203
+     ],
+     [
+      130,
+      1208
+     ],
+     [
+      100,
+      1215
+     ],
+     [
+      85,
+      1208
+     ],
+     [
+      80,
+      1195
+     ],
+     [
+      95,
+      1182
+     ],
+     [
+      110,
+      1175
+     ],
+     [
+      130,
+      1167
+     ],
+     [
+      150,
+      1160
+     ],
+     [
+      170,
+      1151
+     ]
+    ],
+    [
+     [
+      1057,
+      1189
+     ],
+     [
+      1062,
+      1182
+     ],
+     [
+      1070,
+      1175
+     ],
+     [
+      1080,
+      1167
+     ],
+     [
+      1090,
+      1160
+     ],
+     [
+      1100,
+      1153
+     ],
+     [
+      1110,
+      1149
+     ],
+     [
+      1120,
+      1145
+     ],
+     [
+      1135,
+      1137
+     ],
+     [
+      1150,
+      1130
+     ],
+     [
+      1160,
+      1127
+     ],
+     [
+      1175,
+      1125
+     ],
+     [
+      1190,
+      1129
+     ],
+     [
+      1200,
+      1134
+     ],
+     [
+      1207,
+      1140
+     ],
+     [
+      1212,
+      1148
+     ],
+     [
+      1205,
+      1150
+     ],
+     [
+      1196,
+      1153
+     ],
+     [
+      1190,
+      1159
+     ],
+     [
+      1182,
+      1164
+     ],
+     [
+      1175,
+      1170
+     ],
+     [
+      1162,
+      1177
+     ],
+     [
+      1150,
+      1182
+     ],
+     [
+      1138,
+      1186
+     ],
+     [
+      1120,
+      1190
+     ],
+     [
+      1100,
+      1192
+     ],
+     [
+      1080,
+      1193
+     ],
+     [
+      1065,
+      1192
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "dark-haired lantern keeper with twin buns, gold-and-red flower hairpins, red tassels and dangling ornaments",
+   "glowing gold lantern held up in the left hand by its ring handle, with its hanging tassel and gem",
+   "navy butterfly-pattern kimono with red lining, red obi and bow, gold tassel cords",
+   "geta sandals"
+  ],
+  "remove": [
+   "market stalls, awnings, shelves and goods",
+   "hanging paper lanterns and floating sky lanterns",
+   "pagodas, bridge, maple branches and night sky",
+   "wet stone street, reflections and scattered red leaves"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged; lantern ring interior, hand and hair edges checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

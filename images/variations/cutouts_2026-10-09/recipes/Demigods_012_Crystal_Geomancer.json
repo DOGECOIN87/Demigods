@@ -1,0 +1,327 @@
+{
+ "notes": {
+  "keep": [
+   "dark-haired crystal geomancer with gold-and-amethyst hair ornament and earrings",
+   "floating octahedral amethyst crystal hovering over the open left palm, with its four small orbiting shards",
+   "amethyst crystal pauldrons on both shoulders",
+   "black coat with gold trim, lilac tabard, crystal pendants and belts",
+   "dark boots",
+   "FOREGROUND: amethyst crystal cluster on the floor at bottom-left (0-210, 1115-1234), lower in frame than the boots",
+   "FOREGROUND: large blurred amethyst crystal cut off at the bottom-right edge (1150-1254, 1066-1254)"
+  ],
+  "remove": [
+   "geode cave wall, hanging crystals and crystal waterfalls",
+   "gothic bridges, arches, balustrades and candles",
+   "black rocks and the crystal clusters at the back left/right of the floor (behind the feet line)",
+   "small crystals scattered on the floor behind the feet line",
+   "glowing light behind the floating crystal",
+   "reflective tiled floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used",
+   "floating crystal and its four shards traced as polygons (geometric facets against a bright glow)",
+   "left pauldron crystal spikes restored with GrabCut"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "polys": [
+    [
+     [
+      353,
+      350
+     ],
+     [
+      394,
+      418
+     ],
+     [
+      429,
+      443
+     ],
+     [
+      348,
+      576
+     ],
+     [
+      271,
+      440
+     ],
+     [
+      310,
+      418
+     ]
+    ],
+    [
+     [
+      271,
+      484
+     ],
+     [
+      297,
+      504
+     ],
+     [
+      290,
+      522
+     ],
+     [
+      276,
+      512
+     ]
+    ],
+    [
+     [
+      289,
+      530
+     ],
+     [
+      304,
+      539
+     ],
+     [
+      302,
+      559
+     ],
+     [
+      289,
+      542
+     ]
+    ],
+    [
+     [
+      425,
+      485
+     ],
+     [
+      420,
+      515
+     ],
+     [
+      406,
+      522
+     ],
+     [
+      399,
+      504
+     ]
+    ],
+    [
+     [
+      401,
+      529
+     ],
+     [
+      401,
+      549
+     ],
+     [
+      392,
+      559
+     ],
+     [
+      390,
+      542
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    405,
+    500,
+    520,
+    630
+   ],
+   "fg": [
+    [
+     [
+      421,
+      555
+     ],
+     [
+      450,
+      540
+     ],
+     [
+      474,
+      526
+     ],
+     [
+      500,
+      515
+     ],
+     [
+      519,
+      515
+     ],
+     [
+      519,
+      628
+     ],
+     [
+      470,
+      628
+     ],
+     [
+      440,
+      615
+     ],
+     [
+      428,
+      598
+     ],
+     [
+      445,
+      588
+     ],
+     [
+      432,
+      570
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    0,
+    1100,
+    240,
+    1254
+   ],
+   "feather": 1.0,
+   "fg": [
+    [
+     [
+      0,
+      1150
+     ],
+     [
+      30,
+      1138
+     ],
+     [
+      55,
+      1130
+     ],
+     [
+      100,
+      1124
+     ],
+     [
+      135,
+      1115
+     ],
+     [
+      165,
+      1135
+     ],
+     [
+      200,
+      1158
+     ],
+     [
+      210,
+      1175
+     ],
+     [
+      195,
+      1192
+     ],
+     [
+      160,
+      1208
+     ],
+     [
+      120,
+      1220
+     ],
+     [
+      80,
+      1228
+     ],
+     [
+      40,
+      1232
+     ],
+     [
+      0,
+      1234
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      20,
+      1160
+     ],
+     [
+      60,
+      1145
+     ],
+     [
+      130,
+      1135
+     ],
+     [
+      180,
+      1165
+     ],
+     [
+      150,
+      1195
+     ],
+     [
+      90,
+      1210
+     ],
+     [
+      20,
+      1215
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 1.5,
+   "polys": [
+    [
+     [
+      1150,
+      1254
+     ],
+     [
+      1150,
+      1150
+     ],
+     [
+      1157,
+      1117
+     ],
+     [
+      1170,
+      1102
+     ],
+     [
+      1210,
+      1086
+     ],
+     [
+      1254,
+      1066
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}

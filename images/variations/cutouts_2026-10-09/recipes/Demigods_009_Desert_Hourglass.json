@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "curly-haired desert keeper in navy turban with gold medallion, chains and tassels",
+   "gold hourglass held in both hands",
+   "cream lace-edged cape including the open-lace hem on both sides",
+   "long navy scarf trailing right with fringe",
+   "robe, sash, satchel, hanging tassels and boots"
+  ],
+  "remove": [
+   "sandstone ruins, arch, pillars and blocks",
+   "sand castle, mountains, sky and clouds",
+   "flags and poles",
+   "blowing sand streams and dunes",
+   "sand floor and loose stones"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet left a sand-haze halo); lace openings correctly show through"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

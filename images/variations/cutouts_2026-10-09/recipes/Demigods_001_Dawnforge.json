@@ -1,0 +1,65 @@
+{
+ "notes": {
+  "keep": [
+   "blond chibi character",
+   "gold spiked crown with orange gem and four-point star finial on the centre spike",
+   "sun-gem breastplate, white/peach layered robe and sleeves, tassels",
+   "open hands",
+   "gold boots"
+  ],
+  "remove": [
+   "sun medallion and radiating arch behind the head",
+   "marble pillars and flaming braziers left/right",
+   "floating amber crystals",
+   "sky, clouds, sun, distant castles and bridges",
+   "anvil plinths and steps",
+   "marble magic-circle floor and the cast shadow under the boots"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet pulled in floor glow and haze)",
+   "crown star finial restored: model had clipped its left/right arms (585-670, 108-200)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "polys": [
+    [
+     [
+      627,
+      108
+     ],
+     [
+      636,
+      146
+     ],
+     [
+      668,
+      164
+     ],
+     [
+      636,
+      176
+     ],
+     [
+      627,
+      205
+     ],
+     [
+      618,
+      176
+     ],
+     [
+      586,
+      164
+     ],
+     [
+      618,
+      146
+     ]
+    ]
+   ]
+  }
+ ]
+}

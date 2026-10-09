@@ -1,0 +1,22 @@
+{
+ "notes": {
+  "keep": [
+   "white-haired obsidian knight with gold-trimmed black plate",
+   "red cape including torn tips at the left (~130,930)",
+   "lava-veined great sword in the left hand, tip at ~160,1160",
+   "tall obsidian tower shield with lava cracks held in the right hand",
+   "armoured boots"
+  ],
+  "remove": [
+   "lava fortress, aqueduct and lavafalls",
+   "burning spiked pillars and hanging chains",
+   "basalt blocks and lava pools",
+   "hex basalt floor with lava seams"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the shield semi-transparent); sword tip, cape tips and shield edges checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

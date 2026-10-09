@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "mint-haired snowbell warden with white flower and bell hair ornaments",
+   "tall silver staff topped with snowflake star, crescent ring and bell, with blue bow, long trailing ribbon, hanging crystals; ice-crystal butt at the bottom",
+   "fur-trimmed blue snowflake coat with many silver bells, satchel, tassels and a ribbon trailing right",
+   "white stockings and fur boots with blue bows"
+  ],
+  "remove": [
+   "snowy village houses, lanterns, wooden posts and fences",
+   "frozen waterfalls, bridge, river, castle, mountains, aurora sky and snowflakes",
+   "snowy tree branch at the top-left and snow bushes at the left edge",
+   "snow drifts and snowy path on the ground, including the corner drifts"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet hazed the staff ribbon); ribbons and staff crystals checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

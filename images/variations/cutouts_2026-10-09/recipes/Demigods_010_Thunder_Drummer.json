@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "red-haired thunder drummer with gold lightning hair ornament, beads and tassels",
+   "two gold-tipped drumsticks, one in each hand",
+   "floating taiko drum with cloud-crest heads, studs, red cords, beads, medallion ring and three tassels",
+   "black-and-gold cloud-pattern robe with red lining, sash, tassels and pendants",
+   "laced boots"
+  ],
+  "remove": [
+   "torii gates, shimenawa rope, tassels and banners on the gate",
+   "stone lanterns, stairs and red fences",
+   "cliff shrine, mountains, waterfall and storm sky",
+   "lightning bolts, including the electric arcs crackling around the drum",
+   "wet stone floor and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet ghosted the torii gate in and made the drum translucent); drum tassels, ring and hair ornament checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

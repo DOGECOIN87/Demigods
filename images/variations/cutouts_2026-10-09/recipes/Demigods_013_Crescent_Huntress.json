@@ -1,0 +1,164 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired huntress with long braid, crescent hair clip, bow and crystal earrings",
+   "crescent moon bow held in both hands, including the bowstring, hanging crystal and crescent charms and tassel",
+   "nocked arrow and quiver of arrows over the shoulder",
+   "black coat with silver trim, layered navy cape with moon and leaf embroidery, ribbon",
+   "black boots",
+   "FOREGROUND: depth-blurred glowing blue flowers and dark leaves in the bottom-left corner (0-250, 1035-1254)",
+   "FOREGROUND: depth-blurred glowing blue flowers and leaves in the bottom-right corner (1080-1254, 1010-1254)"
+  ],
+  "remove": [
+   "birch trees, hanging lanterns and falling leaves",
+   "full moon, starry sky and pine silhouettes",
+   "glowing flower beds behind the feet line, stream, wet stones and reflections",
+   "sharp rock with water highlights behind the left flowers (130-220, 1100-1140)"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged for the character (bowstring and charms intact)",
+   "foreground flower clumps traced by hand with feathered edges to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      0,
+      1060
+     ],
+     [
+      20,
+      1080
+     ],
+     [
+      40,
+      1050
+     ],
+     [
+      60,
+      1035
+     ],
+     [
+      75,
+      1050
+     ],
+     [
+      95,
+      1055
+     ],
+     [
+      115,
+      1075
+     ],
+     [
+      110,
+      1110
+     ],
+     [
+      100,
+      1140
+     ],
+     [
+      130,
+      1150
+     ],
+     [
+      160,
+      1145
+     ],
+     [
+      185,
+      1160
+     ],
+     [
+      205,
+      1180
+     ],
+     [
+      220,
+      1210
+     ],
+     [
+      240,
+      1230
+     ],
+     [
+      250,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1205,
+      1050
+     ],
+     [
+      1218,
+      1028
+     ],
+     [
+      1235,
+      1013
+     ],
+     [
+      1254,
+      1010
+     ],
+     [
+      1254,
+      1254
+     ],
+     [
+      1080,
+      1254
+     ],
+     [
+      1080,
+      1210
+     ],
+     [
+      1090,
+      1180
+     ],
+     [
+      1100,
+      1150
+     ],
+     [
+      1115,
+      1120
+     ],
+     [
+      1140,
+      1108
+     ],
+     [
+      1170,
+      1104
+     ],
+     [
+      1200,
+      1100
+     ],
+     [
+      1225,
+      1080
+     ],
+     [
+      1215,
+      1062
+     ]
+    ]
+   ]
+  }
+ ]
+}

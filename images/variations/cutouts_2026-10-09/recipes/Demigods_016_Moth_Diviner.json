@@ -1,0 +1,363 @@
+{
+ "notes": {
+  "keep": [
+   "pink-haired moth diviner with black-and-gold moth-wing hair bow with opal, gold hair pin, braids",
+   "glowing crystal ball held in both hands",
+   "black hooded capelet with opal clasps",
+   "moth-wing cape spreading to both sides with eye-spot patterns, tassels and opal drops",
+   "cream ruffled dress with pendant, dark tights, laced boots",
+   "FOREGROUND: depth-blurred dark leaves and pale leaf in the bottom-left corner (0-238, 1050-1254)",
+   "FOREGROUND: depth-blurred white lily and dark leaves in the bottom-right corner (1040-1254, 976-1254)"
+  ],
+  "remove": [
+   "stained-glass butterfly-and-crescent window directly behind the head (BiRefNet treated it as part of the subject)",
+   "glowing butterflies in the air",
+   "greenhouse window frames, wisteria, hanging lanterns",
+   "glass cloches with lotus flowers, shelves, clockwork orrery, potted plants",
+   "reflective floor and petals",
+   "sharp potted lotus flowers and foliage on the shelves at the left and right (behind the feet line)"
+  ],
+  "fixes": [
+   "BiRefNet matte for the body; above the shoulders the stricter of the two model mattes is used so the stained-glass window drops out while hair and bow stay",
+   "isnet matte for the lower hair-bow feathers, and the dark lower bow feathers (400-475, 388-490) snapped with GrabCut so they stay opaque",
+   "bottom-corner foreground foliage and lily traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "use",
+   "model": "min",
+   "levels": [
+    90,
+    200
+   ],
+   "polys": [
+    [
+     [
+      0,
+      0
+     ],
+     [
+      1254,
+      0
+     ],
+     [
+      1254,
+      560
+     ],
+     [
+      0,
+      560
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "use",
+   "model": "isnet",
+   "levels": [
+    60,
+    190
+   ],
+   "polys": [
+    [
+     [
+      380,
+      318
+     ],
+     [
+      470,
+      318
+     ],
+     [
+      470,
+      560
+     ],
+     [
+      380,
+      560
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    385,
+    360,
+    490,
+    510
+   ],
+   "fg": [
+    [
+     [
+      404,
+      405
+     ],
+     [
+      427,
+      393
+     ],
+     [
+      463,
+      388
+     ],
+     [
+      475,
+      410
+     ],
+     [
+      470,
+      446
+     ],
+     [
+      440,
+      472
+     ],
+     [
+      422,
+      490
+     ],
+     [
+      416,
+      470
+     ],
+     [
+      414,
+      440
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      425,
+      405
+     ],
+     [
+      455,
+      400
+     ],
+     [
+      460,
+      430
+     ],
+     [
+      435,
+      455
+     ],
+     [
+      424,
+      455
+     ]
+    ]
+   ],
+   "bg": [
+    [
+     [
+      385,
+      412
+     ],
+     [
+      406,
+      412
+     ],
+     [
+      411,
+      440
+     ],
+     [
+      413,
+      505
+     ],
+     [
+      385,
+      505
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      370,
+      235
+     ],
+     [
+      458,
+      235
+     ],
+     [
+      458,
+      300
+     ],
+     [
+      450,
+      309
+     ],
+     [
+      420,
+      311
+     ],
+     [
+      395,
+      314
+     ],
+     [
+      370,
+      318
+     ]
+    ],
+    [
+     [
+      320,
+      10
+     ],
+     [
+      440,
+      10
+     ],
+     [
+      440,
+      130
+     ],
+     [
+      320,
+      130
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      1075
+     ],
+     [
+      40,
+      1080
+     ],
+     [
+      80,
+      1095
+     ],
+     [
+      120,
+      1102
+     ],
+     [
+      160,
+      1110
+     ],
+     [
+      200,
+      1130
+     ],
+     [
+      222,
+      1160
+     ],
+     [
+      232,
+      1200
+     ],
+     [
+      238,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1040,
+      1254
+     ],
+     [
+      1045,
+      1222
+     ],
+     [
+      1060,
+      1188
+     ],
+     [
+      1085,
+      1166
+     ],
+     [
+      1105,
+      1150
+     ],
+     [
+      1122,
+      1125
+     ],
+     [
+      1150,
+      1105
+     ],
+     [
+      1254,
+      1100
+     ],
+     [
+      1254,
+      1254
+     ]
+    ],
+    [
+     [
+      1160,
+      1105
+     ],
+     [
+      1175,
+      1060
+     ],
+     [
+      1195,
+      1010
+     ],
+     [
+      1225,
+      982
+     ],
+     [
+      1254,
+      975
+     ],
+     [
+      1254,
+      995
+     ],
+     [
+      1230,
+      1005
+     ],
+     [
+      1210,
+      1035
+     ],
+     [
+      1195,
+      1070
+     ],
+     [
+      1185,
+      1105
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "notes": {
+  "keep": [
+   "pink-haired dream weaver in lavender beret with pearl band, crescent-moon brooch and navy bow",
+   "golden weaving shuttle held up in the right hand",
+   "iridescent woven ribbon of dream-thread flowing from her hands",
+   "lilac puff sleeves, cream jabot, navy bloomers, star-embroidered overskirt with clock-face hem, pendant and tassels",
+   "black tights and navy bow shoes",
+   "FOREGROUND: stack of leather books with an open star chart on the floor at the bottom-right (925-1210, 1147-1254)",
+   "FOREGROUND: brass lantern standing on that book stack (1145-1250, 995-1180)"
+  ],
+  "remove": [
+   "loom, tapestry and threads at the right",
+   "armillary sphere, hanging star ornaments and crystal orbs, curtains",
+   "floating castles, starry sky and clouds (including the cloud bank at the bottom-left)",
+   "side table with scroll, candles and armillary at the left; stool and lantern at the back right",
+   "small card on the floor behind the feet at the left",
+   "starry magic-circle floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character and ribbon",
+   "foreground books and lantern traced by hand, lantern edge-snapped with GrabCut",
+   "restored the lantern's top spire (1190-1204, 984-1022); cloud right of the books stays removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 1.0,
+   "polys": [
+    [
+     [
+      958,
+      1160
+     ],
+     [
+      1000,
+      1152
+     ],
+     [
+      1060,
+      1147
+     ],
+     [
+      1110,
+      1150
+     ],
+     [
+      1150,
+      1165
+     ],
+     [
+      1185,
+      1176
+     ],
+     [
+      1203,
+      1186
+     ],
+     [
+      1210,
+      1205
+     ],
+     [
+      1206,
+      1230
+     ],
+     [
+      1202,
+      1254
+     ],
+     [
+      925,
+      1254
+     ],
+     [
+      928,
+      1228
+     ],
+     [
+      940,
+      1205
+     ],
+     [
+      948,
+      1180
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    1130,
+    980,
+    1254,
+    1200
+   ],
+   "fg": [
+    [
+     [
+      1192,
+      993
+     ],
+     [
+      1202,
+      993
+     ],
+     [
+      1206,
+      1015
+     ],
+     [
+      1215,
+      1035
+     ],
+     [
+      1245,
+      1052
+     ],
+     [
+      1248,
+      1150
+     ],
+     [
+      1252,
+      1178
+     ],
+     [
+      1145,
+      1180
+     ],
+     [
+      1148,
+      1150
+     ],
+     [
+      1150,
+      1060
+     ],
+     [
+      1180,
+      1035
+     ],
+     [
+      1188,
+      1015
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      1165,
+      1075
+     ],
+     [
+      1235,
+      1075
+     ],
+     [
+      1235,
+      1150
+     ],
+     [
+      1165,
+      1150
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    1178,
+    975,
+    1218,
+    1040
+   ],
+   "fg": [
+    [
+     [
+      1196,
+      982
+     ],
+     [
+      1199,
+      982
+     ],
+     [
+      1204,
+      1012
+     ],
+     [
+      1208,
+      1030
+     ],
+     [
+      1186,
+      1030
+     ],
+     [
+      1191,
+      1012
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      1196,
+      995
+     ],
+     [
+      1199,
+      995
+     ],
+     [
+      1200,
+      1020
+     ],
+     [
+      1195,
+      1020
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      1246,
+      1040
+     ],
+     [
+      1254,
+      1040
+     ],
+     [
+      1254,
+      1254
+     ],
+     [
+      1206,
+      1254
+     ],
+     [
+      1207,
+      1179
+     ],
+     [
+      1215,
+      1174
+     ],
+     [
+      1246,
+      1170
+     ]
+    ]
+   ]
+  }
+ ]
+}

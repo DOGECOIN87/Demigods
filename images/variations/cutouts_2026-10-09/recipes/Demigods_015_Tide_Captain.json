@@ -1,0 +1,244 @@
+{
+ "notes": {
+  "keep": [
+   "auburn-haired captain in tricorn hat with blue and white plumes, anchor brooch, chains and tassels",
+   "open brass compass held in the left hand with its chain and anchor charm",
+   "rapier at the right hip, gripped in the right hand",
+   "teal gold-trimmed captain's coat with epaulettes, jabot, belts, white trousers",
+   "black buckled boots",
+   "FOREGROUND: depth-blurred brass deck lantern in the bottom-left corner (0-152, 893-1254)",
+   "FOREGROUND: coiled rope on the deck in front of the feet (150-495, 1112-1254)",
+   "FOREGROUND: iron-bound treasure chest at the bottom-right with the brass armillary sphere on its lid (1082-1254, 965-1254)"
+  ],
+  "remove": [
+   "mast, rigging, sails, ship's wheel and hanging lanterns",
+   "moon, night sky, clouds, coastal castle town and sea",
+   "railing, posts and rope on the railing",
+   "crates and barrels behind the feet line, including the map scroll draped over the back crate and the lantern above it",
+   "wet deck planks and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character",
+   "foreground lantern, rope coil and chest with armillary sphere traced by hand; the barrel and crate behind the lantern and the crate behind the chest stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 2.5,
+   "polys": [
+    [
+     [
+      0,
+      895
+     ],
+     [
+      25,
+      893
+     ],
+     [
+      45,
+      905
+     ],
+     [
+      60,
+      930
+     ],
+     [
+      75,
+      960
+     ],
+     [
+      105,
+      985
+     ],
+     [
+      122,
+      1000
+     ],
+     [
+      128,
+      1015
+     ],
+     [
+      140,
+      1035
+     ],
+     [
+      150,
+      1050
+     ],
+     [
+      152,
+      1100
+     ],
+     [
+      152,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 1.0,
+   "polys": [
+    [
+     [
+      150,
+      1146
+     ],
+     [
+      175,
+      1141
+     ],
+     [
+      200,
+      1144
+     ],
+     [
+      218,
+      1153
+     ],
+     [
+      233,
+      1164
+     ],
+     [
+      242,
+      1177
+     ],
+     [
+      246,
+      1192
+     ],
+     [
+      262,
+      1201
+     ],
+     [
+      300,
+      1206
+     ],
+     [
+      340,
+      1212
+     ],
+     [
+      370,
+      1218
+     ],
+     [
+      400,
+      1225
+     ],
+     [
+      430,
+      1235
+     ],
+     [
+      460,
+      1244
+     ],
+     [
+      490,
+      1250
+     ],
+     [
+      495,
+      1254
+     ],
+     [
+      470,
+      1254
+     ],
+     [
+      454,
+      1247
+     ],
+     [
+      380,
+      1235
+     ],
+     [
+      300,
+      1224
+     ],
+     [
+      240,
+      1220
+     ],
+     [
+      152,
+      1217
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 0.8,
+   "polys": [
+    [
+     [
+      1082,
+      1254
+     ],
+     [
+      1082,
+      1050
+     ],
+     [
+      1148,
+      1048
+     ],
+     [
+      1148,
+      1030
+     ],
+     [
+      1152,
+      1015
+     ],
+     [
+      1160,
+      1010
+     ],
+     [
+      1170,
+      1008
+     ],
+     [
+      1190,
+      997
+     ],
+     [
+      1210,
+      990
+     ],
+     [
+      1240,
+      980
+     ],
+     [
+      1246,
+      968
+     ],
+     [
+      1254,
+      965
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}

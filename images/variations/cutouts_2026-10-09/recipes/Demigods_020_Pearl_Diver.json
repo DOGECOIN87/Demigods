@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "teal-haired pearl diver with shell-and-pearl hair ornament and earrings",
+   "large luminous pearl held up on the gloved left hand",
+   "brass diving helmet carried under the right arm, with its hanging chains and brass canister",
+   "white diving suit with brass knee gears, belts, compass, teal sash/cape and hanging pearl drop",
+   "brass-buckled diving boots down to the waterline (soles are under the water in the art)"
+  ],
+  "remove": [
+   "marble columns, arches, statues and niches",
+   "waterfalls, sunbeams, seaweed, coral, fish and bubbles (including the blurred bubbles at the right edge)",
+   "treasure chest overflowing with pearls at the right (behind the feet line)",
+   "rocks and ledges, including the blurred rocks in the bottom corners",
+   "shallow water, ripples and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged; pearl, helmet grille and chains checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}

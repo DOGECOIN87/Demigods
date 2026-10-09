@@ -1,0 +1,108 @@
+{
+ "notes": {
+  "keep": [
+   "white-haired star courier with star earring",
+   "glowing star-map scroll tube held in the right arm",
+   "white scarf, star-patterned white and navy cape",
+   "navy jacket, belt pouches, compass medallion, chains",
+   "black trousers and gold-trimmed boots"
+  ],
+  "remove": [
+   "observatory tower, banners and rings at the left",
+   "floating platforms, spires and crystal pylons",
+   "asteroids (including the one behind the cape tip at ~795-850, 940-1000), comet, galaxy and planet",
+   "railings and crystal pedestals",
+   "reflective tiled floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet ghosted the tower in)",
+   "removed the asteroid chunk and railing piece the model fused to the right cape tip (788-890, 936-1018), restoring only the traced white cape tip"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      788,
+      936
+     ],
+     [
+      890,
+      936
+     ],
+     [
+      890,
+      1018
+     ],
+     [
+      788,
+      1018
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "use",
+   "model": "birefnet",
+   "polys": [
+    [
+     [
+      821,
+      925
+     ],
+     [
+      867,
+      925
+     ],
+     [
+      849,
+      950
+     ],
+     [
+      836,
+      961
+     ],
+     [
+      825,
+      972
+     ],
+     [
+      818,
+      985
+     ],
+     [
+      810,
+      998
+     ],
+     [
+      804,
+      1011
+     ],
+     [
+      797,
+      1013
+     ],
+     [
+      804,
+      995
+     ],
+     [
+      814,
+      978
+     ],
+     [
+      820,
+      968
+     ],
+     [
+      821,
+      940
+     ]
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,232 @@
+{
+ "notes": {
+  "keep": [
+   "ginger-haired steampunk artisan with brass goggles",
+   "open brass pocket watch held in the right hand",
+   "stylus held in the gauntleted left hand (tip ~345,895)",
+   "red frock coat, waistcoat, gear brooches, chains, belts",
+   "boots",
+   "FOREGROUND: depth-blurred brass bell ornament and dark box in the bottom-left corner",
+   "FOREGROUND: drawing papers and brass tool lying on the floor in front of the feet line (bottom-left to centre)",
+   "FOREGROUND: depth-blurred box in the bottom-right corner"
+  ],
+  "remove": [
+   "star-chart dome, planets, hanging lamps and orbs",
+   "armillary spheres, globes, window wall and staircase",
+   "book stacks and desk on the left (behind the feet line)",
+   "red book box and brass finial on the right (behind the feet line)",
+   "marble floor, magic circle, reflections and glare"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet left haze over the hair and coat)",
+   "foreground props traced by hand: GrabCut for the papers and brass pieces with floor patches marked as background; feathered outline for the blurred corner box"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "grabcut",
+   "box": [
+    0,
+    1040,
+    520,
+    1254
+   ],
+   "feather": 1.2,
+   "fg": [
+    [
+     [
+      0,
+      1085
+     ],
+     [
+      12,
+      1060
+     ],
+     [
+      22,
+      1052
+     ],
+     [
+      35,
+      1056
+     ],
+     [
+      45,
+      1075
+     ],
+     [
+      52,
+      1100
+     ],
+     [
+      100,
+      1103
+     ],
+     [
+      160,
+      1118
+     ],
+     [
+      240,
+      1140
+     ],
+     [
+      312,
+      1168
+     ],
+     [
+      300,
+      1185
+     ],
+     [
+      390,
+      1200
+     ],
+     [
+      400,
+      1215
+     ],
+     [
+      450,
+      1210
+     ],
+     [
+      500,
+      1222
+     ],
+     [
+      510,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      0,
+      1100
+     ],
+     [
+      15,
+      1075
+     ],
+     [
+      35,
+      1075
+     ],
+     [
+      50,
+      1110
+     ],
+     [
+      70,
+      1130
+     ],
+     [
+      80,
+      1190
+     ],
+     [
+      200,
+      1205
+     ],
+     [
+      200,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ],
+   "bg": [
+    [
+     [
+      210,
+      1095
+     ],
+     [
+      480,
+      1095
+     ],
+     [
+      480,
+      1150
+     ],
+     [
+      330,
+      1170
+     ],
+     [
+      215,
+      1135
+     ]
+    ],
+    [
+     [
+      330,
+      1175
+     ],
+     [
+      480,
+      1160
+     ],
+     [
+      480,
+      1205
+     ],
+     [
+      395,
+      1210
+     ],
+     [
+      330,
+      1190
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      1095,
+      1254
+     ],
+     [
+      1095,
+      1165
+     ],
+     [
+      1105,
+      1157
+     ],
+     [
+      1140,
+      1152
+     ],
+     [
+      1180,
+      1150
+     ],
+     [
+      1254,
+      1148
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
