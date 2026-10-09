@@ -1,0 +1,22 @@
+{
+ "notes": {
+  "keep": [
+   "curly brown-haired lion champion",
+   "gold-hilted short sword held in the right hand, full blade to the tip (~90, 1040)",
+   "round bronze-and-red shield with gold sunburst lion head, held on the left arm",
+   "gold lion-face breastplate, leather skirt with gold studs and chains, gauntlets, cream cape with gold border",
+   "gold lion-face greaves and brown armoured boots"
+  ],
+  "remove": [
+   "arena colosseum stands, sky and clouds",
+   "red lion and sun banners, pennant strings and spires",
+   "white lion statues, braziers with flames, pillars and steps",
+   "sunlit checkered arena floor and red petals on it"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet hazed the cape and floor); sword tip, shield rim and cape edges checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
