@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "red-haired auric mathematician with gold geometric circlet",
+   "glowing gold geometric polyhedron held between both hands: the character's magic",
+   "white-and-gold robe with copper geometric panels, high collar, gold chains, gem tassels and triangular pendants, dark green sash with gold pattern",
+   "dark green harem trousers and gold-buckled black boots"
+  ],
+  "remove": [
+   "glass observatory dome, starry sky, clouds and spires",
+   "armillary spheres, orbs on stands, glass cloches and hanging geometric lanterns",
+   "book stacks and the slate with geometry drawings at the left",
+   "reflective inlaid floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the robe panels translucent and kept floor reflections); the glowing polyhedron, tassels and triangular pendants checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
