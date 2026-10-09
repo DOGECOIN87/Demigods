@@ -1,0 +1,103 @@
+{
+ "notes": {
+  "keep": [
+   "purple-haired thunder engineer with brass goggles",
+   "brass-and-glass lightning capacitor held in both gauntleted hands, with its copper coils and the lightning crackling inside the glass",
+   "navy-and-gold engineer's coat with gear embroidery, harness, tool belts, wrenches, chains and pouches",
+   "grey cargo trousers with knee pads, brass-buckled boots",
+   "FOREGROUND: blue cable-wrapped crate and brass pipe coil overlapping the bottom-left edge, lower than the boots (0-322, 1128-1254)",
+   "FOREGROUND: iron-bound chest with a brass canister on it overlapping the bottom-right edge (1045-1254, 1058-1254)"
+  ],
+  "remove": [
+   "lightning tower, gothic spires, storm sky and lightning bolts",
+   "workbenches with blueprints, lanterns, armillary sphere and globes",
+   "shelves, chests and crates behind the feet line, cables on the floor",
+   "wet reflective metal floor with lightning reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet kept floor reflections)",
+   "foreground crate, pipes and chest traced by hand"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 1.5,
+   "polys": [
+    [
+     [
+      0,
+      1132
+     ],
+     [
+      60,
+      1128
+     ],
+     [
+      120,
+      1136
+     ],
+     [
+      166,
+      1150
+     ],
+     [
+      172,
+      1200
+     ],
+     [
+      230,
+      1203
+     ],
+     [
+      290,
+      1213
+     ],
+     [
+      322,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1045,
+      1254
+     ],
+     [
+      1045,
+      1165
+     ],
+     [
+      1180,
+      1158
+     ],
+     [
+      1182,
+      1082
+     ],
+     [
+      1200,
+      1067
+     ],
+     [
+      1230,
+      1060
+     ],
+     [
+      1254,
+      1058
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
