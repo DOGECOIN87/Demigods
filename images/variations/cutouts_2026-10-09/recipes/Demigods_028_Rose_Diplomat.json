@@ -1,0 +1,26 @@
+{
+ "notes": {
+  "keep": [
+   "auburn-haired rose diplomat with ahoge",
+   "sealed envelope with red wax rose seal held in the right gloved hand",
+   "rose-red brocade frock coat with gold embroidery, cream-and-gold waistcoat, lace jabot with gold brooch, rose corsage, red tassel chains, lace cuffs and white gloves",
+   "white trousers with gold trim and brown buckled shoes",
+   "FOREGROUND: depth-blurred dark rose leaves and red rose in the bottom-left corner (0-180, 1140-1254)"
+  ],
+  "remove": [
+   "rose-covered arches, columns and garden, fountain, cypress trees",
+   "castle, mountains, sky and falling petals",
+   "banner on its gold pole, marble balustrade and pillars",
+   "sharp rose bushes at the left and right behind the feet line",
+   "rose petals lying on the floor, and the checkered marble floor with reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet kept floor reflections and haze)",
+   "bottom-left blurred foliage traced by hand with a wide feather to match its blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {"op": "keep", "feather": 3.0, "polys": [[[0,1150],[30,1142],[60,1150],[90,1170],[120,1185],[150,1200],[172,1225],[180,1254],[0,1254]]]}
+ ]
+}
