@@ -1,0 +1,25 @@
+{
+ "notes": {
+  "keep": [
+   "dark-haired dragon standard-bearer with high ponytail, red ribbon and gold dragon crown",
+   "black-and-gold war standard held in the right hand: pole with gold fittings from the top edge to the spear tip on the ground (~205, 1130), red dragon war banner with gold dragon, black border, tattered red streamers and red tassels hanging from the crossbar and banner",
+   "red-and-gold lamellar armour with dragon crests, black robe, long red cape with gold flame pattern, tassels",
+   "gold armoured greaves and black-and-red boots"
+  ],
+  "remove": [
+   "palace gate, red pillars, pagodas, sky and clouds",
+   "red dragon banners on poles in the background",
+   "stone lion statues, braziers with flames, stairs",
+   "falling red petals in the air, including the large blurred ones near the camera and the petal beside the cape (255-290, 1030-1070)",
+   "petals lying on the courtyard, and the stone courtyard itself"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the banner and courtyard)",
+   "removed the falling petal BiRefNet fused to the cape edge (255-290, 1030-1070)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {"op": "remove", "polys": [[[252,1052],[268,1030],[292,1022],[296,1040],[278,1062],[260,1074]]]}
+ ]
+}
