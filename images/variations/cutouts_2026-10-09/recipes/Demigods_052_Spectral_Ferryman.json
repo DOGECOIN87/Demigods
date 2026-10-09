@@ -1,0 +1,100 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired spectral ferryman in a wide tattered black hat with silver star-and-gem crest, hanging chains, crystal drops and torn ribbons",
+   "long ferryman's oar held in the right hand: lattice gem finial at the top (245-305, 76-160), silver-wrapped shaft, and the broad lattice-and-gem blade down to its tip at the waterline (~470, 1170)",
+   "tattered black-and-teal coat and cape with crystal drops, chains and belts",
+   "black trousers and laced black boots"
+  ],
+  "remove": [
+   "moonlit gothic city, arches, towers and waterfalls",
+   "ghost gondola with hooded ferryman spirit and its lantern",
+   "iron lamp post at the left with chains and blue lantern, including the dark post arm above the oar finial (200-300, 20-70)",
+   "blue spirit flames and wisps",
+   "dock posts and the heavy chain railing in the bottom-left corner (dock architecture)",
+   "dock posts at the right edge",
+   "dark water, ripples, splashes and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the whole scene)",
+   "restored the oar's lattice gem finial and the shaft just below its collar, which BiRefNet cut off at y~200 (traced 246-304, 78-206)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.7,
+   "polys": [
+    [
+     [
+      268,
+      78
+     ],
+     [
+      283,
+      93
+     ],
+     [
+      297,
+      108
+     ],
+     [
+      286,
+      128
+     ],
+     [
+      304,
+      142
+     ],
+     [
+      302,
+      160
+     ],
+     [
+      276,
+      164
+     ],
+     [
+      252,
+      160
+     ],
+     [
+      246,
+      146
+     ],
+     [
+      256,
+      133
+     ],
+     [
+      246,
+      116
+     ],
+     [
+      255,
+      95
+     ]
+    ],
+    [
+     [
+      254,
+      158
+     ],
+     [
+      302,
+      158
+     ],
+     [
+      300,
+      208
+     ],
+     [
+      268,
+      208
+     ]
+    ]
+   ]
+  }
+ ]
+}
