@@ -109,6 +109,12 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
                 alpha = np.maximum(alpha, soft)
             else:
                 alpha[region] = 255
+        elif kind == "drop_dark":  # inside region, fade out pixels darker than the bright subject (sky seen through effect loops)
+            lum = rgb.astype(np.float32).mean(axis=2)
+            d0, d1 = op["ramp"]
+            factor = np.clip((lum - d0) / (d1 - d0), 0, 1)
+            factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.8))
+            alpha[region] = alpha[region] * factor[region]
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
             if op.get("invert"):

@@ -696,5 +696,423 @@
     ]
    }
   ]
+ },
+ "Demigods_005_Obsidian_Sentinel": {
+  "notes": {
+   "keep": [
+    "white-haired obsidian knight with gold-trimmed black plate",
+    "red cape including torn tips at the left (~130,930)",
+    "lava-veined great sword in the left hand, tip at ~160,1160",
+    "tall obsidian tower shield with lava cracks held in the right hand",
+    "armoured boots"
+   ],
+   "remove": [
+    "lava fortress, aqueduct and lavafalls",
+    "burning spiked pillars and hanging chains",
+    "basalt blocks and lava pools",
+    "hex basalt floor with lava seams"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged (isnet made the shield semi-transparent); sword tip, cape tips and shield edges checked at zoom"
+   ]
+  },
+  "base": "birefnet",
+  "ops": []
+ },
+ "Demigods_006_Aurora_Skater": {
+  "notes": {
+   "keep": [
+    "lilac-haired skater with snowflake hair pins, braid and earrings",
+    "fur-trimmed teal and white coat, sash, hanging crystal pendants",
+    "black snowflake tights and white ice skates including the blades",
+    "iridescent aurora ribbons swirling from both open hands (her magic)",
+    "FOREGROUND: ice crystal at the bottom-left (22-121, 1037-1210), in front of the skates"
+   ],
+   "remove": [
+    "aurora sky and stars",
+    "mountains, ice castle and pine forest",
+    "ice crystals behind the feet line (left shore, right shore)",
+    "frozen lake surface, cracks and skate reflections",
+    "snow banks in the bottom corners (ground)",
+    "dark sky seen through the inside of the right-hand ribbon loop"
+   ],
+   "fixes": [
+    "BiRefNet matte used (isnet hazed the left ribbon)",
+    "restored the right half of the left ribbon's upper S-curve (295-385, 405-545)",
+    "dropped the dark sky inside the right ribbon loop and the faint arc above it by luminance, keeping the bright ribbon",
+    "bottom-left ice crystal traced by hand"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "polys": [
+     [
+      [
+       310,
+       407
+      ],
+      [
+       340,
+       425
+      ],
+      [
+       365,
+       455
+      ],
+      [
+       382,
+       490
+      ],
+      [
+       385,
+       525
+      ],
+      [
+       377,
+       545
+      ],
+      [
+       350,
+       540
+      ],
+      [
+       360,
+       520
+      ],
+      [
+       355,
+       490
+      ],
+      [
+       340,
+       460
+      ],
+      [
+       320,
+       435
+      ],
+      [
+       295,
+       410
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "drop_dark",
+    "ramp": [
+     155,
+     200
+    ],
+    "polys": [
+     [
+      [
+       917,
+       527
+      ],
+      [
+       950,
+       508
+      ],
+      [
+       990,
+       507
+      ],
+      [
+       1010,
+       512
+      ],
+      [
+       1018,
+       527
+      ],
+      [
+       1022,
+       553
+      ],
+      [
+       1018,
+       580
+      ],
+      [
+       1008,
+       597
+      ],
+      [
+       990,
+       610
+      ],
+      [
+       960,
+       617
+      ],
+      [
+       927,
+       613
+      ],
+      [
+       913,
+       600
+      ],
+      [
+       907,
+       573
+      ]
+     ],
+     [
+      [
+       883,
+       457
+      ],
+      [
+       940,
+       450
+      ],
+      [
+       1000,
+       460
+      ],
+      [
+       997,
+       490
+      ],
+      [
+       940,
+       500
+      ],
+      [
+       890,
+       513
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "polys": [
+     [
+      [
+       90,
+       1037
+      ],
+      [
+       100,
+       1062
+      ],
+      [
+       110,
+       1092
+      ],
+      [
+       118,
+       1120
+      ],
+      [
+       121,
+       1150
+      ],
+      [
+       119,
+       1180
+      ],
+      [
+       116,
+       1205
+      ],
+      [
+       80,
+       1210
+      ],
+      [
+       40,
+       1205
+      ],
+      [
+       22,
+       1185
+      ],
+      [
+       22,
+       1160
+      ],
+      [
+       30,
+       1135
+      ],
+      [
+       45,
+       1108
+      ],
+      [
+       62,
+       1085
+      ],
+      [
+       76,
+       1062
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_007_Lotus_Monk": {
+  "notes": {
+   "keep": [
+    "bald monk with dark topknot, gold crown band and long gold hair ribbons",
+    "twisted lotus staff with glowing lotus head, gold tassels and hanging ornaments",
+    "gold robe, maroon trousers, sash, medallion, prayer beads",
+    "boots",
+    "FOREGROUND: depth-blurred lily pad in the bottom-left corner (0-100, 1170-1254)",
+    "FOREGROUND: lotus petals lying in front of the feet (418-488, 1210-1254 and 951-1020, 1176-1213)"
+   ],
+   "remove": [
+    "blossoming trees, cliffs, waterfalls, pagodas and bridge",
+    "stone lanterns, carved lotus stone and rocks",
+    "lotus pond, lotus flowers and lily pads behind the feet line",
+    "petals falling in the air and petals at or behind the feet line",
+    "blurred rock in the bottom-left/bottom-right corners (terrain)",
+    "stone floor and reflections"
+   ],
+   "fixes": [
+    "BiRefNet matte used (isnet hazed pink glow around the lotus staff head)",
+    "foreground lily pad and floor petals traced by hand"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "feather": 2.0,
+    "polys": [
+     [
+      [
+       0,
+       1170
+      ],
+      [
+       20,
+       1174
+      ],
+      [
+       40,
+       1179
+      ],
+      [
+       55,
+       1190
+      ],
+      [
+       70,
+       1203
+      ],
+      [
+       83,
+       1218
+      ],
+      [
+       93,
+       1236
+      ],
+      [
+       100,
+       1254
+      ],
+      [
+       0,
+       1254
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "feather": 0.8,
+    "polys": [
+     [
+      [
+       487,
+       1210
+      ],
+      [
+       486,
+       1222
+      ],
+      [
+       480,
+       1236
+      ],
+      [
+       470,
+       1248
+      ],
+      [
+       458,
+       1254
+      ],
+      [
+       420,
+       1254
+      ],
+      [
+       418,
+       1249
+      ],
+      [
+       430,
+       1240
+      ],
+      [
+       450,
+       1230
+      ],
+      [
+       468,
+       1220
+      ]
+     ],
+     [
+      [
+       951,
+       1176
+      ],
+      [
+       965,
+       1181
+      ],
+      [
+       985,
+       1180
+      ],
+      [
+       1003,
+       1187
+      ],
+      [
+       1020,
+       1200
+      ],
+      [
+       1005,
+       1209
+      ],
+      [
+       980,
+       1213
+      ],
+      [
+       960,
+       1206
+      ],
+      [
+       951,
+       1192
+      ]
+     ]
+    ]
+   }
+  ]
  }
 }
