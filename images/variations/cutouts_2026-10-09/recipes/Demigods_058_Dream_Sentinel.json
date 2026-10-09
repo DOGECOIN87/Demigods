@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "pink-haired dream sentinel with silver crescent hair ornament and star hair clip",
+   "large quilted pillow-shield with silver crystal-studded frame and sapphire gems, held on the left arm, including the spear-like finial at its top corner (~1028, 300) and the gem pendants hanging from its lower edge",
+   "silver crescent pauldrons, gauntlets, lilac quilted surcoat with star embroidery, white ribbons and crystal chains",
+   "silver plate greaves and sabatons",
+   "flowing translucent star-patterned ribbons trailing to both sides of the character"
+  ],
+  "remove": [
+   "crescent moon, starfield and hanging star ornaments",
+   "floating cloud castles, pavilions, staircases and pillars",
+   "dream clouds and sparkles",
+   "crystal clusters on the floor at the bottom-right and the glints on the floor",
+   "reflective star-circle floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet hazed the floor and ribbon edges); shield finial, ribbons and feet checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
