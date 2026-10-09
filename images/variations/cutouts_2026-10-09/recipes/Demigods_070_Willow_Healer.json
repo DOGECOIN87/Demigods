@@ -1,0 +1,128 @@
+{
+ "notes": {
+  "keep": [
+   "green-haired willow healer with long braid, white flower and willow-leaf hair ornaments",
+   "glowing green glass healing bowl held in both hands",
+   "translucent willow-green ribbons streaming from the robe and hair, including the long glowing ribbon arcing right of the head (840-990, 360-460)",
+   "layered green-and-white robe with willow embroidery, gold chains, hanging green crystals and tassels",
+   "cream lace-up sandals",
+   "FOREGROUND: depth-blurred dark foliage with white blossom bokeh in the bottom-left corner (0-362, 985-1254)",
+   "FOREGROUND: depth-blurred dark foliage along the bottom-right edge (980-1254, 1163-1254)"
+  ],
+  "remove": [
+   "weeping willow branches and trunk",
+   "misty forest, cliffs and sunlit river",
+   "in-focus white flowers and grass on the banks at or behind the feet line, including the clusters at (0-80, 900-990) and (1130-1254, 1060-1160)",
+   "shallow water, mossy stones and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the whole silhouette)",
+   "foreground blurred foliage traced by hand with a wide feather to match its blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      990
+     ],
+     [
+      40,
+      985
+     ],
+     [
+      80,
+      1000
+     ],
+     [
+      98,
+      1030
+     ],
+     [
+      100,
+      1080
+     ],
+     [
+      128,
+      1118
+     ],
+     [
+      158,
+      1148
+     ],
+     [
+      190,
+      1170
+     ],
+     [
+      222,
+      1190
+     ],
+     [
+      260,
+      1210
+     ],
+     [
+      300,
+      1225
+     ],
+     [
+      340,
+      1240
+     ],
+     [
+      362,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      980,
+      1205
+     ],
+     [
+      1020,
+      1185
+     ],
+     [
+      1080,
+      1178
+     ],
+     [
+      1120,
+      1172
+     ],
+     [
+      1160,
+      1163
+     ],
+     [
+      1200,
+      1166
+     ],
+     [
+      1254,
+      1170
+     ],
+     [
+      1254,
+      1254
+     ],
+     [
+      980,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
