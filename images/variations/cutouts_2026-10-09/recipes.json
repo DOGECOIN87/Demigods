@@ -2842,5 +2842,348 @@
     ]
    }
   ]
+ },
+ "Demigods_020_Pearl_Diver": {
+  "notes": {
+   "keep": [
+    "teal-haired pearl diver with shell-and-pearl hair ornament and earrings",
+    "large luminous pearl held up on the gloved left hand",
+    "brass diving helmet carried under the right arm, with its hanging chains and brass canister",
+    "white diving suit with brass knee gears, belts, compass, teal sash/cape and hanging pearl drop",
+    "brass-buckled diving boots down to the waterline (soles are under the water in the art)"
+   ],
+   "remove": [
+    "marble columns, arches, statues and niches",
+    "waterfalls, sunbeams, seaweed, coral, fish and bubbles (including the blurred bubbles at the right edge)",
+    "treasure chest overflowing with pearls at the right (behind the feet line)",
+    "rocks and ledges, including the blurred rocks in the bottom corners",
+    "shallow water, ripples and reflections"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged; pearl, helmet grille and chains checked"
+   ]
+  },
+  "base": "birefnet",
+  "ops": []
+ },
+ "Demigods_021_Moon_Rabbit_Herald": {
+  "notes": {
+   "keep": [
+    "silver-haired moon-rabbit herald with long rabbit-ear ribbons (moon pattern), white flower crown, purple bows and earrings",
+    "black staff with crescent-moon head, white flowers and glass orb holding a rabbit",
+    "moon banner hanging from the crescent staff head, with its three purple-bead tassels and long white tassel",
+    "cream crop top, wide sleeves, sash with tassels, white moon-pattern harem trousers, lilac pleated train and ribbons",
+    "white shoes"
+   ],
+   "remove": [
+    "full moon, starry sky and clouds",
+    "pagodas, terraced palace, waterfalls and bridges",
+    "lantern posts and hanging lanterns, including the stray tassel hanging left of the banner (230-250, 250-410)",
+    "white flower branches at the top-right and left edges",
+    "floor lanterns, railings, steps and water lilies",
+    "depth-blurred lotus flowers in the bottom corners (growing in the pond, not props)",
+    "reflective floor and pond"
+   ],
+   "fixes": [
+    "BiRefNet matte for the character; the staff banner taken from the isnet matte, which separated it cleanly",
+    "the banner's three tassels traced by hand (248-376, 566-804) so the city and the glowing lantern between them stay removed"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "use",
+    "model": "isnet",
+    "combine": "max",
+    "levels": [
+     90,
+     210
+    ],
+    "polys": [
+     [
+      [
+       256,
+       236
+      ],
+      [
+       372,
+       236
+      ],
+      [
+       372,
+       548
+      ],
+      [
+       268,
+       632
+      ],
+      [
+       256,
+       632
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "feather": 0.6,
+    "polys": [
+     [
+      [
+       263,
+       618
+      ],
+      [
+       269,
+       618
+      ],
+      [
+       270,
+       640
+      ],
+      [
+       279,
+       643
+      ],
+      [
+       282,
+       652
+      ],
+      [
+       281,
+       664
+      ],
+      [
+       276,
+       671
+      ],
+      [
+       279,
+       676
+      ],
+      [
+       280,
+       690
+      ],
+      [
+       283,
+       697
+      ],
+      [
+       285,
+       720
+      ],
+      [
+       288,
+       760
+      ],
+      [
+       290,
+       800
+      ],
+      [
+       282,
+       804
+      ],
+      [
+       260,
+       804
+      ],
+      [
+       248,
+       800
+      ],
+      [
+       250,
+       760
+      ],
+      [
+       253,
+       720
+      ],
+      [
+       255,
+       697
+      ],
+      [
+       258,
+       690
+      ],
+      [
+       258,
+       676
+      ],
+      [
+       259,
+       671
+      ],
+      [
+       254,
+       664
+      ],
+      [
+       253,
+       652
+      ],
+      [
+       257,
+       643
+      ],
+      [
+       262,
+       640
+      ]
+     ],
+     [
+      [
+       310,
+       592
+      ],
+      [
+       314,
+       592
+      ],
+      [
+       316,
+       604
+      ],
+      [
+       321,
+       608
+      ],
+      [
+       322,
+       630
+      ],
+      [
+       321,
+       634
+      ],
+      [
+       321,
+       656
+      ],
+      [
+       326,
+       660
+      ],
+      [
+       328,
+       684
+      ],
+      [
+       322,
+       688
+      ],
+      [
+       322,
+       742
+      ],
+      [
+       308,
+       742
+      ],
+      [
+       308,
+       688
+      ],
+      [
+       303,
+       684
+      ],
+      [
+       305,
+       660
+      ],
+      [
+       307,
+       656
+      ],
+      [
+       307,
+       634
+      ],
+      [
+       304,
+       630
+      ],
+      [
+       305,
+       608
+      ],
+      [
+       309,
+       604
+      ]
+     ],
+     [
+      [
+       350,
+       566
+      ],
+      [
+       355,
+       566
+      ],
+      [
+       361,
+       572
+      ],
+      [
+       363,
+       592
+      ],
+      [
+       361,
+       597
+      ],
+      [
+       362,
+       610
+      ],
+      [
+       370,
+       615
+      ],
+      [
+       376,
+       690
+      ],
+      [
+       370,
+       696
+      ],
+      [
+       342,
+       696
+      ],
+      [
+       338,
+       690
+      ],
+      [
+       342,
+       615
+      ],
+      [
+       345,
+       610
+      ],
+      [
+       344,
+       597
+      ],
+      [
+       342,
+       592
+      ],
+      [
+       344,
+       572
+      ]
+     ]
+    ]
+   }
+  ]
  }
 }

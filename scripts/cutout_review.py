@@ -106,6 +106,8 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
                 alt = mattes[op["model"]].astype(np.float32)
             ulo, uhi = op.get("levels", [lo, hi])
             alt = np.clip((alt - ulo) / max(uhi - ulo, 1) * 255.0, 0, 255)
+            if op.get("combine") == "max":  # add the other matte without weakening this one
+                alt = np.maximum(alt, alpha)
             alpha[region] = alt[region]
         elif kind == "keep":  # region is entirely subject
             if op.get("feather"):  # soft edge for depth-blurred foreground props
