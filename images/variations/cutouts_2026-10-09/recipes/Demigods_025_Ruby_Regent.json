@@ -1,0 +1,20 @@
+{
+ "notes": {
+  "keep": [
+   "brown-haired ruby regent wearing a gold-and-ruby crown with cross finials and velvet cap (500-760, 60-250)",
+   "gold-and-ruby scepter held in the left hand: ruby-crystal head with gold spikes (~830-920, 230-400), black shaft and spiked gold foot (~810, 1150)",
+   "gold filigree armour with ruby gems, ermine-trimmed red velvet cape with gold embroidery spreading to both sides",
+   "gold armoured greaves and red sabatons"
+  ],
+  "remove": [
+   "throne room: red marble pillars, gold-trimmed banners, stained-glass window",
+   "candelabras, rose urns and the steps to the throne",
+   "red-and-gold marble floor and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the cape and crown translucent and kept floor reflections); crown finials, scepter head and foot checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
