@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "silver-bob ivory judge with gold star hair clips",
+   "gold scales of justice held up in the left hand: star finial, gem-set beam, chains and both pans (720-1000, 440-740)",
+   "ivory-and-black judge's robe with gold diamond motifs, collar, chains, tassels and pendants",
+   "white-and-black boots with gold"
+  ],
+  "remove": [
+   "marble court hall, columns, rose window and stairs",
+   "black-and-gold scales banners",
+   "marble statues with spear and sword, gold braziers",
+   "checkered marble floor and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet dropped a scale pan and kept floor reflections); scale chains and pans checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
