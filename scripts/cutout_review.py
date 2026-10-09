@@ -166,7 +166,8 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             keyed[~region] = 0
             alpha = np.maximum(alpha, keyed)
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
-            score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
+            ca, cb = op.get("channels", [0, 2])  # [1, 2] keys green-minus-blue (foliage on grey rock/water)
+            score = rgb[..., ca].astype(np.float32) - rgb[..., cb].astype(np.float32)
             if op.get("invert"):
                 score = -score
             k0, k1 = op["ramp"]
