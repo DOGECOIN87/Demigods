@@ -1,0 +1,309 @@
+{
+ "Demigods_001_Dawnforge": {
+  "notes": {
+   "keep": [
+    "blond chibi character",
+    "gold spiked crown with orange gem and four-point star finial on the centre spike",
+    "sun-gem breastplate, white/peach layered robe and sleeves, tassels",
+    "open hands",
+    "gold boots"
+   ],
+   "remove": [
+    "sun medallion and radiating arch behind the head",
+    "marble pillars and flaming braziers left/right",
+    "floating amber crystals",
+    "sky, clouds, sun, distant castles and bridges",
+    "anvil plinths and steps",
+    "marble magic-circle floor and the cast shadow under the boots"
+   ],
+   "fixes": [
+    "BiRefNet matte used (isnet pulled in floor glow and haze)",
+    "crown star finial restored: model had clipped its left/right arms (585-670, 108-200)"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "polys": [
+     [
+      [
+       627,
+       108
+      ],
+      [
+       636,
+       146
+      ],
+      [
+       668,
+       164
+      ],
+      [
+       636,
+       176
+      ],
+      [
+       627,
+       205
+      ],
+      [
+       618,
+       176
+      ],
+      [
+       586,
+       164
+      ],
+      [
+       618,
+       146
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_002_Storm_Knight": {
+  "notes": {
+   "keep": [
+    "navy-haired armoured knight",
+    "gold-spiked pauldrons and silver plate armour, belt and chains",
+    "long spear: blade head top-right (tip ~1228,27) through the gloved hand down to the butt spike at the left boot (~370,1185)",
+    "white/blue torn cape",
+    "armoured boots"
+   ],
+   "remove": [
+    "storm clouds and all lightning bolts, including bolts passing behind the spear",
+    "mountains, castle, aqueduct and waterfalls",
+    "gate pillars with spires and blue banners",
+    "wet tiled floor, reflections and lightning on the ground"
+   ],
+   "fixes": [
+    "BiRefNet matte used (isnet left haze around the spear head)",
+    "restored the large white curved blade spike under the spear head (tip ~1102,342)",
+    "restored the lower gold/white blade spike (tip ~1060,417)",
+    "gate-pillar spire behind the spear head (~1175,400) stays removed"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "grabcut",
+    "box": [
+     1030,
+     225,
+     1150,
+     425
+    ],
+    "fg": [
+     [
+      [
+       1078,
+       257
+      ],
+      [
+       1090,
+       245
+      ],
+      [
+       1107,
+       240
+      ],
+      [
+       1120,
+       237
+      ],
+      [
+       1115,
+       263
+      ],
+      [
+       1108,
+       297
+      ],
+      [
+       1103,
+       343
+      ],
+      [
+       1095,
+       313
+      ],
+      [
+       1087,
+       287
+      ],
+      [
+       1080,
+       273
+      ]
+     ],
+     [
+      [
+       1078,
+       293
+      ],
+      [
+       1075,
+       320
+      ],
+      [
+       1072,
+       347
+      ],
+      [
+       1070,
+       370
+      ],
+      [
+       1063,
+       400
+      ],
+      [
+       1060,
+       418
+      ],
+      [
+       1055,
+       393
+      ],
+      [
+       1048,
+       367
+      ],
+      [
+       1045,
+       357
+      ],
+      [
+       1052,
+       360
+      ],
+      [
+       1063,
+       330
+      ],
+      [
+       1073,
+       297
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_003_Coral_Oracle": {
+  "notes": {
+   "keep": [
+    "mint-haired coral oracle",
+    "coral-and-shell hair ornaments with pearls",
+    "coral staff with pearl orb, hanging pearls and crystal pendants",
+    "shell-sleeve dress with layered coral skirt, dangling pearl and crystal drops",
+    "boots",
+    "FOREGROUND: depth-blurred pink coral, scallop shell and pearls in the bottom-right corner",
+    "FOREGROUND: depth-blurred blue coral, shell and pearl in the bottom-left corner"
+   ],
+   "remove": [
+    "jellyfish, fish and bubbles",
+    "crystal-inlaid pillars and pillar bases",
+    "underwater palace, arches, balustrade and stairs",
+    "sharp pink coral cluster, shells and pearls on the floor at the left edge (behind the character's plane)",
+    "small floating crystal by the stairs (~1004,995)",
+    "glass water floor and reflections"
+   ],
+   "fixes": [
+    "BiRefNet matte used (isnet hazed the staff top)",
+    "restored the dangling crystal drop under the right skirt edge (~900,1122)",
+    "foreground corner props segmented with a crop-level model pass"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "submatte",
+    "box": [
+     930,
+     880,
+     1254,
+     1254
+    ],
+    "polys": [
+     [
+      [
+       1040,
+       1254
+      ],
+      [
+       1040,
+       1150
+      ],
+      [
+       1100,
+       1090
+      ],
+      [
+       1150,
+       900
+      ],
+      [
+       1254,
+       900
+      ],
+      [
+       1254,
+       1254
+      ]
+     ],
+     [
+      [
+       960,
+       1254
+      ],
+      [
+       960,
+       1170
+      ],
+      [
+       1040,
+       1150
+      ],
+      [
+       1040,
+       1254
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "submatte",
+    "box": [
+     0,
+     1100,
+     320,
+     1254
+    ],
+    "polys": [
+     [
+      [
+       0,
+       1150
+      ],
+      [
+       210,
+       1150
+      ],
+      [
+       230,
+       1254
+      ],
+      [
+       0,
+       1254
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

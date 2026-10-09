@@ -1,0 +1,277 @@
+#!/usr/bin/env python3
+"""Remove the background from ONE flattened one-of-one illustration at a time.
+
+The workflow is deliberately per image (see docs/qa/background_removal_2026-10-09.md):
+
+1. ``predict NAME`` runs two segmentation models (isnet-anime and BiRefNet-general)
+   on a single source and caches both raw mattes.
+2. The image is reviewed by eye and a recipe for that image is written into
+   ``recipes.json``: which matte to start from plus hand-placed corrections
+   (regions forced to keep, regions forced to remove, small-island cleanup).
+3. ``render NAME`` applies that image's recipe, writes the transparent PNG and a
+   review sheet (cutout over magenta and over dark grey) so the edges, held items
+   and foreground items can be checked before moving to the next image.
+
+Models are the rembg ONNX releases, run directly with onnxruntime. Point
+``--models`` at a folder containing ``isnet-anime.onnx`` and
+``birefnet-general.onnx``.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw
+from scipy import ndimage
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR = ROOT / "images/variations/cutouts_2026-10-09"
+RECIPES = OUT_DIR / "recipes.json"
+MODEL_SPECS = {
+    "isnet": ("isnet-anime.onnx", (0.485, 0.456, 0.406), (1.0, 1.0, 1.0), False),
+    "birefnet": ("birefnet-general.onnx", (0.485, 0.456, 0.406), (0.229, 0.224, 0.225), True),
+}
+
+
+def predict_matte(model_dir: Path, key: str, image: Image.Image) -> np.ndarray:
+    import onnxruntime as ort
+
+    filename, mean, std, sigmoid = MODEL_SPECS[key]
+    session = ort.InferenceSession(str(model_dir / filename), providers=["CPUExecutionProvider"])
+    small = np.asarray(image.convert("RGB").resize((1024, 1024), Image.LANCZOS), dtype=np.float32)
+    small /= max(float(small.max()), 1e-6)
+    small = (small - np.array(mean, np.float32)) / np.array(std, np.float32)
+    tensor = small.transpose(2, 0, 1)[None].astype(np.float32)
+    out = session.run(None, {session.get_inputs()[0].name: tensor})[0][0, 0]
+    if sigmoid:
+        out = 1.0 / (1.0 + np.exp(-out))
+    out = (out - out.min()) / max(float(out.max() - out.min()), 1e-6)
+    matte = Image.fromarray((out * 255).astype(np.uint8)).resize(image.size, Image.LANCZOS)
+    return np.asarray(matte)
+
+
+def source_path(name: str) -> Path:
+    recipe = load_recipes().get(name, {})
+    if "source" in recipe:
+        return ROOT / recipe["source"]
+    return ROOT / "images/variations/complete_72" / f"{name}.png"
+
+
+def cache_dir(args) -> Path:
+    path = Path(args.cache)
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def load_recipes() -> dict:
+    return json.loads(RECIPES.read_text()) if RECIPES.exists() else {}
+
+
+def poly_mask(shape, polys) -> np.ndarray:
+    canvas = Image.new("L", (shape[1], shape[0]), 0)
+    draw = ImageDraw.Draw(canvas)
+    for pts in polys:
+        draw.polygon([tuple(p) for p in pts], fill=255)
+    return np.asarray(canvas) > 0
+
+
+def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -> np.ndarray:
+    base = recipe.get("base", "birefnet")
+    if base == "max":
+        alpha = np.maximum(mattes["isnet"], mattes["birefnet"]).astype(np.float32)
+    elif base == "min":
+        alpha = np.minimum(mattes["isnet"], mattes["birefnet"]).astype(np.float32)
+    else:
+        alpha = mattes[base].astype(np.float32)
+    lo, hi = recipe.get("levels", [8, 247])
+    alpha = np.clip((alpha - lo) / max(hi - lo, 1) * 255.0, 0, 255)
+
+    for op in recipe.get("ops", []):
+        kind = op["op"]
+        region = poly_mask(alpha.shape, op["polys"]) if "polys" in op else None
+        if kind == "use":  # take another model's matte inside the region
+            alt = mattes[op["model"]].astype(np.float32)
+            alt = np.clip((alt - lo) / max(hi - lo, 1) * 255.0, 0, 255)
+            alpha[region] = alt[region]
+        elif kind == "keep":  # region is entirely subject
+            alpha[region] = 255
+        elif kind == "remove":  # region is entirely background
+            alpha[region] = 0
+        elif kind == "remove_color":  # inside region, drop pixels near a background colour
+            ref = np.array(op["rgb"], np.float32)
+            dist = np.linalg.norm(rgb.astype(np.float32) - ref, axis=2)
+            hit = dist < op.get("tol", 30)
+            if region is not None:
+                hit &= region
+            alpha[hit] = 0
+        elif kind == "submatte":  # model re-run on a crop, for foreground props at the frame edge
+            x0, y0, x1, y1 = op["box"]
+            sub = mattes[f"sub:{op.get('model', 'birefnet')}:{x0},{y0},{x1},{y1}"].astype(np.float32)
+            sub = np.clip((sub - lo) / max(hi - lo, 1) * 255.0, 0, 255)
+            if "polys" in op:
+                sub[~region[y0:y1, x0:x1]] = 0
+            alpha[y0:y1, x0:x1] = np.maximum(alpha[y0:y1, x0:x1], sub)
+        elif kind == "grabcut":  # snap a hand-drawn shape to real edges inside a local box
+            x0, y0, x1, y1 = op["box"]
+            gc = np.full((y1 - y0, x1 - x0), cv2.GC_PR_BGD, np.uint8)
+            local = alpha[y0:y1, x0:x1]
+            gc[local > 200] = cv2.GC_FGD
+            fg = poly_mask(alpha.shape, op["fg"])[y0:y1, x0:x1]
+            gc[fg & (local <= 200)] = cv2.GC_PR_FGD
+            if "sure_fg" in op:
+                gc[poly_mask(alpha.shape, op["sure_fg"])[y0:y1, x0:x1]] = cv2.GC_FGD
+            if "bg" in op:
+                gc[poly_mask(alpha.shape, op["bg"])[y0:y1, x0:x1]] = cv2.GC_BGD
+            bgd, fgd = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
+            cv2.grabCut(np.ascontiguousarray(rgb[y0:y1, x0:x1, ::-1]), gc, None, bgd, fgd, 6, cv2.GC_INIT_WITH_MASK)
+            cut = np.isin(gc, (cv2.GC_FGD, cv2.GC_PR_FGD)).astype(np.float32)
+            cut = cv2.GaussianBlur(cut, (3, 3), 0.7) * 255
+            if op.get("within_fg", True):  # never grow past the drawn shape
+                grow = cv2.dilate(fg.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+                cut[~grow] = np.minimum(cut[~grow], local[~grow])
+            alpha[y0:y1, x0:x1] = np.maximum(local, cut)
+        elif kind == "keep_matte_above":  # inside region, harden matte >= t to fully opaque
+            hit = region & (alpha >= op.get("t", 64))
+            alpha[hit] = 255
+        elif kind == "fill_holes":  # close enclosed transparent holes smaller than max_area
+            solid = alpha > 127
+            holes = ndimage.binary_fill_holes(solid) & ~solid
+            labels, n = ndimage.label(holes)
+            if n:
+                sizes = ndimage.sum(holes, labels, range(1, n + 1))
+                small = np.isin(labels, np.nonzero(sizes <= op.get("max_area", 400))[0] + 1)
+                if region is not None:
+                    small &= region
+                alpha[small] = 255
+        else:
+            raise ValueError(f"unknown op {kind}")
+
+    # Drop disconnected specks smaller than min_island (background flecks).
+    min_island = recipe.get("min_island", 150)
+    if min_island:
+        solid = alpha > 24
+        labels, n = ndimage.label(solid)
+        if n:
+            sizes = ndimage.sum(solid, labels, range(1, n + 1))
+            tiny = np.isin(labels, np.nonzero(sizes < min_island)[0] + 1)
+            alpha[tiny] = 0
+    return alpha.astype(np.uint8)
+
+
+def decontaminate(rgb: np.ndarray, alpha: np.ndarray) -> np.ndarray:
+    """Replace colour of soft edge pixels with the nearest solid subject colour."""
+    solid = alpha >= 250
+    if solid.all() or not solid.any():
+        return rgb
+    _, idx = ndimage.distance_transform_edt(~solid, return_indices=True)
+    nearest = rgb[idx[0], idx[1]]
+    a = (alpha.astype(np.float32) / 255.0)[..., None]
+    soft = (alpha > 0) & (alpha < 250)
+    out = rgb.copy()
+    blend = (rgb * a + nearest * (1 - a)).astype(np.uint8)
+    out[soft] = blend[soft]
+    return out
+
+
+def review_sheet(rgb: np.ndarray, alpha: np.ndarray, path: Path, crop=None) -> None:
+    def panel(bg):
+        base = np.empty_like(rgb)
+        base[:] = bg
+        a = alpha.astype(np.float32)[..., None] / 255.0
+        return (rgb * a + base * (1 - a)).astype(np.uint8)
+
+    panels = [rgb, panel((255, 0, 255)), panel((40, 40, 40))]
+    if crop:
+        x0, y0, x1, y1 = crop
+        panels = [p[y0:y1, x0:x1] for p in panels]
+    h = panels[0].shape[0]
+    scale = 620 / h
+    interp = cv2.INTER_AREA if scale < 1 else cv2.INTER_NEAREST
+    tiles = [cv2.resize(p, None, fx=scale, fy=scale, interpolation=interp) for p in panels]
+    sheet = np.concatenate([np.pad(t, ((0, 0), (0, 6), (0, 0)), constant_values=255) for t in tiles], axis=1)
+    Image.fromarray(sheet).save(path)
+
+
+def cmd_predict(args) -> None:
+    src = source_path(args.name)
+    with Image.open(src) as im:
+        im = im.convert("RGB")
+        for key in MODEL_SPECS:
+            dest = cache_dir(args) / f"{args.name}.{key}.png"
+            if not dest.exists():
+                Image.fromarray(predict_matte(Path(args.models), key, im)).save(dest)
+    print(f"cached mattes for {args.name}")
+
+
+def cmd_render(args) -> None:
+    recipe = load_recipes()[args.name]
+    src = source_path(args.name)
+    with Image.open(src) as im:
+        rgb = np.asarray(im.convert("RGB"))
+    mattes = {k: np.asarray(Image.open(cache_dir(args) / f"{args.name}.{k}.png").convert("L")) for k in MODEL_SPECS}
+    for op in recipe.get("ops", []):
+        if op["op"] == "submatte":
+            key = op.get("model", "birefnet")
+            x0, y0, x1, y1 = op["box"]
+            dest = cache_dir(args) / f"{args.name}.sub.{key}.{x0}_{y0}_{x1}_{y1}.png"
+            if not dest.exists():
+                crop = Image.fromarray(rgb[y0:y1, x0:x1])
+                Image.fromarray(predict_matte(Path(args.models), key, crop)).save(dest)
+            mattes[f"sub:{key}:{x0},{y0},{x1},{y1}"] = np.asarray(Image.open(dest).convert("L"))
+    alpha = apply_recipe(rgb, mattes, recipe)
+    review = cache_dir(args) / f"{args.name}.review.png"
+    review_sheet(rgb, alpha, review, args.crop)
+    if not args.preview:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        out = OUT_DIR / f"{args.name}.png"
+        rgba = np.dstack([decontaminate(rgb, alpha), alpha])
+        tmp = out.with_suffix(".tmp.png")
+        Image.fromarray(rgba, "RGBA").save(tmp, optimize=True)
+        tmp.replace(out)
+        print(f"wrote {out.relative_to(ROOT)} sha256={hashlib.sha256(out.read_bytes()).hexdigest()[:12]}")
+    print(f"review sheet {review}")
+
+
+def cmd_compare(args) -> None:
+    """Sheet of the raw model mattes over magenta, for choosing a starting matte."""
+    src = source_path(args.name)
+    with Image.open(src) as im:
+        rgb = np.asarray(im.convert("RGB"))
+    tiles = [rgb]
+    for key in MODEL_SPECS:
+        a = np.asarray(Image.open(cache_dir(args) / f"{args.name}.{key}.png").convert("L")).astype(np.float32)[..., None] / 255
+        tiles.append((rgb * a + np.array([255, 0, 255]) * (1 - a)).astype(np.uint8))
+    if args.crop:
+        x0, y0, x1, y1 = args.crop
+        tiles = [t[y0:y1, x0:x1] for t in tiles]
+    h = tiles[0].shape[0]
+    scale = 620 / h if h > 620 else 1.0
+    tiles = [cv2.resize(t, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA) for t in tiles]
+    sheet = np.concatenate([np.pad(t, ((0, 0), (0, 6), (0, 0)), constant_values=255) for t in tiles], axis=1)
+    dest = cache_dir(args) / f"{args.name}.compare.png"
+    Image.fromarray(sheet).save(dest)
+    print(dest)
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--models", default="models")
+    p.add_argument("--cache", default="cutout_cache")
+    sub = p.add_subparsers(dest="cmd", required=True)
+    for name, fn in (("predict", cmd_predict), ("compare", cmd_compare), ("render", cmd_render)):
+        s = sub.add_parser(name)
+        s.add_argument("name")
+        s.add_argument("--crop", type=int, nargs=4)
+        if name == "render":
+            s.add_argument("--preview", action="store_true", help="write only the review sheet")
+        s.set_defaults(fn=fn)
+    args = p.parse_args()
+    args.fn(args)
+
+
+if __name__ == "__main__":
+    main()
