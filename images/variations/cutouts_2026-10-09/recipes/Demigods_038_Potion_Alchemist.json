@@ -1,0 +1,169 @@
+{
+ "notes": {
+  "keep": [
+   "auburn-haired potion alchemist",
+   "round flask of glowing amber potion held up in the right hand, with its cork and hanging cord",
+   "tall violet crystal potion vial held up in the left hand",
+   "cream shirt, green alchemist apron with gold compass embroidery, leather harness, belts, pouches and vials",
+   "dark trousers and buckled leather boots",
+   "FOREGROUND: depth-blurred lavender, glass jar, gold beads and leaves in the bottom-left corner (0-385, 858-1254)",
+   "FOREGROUND: depth-blurred glass bottles in the bottom-right corner (1040-1254, 920-1254)"
+  ],
+  "remove": [
+   "alchemy lab shelves of bottles, copper still and green potion vats, fireplace",
+   "window, hanging herbs and lanterns, armillary sphere",
+   "desk with books, candles, crystals and mortar",
+   "treasure chests, stool and table behind the feet line",
+   "stone floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet lost the amber flask)",
+   "foreground blurred clutter traced tightly by hand with a wide feather; the sharp chests and floor behind it stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      870
+     ],
+     [
+      30,
+      858
+     ],
+     [
+      60,
+      862
+     ],
+     [
+      80,
+      880
+     ],
+     [
+      100,
+      886
+     ],
+     [
+      150,
+      882
+     ],
+     [
+      195,
+      890
+     ],
+     [
+      210,
+      905
+     ],
+     [
+      213,
+      960
+     ],
+     [
+      214,
+      1050
+     ],
+     [
+      240,
+      1052
+     ],
+     [
+      270,
+      1050
+     ],
+     [
+      310,
+      1070
+     ],
+     [
+      330,
+      1110
+     ],
+     [
+      330,
+      1150
+     ],
+     [
+      360,
+      1180
+     ],
+     [
+      382,
+      1210
+     ],
+     [
+      385,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1040,
+      1254
+     ],
+     [
+      1042,
+      1120
+     ],
+     [
+      1050,
+      1075
+     ],
+     [
+      1080,
+      1066
+     ],
+     [
+      1120,
+      1068
+     ],
+     [
+      1140,
+      1075
+     ],
+     [
+      1160,
+      1040
+     ],
+     [
+      1180,
+      1000
+     ],
+     [
+      1188,
+      960
+     ],
+     [
+      1192,
+      928
+     ],
+     [
+      1215,
+      920
+     ],
+     [
+      1240,
+      925
+     ],
+     [
+      1254,
+      930
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
