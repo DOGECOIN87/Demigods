@@ -1,6 +1,312 @@
 {
  "source": "images/variations/nature/variation_064_lotus.webp",
- "notes": {},
+ "notes": {
+  "keep": [
+   "green-haired lotus mage with gold leaf crown and emerald gem circlet",
+   "open lotus spellbook held in the right hand",
+   "floating emerald crystal on a gold lotus base hovering over the open left palm, the character's own magic",
+   "cream lotus robe over teal layers with gold lotus pauldrons, gem tassels and chains",
+   "cream boots",
+   "FOREGROUND: large white lotus flower overlapping the bottom-left edge (0-150, 860-1000)",
+   "FOREGROUND: large white lotus flower in the bottom-right corner (875-1024, 906-1024)"
+  ],
+  "remove": [
+   "library arches, lotus rose window, banners, bookshelves, hanging lanterns and ivy",
+   "fountains, gold basins and waterfalls",
+   "glowing vine swirl and sparkles around the crystal and book",
+   "lotus flowers and lily pads on the pond behind the feet line",
+   "lily pads lying flat on the water under the corner lotus flowers (pond surface)",
+   "mosaic floor disc and pond water"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the arch and floor in); BiRefNet already kept the floating crystal",
+   "corner lotus flowers traced by hand and edge-snapped with GrabCut",
+   "native 1024 x 1024 source; output kept at native size, not upscaled"
+  ]
+ },
  "base": "birefnet",
- "ops": []
+ "ops": [
+  {
+   "op": "grabcut",
+   "box": [
+    0,
+    845,
+    165,
+    1010
+   ],
+   "fg": [
+    [
+     [
+      0,
+      870
+     ],
+     [
+      12,
+      872
+     ],
+     [
+      20,
+      862
+     ],
+     [
+      30,
+      880
+     ],
+     [
+      40,
+      875
+     ],
+     [
+      48,
+      860
+     ],
+     [
+      58,
+      870
+     ],
+     [
+      66,
+      885
+     ],
+     [
+      78,
+      880
+     ],
+     [
+      88,
+      875
+     ],
+     [
+      100,
+      880
+     ],
+     [
+      108,
+      888
+     ],
+     [
+      112,
+      900
+     ],
+     [
+      128,
+      905
+     ],
+     [
+      148,
+      898
+     ],
+     [
+      148,
+      915
+     ],
+     [
+      132,
+      925
+     ],
+     [
+      150,
+      935
+     ],
+     [
+      150,
+      948
+     ],
+     [
+      138,
+      955
+     ],
+     [
+      125,
+      960
+     ],
+     [
+      150,
+      975
+     ],
+     [
+      140,
+      985
+     ],
+     [
+      120,
+      985
+     ],
+     [
+      110,
+      990
+     ],
+     [
+      112,
+      1000
+     ],
+     [
+      100,
+      1000
+     ],
+     [
+      90,
+      992
+     ],
+     [
+      70,
+      992
+     ],
+     [
+      50,
+      975
+     ],
+     [
+      40,
+      965
+     ],
+     [
+      30,
+      960
+     ],
+     [
+      0,
+      955
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      20,
+      905
+     ],
+     [
+      90,
+      905
+     ],
+     [
+      120,
+      950
+     ],
+     [
+      60,
+      975
+     ],
+     [
+      15,
+      945
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "grabcut",
+   "box": [
+    860,
+    895,
+    1024,
+    1024
+   ],
+   "fg": [
+    [
+     [
+      1024,
+      912
+     ],
+     [
+      1018,
+      926
+     ],
+     [
+      1010,
+      920
+     ],
+     [
+      1000,
+      936
+     ],
+     [
+      990,
+      910
+     ],
+     [
+      980,
+      920
+     ],
+     [
+      968,
+      906
+     ],
+     [
+      958,
+      926
+     ],
+     [
+      950,
+      940
+     ],
+     [
+      940,
+      935
+     ],
+     [
+      928,
+      942
+     ],
+     [
+      915,
+      950
+     ],
+     [
+      900,
+      962
+     ],
+     [
+      905,
+      975
+     ],
+     [
+      892,
+      985
+     ],
+     [
+      880,
+      995
+     ],
+     [
+      885,
+      1000
+     ],
+     [
+      875,
+      1012
+     ],
+     [
+      880,
+      1022
+     ],
+     [
+      1024,
+      1024
+     ]
+    ]
+   ],
+   "sure_fg": [
+    [
+     [
+      940,
+      960
+     ],
+     [
+      1010,
+      950
+     ],
+     [
+      1020,
+      1015
+     ],
+     [
+      910,
+      1018
+     ]
+    ]
+   ]
+  }
+ ]
 }

@@ -1,6 +1,189 @@
 {
  "source": "images/variations/nature/variation_062_autumn_grove.webp",
- "notes": {},
+ "notes": {
+  "keep": [
+   "green-haired autumn mage with oak-leaf crown and amber gem circlet",
+   "open oak-leaf spellbook held in the right hand",
+   "floating amber crystal hovering over the open left palm (762-808, 325-462), the character's own magic",
+   "cream oak-pattern robe over green and rust layers, leafy shoulder mantle, amber gem chains",
+   "cream boots",
+   "FOREGROUND: depth-blurred red-orange maple leaves along the bottom-left edge (0-160, 935-1024)",
+   "FOREGROUND: depth-blurred maple leaves on the right edge and bottom-right corner (950-1024, 820-1024)"
+  ],
+  "remove": [
+   "gothic library windows, columns, bookshelves and hanging lanterns",
+   "maple vines, falling leaves and the golden vine swirl around the crystal",
+   "glowing sparks rising from the book",
+   "lectern with open book, book stacks and brass armillary",
+   "sharp maple leaves lying on the floor behind the feet line",
+   "mosaic magic-circle floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the floor and arch in)",
+   "floating crystal restored by hand-traced outline; its vine swirl stays removed",
+   "foreground maple leaves traced by hand with a wide feather to match their blur",
+   "native 1024 x 1024 source; output kept at native size, not upscaled"
+  ]
+ },
  "base": "birefnet",
- "ops": []
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.6,
+   "polys": [
+    [
+     [
+      784,
+      326
+     ],
+     [
+      795,
+      345
+     ],
+     [
+      806,
+      368
+     ],
+     [
+      808,
+      382
+     ],
+     [
+      800,
+      402
+     ],
+     [
+      792,
+      425
+     ],
+     [
+      786,
+      445
+     ],
+     [
+      783,
+      462
+     ],
+     [
+      778,
+      445
+     ],
+     [
+      770,
+      425
+     ],
+     [
+      760,
+      400
+     ],
+     [
+      756,
+      382
+     ],
+     [
+      762,
+      365
+     ],
+     [
+      774,
+      345
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      950
+     ],
+     [
+      20,
+      940
+     ],
+     [
+      40,
+      950
+     ],
+     [
+      60,
+      965
+     ],
+     [
+      75,
+      985
+     ],
+     [
+      100,
+      995
+     ],
+     [
+      130,
+      1000
+     ],
+     [
+      155,
+      1008
+     ],
+     [
+      165,
+      1024
+     ],
+     [
+      0,
+      1024
+     ]
+    ],
+    [
+     [
+      1024,
+      830
+     ],
+     [
+      1005,
+      835
+     ],
+     [
+      990,
+      850
+     ],
+     [
+      975,
+      870
+     ],
+     [
+      965,
+      895
+     ],
+     [
+      960,
+      925
+     ],
+     [
+      955,
+      955
+     ],
+     [
+      948,
+      990
+     ],
+     [
+      930,
+      1005
+     ],
+     [
+      915,
+      1024
+     ],
+     [
+      1024,
+      1024
+     ]
+    ]
+   ]
+  }
+ ]
 }

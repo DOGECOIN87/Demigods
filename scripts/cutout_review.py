@@ -132,6 +132,13 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             factor = np.clip((w1 - warm) / (w1 - w0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.7))
             alpha[region] = alpha[region] * factor[region]
+        elif kind == "key_lum":  # inside region, add opacity from luminance (bright metal/crystal on a dark sky)
+            lum = rgb.astype(np.float32).mean(axis=2)
+            k0, k1 = op["ramp"]
+            keyed = np.clip((lum - k0) / (k1 - k0), 0, 1) * 255
+            keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 0.7))
+            keyed[~region] = 0
+            alpha = np.maximum(alpha, keyed)
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
             if op.get("invert"):

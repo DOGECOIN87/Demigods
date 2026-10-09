@@ -1,6 +1,201 @@
 {
  "source": "images/variations/nature/variation_061_blossom.webp",
- "notes": {},
+ "notes": {
+  "keep": [
+   "green-haired blossom mage with leafy flower crown and green gem circlet",
+   "open green-and-gold spellbook held in the right hand",
+   "floating green crystal hovering over the open left palm (763-797, 335-455), the character's own magic",
+   "white-and-pink blossom robe with leaf-edged tattered hem, gem chains, leafy shoulder trim",
+   "white boots",
+   "FOREGROUND: depth-blurred pink blossom cluster in the bottom-left corner (0-135, 880-1024)",
+   "FOREGROUND: depth-blurred pink blossoms and leaves at the bottom-right edge (900-1024, 790-1024)"
+  ],
+  "remove": [
+   "greenhouse library arches, windows, bookshelves and hanging lanterns",
+   "blossom vines, falling petals and the glowing vine swirl around the crystal",
+   "lectern with open book at the left and brass armillary at the right",
+   "sharp blossoms and leaves behind the feet line at the left and right",
+   "green sparkles rising from the book",
+   "mosaic magic-circle floor and scattered petals"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet left a green haze)",
+   "floating crystal restored by hand-traced outline; its vine swirl and sparkles stay removed",
+   "bottom-corner foreground blossoms traced by hand with a wide feather to match their blur",
+   "native 1024 x 1024 source; output kept at native size, not upscaled"
+  ]
+ },
  "base": "birefnet",
- "ops": []
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.6,
+   "polys": [
+    [
+     [
+      780,
+      333
+     ],
+     [
+      790,
+      348
+     ],
+     [
+      800,
+      370
+     ],
+     [
+      802,
+      388
+     ],
+     [
+      795,
+      410
+     ],
+     [
+      788,
+      430
+     ],
+     [
+      782,
+      452
+     ],
+     [
+      774,
+      452
+     ],
+     [
+      768,
+      430
+     ],
+     [
+      760,
+      410
+     ],
+     [
+      752,
+      388
+     ],
+     [
+      756,
+      370
+     ],
+     [
+      768,
+      348
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      885
+     ],
+     [
+      15,
+      875
+     ],
+     [
+      30,
+      880
+     ],
+     [
+      45,
+      900
+     ],
+     [
+      50,
+      925
+     ],
+     [
+      60,
+      945
+     ],
+     [
+      80,
+      955
+     ],
+     [
+      100,
+      960
+     ],
+     [
+      118,
+      975
+     ],
+     [
+      128,
+      995
+     ],
+     [
+      135,
+      1024
+     ],
+     [
+      0,
+      1024
+     ]
+    ],
+    [
+     [
+      1024,
+      790
+     ],
+     [
+      995,
+      795
+     ],
+     [
+      970,
+      808
+     ],
+     [
+      948,
+      830
+     ],
+     [
+      935,
+      858
+     ],
+     [
+      925,
+      885
+     ],
+     [
+      915,
+      910
+     ],
+     [
+      905,
+      935
+     ],
+     [
+      900,
+      960
+     ],
+     [
+      880,
+      975
+     ],
+     [
+      868,
+      995
+     ],
+     [
+      862,
+      1024
+     ],
+     [
+      1024,
+      1024
+     ]
+    ]
+   ]
+  }
+ ]
 }

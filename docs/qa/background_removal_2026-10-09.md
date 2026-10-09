@@ -96,6 +96,7 @@ Polygons are lists of `[x, y]` source-pixel points; `polys` is a list of polygon
 | `grabcut` | edge-snap inside `box` `[x0,y0,x1,y1]`: `fg` drawn shape (result never grows past it), optional `sure_fg`, `bg`, `feather`. Fails when the item and what is behind it share colours — then trace with `keep` instead |
 | `drop_dark` | inside `polys`, fade out pixels darker than `ramp: [d0, d1]` mean luminance (sky through bright ribbons, floor around white feathers) |
 | `drop_warm` | inside `polys`, fade out pixels whose red-minus-blue exceeds `ramp: [w0, w1]` (beige or wooden background around blue or white items) |
+| `key_lum` | inside `polys`, add opacity from mean luminance `ramp: [k0, k1]` (bright metal or crystal on a dark sky); isolated stars are then dropped by `min_island` |
 | `key_rb` | inside `polys`, add opacity from red-minus-blue `ramp` (warm items on cool water/sky); `"invert": true` for cool-on-warm |
 | `remove_color` | inside `polys` (optional), drop pixels within `tol` of `rgb` |
 | `fill_holes` | close enclosed transparent holes up to `max_area` px |
