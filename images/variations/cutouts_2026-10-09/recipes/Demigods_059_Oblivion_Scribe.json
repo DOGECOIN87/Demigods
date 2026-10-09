@@ -1,0 +1,30 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired oblivion scribe with gold star hair ornament",
+   "black-and-violet quill held up in the right hand: feather (255-370, 290-470) and its gold-wrapped shaft down into the fist (~366-392, 438-505)",
+   "the gold bead chain hanging from the quill hand (342-362, 465-605) down to its violet crystal pendant (325-370, 600-700)",
+   "black-bound gold-clasped tome held against the chest in the left arm",
+   "black-and-gold robe with high collar, tassels and crystal drops; cream manuscript-print stole/ribbons streaming to both sides",
+   "white trousers and black laced boots"
+  ],
+  "remove": [
+   "black void sun, starfield and violet energy streams",
+   "ruined library bookshelves, arches, balconies and pillars",
+   "floating violet crystal debris, orbs on stands and the orb frames",
+   "flying loose manuscript pages and pages lying on the floor",
+   "book stacks and blocks on the floor at the left and right",
+   "reflective tiled floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the stole and floor)",
+   "restored the quill's shaft between the feather and the fist, which BiRefNet dropped (traced 366-392, 438-505)",
+   "restored the bead chain hanging from the quill hand, keyed by its warm gold (red-minus-blue) against the violet background inside a thin traced strip"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {"op": "keep", "feather": 0.6, "polys": [[[364,438],[379,436],[392,500],[380,505]]]},
+  {"op": "key_rb", "ramp": [-45,-15], "feather": 0.6, "polys": [[[342,465],[364,465],[362,605],[342,605]]]}
+ ]
+}
