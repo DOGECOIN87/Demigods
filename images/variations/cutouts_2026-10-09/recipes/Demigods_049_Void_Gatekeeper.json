@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired void gatekeeper",
+   "void staff held in the right hand: spiked gold-and-black compass-ring head around a swirling void orb (110-470, 40-340), black spiked shaft and gold fittings down to the foot by the boots, and the large key-blade attached to the shaft (~330-380, 640-880)",
+   "black spiked armour with violet void gems, gold chains and clasps",
+   "tattered black-and-violet cape spreading to both sides",
+   "black armoured boots"
+  ],
+  "remove": [
+   "giant void vortex and starfield",
+   "ruined black pillars and floating rock fragments",
+   "heavy chains stretching across the scene",
+   "violet light rays and sparkles",
+   "blurred dark rubble in the bottom corners and the cracked, wet obsidian floor with reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet cut off the staff head and kept floor reflections); staff head spikes, key-blade and cape tatters checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
