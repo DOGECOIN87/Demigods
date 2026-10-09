@@ -1544,5 +1544,761 @@
     ]
    }
   ]
+ },
+ "Demigods_012_Crystal_Geomancer": {
+  "notes": {
+   "keep": [
+    "dark-haired crystal geomancer with gold-and-amethyst hair ornament and earrings",
+    "floating octahedral amethyst crystal hovering over the open left palm, with its four small orbiting shards",
+    "amethyst crystal pauldrons on both shoulders",
+    "black coat with gold trim, lilac tabard, crystal pendants and belts",
+    "dark boots",
+    "FOREGROUND: amethyst crystal cluster on the floor at bottom-left (0-210, 1115-1234), lower in frame than the boots",
+    "FOREGROUND: large blurred amethyst crystal cut off at the bottom-right edge (1150-1254, 1066-1254)"
+   ],
+   "remove": [
+    "geode cave wall, hanging crystals and crystal waterfalls",
+    "gothic bridges, arches, balustrades and candles",
+    "black rocks and the crystal clusters at the back left/right of the floor (behind the feet line)",
+    "small crystals scattered on the floor behind the feet line",
+    "glowing light behind the floating crystal",
+    "reflective tiled floor"
+   ],
+   "fixes": [
+    "BiRefNet matte used",
+    "floating crystal and its four shards traced as polygons (geometric facets against a bright glow)",
+    "left pauldron crystal spikes restored with GrabCut"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "polys": [
+     [
+      [
+       353,
+       350
+      ],
+      [
+       394,
+       418
+      ],
+      [
+       429,
+       443
+      ],
+      [
+       348,
+       576
+      ],
+      [
+       271,
+       440
+      ],
+      [
+       310,
+       418
+      ]
+     ],
+     [
+      [
+       271,
+       484
+      ],
+      [
+       297,
+       504
+      ],
+      [
+       290,
+       522
+      ],
+      [
+       276,
+       512
+      ]
+     ],
+     [
+      [
+       289,
+       530
+      ],
+      [
+       304,
+       539
+      ],
+      [
+       302,
+       559
+      ],
+      [
+       289,
+       542
+      ]
+     ],
+     [
+      [
+       425,
+       485
+      ],
+      [
+       420,
+       515
+      ],
+      [
+       406,
+       522
+      ],
+      [
+       399,
+       504
+      ]
+     ],
+     [
+      [
+       401,
+       529
+      ],
+      [
+       401,
+       549
+      ],
+      [
+       392,
+       559
+      ],
+      [
+       390,
+       542
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "grabcut",
+    "box": [
+     405,
+     500,
+     520,
+     630
+    ],
+    "fg": [
+     [
+      [
+       421,
+       555
+      ],
+      [
+       450,
+       540
+      ],
+      [
+       474,
+       526
+      ],
+      [
+       500,
+       515
+      ],
+      [
+       519,
+       515
+      ],
+      [
+       519,
+       628
+      ],
+      [
+       470,
+       628
+      ],
+      [
+       440,
+       615
+      ],
+      [
+       428,
+       598
+      ],
+      [
+       445,
+       588
+      ],
+      [
+       432,
+       570
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "grabcut",
+    "box": [
+     0,
+     1100,
+     240,
+     1254
+    ],
+    "feather": 1.0,
+    "fg": [
+     [
+      [
+       0,
+       1150
+      ],
+      [
+       30,
+       1138
+      ],
+      [
+       55,
+       1130
+      ],
+      [
+       100,
+       1124
+      ],
+      [
+       135,
+       1115
+      ],
+      [
+       165,
+       1135
+      ],
+      [
+       200,
+       1158
+      ],
+      [
+       210,
+       1175
+      ],
+      [
+       195,
+       1192
+      ],
+      [
+       160,
+       1208
+      ],
+      [
+       120,
+       1220
+      ],
+      [
+       80,
+       1228
+      ],
+      [
+       40,
+       1232
+      ],
+      [
+       0,
+       1234
+      ]
+     ]
+    ],
+    "sure_fg": [
+     [
+      [
+       20,
+       1160
+      ],
+      [
+       60,
+       1145
+      ],
+      [
+       130,
+       1135
+      ],
+      [
+       180,
+       1165
+      ],
+      [
+       150,
+       1195
+      ],
+      [
+       90,
+       1210
+      ],
+      [
+       20,
+       1215
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "feather": 1.5,
+    "polys": [
+     [
+      [
+       1150,
+       1254
+      ],
+      [
+       1150,
+       1150
+      ],
+      [
+       1157,
+       1117
+      ],
+      [
+       1170,
+       1102
+      ],
+      [
+       1210,
+       1086
+      ],
+      [
+       1254,
+       1066
+      ],
+      [
+       1254,
+       1254
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_013_Crescent_Huntress": {
+  "notes": {
+   "keep": [
+    "silver-haired huntress with long braid, crescent hair clip, bow and crystal earrings",
+    "crescent moon bow held in both hands, including the bowstring, hanging crystal and crescent charms and tassel",
+    "nocked arrow and quiver of arrows over the shoulder",
+    "black coat with silver trim, layered navy cape with moon and leaf embroidery, ribbon",
+    "black boots",
+    "FOREGROUND: depth-blurred glowing blue flowers and dark leaves in the bottom-left corner (0-250, 1035-1254)",
+    "FOREGROUND: depth-blurred glowing blue flowers and leaves in the bottom-right corner (1080-1254, 1010-1254)"
+   ],
+   "remove": [
+    "birch trees, hanging lanterns and falling leaves",
+    "full moon, starry sky and pine silhouettes",
+    "glowing flower beds behind the feet line, stream, wet stones and reflections",
+    "sharp rock with water highlights behind the left flowers (130-220, 1100-1140)"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged for the character (bowstring and charms intact)",
+    "foreground flower clumps traced by hand with feathered edges to match their blur"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "feather": 2.0,
+    "polys": [
+     [
+      [
+       0,
+       1060
+      ],
+      [
+       20,
+       1080
+      ],
+      [
+       40,
+       1050
+      ],
+      [
+       60,
+       1035
+      ],
+      [
+       75,
+       1050
+      ],
+      [
+       95,
+       1055
+      ],
+      [
+       115,
+       1075
+      ],
+      [
+       110,
+       1110
+      ],
+      [
+       100,
+       1140
+      ],
+      [
+       130,
+       1150
+      ],
+      [
+       160,
+       1145
+      ],
+      [
+       185,
+       1160
+      ],
+      [
+       205,
+       1180
+      ],
+      [
+       220,
+       1210
+      ],
+      [
+       240,
+       1230
+      ],
+      [
+       250,
+       1254
+      ],
+      [
+       0,
+       1254
+      ]
+     ],
+     [
+      [
+       1205,
+       1050
+      ],
+      [
+       1218,
+       1028
+      ],
+      [
+       1235,
+       1013
+      ],
+      [
+       1254,
+       1010
+      ],
+      [
+       1254,
+       1254
+      ],
+      [
+       1080,
+       1254
+      ],
+      [
+       1080,
+       1210
+      ],
+      [
+       1090,
+       1180
+      ],
+      [
+       1100,
+       1150
+      ],
+      [
+       1115,
+       1120
+      ],
+      [
+       1140,
+       1108
+      ],
+      [
+       1170,
+       1104
+      ],
+      [
+       1200,
+       1100
+      ],
+      [
+       1225,
+       1080
+      ],
+      [
+       1215,
+       1062
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_014_Lantern_Keeper": {
+  "notes": {
+   "keep": [
+    "dark-haired lantern keeper with twin buns, gold-and-red flower hairpins, red tassels and dangling ornaments",
+    "glowing gold lantern held up in the left hand by its ring handle, with its hanging tassel and gem",
+    "navy butterfly-pattern kimono with red lining, red obi and bow, gold tassel cords",
+    "geta sandals"
+   ],
+   "remove": [
+    "market stalls, awnings, shelves and goods",
+    "hanging paper lanterns and floating sky lanterns",
+    "pagodas, bridge, maple branches and night sky",
+    "wet stone street, reflections and scattered red leaves"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged; lantern ring interior, hand and hair edges checked at zoom"
+   ]
+  },
+  "base": "birefnet",
+  "ops": []
+ },
+ "Demigods_015_Tide_Captain": {
+  "notes": {
+   "keep": [
+    "auburn-haired captain in tricorn hat with blue and white plumes, anchor brooch, chains and tassels",
+    "open brass compass held in the left hand with its chain and anchor charm",
+    "rapier at the right hip, gripped in the right hand",
+    "teal gold-trimmed captain's coat with epaulettes, jabot, belts, white trousers",
+    "black buckled boots",
+    "FOREGROUND: depth-blurred brass deck lantern in the bottom-left corner (0-152, 893-1254)",
+    "FOREGROUND: coiled rope on the deck in front of the feet (150-495, 1112-1254)",
+    "FOREGROUND: iron-bound treasure chest at the bottom-right with the brass armillary sphere on its lid (1082-1254, 965-1254)"
+   ],
+   "remove": [
+    "mast, rigging, sails, ship's wheel and hanging lanterns",
+    "moon, night sky, clouds, coastal castle town and sea",
+    "railing, posts and rope on the railing",
+    "crates and barrels behind the feet line, including the map scroll draped over the back crate and the lantern above it",
+    "wet deck planks and reflections"
+   ],
+   "fixes": [
+    "BiRefNet matte used for the character",
+    "foreground lantern, rope coil and chest with armillary sphere traced by hand; the barrel and crate behind the lantern and the crate behind the chest stay removed"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "feather": 2.5,
+    "polys": [
+     [
+      [
+       0,
+       895
+      ],
+      [
+       25,
+       893
+      ],
+      [
+       45,
+       905
+      ],
+      [
+       60,
+       930
+      ],
+      [
+       75,
+       960
+      ],
+      [
+       105,
+       985
+      ],
+      [
+       122,
+       1000
+      ],
+      [
+       128,
+       1015
+      ],
+      [
+       140,
+       1035
+      ],
+      [
+       150,
+       1050
+      ],
+      [
+       152,
+       1100
+      ],
+      [
+       152,
+       1254
+      ],
+      [
+       0,
+       1254
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "feather": 1.0,
+    "polys": [
+     [
+      [
+       150,
+       1146
+      ],
+      [
+       175,
+       1141
+      ],
+      [
+       200,
+       1144
+      ],
+      [
+       218,
+       1153
+      ],
+      [
+       233,
+       1164
+      ],
+      [
+       242,
+       1177
+      ],
+      [
+       246,
+       1192
+      ],
+      [
+       262,
+       1201
+      ],
+      [
+       300,
+       1206
+      ],
+      [
+       340,
+       1212
+      ],
+      [
+       370,
+       1218
+      ],
+      [
+       400,
+       1225
+      ],
+      [
+       430,
+       1235
+      ],
+      [
+       460,
+       1244
+      ],
+      [
+       490,
+       1250
+      ],
+      [
+       495,
+       1254
+      ],
+      [
+       470,
+       1254
+      ],
+      [
+       454,
+       1247
+      ],
+      [
+       380,
+       1235
+      ],
+      [
+       300,
+       1224
+      ],
+      [
+       240,
+       1220
+      ],
+      [
+       152,
+       1217
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "keep",
+    "feather": 0.8,
+    "polys": [
+     [
+      [
+       1082,
+       1254
+      ],
+      [
+       1082,
+       1050
+      ],
+      [
+       1148,
+       1048
+      ],
+      [
+       1148,
+       1030
+      ],
+      [
+       1152,
+       1015
+      ],
+      [
+       1160,
+       1010
+      ],
+      [
+       1170,
+       1008
+      ],
+      [
+       1190,
+       997
+      ],
+      [
+       1210,
+       990
+      ],
+      [
+       1240,
+       980
+      ],
+      [
+       1246,
+       968
+      ],
+      [
+       1254,
+       965
+      ],
+      [
+       1254,
+       1254
+      ]
+     ]
+    ]
+   }
+  ]
  }
 }
