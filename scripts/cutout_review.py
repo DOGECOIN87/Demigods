@@ -40,13 +40,19 @@ MODEL_SPECS = {
 def predict_matte(model_dir: Path, key: str, image: Image.Image) -> np.ndarray:
     import onnxruntime as ort
 
+    import fcntl
+
     filename, mean, std, sigmoid = MODEL_SPECS[key]
-    session = ort.InferenceSession(str(model_dir / filename), providers=["CPUExecutionProvider"])
     small = np.asarray(image.convert("RGB").resize((1024, 1024), Image.LANCZOS), dtype=np.float32)
     small /= max(float(small.max()), 1e-6)
     small = (small - np.array(mean, np.float32)) / np.array(std, np.float32)
     tensor = small.transpose(2, 0, 1)[None].astype(np.float32)
-    out = session.run(None, {session.get_inputs()[0].name: tensor})[0][0, 0]
+    # One model in memory at a time: BiRefNet needs several GB of RAM on CPU.
+    with open(model_dir / ".inference.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        session = ort.InferenceSession(str(model_dir / filename), providers=["CPUExecutionProvider"])
+        out = session.run(None, {session.get_inputs()[0].name: tensor})[0][0, 0]
+        del session
     if sigmoid:
         out = 1.0 / (1.0 + np.exp(-out))
     out = (out - out.min()) / max(float(out.max() - out.min()), 1e-6)
@@ -98,7 +104,20 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             alt = np.clip((alt - lo) / max(hi - lo, 1) * 255.0, 0, 255)
             alpha[region] = alt[region]
         elif kind == "keep":  # region is entirely subject
-            alpha[region] = 255
+            if op.get("feather"):  # soft edge for depth-blurred foreground props
+                soft = cv2.GaussianBlur(region.astype(np.float32), (0, 0), op["feather"]) * 255
+                alpha = np.maximum(alpha, soft)
+            else:
+                alpha[region] = 255
+        elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
+            score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
+            if op.get("invert"):
+                score = -score
+            k0, k1 = op["ramp"]
+            keyed = np.clip((score - k0) / (k1 - k0), 0, 1) * 255
+            keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 1.0))
+            keyed[~region] = 0
+            alpha = np.maximum(alpha, keyed)
         elif kind == "remove":  # region is entirely background
             alpha[region] = 0
         elif kind == "remove_color":  # inside region, drop pixels near a background colour
@@ -129,7 +148,8 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             bgd, fgd = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
             cv2.grabCut(np.ascontiguousarray(rgb[y0:y1, x0:x1, ::-1]), gc, None, bgd, fgd, 6, cv2.GC_INIT_WITH_MASK)
             cut = np.isin(gc, (cv2.GC_FGD, cv2.GC_PR_FGD)).astype(np.float32)
-            cut = cv2.GaussianBlur(cut, (3, 3), 0.7) * 255
+            sigma = op.get("feather", 0.7)  # wider for depth-blurred foreground props
+            cut = cv2.GaussianBlur(cut, (0, 0), sigma) * 255
             if op.get("within_fg", True):  # never grow past the drawn shape
                 grow = cv2.dilate(fg.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
                 cut[~grow] = np.minimum(cut[~grow], local[~grow])
