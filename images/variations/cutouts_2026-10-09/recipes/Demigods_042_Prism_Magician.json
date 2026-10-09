@@ -1,0 +1,81 @@
+{
+ "notes": {
+  "keep": [
+   "white-haired prism magician in a faceted crystal top hat with crimson band, gold and gem brooch and ribbons",
+   "magic wand held up in the right hand",
+   "faceted prism crystal floating over the open left palm (899-1041, 404-541): the character's magic",
+   "crimson tailcoat with gold filigree and prismatic crystal panels, lace cuffs, cream waistcoat, bow tie, gold chains and crystal drops",
+   "black trousers and black patent boots with gold"
+  ],
+  "remove": [
+   "rainbow light beam shooting from the prism to the frame edge and the glow around the prism",
+   "the many small floating crystal shards in the air, including those right around the prism",
+   "stage curtains, chandeliers, stained-glass rose windows, staircase and gold railings",
+   "large crystals on stands and the crystal mirrors",
+   "reflective prism-lit floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the coat and wand)",
+   "restored the floating prism, which both models dropped, by a traced outline; its light beam is removed with the background"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.8,
+   "polys": [
+    [
+     [
+      970,
+      404
+     ],
+     [
+      985,
+      438
+     ],
+     [
+      1010,
+      444
+     ],
+     [
+      1041,
+      470
+     ],
+     [
+      1012,
+      490
+     ],
+     [
+      997,
+      515
+     ],
+     [
+      970,
+      541
+     ],
+     [
+      945,
+      515
+     ],
+     [
+      925,
+      496
+     ],
+     [
+      899,
+      470
+     ],
+     [
+      933,
+      452
+     ],
+     [
+      955,
+      438
+     ]
+    ]
+   ]
+  }
+ ]
+}
