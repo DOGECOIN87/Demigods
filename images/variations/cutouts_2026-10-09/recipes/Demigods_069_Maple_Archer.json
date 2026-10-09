@@ -1,0 +1,132 @@
+{
+ "notes": {
+  "keep": [
+   "auburn-haired maple archer with long side braid, maple-leaf hair ornaments",
+   "maple longbow held in the left hand, full bow tip to tip with bowstring and the maple-leaf charms hanging from it",
+   "quiver of red-fletched arrows at the hip",
+   "russet hooded cape with maple-leaf pattern, leather armour, gauntlets, belts and charms",
+   "olive trousers and laced leather boots",
+   "FOREGROUND: depth-blurred red and gold maple leaves in the bottom-left corner (0-270, 1120-1254)",
+   "FOREGROUND: depth-blurred red maple leaves in the bottom-right corner (1075-1254, 1080-1254)"
+  ],
+  "remove": [
+   "maple trees, falling leaves and leafy canopy",
+   "stone ruins, arches, stone lanterns, steps and waterfall",
+   "mossy boulder at the right and maple leaves lying on it",
+   "maple leaves lying on the stone path behind the feet line, and the path itself"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the braid and cape edges)",
+   "foreground blurred maple leaves traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      1125
+     ],
+     [
+      40,
+      1120
+     ],
+     [
+      70,
+      1135
+     ],
+     [
+      95,
+      1158
+     ],
+     [
+      112,
+      1150
+     ],
+     [
+      132,
+      1144
+     ],
+     [
+      150,
+      1140
+     ],
+     [
+      170,
+      1158
+     ],
+     [
+      200,
+      1178
+     ],
+     [
+      230,
+      1190
+     ],
+     [
+      250,
+      1210
+     ],
+     [
+      265,
+      1238
+     ],
+     [
+      270,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1075,
+      1254
+     ],
+     [
+      1082,
+      1212
+     ],
+     [
+      1100,
+      1172
+     ],
+     [
+      1122,
+      1150
+     ],
+     [
+      1150,
+      1146
+     ],
+     [
+      1180,
+      1130
+     ],
+     [
+      1202,
+      1118
+     ],
+     [
+      1222,
+      1100
+     ],
+     [
+      1254,
+      1080
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
