@@ -1,0 +1,22 @@
+{
+ "notes": {
+  "keep": [
+   "blond diamond paladin",
+   "great sword held point-down in both gauntlets: gold crossguard with blue crystal, full blade to its tip on the floor (~620, 1190)",
+   "silver plate armour with layered pauldrons, blue diamond inlays and gold trim; white-and-navy tabard and tassets with gold star embroidery",
+   "silver armoured greaves and sabatons"
+  ],
+  "remove": [
+   "white crystal cathedral, spires, stained-glass window and sky",
+   "navy star banners on the pillars",
+   "large blue crystals on pedestals and planters with white flowers",
+   "crystal fountains, waterfalls and steps",
+   "reflective checkered marble floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet kept floor reflections and a violet halo); sword tip and tabard edges checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
