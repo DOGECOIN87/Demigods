@@ -1,0 +1,135 @@
+{
+ "notes": {
+  "keep": [
+   "pink-haired cherry-blossom samurai with high ponytail, sakura and red-cord hair ornaments with hanging tassels",
+   "katana held horizontally in both hands: cord-wrapped hilt, gold guard, black sakura-painted scabbard, red tassels hanging from hilt and scabbard",
+   "sakura-patterned lamellar armour, red sash and blossom, layered pink-and-white sleeves and streamers, dark hakama",
+   "white sakura armoured boots with red cords",
+   "FOREGROUND: depth-blurred cherry blossoms in the bottom-left corner (0-300, 1040-1254)",
+   "FOREGROUND: depth-blurred cherry blossoms along the right edge and bottom-right corner (1130-1254, 860-1254)",
+   "FOREGROUND: depth-blurred blossoms along the bottom edge in front of the feet (930-1254, 1200-1254)"
+  ],
+  "remove": [
+   "cherry trees, falling petals and hanging blossom garlands",
+   "red arched bridge, stone lanterns, pagoda and stone walls",
+   "waterfall, stream, rocks and splashes",
+   "petals lying on the stone path, and the stone path itself",
+   "sharp blossom bushes at the left and right behind the feet line"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the sleeves and scabbard tip)",
+   "foreground blossoms and their blurred leaves kept by a depth-blur key (low local sharpness) inside regions traced around each corner, so the sharp stone path, stream and rocks around them stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "key_blur",
+   "ramp": [
+    10,
+    22
+   ],
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      0,
+      1040
+     ],
+     [
+      40,
+      1030
+     ],
+     [
+      80,
+      1040
+     ],
+     [
+      110,
+      1080
+     ],
+     [
+      130,
+      1150
+     ],
+     [
+      180,
+      1150
+     ],
+     [
+      240,
+      1180
+     ],
+     [
+      300,
+      1160
+     ],
+     [
+      330,
+      1200
+     ],
+     [
+      340,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1254,
+      860
+     ],
+     [
+      1210,
+      860
+     ],
+     [
+      1205,
+      960
+     ],
+     [
+      1254,
+      990
+     ]
+    ],
+    [
+     [
+      1254,
+      1050
+     ],
+     [
+      1200,
+      1060
+     ],
+     [
+      1150,
+      1110
+     ],
+     [
+      1090,
+      1160
+     ],
+     [
+      1000,
+      1180
+     ],
+     [
+      920,
+      1210
+     ],
+     [
+      900,
+      1254
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}

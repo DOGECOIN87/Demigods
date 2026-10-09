@@ -146,6 +146,15 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             score = np.clip((g_r - op.get("g_r", -12)) / 6.0, 0, 1) * np.clip((lum - op.get("lum", 110)) / 20.0, 0, 1)
             score = cv2.GaussianBlur(score, (0, 0), op.get("feather", 0.8))
             alpha[region] = alpha[region] * (1 - score[region])
+        elif kind == "key_blur":  # inside region, add opacity where the image is depth-blurred (foreground bokeh), not sharp
+            lum = rgb.astype(np.float32).mean(axis=2)
+            lap = np.abs(cv2.Laplacian(cv2.GaussianBlur(lum, (0, 0), 1.0), cv2.CV_32F, ksize=3))
+            sharp = cv2.GaussianBlur(lap, (0, 0), 6)
+            b0, b1 = op.get("ramp", [10, 22])
+            keyed = np.clip((b1 - sharp) / (b1 - b0), 0, 1)
+            keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 2.0)) * 255
+            keyed[~region] = 0
+            alpha = np.maximum(alpha, keyed)
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
             if op.get("invert"):
