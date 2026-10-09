@@ -97,6 +97,7 @@ Polygons are lists of `[x, y]` source-pixel points; `polys` is a list of polygon
 | `drop_dark` | inside `polys`, fade out pixels darker than `ramp: [d0, d1]` mean luminance (sky through bright ribbons, floor around white feathers) |
 | `drop_warm` | inside `polys`, fade out pixels whose red-minus-blue exceeds `ramp: [w0, w1]` (beige or wooden background around blue or white items) |
 | `key_lum` | inside `polys`, add opacity from mean luminance `ramp: [k0, k1]` (bright metal or crystal on a dark sky); isolated stars are then dropped by `min_island` |
+| `drop_pale` | inside `polys`, fade out pixels that are both bright (mean above `lum`, default 110) and neutral or greenish (G minus R above `g_r`, default -12): pale haze and sky glow around brown or gold items |
 | `key_rb` | inside `polys`, add opacity from red-minus-blue `ramp` (warm items on cool water/sky); `"invert": true` for cool-on-warm |
 | `remove_color` | inside `polys` (optional), drop pixels within `tol` of `rgb` |
 | `fill_holes` | close enclosed transparent holes up to `max_area` px |

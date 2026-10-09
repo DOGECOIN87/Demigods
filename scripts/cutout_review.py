@@ -139,6 +139,13 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 0.7))
             keyed[~region] = 0
             alpha = np.maximum(alpha, keyed)
+        elif kind == "drop_pale":  # inside region, fade out bright, neutral/greenish pixels (pale haze, sky glow)
+            f = rgb.astype(np.float32)
+            g_r = f[..., 1] - f[..., 0]
+            lum = f.mean(axis=2)
+            score = np.clip((g_r - op.get("g_r", -12)) / 6.0, 0, 1) * np.clip((lum - op.get("lum", 110)) / 20.0, 0, 1)
+            score = cv2.GaussianBlur(score, (0, 0), op.get("feather", 0.8))
+            alpha[region] = alpha[region] * (1 - score[region])
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             score = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
             if op.get("invert"):
