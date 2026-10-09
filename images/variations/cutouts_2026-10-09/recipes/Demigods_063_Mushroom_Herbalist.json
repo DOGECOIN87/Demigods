@@ -1,0 +1,142 @@
+{
+ "notes": {
+  "keep": [
+   "green-haired mushroom herbalist with mushroom, leaf and white-flower hair ornaments",
+   "glowing orange mushroom held up in the left hand",
+   "wicker basket held in the right hand, full of glowing teal and orange mushrooms, white flowers and leaves",
+   "rust hooded capelet, cream blouse, green high-waisted trousers with vine embroidery, belts, hanging vines, tassels and amber drops, flowing rust cape",
+   "brown laced boots with flower",
+   "FOREGROUND: depth-blurred leaves in the bottom-left corner (0-335, 992-1254)",
+   "FOREGROUND: depth-blurred leaves and white flower in the bottom-right corner (940-1254, 1030-1254)"
+  ],
+  "remove": [
+   "giant glowing mushroom trees, hanging lantern vines and fireflies",
+   "large blurred teal mushroom at the left edge (0-100, 330-430): it grows from the forest floor behind the feet line",
+   "glowing mushrooms, mossy rocks and plants at or behind the feet line on both sides",
+   "mossy ground, puddle path and reflections",
+   "in-focus leaves above the bottom-left foreground (0-100, 880-990), part of the mid-ground plants",
+   "in-focus leaves above the bottom-right foreground (1080-1254, 940-1030), part of the mid-ground plants"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet pulled in the teal mushroom and haze)",
+   "foreground leaf masses traced by hand with a wide feather to match their blur; the sharp mossy rock, glowing mushrooms and puddle path beside them stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      995
+     ],
+     [
+      50,
+      992
+     ],
+     [
+      100,
+      1005
+     ],
+     [
+      130,
+      1030
+     ],
+     [
+      150,
+      1070
+     ],
+     [
+      158,
+      1110
+     ],
+     [
+      168,
+      1140
+     ],
+     [
+      190,
+      1160
+     ],
+     [
+      225,
+      1172
+     ],
+     [
+      262,
+      1182
+     ],
+     [
+      295,
+      1196
+     ],
+     [
+      318,
+      1212
+     ],
+     [
+      332,
+      1232
+     ],
+     [
+      338,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      940,
+      1254
+     ],
+     [
+      960,
+      1225
+     ],
+     [
+      1000,
+      1195
+     ],
+     [
+      1040,
+      1172
+     ],
+     [
+      1080,
+      1150
+     ],
+     [
+      1120,
+      1125
+     ],
+     [
+      1150,
+      1100
+     ],
+     [
+      1170,
+      1060
+     ],
+     [
+      1200,
+      1040
+     ],
+     [
+      1254,
+      1030
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
