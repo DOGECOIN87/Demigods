@@ -1,0 +1,135 @@
+{
+ "notes": {
+  "keep": [
+   "long violet-black haired mirror seer with crystal-butterfly hair ornament and crystal earring",
+   "ornate silver hand mirror held up in the right hand: faceted crystal glass, filigree frame and handle",
+   "two crystal butterflies fluttering up from the open left palm (846-936, 380-490): the character's magic",
+   "silver mirror-shard robe with black and violet layers, crystal drops, chains and jagged hem",
+   "black trousers and silver-buckled black boots"
+  ],
+  "remove": [
+   "hall of mirrors: arched mirrors, gold frames, chandeliers, hanging crystals",
+   "reflections of the seer in the mirrors",
+   "consoles with blue roses and the standing mirror at the left",
+   "crystal shard lying on the floor below the hem (765-805, 1090-1130)",
+   "mirror-tiled floor with reflections and roses"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the hair and robe)",
+   "restored the two crystal butterflies over the palm by traced outlines",
+   "removed the floor crystal shard BiRefNet kept (765-805, 1090-1130)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.8,
+   "polys": [
+    [
+     [
+      848,
+      397
+     ],
+     [
+      858,
+      388
+     ],
+     [
+      872,
+      402
+     ],
+     [
+      885,
+      397
+     ],
+     [
+      908,
+      385
+     ],
+     [
+      930,
+      380
+     ],
+     [
+      915,
+      400
+     ],
+     [
+      898,
+      420
+     ],
+     [
+      885,
+      436
+     ],
+     [
+      872,
+      440
+     ],
+     [
+      858,
+      432
+     ],
+     [
+      846,
+      418
+     ]
+    ],
+    [
+     [
+      905,
+      460
+     ],
+     [
+      920,
+      450
+     ],
+     [
+      936,
+      438
+     ],
+     [
+      928,
+      462
+     ],
+     [
+      922,
+      478
+     ],
+     [
+      908,
+      490
+     ],
+     [
+      900,
+      478
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      760,
+      1088
+     ],
+     [
+      810,
+      1088
+     ],
+     [
+      810,
+      1135
+     ],
+     [
+      760,
+      1135
+     ]
+    ]
+   ]
+  }
+ ]
+}
