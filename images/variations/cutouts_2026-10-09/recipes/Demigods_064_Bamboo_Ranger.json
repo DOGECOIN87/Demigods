@@ -1,0 +1,174 @@
+{
+ "notes": {
+  "keep": [
+   "dark-haired bamboo ranger with topknot, gold bamboo hair ornament, bamboo-leaf hair pin with green tassel (760-860, 190-420), long leaf-tipped hair strands",
+   "bamboo longbow held in the left hand: full bow from tip (~1045, 75) to lower tip, gold wraps, bowstring, and the diamond charms and long green tassels hanging from it",
+   "quiver of fletched arrows on the back",
+   "straw-fringed mantle, green bamboo-pattern haori with tattered panels, belts, cords, tassels and charms",
+   "black trousers and cord-laced boots",
+   "FOREGROUND: depth-blurred bamboo leaves in the bottom-left corner (0-380, 1000-1254)"
+  ],
+  "remove": [
+   "bamboo grove, stalks and leaves, light rays and mist",
+   "stone lanterns, torii gate and waterfall",
+   "bamboo sprig and leaves behind the bow (838-1000, 478-645), between and beside the bowstring and the bow",
+   "mossy rocks and wet stone path, including the blurred dark rocks in the bottom-right corner (terrain)",
+   "in-focus ferns beside the stone lantern above the blurred leaves (0-120, 900-1000), and the sharp mossy rock behind them"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet pulled the bamboo leaves and haze in)",
+   "removed the background bamboo sprig BiRefNet kept between the bowstring and the bow (828-943, 478-600) and the two leaves right of the bow (938-1000, 565-650); the removal stops 3 px short of the string and 2 px short of the bow's edge",
+   "bottom-left foreground bamboo leaves traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      882,
+      478
+     ],
+     [
+      940,
+      478
+     ],
+     [
+      921,
+      520
+     ],
+     [
+      903,
+      560
+     ],
+     [
+      885,
+      600
+     ],
+     [
+      828,
+      600
+     ],
+     [
+      846,
+      560
+     ],
+     [
+      864,
+      520
+     ]
+    ],
+    [
+     [
+      958,
+      565
+     ],
+     [
+      1000,
+      565
+     ],
+     [
+      1000,
+      600
+     ],
+     [
+      956,
+      600
+     ]
+    ],
+    [
+     [
+      945,
+      605
+     ],
+     [
+      1000,
+      605
+     ],
+     [
+      1000,
+      650
+     ],
+     [
+      938,
+      650
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      1000
+     ],
+     [
+      60,
+      1005
+     ],
+     [
+      100,
+      1022
+     ],
+     [
+      115,
+      1045
+     ],
+     [
+      125,
+      1075
+     ],
+     [
+      150,
+      1095
+     ],
+     [
+      165,
+      1115
+     ],
+     [
+      150,
+      1135
+     ],
+     [
+      175,
+      1160
+     ],
+     [
+      215,
+      1172
+     ],
+     [
+      250,
+      1185
+     ],
+     [
+      290,
+      1200
+     ],
+     [
+      330,
+      1215
+     ],
+     [
+      365,
+      1235
+     ],
+     [
+      380,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
