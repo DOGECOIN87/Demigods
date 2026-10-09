@@ -1,0 +1,38 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired reaper with ahoge and long side strands",
+   "great scythe held in the right hand: crescent-moon blade with violet galaxy inlay (45-800, 10-560), spiked crescent-and-orb head, black spiked snath down to the butt by the right boot (~500, 1110)",
+   "the scythe head's hanging ornaments: chains, the swagged chain, and three violet crystal drops on chains (left 140-162, 270-430; middle 232-268, 270-502; right 408-432, 100-272)",
+   "black hooded cloak with eclipse brooch, crystal drops, chains, and the tattered cape with silver-grass pattern",
+   "black armour, belts with crescent studs, black boots"
+  ],
+  "remove": [
+   "black eclipse sun with violet corona, night sky and clouds",
+   "ruined colonnades, arches, cliffs and waterfalls",
+   "the silver-grass field everywhere around and in front of the character, including the large blurred grass blades along the bottom edge: it is continuous ground cover across the whole frame, treated as terrain like a floor, not a separate foreground item",
+   "drifting silver petals/leaves in the air"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet kept the grass and dropped the scythe blade)",
+   "restored the scythe's three hanging crystal drops and their chains, which BiRefNet dropped: crystals and bead diamonds traced by hand, chain links keyed by luminance inside their traced strips"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {"op": "keep", "feather": 0.6, "polys": [
+   [[151,356],[162,385],[154,430],[140,388]],
+   [[143,346],[150,335],[158,346],[150,356]],
+   [[232,340],[250,316],[268,342],[250,360]],
+   [[238,410],[250,399],[262,411],[250,421]],
+   [[250,431],[265,455],[252,503],[237,455]],
+   [[408,191],[420,181],[432,192],[420,201]],
+   [[421,200],[432,232],[421,273],[408,232]]]},
+  {"op": "key_lum", "ramp": [55,115], "feather": 0.5, "polys": [
+   [[145,268],[159,268],[159,338],[145,338]],
+   [[245,268],[257,268],[257,318],[245,318]],
+   [[245,358],[257,358],[257,402],[245,402]],
+   [[245,419],[257,419],[257,434],[245,434]],
+   [[414,98],[426,98],[426,184],[414,184]]]}
+ ]
+}
