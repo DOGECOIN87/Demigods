@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "mint-haired violet jester in a three-pointed purple-and-gold harlequin hat with gold bells, diamond charms and tassels",
+   "jester's scepter held in the right hand: purple orb head with its own small jester cap and bells, black shaft, hanging tassel",
+   "harlequin doublet with ruffled collar and cuffs, black bow, gold chains; jagged purple-and-gold cape with pom-poms, crystal drops and gold diamond charms",
+   "harlequin tights and curled purple-and-gold boots with bells"
+  ],
+  "remove": [
+   "theatre stage: purple velvet curtains with gold fringe, balconies, arches and stairs",
+   "hanging gold stars and crescent moon, chandeliers and candelabras",
+   "masks, feathers and props on the side pedestals and boxes",
+   "falling purple petals and the marble star floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the hat and cape translucent and kept floor reflections); hat bells, scepter head and cape pom-poms checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
