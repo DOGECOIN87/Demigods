@@ -99,6 +99,7 @@ Polygons are lists of `[x, y]` source-pixel points; `polys` is a list of polygon
 | `key_lum` | inside `polys`, add opacity from mean luminance `ramp: [k0, k1]` (bright metal or crystal on a dark sky); isolated stars are then dropped by `min_island` |
 | `drop_pale` | inside `polys`, fade out pixels that are both bright (mean above `lum`, default 110) and neutral or greenish (G minus R above `g_r`, default -12): pale haze and sky glow around brown or gold items |
 | `key_blur` | inside `polys`, add opacity where the image is depth-blurred: local sharpness below `ramp: [b0, b1]` (default `[10, 22]`) is kept. Separates blurred foreground plants and props from the sharp ground and water behind them |
+| `drop_sharp` | inside `polys`, fade out in-focus pixels (same sharpness measure and `ramp` as `key_blur`): trims sharp background showing inside a hand-traced blurred foreground item |
 | `key_rb` | inside `polys`, add opacity from red-minus-blue `ramp` (warm items on cool water/sky); `"invert": true` for cool-on-warm |
 | `remove_color` | inside `polys` (optional), drop pixels within `tol` of `rgb` |
 | `fill_holes` | close enclosed transparent holes up to `max_area` px |

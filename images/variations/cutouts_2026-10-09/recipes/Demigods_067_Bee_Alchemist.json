@@ -1,0 +1,210 @@
+{
+ "notes": {
+  "keep": [
+   "blond bee alchemist with ahoge and white flower and bee hair ornaments",
+   "glowing golden honeycomb cluster floating above the open left palm (818-955, 375-515): the character's alchemy",
+   "gold honeycomb-scale pauldrons, white jabot, gold-and-white coat with flower embroidery, potion flasks, hanging tassels and charms on the belt",
+   "dark brown trousers and gold-buckled brown boots",
+   "FOREGROUND: depth-blurred white flowers and leaves in the bottom-left corner and up the left edge (0-320, 895-1254)",
+   "FOREGROUND: depth-blurred white flowers and leaves in the bottom-right corner (1010-1254, 1062-1254)"
+  ],
+  "remove": [
+   "golden swirl rings and sparkles around the honeycomb",
+   "hanging hive lanterns, ivy, white flower vines, arches and sunlit windows",
+   "glass flasks, alembics and wooden shelves on both sides",
+   "honeycomb chunks on the crate at the left and on the shelf at the right (behind the feet line)",
+   "bees in the air",
+   "sunlit stone floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the swirl and floor)",
+   "restored the floating honeycomb, which both models dropped, by a traced outline (its swirl rings stay removed)",
+   "foreground flower clumps traced by hand with a wide feather to match their blur; the crate posts, the honeycomb shelf above the right clump and the floor beside them stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 0.8,
+   "polys": [
+    [
+     [
+      865,
+      380
+     ],
+     [
+      915,
+      375
+     ],
+     [
+      935,
+      405
+     ],
+     [
+      950,
+      430
+     ],
+     [
+      955,
+      470
+     ],
+     [
+      935,
+      500
+     ],
+     [
+      910,
+      515
+     ],
+     [
+      870,
+      515
+     ],
+     [
+      840,
+      500
+     ],
+     [
+      822,
+      470
+     ],
+     [
+      818,
+      440
+     ],
+     [
+      840,
+      410
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      935
+     ],
+     [
+      18,
+      908
+     ],
+     [
+      45,
+      916
+     ],
+     [
+      60,
+      945
+     ],
+     [
+      60,
+      985
+     ],
+     [
+      45,
+      1012
+     ],
+     [
+      30,
+      1040
+     ],
+     [
+      45,
+      1070
+     ],
+     [
+      80,
+      1085
+     ],
+     [
+      100,
+      1110
+     ],
+     [
+      140,
+      1120
+     ],
+     [
+      170,
+      1110
+     ],
+     [
+      200,
+      1140
+     ],
+     [
+      235,
+      1160
+     ],
+     [
+      270,
+      1175
+     ],
+     [
+      300,
+      1195
+     ],
+     [
+      320,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1254,
+      1068
+     ],
+     [
+      1180,
+      1062
+     ],
+     [
+      1158,
+      1078
+     ],
+     [
+      1150,
+      1105
+     ],
+     [
+      1145,
+      1140
+     ],
+     [
+      1110,
+      1160
+     ],
+     [
+      1075,
+      1188
+     ],
+     [
+      1040,
+      1200
+     ],
+     [
+      1020,
+      1215
+     ],
+     [
+      1010,
+      1254
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
