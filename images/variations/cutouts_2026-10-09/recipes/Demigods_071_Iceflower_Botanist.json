@@ -1,0 +1,137 @@
+{
+ "notes": {
+  "keep": [
+   "silver-blue haired iceflower botanist with white frost-flower and lavender hair ornament",
+   "crystal snow-globe held up on the right hand: glass sphere with frost flower inside, silver stand and snowflake finial (270-470, 330-660)",
+   "lavender sprig and silver stylus held in the left hand",
+   "white fur-collared frost-flower coat with lavender lining, satchels, vials, belts and the hanging crystal drops (to ~1080, 1060)",
+   "blue-grey trousers and white fur-trimmed laced boots",
+   "FOREGROUND: depth-blurred snowy shrub with leaves in the bottom-left corner and up the left edge (0-310, 850-1254)",
+   "FOREGROUND: depth-blurred lavender crystal cluster on a snowy planter in the bottom-right corner (1102-1254, 958-1254)"
+  ],
+  "remove": [
+   "frosted glass conservatory, arches, windows, snowy pines and sky",
+   "hanging lanterns and crystal pendants",
+   "in-focus crystal clusters, snowy planters and shelves behind the feet line on both sides",
+   "floating snowflakes",
+   "icy reflective floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the coat and floor)",
+   "foreground shrub and crystal planter traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      850
+     ],
+     [
+      40,
+      860
+     ],
+     [
+      68,
+      900
+     ],
+     [
+      84,
+      960
+     ],
+     [
+      80,
+      1010
+     ],
+     [
+      100,
+      1050
+     ],
+     [
+      140,
+      1080
+     ],
+     [
+      180,
+      1110
+     ],
+     [
+      220,
+      1140
+     ],
+     [
+      260,
+      1170
+     ],
+     [
+      298,
+      1210
+     ],
+     [
+      310,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1104,
+      1254
+     ],
+     [
+      1102,
+      1150
+     ],
+     [
+      1110,
+      1108
+     ],
+     [
+      1128,
+      1085
+     ],
+     [
+      1134,
+      1040
+     ],
+     [
+      1134,
+      992
+     ],
+     [
+      1148,
+      966
+     ],
+     [
+      1172,
+      958
+     ],
+     [
+      1198,
+      985
+     ],
+     [
+      1222,
+      996
+     ],
+     [
+      1254,
+      986
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
