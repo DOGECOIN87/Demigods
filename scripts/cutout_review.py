@@ -99,9 +99,13 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
     for op in recipe.get("ops", []):
         kind = op["op"]
         region = poly_mask(alpha.shape, op["polys"]) if "polys" in op else None
-        if kind == "use":  # take another model's matte inside the region
-            alt = mattes[op["model"]].astype(np.float32)
-            alt = np.clip((alt - lo) / max(hi - lo, 1) * 255.0, 0, 255)
+        if kind == "use":  # take another model's matte (or the min of both) inside the region
+            if op["model"] == "min":
+                alt = np.minimum(mattes["isnet"], mattes["birefnet"]).astype(np.float32)
+            else:
+                alt = mattes[op["model"]].astype(np.float32)
+            ulo, uhi = op.get("levels", [lo, hi])
+            alt = np.clip((alt - ulo) / max(uhi - ulo, 1) * 255.0, 0, 255)
             alpha[region] = alt[region]
         elif kind == "keep":  # region is entirely subject
             if op.get("feather"):  # soft edge for depth-blurred foreground props

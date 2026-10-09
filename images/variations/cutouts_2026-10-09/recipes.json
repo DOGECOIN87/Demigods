@@ -2300,5 +2300,547 @@
     ]
    }
   ]
+ },
+ "Demigods_016_Moth_Diviner": {
+  "notes": {
+   "keep": [
+    "pink-haired moth diviner with black-and-gold moth-wing hair bow with opal, gold hair pin, braids",
+    "glowing crystal ball held in both hands",
+    "black hooded capelet with opal clasps",
+    "moth-wing cape spreading to both sides with eye-spot patterns, tassels and opal drops",
+    "cream ruffled dress with pendant, dark tights, laced boots"
+   ],
+   "remove": [
+    "stained-glass butterfly-and-crescent window directly behind the head (BiRefNet treated it as part of the subject)",
+    "glowing butterflies in the air",
+    "greenhouse window frames, wisteria, hanging lanterns",
+    "glass cloches with lotus flowers, shelves, clockwork orrery, potted plants",
+    "foliage and white flowers at the left and right edges (behind the feet line)",
+    "reflective floor and petals"
+   ],
+   "fixes": [
+    "BiRefNet matte for the body; above the shoulders the stricter of the two model mattes is used so the stained-glass window drops out while hair and bow stay",
+    "isnet matte for the lower hair-bow feathers, and the dark lower bow feathers (400-475, 388-490) snapped with GrabCut so they stay opaque"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "use",
+    "model": "min",
+    "levels": [
+     90,
+     200
+    ],
+    "polys": [
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1254,
+       0
+      ],
+      [
+       1254,
+       560
+      ],
+      [
+       0,
+       560
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "use",
+    "model": "isnet",
+    "levels": [
+     60,
+     190
+    ],
+    "polys": [
+     [
+      [
+       380,
+       318
+      ],
+      [
+       470,
+       318
+      ],
+      [
+       470,
+       560
+      ],
+      [
+       380,
+       560
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "grabcut",
+    "box": [
+     385,
+     360,
+     490,
+     510
+    ],
+    "fg": [
+     [
+      [
+       404,
+       405
+      ],
+      [
+       427,
+       393
+      ],
+      [
+       463,
+       388
+      ],
+      [
+       475,
+       410
+      ],
+      [
+       470,
+       446
+      ],
+      [
+       440,
+       472
+      ],
+      [
+       422,
+       490
+      ],
+      [
+       416,
+       470
+      ],
+      [
+       414,
+       440
+      ]
+     ]
+    ],
+    "sure_fg": [
+     [
+      [
+       425,
+       405
+      ],
+      [
+       455,
+       400
+      ],
+      [
+       460,
+       430
+      ],
+      [
+       435,
+       455
+      ],
+      [
+       424,
+       455
+      ]
+     ]
+    ],
+    "bg": [
+     [
+      [
+       385,
+       412
+      ],
+      [
+       406,
+       412
+      ],
+      [
+       411,
+       440
+      ],
+      [
+       413,
+       505
+      ],
+      [
+       385,
+       505
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "remove",
+    "polys": [
+     [
+      [
+       370,
+       235
+      ],
+      [
+       458,
+       235
+      ],
+      [
+       458,
+       300
+      ],
+      [
+       450,
+       309
+      ],
+      [
+       420,
+       311
+      ],
+      [
+       395,
+       314
+      ],
+      [
+       370,
+       318
+      ]
+     ],
+     [
+      [
+       320,
+       10
+      ],
+      [
+       440,
+       10
+      ],
+      [
+       440,
+       130
+      ],
+      [
+       320,
+       130
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "Demigods_017_Snowbell_Warden": {
+  "notes": {
+   "keep": [
+    "mint-haired snowbell warden with white flower and bell hair ornaments",
+    "tall silver staff topped with snowflake star, crescent ring and bell, with blue bow, long trailing ribbon, hanging crystals; ice-crystal butt at the bottom",
+    "fur-trimmed blue snowflake coat with many silver bells, satchel, tassels and a ribbon trailing right",
+    "white stockings and fur boots with blue bows"
+   ],
+   "remove": [
+    "snowy village houses, lanterns, wooden posts and fences",
+    "frozen waterfalls, bridge, river, castle, mountains, aurora sky and snowflakes",
+    "snowy tree branch at the top-left and snow bushes at the left edge",
+    "snow drifts and snowy path on the ground, including the corner drifts"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged (isnet hazed the staff ribbon); ribbons and staff crystals checked"
+   ]
+  },
+  "base": "birefnet",
+  "ops": []
+ },
+ "Demigods_018_Eclipse_Duelist": {
+  "notes": {
+   "keep": [
+    "silver-and-black haired duelist with gold star hair pin and earring",
+    "two long swords, one in each hand, full blades to the tips (left tip ~190,1145; right tip ~1060,1150)",
+    "black-and-white coat with gold pauldron, belts and chains, torn black-and-crimson cape",
+    "black and white trousers, black thigh-high boots with gold crests"
+   ],
+   "remove": [
+    "black eclipse sun and its corona, storm clouds",
+    "ruined colosseum arches, columns and statues",
+    "torn banners with sun emblems and their poles",
+    "swords stuck in the ground, gravestones and rubble",
+    "blurred rocks and embers in the bottom corners and drifting red petals (terrain and air, not props)",
+    "reflective checkered floor"
+   ],
+   "fixes": [
+    "BiRefNet matte used unchanged; both blade tips, cape tatters and chains checked"
+   ]
+  },
+  "base": "birefnet",
+  "ops": []
+ },
+ "Demigods_019_Dream_Weaver": {
+  "notes": {
+   "keep": [
+    "pink-haired dream weaver in lavender beret with pearl band, crescent-moon brooch and navy bow",
+    "golden weaving shuttle held up in the right hand",
+    "iridescent woven ribbon of dream-thread flowing from her hands",
+    "lilac puff sleeves, cream jabot, navy bloomers, star-embroidered overskirt with clock-face hem, pendant and tassels",
+    "black tights and navy bow shoes",
+    "FOREGROUND: stack of leather books with an open star chart on the floor at the bottom-right (925-1210, 1147-1254)",
+    "FOREGROUND: brass lantern standing on that book stack (1145-1250, 995-1180)"
+   ],
+   "remove": [
+    "loom, tapestry and threads at the right",
+    "armillary sphere, hanging star ornaments and crystal orbs, curtains",
+    "floating castles, starry sky and clouds (including the cloud bank at the bottom-left)",
+    "side table with scroll, candles and armillary at the left; stool and lantern at the back right",
+    "small card on the floor behind the feet at the left",
+    "starry magic-circle floor"
+   ],
+   "fixes": [
+    "BiRefNet matte used for the character and ribbon",
+    "foreground books and lantern traced by hand, lantern edge-snapped with GrabCut",
+    "restored the lantern's top spire (1190-1204, 984-1022); cloud right of the books stays removed"
+   ]
+  },
+  "base": "birefnet",
+  "ops": [
+   {
+    "op": "keep",
+    "feather": 1.0,
+    "polys": [
+     [
+      [
+       958,
+       1160
+      ],
+      [
+       1000,
+       1152
+      ],
+      [
+       1060,
+       1147
+      ],
+      [
+       1110,
+       1150
+      ],
+      [
+       1150,
+       1165
+      ],
+      [
+       1185,
+       1176
+      ],
+      [
+       1203,
+       1186
+      ],
+      [
+       1210,
+       1205
+      ],
+      [
+       1206,
+       1230
+      ],
+      [
+       1202,
+       1254
+      ],
+      [
+       925,
+       1254
+      ],
+      [
+       928,
+       1228
+      ],
+      [
+       940,
+       1205
+      ],
+      [
+       948,
+       1180
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "grabcut",
+    "box": [
+     1130,
+     980,
+     1254,
+     1200
+    ],
+    "fg": [
+     [
+      [
+       1192,
+       993
+      ],
+      [
+       1202,
+       993
+      ],
+      [
+       1206,
+       1015
+      ],
+      [
+       1215,
+       1035
+      ],
+      [
+       1245,
+       1052
+      ],
+      [
+       1248,
+       1150
+      ],
+      [
+       1252,
+       1178
+      ],
+      [
+       1145,
+       1180
+      ],
+      [
+       1148,
+       1150
+      ],
+      [
+       1150,
+       1060
+      ],
+      [
+       1180,
+       1035
+      ],
+      [
+       1188,
+       1015
+      ]
+     ]
+    ],
+    "sure_fg": [
+     [
+      [
+       1165,
+       1075
+      ],
+      [
+       1235,
+       1075
+      ],
+      [
+       1235,
+       1150
+      ],
+      [
+       1165,
+       1150
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "grabcut",
+    "box": [
+     1178,
+     975,
+     1218,
+     1040
+    ],
+    "fg": [
+     [
+      [
+       1196,
+       982
+      ],
+      [
+       1199,
+       982
+      ],
+      [
+       1204,
+       1012
+      ],
+      [
+       1208,
+       1030
+      ],
+      [
+       1186,
+       1030
+      ],
+      [
+       1191,
+       1012
+      ]
+     ]
+    ],
+    "sure_fg": [
+     [
+      [
+       1196,
+       995
+      ],
+      [
+       1199,
+       995
+      ],
+      [
+       1200,
+       1020
+      ],
+      [
+       1195,
+       1020
+      ]
+     ]
+    ]
+   },
+   {
+    "op": "remove",
+    "polys": [
+     [
+      [
+       1246,
+       1040
+      ],
+      [
+       1254,
+       1040
+      ],
+      [
+       1254,
+       1254
+      ],
+      [
+       1206,
+       1254
+      ],
+      [
+       1207,
+       1179
+      ],
+      [
+       1215,
+       1174
+      ],
+      [
+       1246,
+       1170
+      ]
+     ]
+    ]
+   }
+  ]
  }
 }
