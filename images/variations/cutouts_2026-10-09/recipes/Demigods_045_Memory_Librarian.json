@@ -1,0 +1,116 @@
+{
+ "notes": {
+  "keep": [
+   "silver-haired memory librarian",
+   "large ornate open book held in the right hand, its gold-clasped cover and pages",
+   "burgundy brocade coat with gold embroidery, cream waistcoat, bow tie with gem, gold chains, tassels and book-clasp pouches",
+   "black trousers and brown buckled boots",
+   "FOREGROUND: depth-blurred large gold-tooled book lying at the bottom-left, lower than the boots (0-290, 1108-1230)",
+   "FOREGROUND: depth-blurred large leather book or chest overlapping the bottom-right edge (1018-1254, 1114-1254)"
+  ],
+  "remove": [
+   "library bookshelves, ladder, balcony, stained-glass windows and lanterns",
+   "floating memory picture cards and glowing butterflies scattered through the air around the book: dispersed ambient effects, removed like the floating shards in 042",
+   "hourglass, desk, globe and flower vase",
+   "book stacks, rolled scrolls and the lantern at or behind the feet line on both sides",
+   "papers on the rug, red patterned rug"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the book and coat)",
+   "foreground books traced by hand with a wide feather to match their blur"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      1110
+     ],
+     [
+      60,
+      1108
+     ],
+     [
+      150,
+      1110
+     ],
+     [
+      200,
+      1116
+     ],
+     [
+      235,
+      1124
+     ],
+     [
+      262,
+      1138
+     ],
+     [
+      284,
+      1160
+     ],
+     [
+      290,
+      1198
+     ],
+     [
+      280,
+      1222
+     ],
+     [
+      250,
+      1228
+     ],
+     [
+      180,
+      1226
+     ],
+     [
+      100,
+      1228
+     ],
+     [
+      0,
+      1230
+     ]
+    ],
+    [
+     [
+      1020,
+      1254
+     ],
+     [
+      1018,
+      1150
+     ],
+     [
+      1030,
+      1120
+     ],
+     [
+      1080,
+      1114
+     ],
+     [
+      1150,
+      1116
+     ],
+     [
+      1254,
+      1118
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
