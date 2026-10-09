@@ -1,0 +1,22 @@
+{
+ "notes": {
+  "keep": [
+   "blond music enchanter with blue star hair clip and earring",
+   "silver lyre with gem inlays and strings, held in both hands",
+   "navy-and-gold coat with gold epaulettes and filigree, cream lace jabot and cuffs, gold chains, blue gems and tassels; cream-and-navy cape with gold embroidery",
+   "cream trousers and navy-and-gold laced boots"
+  ],
+  "remove": [
+   "concert hall: pipe organ, balconies, columns, navy banners, chandeliers and candles",
+   "grand piano and bench, music stands with sheet music",
+   "the translucent music-staff swirl with notes winding through the hall behind and around the character: it is see-through, with the bright hall showing through every line, so it cannot be cut out cleanly and is removed with the background (decision flagged for the owner)",
+   "drifting blue petals, including the blurred ones in the bottom corners, and sparkles",
+   "reflective inlaid floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the lyre and cape translucent and kept floor reflections); lyre strings and cape edges checked"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
