@@ -1,0 +1,22 @@
+{
+ "notes": {
+  "keep": [
+   "platinum-haired frost marshal",
+   "silver marshal's baton held diagonally in both hands: spiked star head with blue crystal (~860-990, 390-560), black shaft, spiked silver foot, and the chain and tassel hanging from it",
+   "fur-collared white dress uniform with silver epaulettes and fringes, blue sash, snowflake medals, belt with chains",
+   "long white-and-navy cape with silver snowflake embroidery spreading to both sides, including its blue lining tips on the floor",
+   "black trousers, black armoured boots with snowflake crests"
+  ],
+  "remove": [
+   "ice fortress, spires, snowy mountains and sky",
+   "navy snowflake banners and banner poles",
+   "stone walls, pillars and braziers with blue flames",
+   "snowy stone courtyard floor, snow drifts and reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet hazed the cape and baton); baton head spikes, cape tips and boots checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
