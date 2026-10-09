@@ -1,0 +1,382 @@
+{
+ "notes": {
+  "keep": [
+   "silver-blue-haired glass nightingale boy with ahoge, crystal-and-white-feather hair ornament (700-830, 150-420) and dangling crystal earring (740-760, 450-510)",
+   "glass nightingale perched on the gloved left hand, including its long split tail to (243, 575) and its feet on the glove (238-425, 425-555)",
+   "white coat with crystal-feather wing epaulettes, ruffled jabot, sapphire brooches and gold chains",
+   "two crystal pendants hanging from the left sleeve on chains (360-385, 640-780) and (425-445, 740-805)",
+   "long glass-feather coat panels fanning out to (240, 1130) on the left and (1015, 1135) on the right, with the crystal drop pendants hanging inside them (745-760, 980-1040)",
+   "white trousers and white crystal-studded boots",
+   "FOREGROUND: depth-blurred white roses, blue flowers and dark leaves in the bottom-left corner (0-386, 970-1254), overlapping the bottom edge",
+   "FOREGROUND: depth-blurred white roses, blue flower and dark leaves in the bottom-right corner (926-1254, 964-1254), overlapping the bottom edge"
+  ],
+  "remove": [
+   "glass greenhouse dome, window frames, night sky, stars and full moon",
+   "hanging crystal lanterns and crystal drops on chains",
+   "gilded birdcage with glowing crystals at the left, candles, bench",
+   "rose bush in the urn at the left edge and the rose bushes behind the character (all at or behind the feet line), including the blue flowers at (0-40, 900-940)",
+   "tiered fountain, waterfalls and the candle table at the right edge (1135-1254, 860-980)",
+   "falling petals: (271-310, 392-432) beside the bird and (300-350, 798-846) lying against the tip of the left coat panel",
+   "petals lying on the floor, e.g. (150-185, 1032-1072) and (1090-1110, 1040-1055)",
+   "reflective marble floor, boot and coat reflections",
+   "background seen between the foreground leaves: floor/candle-stand blur between the upper and lower leaves of the bottom-right plant (1140-1225, 1020-1050) and (1220-1254, 1025-1078)",
+   "blue glass knob of the candle stand showing behind the right end of the bottom-right upper leaf (1226-1247, 974-1012)"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet dropped the bird and the sleeve pendants and hazed the coat)",
+   "removed the two falling petals BiRefNet kept: (266-315, 388-436) and (298-352, 795-846); the coat panel's thin tip that starts under the second petal at (330, 848) is kept",
+   "bottom-left foreground roses/leaves traced by hand with feather 3.0 to match their heavy depth blur",
+   "bottom-right foreground roses/leaves traced by hand with feather 3.0 as two polygons (upper leaf 1142-1254, 981-1025, ending under the candle-stand knob; main mass 926-1254, 1047-1254) so the floor and candle-stand blur between them stays removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      266,
+      388
+     ],
+     [
+      315,
+      388
+     ],
+     [
+      315,
+      436
+     ],
+     [
+      266,
+      436
+     ]
+    ],
+    [
+     [
+      298,
+      795
+     ],
+     [
+      352,
+      795
+     ],
+     [
+      352,
+      836
+     ],
+     [
+      344,
+      843
+     ],
+     [
+      335,
+      846
+     ],
+     [
+      326,
+      846
+     ],
+     [
+      298,
+      832
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      0,
+      970
+     ],
+     [
+      15,
+      978
+     ],
+     [
+      26,
+      995
+     ],
+     [
+      28,
+      1020
+     ],
+     [
+      40,
+      1040
+     ],
+     [
+      60,
+      1042
+     ],
+     [
+      85,
+      1036
+     ],
+     [
+      110,
+      1030
+     ],
+     [
+      127,
+      1030
+     ],
+     [
+      118,
+      1045
+     ],
+     [
+      105,
+      1060
+     ],
+     [
+      100,
+      1072
+     ],
+     [
+      120,
+      1075
+     ],
+     [
+      140,
+      1088
+     ],
+     [
+      148,
+      1110
+     ],
+     [
+      160,
+      1122
+     ],
+     [
+      185,
+      1124
+     ],
+     [
+      205,
+      1135
+     ],
+     [
+      220,
+      1155
+     ],
+     [
+      236,
+      1165
+     ],
+     [
+      240,
+      1178
+     ],
+     [
+      262,
+      1192
+     ],
+     [
+      262,
+      1205
+     ],
+     [
+      275,
+      1210
+     ],
+     [
+      283,
+      1228
+     ],
+     [
+      300,
+      1225
+     ],
+     [
+      330,
+      1222
+     ],
+     [
+      360,
+      1218
+     ],
+     [
+      386,
+      1218
+     ],
+     [
+      375,
+      1235
+     ],
+     [
+      350,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.0,
+   "polys": [
+    [
+     [
+      926,
+      1254
+     ],
+     [
+      930,
+      1232
+     ],
+     [
+      945,
+      1224
+     ],
+     [
+      970,
+      1226
+     ],
+     [
+      990,
+      1230
+     ],
+     [
+      1003,
+      1222
+     ],
+     [
+      1006,
+      1210
+     ],
+     [
+      1025,
+      1196
+     ],
+     [
+      1045,
+      1186
+     ],
+     [
+      1062,
+      1178
+     ],
+     [
+      1066,
+      1160
+     ],
+     [
+      1072,
+      1140
+     ],
+     [
+      1085,
+      1120
+     ],
+     [
+      1105,
+      1113
+     ],
+     [
+      1125,
+      1110
+     ],
+     [
+      1133,
+      1100
+     ],
+     [
+      1140,
+      1088
+     ],
+     [
+      1147,
+      1065
+     ],
+     [
+      1160,
+      1050
+     ],
+     [
+      1190,
+      1047
+     ],
+     [
+      1218,
+      1050
+     ],
+     [
+      1226,
+      1075
+     ],
+     [
+      1254,
+      1078
+     ],
+     [
+      1254,
+      1254
+     ]
+    ],
+    [
+     [
+      1142,
+      986
+     ],
+     [
+      1160,
+      981
+     ],
+     [
+      1185,
+      981
+     ],
+     [
+      1211,
+      990
+     ],
+     [
+      1222,
+      1006
+     ],
+     [
+      1240,
+      1013
+     ],
+     [
+      1254,
+      1012
+     ],
+     [
+      1254,
+      1024
+     ],
+     [
+      1225,
+      1025
+     ],
+     [
+      1200,
+      1019
+     ],
+     [
+      1178,
+      1009
+     ],
+     [
+      1160,
+      999
+     ],
+     [
+      1142,
+      991
+     ]
+    ]
+   ]
+  }
+ ]
+}

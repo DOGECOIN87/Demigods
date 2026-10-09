@@ -1,0 +1,35 @@
+{
+ "notes": {
+  "keep": [
+   "dark-green-haired peacock sovereign with ahoge, gold leaf tiara with emerald forehead jewel and drop (480-800, 150-470), earring",
+   "peacock-feather folding fan with gilded ribs held in the black-gloved right hand (190-560, 330-640)",
+   "gold-feather epaulette with sapphire brooch, ruffled jabot, black jeweled waistcoat, white ruffled cuffs and black gloves",
+   "jeweled gold chains with emerald drops and the two cream tassels hanging from the cuffs (390-415, 640-910) and (840-875, 700-900)",
+   "crystal drop pendants on the waist chain (520-545, 860-1010)",
+   "sweeping peacock-feather cloak with gilded front panels, from (100, 1060) on the left to (1165, 1100) on the right, including its dark inner lining between the legs",
+   "gold-patterned trousers and black gold-trimmed boots"
+  ],
+  "remove": [
+   "crystal pillars, arched stained-glass windows, starry night through the windows",
+   "hanging crystal chandeliers and crystal drops on chains",
+   "golden peacock statues on the pillars at the left and right edges",
+   "white lily arrangements in gold urns on the plinths, crystal plinths and the crystals on them, white steps",
+   "cyan crystal behind the fan below its feathers (325-350, 565-590)",
+   "glossy marble floor, its reflections of the cloak and boots, and the cast shadow under the hem",
+   "crystal reflections in the floor along the bottom edge (no foreground props in this image)"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet hazed the fan, kept pillars and most of the floor)",
+   "removed the floor reflection BiRefNet kept under the left hem: the dark band under the folded gold panel edge (200-322, 1154-1175) and the blue/gold reflected floor under the leftmost feathers (90-225, 1113-1150)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "remove",
+   "polys": [
+    [[90, 1113], [120, 1115], [150, 1117], [190, 1118], [225, 1122], [200, 1148], [200, 1154], [240, 1159], [280, 1162], [300, 1163], [314, 1160], [322, 1150], [322, 1200], [90, 1200]]
+   ]
+  }
+ ]
+}

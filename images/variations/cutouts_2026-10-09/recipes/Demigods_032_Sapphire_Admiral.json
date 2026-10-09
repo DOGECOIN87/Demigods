@@ -1,0 +1,169 @@
+{
+ "notes": {
+  "keep": [
+   "blond chibi admiral in white peaked cap with gold laurel-and-anchor badge, sapphire star and gem studs, navy band and gold cord",
+   "brass-and-navy spyglass/telescope held in the right arm (430-620, 570-830), eyepiece to objective end",
+   "white uniform with gold fringed epaulettes, gold aiguillettes and chains, sapphire star brooch, navy belt with sapphire buckle, gold medallion pendants at the hip",
+   "navy compass-rose cape with gold trim flaring on both sides, including the cape tips at left (~255,1080) and right (~1030,1000; ~990,1090)",
+   "white gloves, white trousers, black boots with gold compass crests",
+   "FOREGROUND: gold-bound treasure chest in the bottom-left corner (0-197, 974-1254), running off the bottom edge in front of the feet line; the floor under its sloping base (85-191, 1222-1254) stays removed",
+   "FOREGROUND: crate in the bottom-right corner (1180-1254, 1122-1254) with the small iron-bound box stacked on its lid (1202-1254, 1033-1125)"
+  ],
+  "remove": [
+   "sky, clouds and pennants",
+   "white castle, town, arched bridge and aqueduct",
+   "galleons, sails, masts, rigging, flags and the gold bell buoy",
+   "the hanging navy compass banner with gold fringe and tassel at the top-left, and its pole and rigging",
+   "harbour water, waves and sparkles",
+   "lantern post at the left (0-110, 560-720), bollards and posts",
+   "the crates and the compass-emblem chest stacked behind the front chest at the left (0-190, 700-975), behind the feet line",
+   "rope coils, crates and barrels behind the feet line at the right (980-1254, 820-1030)",
+   "sunlit tiled pier floor and its reflections"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged for the character (isnet hazed the cape edges and kept floor reflections); cap, hair, epaulette fringes, telescope, cape tips and boot soles checked at zoom",
+   "foreground chest and crate stack traced by hand along their wood/brass edges; the compass-emblem chest directly behind the front chest's lid (above y=974) stays removed, as does the floor seen in the notch at the left of the stacked box (1203-1212, 1074-1088)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 1.0,
+   "polys": [
+    [
+     [
+      0,
+      974
+     ],
+     [
+      60,
+      975
+     ],
+     [
+      150,
+      977
+     ],
+     [
+      165,
+      976
+     ],
+     [
+      195,
+      979
+     ],
+     [
+      197,
+      1000
+     ],
+     [
+      194,
+      1050
+     ],
+     [
+      191,
+      1100
+     ],
+     [
+      191,
+      1222
+     ],
+     [
+      176,
+      1229
+     ],
+     [
+      160,
+      1233
+     ],
+     [
+      140,
+      1239
+     ],
+     [
+      120,
+      1245
+     ],
+     [
+      100,
+      1251
+     ],
+     [
+      85,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1183,
+      1254
+     ],
+     [
+      1182,
+      1180
+     ],
+     [
+      1181,
+      1135
+     ],
+     [
+      1186,
+      1126
+     ],
+     [
+      1206,
+      1122
+     ],
+     [
+      1205,
+      1100
+     ],
+     [
+      1203,
+      1092
+     ],
+     [
+      1206,
+      1087
+     ],
+     [
+      1213,
+      1085
+     ],
+     [
+      1213,
+      1077
+     ],
+     [
+      1205,
+      1073
+     ],
+     [
+      1204,
+      1045
+     ],
+     [
+      1208,
+      1036
+     ],
+     [
+      1230,
+      1033
+     ],
+     [
+      1254,
+      1033
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}

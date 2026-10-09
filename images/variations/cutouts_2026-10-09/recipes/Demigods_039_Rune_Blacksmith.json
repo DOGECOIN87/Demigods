@@ -1,0 +1,229 @@
+{
+ "notes": {
+  "keep": [
+   "white-haired rune blacksmith with ahoge and amber eyes",
+   "rune warhammer held in the right hand: glowing rune-carved head (757-1040, 345-575) and wrapped handle down to its brass end cap (740-800, 575-830)",
+   "chain hanging from the hammer handle with its diamond rune pendant and drop (800-840, 760-1015)",
+   "red tunic, leather harness with brass rings, riveted brass bracers and gauntlets, black gloves",
+   "leather apron with belts, hanging keys, rings, chains and rune-stamped leather tags",
+   "long red coat tails, the left one trailing to (330, 1015)",
+   "red trousers and buckled brass-trimmed boots",
+   "FOREGROUND: depth-blurred crate in the bottom-right corner (1037-1254, 1068-1254) with the blurred tongs and tool handles rising out of it (1138-1254, 922-1068)",
+   "FOREGROUND: depth-blurred pile of iron tools in front of the feet at the bottom-left: bars lying across the bottom (0-180, 1158-1254), an upright tong (173-233, 1157-1254), a hinge piece (243-285, 1183-1217) and pliers/bar pieces (233-410, 1213-1254)"
+  ],
+  "remove": [
+   "forge tower, crucible, molten metal pour and glowing lava",
+   "hanging chains, rune banners, lanterns and torches, stone walls and arches",
+   "rune-carved anvil and stacked brick steps at the right",
+   "weapon racks, round shield, armour and crates at the left, the red rune cloth draped over the crate",
+   "metal bucket of wrenches at the left (0-152, 945-1160): sharp and standing on the floor at the feet line, so it is a background prop",
+   "metal-banded bucket behind the bottom-right crate (990-1160, 935-1095) and the crate behind the tongs (1090-1254, 880-995)",
+   "sparks, embers and glow",
+   "wet stone floor and its reflections, including the blurred dark stone slabs/rubble at the bottom centre (820-1035, 1195-1254) and the lit floor tiles showing between the foreground tools (110-172, 1163-1190) and (233-367, 1183-1217)"
+  ],
+  "fixes": [
+   "BiRefNet matte used (isnet dropped the hammer head and kept floor reflections)",
+   "bottom-right crate, tongs and tool handles traced by hand with feather 3.5 to match their heavy depth blur; the polygon stays below the background bucket's rim (y 1068-1076) and left of the background crate edge above y 995",
+   "bottom-left foreground tool pile traced by hand with feather 3.5, following the tops of the bars, the upright tong and the hinge piece, with a notch (110-172, 1163-1190) so the lit floor tiles between the upper bar and the tong stay removed"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 3.5,
+   "polys": [
+    [
+     [
+      1037,
+      1254
+     ],
+     [
+      1037,
+      1090
+     ],
+     [
+      1045,
+      1076
+     ],
+     [
+      1080,
+      1070
+     ],
+     [
+      1120,
+      1068
+     ],
+     [
+      1138,
+      1062
+     ],
+     [
+      1145,
+      1035
+     ],
+     [
+      1153,
+      1000
+     ],
+     [
+      1162,
+      965
+     ],
+     [
+      1172,
+      938
+     ],
+     [
+      1185,
+      922
+     ],
+     [
+      1200,
+      922
+     ],
+     [
+      1212,
+      930
+     ],
+     [
+      1218,
+      945
+     ],
+     [
+      1215,
+      975
+     ],
+     [
+      1212,
+      995
+     ],
+     [
+      1230,
+      995
+     ],
+     [
+      1254,
+      992
+     ],
+     [
+      1254,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 3.5,
+   "polys": [
+    [
+     [
+      0,
+      1158
+     ],
+     [
+      60,
+      1160
+     ],
+     [
+      105,
+      1164
+     ],
+     [
+      118,
+      1176
+     ],
+     [
+      145,
+      1188
+     ],
+     [
+      170,
+      1192
+     ],
+     [
+      174,
+      1170
+     ],
+     [
+      180,
+      1158
+     ],
+     [
+      196,
+      1156
+     ],
+     [
+      213,
+      1158
+     ],
+     [
+      222,
+      1168
+     ],
+     [
+      230,
+      1187
+     ],
+     [
+      243,
+      1185
+     ],
+     [
+      258,
+      1182
+     ],
+     [
+      276,
+      1185
+     ],
+     [
+      284,
+      1203
+     ],
+     [
+      283,
+      1217
+     ],
+     [
+      300,
+      1218
+     ],
+     [
+      330,
+      1215
+     ],
+     [
+      358,
+      1218
+     ],
+     [
+      370,
+      1214
+     ],
+     [
+      388,
+      1213
+     ],
+     [
+      402,
+      1218
+     ],
+     [
+      408,
+      1235
+     ],
+     [
+      410,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
