@@ -1,0 +1,21 @@
+{
+ "notes": {
+  "keep": [
+   "black-haired jade empress with high bun, gold-and-jade phoenix headdress, hairpins, white flowers and the jade and gold tassel strings hanging on both sides",
+   "folding jade-and-gold fan held in the right hand, with white flowers on it",
+   "dark green hanfu with gold bamboo embroidery, wide sleeves, layered mint and cream skirts, jade disc pendants, gold tassels and pearl drops",
+   "black-and-gold shoes"
+  ],
+  "remove": [
+   "palace pagodas, mountains, waterfalls, sky and clouds",
+   "green marble pillars, hanging lanterns and tassels, bamboo",
+   "marble balustrades, stone lanterns and steps",
+   "reflective marble floor"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet kept floor reflections and a purple halo); headdress, hanging tassel strings, fan and hem checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
