@@ -1,0 +1,163 @@
+{
+ "notes": {
+  "keep": [
+   "violet-haired orchid duelist",
+   "rapier held out in the right hand, full blade to its tip at the left frame edge (~5, 180), gold swept hilt with orchid and pearl decorations",
+   "white-and-gold brocade coat with large purple orchid corsage on the shoulder, ruffled jabot, translucent lilac coat tails and cape flowing right",
+   "lilac trousers, white-and-gold boots",
+   "FOREGROUND: depth-blurred purple orchids in the bottom-right corner and up the right edge (1020-1254, 1040-1254)",
+   "FOREGROUND: depth-blurred dark leaves and pink orchid at the left edge (0-88, 1030-1254)"
+  ],
+  "remove": [
+   "glass conservatory windows and arches, hanging wisteria and orchids",
+   "hanging glass lanterns",
+   "marble urns with orchids, pillars, fountain, stairs and balustrades",
+   "orchid petals lying on the floor",
+   "gold-inlaid circle floor and reflections",
+   "blurred urn plant above the right-edge orchids (1215-1254, 960-1040): it is behind the feet line, its blur is distance blur"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the coat tails and the rapier)",
+   "foreground orchids kept by the depth-blur key inside traced edge regions so the sharp floor and petals around them stay removed; holes from bokeh filled"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "key_blur",
+   "ramp": [
+    12,
+    26
+   ],
+   "feather": 2.0,
+   "polys": [
+    [
+     [
+      1254,
+      1040
+     ],
+     [
+      1222,
+      1052
+     ],
+     [
+      1200,
+      1080
+     ],
+     [
+      1100,
+      1100
+     ],
+     [
+      1040,
+      1160
+     ],
+     [
+      1020,
+      1254
+     ],
+     [
+      1254,
+      1254
+     ]
+    ],
+    [
+     [
+      0,
+      1030
+     ],
+     [
+      30,
+      1040
+     ],
+     [
+      45,
+      1110
+     ],
+     [
+      38,
+      1170
+     ],
+     [
+      62,
+      1205
+     ],
+     [
+      88,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "fill_holes",
+   "max_area": 4000,
+   "polys": [
+    [
+     [
+      1254,
+      1040
+     ],
+     [
+      1222,
+      1052
+     ],
+     [
+      1200,
+      1080
+     ],
+     [
+      1100,
+      1100
+     ],
+     [
+      1040,
+      1160
+     ],
+     [
+      1020,
+      1254
+     ],
+     [
+      1254,
+      1254
+     ]
+    ],
+    [
+     [
+      0,
+      1030
+     ],
+     [
+      30,
+      1040
+     ],
+     [
+      45,
+      1110
+     ],
+     [
+      38,
+      1170
+     ],
+     [
+      62,
+      1205
+     ],
+     [
+      88,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ]
+   ]
+  }
+ ]
+}
