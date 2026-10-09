@@ -128,6 +128,8 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             alpha[region] = alpha[region] * factor[region]
         elif kind == "drop_warm":  # inside region, fade out pixels warmer (red minus blue) than the cool item
             warm = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
+            if op.get("invert"):  # drop cool (blue/cyan) pixels instead
+                warm = -warm
             w0, w1 = op["ramp"]
             factor = np.clip((w1 - warm) / (w1 - w0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.7))

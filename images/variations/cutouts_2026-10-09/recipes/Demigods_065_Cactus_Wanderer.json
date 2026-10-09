@@ -1,0 +1,271 @@
+{
+ "notes": {
+  "keep": [
+   "green-haired cactus wanderer with wide frayed straw hat decorated with cacti, white blossoms, braided cords, coins and tassels",
+   "gnarled wooden staff held in the right hand, topped with flowering cacti and white blossoms (60-180, 30-230), with braided cords, turquoise charms and tassels hanging down its length",
+   "red scarf, cream woven fringed poncho with tribal pattern, beads, turquoise pendants, belts and pouches, tattered fringed cape",
+   "rust trousers and laced camouflage-pattern boots",
+   "FOREGROUND: depth-blurred barrel cactus with white blossoms in the bottom-left corner (0-330, 820-1254)",
+   "FOREGROUND: depth-blurred agave leaves, barrel cactus and white blossom in the bottom-right corner (1000-1254, 955-1254)"
+  ],
+  "remove": [
+   "sandstone canyon ruins, arches, pillars and cliffs, blue sky and sun",
+   "waterfalls and turquoise oasis pool",
+   "tall saguaro cactus at the right edge and cacti along the pool (all at or behind the feet line), including the sharp small cacti at (880-1010, 1060-1145)",
+   "palm trees and desert plants in the background",
+   "red sandstone ground, path and rocks"
+  ],
+  "fixes": [
+   "BiRefNet matte used for the character (isnet hazed the canyon and pool in); the cactus-topped staff, hat brim and tassels checked at zoom",
+   "foreground cactus and agave traced by hand with a wide feather to match their blur (left cactus clump 0-320, 830-1254; right barrel cactus 1180-1254, 955-1254; agave blades 1000-1185, 1005-1254); the sharp small cacti, shrubs and waterfall behind the agave stay removed",
+   "turquoise pool showing between the left blossom's petals dropped by its cool colour inside (0-170, 815-910)"
+  ]
+ },
+ "base": "birefnet",
+ "ops": [
+  {
+   "op": "keep",
+   "feather": 2.5,
+   "polys": [
+    [
+     [
+      0,
+      830
+     ],
+     [
+      40,
+      835
+     ],
+     [
+      90,
+      845
+     ],
+     [
+      118,
+      864
+     ],
+     [
+      152,
+      896
+     ],
+     [
+      170,
+      920
+     ],
+     [
+      150,
+      945
+     ],
+     [
+      185,
+      955
+     ],
+     [
+      185,
+      985
+     ],
+     [
+      160,
+      1000
+     ],
+     [
+      160,
+      1050
+     ],
+     [
+      215,
+      1055
+     ],
+     [
+      245,
+      1080
+     ],
+     [
+      245,
+      1110
+     ],
+     [
+      265,
+      1125
+     ],
+     [
+      270,
+      1160
+     ],
+     [
+      290,
+      1175
+     ],
+     [
+      310,
+      1210
+     ],
+     [
+      320,
+      1254
+     ],
+     [
+      0,
+      1254
+     ]
+    ],
+    [
+     [
+      1182,
+      1254
+     ],
+     [
+      1180,
+      1000
+     ],
+     [
+      1195,
+      965
+     ],
+     [
+      1225,
+      955
+     ],
+     [
+      1254,
+      958
+     ],
+     [
+      1254,
+      1254
+     ]
+    ],
+    [
+     [
+      1000,
+      1150
+     ],
+     [
+      1040,
+      1148
+     ],
+     [
+      1060,
+      1140
+     ],
+     [
+      1045,
+      1110
+     ],
+     [
+      1060,
+      1105
+     ],
+     [
+      1080,
+      1115
+     ],
+     [
+      1050,
+      1080
+     ],
+     [
+      1035,
+      1048
+     ],
+     [
+      1060,
+      1060
+     ],
+     [
+      1085,
+      1085
+     ],
+     [
+      1095,
+      1060
+     ],
+     [
+      1102,
+      1005
+     ],
+     [
+      1112,
+      1040
+     ],
+     [
+      1125,
+      1080
+     ],
+     [
+      1140,
+      1060
+     ],
+     [
+      1155,
+      1040
+     ],
+     [
+      1165,
+      1060
+     ],
+     [
+      1158,
+      1100
+     ],
+     [
+      1185,
+      1110
+     ],
+     [
+      1185,
+      1254
+     ],
+     [
+      1080,
+      1254
+     ],
+     [
+      1088,
+      1205
+     ],
+     [
+      1070,
+      1178
+     ],
+     [
+      1030,
+      1170
+     ],
+     [
+      1000,
+      1168
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "drop_warm",
+   "invert": true,
+   "ramp": [
+    0,
+    30
+   ],
+   "polys": [
+    [
+     [
+      0,
+      815
+     ],
+     [
+      170,
+      815
+     ],
+     [
+      170,
+      910
+     ],
+     [
+      0,
+      910
+     ]
+    ]
+   ]
+  }
+ ]
+}
