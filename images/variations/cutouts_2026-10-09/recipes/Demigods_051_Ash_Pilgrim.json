@@ -1,0 +1,23 @@
+{
+ "notes": {
+  "keep": [
+   "ash-haired pilgrim with tousled hair",
+   "charred wooden staff with glowing lava-cracked head (330-430, 60-300), wrapped bindings, and the bronze compass medallion and chains hanging from it (330-400, 280-470), down to its foot by the left boot (~490, 1140)",
+   "tattered ash-grey hooded cloak with burnt, holed edges on both sides",
+   "red tunic and sash, leather belts, satchel, compass brooch and pendant charms",
+   "brown buckled boots"
+  ],
+  "remove": [
+   "erupting volcano, smoke and ember sky",
+   "ruined aqueducts, towers and walls",
+   "red banners, bunting lines and banner poles",
+   "basalt pillars and blocks, lava flows",
+   "cracked basalt floor with lava seams, and the blurred lava rocks in the bottom corners (terrain, not props)"
+  ],
+  "fixes": [
+   "BiRefNet matte used unchanged (isnet made the cloak semi-transparent and hazed the floor); staff head, hanging compass and chains, cloak holes and staff foot checked at zoom"
+  ]
+ },
+ "base": "birefnet",
+ "ops": []
+}
