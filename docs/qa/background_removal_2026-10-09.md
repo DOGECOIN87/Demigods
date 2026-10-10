@@ -111,3 +111,24 @@ Ops run in order, so later ops win. A typical image needs zero to four ops.
 
 The notes in each recipe are the record of what was judged foreground, held, attached
 or background for that image, and where each correction was placed.
+
+Judgment calls the owner may want to confirm:
+
+- **Companions kept:** the falcon on the gauntlet (034) and the raven on the raised hand
+  (050) are kept as part of the held arm.
+- **Conjured objects kept:** the floating crystal (012), the rifts (054), the astrolabe
+  (057), the knight piece (060), the honeycomb (067), the world-tree sphere (072), the paper
+  cranes (040), the prism (042), the crystal butterflies (044), the gold polyhedron (048),
+  and the crystals and orbs over the palm in 061–064 nature variations and the JPEG.
+- **Scattered effects removed:** small floating shards around the prism (042), the
+  floating memory cards and butterflies around the book (045), the translucent
+  music-staff swirl (046, see-through, so it cannot be cut cleanly), falling petals and
+  leaves, lightning, and glow rings around conjured objects.
+- **Ground cover treated as ground:** the silver-grass field in 055 is continuous ground
+  across the frame and was removed. Blurred rocks, rubble and snow drifts in the corners
+  were removed as terrain. Blurred plants, flowers, props, books and crystals that overlap
+  the bottom edge in front of the feet were kept.
+- **Models dropped a held item, so it was traced by hand:** for example the key-staff head
+  (056), the oak staff head and acorns (061), the scythe crystals (055), the oar finial
+  (052), the quill shaft (059), the brush charm (022), the banner tassels (021) and the
+  raised hand itself (050).

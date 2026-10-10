@@ -1,5 +1,7 @@
 # Background depth treatment for complete variations
 
+> **Superseded 2026-10-09.** The blur/depth-treated outputs (`images/variations/depth_treated_review_2026-10-01/` and `images/background_candidates/depth_treated/`) were removed at the owner's request. The rare 1-of-1 set is now cut out to transparent PNGs one image at a time: see [background removal](qa/background_removal_2026-10-09.md) and `images/variations/cutouts_2026-10-09/`. This page is kept as a record of the earlier approach.
+
 The current complete set is `images/variations/complete_72/` (72 flattened PNGs as of 2026-09-28). The old `images/one_of_ones/` roster is historical and currently contains only one PNG. The batch script works with the current 72 and additional PNGs as they arrive; use `--expected-count 77` once all 77 are present.
 
 Because these images are flattened, the script requires an exact per-image subject mask. A guessed oval cannot reliably protect wings, held objects, hair, or poses. Make a grayscale PNG with the same filename and dimensions as each source: white (255) for everything that must remain untouched, black (0) for the background. Include character, clothing, hair, accessories, held objects, and any foreground effects you want sharp. Gray values allow partial treatment. Save masks in a separate folder, for example `images/variations/subject_masks/`. The script checks all selected masks before writing anything.

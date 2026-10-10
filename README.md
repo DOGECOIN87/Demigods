@@ -34,7 +34,7 @@ docs/                     Layer order, naming, rig, QA, workflow, and production
 images/reference_sheets/  Visual guides from the design process; never production assets
 images/background_candidates/  Exact user-supplied background references awaiting native production renders
 images/one_of_ones/       1-of-1 illustrations 008–056 and the roster of all 77 (not yet registered)
-images/variations/        Received legendary variations from the 72-variation pack
+images/variations/        Received legendary variations from the 72-variation pack, and transparent per-image cutouts of the 77 rare 1-of-1s
 config/                   Collection and compatibility configuration
 metadata/                 Token metadata schema
 scripts/                  Intake, validation, configuration, generation, and output-verification tools

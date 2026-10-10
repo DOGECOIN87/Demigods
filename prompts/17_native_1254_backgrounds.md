@@ -12,7 +12,7 @@ python scripts/apply_background_depth.py assets/backgrounds/background_00N_*.png
 
 An image generator will not reproduce the same blur radius and vignette falloff across eight separate renders, and an unevenly treated set is visible the moment two tokens sit side by side. Asking the generator for blur or vignette on top of the script's pass double-treats the image and destroys detail that cannot be recovered.
 
-Treated files land in `images/background_candidates/depth_treated/` as candidates. They still need human approval and re-registration with `postprocessing` recorded in the manifest.
+Treated files land in `images/background_candidates/depth_treated/` as candidates. They still need human approval and re-registration with `postprocessing` recorded in the manifest. (The earlier treated candidate set in that folder was removed on 2026-10-09 at the owner's request; rerun the script to regenerate it.)
 
 ## Shared output contract
 

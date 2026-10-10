@@ -1,5 +1,7 @@
 # Demigods review — 2026-10-01
 
+> **2026-10-09:** the treated variation exports linked below (`images/variations/depth_treated_review_2026-10-01/`) were removed at the owner's request and replaced by per-image transparent cutouts in `images/variations/cutouts_2026-10-09/` ([background removal](../background_removal_2026-10-09.md)). Links to the treated files are historical; `scripts/build_collection_review.py` needs those removed outputs to rebuild this page.
+
 Reviewed against `ae947c5416e2cd582040989b4a222bdf10818da4` on `main`, with the
 subsequent mask and ledger corrections recorded in this checkpoint.
 
