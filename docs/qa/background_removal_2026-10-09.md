@@ -119,7 +119,8 @@ Judgment calls the owner may want to confirm:
 - **Conjured objects kept:** the floating crystal (012), the rifts (054), the astrolabe
   (057), the knight piece (060), the honeycomb (067), the world-tree sphere (072), the paper
   cranes (040), the prism (042), the crystal butterflies (044), the gold polyhedron (048),
-  and the crystals and orbs over the palm in 061–064 nature variations and the JPEG.
+  and the crystals or orbs over the palm in the four nature variations (`variation_061`–`064`)
+  and the JPEG.
 - **Scattered effects removed:** small floating shards around the prism (042), the
   floating memory cards and butterflies around the book (045), the translucent
   music-staff swirl (046, see-through, so it cannot be cut cleanly), falling petals and
