@@ -97,6 +97,8 @@ Polygons are lists of `[x, y]` source-pixel points; `polys` is a list of polygon
 | `drop_dark` | inside `polys`, fade out pixels darker than `ramp: [d0, d1]` mean luminance (sky through bright ribbons, floor around white feathers) |
 | `drop_warm` | inside `polys`, fade out pixels whose red-minus-blue exceeds `ramp: [w0, w1]` (beige or wooden background around blue or white items); `"invert": true` drops cool pixels instead (water or sky around warm items) |
 | `key_lum` | inside `polys`, add opacity from mean luminance `ramp: [k0, k1]` (bright metal or crystal on a dark sky); isolated stars are then dropped by `min_island` |
+| `drop_grey` | inside `polys`, fade out low-saturation pixels (colour spread below `ramp: [s0, s1]`, default `[32, 46]`), keeping bright highlights above `keep_above` (default 200): grey background between coloured twigs or leaves |
+| `drop_lab` | inside `polys`, fade out pixels that are bright (CIELAB L above ramp `L`, default `[120, 140]`) and greenish (a below ramp `a`, default `[126, 120]`; 128 is neutral): pale sky between brown or gold strands |
 | `drop_pale` | inside `polys`, fade out pixels that are both bright (mean above `lum`, default 110) and neutral or greenish (G minus R above `g_r`, default -12): pale haze and sky glow around brown or gold items |
 | `key_blur` | inside `polys`, add opacity where the image is depth-blurred: local sharpness below `ramp: [b0, b1]` (default `[10, 22]`) is kept. Separates blurred foreground plants and props from the sharp ground and water behind them |
 | `drop_sharp` | inside `polys`, fade out in-focus pixels (same sharpness measure and `ramp` as `key_blur`): trims sharp background showing inside a hand-traced blurred foreground item |
@@ -105,7 +107,9 @@ Polygons are lists of `[x, y]` source-pixel points; `polys` is a list of polygon
 | `fill_holes` | close enclosed transparent holes up to `max_area` px |
 | `"min_island"` | drop disconnected specks smaller than this (default 150) |
 
-Ops run in order, so later ops win. A typical image needs zero to four ops.
+Ops run in order, so later ops win. A typical image needs zero to four ops. `keep` and `remove`
+polygons are anti-aliased, and every colour/blur key and `drop_*` op fades out over its region's
+border (`"edge": σ`, default 1 px; 4 px for `key_blur`), so corrections leave no visible seam.
 
 ## Recorded decisions
 

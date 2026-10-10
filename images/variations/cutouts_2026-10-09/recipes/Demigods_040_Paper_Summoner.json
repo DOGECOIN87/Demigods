@@ -18,7 +18,7 @@
   ],
   "fixes": [
    "BiRefNet matte used for the character (isnet hazed the coat and pulled in the crane trail)",
-   "restored the two summoned cranes, which BiRefNet dropped, by tracing each part (head and neck, both wings, tall wing, body; the small crane) so the blue background between them stays removed; blue glow inside the traced shapes dropped by its strong blue-minus-red (the white paper is near neutral)",
+   "restored the two summoned cranes, which BiRefNet dropped, by tracing each part (head and neck, both wings, tall wing, body; the small crane (re-traced 2026-10-10: 920-1000, 287-358)) so the blue background between them stays removed; blue glow inside the traced shapes dropped by its strong blue-minus-red (the white paper is near neutral)",
    "foreground book and paper boat traced by hand"
   ]
  },
@@ -220,44 +220,104 @@
     ],
     [
      [
-      928,
+      920,
       288
      ],
      [
-      945,
+      932,
       300
      ],
      [
-      958,
-      320
+      945,
+      318
      ],
      [
-      975,
-      326
+      953,
+      330
      ],
      [
-      1008,
-      322
-     ],
-     [
-      990,
-      336
-     ],
-     [
-      968,
-      345
-     ],
-     [
-      957,
-      360
-     ],
-     [
-      950,
+      935,
       340
      ],
      [
-      938,
+      928,
+      322
+     ]
+    ],
+    [
+     [
+      981,
+      287
+     ],
+     [
+      976,
+      305
+     ],
+     [
+      972,
+      325
+     ],
+     [
+      970,
+      334
+     ],
+     [
+      952,
+      332
+     ],
+     [
+      960,
       318
+     ],
+     [
+      970,
+      302
+     ]
+    ],
+    [
+     [
+      928,
+      332
+     ],
+     [
+      950,
+      325
+     ],
+     [
+      975,
+      330
+     ],
+     [
+      1000,
+      333
+     ],
+     [
+      985,
+      340
+     ],
+     [
+      970,
+      345
+     ],
+     [
+      966,
+      358
+     ],
+     [
+      958,
+      358
+     ],
+     [
+      950,
+      352
+     ],
+     [
+      942,
+      358
+     ],
+     [
+      934,
+      350
      ]
     ]
    ]
@@ -462,44 +522,104 @@
     ],
     [
      [
-      928,
+      920,
       288
      ],
      [
-      945,
+      932,
       300
      ],
      [
-      958,
-      320
+      945,
+      318
      ],
      [
-      975,
-      326
+      953,
+      330
      ],
      [
-      1008,
-      322
-     ],
-     [
-      990,
-      336
-     ],
-     [
-      968,
-      345
-     ],
-     [
-      957,
-      360
-     ],
-     [
-      950,
+      935,
       340
      ],
      [
-      938,
+      928,
+      322
+     ]
+    ],
+    [
+     [
+      981,
+      287
+     ],
+     [
+      976,
+      305
+     ],
+     [
+      972,
+      325
+     ],
+     [
+      970,
+      334
+     ],
+     [
+      952,
+      332
+     ],
+     [
+      960,
       318
+     ],
+     [
+      970,
+      302
+     ]
+    ],
+    [
+     [
+      928,
+      332
+     ],
+     [
+      950,
+      325
+     ],
+     [
+      975,
+      330
+     ],
+     [
+      1000,
+      333
+     ],
+     [
+      985,
+      340
+     ],
+     [
+      970,
+      345
+     ],
+     [
+      966,
+      358
+     ],
+     [
+      958,
+      358
+     ],
+     [
+      950,
+      352
+     ],
+     [
+      942,
+      358
+     ],
+     [
+      934,
+      350
      ]
     ]
    ]

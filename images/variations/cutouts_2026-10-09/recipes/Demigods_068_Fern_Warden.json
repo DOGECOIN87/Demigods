@@ -17,7 +17,7 @@
   "fixes": [
    "BiRefNet matte used for the character (isnet hazed the cape and pool)",
    "foreground ferns kept by a green-minus-blue key inside regions traced around each corner, so the grey mossy rocks, waterfall and pool showing between the fronds stay removed; small holes filled",
-   "removed the mossy-rock and water fragments the key let through at (158-198, 1012-1046) and (1095-1160, 1125-1185)"
+   "removed the mossy-rock and water fragments the key let through at (158-198, 1012-1046) and (1095-1165, 1125-1195, traced along the fern's edge)"
   ]
  },
  "base": "birefnet",
@@ -309,16 +309,24 @@
       1125
      ],
      [
-      1160,
+      1165,
       1125
      ],
      [
-      1160,
-      1185
+      1158,
+      1145
+     ],
+     [
+      1150,
+      1168
+     ],
+     [
+      1142,
+      1195
      ],
      [
       1095,
-      1185
+      1195
      ]
     ],
     [

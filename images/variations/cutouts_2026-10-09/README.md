@@ -27,5 +27,8 @@ python scripts/cutout_review.py predict Demigods_001_Dawnforge
 python scripts/cutout_review.py render Demigods_001_Dawnforge
 ```
 
+The final 1-of-1 images composite these cutouts over a focus-blurred, vignetted copy of each original: see
+[`images/one_of_ones/final_2026-10-10/`](../../one_of_ones/final_2026-10-10/README.md).
+
 These are review candidates. They are not registered assets and do not change the generator
 configuration.

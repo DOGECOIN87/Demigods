@@ -16,7 +16,8 @@
   ],
   "fixes": [
    "BiRefNet matte used for the character (isnet hazed the railings and floor in)",
-   "restored the floating astrolabe and its pendant, which BiRefNet dropped: the nebula orb from isnet's matte inside its rim (centre 882,440, r 86); the gold ring and spikes keyed by warm red-minus-blue so the galaxy sky between the ring struts stays removed; the pendant chain, two violet crystals, ring and finial (886-941, 546-782) traced by hand so the gold railing behind them stays removed"
+   "restored the floating astrolabe and its pendant, which BiRefNet dropped: the nebula orb from isnet's matte inside its rim (centre 882,440, r 86); the gold ring and spikes keyed by warm red-minus-blue so the galaxy sky between the ring struts stays removed; the pendant chain, two violet crystals, ring and finial (886-941, 546-782) traced by hand so the gold railing behind them stays removed",
+   "astrolabe top: spike (882-901, 249-290), the loop's gold ring (862-918, 297-329) and its blue star gem (876-900, 305-328) traced; the sky inside the loop either side of the gem removed (found in the composite review)"
   ]
  },
  "base": "birefnet",
@@ -884,6 +885,203 @@
      [
       910,
       667
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 0.5,
+   "polys": [
+    [
+     [
+      891,
+      249
+     ],
+     [
+      896,
+      265
+     ],
+     [
+      900,
+      280
+     ],
+     [
+      901,
+      290
+     ],
+     [
+      882,
+      290
+     ],
+     [
+      885,
+      280
+     ],
+     [
+      888,
+      262
+     ]
+    ],
+    [
+     [
+      862,
+      328
+     ],
+     [
+      865,
+      313
+     ],
+     [
+      874,
+      303
+     ],
+     [
+      886,
+      297
+     ],
+     [
+      887,
+      303
+     ],
+     [
+      878,
+      308
+     ],
+     [
+      871,
+      316
+     ],
+     [
+      868,
+      328
+     ]
+    ],
+    [
+     [
+      896,
+      297
+     ],
+     [
+      907,
+      301
+     ],
+     [
+      915,
+      311
+     ],
+     [
+      918,
+      326
+     ],
+     [
+      913,
+      327
+     ],
+     [
+      910,
+      315
+     ],
+     [
+      903,
+      307
+     ],
+     [
+      895,
+      303
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "remove",
+   "polys": [
+    [
+     [
+      870,
+      307
+     ],
+     [
+      877,
+      302
+     ],
+     [
+      886,
+      302
+     ],
+     [
+      888,
+      305
+     ],
+     [
+      877,
+      315
+     ],
+     [
+      886,
+      327
+     ],
+     [
+      870,
+      327
+     ]
+    ],
+    [
+     [
+      903,
+      303
+     ],
+     [
+      908,
+      309
+     ],
+     [
+      910,
+      320
+     ],
+     [
+      907,
+      328
+     ],
+     [
+      892,
+      328
+     ],
+     [
+      900,
+      317
+     ],
+     [
+      890,
+      305
+     ],
+     [
+      895,
+      302
+     ]
+    ]
+   ]
+  },
+  {
+   "op": "keep",
+   "feather": 0.5,
+   "polys": [
+    [
+     [
+      889,
+      305
+     ],
+     [
+      900,
+      316
+     ],
+     [
+      889,
+      328
+     ],
+     [
+      876,
+      315
      ]
     ]
    ]

@@ -3,7 +3,7 @@
   "keep": [
    "long violet-black haired mirror seer with crystal-butterfly hair ornament and crystal earring",
    "ornate silver hand mirror held up in the right hand: faceted crystal glass, filigree frame and handle",
-   "two crystal butterflies fluttering up from the open left palm (846-936, 380-490): the character's magic",
+   "four crystal butterflies rising from the open left palm (818-926, 377-524): the character's magic",
    "silver mirror-shard robe with black and violet layers, crystal drops, chains and jagged hem",
    "black trousers and silver-buckled black boots"
   ],
@@ -16,7 +16,7 @@
   ],
   "fixes": [
    "BiRefNet matte used for the character (isnet hazed the hair and robe)",
-   "restored the two crystal butterflies over the palm by traced outlines",
+   "restored the four crystal butterflies over the palm by traced outlines (re-traced 2026-10-10 after the composite review showed two were missed and two were cut short)",
    "removed the floor crystal shard BiRefNet kept (765-805, 1090-1130)"
   ]
  },
@@ -24,86 +24,182 @@
  "ops": [
   {
    "op": "keep",
-   "feather": 0.8,
+   "feather": 0.7,
    "polys": [
     [
      [
-      848,
-      397
-     ],
-     [
       858,
-      388
+      377
      ],
      [
-      872,
-      402
+      866,
+      398
      ],
      [
-      885,
-      397
+      880,
+      393
      ],
      [
-      908,
-      385
+      900,
+      387
      ],
      [
-      930,
-      380
+      923,
+      384
      ],
      [
-      915,
-      400
+      912,
+      396
      ],
      [
-      898,
+      895,
+      408
+     ],
+     [
+      880,
       420
      ],
      [
-      885,
-      436
-     ],
-     [
-      872,
-      440
-     ],
-     [
-      858,
+      870,
       432
      ],
      [
-      846,
-      418
+      860,
+      437
+     ],
+     [
+      848,
+      438
+     ],
+     [
+      839,
+      437
+     ],
+     [
+      845,
+      420
+     ],
+     [
+      852,
+      400
      ]
     ],
     [
      [
-      905,
-      460
-     ],
-     [
-      920,
-      450
-     ],
-     [
-      936,
-      438
-     ],
-     [
-      928,
-      462
-     ],
-     [
-      922,
-      478
-     ],
-     [
-      908,
-      490
+      889,
+      452
      ],
      [
       900,
+      455
+     ],
+     [
+      910,
+      450
+     ],
+     [
+      918,
+      443
+     ],
+     [
+      921,
+      452
+     ],
+     [
+      926,
+      462
+     ],
+     [
+      915,
+      470
+     ],
+     [
+      905,
+      480
+     ],
+     [
+      898,
+      476
+     ],
+     [
+      894,
+      462
+     ]
+    ],
+    [
+     [
+      818,
+      450
+     ],
+     [
+      835,
+      452
+     ],
+     [
+      851,
+      455
+     ],
+     [
+      857,
+      462
+     ],
+     [
+      852,
+      470
+     ],
+     [
+      843,
       478
+     ],
+     [
+      835,
+      480
+     ],
+     [
+      828,
+      470
+     ],
+     [
+      822,
+      460
+     ]
+    ],
+    [
+     [
+      886,
+      488
+     ],
+     [
+      893,
+      495
+     ],
+     [
+      900,
+      505
+     ],
+     [
+      897,
+      515
+     ],
+     [
+      885,
+      520
+     ],
+     [
+      872,
+      524
+     ],
+     [
+      866,
+      515
+     ],
+     [
+      874,
+      505
+     ],
+     [
+      880,
+      495
      ]
     ]
    ]

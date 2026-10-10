@@ -90,6 +90,26 @@ def poly_mask(shape, polys) -> np.ndarray:
     return np.asarray(canvas) > 0
 
 
+def poly_coverage(shape, polys, supersample: int = 4) -> np.ndarray:
+    """Anti-aliased polygon coverage in [0, 1], so traced edges are not stair-stepped."""
+    s = supersample
+    canvas = Image.new("L", (shape[1] * s, shape[0] * s), 0)
+    draw = ImageDraw.Draw(canvas)
+    for pts in polys:
+        draw.polygon([((x + 0.5) * s - 0.5, (y + 0.5) * s - 0.5) for x, y in pts], fill=255)
+    return np.asarray(canvas.resize((shape[1], shape[0]), Image.BOX), dtype=np.float32) / 255.0
+
+
+def soft_region(region: np.ndarray, sigma: float) -> np.ndarray:
+    """Region weight that ramps over ~2 sigma at its border, so a region op leaves no seam."""
+    if sigma <= 0:
+        return region.astype(np.float32)
+    # Grow first so the weight is 1 across the whole region and only ramps down outside it.
+    k = int(np.ceil(2 * sigma))
+    grown = cv2.dilate(region.astype(np.uint8), np.ones((2 * k + 1, 2 * k + 1), np.uint8))
+    return np.maximum(cv2.GaussianBlur(grown.astype(np.float32), (0, 0), sigma), region.astype(np.float32))
+
+
 def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -> np.ndarray:
     base = recipe.get("base", "birefnet")
     if base == "max":
@@ -119,13 +139,14 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
                 soft = cv2.GaussianBlur(region.astype(np.float32), (0, 0), op["feather"]) * 255
                 alpha = np.maximum(alpha, soft)
             else:
-                alpha[region] = 255
+                alpha = np.maximum(alpha, poly_coverage(alpha.shape, op["polys"]) * 255)
         elif kind == "drop_dark":  # inside region, fade out pixels darker than the bright subject (sky seen through effect loops)
             lum = rgb.astype(np.float32).mean(axis=2)
             d0, d1 = op["ramp"]
             factor = np.clip((lum - d0) / (d1 - d0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.8))
-            alpha[region] = alpha[region] * factor[region]
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * (1 - factor))
         elif kind == "drop_warm":  # inside region, fade out pixels warmer (red minus blue) than the cool item
             warm = rgb[..., 0].astype(np.float32) - rgb[..., 2].astype(np.float32)
             if op.get("invert"):  # drop cool (blue/cyan) pixels instead
@@ -133,21 +154,41 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             w0, w1 = op["ramp"]
             factor = np.clip((w1 - warm) / (w1 - w0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.7))
-            alpha[region] = alpha[region] * factor[region]
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * (1 - factor))
         elif kind == "key_lum":  # inside region, add opacity from luminance (bright metal/crystal on a dark sky)
             lum = rgb.astype(np.float32).mean(axis=2)
             k0, k1 = op["ramp"]
             keyed = np.clip((lum - k0) / (k1 - k0), 0, 1) * 255
             keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 0.7))
-            keyed[~region] = 0
+            keyed = keyed * soft_region(region, op.get("edge", 1.0))
             alpha = np.maximum(alpha, keyed)
+        elif kind == "drop_grey":  # inside region, fade out low-saturation mid-tone pixels (grey background behind coloured items)
+            f = rgb.astype(np.float32)
+            sat = f.max(axis=2) - f.min(axis=2)
+            lum = f.mean(axis=2)
+            s0, s1 = op.get("ramp", [32, 46])
+            factor = np.clip((sat - s0) / (s1 - s0), 0, 1)
+            factor = np.maximum(factor, np.clip((lum - op.get("keep_above", 200)) / 20.0, 0, 1))  # keep white highlights
+            factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 0.6))
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * (1 - factor))
+        elif kind == "drop_lab":  # inside region, fade out bright greenish pixels by CIELAB (pale sky behind brown/gold items)
+            lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB).astype(np.float32)
+            l0, l1 = op.get("L", [120, 140])  # opacity removed once lightness exceeds this ramp...
+            a0, a1 = op.get("a", [126, 120])  # ...and the green-red axis falls below this ramp (128 = neutral)
+            score = np.clip((lab[..., 0] - l0) / (l1 - l0), 0, 1) * np.clip((a0 - lab[..., 1]) / (a0 - a1), 0, 1)
+            score = cv2.GaussianBlur(score, (0, 0), op.get("feather", 0.7))
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * score)
         elif kind == "drop_pale":  # inside region, fade out bright, neutral/greenish pixels (pale haze, sky glow)
             f = rgb.astype(np.float32)
             g_r = f[..., 1] - f[..., 0]
             lum = f.mean(axis=2)
             score = np.clip((g_r - op.get("g_r", -12)) / 6.0, 0, 1) * np.clip((lum - op.get("lum", 110)) / 20.0, 0, 1)
             score = cv2.GaussianBlur(score, (0, 0), op.get("feather", 0.8))
-            alpha[region] = alpha[region] * (1 - score[region])
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * score)
         elif kind == "drop_sharp":  # inside region, fade out sharp (in-focus background) pixels, keeping blurred foreground
             lum = rgb.astype(np.float32).mean(axis=2)
             lap = np.abs(cv2.Laplacian(cv2.GaussianBlur(lum, (0, 0), 1.0), cv2.CV_32F, ksize=3))
@@ -155,7 +196,8 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             b0, b1 = op.get("ramp", [10, 22])
             factor = np.clip((b1 - sharp) / (b1 - b0), 0, 1)
             factor = cv2.GaussianBlur(factor, (0, 0), op.get("feather", 2.0))
-            alpha[region] = alpha[region] * factor[region]
+            w = soft_region(region, op.get("edge", 1.0))
+            alpha = alpha * (1 - w * (1 - factor))
         elif kind == "key_blur":  # inside region, add opacity where the image is depth-blurred (foreground bokeh), not sharp
             lum = rgb.astype(np.float32).mean(axis=2)
             lap = np.abs(cv2.Laplacian(cv2.GaussianBlur(lum, (0, 0), 1.0), cv2.CV_32F, ksize=3))
@@ -163,7 +205,7 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             b0, b1 = op.get("ramp", [10, 22])
             keyed = np.clip((b1 - sharp) / (b1 - b0), 0, 1)
             keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 2.0)) * 255
-            keyed[~region] = 0
+            keyed = keyed * soft_region(region, op.get("edge", 4.0))  # blurred props: soft region border
             alpha = np.maximum(alpha, keyed)
         elif kind == "key_rb":  # inside region, opacity from red-minus-blue (warm props on cool water/sky)
             ca, cb = op.get("channels", [0, 2])  # [1, 2] keys green-minus-blue (foliage on grey rock/water)
@@ -173,10 +215,10 @@ def apply_recipe(rgb: np.ndarray, mattes: dict[str, np.ndarray], recipe: dict) -
             k0, k1 = op["ramp"]
             keyed = np.clip((score - k0) / (k1 - k0), 0, 1) * 255
             keyed = cv2.GaussianBlur(keyed, (0, 0), op.get("feather", 1.0))
-            keyed[~region] = 0
+            keyed = keyed * soft_region(region, op.get("edge", 1.0))
             alpha = np.maximum(alpha, keyed)
         elif kind == "remove":  # region is entirely background
-            alpha[region] = 0
+            alpha = alpha * (1 - poly_coverage(alpha.shape, op["polys"]))
         elif kind == "remove_color":  # inside region, drop pixels near a background colour
             ref = np.array(op["rgb"], np.float32)
             dist = np.linalg.norm(rgb.astype(np.float32) - ref, axis=2)
