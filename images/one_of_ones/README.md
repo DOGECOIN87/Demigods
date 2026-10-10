@@ -1,3 +1,9 @@
+# Final rare 1-of-1 images — 2026-10-10
+
+The official finals of all 77 rare 1-of-1s, with a focus-blurred, vignetted background under the sharp transparent cutout, are in [`final_2026-10-10/`](final_2026-10-10/README.md) with a contact sheet.
+
+---
+
 # Migration update — 2026-09-27
 
 48 byte-identical images formerly in this folder now live in [the completed 72-image set](../variations/complete_72/). Their links below point to the new filenames. The distinct `one_of_one_014_mushroom_forager.png` remains pending the owner's cleanup decision. `sources.json` and the roster below are historical provenance, not a current inventory or supply decision.

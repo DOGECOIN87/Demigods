@@ -1,0 +1,936 @@
+{
+ "files": {
+  "Demigods_001_Dawnforge": {
+   "source": "images/variations/complete_72/Demigods_001_Dawnforge.png",
+   "source_sha256": "56c53401e75219bc4803676cffdb13b0b59a89fcb2401882e635ff31d6f7231d",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_001_Dawnforge.png",
+   "cutout_sha256": "0e192b6fb98b2c729daa89e26b2c187ae357606bc76236a138a5655353eb5fd0",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_001_Dawnforge.png",
+   "output_sha256": "f26a4c8232d68e1efc0cbd8be9f1ef24e5793f4b65ae5db1aeedbccca9e16d63",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_002_Storm_Knight": {
+   "source": "images/variations/complete_72/Demigods_002_Storm_Knight.png",
+   "source_sha256": "37dc96fa728516bda6cfa702975f6a01e06781844762f3f9e81cd637c4263f93",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_002_Storm_Knight.png",
+   "cutout_sha256": "9513ca2256d73088ea3f32d1911dc88368d18bcf5ca3264c838d21e63163aa17",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_002_Storm_Knight.png",
+   "output_sha256": "bc6b9ab1d2020f4ca6b49e69d0b998232c579eac0c52f1cf8af45fd676d49832",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_003_Coral_Oracle": {
+   "source": "images/variations/complete_72/Demigods_003_Coral_Oracle.png",
+   "source_sha256": "47a92c83a63651fcb6fe0c5b2705c15d9fa16a955c68c1a53c7e80eae13cea00",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_003_Coral_Oracle.png",
+   "cutout_sha256": "a19ee4dd7ec05fb8d7bca8adcc91c12ca0a808ca4eae3572ad027d399db3549f",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_003_Coral_Oracle.png",
+   "output_sha256": "58a323eee10bc233385cfec883b44574ab6db9d8e051a19b49b7f6b5fd60d4de",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_004_Clockwork_Artisan": {
+   "source": "images/variations/complete_72/Demigods_004_Clockwork_Artisan.png",
+   "source_sha256": "c2de163dfdc70078ab4b891983ed60d1c1ad3db07249d648ed4703c2e19cd4a0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_004_Clockwork_Artisan.png",
+   "cutout_sha256": "e5cf34ebd18c30ba555a3b94970bef107fc3add47e8262d2c636642400828dea",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_004_Clockwork_Artisan.png",
+   "output_sha256": "38d68bb440a979b08b092cc125c4a5b3a42286159e49b75f4fbef41a0c3e7fbf",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_005_Obsidian_Sentinel": {
+   "source": "images/variations/complete_72/Demigods_005_Obsidian_Sentinel.png",
+   "source_sha256": "9d99d2c2cc04d7c5091610c44e01812667247c477e0fb72f2eb900f92551f586",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_005_Obsidian_Sentinel.png",
+   "cutout_sha256": "c3e1dc8a38bd6a3bf2ac04b74194f70e1fbed490cce4544a7761e42cc1298ebd",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_005_Obsidian_Sentinel.png",
+   "output_sha256": "bb829ccfc1db8eaa3198bf4b499e4a0caeeca44f5ec4520b3359aeb694f1afad",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_006_Aurora_Skater": {
+   "source": "images/variations/complete_72/Demigods_006_Aurora_Skater.png",
+   "source_sha256": "61be00df8b8c49800c74a1c13235426438c3a9f3fac0e2be29100035a7c183ce",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_006_Aurora_Skater.png",
+   "cutout_sha256": "ae625ac85b2b80854abd7c2b01b13086e94dacb06e9afe102a3b36c129d4c41d",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_006_Aurora_Skater.png",
+   "output_sha256": "2eb32a4fd7d3e0c2f7cb57c16574621fea7271a6f5b5caf141e5c68a426defff",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_007_Lotus_Monk": {
+   "source": "images/variations/complete_72/Demigods_007_Lotus_Monk.png",
+   "source_sha256": "a5a389b004fc1f22c4219fedfaf437cd09e3883f4faacee469efca4002b73ebc",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_007_Lotus_Monk.png",
+   "cutout_sha256": "6971feaa2dba9199eb33ff016927cacd999fcea5b00916ebdb3a8905183e8f8c",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_007_Lotus_Monk.png",
+   "output_sha256": "3abe3b0e49886a4340c21aadae08617e7135ac36e91162d9fe763c07394526e6",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_008_Comet_Courier": {
+   "source": "images/variations/complete_72/Demigods_008_Comet_Courier.png",
+   "source_sha256": "d3a6681689b03f59b5e94522b7f13ce6afe0ace3cf2fae124884889b8597bcb9",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_008_Comet_Courier.png",
+   "cutout_sha256": "a5124dd69dc99bf426be61a6c45e0ca6402ecdca30312773d40d63a5ea9bb46a",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_008_Comet_Courier.png",
+   "output_sha256": "6cc0848a56be41ce800aea50e4df53922406ac6cac4a702615980cfbc4905372",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_009_Desert_Hourglass": {
+   "source": "images/variations/complete_72/Demigods_009_Desert_Hourglass.png",
+   "source_sha256": "24f52968ffe7b345578ab9ccbf4bcef87b3d5dabda119ffca7052ad2f089b49f",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_009_Desert_Hourglass.png",
+   "cutout_sha256": "a357774fadb57839fa42129789e11ab2951450784dae358e449111391335f222",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_009_Desert_Hourglass.png",
+   "output_sha256": "88902a0dc9d849ca4f1b2159895e47445e1e03bca4ccd3671e9824627670cf68",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_010_Thunder_Drummer": {
+   "source": "images/variations/complete_72/Demigods_010_Thunder_Drummer.png",
+   "source_sha256": "50a2f432e072abf15489022da369f3f131a223d9baece93659b9678a2e931ee0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_010_Thunder_Drummer.png",
+   "cutout_sha256": "15c158c08a25a7cc26c8a1e18f7a7d780c3d2551030a6d80a75bf46864f0d8c7",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_010_Thunder_Drummer.png",
+   "output_sha256": "b95954cdc2c936e277a9209161073d8e09381ae1ccd530986f658ee2ec891ba3",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_011_Swan_Guardian": {
+   "source": "images/variations/complete_72/Demigods_011_Swan_Guardian.png",
+   "source_sha256": "e765d17b4c2a5822b6355c439b697950c95c3290974207a38de235230bf919e7",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_011_Swan_Guardian.png",
+   "cutout_sha256": "f26740e764e542c71944cf87abea6fd3446ff5b4ef21acae8c6e6864efb4d9fe",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_011_Swan_Guardian.png",
+   "output_sha256": "c1a095507c28b882814c99b26c9c9e71850be0b749e57aa6d22c5db2d353acac",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_012_Crystal_Geomancer": {
+   "source": "images/variations/complete_72/Demigods_012_Crystal_Geomancer.png",
+   "source_sha256": "56c24c0e431d942deb31684564344fdc255fecf3034b0116a6b8a9cb564fff8a",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_012_Crystal_Geomancer.png",
+   "cutout_sha256": "2da4b97a69830f2bb9c363ee8040d53de3333c0f1f7e995aea06fbf242b0cf74",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_012_Crystal_Geomancer.png",
+   "output_sha256": "edcf79f5c33bcb21c094f7a620a62a1d749ab4de9bc048645305a021b367f46f",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_013_Crescent_Huntress": {
+   "source": "images/variations/complete_72/Demigods_013_Crescent_Huntress.png",
+   "source_sha256": "a2d5cc70eb1ed6445f146da0974cead8e36147880c50bafadedce133b4f4d585",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_013_Crescent_Huntress.png",
+   "cutout_sha256": "134224cdfd3a9aef52b99658d6a27f2b61b851dd9a6e10718e85a4b8516ca532",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_013_Crescent_Huntress.png",
+   "output_sha256": "9227998d51278f611e6935ba989b23db41fc3bb93dcb93ab2c8b474c57880f19",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_014_Lantern_Keeper": {
+   "source": "images/variations/complete_72/Demigods_014_Lantern_Keeper.png",
+   "source_sha256": "43db46fce36cd86a3a05c4905608865b224cffe8c1a3c7626be9a58e1a23e0a7",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_014_Lantern_Keeper.png",
+   "cutout_sha256": "802d99ac68cc2cc884483376075bdb252eebbcf76430b3f2591fff739b87aa62",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_014_Lantern_Keeper.png",
+   "output_sha256": "346e8ba26cf7ce9177f621071a5f3de33c8d73b790424a2cca4cc34eea1e398c",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_015_Tide_Captain": {
+   "source": "images/variations/complete_72/Demigods_015_Tide_Captain.png",
+   "source_sha256": "a1296ba442573b54a269732da0fd4f3c1642e6c0fa24a5fb2601b62b2e32f9d9",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_015_Tide_Captain.png",
+   "cutout_sha256": "ec3fde1493721c9d6f13c3e7ab45f11c0ee795e25438b0d2cb2d0d16351d84eb",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_015_Tide_Captain.png",
+   "output_sha256": "8696b091281f05923f91ed3b268ffa7f1d81e3d2c27b2895a92940e59adeb933",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_016_Moth_Diviner": {
+   "source": "images/variations/complete_72/Demigods_016_Moth_Diviner.png",
+   "source_sha256": "ce216d6fddf91c5234a653dd4d84e4de990d23d37f8b2aa75a4ddad9620d4485",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_016_Moth_Diviner.png",
+   "cutout_sha256": "598e4c8216cfd2ce8e754f1440b5325d22f598dae76c670b8221187ab405b7ff",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_016_Moth_Diviner.png",
+   "output_sha256": "235ae353f6e7752421ba29ae4b2fdd470f29ed7a587aa46fc2cb0690664b1a6d",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_017_Snowbell_Warden": {
+   "source": "images/variations/complete_72/Demigods_017_Snowbell_Warden.png",
+   "source_sha256": "a8a645ef5e7393284852e1a6760bc35004d51dd52f7097705fff671f60b96a4c",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_017_Snowbell_Warden.png",
+   "cutout_sha256": "ca5415f844ec7e135b15120e907ae607ee72bdc961a2911c62093fac7671b432",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_017_Snowbell_Warden.png",
+   "output_sha256": "548169615501db51a10e9b425e410f59e0b4cfe8538e4e1303eaa2a33fe64fc9",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_018_Eclipse_Duelist": {
+   "source": "images/variations/complete_72/Demigods_018_Eclipse_Duelist.png",
+   "source_sha256": "67dcff8f8fb6faee82d7cc4b543c75415ea74dcb261472b4ed23deda4e9797a5",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_018_Eclipse_Duelist.png",
+   "cutout_sha256": "a434e7dfc85f364b622c6e252a3626b6de325e1c5a72b1d0983b43267d441123",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_018_Eclipse_Duelist.png",
+   "output_sha256": "4da192f7e1034f7d8ab1e0da8968993715e0a4a7dfeee200ecc2a1d6f68b03a9",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_019_Dream_Weaver": {
+   "source": "images/variations/complete_72/Demigods_019_Dream_Weaver.png",
+   "source_sha256": "af3b4dbc8e4d542c266986d7e133c47227884bc6c1a5f401036588d7be904c31",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_019_Dream_Weaver.png",
+   "cutout_sha256": "3d85bea2931eb16411f9dc2fb3447e2ef0a20f40041a9f41fca6d458de0873fe",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_019_Dream_Weaver.png",
+   "output_sha256": "70e20f8a0d065eb5ed34e694bea5b409d3ee47054d69de698047a677bec8faa2",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_020_Pearl_Diver": {
+   "source": "images/variations/complete_72/Demigods_020_Pearl_Diver.png",
+   "source_sha256": "00b73b8cb63cf350f2d8e55597ccefceac4fe2f25421e4d4ac3d4eb31d62f0b6",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_020_Pearl_Diver.png",
+   "cutout_sha256": "c7bb7df0f30f0c683fed7b018ce9e493a2a730a463e771ce4147c812a36f1a3a",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_020_Pearl_Diver.png",
+   "output_sha256": "5d76ee9ceb836879d0e778bf6c5532c95e7a86f69e503f5fafb37734b9757e17",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_021_Moon_Rabbit_Herald": {
+   "source": "images/variations/complete_72/Demigods_021_Moon_Rabbit_Herald.png",
+   "source_sha256": "6d4c02a9952d3efc8cde89a37701cf9220adfa986c2dc8a932b908fd363d80b6",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_021_Moon_Rabbit_Herald.png",
+   "cutout_sha256": "7812747c28d354dbae22003b926e8564c6e1e12462c5b24dd1433c718305fe49",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_021_Moon_Rabbit_Herald.png",
+   "output_sha256": "69e8c872c6e325faab8fb3381ab63e5b571ff0d66b597d2000758b81ab63d157",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_022_Ink_Moon_Poet": {
+   "source": "images/variations/complete_72/Demigods_022_Ink_Moon_Poet.png",
+   "source_sha256": "c7ca473ee84beb3366562bdd7df0e37204f670965333b22d3a853d58f65b61e0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_022_Ink_Moon_Poet.png",
+   "cutout_sha256": "bca04eb11423fd1fa850230e01ff9c9a47536b2cbfb6d12ec41d2f9c83c427d5",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_022_Ink_Moon_Poet.png",
+   "output_sha256": "9e0bfdd08730ce53f5cbb7bcc85dc0767db352fce3eb6548c5d85208ba2eab6a",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_023_Glass_Nightingale": {
+   "source": "images/variations/complete_72/Demigods_023_Glass_Nightingale.png",
+   "source_sha256": "6c5c8041a5fe7be02898b457639d5555e524847cd81c737c47ae6ad0f2072f53",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_023_Glass_Nightingale.png",
+   "cutout_sha256": "9251aa0bb6cfd61e519be8f29a1720d81541a9a393727e213a0e29247271a3f6",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_023_Glass_Nightingale.png",
+   "output_sha256": "ec8e3f43362b1b6587e70c126d09d22acbea398d2c7bf98579f2d106058c7931",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_024_Star_Shepherd": {
+   "source": "images/variations/complete_72/Demigods_024_Star_Shepherd.png",
+   "source_sha256": "b564b1a9b2310670ad46992db04d250b3be7fe43111074f986a99fcfde127b4b",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_024_Star_Shepherd.png",
+   "cutout_sha256": "5f75537f2de14d6d3d3297fda7f105e42c2273537a96837626dc308142c55d3c",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_024_Star_Shepherd.png",
+   "output_sha256": "d6b2eb642a65ed03f446c31e45ada3c34573646a263eb4ed5f4270bd2cb01d54",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_025_Ruby_Regent": {
+   "source": "images/variations/complete_72/Demigods_025_Ruby_Regent.png",
+   "source_sha256": "0a65b1abcb6dce429195db9535b386a5ec6a35fbc6e5bd1532890e5915fe565e",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_025_Ruby_Regent.png",
+   "cutout_sha256": "aaf775817b69a6cd5c1ba47d86654de96ea7654e4089e1e422ad3eafd0ee1208",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_025_Ruby_Regent.png",
+   "output_sha256": "2ebee5697050c758d70fa83930d9da4cc49daa9a29b33d0b3b34aee6f05d4f16",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_026_Jade_Empress": {
+   "source": "images/variations/complete_72/Demigods_026_Jade_Empress.png",
+   "source_sha256": "f3ab397e4ec87f30d1b5fcbb936c9ab14860921de6ef9e5884723fa03334a91c",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_026_Jade_Empress.png",
+   "cutout_sha256": "47cb23a40cc505c7318e6d452c32355dba952769da2e8b89abb9dc3324d06c85",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_026_Jade_Empress.png",
+   "output_sha256": "1ba95b13c662bf31741385460d8a79128ba685922da39ad430dc734f1f16e391",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_027_Frost_Marshal": {
+   "source": "images/variations/complete_72/Demigods_027_Frost_Marshal.png",
+   "source_sha256": "2bd5082857c75d35aa1025d0651f95bbf820e3d930b28cfcd972b11fadb309a9",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_027_Frost_Marshal.png",
+   "cutout_sha256": "4267222c92d8a084ff90df5b4806edf56cc3afeeefeff4035adc6983ac6cf437",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_027_Frost_Marshal.png",
+   "output_sha256": "c6be0780329d14dcbd8e2508f87a37318c59ff9de3967a1e421332a01c18913f",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_028_Rose_Diplomat": {
+   "source": "images/variations/complete_72/Demigods_028_Rose_Diplomat.png",
+   "source_sha256": "1bd9d11f672634df3fe857e3fa3af42922e7ca3c3961ca245e2c6a38961a870e",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_028_Rose_Diplomat.png",
+   "cutout_sha256": "16f8cab5bd209bb067d041a4c21c0dacf178d01e8ed946b2aa86f56b52bbd1f4",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_028_Rose_Diplomat.png",
+   "output_sha256": "5ad8ceeb4ce3cb43ba0efa280708f6b280ad19f0d3645d23a2fc8708b845994c",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_029_Dragon_Standardbearer": {
+   "source": "images/variations/complete_72/Demigods_029_Dragon_Standardbearer.png",
+   "source_sha256": "3e0eddf968be6674e77161f7aa402614231820d213af21bf4b3982bb4d17b557",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_029_Dragon_Standardbearer.png",
+   "cutout_sha256": "4fef052a1621736c2eec935a53ff437aa3a5f389f2940c640111bd87b5eb8dc4",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_029_Dragon_Standardbearer.png",
+   "output_sha256": "3e0537b715d6a39ef02c07733ce921537ff3cfb19e5ea0808e5228df23decf33",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_030_Lion_Champion": {
+   "source": "images/variations/complete_72/Demigods_030_Lion_Champion.png",
+   "source_sha256": "04a7ea018f7d8b8860a8db4a23d43d8d6f26dfe600a3bc72c41afd2184b5f960",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_030_Lion_Champion.png",
+   "cutout_sha256": "0382462e504c9b0f65b693c5e65d0fcfe8c6a35b8ce72a11ef88c0044a56a63a",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_030_Lion_Champion.png",
+   "output_sha256": "86a72e6d432fed1ba1191df0d1f5b1bbc4add18c76849d5243b55e775a2ae96c",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_031_Peacock_Sovereign": {
+   "source": "images/variations/complete_72/Demigods_031_Peacock_Sovereign.png",
+   "source_sha256": "034ec7c1714317f7bacf66d5cddbf467b2005b5919cae2a72fe5ec4787831327",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_031_Peacock_Sovereign.png",
+   "cutout_sha256": "6e4820b62e8bf9c50e19edd3bdba983d893411fae3a4fa08611f9d78bde6a86f",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_031_Peacock_Sovereign.png",
+   "output_sha256": "c697fbd95429fe4b62ec417d6ed5360d8fd2d0f77dcd867280b5ec056565b0d1",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_032_Sapphire_Admiral": {
+   "source": "images/variations/complete_72/Demigods_032_Sapphire_Admiral.png",
+   "source_sha256": "c13b883f115e286bc9bb9acf22638d8f6eddecf43f6830c68901412fa0bd58e0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_032_Sapphire_Admiral.png",
+   "cutout_sha256": "5df62d4c0bbdbd838d9f888d6448857353cd6a661579f2d18a1b77d6965d82ec",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_032_Sapphire_Admiral.png",
+   "output_sha256": "08bb328cfc05056657106a2695fde3e460d83f592099df2df3987eaf27a1b0e9",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_033_Ivory_Judge": {
+   "source": "images/variations/complete_72/Demigods_033_Ivory_Judge.png",
+   "source_sha256": "d2d7376b074d4636869dbfdc067562d9d06817b7ed4e54f3fee6e0ee55b9f15f",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_033_Ivory_Judge.png",
+   "cutout_sha256": "aadbb65dc17e0f1ad26fe9336a278d5de8a91d7a0c0edcc71d8ceeead5819e70",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_033_Ivory_Judge.png",
+   "output_sha256": "9c9e4e9cdfde1ba784c80d23ea80908990343186cde1929bb8571eb5bd86400a",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_034_Amber_Falconer": {
+   "source": "images/variations/complete_72/Demigods_034_Amber_Falconer.png",
+   "source_sha256": "2ff33e684a4fbc2eb1a34471cf61c112bf78590b6d5e1a0ee04d5626641b04bc",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_034_Amber_Falconer.png",
+   "cutout_sha256": "e2859a5963cfffe13e9280082fff9b46a85a55292a40f350872f32479e292467",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_034_Amber_Falconer.png",
+   "output_sha256": "6227f523650801e7af17b68da1cb65758b23d14886405472e302afd5c25ea555",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_035_Violet_Jester": {
+   "source": "images/variations/complete_72/Demigods_035_Violet_Jester.png",
+   "source_sha256": "02f4216bcfdf3c128b1083d082c6e4b162052e37b3b7cd364d9ba208b047d7d3",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_035_Violet_Jester.png",
+   "cutout_sha256": "a2c8f422ea3eafa58dff00b760216dcf456198afb564426cb6292271a56de427",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_035_Violet_Jester.png",
+   "output_sha256": "10ebf9907f4d997a64bad18dbeb2e0cffbc6b2e15b2a09e8da8f9704b2708489",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_036_Diamond_Paladin": {
+   "source": "images/variations/complete_72/Demigods_036_Diamond_Paladin.png",
+   "source_sha256": "b17d34b563867825e2ddc22839c5d0552f070ef2579f76fbc70cd48e006c1405",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_036_Diamond_Paladin.png",
+   "cutout_sha256": "328d8b659b3f2b7dd9e3e599324e0cc58c6a5dfa63e13d5fc34036019e06109c",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_036_Diamond_Paladin.png",
+   "output_sha256": "1e0a8d5dadbd80e98cf0e0027c35b8785ff05d78fe77b01b3d36461686fd5e92",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_037_Astral_Cartographer": {
+   "source": "images/variations/complete_72/Demigods_037_Astral_Cartographer.png",
+   "source_sha256": "2c02cf325a080853fed526cfaf7eff76860f7b24127c4c2b508aab20493c0545",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_037_Astral_Cartographer.png",
+   "cutout_sha256": "a5d6bd492728a880b0a029deb6010fb306644b90d929873935de7d681b8dfc99",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_037_Astral_Cartographer.png",
+   "output_sha256": "3238a6358bdc3bd85d760c9c74ffc5bb259eac9b6f100fcd3f070ae56449cd05",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_038_Potion_Alchemist": {
+   "source": "images/variations/complete_72/Demigods_038_Potion_Alchemist.png",
+   "source_sha256": "5a6f57b96c2f6acc2a4743a7f4ebfc05149e88cf463b68a4af1479e6ec6f2fae",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_038_Potion_Alchemist.png",
+   "cutout_sha256": "fa2fe82e965eb60dbd3e0341578df54d79ccf8441c52a6fbf0916bda4b27919d",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_038_Potion_Alchemist.png",
+   "output_sha256": "717e2f93203a9cd4bcee1d24d916f8945d956751b0366356ba6c366584588ff6",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_039_Rune_Blacksmith": {
+   "source": "images/variations/complete_72/Demigods_039_Rune_Blacksmith.png",
+   "source_sha256": "5d037ca2f0d8f39eb8cb6699916fa1896fa9be52512920b7ace0132ef312e9af",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_039_Rune_Blacksmith.png",
+   "cutout_sha256": "5ce94cb10a00482f48c74df33ff437640a8f8ea9758a0d5cc44d61a758c1cc51",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_039_Rune_Blacksmith.png",
+   "output_sha256": "c50a541493e392b0c2f33c5bbaaef90af7d251eaebef9e09576e0541ba59fe51",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_040_Paper_Summoner": {
+   "source": "images/variations/complete_72/Demigods_040_Paper_Summoner.png",
+   "source_sha256": "832073ad879f0dd95d44128adab2be1493005ae2143e5b2607ade80ab694901d",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_040_Paper_Summoner.png",
+   "cutout_sha256": "d2432e24a4be842ddc5324fa5cb8ae32631593e10d5cfb8e437a33911b313576",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_040_Paper_Summoner.png",
+   "output_sha256": "5a84df7514bce84e3b162f53ec9cc18ac65ad845e19ea643de870a241ae7f4c5",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_041_Sand_Archaeologist": {
+   "source": "images/variations/complete_72/Demigods_041_Sand_Archaeologist.png",
+   "source_sha256": "d9fb0db589958e5a7c0f6d352c0ac9409bc1acf566c95b3e53b035668b859266",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_041_Sand_Archaeologist.png",
+   "cutout_sha256": "d6922ddbe6d32d1e3853db21ce68bef6172ec971456c1311d89aea91e6fcc897",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_041_Sand_Archaeologist.png",
+   "output_sha256": "f1b1fb7b9e04171bfeabeaa3d50353a8737af7ec13c32f11364a0a0d40f1a670",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_042_Prism_Magician": {
+   "source": "images/variations/complete_72/Demigods_042_Prism_Magician.png",
+   "source_sha256": "20d0c641688c320c6b34d15cf8a5c06600b237d6c2af94ab140a8ba15da8f855",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_042_Prism_Magician.png",
+   "cutout_sha256": "dad2af6f94ea378e492283f07eda4b36e4684c69cc2ada45f5d309363c8aca1d",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_042_Prism_Magician.png",
+   "output_sha256": "eb0432226909544ddf5ecc8c9a58cdd17d816f5d49d2ceb7241ed27b52ce798b",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_043_Thunder_Engineer": {
+   "source": "images/variations/complete_72/Demigods_043_Thunder_Engineer.png",
+   "source_sha256": "01df165a409c0fa57eacb54e60031d4a26c30c9a52031702a6612abd2d91ad30",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_043_Thunder_Engineer.png",
+   "cutout_sha256": "74b995a30973b2df1f76d4065845ea0b7775159585fab9a4c1988c6bd2e604b3",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_043_Thunder_Engineer.png",
+   "output_sha256": "ed26e33432ad69cbec409d62e3fc73a820bf4b8de464caa1067f5ab02ae06bb9",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_044_Mirror_Seer": {
+   "source": "images/variations/complete_72/Demigods_044_Mirror_Seer.png",
+   "source_sha256": "c025aad07ff22046fe7c073ab8e7cd57effb16cd4311df12cc781258501e8a79",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_044_Mirror_Seer.png",
+   "cutout_sha256": "bef46b6c86046439b4a74499f3cbe1416cdccd7f2c49ea43eb788fe2ecbec51c",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_044_Mirror_Seer.png",
+   "output_sha256": "31d3c7fbb40319001b63886fba7b037b2ed2da47bf8603ed6e235e7e8789edce",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_045_Memory_Librarian": {
+   "source": "images/variations/complete_72/Demigods_045_Memory_Librarian.png",
+   "source_sha256": "57236b76469582d78da7949e5894fe390970df9a6b8d485ba79ddfaa6804de73",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_045_Memory_Librarian.png",
+   "cutout_sha256": "8ddc9bd269b13a0d64b3d7b8148ec5f72074dc250e33603c6396b1bba3e9394f",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_045_Memory_Librarian.png",
+   "output_sha256": "4e63c54440a7776e543fccc136ffd451fac88a3944314c40c40334838da27193",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_046_Music_Enchanter": {
+   "source": "images/variations/complete_72/Demigods_046_Music_Enchanter.png",
+   "source_sha256": "29d0cf610ccd3bd6422895b3bb67fa700c27bd5305801747e7ca91038c850f34",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_046_Music_Enchanter.png",
+   "cutout_sha256": "4a84839176747d6c87ee216fe65c62e80ffda0d288068b9831bfda6f603bd13e",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_046_Music_Enchanter.png",
+   "output_sha256": "c38303a87715b2a99331c35b154687bf98e796fe1cbfb61877817d28226aae4d",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_047_Gravity_Scholar": {
+   "source": "images/variations/complete_72/Demigods_047_Gravity_Scholar.png",
+   "source_sha256": "3fdf0a1b45163409aa77effbc04d02d33797df32ac1fd9a2575243c5fea8afc6",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_047_Gravity_Scholar.png",
+   "cutout_sha256": "9a8d02630742ccf78124015ffc1cf2c3e6811ff2395882e2c56d55e8f452f187",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_047_Gravity_Scholar.png",
+   "output_sha256": "446fb115ab56882eaaac30e62e53a37dc37f0294dab916c4751d167eaaf0b930",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_048_Auric_Mathematician": {
+   "source": "images/variations/complete_72/Demigods_048_Auric_Mathematician.png",
+   "source_sha256": "6a98a0eb7b877608f1ae1079bf83fe54989359fe4885f575555ec3a118ae1a71",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_048_Auric_Mathematician.png",
+   "cutout_sha256": "b61cba98e3da6669a201d767fbab1ba5a5858ff63f7fe646721b46957d1f97ec",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_048_Auric_Mathematician.png",
+   "output_sha256": "38203796a22e2d2f462a7f8a4366ee31c91dd1a584b763c88f079e5b2e0d3fdd",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_049_Void_Gatekeeper": {
+   "source": "images/variations/complete_72/Demigods_049_Void_Gatekeeper.png",
+   "source_sha256": "3336d75f7196bb7c04bcfdc97268b130aa32f5d2783ab9f4876a6cc9944175e6",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_049_Void_Gatekeeper.png",
+   "cutout_sha256": "6cffdac3591294c0cabacd819ad5073c3dabbec05fe3581c85e1fb7b1c093eda",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_049_Void_Gatekeeper.png",
+   "output_sha256": "eba2019ca090de47e2d18ed103e624d93bb3db1dac36d1f86d570d573bbf7369",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_050_Raven_Oracle": {
+   "source": "images/variations/complete_72/Demigods_050_Raven_Oracle.png",
+   "source_sha256": "786aed2d9e63f543e88343084f3d15967a912b12e2f4fda119b1d72e3558e609",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_050_Raven_Oracle.png",
+   "cutout_sha256": "422e21c959ebfc84aebae7e6e004b7b9d9c2d61a4b73feac74256f0119a2b9d2",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_050_Raven_Oracle.png",
+   "output_sha256": "6516b3e0ed8e2b42347b44be3b4c4e18d8f824cca95122bdf1d004082f209643",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_051_Ash_Pilgrim": {
+   "source": "images/variations/complete_72/Demigods_051_Ash_Pilgrim.png",
+   "source_sha256": "ad6ec0b4e6cab7be2247518b8ee431b71ec9e69e8a82cc99c3b5a9c7b62f99a0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_051_Ash_Pilgrim.png",
+   "cutout_sha256": "188f9cac5587f9d9cccd50d972cf8f1a22c18f3129b754dbbaa57ffa9f4337d3",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_051_Ash_Pilgrim.png",
+   "output_sha256": "fc4c22fcaeb6be10207c66e1b27b83a5afaab0b430c26eb2c0268150acec93c8",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_052_Spectral_Ferryman": {
+   "source": "images/variations/complete_72/Demigods_052_Spectral_Ferryman.png",
+   "source_sha256": "6172d897bde8b5146607119909ca163c4f2ff2081a9ee8490cd25ded8e08443f",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_052_Spectral_Ferryman.png",
+   "cutout_sha256": "b3748e07bc6db6ec1777f090532071ef49688b41e39d646f180a3416b34d8a18",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_052_Spectral_Ferryman.png",
+   "output_sha256": "8d0fef7bfc1988c6f4baacb67238f329ae42428b94de2a01435e3405e6e00094",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_053_Black_Opal_Knight": {
+   "source": "images/variations/complete_72/Demigods_053_Black_Opal_Knight.png",
+   "source_sha256": "722367a9222802d9250883faab66b9a86ff1cd149d670cc387f39a8379a63e17",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_053_Black_Opal_Knight.png",
+   "cutout_sha256": "86b4d8afee7748a6eac831eb5d554983ba0f3aca08db3c47d7b7d90af35929c7",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_053_Black_Opal_Knight.png",
+   "output_sha256": "fd0a072642693d14e50a8c5236cc5d466149971e84e51bf02ee7d23eaa83a3eb",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_054_Rift_Acrobat": {
+   "source": "images/variations/complete_72/Demigods_054_Rift_Acrobat.png",
+   "source_sha256": "7d595d05fe4e4405bb701036bc928bc61897cfea9aa11858788ee13dc8a0a21c",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_054_Rift_Acrobat.png",
+   "cutout_sha256": "a30ef21740bd871c8d3a27486262e1f2f3f9ddf1bcc43070cbe7c7d23f0133b7",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_054_Rift_Acrobat.png",
+   "output_sha256": "9a90011d9ce5dba80354de5d33063dd006652370fb5ee733af7499ee2bb441cc",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_055_Eclipse_Reaper": {
+   "source": "images/variations/complete_72/Demigods_055_Eclipse_Reaper.png",
+   "source_sha256": "846bdc12e3870d6589928277f1292053029e7153a3f9ee76bfd6f22bcc8103f5",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_055_Eclipse_Reaper.png",
+   "cutout_sha256": "aa0f979b3cd920421fe645dd9e3db8bc740228fcba0a1a97b192cef344f65f8b",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_055_Eclipse_Reaper.png",
+   "output_sha256": "76a4fa189307f2afa871363396ab887b7bb9a284bebfd6168d63fcca3187d21a",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_056_Shadow_Locksmith": {
+   "source": "images/variations/complete_72/Demigods_056_Shadow_Locksmith.png",
+   "source_sha256": "533f1563be05f3e59bccbb087ac78601a75cb94f0422c5d2845b38d86af9a09f",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_056_Shadow_Locksmith.png",
+   "cutout_sha256": "b0f3c5a6287fe5ba7e968bd5c6194269267a365e4bb4770194acf05b73abdad9",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_056_Shadow_Locksmith.png",
+   "output_sha256": "df583102d91cb4748e24b840e78472e50e80c2c7fb826f8d8a89d9e81f48bac9",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_057_Nebula_Navigator": {
+   "source": "images/variations/complete_72/Demigods_057_Nebula_Navigator.png",
+   "source_sha256": "7e19517394aadd23e46c117675001efef064289739c35e25245db17fccacde13",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_057_Nebula_Navigator.png",
+   "cutout_sha256": "0653cf84e72a21f7c36b3cfcdcc861fc7668b15bf4fd03b8e7f83afd20bda19b",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_057_Nebula_Navigator.png",
+   "output_sha256": "46590f394b591e99550e052b9ece32237bcb8395fd4cda1eabb47c5579ac16c7",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_058_Dream_Sentinel": {
+   "source": "images/variations/complete_72/Demigods_058_Dream_Sentinel.png",
+   "source_sha256": "282891223b9037937a717a49af66b3e77467ce30294a24114126d5cf0c2b2969",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_058_Dream_Sentinel.png",
+   "cutout_sha256": "17535bb4c42338f88e044b0f45ef0f1d2219f3c46f9b1b0e8bb9b4c6c2a731c5",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_058_Dream_Sentinel.png",
+   "output_sha256": "819a8ae7e4b58163b2fdcec0bc268a185d8f2ea79beb8789cc30ed45a78f2ea0",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_059_Oblivion_Scribe": {
+   "source": "images/variations/complete_72/Demigods_059_Oblivion_Scribe.png",
+   "source_sha256": "aae104b22f274465dbe7efbf1f568bb366eeb4430b7bddd559a6d672f52e77bf",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_059_Oblivion_Scribe.png",
+   "cutout_sha256": "575129034508215bab9c9128006161b20380b1470ff29128783390232dc5746b",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_059_Oblivion_Scribe.png",
+   "output_sha256": "9a22bad5db236b9f8dab4dfc4a97db74e30af43bfa0603dbf46c73d9653c826c",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_060_Cosmic_Chessmaster": {
+   "source": "images/variations/complete_72/Demigods_060_Cosmic_Chessmaster.png",
+   "source_sha256": "08f174c6c5c96b8cf33929695659d5ca1f88ae720f83e6748f925ac9a821ee22",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_060_Cosmic_Chessmaster.png",
+   "cutout_sha256": "0b1b685d4c925df48afe8cf99bd3028e7a25855ebe84b9ebba58a003fb894bd8",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_060_Cosmic_Chessmaster.png",
+   "output_sha256": "650228323c7518399417782d57cd448f2b02e7713376e636ee43f08a42d72257",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_061_Oak_Druid": {
+   "source": "images/variations/complete_72/Demigods_061_Oak_Druid.png",
+   "source_sha256": "16b29a058b5d478e70b864fb22cfbf17531cf72a174654f52dcac81c09c0a40a",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_061_Oak_Druid.png",
+   "cutout_sha256": "b697d9e810d7263fc83c67c6321a899d7dcae790001fd0d578fe50c930b41db5",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_061_Oak_Druid.png",
+   "output_sha256": "435c81ec375dc07ef112275a56a5a2847c95e0d1cfe116d3cf7746f0280f04ac",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_062_Cherry_Blossom_Guardian": {
+   "source": "images/variations/complete_72/Demigods_062_Cherry_Blossom_Guardian.png",
+   "source_sha256": "3686170fe04597fe4ae965332379c97be86b1f96163cb2ef06e581746a4de4c8",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_062_Cherry_Blossom_Guardian.png",
+   "cutout_sha256": "b83bf68293ddac1d1b472f3246ad28addc6385be8508785a47849de3a07e4aca",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_062_Cherry_Blossom_Guardian.png",
+   "output_sha256": "2ad7524680278a99c3a8c335ca920a90f157b74859f088140f6407e875dbc63d",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_063_Mushroom_Herbalist": {
+   "source": "images/variations/complete_72/Demigods_063_Mushroom_Herbalist.png",
+   "source_sha256": "790458949c0d8ab735b517fc43832ed4a3c09bf44c50d8aa1d11b1d84948b379",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_063_Mushroom_Herbalist.png",
+   "cutout_sha256": "8ddb36fdef6ecadd3be23d5003f4db592b1bdd3bec07d746adce280b13d9ec88",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_063_Mushroom_Herbalist.png",
+   "output_sha256": "262dc7219a972ef5090b204ad66902bb280208145dd48d705923ce5867acac14",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_064_Bamboo_Ranger": {
+   "source": "images/variations/complete_72/Demigods_064_Bamboo_Ranger.png",
+   "source_sha256": "0792bcd8dddec8b1ea8d04d0f25cab511800fc9f9f492b13ad98d98e4dd951e0",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_064_Bamboo_Ranger.png",
+   "cutout_sha256": "fc67380c0d1717f607334ce9bd84f7abb717d09fc01461b70fa1ae38fcf306c9",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_064_Bamboo_Ranger.png",
+   "output_sha256": "4a76c80f38654c2832b9c8e98e414bcc4b057b810dd3e1d27d3b6cb332adde5d",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_065_Cactus_Wanderer": {
+   "source": "images/variations/complete_72/Demigods_065_Cactus_Wanderer.png",
+   "source_sha256": "80c83d2050f1fcf7b5f90bf83b60a9a3ca4aedd47cfdbaa755ab3da5e9596fdf",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_065_Cactus_Wanderer.png",
+   "cutout_sha256": "3fd69041d168582e63df207a342f68278f8fd3489821bac84865b395c82d791d",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_065_Cactus_Wanderer.png",
+   "output_sha256": "deb02d43ea2dba88827bea0b446f28990e23478f7c64c8d885cf85123a5d4fa3",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_066_Orchid_Duelist": {
+   "source": "images/variations/complete_72/Demigods_066_Orchid_Duelist.png",
+   "source_sha256": "5ae498b54abc65cd63275ba73aff891c43f5657f2ac75368856585afb78540dd",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_066_Orchid_Duelist.png",
+   "cutout_sha256": "c0cff78886035d3cb2ed4f8bdc2b9eafec036587126dbbfd2f18cfcac27e6736",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_066_Orchid_Duelist.png",
+   "output_sha256": "8835fc843bd1d04b13912a4c9e4b4857dafa302cb2096733e7597936fb07ae76",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_067_Bee_Alchemist": {
+   "source": "images/variations/complete_72/Demigods_067_Bee_Alchemist.png",
+   "source_sha256": "aed28a548f555d9c11f135083b88eef223c628f19440db43833658985378d1df",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_067_Bee_Alchemist.png",
+   "cutout_sha256": "27f87314c5342198fa7fe34a3ada4719c16b8d8ae610d11887e72cdec2f29c43",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_067_Bee_Alchemist.png",
+   "output_sha256": "32a5b74ad742ec924151da08afccbf45d76048a91b10b1a584b02d1f3481e285",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_068_Fern_Warden": {
+   "source": "images/variations/complete_72/Demigods_068_Fern_Warden.png",
+   "source_sha256": "b4d0ce4e4a0445974cb7ef237a7d49e6f1ff1920373e31060bd98f661d696752",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_068_Fern_Warden.png",
+   "cutout_sha256": "eb8f146fc3d218ec1554c3592135f0614272df11bc64e0345be7fefceb2b62cd",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_068_Fern_Warden.png",
+   "output_sha256": "a7d834300bdb6fddb8799f92165bc360b7855a4827dd899da467f5a502f40713",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_069_Maple_Archer": {
+   "source": "images/variations/complete_72/Demigods_069_Maple_Archer.png",
+   "source_sha256": "efa8a00950dae0b48044c0c7f5da2061061b3433cea53977649fe8228e58ebda",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_069_Maple_Archer.png",
+   "cutout_sha256": "d17bb60aaecddeccacfbe2fd4482a499cd7c9ad052c9b2bcd7f49cb8df7855f7",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_069_Maple_Archer.png",
+   "output_sha256": "8f8c34ec17ee7da74704035f73cca0d85c7c62631db9ffa2bb54e0b9a3b6e776",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_070_Willow_Healer": {
+   "source": "images/variations/complete_72/Demigods_070_Willow_Healer.png",
+   "source_sha256": "313909982629d24240bd7667b600639eb6fe4a854415181fb8f4a88bfcdfd5c6",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_070_Willow_Healer.png",
+   "cutout_sha256": "4a9336d2f5a96568a4824d75a06f7c1b53442a5b03314c0f60f6423f688be8a5",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_070_Willow_Healer.png",
+   "output_sha256": "c2778e64f74e01c722d3021eed28966f367fbb324e820857686df4a801297e5f",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_071_Iceflower_Botanist": {
+   "source": "images/variations/complete_72/Demigods_071_Iceflower_Botanist.png",
+   "source_sha256": "ad7e64973b5db5ce6dba9cdd5d2ac48f0e2486b0166f896be8776425edf06d77",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_071_Iceflower_Botanist.png",
+   "cutout_sha256": "e9250613b8d5863d43cf93b16cb2369ec97b1cf51ca540aa1d4610204f3165d6",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_071_Iceflower_Botanist.png",
+   "output_sha256": "9a6c417cb298e9758d215d5e77421d24e00f441e977fb8c3e83462ce8a367d04",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "Demigods_072_Worldtree_Keeper": {
+   "source": "images/variations/complete_72/Demigods_072_Worldtree_Keeper.png",
+   "source_sha256": "e8bfd3b7920d34003d002dd2f86948041e9833204e5c2cde44d34a26874bdcda",
+   "cutout": "images/variations/cutouts_2026-10-09/Demigods_072_Worldtree_Keeper.png",
+   "cutout_sha256": "b2d91ef027d10e3044ac8a375d3caca8d3294cede7b340340d793742a2ce7b1b",
+   "output": "images/one_of_ones/final_2026-10-10/Demigods_072_Worldtree_Keeper.png",
+   "output_sha256": "c077b2cc92e75d764eaab6f5c8061a4926ef51c0f6d2d07cb94c82567e3a2b5e",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "IMG_20260925_183953_832": {
+   "source": "images/variations/references/IMG_20260925_183953_832.jpg",
+   "source_sha256": "d6382528c152ccccc26f985ee42dbecad21914bf92000b718df98754d0d701c9",
+   "cutout": "images/variations/cutouts_2026-10-09/IMG_20260925_183953_832.png",
+   "cutout_sha256": "9203f5fdcd651041ee748c35dde133f12ac27fc15a5202fe6af1ab91181992a5",
+   "output": "images/one_of_ones/final_2026-10-10/IMG_20260925_183953_832.png",
+   "output_sha256": "d407a93a397795ed53cc3c8d562e92132b2e70d573731ac172eb3314f575167b",
+   "dimensions": [
+    1254,
+    1254
+   ]
+  },
+  "variation_061_blossom": {
+   "source": "images/variations/nature/variation_061_blossom.webp",
+   "source_sha256": "d23dc296ee3cf772d50f1c780d54de37cad75c2dd8dc12d5ae0ef95c50b6ca53",
+   "cutout": "images/variations/cutouts_2026-10-09/variation_061_blossom.png",
+   "cutout_sha256": "5e2b09bbedccfe4fa6d2a15fc8762e874f8ab4d999ed17f67449bffca8245ddb",
+   "output": "images/one_of_ones/final_2026-10-10/variation_061_blossom.png",
+   "output_sha256": "d875fce7a2f0894038926833a8d6fed0562c54e733027f0b03d53179cc20f25b",
+   "dimensions": [
+    1024,
+    1024
+   ]
+  },
+  "variation_062_autumn_grove": {
+   "source": "images/variations/nature/variation_062_autumn_grove.webp",
+   "source_sha256": "d0f19d25bbc477efc2e9727112401550cd3d1faee10e14f63412e6919b1304da",
+   "cutout": "images/variations/cutouts_2026-10-09/variation_062_autumn_grove.png",
+   "cutout_sha256": "6ed8f9c10c09fe6c7a48ed0288f939afb75f984636a84ca632edee64fe8fafd2",
+   "output": "images/one_of_ones/final_2026-10-10/variation_062_autumn_grove.png",
+   "output_sha256": "c5ea7f4627093c819ca03596a501a60d1c9c5cdaad87004693f43838b2eb6c75",
+   "dimensions": [
+    1024,
+    1024
+   ]
+  },
+  "variation_063_winter_grove": {
+   "source": "images/variations/nature/variation_063_winter_grove.webp",
+   "source_sha256": "70d94a9d7aff28a7e80fc02865b93fe102cd61480f06d5c2480996c9637c1165",
+   "cutout": "images/variations/cutouts_2026-10-09/variation_063_winter_grove.png",
+   "cutout_sha256": "d4f2baecb6eb1d33772663222501eb5b33a12c4306ed3e490e787a1117d8c948",
+   "output": "images/one_of_ones/final_2026-10-10/variation_063_winter_grove.png",
+   "output_sha256": "2237d646be230855657e2c9b033b7892a5a7a4a38bfd122c298416b456dec325",
+   "dimensions": [
+    1024,
+    1024
+   ]
+  },
+  "variation_064_lotus": {
+   "source": "images/variations/nature/variation_064_lotus.webp",
+   "source_sha256": "e15d2e81ff1d5da1ae4e46f4af1e7a58785677bd7dbd77e99661e64e706c6a63",
+   "cutout": "images/variations/cutouts_2026-10-09/variation_064_lotus.png",
+   "cutout_sha256": "1a02b155be855bf9e6c50ebca13f8b43a6cc89b67c168c551eb1ef62e306c235",
+   "output": "images/one_of_ones/final_2026-10-10/variation_064_lotus.png",
+   "output_sha256": "8014b7e72ef34bc0e287fe5cf65c96756b6871f953eec267e753b7efbefaa5c0",
+   "dimensions": [
+    1024,
+    1024
+   ]
+  }
+ },
+ "parameters": {
+  "blur_radius": 9.0,
+  "subject_margin": 3.0,
+  "vignette_strength": 0.42,
+  "vignette_inner": 0.38,
+  "vignette_power": 1.3
+ },
+ "count": 77
+}
