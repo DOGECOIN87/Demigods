@@ -8,6 +8,8 @@ pixel-for-pixel sharp.
 
 ![All 77 final images](contact_sheet.png)
 
+High-resolution sheet (6744 × 4604, 600 px per image, labelled): [`contact_sheet_hq.jpg`](contact_sheet_hq.jpg).
+
 | Source | Count | Size |
 |---|---:|---|
 | `images/variations/complete_72/*.png` | 72 | 1254 × 1254 |
