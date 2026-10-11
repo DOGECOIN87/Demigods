@@ -62,10 +62,49 @@ the exact base-pose PNG as the reference image and ask it to paint the clothes *
 body**, same canvas, same pixels for head/hands/feet. Each outfit family = 5 renders, one per
 pose. Intake with `scripts/intake_dressed_bodies.py`.
 
+### Reference images to attach (every render needs BOTH)
+
+**Image 1: the base pose to edit** (exact file, never a different pose):
+
+| Pose | Attach |
+|---|---|
+| 001 | `assets/base_bodies/base_body_001_neutral_master.png` |
+| 002 | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` |
+| 003 | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` |
+| 004 | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` |
+| 005 | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` |
+
+**Image 2: style reference, the closest 1-of-1** from `images/one_of_ones/final_2026-10-10/`:
+
+| Outfit | Attach |
+|---|---|
+| 1 Celestial Regent | `Demigods_032_Sapphire_Admiral.png` |
+| 2 Frost Marshal | `Demigods_027_Frost_Marshal.png` |
+| 3 Ember Smith | `Demigods_039_Rune_Blacksmith.png` |
+| 4 Verdant Druid | `Demigods_061_Oak_Druid.png` |
+| 5 Lantern Kimono | `Demigods_014_Lantern_Keeper.png` |
+| 6 Void Oracle | `Demigods_050_Raven_Oracle.png` |
+| 7 Dawn Paladin | `Demigods_036_Diamond_Paladin.png` |
+| 8 Clockwork Artisan | `Demigods_004_Clockwork_Artisan.png` |
+| 9 Tide Captain | `Demigods_015_Tide_Captain.png` |
+| 10 Desert Wanderer | `Demigods_009_Desert_Hourglass.png` |
+| 11 Rose Diplomat | `Demigods_028_Rose_Diplomat.png` |
+| 12 Shadow Locksmith | `Demigods_056_Shadow_Locksmith.png` |
+
+For pose 005, also attach the family's finished pose 001 render (once made) as image 3, so
+colours and trims match across all five.
+
 ### Master prompt (paste per pose; fill the {} parts)
 
 ```
-Edit the attached reference image. Keep the character's body, head, face, ears, hands,
+Two images are attached. IMAGE 1 is the base character to edit: it is the only image you
+modify and the output must align pixel-for-pixel with it. IMAGE 2 is a STYLE reference
+only: match its level of ornate detail, rendering, texture and lighting, but do NOT copy
+its pose, hands, held items, hair, face, background or proportions.
+(If a third image is attached, it is the same outfit in another pose: match its colours,
+trims and details exactly.)
+
+Edit IMAGE 1. Keep the character's body, head, face, ears, hands,
 fingers, legs, proportions, position, scale and the 1254x1254 canvas EXACTLY the same —
 do not move, resize or redraw any limb. Only add clothing painted onto the body.
 
