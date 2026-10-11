@@ -55,72 +55,23 @@ Consequences for clothing:
 - **Neck/head**: leave the neck and head untouched (hair, face, headwear are separate layers);
   collars may rise to the jaw but must not cover the chin.
 
-## 3. Production method (keeps the rig)
+## 3. Held items repaint skin over the hand (measured)
 
-Use the dressed-body workflow (`docs/workflows/dressed_body_intake.md`): give the generator
-the exact base-pose PNG as the reference image and ask it to paint the clothes **onto the
-body**, same canvas, same pixels for head/hands/feet. Each outfit family = 5 renders, one per
-pose. Intake with `scripts/intake_dressed_bodies.py`.
+The in-hand objects (`assets/hand_objects/`, drawn over the figure) are painted with the hand
+that holds them, in bare skin:
 
-### Reference image to attach
+- **Pose 002**: each object repaints the image-left fist and wrist, from about Y 720 down.
+- **Pose 004**: each orb or book repaints the whole image-left forearm, from the elbow (about
+  Y 665) to the fingertips.
 
-Attach **only the base pose** being dressed. It is the sole reference; the style is described
-in the prompt text, not taken from another image.
+So outfits use no gloves. The Pose 002/003 grip-side cuff ends above the wrist. In Pose 004,
+the image-left sleeve is pushed up above the elbow.
 
-| Pose | Attach |
-|---|---|
-| 001 | `assets/base_bodies/base_body_001_neutral_master.png` |
-| 002 | `assets/base_bodies/base_pose_002_viewer_left_vertical_grip.png` |
-| 003 | `assets/base_bodies/base_pose_003_viewer_right_vertical_grip.png` |
-| 004 | `assets/base_bodies/base_pose_004_viewer_left_palm_up.png` |
-| 005 | `assets/base_bodies/base_pose_005_centered_two_hand_grip.png` |
+## 4. Prompts
 
-### Master prompt (paste per pose; fill the {} parts)
-
-```
-The attached image is the base character and the only reference. Edit it. Keep the character's body, head, face, ears, hands,
-fingers, legs, proportions, position, scale and the 1254x1254 canvas EXACTLY the same —
-do not move, resize or redraw any limb. Only add clothing painted onto the body.
-
-POSE (do not change): {POSE LINE from the list below}
-
-OUTFIT: {OUTFIT DESCRIPTION}
-
-Style: highly detailed painterly semi-realistic chibi fantasy illustration, matching an
-ornate premium NFT character collection — layered garments, fine embroidery, gold/silver
-filigree trim, metallic highlights, soft fabric folds, rich texture. Key light from the
-upper-left, form shadows to the lower-right, subtle cool rim light on the right.
-
-Rules: fully cover the beige tank top and shorts; sleeves follow each arm and end at the
-wrist; leave both hands fully visible and empty (no held items, no props); the hem may
-flare outward but boots/feet stay visible; leave the head and neck bare (no hat, hood up,
-hair, scarf over chin, or jewelry on the head). Front-facing, symmetrical stance.
-Background: solid flat #00FF00 chroma green (or transparent), no shadow on the ground,
-no text, no frame.
-```
-
-### Pose lines
-
-- **001**: "Both arms hang down slightly away from the body, both hands open with palms facing the viewer beside the thighs."
-- **002**: "Character's right arm (viewer's left) hangs down with the hand a closed fist gripping vertically at hip height; the other hand is open, palm out."
-- **003**: "Character's left arm (viewer's right) hangs down with the hand a closed fist gripping vertically at hip height; the other hand is open, palm out."
-- **004**: "Character's right forearm (viewer's left) is bent forward with the palm facing up, held open at hip height as if presenting something; the other hand hangs open, palm out."
-- **005**: "Both arms come forward and inward; both fists are stacked one above the other at the centre of the body at crotch height, as if resting on a planted sword hilt. The sleeves cross in front of the torso."
-
-### Outfit descriptions (12 families drawn from the 1-of-1 themes)
-
-1. **Celestial Regent** — navy velvet long coat to the shins, gold star-embroidered lapels and cuffs, white high-collar shirt with jabot, wide gold-buckled belt, short navy cape with gold chain clasp, black boots with gold toe caps.
-2. **Frost Marshal** — white military greatcoat with ice-blue lining and white fur collar, silver epaulettes with fringe, blue sash across the chest, snowflake embroidery on the hem, silver buttons, white gloves, black knee boots.
-3. **Ember Smith** — crimson tunic, dark leather apron with bronze rivets and rune engravings, bronze shoulder guard on one side, layered leather belts with tool pouches, rolled crimson trousers, heavy riveted brown boots.
-4. **Verdant Druid** — moss-green layered robe covered in overlapping oak leaves, bark-textured bracers, acorn and amber clasps, leafy mantle over the shoulders, wrapped leaf greaves and root-like boots.
-5. **Lantern Kimono** — deep indigo layered kimono with red and gold inner layers, gold butterfly embroidery, wide sleeves ending at the wrists, red obi with gold cord and tassels, white tabi with lacquered sandals.
-6. **Void Oracle** — black and deep-violet tattered robe with layered shredded hem, silver filigree, glowing violet runes on the trim, black high collar, amethyst brooch, black pointed boots.
-7. **Dawn Paladin** — polished white-gold plate armor: breastplate with sun emblem, layered pauldrons, white tabard with gold trim, chainmail skirt, armored greaves and sabatons.
-8. **Clockwork Artisan** — brown leather waistcoat with brass gears and pocket watch chain, cream shirt, copper-buttoned tailcoat, belt of small tools, striped trousers, brass-buckled boots.
-9. **Tide Captain** — teal naval coat with gold braid and anchor buttons, white ruffled shirt, wide red sash, cutlass belt (empty scabbard), striped breeches, tall cuffed boots.
-10. **Desert Wanderer** — sand-coloured layered wraps and long hooded cloak (hood DOWN on the shoulders), terracotta sash, bronze coin belt, leather bracers, wrapped legs, sandals.
-11. **Rose Diplomat** — burgundy brocade frock coat with rose embroidery, gold lapels, lace cravat with ruby pin, cream waistcoat, white breeches, polished brown boots.
-12. **Shadow Locksmith** — charcoal fitted coat with many buckled straps and silver keys hanging from the belt, dark hood down, bronze trim, fingerless gloves, dark trousers, buckled boots.
-
-Generate each family in all five poses before intake so every pose stays usable. Keep a
-family's colours, trims and details identical across its five renders.
+Ready-to-paste prompts, 12 outfits × 5 poses: **`prompts/outfit_prompt_pack_2026-10-11.md`**,
+built by `scripts/build_outfit_prompt_pack.py`. Each prompt attaches only its base pose. It
+locks the figure to the rig, asks for a bald, faceless head and bare hands, and states the
+background each palette needs (transparent; flat black only for light outfits). New
+families are numbered 011-022 so they never reuse a withdrawn outfit id. Intake:
+`docs/workflows/dressed_body_intake.md`.
