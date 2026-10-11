@@ -75,3 +75,8 @@ locks the figure to the rig, asks for a bald, faceless head and bare hands, and 
 background each palette needs (transparent; flat black only for light outfits). New
 families are numbered 011-022 so they never reuse a withdrawn outfit id. Intake:
 `docs/workflows/dressed_body_intake.md`.
+
+**All-in-one:** `prompts/outfit_all_in_one_prompt.md` is one paste covering every outfit and pose.
+You set `OUTFIT` and `POSE`. The assistant downloads the base pose from a pinned commit,
+checks its SHA-256 and that the pose is the right one, renders, self-checks against a
+checklist, and returns the file name and a `sources.json` entry.

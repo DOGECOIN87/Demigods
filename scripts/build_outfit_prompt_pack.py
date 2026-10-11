@@ -12,8 +12,12 @@ outfit in words. The prompts encode what the intake and the generator need
   elbow down, so that sleeve ends at the elbow;
 - dark outfits need a transparent background (black keying fails on them).
 
-    python scripts/build_outfit_prompt_pack.py          # write the pack
-    python scripts/build_outfit_prompt_pack.py --check  # fail if it is stale
+It also writes the all-in-one prompt (prompts/outfit_all_in_one_prompt.md): a
+single paste that tells an assistant with web access and image generation to
+download and verify the right base pose itself, then render and self-check.
+
+    python scripts/build_outfit_prompt_pack.py          # write both files
+    python scripts/build_outfit_prompt_pack.py --check  # fail if either is stale
 """
 from __future__ import annotations
 
@@ -23,6 +27,26 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PACK = ROOT / "prompts" / "outfit_prompt_pack_2026-10-11.md"
+ALL_IN_ONE = ROOT / "prompts" / "outfit_all_in_one_prompt.md"
+# Base poses are downloaded from this commit, so the links never change under the prompt.
+# tests/test_outfit_prompt_pack.py checks each local base against BASE_SHA256.
+BASE_COMMIT = "5c44513a564a1e20e8e60b1214ae03587138cddf"
+RAW_URL = "https://raw.githubusercontent.com/DOGECOIN87/Demigods/{commit}/assets/base_bodies/{name}"
+BASE_SHA256 = {
+    "001": "6561c3186027398b830b40a40e5412fd715df44d2c22d1724733da07f26996ef",
+    "002": "5c8bd6bd187a1c5efc91e15433f558461ec8f3412e561497a4df6fed35679693",
+    "003": "bac3ae2db654e6cbf8185e56f714f72608d95c72652c4a270e4fdfb6d1bbeef8",
+    "004": "32ea9264d47e7f47cd47f7effee5493deb518e573561f9a3dbdb4dcdd1b57365",
+    "005": "1f3f5d34286483323767d8d51428bc1e398745aed4ab0025066caa6c07e168d8",
+}
+# What the downloaded base must visibly show, so a wrong file is caught before rendering.
+POSE_LOOK = {
+    "001": "both hands open, palms facing the viewer",
+    "002": "the image-LEFT hand is a closed fist; the image-right hand is open",
+    "003": "the image-RIGHT hand is a closed fist; the image-left hand is open",
+    "004": "the image-left forearm is bent forward with the palm facing UP; the image-right hand hangs open",
+    "005": "both fists stacked one above the other at the centre of the body",
+}
 
 POSES = {
     "001": {
@@ -443,19 +467,162 @@ def build() -> str:
     return "\n".join(out)
 
 
+def base_url(pose_id: str) -> str:
+    return RAW_URL.format(commit=BASE_COMMIT, name=POSES[pose_id]["file"])
+
+
+def build_all_in_one() -> str:
+    """One self-contained prompt: pick OUTFIT and POSE, the assistant does the rest."""
+    p = []
+    p += [
+        "DEMIGODS OUTFIT RENDER: ALL-IN-ONE PROMPT",
+        "",
+        "=== REQUEST (edit only this line) ===",
+        "OUTFIT = 011    POSE = 001",
+        "(OUTFIT is 011-022 from the OUTFITS list. POSE is 001-005, or ALL to render 001 "
+        "through 005 one after another.)",
+        "",
+        "You are producing a production asset for the Demigods collection. A generated image "
+        "that does not follow these steps cannot be used. Work through the steps in order and "
+        "do not skip any.",
+        "",
+        "STEP 1: GET THE BASE IMAGE YOURSELF",
+        "Find POSE in the BASE POSES table. Download that exact PNG from its URL (a direct "
+        "public file link, no login needed). Do not search for or use any other image.",
+        "- If you can run code, download it and compute its SHA-256. It must equal the value in "
+        "the table. If it does not, the download was cut off: download it again (up to 3 tries).",
+        "- If you cannot download the file, OR your image tool cannot use the downloaded file as "
+        "the input image to edit, STOP. Reply only: \"Please attach <file name> from <URL>\". "
+        "Continue from STEP 2 when it is attached. NEVER render from memory, from a description, "
+        "or from a similar-looking image.",
+        "",
+        "STEP 2: CHECK IT IS THE RIGHT IMAGE",
+        "It must be a 1254 x 1254 PNG with a transparent background, showing one bald chibi "
+        "figure in a beige tank top and beige shorts, standing front-on, with the pose shown in "
+        "the table's LOOK column. If it is not, go back to STEP 1. Do not continue with a wrong "
+        "pose.",
+        "",
+        "STEP 3: RENDER",
+        "Edit THAT downloaded image, the only reference. Combine the RULES FOR EVERY RENDER, the "
+        "POSE RULES for this pose and the OUTFIT for this number into one image edit. Paint the "
+        "clothing onto the figure. Everything that is not clothing stays where it is.",
+        "",
+        "STEP 4: CHECK YOUR RESULT, AND REDO IT IF IT FAILS",
+        "Look at your output and check each line:",
+        "  [ ] head bald and faceless (no eyes, brows, nose, mouth or hair), same size and place as the base",
+        "  [ ] every hand bare skin and unmoved; same fingers; no gloves",
+        "  [ ] the pose's sleeve rule obeyed (see POSE RULES)",
+        "  [ ] no beige tank top or shorts visible anywhere",
+        "  [ ] the whole outfit as described, with its viewer-left / viewer-right details on the correct sides",
+        "  [ ] the figure is not taller, wider, moved or cropped; feet on the same line",
+        "  [ ] background as the outfit's BACKGROUND rule requires; no floor, shadow, glow or scenery",
+        "If any box fails, render again from the SAME downloaded base, stating the failed rule "
+        "first. Make at most 2 retries, then deliver the best attempt and say which box still "
+        "fails.",
+        "",
+        "STEP 5: DELIVER",
+        "- The final PNG, 1254 x 1254, named exactly: outfit_<OUTFIT>_<slug>_pose_<POSE>.png "
+        "(slug from the OUTFITS list).",
+        "- The checklist with each box marked pass or fail.",
+        "- This JSON entry, filled in (include sha256 only if you can compute it):",
+        '  {"source": "images/trait_candidates/outfits_dressed/<file name>", "sha256": "<sha256>", '
+        '"mode": "RGBA", "dimensions": [1254, 1254], "outfit": "<OUTFIT>", "outfit_slug": "<slug>", '
+        '"outfit_label": "<outfit name>", "pose": "<POSE>", "target": "<file name>"}',
+        "If POSE = ALL: repeat STEPS 1-5 for 001, 002, 003, 004 and 005 in that order. Download "
+        "each pose's own base, and keep the outfit's colours, trims and details identical "
+        "across all five.",
+        "",
+        "=== BASE POSES ===",
+    ]
+    for pose_id, pose in POSES.items():
+        p += [
+            f"POSE {pose_id} ({pose['label']})",
+            f"  file:   {pose['file']}",
+            f"  URL:    {base_url(pose_id)}",
+            f"  sha256: {BASE_SHA256[pose_id]}",
+            f"  LOOK:   {POSE_LOOK[pose_id]}",
+        ]
+    p += [
+        "",
+        "=== RULES FOR EVERY RENDER ===",
+        "- Canvas 1254 x 1254 with the same framing. The figure keeps exactly its position and "
+        "size.",
+        "- Head: same size, shape and place (crown at Y 140, centred on X 627, about 353 px "
+        "across the ears, chin at Y 461). Keep the ears. Return the head bald and FACELESS: paint "
+        "over the base's eyes, eyebrows, nose and mouth with plain skin. Face, hair and "
+        "headwear are separate layers added later.",
+        "- Arms, hands and fingers: every angle, position and finger shape exactly as in the "
+        "base. All hands stay bare skin: no gloves, gauntlets, rings, wraps or bracers on the "
+        "hands. Held items are added later as layers painted with a bare hand.",
+        "- Legs and stance unchanged. The soles stay on Y 1140. Footwear must not raise the "
+        "figure, lengthen the legs or widen the stance. No longer legs or torso, and no bigger "
+        "or smaller head.",
+        "- Coverage: the beige tank top and shorts are completely hidden at the neckline, "
+        "armholes, sides, waist and thighs. The neck may show above the collar.",
+        "- Silhouette: hems and capes may flare outward but stay inside X 233-1021 and above "
+        "Y 1140. The boots stay visible.",
+        "- 'Viewer-left' and 'image-left' both mean the left side of the image.",
+        f"- Style: {STYLE}",
+        f"- Never include: {AVOID}.",
+        "",
+        "=== POSE RULES (override the outfit text where they conflict) ===",
+    ]
+    for pose_id, pose in POSES.items():
+        p += [f"POSE {pose_id}: {pose['arms']}"]
+        p += [f"  - {line}" for line in pose["fit"]]
+    p += ["", "=== OUTFITS ==="]
+    for outfit in OUTFITS:
+        p += [f"OUTFIT {outfit['number']}: {outfit['name']} (slug: {outfit['slug']})"]
+        p += [f"  - {line}" for line in outfit["spec"]]
+        p += [f"  - BACKGROUND: {background(outfit)}"]
+    return "\n".join(p)
+
+
+def all_in_one_page() -> str:
+    return "\n".join([
+        "# Demigods all-in-one outfit prompt",
+        "",
+        "Generated by `python scripts/build_outfit_prompt_pack.py`. Do not edit by hand.",
+        "",
+        "Paste the whole block below into an assistant that can **browse or run code** and "
+        "**generate or edit images** (it must do both). Change only the `OUTFIT = ... POSE = ...` "
+        "line. The prompt makes the assistant download the right base pose from this public "
+        "repository, pinned to commit "
+        f"`{BASE_COMMIT[:12]}`, and verify its SHA-256. It then renders, checks the result "
+        "against a checklist and retries up to twice, and returns the file name and a "
+        "`sources.json` entry for intake.",
+        "",
+        "If the assistant cannot use a downloaded file as its edit input, the prompt makes it stop "
+        "and ask you to attach the named file instead of guessing. Attach it, and the run "
+        "continues.",
+        "",
+        "One pose per message is the most reliable. `POSE = ALL` renders the five poses in "
+        "sequence.",
+        "",
+        "```text",
+        build_all_in_one(),
+        "```",
+        "",
+    ])
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--check", action="store_true", help="fail if the pack is out of date")
     args = parser.parse_args(argv)
-    text = build()
+    outputs = {PACK: build(), ALL_IN_ONE: all_in_one_page()}
     if args.check:
-        if not PACK.exists() or PACK.read_text(encoding="utf-8") != text:
-            print(f"stale: run python scripts/build_outfit_prompt_pack.py", file=sys.stderr)
-            return 1
+        for path, text in outputs.items():
+            if not path.exists() or path.read_text(encoding="utf-8") != text:
+                print(f"stale: {path.relative_to(ROOT)}; run python scripts/build_outfit_prompt_pack.py",
+                      file=sys.stderr)
+                return 1
         print("PASS outfit prompt pack")
         return 0
-    PACK.write_text(text, encoding="utf-8")
-    print(f"wrote {PACK.relative_to(ROOT)}: {len(OUTFITS)} outfits x {len(POSES)} poses")
+    for path, text in outputs.items():
+        path.write_text(text, encoding="utf-8")
+    print(f"wrote {PACK.relative_to(ROOT)} ({len(OUTFITS)} outfits x {len(POSES)} poses) "
+          f"and {ALL_IN_ONE.relative_to(ROOT)}")
     return 0
 
 
